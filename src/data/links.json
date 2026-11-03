@@ -1,0 +1,2813 @@
+[
+	{
+		"id": "squoosh-app",
+		"name": "Squoosh",
+		"url": "https://squoosh.app/",
+		"description": "Comprime y compara imágenes con distintos códecs desde el navegador.",
+		"category": "Herramientas de desarrollo",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/squoosh-app.ico"
+	},
+	{
+		"id": "freepik-es-search",
+		"name": "Pch.vector | Freepik",
+		"url": "https://www.freepik.es/search?author=10171402&authorSlug=pch.vector&dates=any&format=author&page=1&query=contact&sort=popular&type=vector",
+		"category": "Iconos e ilustraciones",
+		"tech": [],
+		"status": "activo",
+		"verified": false,
+		"private": false
+	},
+	{
+		"id": "freepik-es-search-2",
+		"name": "Vectorjuice | Freepik",
+		"url": "https://www.freepik.es/search?author=26713452&authorSlug=vectorjuice&dates=any&format=author&page=1&query=contact&sort=popular&type=vector",
+		"category": "Iconos e ilustraciones",
+		"tech": [],
+		"status": "activo",
+		"verified": false,
+		"private": false
+	},
+	{
+		"id": "illustrationkit-com-illustrations-yippy",
+		"name": "Yippy Illustrations",
+		"url": "https://illustrationkit.com/illustrations/yippy",
+		"description": "Ilustraciones vectoriales dibujadas a mano, con iconos y avatares.",
+		"category": "Iconos e ilustraciones",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/illustrationkit-com-illustrations-yippy.png"
+	},
+	{
+		"id": "storyset-com",
+		"name": "Storyset",
+		"url": "https://storyset.com/",
+		"description": "Ilustraciones gratuitas que se personalizan y animan en un editor online.",
+		"category": "Iconos e ilustraciones",
+		"tech": [
+			"Figma"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/storyset-com.svg"
+	},
+	{
+		"id": "shots-so",
+		"name": "Shots",
+		"url": "https://shots.so/",
+		"description": "Crea mockups a partir de tus capturas de pantalla.",
+		"category": "Herramientas de desarrollo",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/shots-so.png"
+	},
+	{
+		"id": "picography-co",
+		"name": "Picography",
+		"url": "https://picography.co/",
+		"description": "Fotos de stock gratuitas en alta resolución, sin atribución.",
+		"category": "Iconos e ilustraciones",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/picography-co.png"
+	},
+	{
+		"id": "svgl-app",
+		"name": "SVGL",
+		"url": "https://svgl.app/",
+		"description": "Biblioteca de logos en SVG.",
+		"category": "Iconos e ilustraciones",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/svgl-app.svg"
+	},
+	{
+		"id": "blobatar-dev",
+		"name": "blobatar",
+		"url": "https://blobatar.dev/",
+		"description": "Genera avatares geométricos deterministas a partir de cualquier texto.",
+		"category": "Iconos e ilustraciones",
+		"tech": [
+			"JavaScript",
+			"React"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/blobatar-dev.svg"
+	},
+	{
+		"id": "undraw-co",
+		"name": "unDraw",
+		"url": "https://undraw.co/",
+		"description": "Ilustraciones de código abierto que se adaptan a tu color.",
+		"category": "Iconos e ilustraciones",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/undraw-co.png"
+	},
+	{
+		"id": "terraink-app",
+		"name": "Terraink",
+		"url": "https://terraink.app/",
+		"description": "Crea pósteres y fondos de pantalla con mapas de cualquier ciudad.",
+		"category": "Otros",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/terraink-app.svg"
+	},
+	{
+		"id": "css-tricks-com-blobs",
+		"name": "Blobs! (CSS-Tricks)",
+		"url": "https://css-tricks.com/blobs/",
+		"description": "Recopilación de enlaces sobre formas blob en la web.",
+		"category": "Aprendizaje y documentación",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/css-tricks-com-blobs.svg"
+	},
+	{
+		"id": "toolbox-signalsupply-co-apps-gradientblobcss",
+		"name": "Toolbox by SignalSupply",
+		"url": "https://toolbox.signalsupply.co/apps/gradientblobcss/",
+		"category": "Generadores CSS/SVG",
+		"tech": [],
+		"status": "activo",
+		"verified": false,
+		"private": false,
+		"logo": "/logos/toolbox-signalsupply-co-apps-gradientblobcss.svg"
+	},
+	{
+		"id": "wweb-dev-resources-animated-css-background-generator",
+		"name": "Animated CSS Background Generator",
+		"url": "https://wweb.dev/resources/animated-css-background-generator",
+		"description": "Genera fondos animados solo con CSS, con tres estilos a elegir.",
+		"category": "Generadores CSS/SVG",
+		"tech": [
+			"CSS"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/wweb-dev-resources-animated-css-background-generator.png"
+	},
+	{
+		"id": "intools-co",
+		"name": "Intools - The Best Online Tools and Resources for 2023",
+		"url": "https://intools.co/",
+		"category": "Otros",
+		"tech": [],
+		"status": "caido",
+		"verified": false,
+		"private": false
+	},
+	{
+		"id": "tailwindcss-animated-com",
+		"name": "Tailwind CSS Animated",
+		"url": "https://www.tailwindcss-animated.com/",
+		"description": "Plugin con utilidades de animación extra para Tailwind.",
+		"category": "Animación y efectos",
+		"tech": [
+			"Tailwind"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/tailwindcss-animated-com.png"
+	},
+	{
+		"id": "codepen-io-smitche-pen-mownba",
+		"name": "Blob gradient animation",
+		"url": "https://codepen.io/Smitche/pen/MowNba",
+		"category": "Otros",
+		"tech": [],
+		"status": "activo",
+		"verified": false,
+		"private": false
+	},
+	{
+		"id": "codepen-io-jh3y-pen-qwypaax",
+		"name": "Proximity Glow Cards",
+		"url": "https://codepen.io/jh3y/pen/QWYPaax",
+		"category": "Otros",
+		"tech": [],
+		"status": "activo",
+		"verified": false,
+		"private": false
+	},
+	{
+		"id": "github-com-cruip-cruip-tutorials-blob-main-rotating-words-index-html",
+		"name": "Rotating words (Cruip)",
+		"url": "https://github.com/cruip/cruip-tutorials/blob/main/rotating-words/index.html",
+		"description": "Ejemplo de palabras rotatorias, del repositorio de tutoriales de Cruip.",
+		"category": "Animación y efectos",
+		"tech": [
+			"HTML",
+			"Tailwind",
+			"Alpine.js"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/github-com-cruip-cruip-tutorials-blob-main-rotating-words-index-html.svg"
+	},
+	{
+		"id": "omatsuri-app",
+		"name": "Omatsuri",
+		"url": "https://omatsuri.app/",
+		"description": "Generadores de triángulos CSS, degradados y sombras, y compresor SVG.",
+		"category": "Herramientas de desarrollo",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/omatsuri-app.png"
+	},
+	{
+		"id": "svgomg-net",
+		"name": "SVGOMG",
+		"url": "https://svgomg.net/",
+		"description": "Optimiza y minifica SVG en el navegador con SVGO.",
+		"category": "Generadores CSS/SVG",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/svgomg-net.png"
+	},
+	{
+		"id": "svgtrace-com",
+		"name": "SvgTrace",
+		"url": "https://svgtrace.com/",
+		"description": "Convierte imágenes en vectores editables y exporta a SVG, PDF, EPS o DXF.",
+		"category": "Generadores CSS/SVG",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/svgtrace-com.png"
+	},
+	{
+		"id": "bennettfeely-com-clippy",
+		"name": "Clippy",
+		"url": "https://bennettfeely.com/clippy/",
+		"description": "Crea formas con la propiedad clip-path de CSS.",
+		"category": "Generadores CSS/SVG",
+		"tech": [
+			"CSS"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false
+	},
+	{
+		"id": "bgjar-com",
+		"name": "BGJar",
+		"url": "https://bgjar.com/",
+		"description": "Genera imágenes de fondo en SVG para sitios web.",
+		"category": "Generadores CSS/SVG",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/bgjar-com.png"
+	},
+	{
+		"id": "layout-bradwoods-io",
+		"name": "CSS Layout Generator",
+		"url": "https://layout.bradwoods.io/",
+		"description": "Genera código de layouts con CSS Grid y Flexbox.",
+		"category": "Generadores CSS/SVG",
+		"tech": [
+			"CSS"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/layout-bradwoods-io.svg"
+	},
+	{
+		"id": "uigradients-com",
+		"name": "uiGradients",
+		"url": "https://uigradients.com/",
+		"description": "Colección de degradados de color seleccionados a mano.",
+		"category": "Fuentes y color",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/uigradients-com.png"
+	},
+	{
+		"id": "neumorphism-io",
+		"name": "Neumorphism.io",
+		"url": "https://neumorphism.io/",
+		"description": "Genera sombras y degradados CSS con estilo neumórfico.",
+		"category": "Generadores CSS/SVG",
+		"tech": [
+			"CSS"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/neumorphism-io.png"
+	},
+	{
+		"id": "uicolors-app-create",
+		"name": "UI Colors",
+		"url": "https://uicolors.app/generate",
+		"description": "Crea y exporta paletas de color personalizadas para Tailwind.",
+		"category": "Fuentes y color",
+		"tech": [
+			"Tailwind"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/uicolors-app-create.ico"
+	},
+	{
+		"id": "coolcontrast-vercel-app",
+		"name": "Cool Contrast",
+		"url": "https://coolcontrast.vercel.app/",
+		"description": "Revisa el contraste de pares de colores según las pautas WCAG.",
+		"category": "Fuentes y color",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/coolcontrast-vercel-app.ico"
+	},
+	{
+		"id": "bg-ibelick-com",
+		"name": "BG.IBELICK",
+		"url": "https://bg.ibelick.com/",
+		"description": "Fragmentos de fondos listos para copiar, en Tailwind y CSS.",
+		"category": "Generadores CSS/SVG",
+		"tech": [
+			"Tailwind",
+			"CSS"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/bg-ibelick-com.ico"
+	},
+	{
+		"id": "mycolor-space",
+		"name": "ColorSpace",
+		"url": "https://mycolor.space/",
+		"description": "Genera paletas de colores y degradados.",
+		"category": "Fuentes y color",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/mycolor-space.png"
+	},
+	{
+		"id": "coolors-co",
+		"name": "Coolors",
+		"url": "https://coolors.co/",
+		"description": "Genera y explora combinaciones de colores.",
+		"category": "Fuentes y color",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/coolors-co.png"
+	},
+	{
+		"id": "openpeeps-com",
+		"name": "Open Peeps",
+		"url": "https://www.openpeeps.com/",
+		"description": "Biblioteca de ilustraciones dibujadas a mano para componer escenas de personas.",
+		"category": "Iconos e ilustraciones",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/openpeeps-com.png"
+	},
+	{
+		"id": "css-peeps-com",
+		"name": "CSS-Peeps",
+		"url": "https://css-peeps.com/",
+		"description": "Arma personajes estilo Open Peeps con un archivo CSS y un solo div.",
+		"category": "Iconos e ilustraciones",
+		"tech": [
+			"CSS"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false
+	},
+	{
+		"id": "peepslab-com",
+		"name": "PeepsLab - Create your own peep",
+		"url": "https://peepslab.com/",
+		"category": "Otros",
+		"tech": [],
+		"status": "activo",
+		"verified": false,
+		"private": false
+	},
+	{
+		"id": "landingfolio-com",
+		"name": "Landingfolio",
+		"url": "https://www.landingfolio.com/",
+		"description": "Inspiración de landing pages, con plantillas y componentes.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/landingfolio-com.ico"
+	},
+	{
+		"id": "htmlrev-com",
+		"name": "HTMLrev",
+		"url": "https://htmlrev.com/",
+		"description": "Plantillas gratuitas de sitios, blogs, tiendas y paneles, por framework.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"HTML",
+			"CSS",
+			"Bootstrap",
+			"Bulma",
+			"Tailwind",
+			"Angular",
+			"React",
+			"Next.js",
+			"shadcn/ui",
+			"Vue",
+			"Nuxt",
+			"Svelte",
+			"Astro",
+			"Laravel"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/htmlrev-com.png"
+	},
+	{
+		"id": "toools-design",
+		"name": "Toools.design",
+		"url": "https://www.toools.design/",
+		"description": "Directorio de herramientas y recursos para diseñar webs, apps y marcas.",
+		"category": "Directorios de recursos",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/toools-design.png"
+	},
+	{
+		"id": "headlessui-com",
+		"name": "Headless UI",
+		"url": "https://headlessui.com/",
+		"description": "Componentes sin estilos y accesibles, pensados para integrarse con Tailwind.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"React",
+			"Vue",
+			"Tailwind"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/headlessui-com.png"
+	},
+	{
+		"id": "devdojo-com-tailwindcss-buttons",
+		"name": "TailwindCSS Buttons",
+		"url": "https://devdojo.com/tailwindcss/buttons",
+		"description": "Más de 30 diseños de botones para copiar y pegar.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"Tailwind"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false
+	},
+	{
+		"id": "uiverse-io",
+		"name": "Explore 3000+ Free UI Elements: CSS & Tailwind",
+		"url": "https://uiverse.io/",
+		"category": "Otros",
+		"tech": [],
+		"status": "activo",
+		"verified": false,
+		"private": false
+	},
+	{
+		"id": "hyperui-dev",
+		"name": "HyperUI",
+		"url": "https://www.hyperui.dev/",
+		"description": "Componentes gratuitos de Tailwind para copiar y pegar.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"Tailwind",
+			"HTML"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/hyperui-dev.ico"
+	},
+	{
+		"id": "tailwindawesome-com",
+		"name": "TailAwesome",
+		"url": "https://www.tailawesome.com/",
+		"description": "Directorio de plantillas y UI kits de Tailwind.",
+		"category": "Directorios de recursos",
+		"tech": [
+			"Tailwind"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/tailwindawesome-com.ico"
+	},
+	{
+		"id": "daisyui-com",
+		"name": "daisyUI",
+		"url": "https://daisyui.com/",
+		"description": "Biblioteca de componentes semánticos para Tailwind, con temas incluidos.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"Tailwind",
+			"React",
+			"Vue",
+			"Svelte",
+			"Angular",
+			"Solid",
+			"Qwik",
+			"Astro",
+			"Next.js",
+			"Nuxt",
+			"Laravel",
+			"WordPress"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/daisyui-com.svg"
+	},
+	{
+		"id": "flowbite-com-blocks",
+		"name": "Flowbite Blocks",
+		"url": "https://flowbite.com/blocks/",
+		"description": "Bloques de interfaz de Flowbite, la biblioteca de componentes sobre Tailwind.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"Tailwind",
+			"React",
+			"Next.js",
+			"Vue",
+			"Nuxt",
+			"Svelte",
+			"Angular",
+			"Astro",
+			"Solid",
+			"Qwik",
+			"Laravel"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/flowbite-com-blocks.ico"
+	},
+	{
+		"id": "ui-shadcn-com",
+		"name": "shadcn/ui",
+		"url": "https://ui.shadcn.com/",
+		"description": "Componentes accesibles que copias a tu proyecto y adaptas a tu diseño.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"shadcn/ui",
+			"React",
+			"Tailwind",
+			"Next.js",
+			"Astro",
+			"Laravel"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/ui-shadcn-com.png"
+	},
+	{
+		"id": "refero-design",
+		"name": "Refero",
+		"url": "https://refero.design/",
+		"description": "Colección de capturas de interfaces web e iOS con búsqueda avanzada.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/refero-design.png"
+	},
+	{
+		"id": "css-loaders-com",
+		"name": "CSS Loaders",
+		"url": "https://css-loaders.com/",
+		"description": "Más de 600 animaciones de carga hechas solo con CSS y un elemento.",
+		"category": "Animación y efectos",
+		"tech": [
+			"CSS"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/css-loaders-com.png"
+	},
+	{
+		"id": "creative-tim-com-twcomponents",
+		"name": "Tailwind CSS Components",
+		"url": "https://www.creative-tim.com/twcomponents",
+		"description": "Repositorio de componentes y plantillas de Tailwind de código abierto.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"Tailwind"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/creative-tim-com-twcomponents.png"
+	},
+	{
+		"id": "tw-elements-com",
+		"name": "TW Elements",
+		"url": "https://tw-elements.com/",
+		"description": "Componentes, plantillas y plugins gratuitos para Tailwind.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"Tailwind",
+			"React",
+			"Next.js",
+			"Nuxt",
+			"Svelte",
+			"Solid",
+			"Qwik",
+			"Laravel",
+			"Vue"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/tw-elements-com.ico"
+	},
+	{
+		"id": "tailwindcss-com-plus-ui-blocks",
+		"name": "Tailwind CSS Components - Tailwind Plus",
+		"url": "https://tailwindcss.com/plus/ui-blocks",
+		"category": "Componentes y UI kits",
+		"tech": [],
+		"status": "activo",
+		"verified": false,
+		"private": false,
+		"logo": "/logos/tailwindcss-com-plus-ui-blocks.png"
+	},
+	{
+		"id": "componentland-com",
+		"name": "ComponentLand",
+		"url": "https://componentland.com/",
+		"description": "Biblioteca de más de 300 componentes adaptables y accesibles.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"Tailwind",
+			"HTML"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/componentland-com.png"
+	},
+	{
+		"id": "tailkit-com-free-tailwind-components",
+		"name": "Tailkit",
+		"url": "https://tailkit.com/free-tailwind-components",
+		"description": "Componentes gratuitos de Tailwind para paneles y landing pages.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"Tailwind",
+			"HTML",
+			"React",
+			"Vue",
+			"Alpine.js"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/tailkit-com-free-tailwind-components.svg"
+	},
+	{
+		"id": "park-ui-com",
+		"name": "Park UI",
+		"url": "https://park-ui.com/",
+		"description": "Componentes construidos sobre Ark UI y Panda CSS.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"React",
+			"Solid"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/park-ui-com.svg"
+	},
+	{
+		"id": "kokonutui-com",
+		"name": "Kokonut UI",
+		"url": "https://kokonutui.com/",
+		"description": "Componentes de React de código abierto, instalables con un comando.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"React",
+			"Tailwind",
+			"shadcn/ui"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/kokonutui-com.png"
+	},
+	{
+		"id": "basecoatui-com",
+		"name": "Basecoat",
+		"url": "https://basecoatui.com/",
+		"description": "Componentes con Tailwind al estilo shadcn/ui que no necesitan React.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"Tailwind"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/basecoatui-com.svg"
+	},
+	{
+		"id": "rareui-com",
+		"name": "Rare UI",
+		"url": "https://www.rareui.com/",
+		"description": "Registro abierto de componentes animados de React para copiar y pegar.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"React",
+			"Tailwind"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/rareui-com.svg"
+	},
+	{
+		"id": "namethatui-com",
+		"name": "NameThatUI",
+		"url": "https://namethatui.com/",
+		"description": "Describe un elemento de interfaz y te dice cómo se llama.",
+		"category": "Herramientas de desarrollo",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false
+	},
+	{
+		"id": "scrollxui-dev-docs-components",
+		"name": "ScrollX UI",
+		"url": "https://scrollxui.dev/docs/components",
+		"description": "Colección de componentes de interfaz para proyectos Next.js.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"Next.js",
+			"TypeScript",
+			"Tailwind",
+			"React"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/scrollxui-dev-docs-components.png"
+	},
+	{
+		"id": "skiper-ui-com",
+		"name": "Skiper UI",
+		"url": "https://skiper-ui.com/",
+		"description": "Componentes poco comunes para Next.js, instalables con la CLI de shadcn.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"Next.js",
+			"Tailwind",
+			"shadcn/ui",
+			"React"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/skiper-ui-com.ico"
+	},
+	{
+		"id": "buefy-org",
+		"name": "Buefy",
+		"url": "https://buefy.org/",
+		"description": "Componentes ligeros para Vue basados en Bulma.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"Vue",
+			"Bulma"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/buefy-org.png"
+	},
+	{
+		"id": "magicui-design",
+		"name": "Magic UI",
+		"url": "https://magicui.design/",
+		"description": "Componentes y plantillas para dar vida a landing pages.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"React",
+			"Next.js",
+			"shadcn/ui",
+			"Tailwind"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/magicui-design.ico"
+	},
+	{
+		"id": "ui-aceternity-com",
+		"name": "Aceternity UI",
+		"url": "https://ui.aceternity.com/",
+		"description": "Más de 200 componentes, bloques y plantillas de landing para copiar y pegar.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"React",
+			"Next.js",
+			"Tailwind"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/ui-aceternity-com.png"
+	},
+	{
+		"id": "tailkits-com",
+		"name": "Tailkits",
+		"url": "https://tailkits.com/",
+		"description": "Directorio de plantillas, UI kits y componentes de Tailwind.",
+		"category": "Directorios de recursos",
+		"tech": [
+			"Tailwind",
+			"Next.js",
+			"Astro",
+			"shadcn/ui",
+			"React"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/tailkits-com.png"
+	},
+	{
+		"id": "vengenceui-com",
+		"name": "Vengeance UI",
+		"url": "https://www.vengenceui.com/",
+		"description": "Componentes animados e interacciones para landing pages.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"React",
+			"Next.js",
+			"shadcn/ui",
+			"Tailwind"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/vengenceui-com.ico"
+	},
+	{
+		"id": "animate-ui-com",
+		"name": "Animate UI",
+		"url": "https://animate-ui.com/",
+		"description": "Primitivas animadas para Radix UI, Base UI y React Aria, con shadcn/ui.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"React",
+			"shadcn/ui",
+			"Tailwind"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/animate-ui-com.png"
+	},
+	{
+		"id": "forgeui-in",
+		"name": "ForgeUI",
+		"url": "https://forgeui.in/",
+		"description": "Componentes animados, bloques de marketing y plantillas; gratis y Pro.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"React",
+			"Next.js",
+			"Tailwind",
+			"shadcn/ui"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/forgeui-in.ico"
+	},
+	{
+		"id": "uilora-com",
+		"name": "Uilora",
+		"url": "https://www.uilora.com/",
+		"description": "Más de 700 componentes animados de pago para web y móvil.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"Next.js",
+			"React Native",
+			"TypeScript",
+			"Tailwind",
+			"shadcn/ui",
+			"React"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/uilora-com.png"
+	},
+	{
+		"id": "originkit-dev",
+		"name": "Originkit",
+		"url": "https://www.originkit.dev/",
+		"description": "Componentes animados gratuitos; se copian, se usan en Framer o por MCP.",
+		"category": "Componentes y UI kits",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/originkit-dev.png"
+	},
+	{
+		"id": "shaders-com",
+		"name": "Shaders",
+		"url": "https://shaders.com/",
+		"description": "Componentes de shaders WebGPU de código abierto y editor visual gratuito.",
+		"category": "Animación y efectos",
+		"tech": [
+			"Vue",
+			"React",
+			"Svelte",
+			"Solid",
+			"JavaScript"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/shaders-com.svg"
+	},
+	{
+		"id": "libraries-dev-orbs",
+		"name": "Thinking Orbs",
+		"url": "https://libraries.dev/orbs",
+		"description": "Indicadores animados de carga y «pensando» para interfaces con IA.",
+		"category": "Animación y efectos",
+		"tech": [
+			"React",
+			"React Native"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/libraries-dev-orbs.svg"
+	},
+	{
+		"id": "bagui-vercel-app",
+		"name": "BagUI",
+		"url": "https://bagui.vercel.app/",
+		"description": "Registro abierto de componentes, bloques y plantillas para shadcn/ui.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"shadcn/ui",
+			"React",
+			"Next.js",
+			"Tailwind"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/bagui-vercel-app.ico"
+	},
+	{
+		"id": "ui-watermelon-sh",
+		"name": "Watermelon UI",
+		"url": "https://ui.watermelon.sh/",
+		"description": "Componentes, bloques y paneles gratuitos, instalables con la CLI de shadcn.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"React",
+			"Tailwind",
+			"shadcn/ui"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/ui-watermelon-sh.svg"
+	},
+	{
+		"id": "codefronts-com",
+		"name": "CodeFronts",
+		"url": "https://codefronts.com/",
+		"description": "Componentes, animaciones y generadores frontend para copiar y pegar.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"CSS",
+			"HTML",
+			"Tailwind",
+			"React",
+			"Vue",
+			"Svelte",
+			"Astro"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/codefronts-com.svg"
+	},
+	{
+		"id": "framer-com",
+		"name": "Framer",
+		"url": "https://www.framer.com/",
+		"description": "Constructor de sitios web con agente de diseño, hosting y CMS.",
+		"category": "Constructores con IA",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/framer-com.png"
+	},
+	{
+		"id": "getlayers-ai",
+		"name": "GetLayers AI",
+		"url": "https://www.getlayers.ai/",
+		"description": "Plantillas, escenas 3D y fondos que se copian como prompt para tu IA.",
+		"category": "Constructores con IA",
+		"tech": [
+			"Next.js",
+			"Vue",
+			"Svelte",
+			"Astro",
+			"Nuxt",
+			"HTML",
+			"WordPress",
+			"React"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/getlayers-ai.png"
+	},
+	{
+		"id": "svgrepo-com",
+		"name": "SVG Repo - Free SVG Vectors and Icons",
+		"url": "https://www.svgrepo.com/",
+		"category": "Iconos e ilustraciones",
+		"tech": [],
+		"status": "activo",
+		"verified": false,
+		"private": false
+	},
+	{
+		"id": "hugeicons-com",
+		"name": "Hugeicons",
+		"url": "https://hugeicons.com/",
+		"description": "Más de 60.000 iconos gratuitos y Pro en 10 estilos.",
+		"category": "Iconos e ilustraciones",
+		"tech": [
+			"React",
+			"Vue",
+			"Angular",
+			"Svelte",
+			"Solid",
+			"React Native",
+			"Flutter",
+			"Figma"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/hugeicons-com.ico"
+	},
+	{
+		"id": "fonts-google-com",
+		"name": "Google Fonts",
+		"url": "https://fonts.google.com/?icon.platform=web",
+		"description": "Catálogo de fuentes abiertas para la web.",
+		"category": "Fuentes y color",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/fonts-google-com.svg"
+	},
+	{
+		"id": "tabler-io-icons",
+		"name": "Tabler Icons",
+		"url": "https://tabler.io/icons",
+		"description": "Más de 6.000 iconos SVG de código abierto, editables en tamaño, color y trazo.",
+		"category": "Iconos e ilustraciones",
+		"tech": [
+			"React",
+			"Solid",
+			"Vue",
+			"Svelte",
+			"Angular",
+			"Astro",
+			"React Native",
+			"Figma"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/tabler-io-icons.ico"
+	},
+	{
+		"id": "animateicons-in-icons-lucide",
+		"name": "AnimateIcons",
+		"url": "https://animateicons.in/icons/lucide",
+		"description": "Iconos Lucide animados, con tamaño, color y duración configurables.",
+		"category": "Iconos e ilustraciones",
+		"tech": [
+			"React",
+			"Vue",
+			"Angular",
+			"JavaScript"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/animateicons-in-icons-lucide.png"
+	},
+	{
+		"id": "icons0-dev",
+		"name": "icons0",
+		"url": "https://icons0.dev/",
+		"description": "Busca entre 200.000 iconos abiertos desde la web o por MCP con tu agente.",
+		"category": "Iconos e ilustraciones",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/icons0-dev.ico"
+	},
+	{
+		"id": "icoon-co",
+		"name": "Icoon",
+		"url": "https://www.icoon.co/",
+		"description": "Tienda de iconos e ilustraciones 3D generados con IA.",
+		"category": "Iconos e ilustraciones",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false
+	},
+	{
+		"id": "3dicons-com",
+		"name": "3D icons",
+		"url": "https://3dicons.com/",
+		"description": "Más de 4.000 iconos 3D en PNG y Figma, con varias paletas y ángulos.",
+		"category": "Iconos e ilustraciones",
+		"tech": [
+			"Figma"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false
+	},
+	{
+		"id": "github-com-stereobooster-react-snap",
+		"name": "react-snap",
+		"url": "https://github.com/stereobooster/react-snap",
+		"description": "Prerenderizado estático sin configuración para aplicaciones de una página.",
+		"category": "Herramientas de desarrollo",
+		"tech": [
+			"React",
+			"Vue"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/github-com-stereobooster-react-snap.svg"
+	},
+	{
+		"id": "reactrouter-com-docs-en-v6",
+		"name": "React Router v6",
+		"url": "https://reactrouter.com/6.30.6",
+		"description": "Documentación de React Router 6, una versión anterior a la actual.",
+		"category": "Aprendizaje y documentación",
+		"tech": [
+			"React"
+		],
+		"status": "antiguo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/reactrouter-com-docs-en-v6.png"
+	},
+	{
+		"id": "magic-reactjs-net-htmltojsx-htm",
+		"name": "HTML to JSX",
+		"url": "https://magic.reactjs.net/htmltojsx.htm",
+		"category": "Herramientas de desarrollo",
+		"tech": [],
+		"status": "activo",
+		"verified": false,
+		"private": false
+	},
+	{
+		"id": "es-reactjs-org",
+		"name": "React en español",
+		"url": "https://es.react.dev/",
+		"description": "Documentación oficial de React traducida al español.",
+		"category": "Aprendizaje y documentación",
+		"tech": [
+			"React"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/es-reactjs-org.png"
+	},
+	{
+		"id": "es-redux-js-org",
+		"name": "Redux en español",
+		"url": "https://es.redux.js.org/",
+		"description": "Documentación de Redux traducida al español.",
+		"category": "Aprendizaje y documentación",
+		"tech": [
+			"Redux",
+			"JavaScript"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/es-redux-js-org.ico"
+	},
+	{
+		"id": "create-react-app-dev",
+		"name": "Create React App",
+		"url": "https://create-react-app.dev/",
+		"description": "Herramienta para iniciar proyectos React, ya obsoleta según su propio sitio.",
+		"category": "Herramientas de desarrollo",
+		"tech": [
+			"React"
+		],
+		"status": "antiguo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/create-react-app-dev.ico"
+	},
+	{
+		"id": "mui-com",
+		"name": "MUI",
+		"url": "https://mui.com/",
+		"description": "Biblioteca de componentes de React con Material Design o tu propio sistema.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"React"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/mui-com.svg"
+	},
+	{
+		"id": "github-com-reduxjs-redux-thunk",
+		"name": "Redux Thunk",
+		"url": "https://github.com/reduxjs/redux-thunk",
+		"description": "Middleware para escribir lógica asíncrona con el store de Redux.",
+		"category": "Herramientas de desarrollo",
+		"tech": [
+			"Redux"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/github-com-reduxjs-redux-thunk.svg"
+	},
+	{
+		"id": "ant-design",
+		"name": "Ant Design",
+		"url": "https://ant.design/",
+		"description": "Lenguaje de diseño y biblioteca de componentes de React para empresas.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"React"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/ant-design.png"
+	},
+	{
+		"id": "chakra-ui-com",
+		"name": "Chakra UI",
+		"url": "https://chakra-ui.com/",
+		"description": "Componentes modulares y accesibles para aplicaciones React.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"React",
+			"Next.js"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/chakra-ui-com.ico"
+	},
+	{
+		"id": "youtube-com-watch",
+		"name": "Curso de Next.js 12 desde cero",
+		"url": "https://www.youtube.com/watch?v=pFT8wD2uRSE",
+		"description": "Curso en vídeo de Next.js 12 que crea dos proyectos prácticos desde cero.",
+		"category": "Aprendizaje y documentación",
+		"tech": [
+			"Next.js",
+			"React"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/youtube-com-watch.png"
+	},
+	{
+		"id": "remotion-dev",
+		"name": "Remotion",
+		"url": "https://www.remotion.dev/",
+		"description": "Crea vídeos y gráficos animados programando con React.",
+		"category": "Herramientas de desarrollo",
+		"tech": [
+			"React"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/remotion-dev.png"
+	},
+	{
+		"id": "usehooks-com",
+		"name": "useHooks",
+		"url": "https://usehooks.com/",
+		"description": "Colección de hooks de React compatibles con servidor.",
+		"category": "Herramientas de desarrollo",
+		"tech": [
+			"React"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/usehooks-com.png"
+	},
+	{
+		"id": "op6gls4d1-bkt-clouddn-com-vuejs-vuex-docs-es",
+		"name": "Vuex - Documentación ES - GitBook",
+		"url": "http://op6gls4d1.bkt.clouddn.com/vuejs-vuex/docs/es/",
+		"category": "Aprendizaje y documentación",
+		"tech": [],
+		"status": "caido",
+		"verified": false,
+		"private": false
+	},
+	{
+		"id": "github-com-hapijs-joi",
+		"name": "Joi",
+		"url": "https://github.com/hapijs/joi",
+		"description": "Lenguaje de esquemas y validador de datos para JavaScript.",
+		"category": "Herramientas de desarrollo",
+		"tech": [
+			"JavaScript"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/github-com-hapijs-joi.svg"
+	},
+	{
+		"id": "github-com-simplesmiler-vue-focus",
+		"name": "vue-focus",
+		"url": "https://github.com/simplesmiler/vue-focus",
+		"description": "Directiva reutilizable para gestionar el foco en componentes de Vue 2.",
+		"category": "Herramientas de desarrollo",
+		"tech": [
+			"Vue"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/github-com-simplesmiler-vue-focus.svg"
+	},
+	{
+		"id": "code-visualstudio-com",
+		"name": "Visual Studio Code",
+		"url": "https://code.visualstudio.com/",
+		"description": "Editor de código con funciones para trabajar junto a agentes de IA.",
+		"category": "Herramientas de desarrollo",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/code-visualstudio-com.ico"
+	},
+	{
+		"id": "marketplace-visualstudio-com-items",
+		"name": "Vetur",
+		"url": "https://marketplace.visualstudio.com/items?itemName=octref.vetur",
+		"description": "Extensión de VS Code para Vue, reemplazada por el soporte oficial Volar.",
+		"category": "Herramientas de desarrollo",
+		"tech": [
+			"Vue"
+		],
+		"status": "antiguo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/marketplace-visualstudio-com-items.ico"
+	},
+	{
+		"id": "alligator-io-vuejs-component-lifecycle",
+		"name": "Vue.js Lifecycle Hooks",
+		"url": "https://www.digitalocean.com/community/tutorials/vuejs-component-lifecycle",
+		"description": "Tutorial sobre los hooks del ciclo de vida de los componentes de Vue.",
+		"category": "Aprendizaje y documentación",
+		"tech": [
+			"Vue"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/alligator-io-vuejs-component-lifecycle.svg"
+	},
+	{
+		"id": "codecourse-com-lessons-unit-testing-vuex-1775",
+		"name": "Unit testing Vuex | Codecourse",
+		"url": "https://www.codecourse.com/lessons/unit-testing-vuex/1775",
+		"category": "Aprendizaje y documentación",
+		"tech": [],
+		"status": "caido",
+		"verified": false,
+		"private": false
+	},
+	{
+		"id": "github-com-dgrubelic-vue-authenticate",
+		"name": "vue-authenticate",
+		"url": "https://github.com/dgrubelic/vue-authenticate",
+		"description": "Biblioteca de autenticación para Vue.",
+		"category": "Herramientas de desarrollo",
+		"tech": [
+			"Vue"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/github-com-dgrubelic-vue-authenticate.svg"
+	},
+	{
+		"id": "escuelavue-es-como-aprender-vue",
+		"name": "Cómo aprender Vue.js",
+		"url": "https://escuelavue.es/software/como-aprender-vue/",
+		"description": "Orden para estudiar Vue 3, Composition API, Pinia, Router, Vite y Nuxt.",
+		"category": "Aprendizaje y documentación",
+		"tech": [
+			"Vue",
+			"Nuxt"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/escuelavue-es-como-aprender-vue.svg"
+	},
+	{
+		"id": "github-com-vuejs-awesome-vue",
+		"name": "Awesome Vue",
+		"url": "https://github.com/vuejs/awesome-vue",
+		"description": "Lista curada de recursos relacionados con Vue.",
+		"category": "Directorios de recursos",
+		"tech": [
+			"Vue"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/github-com-vuejs-awesome-vue.svg"
+	},
+	{
+		"id": "es-nuxtjs-org-docs-2-x-get-started-installation",
+		"name": "Instalación de Nuxt 2",
+		"url": "https://nuxt.com/docs/2.x/getting-started/installation",
+		"description": "Instalación de Nuxt 2, versión que llegó al fin de su vida útil en 2024.",
+		"category": "Aprendizaje y documentación",
+		"tech": [
+			"Nuxt",
+			"Vue"
+		],
+		"status": "antiguo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/es-nuxtjs-org-docs-2-x-get-started-installation.png"
+	},
+	{
+		"id": "explorers-netlify-com-learn-get-started-with-nuxt-nuxt-seo",
+		"name": "Nuxt SEO",
+		"url": "https://www.youtube.com/watch?v=pbMA28qcW7I&list=PLzlG0L9jlhENcUiAQU1x95sBLLCUihwIX&index=6",
+		"description": "Lección en vídeo sobre SEO con Nuxt y vue-meta.",
+		"category": "Aprendizaje y documentación",
+		"tech": [
+			"Nuxt",
+			"Vue"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/explorers-netlify-com-learn-get-started-with-nuxt-nuxt-seo.png"
+	},
+	{
+		"id": "bootstrap-vue-org-docs",
+		"name": "BootstrapVue",
+		"url": "https://bootstrap-vue.org/docs/",
+		"description": "Bootstrap 4 para Vue 2; sus autores recomiendan pasar a BootstrapVueNext.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"Vue",
+			"Bootstrap"
+		],
+		"status": "antiguo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/bootstrap-vue-org-docs.png"
+	},
+	{
+		"id": "v3-nuxtjs-org",
+		"name": "Nuxt",
+		"url": "https://nuxt.com/",
+		"description": "Framework full-stack para Vue con rutas por archivos y renderizado en servidor.",
+		"category": "Herramientas de desarrollo",
+		"tech": [
+			"Nuxt",
+			"Vue"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/v3-nuxtjs-org.png"
+	},
+	{
+		"id": "vuetelescope-com-explore",
+		"name": "Explore Vue.js showcases | Vue Telescope",
+		"url": "https://vuetelescope.com/explore",
+		"category": "Otros",
+		"tech": [],
+		"status": "caido",
+		"verified": false,
+		"private": false
+	},
+	{
+		"id": "nativescript-vue-org-en-docs-introduction",
+		"name": "Introduction - NativeScript-Vue",
+		"url": "https://nativescript-vue.org/en/docs/introduction/",
+		"category": "Aprendizaje y documentación",
+		"tech": [],
+		"status": "caido",
+		"verified": false,
+		"private": false
+	},
+	{
+		"id": "market-nativescript-org",
+		"name": "NativeScript Marketplace",
+		"url": "https://market.nativescript.org/",
+		"description": "Directorio de plugins para crear apps iOS y Android con NativeScript.",
+		"category": "Directorios de recursos",
+		"tech": [
+			"NativeScript",
+			"Vue",
+			"Angular",
+			"Svelte"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/market-nativescript-org.ico"
+	},
+	{
+		"id": "github-com-gonzalo2310-awesome-nativescript-vue",
+		"name": "Awesome NativeScript-Vue",
+		"url": "https://github.com/Gonzalo2310/awesome-nativescript-vue",
+		"description": "Lista de recursos de NativeScript-Vue: docs, artículos, vídeos y plantillas.",
+		"category": "Directorios de recursos",
+		"tech": [
+			"NativeScript",
+			"Vue"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/github-com-gonzalo2310-awesome-nativescript-vue.svg"
+	},
+	{
+		"id": "youtube-com-watch-2",
+		"name": "Apps nativas con NativeScript-Vue",
+		"url": "https://www.youtube.com/watch?v=k3NTWrxyvZA&ab_channel=SevillaJS",
+		"description": "Charla de SevillaJS sobre desarrollo de apps nativas con NativeScript-Vue.",
+		"category": "Aprendizaje y documentación",
+		"tech": [
+			"NativeScript",
+			"Vue"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/youtube-com-watch-2.png"
+	},
+	{
+		"id": "youtube-com-watch-3",
+		"name": "Show the weather forecast in a NativeScript with Vue.js iOS and Android Application - YouTube",
+		"url": "https://www.youtube.com/watch?v=Z5YMfADiUZU&ab_channel=HERETechnologies",
+		"category": "Otros",
+		"tech": [],
+		"status": "activo",
+		"verified": false,
+		"private": false,
+		"logo": "/logos/youtube-com-watch-3.png"
+	},
+	{
+		"id": "directus-io",
+		"name": "Directus",
+		"url": "https://directus.com/",
+		"description": "Backend y CMS headless autoalojable sobre cualquier base de datos.",
+		"category": "Backend y datos",
+		"tech": [
+			"Next.js",
+			"Nuxt",
+			"Astro",
+			"Svelte",
+			"Angular",
+			"Laravel",
+			"Solid",
+			"Flutter",
+			"React",
+			"Vue"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/directus-io.png"
+	},
+	{
+		"id": "strapi-io",
+		"name": "Strapi",
+		"url": "https://strapi.io/",
+		"description": "CMS headless de código abierto en JavaScript y TypeScript.",
+		"category": "Backend y datos",
+		"tech": [
+			"TypeScript",
+			"JavaScript",
+			"Next.js",
+			"Nuxt",
+			"Astro",
+			"Svelte",
+			"Flutter",
+			"React Native",
+			"React",
+			"Vue"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/strapi-io.png"
+	},
+	{
+		"id": "storyblok-com",
+		"name": "Storyblok",
+		"url": "https://www.storyblok.com/",
+		"description": "CMS headless con editor visual.",
+		"category": "Backend y datos",
+		"tech": [
+			"Next.js",
+			"Nuxt",
+			"Astro",
+			"Angular",
+			"React",
+			"Vue"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/storyblok-com.svg"
+	},
+	{
+		"id": "factor-dev",
+		"name": "JavaScript CMS Framework - Factor",
+		"url": "https://factor.dev/",
+		"category": "Otros",
+		"tech": [],
+		"status": "caido",
+		"verified": false,
+		"private": false
+	},
+	{
+		"id": "youtube-com-watch-4",
+		"name": "Vue.js: Composition API, Pinia y Router 4",
+		"url": "https://www.youtube.com/watch?v=sHXxASRp2nw",
+		"description": "Vídeo sobre Composition API, Pinia, Router 4 y TypeScript.",
+		"category": "Aprendizaje y documentación",
+		"tech": [
+			"Vue",
+			"TypeScript"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/youtube-com-watch-4.png"
+	},
+	{
+		"id": "youtube-com-watch-5",
+		"name": "Vue 3 Composition API Tutorial",
+		"url": "https://www.youtube.com/watch?v=3B0ry4GI1cE",
+		"description": "Primera parte de una serie: Options API frente a Composition API.",
+		"category": "Aprendizaje y documentación",
+		"tech": [
+			"Vue"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/youtube-com-watch-5.png"
+	},
+	{
+		"id": "bolt-new",
+		"name": "Bolt",
+		"url": "https://bolt.new/",
+		"description": "Crea sitios, apps y prototipos describiéndolos con palabras.",
+		"category": "Constructores con IA",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/bolt-new.svg"
+	},
+	{
+		"id": "stitch-withgoogle-com",
+		"name": "Stitch",
+		"url": "https://stitch.withgoogle.com/",
+		"description": "Genera interfaces para apps móviles y web con IA.",
+		"category": "Constructores con IA",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/stitch-withgoogle-com.png"
+	},
+	{
+		"id": "github-com-nirdiamant-agents-towards-production",
+		"name": "Agents Towards Production",
+		"url": "https://github.com/NirDiamant/agents-towards-production",
+		"description": "Tutoriales con código para llevar agentes de IA generativa a producción.",
+		"category": "Aprendizaje y documentación",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/github-com-nirdiamant-agents-towards-production.svg"
+	},
+	{
+		"id": "spline-design",
+		"name": "Spline",
+		"url": "https://spline.design/",
+		"description": "Diseño 3D interactivo en el navegador, con colaboración en tiempo real.",
+		"category": "Animación y efectos",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/spline-design.png"
+	},
+	{
+		"id": "magicloops-dev-es",
+		"name": "Magic Loops",
+		"url": "https://magicloops.dev/es",
+		"description": "Combina LLM y código, sin programar, para crear apps y automatizaciones.",
+		"category": "Constructores con IA",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/magicloops-dev-es.ico"
+	},
+	{
+		"id": "manus-im",
+		"name": "Manus",
+		"url": "https://manus.im/",
+		"description": "Agente de IA que ejecuta tareas y automatiza flujos de trabajo.",
+		"category": "Constructores con IA",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/manus-im.svg"
+	},
+	{
+		"id": "motionsites-ai",
+		"name": "MotionSites",
+		"url": "https://motionsites.ai/",
+		"description": "Prompts e inspiración de diseño para crear sitios web con IA.",
+		"category": "Constructores con IA",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/motionsites-ai.png"
+	},
+	{
+		"id": "websiteprompts-ai",
+		"name": "Websiteprompts.ai",
+		"url": "https://websiteprompts.ai/",
+		"description": "Prompts gratuitos de sitios web para pegar en Lovable, Bolt o Claude.",
+		"category": "Constructores con IA",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/websiteprompts-ai.png"
+	},
+	{
+		"id": "21st-dev",
+		"name": "21st",
+		"url": "https://21st.dev/",
+		"description": "Más de 12.000 componentes y temas de shadcn, instalables con un comando.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"React",
+			"TypeScript",
+			"Tailwind",
+			"shadcn/ui"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/21st-dev.ico"
+	},
+	{
+		"id": "lemonsqueezy-com",
+		"name": "Lemon Squeezy",
+		"url": "https://www.lemonsqueezy.com/",
+		"description": "Pagos, impuestos y suscripciones para vender software y productos digitales.",
+		"category": "Backend y datos",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/lemonsqueezy-com.webp"
+	},
+	{
+		"id": "fontspark-netlify-app",
+		"name": "FontSpark",
+		"url": "https://fontspark.netlify.app/",
+		"description": "Sugiere fuentes filtrando por tipo y grosor; incluye un directorio.",
+		"category": "Fuentes y color",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/fontspark-netlify-app.ico"
+	},
+	{
+		"id": "modernfontstacks-com",
+		"name": "Modern Font Stacks",
+		"url": "https://modernfontstacks.com/",
+		"description": "Pilas de fuentes del sistema en CSS, ordenadas por tipo de letra.",
+		"category": "Fuentes y color",
+		"tech": [
+			"CSS"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/modernfontstacks-com.png"
+	},
+	{
+		"id": "fontpair-co",
+		"name": "Fontpair",
+		"url": "https://fontpair.co/",
+		"description": "Combinaciones de Google Fonts para explorar y probar con tu contenido.",
+		"category": "Fuentes y color",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/fontpair-co.png"
+	},
+	{
+		"id": "cofolios-com",
+		"name": "Cofolios",
+		"url": "https://www.cofolios.com/",
+		"description": "Portafolios de diseñadores de grandes empresas tecnológicas.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/cofolios-com.png"
+	},
+	{
+		"id": "dark-design",
+		"name": "Dark Design",
+		"url": "https://www.dark.design/",
+		"description": "Galería de sitios web con tema oscuro.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/dark-design.avif"
+	},
+	{
+		"id": "404s-design",
+		"name": "404s",
+		"url": "https://www.404s.design/",
+		"description": "Galería de páginas de error creativas.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/404s-design.png"
+	},
+	{
+		"id": "styles-refero-design",
+		"name": "Refero Styles",
+		"url": "https://styles.refero.design/",
+		"description": "Estilos de sitios reales con su DESIGN.md: colores, tipografía y espaciado.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/styles-refero-design.png"
+	},
+	{
+		"id": "websitevice-com",
+		"name": "Websitevice",
+		"url": "https://websitevice.com/",
+		"description": "Ejemplos de sitios web modernos para inspirarse.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/websitevice-com.png"
+	},
+	{
+		"id": "collectui-com",
+		"name": "CollectUI",
+		"url": "https://collectui.com/",
+		"description": "Inspiración diaria de diseños de interfaz y portafolios.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/collectui-com.png"
+	},
+	{
+		"id": "60fps-design",
+		"name": "60fps",
+		"url": "https://60fps.design/",
+		"description": "Colección de animaciones e interacciones de apps iOS y web.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/60fps-design.png"
+	},
+	{
+		"id": "seesaw-website",
+		"name": "SEESAW",
+		"url": "https://www.seesaw.website/",
+		"description": "Colección de sitios web seleccionados, con actualización diaria y categorías.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false
+	},
+	{
+		"id": "liquidglassdesign-com",
+		"name": "Liquid Glass Design",
+		"url": "https://liquidglassdesign.com/",
+		"description": "Más de 170 ejemplos de liquid glass y glassmorfismo, con prompts de estilo.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/liquidglassdesign-com.png"
+	},
+	{
+		"id": "calltoinspiration-com",
+		"name": "CallToInspiration",
+		"url": "https://calltoinspiration.com/",
+		"description": "Ejemplos de interfaz de sitios y apps: logins, precios, formularios y más.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/calltoinspiration-com.png"
+	},
+	{
+		"id": "statichunt-com",
+		"name": "Statichunt",
+		"url": "https://statichunt.com/",
+		"description": "Directorio de temas, plantillas, UI kits y herramientas para desarrollo web.",
+		"category": "Directorios de recursos",
+		"tech": [
+			"Astro",
+			"Next.js",
+			"Nuxt",
+			"Tailwind",
+			"shadcn/ui",
+			"React",
+			"Vue"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false
+	},
+	{
+		"id": "viewportui-com",
+		"name": "Viewport UI",
+		"url": "https://viewportui.com/",
+		"description": "Galería de diseños e interacciones de interfaz publicados en X.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/viewportui-com.png"
+	},
+	{
+		"id": "bentogrids-com",
+		"name": "Bento Grids",
+		"url": "https://bentogrids.com/",
+		"description": "Colección de diseños con estilo bento.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/bentogrids-com.png"
+	},
+	{
+		"id": "curated-design",
+		"name": "Curated",
+		"url": "https://curated.design/",
+		"description": "Sitios y landing pages reales, filtrables por estilo o sector.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/curated-design.svg"
+	},
+	{
+		"id": "rebrand-gallery",
+		"name": "Rebrand Gallery",
+		"url": "https://www.rebrand.gallery/",
+		"description": "Galería de rediseños de marca con vídeo, logos, color y tipografía.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/rebrand-gallery.png"
+	},
+	{
+		"id": "layers-to-explore",
+		"name": "Layers",
+		"url": "https://layers.to/explore",
+		"description": "Comunidad donde se publican y exploran trabajos de diseño.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/layers-to-explore.ico"
+	},
+	{
+		"id": "mobbin-com",
+		"name": "Mobbin",
+		"url": "https://mobbin.com/",
+		"description": "Biblioteca de capturas de apps móviles y web, con búsqueda.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/mobbin-com.svg"
+	},
+	{
+		"id": "cta-gallery",
+		"name": "CTA.gallery",
+		"url": "https://www.cta.gallery/",
+		"description": "Galería de llamadas a la acción de sitios web.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/cta-gallery.png"
+	},
+	{
+		"id": "supahero-io",
+		"name": "Supahero",
+		"url": "https://supahero.io/",
+		"description": "Biblioteca de secciones hero de sitios web.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/supahero-io.ico"
+	},
+	{
+		"id": "navbar-gallery",
+		"name": "Navbar Gallery",
+		"url": "https://www.navbar.gallery/",
+		"description": "Galería de barras de navegación de sitios web.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/navbar-gallery.svg"
+	},
+	{
+		"id": "footer-design",
+		"name": "Footer",
+		"url": "https://www.footer.design/",
+		"description": "Galería de pies de página, ordenable por tipo y estilo.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/footer-design.png"
+	},
+	{
+		"id": "getdesign-md",
+		"name": "getdesign.md",
+		"url": "https://getdesign.md/",
+		"description": "Análisis de sistemas de diseño de sitios populares para usar con agentes.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/getdesign-md.svg"
+	},
+	{
+		"id": "designspells-com",
+		"name": "Design Spells",
+		"url": "https://designspells.com/",
+		"description": "Colección de detalles de diseño: animaciones, transiciones y guiños ocultos.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false
+	},
+	{
+		"id": "recent-design",
+		"name": "Recent",
+		"url": "https://recent.design/?ref=godly",
+		"description": "Feed de diseño reciente: interfaces, marca, motion, ilustración y pósteres.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/recent-design.svg"
+	},
+	{
+		"id": "dribbble-com",
+		"name": "Dribbble - Discover the World’s Top Designers & Creative Professionals",
+		"url": "https://dribbble.com/",
+		"category": "Otros",
+		"tech": [],
+		"status": "activo",
+		"verified": false,
+		"private": false
+	},
+	{
+		"id": "quicktype-io",
+		"name": "quicktype",
+		"url": "https://quicktype.io/",
+		"description": "Genera modelos y serializadores tipados a partir de JSON en muchos lenguajes.",
+		"category": "Herramientas de desarrollo",
+		"tech": [
+			"TypeScript",
+			"JavaScript",
+			"Go",
+			"Python",
+			"PHP"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/quicktype-io.png"
+	},
+	{
+		"id": "overapi-com",
+		"name": "OverAPI",
+		"url": "https://overapi.com/",
+		"description": "Hojas de referencia de lenguajes, herramientas web, bases de datos y SO.",
+		"category": "Aprendizaje y documentación",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/overapi-com.ico"
+	},
+	{
+		"id": "svgviewer-dev",
+		"name": "SVG Viewer",
+		"url": "https://www.svgviewer.dev/",
+		"description": "Visualiza, edita y optimiza SVG en línea.",
+		"category": "Generadores CSS/SVG",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/svgviewer-dev.ico"
+	},
+	{
+		"id": "projectwallace-com-css-code-quality",
+		"name": "Project Wallace",
+		"url": "https://www.projectwallace.com/css-code-quality",
+		"description": "Analiza tu CSS e indica qué aspectos mejorar.",
+		"category": "Herramientas de desarrollo",
+		"tech": [
+			"CSS"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/projectwallace-com-css-code-quality.png"
+	},
+	{
+		"id": "pagespeed-web-dev",
+		"name": "PageSpeed Insights",
+		"url": "https://pagespeed.web.dev/",
+		"description": "Herramienta de Google para medir el rendimiento de una página.",
+		"category": "Herramientas de desarrollo",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/pagespeed-web-dev.png"
+	},
+	{
+		"id": "magicpattern-design",
+		"name": "MagicPattern",
+		"url": "https://www.magicpattern.design/",
+		"description": "Más de 30 herramientas para crear patrones, degradados y blobs en SVG o CSS.",
+		"category": "Generadores CSS/SVG",
+		"tech": [
+			"CSS"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/magicpattern-design.png"
+	},
+	{
+		"id": "web-check-xyz",
+		"name": "Web Check",
+		"url": "https://web-check.xyz/",
+		"description": "Herramienta OSINT y de seguridad para inspeccionar cualquier sitio web.",
+		"category": "Herramientas de desarrollo",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/web-check-xyz.svg"
+	},
+	{
+		"id": "simpleparallax-com",
+		"name": "simpleParallax.js",
+		"url": "https://simpleparallax.com/",
+		"description": "Biblioteca ligera que añade efecto parallax a cualquier imagen.",
+		"category": "Animación y efectos",
+		"tech": [
+			"React",
+			"Next.js",
+			"JavaScript"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/simpleparallax-com.ico"
+	},
+	{
+		"id": "responsively-app",
+		"name": "Responsively App",
+		"url": "https://responsively.app/",
+		"description": "Navegador para desarrollar y probar diseños responsive.",
+		"category": "Herramientas de desarrollo",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/responsively-app.png"
+	},
+	{
+		"id": "lenis-dev",
+		"name": "Lenis",
+		"url": "https://lenis.dev/",
+		"description": "Biblioteca ligera de desplazamiento suave de código abierto.",
+		"category": "Animación y efectos",
+		"tech": [
+			"JavaScript",
+			"React",
+			"Vue"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/lenis-dev.png"
+	},
+	{
+		"id": "rapidapi-com",
+		"name": "RapidAPI",
+		"url": "https://rapidapi.com/",
+		"description": "Hub de APIs para buscar y explorar las disponibles para tu proyecto.",
+		"category": "Directorios de recursos",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/rapidapi-com.png"
+	},
+	{
+		"id": "anyapi-io",
+		"name": "AnyAPI",
+		"url": "https://anyapi.io/",
+		"description": "APIs REST para validar datos, convertir divisas, geolocalizar IP y más.",
+		"category": "Backend y datos",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/anyapi-io.png"
+	},
+	{
+		"id": "publicapis-dev",
+		"name": "Public APIs",
+		"url": "https://publicapis.dev/",
+		"description": "Lista colaborativa de más de 1.400 APIs públicas por categoría.",
+		"category": "Directorios de recursos",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/publicapis-dev.png"
+	},
+	{
+		"id": "swiperjs-com",
+		"name": "Swiper",
+		"url": "https://swiperjs.com/",
+		"description": "Slider táctil para móviles con transiciones aceleradas por hardware.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"JavaScript",
+			"React",
+			"Vue",
+			"Svelte",
+			"Angular"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/swiperjs-com.png"
+	},
+	{
+		"id": "floating-ui-com",
+		"name": "Floating UI",
+		"url": "https://floating-ui.com/",
+		"description": "Biblioteca para posicionar tooltips, popovers y menús flotantes.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"JavaScript",
+			"React",
+			"React Native",
+			"Vue"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/floating-ui-com.ico"
+	},
+	{
+		"id": "atroposjs-com",
+		"name": "Atropos",
+		"url": "https://atroposjs.com/",
+		"description": "Biblioteca de código abierto para efectos parallax 3D al pasar el cursor.",
+		"category": "Animación y efectos",
+		"tech": [
+			"JavaScript",
+			"React"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/atroposjs-com.png"
+	},
+	{
+		"id": "materialdesignicons-com",
+		"name": "Material Design Icons",
+		"url": "https://pictogrammers.com/library/mdi/?welcome",
+		"description": "Más de 7.200 iconos que siguen las pautas de Material Design.",
+		"category": "Iconos e ilustraciones",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/materialdesignicons-com.png"
+	},
+	{
+		"id": "gsap-com",
+		"name": "GSAP",
+		"url": "https://gsap.com/",
+		"description": "Biblioteca de animación en JavaScript.",
+		"category": "Animación y efectos",
+		"tech": [
+			"JavaScript",
+			"React",
+			"Vue",
+			"Angular",
+			"Next.js",
+			"Nuxt",
+			"WordPress"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/gsap-com.png"
+	},
+	{
+		"id": "unlighthouse-dev",
+		"name": "Unlighthouse",
+		"url": "https://unlighthouse.dev/",
+		"description": "Ejecuta auditorías de Lighthouse en todo un sitio desde la línea de comandos.",
+		"category": "Herramientas de desarrollo",
+		"tech": [
+			"Node.js"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/unlighthouse-dev.png"
+	},
+	{
+		"id": "motion-dev",
+		"name": "Motion",
+		"url": "https://motion.dev/",
+		"description": "Biblioteca de animación, antes llamada Framer Motion.",
+		"category": "Animación y efectos",
+		"tech": [
+			"React",
+			"JavaScript",
+			"Vue"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/motion-dev.svg"
+	},
+	{
+		"id": "driverjs-com",
+		"name": "Driver.js",
+		"url": "https://driverjs.com/",
+		"description": "Biblioteca sin dependencias para tours de producto y resaltado de funciones.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"JavaScript",
+			"React",
+			"Vue",
+			"Angular",
+			"Svelte",
+			"Solid",
+			"Next.js"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/driverjs-com.png"
+	},
+	{
+		"id": "itsfree-dev-es",
+		"name": "it's free*",
+		"url": "https://itsfree.dev/es",
+		"description": "Herramientas gratuitas para developers: APIs, hosting, bases de datos e IA.",
+		"category": "Directorios de recursos",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/itsfree-dev-es.svg"
+	},
+	{
+		"id": "pocketbase-io",
+		"name": "PocketBase",
+		"url": "https://pocketbase.io/",
+		"description": "Backend abierto en un archivo, con base de datos, auth y almacenamiento.",
+		"category": "Backend y datos",
+		"tech": [
+			"SQLite",
+			"Go",
+			"JavaScript"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/pocketbase-io.png"
+	},
+	{
+		"id": "lawsofux-com",
+		"name": "Laws of UX",
+		"url": "https://lawsofux.com/",
+		"description": "Colección de buenas prácticas para diseñar interfaces.",
+		"category": "Aprendizaje y documentación",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/lawsofux-com.svg"
+	},
+	{
+		"id": "headlessx-saify-me",
+		"name": "HeadlessX",
+		"url": "https://headlessx.saify.me/",
+		"description": "Plataforma autoalojada de scraping, con trabajos en cola y claves de API.",
+		"category": "Herramientas de desarrollo",
+		"tech": [],
+		"logo": "/logos/headlessx-saify-me.svg",
+		"status": "activo",
+		"verified": true,
+		"private": false
+	},
+	{
+		"id": "github-com-devcaress-guia-entrevistas-de-programacion",
+		"name": "Guía de entrevistas de programación",
+		"url": "https://github.com/DevCaress/guia-entrevistas-de-programacion",
+		"description": "Guía en español para preparar entrevistas técnicas de software.",
+		"category": "Aprendizaje y documentación",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/github-com-devcaress-guia-entrevistas-de-programacion.svg"
+	},
+	{
+		"id": "github-com-hasaneyldrm-exercises-dataset",
+		"name": "exercises-dataset",
+		"url": "https://github.com/hasaneyldrm/exercises-dataset",
+		"description": "Dataset de 1.324 ejercicios físicos con GIF, grupos musculares e instrucciones.",
+		"category": "Otros",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/github-com-hasaneyldrm-exercises-dataset.svg"
+	},
+	{
+		"id": "97cosas-com",
+		"name": "97 Cosas",
+		"url": "https://97cosas.com/",
+		"description": "Traducción al español de la serie «97 Things» de O'Reilly.",
+		"category": "Aprendizaje y documentación",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false
+	},
+	{
+		"id": "resend-com",
+		"name": "Resend",
+		"url": "https://resend.com/",
+		"description": "Servicio de correo transaccional y de marketing para developers.",
+		"category": "Backend y datos",
+		"tech": [
+			"Node.js",
+			"Python",
+			"PHP",
+			"Go",
+			"Laravel",
+			"React"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/resend-com.png"
+	},
+	{
+		"id": "beefree-io-editor",
+		"name": "RGE Studio",
+		"url": "https://reallygoodemails.com/start-designing?template=empty",
+		"description": "Editor de correos de arrastrar y soltar, antes llamado Beefree.",
+		"category": "Herramientas de desarrollo",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/beefree-io-editor.ico"
+	},
+	{
+		"id": "patterns-dev",
+		"name": "Patterns.dev",
+		"url": "https://www.patterns.dev/",
+		"description": "Patrones de diseño y rendimiento para aplicaciones web.",
+		"category": "Aprendizaje y documentación",
+		"tech": [
+			"JavaScript",
+			"React",
+			"Next.js",
+			"Vue"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/patterns-dev.ico"
+	},
+	{
+		"id": "turso-tech",
+		"name": "Turso",
+		"url": "https://turso.tech/",
+		"description": "Base de datos basada en SQLite para crear una por usuario, agente o inquilino.",
+		"category": "Backend y datos",
+		"tech": [
+			"SQLite",
+			"TypeScript",
+			"Python",
+			"Go"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/turso-tech.ico"
+	},
+	{
+		"id": "upstash-com",
+		"name": "Upstash",
+		"url": "https://upstash.com/",
+		"description": "Bases de datos Redis, vectorial y de búsqueda sin servidor.",
+		"category": "Backend y datos",
+		"tech": [
+			"Redis"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/upstash-com.png"
+	},
+	{
+		"id": "neon-com",
+		"name": "Neon",
+		"url": "https://neon.com/",
+		"description": "Postgres sin servidor con auth, funciones, almacenamiento y ramas instantáneas.",
+		"category": "Backend y datos",
+		"tech": [
+			"PostgreSQL"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/neon-com.svg"
+	},
+	{
+		"id": "mongodb-com-es-products-platform-atlas-database",
+		"name": "MongoDB Atlas",
+		"url": "https://www.mongodb.com/es/products/platform/atlas-database",
+		"description": "Base de datos documental de MongoDB como servicio gestionado.",
+		"category": "Backend y datos",
+		"tech": [
+			"MongoDB"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/mongodb-com-es-products-platform-atlas-database.ico"
+	},
+	{
+		"id": "github-com-gorvgoyl-clone-wars",
+		"name": "Clone Wars",
+		"url": "https://github.com/gorvgoyl/clone-wars",
+		"description": "Más de 100 clones abiertos de sitios populares, con demo, código y stack.",
+		"category": "Directorios de recursos",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/github-com-gorvgoyl-clone-wars.svg"
+	},
+	{
+		"id": "toolfolio-com",
+		"name": "Toolfolio",
+		"url": "https://toolfolio.com/",
+		"description": "Directorio de herramientas de productividad, creatividad y diseño.",
+		"category": "Directorios de recursos",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/toolfolio-com.png"
+	},
+	{
+		"id": "readme-so",
+		"name": "readme.so",
+		"url": "https://readme.so/",
+		"description": "Editor de Markdown con plantillas para crear el README de tus proyectos.",
+		"category": "Herramientas de desarrollo",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/readme-so.png"
+	},
+	{
+		"id": "shipfree-revoks-dev",
+		"name": "ShipFree",
+		"url": "https://shipfree.revoks.dev/",
+		"description": "Plantilla base de código abierto con auth y pagos para lanzar un SaaS.",
+		"category": "Herramientas de desarrollo",
+		"tech": [
+			"Next.js",
+			"TypeScript",
+			"Tailwind",
+			"PostgreSQL",
+			"React"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/shipfree-revoks-dev.png"
+	},
+	{
+		"id": "h1gallery-com",
+		"name": "H1 Gallery",
+		"url": "https://h1gallery.com/",
+		"description": "Colección de titulares de marketing de sitios web.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/h1gallery-com.png"
+	},
+	{
+		"id": "particles-casberry-in",
+		"name": "AI Particle Simulator",
+		"url": "https://particles.casberry.in/",
+		"description": "Simula y anima partículas 3D en tiempo real con WebGL2 y exporta el código.",
+		"category": "Otros",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/particles-casberry-in.svg"
+	}
+]

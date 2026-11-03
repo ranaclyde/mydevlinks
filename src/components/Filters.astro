@@ -1,0 +1,216 @@
+---
+import { TOP_TECHS } from '../lib/filter';
+
+interface Option {
+	value: string;
+	count: number;
+}
+
+interface Props {
+	categories: Option[];
+	techs: Option[];
+	total: number;
+}
+
+const { categories, techs, total } = Astro.props;
+
+const label =
+	'text-muted font-mono text-[11px] font-semibold tracking-[.08em] uppercase';
+const option =
+	'group/opt relative flex min-h-11 cursor-pointer items-center gap-2.5 px-2 py-1.5 text-sm md:min-h-[34px] hover:bg-sunk has-[input:focus-visible]:outline-2 has-[input:focus-visible]:-outline-offset-2 has-[input:focus-visible]:outline-accent has-disabled:cursor-not-allowed has-disabled:opacity-50 has-disabled:hover:bg-transparent';
+const categoryOption = `${option} has-checked:bg-accent has-checked:hover:bg-accent has-checked:text-accent-ink has-checked:font-medium`;
+const techOption = `${option} has-checked:font-semibold`;
+const count =
+	'text-muted font-mono text-xs tabular-nums group-has-checked/opt:text-inherit';
+---
+
+<aside
+	class="group/side bg-surface border-line flex flex-col gap-3 border-b px-4 py-3 md:sticky md:top-[58px] md:h-[calc(100dvh-58px)] md:gap-[18px] md:overflow-y-auto md:overscroll-contain md:border-r md:border-b-0 md:px-3 md:pt-4 md:pb-6"
+	aria-label="Filtros"
+	data-side
+	data-collapsed
+	data-needs-js
+>
+	<h2 class="sr-only">Filtros</h2>
+
+	<div>
+		<label class:list={[label, 'mb-1.5 block px-1 max-md:sr-only']} for="buscar">Buscar</label>
+		<div
+			class="border-line-strong bg-bg focus-within:border-accent focus-within:outline-accent flex h-11 items-center gap-2 border px-2.5 focus-within:outline-2 focus-within:outline-offset-1 md:h-10"
+		>
+			<svg
+				class="text-muted flex-none"
+				width="16"
+				height="16"
+				viewBox="0 0 16 16"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="1.5"
+				aria-hidden="true"
+			>
+				<circle cx="7" cy="7" r="4.5"></circle>
+				<path d="M10.5 10.5L14 14"></path>
+			</svg>
+			<input
+				class="text-ink placeholder:text-muted h-full w-full min-w-0 bg-transparent text-sm outline-none"
+				id="buscar"
+				type="search"
+				placeholder="Nombre, tema o tecnología"
+				autocomplete="off"
+				spellcheck="false"
+				data-search
+			/>
+		</div>
+	</div>
+
+	<button
+		class="bg-bg border-line-strong flex min-h-11 w-full cursor-pointer items-center justify-between gap-2 border px-3 text-sm font-medium md:hidden"
+		type="button"
+		aria-expanded="false"
+		aria-controls="filtros"
+		data-toggle
+	>
+		<span>
+			Filtros
+			<span class="bg-accent text-accent-ink ml-1.5 px-[7px] py-px font-mono text-xs" data-badge hidden
+			></span>
+		</span>
+		<svg
+			class="transition-transform group-not-data-collapsed/side:rotate-180"
+			width="14"
+			height="14"
+			viewBox="0 0 14 14"
+			fill="none"
+			stroke="currentColor"
+			stroke-width="1.6"
+			aria-hidden="true"><path d="M3 5.5l4 4 4-4"></path></svg
+		>
+	</button>
+
+	<div
+		class="flex flex-col gap-4 max-md:pb-16 max-md:group-data-collapsed/side:hidden md:gap-[18px]"
+		id="filtros"
+	>
+		<details class="group/details" open>
+			<summary
+				class:list={[
+					label,
+					'flex min-h-8 cursor-pointer list-none items-center justify-between gap-2 px-1 [&::-webkit-details-marker]:hidden',
+				]}
+			>
+				<span class="flex-none">Categoría</span>
+				<span
+					class="min-w-0 truncate font-normal tracking-normal normal-case group-open/details:hidden"
+					data-category-current></span>
+				<svg
+					class="flex-none transition-transform group-open/details:rotate-180"
+					width="12"
+					height="12"
+					viewBox="0 0 14 14"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="1.6"
+					aria-hidden="true"><path d="M3 5.5l4 4 4-4"></path></svg
+				>
+			</summary>
+			<fieldset class="mt-1.5 min-w-0">
+				<legend class="sr-only">Categoría</legend>
+				<div class="flex flex-col">
+					<label class={categoryOption}>
+						<input class="sr-only" type="radio" name="categoria" value="" checked />
+						<span class="min-w-0 flex-1">Todas</span>
+						<span class={count} data-count>{total}</span>
+					</label>
+					{
+						categories.map((category) => (
+							<label class={categoryOption}>
+								<input class="sr-only" type="radio" name="categoria" value={category.value} />
+								<span class="min-w-0 flex-1">{category.value}</span>
+								<span class={count} data-count>
+									{category.count}
+								</span>
+							</label>
+						))
+					}
+				</div>
+			</fieldset>
+		</details>
+
+		<fieldset class="min-w-0">
+			<legend class:list={[label, 'mb-1.5 flex w-full justify-between px-1']}>
+				Tecnologías
+				<span class="font-normal tracking-normal normal-case">deben usar todas</span>
+			</legend>
+
+			<div
+				class="border-line-strong bg-bg focus-within:outline-accent mb-1.5 flex h-11 items-center border px-2.5 focus-within:outline-2 focus-within:outline-offset-1 md:h-9"
+				data-tech-field
+				hidden
+			>
+				<label class="sr-only" for="filtrar-tecnologias">Filtrar la lista de tecnologías</label>
+				<input
+					class="text-ink placeholder:text-muted h-full w-full min-w-0 bg-transparent text-sm outline-none"
+					id="filtrar-tecnologias"
+					type="search"
+					placeholder="Filtrar la lista"
+					autocomplete="off"
+					spellcheck="false"
+					data-tech-filter
+				/>
+			</div>
+
+			<div class="flex flex-col" id="lista-tecnologias">
+				{
+					techs.map((tech, index) => (
+						<label class={techOption} data-tech-option hidden={index >= TOP_TECHS}>
+							<input class="sr-only" type="checkbox" value={tech.value} />
+							<span class="border-line-strong bg-surface group-has-checked/opt:border-accent group-has-checked/opt:bg-accent group-has-checked/opt:text-accent-ink grid size-4 flex-none place-items-center border-[1.5px]">
+								<svg
+									class="opacity-0 group-has-checked/opt:opacity-100"
+									width="10"
+									height="10"
+									viewBox="0 0 10 10"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									aria-hidden="true"
+								>
+									<path d="M2 5.2l2 2 4-4.4" />
+								</svg>
+							</span>
+							<span class="min-w-0 flex-1">{tech.value}</span>
+							<span class={count} data-count>
+								{tech.count}
+							</span>
+						</label>
+					))
+				}
+			</div>
+			<p class="text-muted px-2 py-1.5 text-sm" data-tech-none hidden>
+				Ninguna tecnología coincide.
+			</p>
+
+			{
+				techs.length > TOP_TECHS && (
+					<button
+						class="hover:text-accent mt-1 min-h-11 cursor-pointer px-2 text-[13px] underline underline-offset-3 md:min-h-8"
+						type="button"
+						aria-expanded="false"
+						aria-controls="lista-tecnologias"
+						data-tech-more
+					>
+						Ver las {techs.length}
+					</button>
+				)
+			}
+		</fieldset>
+	</div>
+</aside>
+
+<button
+	class="bg-ink text-bg hover:bg-accent hover:text-accent-ink fixed inset-x-0 bottom-0 z-20 min-h-13 cursor-pointer px-4 pb-[env(safe-area-inset-bottom,0px)] text-[15px] font-medium md:hidden"
+	type="button"
+	data-show-results
+	hidden
+>
+</button>

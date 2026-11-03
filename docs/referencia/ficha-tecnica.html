@@ -1,0 +1,454 @@
+<title>mydevlinks</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: ficha técnica. Índice lateral fijo + grilla de fichas con esquina cortada; los metadatos van en mono, el texto en sans. */
+:root{
+  --bg:#ECEEF2; --surface:#FFFFFF; --sunk:#E2E6EC; --ink:#14171D; --muted:#525966;
+  --line:#CBD0D8; --line-strong:#8A92A0; --accent:#1F3FBF; --accent-ink:#FFFFFF; --accent-soft:#E2E7FB;
+  --plate:#F1F2F5; --plate-ink:#2B303A; --old:#7A4E00; --old-bg:#FFF0C7; --down:#A3190F; --down-bg:#FCE6E3;
+  --f-sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0E1014; --surface:#161920; --sunk:#1D212B; --ink:#E7E9EE; --muted:#A4ABB7;
+  --line:#2B313C; --line-strong:#5D6675; --accent:#97A8FF; --accent-ink:#0E1014; --accent-soft:#1E2649;
+  --plate:#D9DCE2; --plate-ink:#22262E; --old:#F2C566; --old-bg:#2C230F; --down:#FF9B90; --down-bg:#3A1714; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0E1014; --surface:#161920; --sunk:#1D212B; --ink:#E7E9EE; --muted:#A4ABB7;
+  --line:#2B313C; --line-strong:#5D6675; --accent:#97A8FF; --accent-ink:#0E1014; --accent-soft:#1E2649;
+  --plate:#D9DCE2; --plate-ink:#22262E; --old:#F2C566; --old-bg:#2C230F; --down:#FF9B90; --down-bg:#3A1714; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-sans);font-size:15px;line-height:1.5}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+button{font:inherit;color:inherit}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+
+/* ---------- Documento de propuesta ---------- */
+.page{max-width:1320px;margin:0 auto;padding-block:40px 96px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:56px}
+.doc-head{display:flex;flex-direction:column;gap:10px;max-width:70ch}
+.wordmark{font-family:var(--f-mono);font-weight:600;letter-spacing:-.02em;display:inline-flex;align-items:center;gap:8px}
+.wordmark i{width:12px;height:12px;border:1.5px solid currentColor;display:inline-block;background:linear-gradient(225deg,var(--bg) 0 50%,transparent 50%)}
+.doc-head .wordmark{font-size:34px}
+.doc-head p{margin:0;color:var(--muted)}
+h2{font-family:var(--f-mono);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin:0;color:var(--muted)}
+.sec{display:flex;flex-direction:column;gap:18px}
+.sec-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:10px}
+
+/* Direcciones */
+.dirs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+@media (max-width:900px){.dirs{grid-template-columns:minmax(0,1fr)}}
+.dir{display:flex;flex-direction:column;gap:10px;background:var(--surface);border:1px solid var(--line);padding:14px}
+.dir.pick{border-color:var(--accent)}
+.dir h3{margin:0;font-size:18px;font-weight:600;display:flex;justify-content:space-between;gap:8px;align-items:baseline;text-wrap:balance}
+.dir h3 small{font-family:var(--f-mono);font-size:11px;font-weight:500;color:var(--accent);text-transform:uppercase;letter-spacing:.06em;white-space:nowrap}
+.dir p{margin:0;font-size:14px}
+.dir .risk{color:var(--muted)}
+.dir .risk b{color:var(--ink);font-weight:600}
+.mini{height:168px;background:var(--bg);border:1px solid var(--line);padding:10px;overflow:hidden;display:grid;gap:6px}
+.ln{height:5px;background:var(--line-strong);opacity:.55}
+.ln.s{width:40%}.ln.m{width:65%}
+.mA{grid-template-columns:52px minmax(0,1fr);gap:8px}
+.mA .col{display:flex;flex-direction:column;gap:6px;border-right:1px solid var(--line);padding-right:6px}
+.mA .col .on{background:var(--accent);opacity:1}
+.mA .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;align-content:start}
+.mc{position:relative;background:var(--surface);border:1px solid var(--line);padding:6px;display:flex;flex-direction:column;gap:4px;height:68px}
+.mc::before{content:"";position:absolute;top:-1px;right:-1px;width:10px;height:10px;background:linear-gradient(225deg,var(--bg) 0 calc(50% - .5px),var(--line) calc(50% - .5px) calc(50% + .5px),transparent calc(50% + .5px))}
+.mc .pl{width:14px;height:14px;background:var(--plate);border:1px solid var(--line)}
+.mc .ch{display:flex;gap:3px;margin-top:auto}.mc .ch span{width:16px;height:6px;border:1px solid var(--line-strong)}.mc .ch span.on{background:var(--accent);border-color:var(--accent)}
+.mB{grid-template-rows:auto;align-content:start;gap:0}
+.mB .r{display:grid;grid-template-columns:12px 50px minmax(0,1fr) 46px;gap:8px;align-items:center;padding:6px 2px;border-bottom:1px solid var(--line)}
+.mB .r.h .ln{height:3px;opacity:.9}
+.mB .pl{width:12px;height:12px;background:var(--plate);border:1px solid var(--line)}
+.mB .tg{display:flex;gap:2px}.mB .tg span{flex:1;height:5px;background:var(--accent);opacity:.6}
+.mC{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;align-content:start}
+.mC .f{display:flex;flex-direction:column;gap:4px}
+.mC .sq{height:46px;background:var(--surface);border:1px solid var(--line);display:grid;place-items:center}
+.mC .sq span{width:20px;height:20px;background:var(--line-strong);opacity:.6}
+.mC .sq.c1 span{background:#E0703A;opacity:1;border-radius:50%}.mC .sq.c2 span{background:#2A2F38;opacity:1}.mC .sq.c3 span{background:#3BA272;opacity:1;transform:rotate(45deg)}
+
+/* Barra de estados del prototipo */
+.states{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.states span{font-family:var(--f-mono);font-size:12px;color:var(--muted);margin-right:4px}
+.seg{border:1px solid var(--line-strong);background:var(--surface);padding:6px 12px;font-size:13px;cursor:pointer;min-height:36px}
+.seg:hover{border-color:var(--ink)}
+.seg[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.frame-label{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.frame{border:1px solid var(--line-strong);background:var(--bg);overflow:hidden}
+.duo{display:flex;flex-wrap:wrap;gap:32px;align-items:flex-start}
+.duo>.phone-wrap{flex:0 1 392px;min-width:0;display:flex;flex-direction:column;gap:8px}
+.duo>.spec-wrap{flex:999 1 480px;min-width:0;display:flex;flex-direction:column;gap:8px}
+.phone{width:100%;max-width:392px;height:780px;overflow:auto;border:1px solid var(--line-strong);border-radius:22px;background:var(--bg)}
+.spec{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px 14px}
+.spec figure{margin:0;display:flex;flex-direction:column;gap:6px;min-width:0}
+.spec figcaption{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.notes{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;max-width:80ch;font-size:14px}
+.notes b{font-weight:600}
+
+/* ---------- La app ---------- */
+.app{container-type:inline-size;background:var(--bg)}
+.app-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;border-bottom:1px solid var(--line);background:var(--surface)}
+.app-top .wordmark{font-size:18px}
+.app-top .tot{font-family:var(--f-mono);font-size:12px;color:var(--muted);margin-left:12px;font-weight:400}
+.theme{display:flex;border:1px solid var(--line)}
+.theme button{width:36px;height:32px;display:grid;place-items:center;background:transparent;border:0;cursor:pointer;color:var(--muted)}
+.theme button+button{border-left:1px solid var(--line)}
+.theme button:hover{color:var(--ink);background:var(--sunk)}
+.theme button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.app-body{display:grid;grid-template-columns:264px minmax(0,1fr);align-items:start}
+
+.side{background:var(--surface);border-right:1px solid var(--line);padding:16px 12px 24px;display:flex;flex-direction:column;gap:18px;position:sticky;top:0}
+.lbl,legend{font-family:var(--f-mono);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding:0 4px;margin-bottom:6px;display:flex;justify-content:space-between;width:100%}
+legend .hint{font-weight:400;text-transform:none;letter-spacing:0}
+.field{display:flex;align-items:center;gap:8px;border:1px solid var(--line-strong);background:var(--bg);padding:0 10px;height:40px}
+.field:focus-within{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+.field svg{flex:none;color:var(--muted)}
+.field input{border:0;background:transparent;color:var(--ink);font:inherit;font-size:14px;width:100%;min-width:0;outline:none;height:100%}
+.field input::placeholder{color:var(--muted)}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+.opts{display:flex;flex-direction:column}
+.opt{position:relative;display:flex;align-items:center;gap:10px;padding:6px 8px;min-height:34px;cursor:pointer;font-size:14px;border-left:2px solid transparent}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.opt .nm{flex:1;min-width:0}
+.opt .n{font-family:var(--f-mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.opt:hover{background:var(--sunk)}
+.opt:has(input:focus-visible){outline:2px solid var(--accent);outline-offset:-2px}
+.cat .opt:has(input:checked){background:var(--accent);color:var(--accent-ink);font-weight:500}
+.cat .opt:has(input:checked) .n{color:var(--accent-ink)}
+.box{width:16px;height:16px;border:1.5px solid var(--line-strong);display:grid;place-items:center;flex:none;background:var(--surface)}
+.box svg{opacity:0}
+.tech .opt:has(input:checked){font-weight:600}
+.tech .opt:has(input:checked) .box{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.tech .opt:has(input:checked) .box svg{opacity:1}
+.ftoggle{display:none}
+
+.main{padding:16px 20px 32px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.bar{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;min-height:40px}
+.count{margin:0;display:flex;align-items:baseline;gap:8px;font-size:14px;color:var(--muted)}
+.count b{font-family:var(--f-mono);font-size:26px;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;line-height:1}
+.actives{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--accent);color:var(--accent);background:var(--accent-soft);font-size:13px;padding:3px 6px 3px 9px;cursor:pointer;min-height:30px}
+.pill:hover{background:var(--accent);color:var(--accent-ink)}
+.link-btn{background:none;border:0;padding:4px 6px;font-size:13px;color:var(--ink);text-decoration:underline;text-underline-offset:3px;cursor:pointer;min-height:30px}
+.link-btn:hover{color:var(--accent)}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}
+
+/* Ficha */
+.card{--cl:var(--line);--nb:var(--bg);position:relative;display:grid;grid-template-columns:40px minmax(0,1fr);column-gap:12px;row-gap:10px;padding:14px 16px 13px 14px;background:var(--surface);border:1px solid var(--cl);color:var(--ink);text-decoration:none;align-content:start;transition:border-color .12s}
+.card::before{content:"";position:absolute;top:-1px;right:-1px;width:16px;height:16px;background:linear-gradient(225deg,var(--nb) 0 calc(50% - .5px),var(--cl) calc(50% - .5px) calc(50% + .5px),transparent calc(50% + .5px))}
+.card:hover,.card.is-hover{--cl:var(--line-strong)}
+.card:hover .nm,.card.is-hover .nm{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.card:hover .go,.card.is-hover .go{color:var(--accent);transform:translate(1px,-1px)}
+.card:focus-visible,.card.is-focus{outline:2px solid var(--accent);outline-offset:2px;--cl:var(--accent)}
+.plate{width:40px;height:40px;background:var(--plate);border:1px solid var(--line);display:grid;place-items:center;overflow:hidden}
+.plate img{width:100%;height:100%;object-fit:contain;padding:6px}
+.plate .ini{font-family:var(--f-mono);font-weight:600;font-size:17px;color:var(--plate-ink)}
+.hd{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 8px;align-items:flex-start;min-width:0}
+.hd .t{display:flex;flex-direction:column;min-width:0;flex:1 1 9em}
+.nm{font-weight:600;font-size:16px;line-height:1.3;display:inline-flex;align-items:center;gap:5px;overflow-wrap:anywhere}
+.go{color:var(--muted);flex:none;transition:transform .12s,color .12s}
+.meta{font-family:var(--f-mono);font-size:11px;color:var(--muted);letter-spacing:.02em;margin-top:2px}
+.ds{grid-column:1/-1;font-size:14px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.ds.none{color:var(--muted);font-style:italic}
+.chips{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:5px;border-top:1px dashed var(--line);padding-top:10px}
+.chip{font-family:var(--f-mono);font-size:11.5px;line-height:1.3;padding:2px 6px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.chip.hit{background:var(--accent-soft);border-color:var(--accent);color:var(--accent);font-weight:500}
+.chip.more{border-style:dashed;color:var(--ink)}
+.chips .nil{font-family:var(--f-mono);font-size:11.5px;color:var(--muted)}
+.stamp{display:inline-flex;align-items:center;gap:4px;font-family:var(--f-mono);font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:2px 6px;border:1px solid currentColor;white-space:nowrap;flex:none;margin-right:6px}
+.stamp.old{color:var(--old);background:var(--old-bg)}
+.stamp.down{color:var(--down);background:var(--down-bg)}
+.stamp.unv{color:var(--muted);background:var(--surface);border-style:dashed}
+.card.f-down .plate{opacity:.55;filter:grayscale(1)}
+.card.f-down .ds{color:var(--muted)}
+.card.f-unv{border-style:dashed}
+.card.f-unv::before{display:none}
+
+.empty{grid-column:1/-1;border:1px dashed var(--line-strong);background:var(--surface);padding:36px 24px;display:flex;flex-direction:column;align-items:flex-start;gap:10px;max-width:640px}
+.empty .k{font-family:var(--f-mono);font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.empty p{margin:0}
+.empty q{font-weight:600}
+.btn{background:var(--ink);color:var(--bg);border:1px solid var(--ink);padding:8px 14px;font-size:14px;font-weight:500;cursor:pointer;min-height:40px}
+.btn:hover{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+
+/* Móvil: la app responde al ancho de su contenedor (en Astro, un breakpoint md) */
+@container (max-width:720px){
+  .app-body{grid-template-columns:minmax(0,1fr)}
+  .side{position:static;border-right:0;border-bottom:1px solid var(--line);padding:12px 16px 12px;gap:12px}
+  .lbl[for]{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  .field{height:44px}
+  .ftoggle{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;min-height:44px;padding:0 12px;background:var(--bg);border:1px solid var(--line-strong);cursor:pointer;font-size:14px;font-weight:500}
+  .ftoggle .badge{font-family:var(--f-mono);font-size:12px;background:var(--accent);color:var(--accent-ink);padding:1px 7px;margin-left:6px}
+  .ftoggle[aria-expanded="true"] .chev{transform:rotate(180deg)}
+  .side.collapsed .fbody{display:none}
+  .fbody{display:flex;flex-direction:column;gap:16px}
+  .opt{min-height:44px}
+  .main{padding:14px 16px 28px}
+  .grid{grid-template-columns:minmax(0,1fr)}
+  .app-top .tot{display:none}
+  .theme button{width:40px;height:40px}
+}
+.fbody{display:flex;flex-direction:column;gap:18px}
+</style>
+
+<div class="page">
+  <header class="doc-head">
+    <span class="wordmark"><i aria-hidden="true"></i>mydevlinks</span>
+    <p>Propuesta de interfaz: tres direcciones y la pantalla completa de la elegida. El prototipo filtra de verdad sobre 11 enlaces de muestra (8 reales de tu lista y 3 de ejemplo para los avisos). Los totales del panel lateral son los de tu base de 201.</p>
+  </header>
+
+  <section class="sec" aria-labelledby="h-dirs">
+    <div class="sec-head"><h2 id="h-dirs">Tres direcciones</h2></div>
+    <div class="dirs">
+      <article class="dir pick">
+        <div class="mini mA" aria-hidden="true">
+          <div class="col"><div class="ln"></div><div class="ln on"></div><div class="ln m"></div><div class="ln"></div><div class="ln s"></div><div class="ln on"></div><div class="ln on"></div><div class="ln m"></div></div>
+          <div class="cards">
+            <div class="mc"><div class="pl"></div><div class="ln m"></div><div class="ch"><span class="on"></span><span class="on"></span><span></span></div></div>
+            <div class="mc"><div class="pl"></div><div class="ln"></div><div class="ch"><span class="on"></span><span class="on"></span></div></div>
+            <div class="mc"><div class="pl"></div><div class="ln s"></div><div class="ch"><span class="on"></span><span class="on"></span><span></span><span></span></div></div>
+            <div class="mc"><div class="pl"></div><div class="ln m"></div><div class="ch"><span class="on"></span><span class="on"></span></div></div>
+          </div>
+        </div>
+        <h3>A. Ficha técnica <small>Desarrollada abajo</small></h3>
+        <p>Cada enlace es una ficha de especificaciones, como las hojas de datos de un componente electrónico: esquina cortada, metadatos en monoespaciada y avisos como sellos. Las tecnologías que coinciden con tus filtros se marcan y pasan al principio, así ves enseguida por qué aparece cada ficha.</p>
+        <p class="risk"><b>Riesgo:</b> si la monoespaciada o los sellos se usan de más, se vuelve un disfraz y cuesta leer. Por eso queda limitada a metadatos y avisos.</p>
+      </article>
+      <article class="dir">
+        <div class="mini mB" aria-hidden="true">
+          <div class="r h"><span></span><div class="ln"></div><div class="ln"></div><div class="ln"></div></div>
+          <div class="r"><div class="pl"></div><div class="ln"></div><div class="ln m"></div><div class="tg"><span></span><span></span><span></span></div></div>
+          <div class="r"><div class="pl"></div><div class="ln m"></div><div class="ln"></div><div class="tg"><span></span><span></span></div></div>
+          <div class="r"><div class="pl"></div><div class="ln"></div><div class="ln s"></div><div class="tg"><span></span><span></span><span></span></div></div>
+          <div class="r"><div class="pl"></div><div class="ln s"></div><div class="ln m"></div><div class="tg"><span></span></div></div>
+          <div class="r"><div class="pl"></div><div class="ln"></div><div class="ln"></div><div class="tg"><span></span><span></span></div></div>
+        </div>
+        <h3>B. Registro de paquetes</h3>
+        <p>Una fila por enlace, como el listado de un registro de paquetes: logo, nombre, descripción, tecnologías y estado en columnas alineadas. Es la más densa: caben unos 15 enlaces por pantalla y se compara de un vistazo hacia abajo.</p>
+        <p class="risk"><b>Riesgo:</b> se aleja de la grilla de tarjetas que pediste, en móvil la tabla tiene que reorganizarse por completo y para buscar inspiración se siente fría.</p>
+      </article>
+      <article class="dir">
+        <div class="mini mC" aria-hidden="true">
+          <div class="f"><div class="sq c1"><span></span></div><div class="ln m"></div></div>
+          <div class="f"><div class="sq"><span></span></div><div class="ln"></div></div>
+          <div class="f"><div class="sq c2"><span></span></div><div class="ln s"></div></div>
+          <div class="f"><div class="sq c3"><span></span></div><div class="ln m"></div></div>
+          <div class="f"><div class="sq c2"><span></span></div><div class="ln"></div></div>
+          <div class="f"><div class="sq c1"><span></span></div><div class="ln s"></div></div>
+          <div class="f"><div class="sq"><span></span></div><div class="ln m"></div></div>
+          <div class="f"><div class="sq c3"><span></span></div><div class="ln"></div></div>
+        </div>
+        <h3>C. Hoja de contactos</h3>
+        <p>Como la hoja de contactos de un fotógrafo: una cuadrícula de recuadros iguales con el logo grande y el nombre debajo. La descripción y las tecnologías aparecen en una banda inferior. Reconoces los sitios que ya conoces casi sin leer.</p>
+        <p class="risk"><b>Riesgo:</b> los logos ajenos pasan a ser protagonistas, justo lo que querías evitar, y los de mala calidad se notan mucho. Entra menos texto por pantalla.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-proto">
+    <div class="sec-head">
+      <h2 id="h-proto">Pantalla completa · Ficha técnica</h2>
+      <div class="states" role="group" aria-label="Estado del prototipo">
+        <span>Estado:</span>
+        <button class="seg" data-preset="active" aria-pressed="true">Filtros activos</button>
+        <button class="seg" data-preset="empty" aria-pressed="false">Sin resultados</button>
+        <button class="seg" data-preset="all" aria-pressed="false">Todas, con avisos</button>
+      </div>
+    </div>
+    <span class="frame-label">Escritorio · los controles del panel y del encabezado funcionan</span>
+    <div class="frame"><div class="app" id="app-desk"></div></div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-mob">
+    <div class="sec-head"><h2 id="h-mob">Móvil y estados de la ficha</h2></div>
+    <div class="duo">
+      <div class="phone-wrap">
+        <span class="frame-label">Móvil · 390 px, filtros contraídos</span>
+        <div class="phone"><div class="app" id="app-phone"></div></div>
+      </div>
+      <div class="spec-wrap">
+        <span class="frame-label">Cada estado, aislado. Usa Tab para ver el foco real.</span>
+        <div class="spec" id="spec"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-notes">
+    <div class="sec-head"><h2 id="h-notes">Decisiones para pasar a Astro</h2></div>
+    <ul class="notes">
+      <li><b>Logos:</b> todos van sobre la misma placa neutra de 40 px, con <code>object-fit: contain</code> y 6 px de aire. La forma del logo varía, pero el marco no, y la placa es clara también en modo oscuro para que los logos negros se vean. Aquí todos muestran la inicial porque el prototipo no carga logos externos.</li>
+      <li><b>Listas largas de tecnologías:</b> se ven hasta 5 etiquetas. Las que coinciden con los filtros van primero y resaltadas, y el resto se resume en «+N». El lector de pantalla recibe la lista completa.</li>
+      <li><b>Avisos:</b> cada uno combina palabra, color e icono, así que no depende solo del color. «Caído» apaga el logo; «Sin verificar» usa borde punteado y no muestra descripción ni tecnologías.</li>
+      <li><b>JavaScript mínimo:</b> en Astro las fichas se renderizan en el servidor con atributos <code>data-cat</code> y <code>data-tech</code>, y un script pequeño solo alterna <code>hidden</code> y actualiza el contador. La selección del panel usa inputs nativos (radio y checkbox), así que funciona con teclado sin código extra.</li>
+      <li><b>Móvil:</b> aquí la app responde al ancho de su contenedor para poder mostrar las dos versiones lado a lado. En tu sitio basta un breakpoint <code>md</code> de Tailwind.</li>
+    </ul>
+  </section>
+</div>
+
+<script>
+(function(){
+const CATS=[["Componentes y UI kits",37],["Herramientas de desarrollo",26],["Galerías de inspiración",26],["Aprendizaje y documentación",21],["Iconos e ilustraciones",18],["Directorios de recursos",12],["Otros",12],["Generadores CSS/SVG",11],["Animación y efectos",11],["Backend y datos",11],["Fuentes y color",9],["Constructores con IA",8]];
+const TECHS=[["React",55],["Vue",40],["Tailwind",34],["Next.js",26],["JavaScript",14],["Svelte",14],["CSS",12],["Angular",12],["Astro",12],["Solid",9]];
+const UI="Componentes y UI kits";
+const DATA=[
+ {name:"daisyUI",url:"https://daisyui.com",cat:UI,desc:"Biblioteca de componentes semánticos para Tailwind.",techs:["Tailwind","React","Vue","Svelte","Angular","Solid","Qwik","Astro","Next.js","Nuxt","Laravel","WordPress"]},
+ {name:"shadcn/ui",url:"https://ui.shadcn.com",cat:UI,desc:"Componentes accesibles que copias a tu proyecto y adaptas a tu sistema de diseño.",techs:["shadcn/ui","React","Tailwind","Next.js","Astro","Laravel"]},
+ {name:"Headless UI",url:"https://headlessui.com",cat:UI,desc:"Componentes sin estilos y accesibles, pensados para integrarse con Tailwind.",techs:["React","Vue","Tailwind"]},
+ {name:"Kokonut UI",url:"https://kokonutui.com",cat:UI,desc:"Componentes de React de código abierto, instalables con un comando.",techs:["React","Tailwind","shadcn/ui"]},
+ {name:"Rare UI",url:"#",cat:UI,desc:"Registro abierto de componentes animados de React para copiar y pegar.",techs:["React","Tailwind"]},
+ {name:"Aceternity UI",url:"https://ui.aceternity.com",cat:UI,desc:"Más de 200 componentes, bloques y plantillas de landing para copiar y pegar.",techs:["React","Next.js","Tailwind"]},
+ {name:"Motion",url:"https://motion.dev",cat:"Animación y efectos",desc:"Biblioteca de animación, antes llamada Framer Motion.",techs:["React","JavaScript","Vue"]},
+ {name:"Mobbin",url:"https://mobbin.com",cat:"Galerías de inspiración",desc:"Biblioteca de capturas de apps móviles y web, con búsqueda.",techs:[]},
+ {name:"Ejemplo antiguo",url:"#",cat:"Otros",desc:"[Descripción de una línea del enlace]",techs:["JavaScript","CSS"],flag:"old"},
+ {name:"Ejemplo caído",url:"#",cat:"Otros",desc:"[Descripción de una línea del enlace]",techs:["Vue","CSS"],flag:"down"},
+ {name:"Ejemplo sin verificar",url:"#",cat:"Otros",desc:null,techs:[],flag:"unv"}
+];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const norm=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+const ARROW='<svg class="go" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4"/></svg>';
+const ICON={
+ old:'<svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="6" cy="6" r="4.6"/><path d="M6 3.5V6l1.7 1.2"/></svg>',
+ down:'<svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="6" cy="6" r="4.6"/><path d="M2.8 9.2l6.4-6.4"/></svg>',
+ unv:'<svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="6" cy="6" r="4.6" stroke-dasharray="2 1.6"/><path d="M4.8 4.8a1.3 1.3 0 1 1 1.8 1.2c-.4.2-.6.5-.6.9M6 8.6v.1"/></svg>'};
+const FLAG={old:"Antiguo",down:"Caído",unv:"Sin verificar"};
+const CHECK='<svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 5.2l2 2 4-4.4"/></svg>';
+
+function card(l,active,extra){
+  active=active||[];
+  const hits=l.techs.filter(t=>active.includes(t));
+  const rest=l.techs.filter(t=>!active.includes(t));
+  const max=Math.max(5,hits.length);
+  const shown=[...hits.map(t=>[t,1]),...rest.map(t=>[t,0])].slice(0,max);
+  const hidden=l.techs.length-shown.length;
+  const restNames=[...hits,...rest].slice(shown.length);
+  let chips="";
+  if(l.flag!=="unv"){
+    chips='<span class="chips">'+(l.techs.length?
+      '<span class="sr">Tecnologías: '+esc(l.techs.join(", "))+'.</span>'+shown.map(([t,h])=>'<span class="chip'+(h?' hit':'')+'" aria-hidden="true">'+esc(t)+'</span>').join("")+
+      (hidden>0?'<span class="chip more" aria-hidden="true" title="'+esc(restNames.join(", "))+'">+'+hidden+'</span>':''):
+      '<span class="nil">Sin tecnología específica</span>')+'</span>';
+  }
+  const stamp=l.flag?'<span class="stamp '+l.flag+'">'+ICON[l.flag]+FLAG[l.flag]+'</span>':'';
+  const ds=l.flag==="unv"?'<span class="ds none">Todavía sin descripción ni tecnologías.</span>':'<span class="ds" title="'+esc(l.desc)+'">'+esc(l.desc)+'</span>';
+  return '<a class="card'+(l.flag?' f-'+l.flag:'')+(extra?' '+extra:'')+'" href="'+esc(l.url)+'" target="_blank" rel="noopener noreferrer">'+
+    '<span class="plate" aria-hidden="true"><span class="ini">'+esc(l.name.replace(/^Ejemplo /i,"").charAt(0).toUpperCase())+'</span></span>'+
+    '<span class="hd"><span class="t"><span class="nm">'+esc(l.name)+ARROW+'</span><span class="meta">'+esc(l.cat)+'</span></span>'+stamp+'</span>'+
+    ds+chips+'<span class="sr"> (abre en otra pestaña)</span></a>';
+}
+
+const instances=[];
+function mount(root,pfx,collapsed){
+  const st={q:"",cat:"",techs:[],collapsed:collapsed};
+  root.innerHTML=
+   '<div class="app-top"><span class="wordmark"><i aria-hidden="true"></i>mydevlinks<span class="tot">201 enlaces</span></span>'+
+   '<div class="theme" role="group" aria-label="Tema">'+
+    '<button data-theme-btn="system" aria-label="Tema del sistema" aria-pressed="true"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="2" y="3" width="12" height="8.5"/><path d="M6 14h4M8 11.5V14"/></svg></button>'+
+    '<button data-theme-btn="light" aria-label="Modo claro" aria-pressed="false"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.8M8 12.7v1.8M1.5 8h1.8M12.7 8h1.8M3.4 3.4l1.3 1.3M11.3 11.3l1.3 1.3M3.4 12.6l1.3-1.3M11.3 4.7l1.3-1.3"/></svg></button>'+
+    '<button data-theme-btn="dark" aria-label="Modo oscuro" aria-pressed="false"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M13.2 10.1A5.6 5.6 0 0 1 5.9 2.8a5.6 5.6 0 1 0 7.3 7.3z"/></svg></button>'+
+   '</div></div>'+
+   '<div class="app-body"><aside class="side'+(collapsed?' collapsed':'')+'" aria-label="Filtros">'+
+    '<div><label class="lbl" for="'+pfx+'-q">Buscar</label><div class="field"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><input id="'+pfx+'-q" type="search" placeholder="Nombre, descripción o tecnología" autocomplete="off"></div></div>'+
+    '<button class="ftoggle" type="button" aria-expanded="'+(!collapsed)+'" aria-controls="'+pfx+'-fb"><span>Filtros<span class="badge" data-badge></span></span><svg class="chev" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 5.5l4 4 4-4"/></svg></button>'+
+    '<div class="fbody" id="'+pfx+'-fb">'+
+     '<fieldset class="cat"><legend>Categoría</legend><div class="opts">'+
+       [["",201,"Todas"]].concat(CATS.map(c=>[c[0],c[1],c[0]])).map((c,i)=>'<label class="opt"><input type="radio" name="'+pfx+'-cat" id="'+pfx+'-c'+i+'" value="'+esc(c[0])+'"><span class="nm">'+esc(c[2])+'</span><span class="n">'+c[1]+'</span></label>').join("")+
+     '</div></fieldset>'+
+     '<fieldset class="tech"><legend>Tecnologías <span class="hint">deben usar todas</span></legend><div class="opts">'+
+       TECHS.map((t,i)=>'<label class="opt"><input type="checkbox" id="'+pfx+'-t'+i+'" value="'+esc(t[0])+'"><span class="box">'+CHECK+'</span><span class="nm">'+esc(t[0])+'</span><span class="n">'+t[1]+'</span></label>').join("")+
+     '</div></fieldset>'+
+    '</div></aside>'+
+    '<main class="main"><div class="bar"><p class="count" aria-live="polite"><b data-n>0</b><span data-lbl>enlaces</span></p><div class="actives" data-actives></div></div><div class="grid" data-grid></div></main></div>';
+
+  const q=root.querySelector('#'+pfx+'-q'), grid=root.querySelector('[data-grid]'), side=root.querySelector('.side'), tog=root.querySelector('.ftoggle');
+  const sync=()=>{
+    q.value=st.q;
+    root.querySelectorAll('input[type=radio]').forEach(r=>r.checked=(r.value===st.cat));
+    root.querySelectorAll('.tech input').forEach(c=>c.checked=st.techs.includes(c.value));
+    side.classList.toggle('collapsed',st.collapsed); tog.setAttribute('aria-expanded',String(!st.collapsed));
+  };
+  const clear=()=>{st.q="";st.cat="";st.techs=[];sync();render();q.focus();};
+  function render(){
+    const words=norm(st.q).split(/\s+/).filter(Boolean);
+    const res=DATA.filter(l=>(!st.cat||l.cat===st.cat)&&st.techs.every(t=>l.techs.includes(t))&&
+      (!words.length||words.every(w=>norm(l.name+" "+(l.desc||"")+" "+l.techs.join(" ")+" "+l.cat).includes(w))));
+    root.querySelector('[data-n]').textContent=res.length;
+    root.querySelector('[data-lbl]').textContent=res.length===1?'enlace':'enlaces';
+    const nAct=(st.cat?1:0)+st.techs.length;
+    const b=root.querySelector('[data-badge]'); b.textContent=nAct; b.hidden=!nAct;
+    const act=root.querySelector('[data-actives]');
+    let h="";
+    if(st.q) h+='<button class="pill" data-rm="q" type="button" aria-label="Quitar búsqueda «'+esc(st.q)+'»">«'+esc(st.q)+'» ×</button>';
+    if(st.cat) h+='<button class="pill" data-rm="cat" type="button" aria-label="Quitar categoría '+esc(st.cat)+'">'+esc(st.cat)+' ×</button>';
+    st.techs.forEach(t=>h+='<button class="pill" data-rm="t" data-v="'+esc(t)+'" type="button" aria-label="Quitar '+esc(t)+'">'+esc(t)+' ×</button>');
+    if(nAct||st.q) h+='<button class="link-btn" data-clear type="button">Limpiar filtros</button>';
+    act.innerHTML=h;
+    if(res.length){ grid.innerHTML=res.map(l=>card(l,st.techs)).join(""); }
+    else{
+      const parts=[]; if(st.cat) parts.push('en '+esc(st.cat)); if(st.techs.length) parts.push('con '+st.techs.map(esc).join(' y '));
+      grid.innerHTML='<div class="empty"><span class="k">Sin resultados</span><p>Ningún enlace coincide'+(st.q?' con <q>'+esc(st.q)+'</q>':'')+(parts.length?' '+parts.join(' '):'')+'.</p><p style="color:var(--muted);font-size:14px">Prueba con otra palabra o quita alguna tecnología.</p><button class="btn" data-clear type="button">Limpiar filtros</button></div>';
+    }
+  }
+  q.addEventListener('input',()=>{st.q=q.value;render();});
+  root.addEventListener('change',e=>{
+    const t=e.target;
+    if(t.type==='radio'){st.cat=t.value;render();}
+    if(t.type==='checkbox'){st.techs=t.checked?[...st.techs,t.value]:st.techs.filter(x=>x!==t.value);render();}
+  });
+  root.addEventListener('click',e=>{
+    const t=e.target.closest('button'); if(!t) return;
+    if(t.hasAttribute('data-clear')){clear();return;}
+    if(t.dataset.rm==='q'){st.q="";}
+    else if(t.dataset.rm==='cat'){st.cat="";}
+    else if(t.dataset.rm==='t'){st.techs=st.techs.filter(x=>x!==t.dataset.v);}
+    else if(t.classList.contains('ftoggle')){st.collapsed=!st.collapsed;sync();return;}
+    else return;
+    sync();render();
+  });
+  const api={set(o){Object.assign(st,o);sync();render();}};
+  instances.push(api); sync(); render(); return api;
+}
+
+const PRESETS={
+  active:{q:"",cat:UI,techs:["React","Tailwind"]},
+  empty:{q:"kanban",cat:UI,techs:["React","Tailwind"]},
+  all:{q:"",cat:"",techs:[]}
+};
+mount(document.getElementById('app-desk'),'d',false).set(PRESETS.active);
+mount(document.getElementById('app-phone'),'m',true).set(PRESETS.active);
+document.querySelectorAll('[data-preset]').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('[data-preset]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));
+  instances.forEach(i=>i.set(PRESETS[b.dataset.preset]));
+}));
+
+/* Tema */
+function setTheme(v){
+  const r=document.documentElement;
+  if(v==='system') r.removeAttribute('data-theme'); else r.setAttribute('data-theme',v);
+  document.querySelectorAll('[data-theme-btn]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.themeBtn===v)));
+  try{localStorage.setItem('mdl-theme',v);}catch(e){}
+}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-theme-btn]'); if(b) setTheme(b.dataset.themeBtn);});
+let saved='system'; try{saved=localStorage.getItem('mdl-theme')||'system';}catch(e){}
+setTheme(saved);
+
+/* Especímenes */
+const by=n=>DATA.find(d=>d.name===n);
+const SPEC=[
+  ["Reposo",by("Headless UI"),[],""],
+  ["Hover",by("Headless UI"),[],"is-hover"],
+  ["Foco de teclado",by("Headless UI"),[],"is-focus"],
+  ["Coincidencias resaltadas (React + Tailwind)",by("shadcn/ui"),["React","Tailwind"],""],
+  ["Lista larga: 12 tecnologías",by("daisyUI"),[],""],
+  ["Sin tecnologías",by("Mobbin"),[],""],
+  ["Aviso: Antiguo",by("Ejemplo antiguo"),[],""],
+  ["Aviso: Caído",by("Ejemplo caído"),[],""],
+  ["Aviso: Sin verificar",by("Ejemplo sin verificar"),[],""]
+];
+document.getElementById('spec').innerHTML=SPEC.map(([c,l,a,x])=>'<figure><figcaption>'+esc(c)+'</figcaption>'+card(l,a,x).replace('<a ','<a tabindex="-1" ')+'</figure>').join("");
+})();
+</script>

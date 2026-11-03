@@ -22,3 +22,12 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+.superpowers/
+sdd/
+scripts/.cache/
+.impeccable/
+
+# Playwright
+test-results/
+playwright-report/
