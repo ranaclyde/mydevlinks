@@ -32,6 +32,7 @@ const REMOVED: Record<string, string> = {
 	'create-react-app-dev': 'Antiguo: el sitio declara que está obsoleto.',
 	'marketplace-visualstudio-com-items': 'Antiguo: Vetur fue reemplazado por Volar.',
 	'bootstrap-vue-org-docs': 'Antiguo: apunta a Vue 2 y Bootstrap 4.',
+	'es-nuxtjs-org-docs-2-x-get-started-installation': 'Antiguo: Nuxt 2 llegó al fin de su vida útil.',
 	'reactrouter-com-docs-en-v6': 'Antiguo: reemplazado por tanstack-com, que incluye un router.',
 	'toolbox-signalsupply-co-apps-gradientblobcss': 'Ahora apunta a la raíz de Toolbox, con id toolbox-signalsupply-co.',
 };

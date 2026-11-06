@@ -18,9 +18,7 @@ Los seis caídos de la carga inicial se quitaron el 6 de noviembre de 2026 y est
 
 ## Antiguos
 
-- Instalación de Nuxt 2: https://nuxt.com/docs/2.x/getting-started/installation. El sitio declara el fin de vida de Nuxt 2 el 30 de junio de 2024.
-
-Create React App, Vetur, React Router v6 y BootstrapVue se quitaron el 6 de noviembre de 2026 y están en `Quitados`.
+No queda ninguno. Los cinco de la carga inicial (Create React App, Vetur, React Router v6, Instalación de Nuxt 2 y BootstrapVue) se quitaron el 6 de noviembre de 2026 y están en `Quitados`.
 
 ## Clasificación dudosa
 
@@ -79,6 +77,7 @@ Quitados por el autor el 6 de noviembre de 2026:
 - Create React App: https://create-react-app.dev/. Antiguo: el sitio declara que está obsoleto.
 - Vetur: https://marketplace.visualstudio.com/items?itemName=octref.vetur. Antiguo: reemplazado por Volar.
 - BootstrapVue: https://bootstrap-vue.org/docs/. Antiguo: apunta a Vue 2 y Bootstrap 4.
+- Instalación de Nuxt 2: https://nuxt.com/docs/2.x/getting-started/installation. Antiguo: Nuxt 2 llegó al fin de su vida útil el 30 de junio de 2024.
 - React Router v6: https://reactrouter.com/6.30.6. Antiguo. Reemplazado por TanStack (https://tanstack.com/), que reúne Router, Query, Table, Form y otras librerías.
 
 Cada id quitado figura con su motivo en `REMOVED`, en `tests/data.test.ts`.
@@ -161,7 +160,7 @@ Lista del 6 de noviembre de 2026, para decidir qué hacer con cada uno: quitarlo
 
 **Caídos (1).** PeepsLab (https://peepslab.com/): el sitio está pausado; detalle en `Caídos`, más arriba. Los otros seis ya se quitaron.
 
-**Antiguos (1).** Instalación de Nuxt 2 (https://nuxt.com/docs/2.x/getting-started/installation): el sitio declara su fin de vida. Los otros cuatro ya se quitaron.
+**Antiguos.** Ya no queda ninguno.
 
 **Viejos sin aviso.** Siguen marcados `activo` porque el sitio no declara nada, pero apuntan a versiones pasadas:
 

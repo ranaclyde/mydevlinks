@@ -204,14 +204,15 @@ test('una consulta larga sin espacios no desborda a 390 px', async ({ page, isMo
 });
 
 test('los avisos se ven con palabra y estilo en enlaces reales', async ({ page }) => {
-	const old = publicLinks.find((link) => link.status === 'antiguo' && link.verified) as RawLink;
+	// Puede no quedar ninguno: el sello se comprueba solo si hay un antiguo en los datos.
+	const old = publicLinks.find((link) => link.status === 'antiguo' && link.verified);
 	const unverified = publicLinks.find(
 		(link) => link.status === 'activo' && !link.verified,
 	) as RawLink;
 	const lost = publicLinks.filter((link) => link.status === 'caido' && !link.verified);
 	expect(lost.length).toBeGreaterThan(0);
 
-	await expect(cardOf(page, old).getByText('Antiguo', { exact: true })).toBeVisible();
+	if (old) await expect(cardOf(page, old).getByText('Antiguo', { exact: true })).toBeVisible();
 
 	const pending = cardOf(page, unverified);
 	await expect(pending.getByText('Sin verificar', { exact: true })).toBeVisible();

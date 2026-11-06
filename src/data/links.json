@@ -1456,21 +1456,6 @@
 		"logo": "/logos/github-com-vuejs-awesome-vue.svg"
 	},
 	{
-		"id": "es-nuxtjs-org-docs-2-x-get-started-installation",
-		"name": "Instalación de Nuxt 2",
-		"url": "https://nuxt.com/docs/2.x/getting-started/installation",
-		"description": "Instalación de Nuxt 2, versión que llegó al fin de su vida útil en 2024.",
-		"category": "Aprendizaje y documentación",
-		"tech": [
-			"Nuxt",
-			"Vue"
-		],
-		"status": "antiguo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/es-nuxtjs-org-docs-2-x-get-started-installation.png"
-	},
-	{
 		"id": "explorers-netlify-com-learn-get-started-with-nuxt-nuxt-seo",
 		"name": "Nuxt SEO",
 		"url": "https://www.youtube.com/watch?v=pbMA28qcW7I&list=PLzlG0L9jlhENcUiAQU1x95sBLLCUihwIX&index=6",
