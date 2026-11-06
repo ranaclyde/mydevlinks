@@ -29,6 +29,10 @@ const REMOVED: Record<string, string> = {
 	'magic-reactjs-net-htmltojsx-htm': 'Reemplazado por transform-tools, que incluye HTML a JSX.',
 	'freepik-es-search': 'Freepik pasó a llamarse Magnific: reemplazado por magnific-com.',
 	'freepik-es-search-2': 'Freepik pasó a llamarse Magnific: reemplazado por magnific-com.',
+	'create-react-app-dev': 'Antiguo: el sitio declara que está obsoleto.',
+	'marketplace-visualstudio-com-items': 'Antiguo: Vetur fue reemplazado por Volar.',
+	'bootstrap-vue-org-docs': 'Antiguo: apunta a Vue 2 y Bootstrap 4.',
+	'reactrouter-com-docs-en-v6': 'Antiguo: reemplazado por tanstack-com, que incluye un router.',
 	'toolbox-signalsupply-co-apps-gradientblobcss': 'Ahora apunta a la raíz de Toolbox, con id toolbox-signalsupply-co.',
 };
 

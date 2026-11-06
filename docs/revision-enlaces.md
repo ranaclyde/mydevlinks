@@ -18,11 +18,9 @@ Los seis caídos de la carga inicial se quitaron el 6 de noviembre de 2026 y est
 
 ## Antiguos
 
-- Create React App: https://create-react-app.dev/. El sitio declara que está obsoleto.
-- Vetur: https://marketplace.visualstudio.com/items?itemName=octref.vetur. Su página remite al soporte oficial Volar.
-- React Router v6: https://reactrouter.com/6.30.6. El sitio avisa que es una versión anterior.
 - Instalación de Nuxt 2: https://nuxt.com/docs/2.x/getting-started/installation. El sitio declara el fin de vida de Nuxt 2 el 30 de junio de 2024.
-- BootstrapVue: https://bootstrap-vue.org/docs/. Apunta a Vue 2 y Bootstrap 4; sus autores recomiendan BootstrapVueNext.
+
+Create React App, Vetur, React Router v6 y BootstrapVue se quitaron el 6 de noviembre de 2026 y están en `Quitados`.
 
 ## Clasificación dudosa
 
@@ -78,6 +76,10 @@ Quitados por el autor el 6 de noviembre de 2026:
 - Todo lo de NativeScript, porque queda fuera de la colección: Introduction - NativeScript-Vue (https://nativescript-vue.org/en/docs/introduction/, además caído), NativeScript Marketplace (https://market.nativescript.org/), Apps nativas con NativeScript-Vue (https://www.youtube.com/watch?v=k3NTWrxyvZA) y Awesome NativeScript-Vue (https://github.com/Gonzalo2310/awesome-nativescript-vue). También se quitó `NativeScript` de `TECHS`.
 - HTML to JSX: https://magic.reactjs.net/htmltojsx.htm. Reemplazado por Transform (https://transform.tools/), que incluye HTML a JSX y muchas otras conversiones.
 - Pch.vector y Vectorjuice en Freepik: https://www.freepik.es/search?author=10171402&authorSlug=pch.vector&dates=any&format=author&page=1&query=contact&sort=popular&type=vector y https://www.freepik.es/search?author=26713452&authorSlug=vectorjuice&dates=any&format=author&page=1&query=contact&sort=popular&type=vector. Freepik pasó a llamarse Magnific, y los dos se reemplazaron por una sola entrada: https://www.magnific.com/.
+- Create React App: https://create-react-app.dev/. Antiguo: el sitio declara que está obsoleto.
+- Vetur: https://marketplace.visualstudio.com/items?itemName=octref.vetur. Antiguo: reemplazado por Volar.
+- BootstrapVue: https://bootstrap-vue.org/docs/. Antiguo: apunta a Vue 2 y Bootstrap 4.
+- React Router v6: https://reactrouter.com/6.30.6. Antiguo. Reemplazado por TanStack (https://tanstack.com/), que reúne Router, Query, Table, Form y otras librerías.
 
 Cada id quitado figura con su motivo en `REMOVED`, en `tests/data.test.ts`.
 
@@ -159,13 +161,7 @@ Lista del 6 de noviembre de 2026, para decidir qué hacer con cada uno: quitarlo
 
 **Caídos (1).** PeepsLab (https://peepslab.com/): el sitio está pausado; detalle en `Caídos`, más arriba. Los otros seis ya se quitaron.
 
-**Antiguos (5).** El propio sitio avisa; detalle en `Antiguos`, más arriba:
-
-- Create React App: https://create-react-app.dev/.
-- Vetur: https://marketplace.visualstudio.com/items?itemName=octref.vetur.
-- React Router v6: https://reactrouter.com/6.30.6.
-- Instalación de Nuxt 2: https://nuxt.com/docs/2.x/getting-started/installation.
-- BootstrapVue: https://bootstrap-vue.org/docs/.
+**Antiguos (1).** Instalación de Nuxt 2 (https://nuxt.com/docs/2.x/getting-started/installation): el sitio declara su fin de vida. Los otros cuatro ya se quitaron.
 
 **Viejos sin aviso.** Siguen marcados `activo` porque el sitio no declara nada, pero apuntan a versiones pasadas:
 
@@ -186,3 +182,4 @@ El autor revisó a mano los enlaces sin verificar y los caídos. Lo que se quit�
 - Magnific: https://www.magnific.com/. Reemplaza a Pch.vector y Vectorjuice de Freepik; el sitio confirma "Freepik is now Magnific". Queda en Iconos e ilustraciones como banco de recursos, aunque hoy se presenta sobre todo como plataforma de IA creativa.
 - Transform: https://transform.tools/. Reemplaza a HTML to JSX. Se leyó sin problema: convierte entre muchos formatos, como SVG a JSX, HTML a JSX y JSON a TypeScript. El repositorio es https://github.com/ritz078/transform.
 - PeepsLab: https://peepslab.com/. Sigue en la base, pero ahora como `caido`, porque el sitio está pausado.
+- TanStack: https://tanstack.com/. Reemplaza a React Router v6. Se leyó sin problema: librerías headless y tipadas para apps web, con la misma lógica en React, Vue, Svelte, Solid y Angular. Va en Herramientas de desarrollo.

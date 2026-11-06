@@ -1196,18 +1196,23 @@
 		"logo": "/logos/github-com-stereobooster-react-snap.svg"
 	},
 	{
-		"id": "reactrouter-com-docs-en-v6",
-		"name": "React Router v6",
-		"url": "https://reactrouter.com/6.30.6",
-		"description": "Documentación de React Router 6, una versión anterior a la actual.",
-		"category": "Aprendizaje y documentación",
+		"id": "tanstack-com",
+		"name": "TanStack",
+		"url": "https://tanstack.com/",
+		"description": "Librerías headless y tipadas para apps web: datos, rutas, tablas, formularios y más.",
+		"category": "Herramientas de desarrollo",
 		"tech": [
-			"React"
+			"React",
+			"Vue",
+			"Svelte",
+			"Solid",
+			"Angular",
+			"TypeScript"
 		],
-		"status": "antiguo",
+		"status": "activo",
 		"verified": true,
 		"private": false,
-		"logo": "/logos/reactrouter-com-docs-en-v6.png"
+		"logo": "/logos/tanstack-com.svg"
 	},
 	{
 		"id": "transform-tools",
@@ -1252,20 +1257,6 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/es-redux-js-org.ico"
-	},
-	{
-		"id": "create-react-app-dev",
-		"name": "Create React App",
-		"url": "https://create-react-app.dev/",
-		"description": "Herramienta para iniciar proyectos React, ya obsoleta según su propio sitio.",
-		"category": "Herramientas de desarrollo",
-		"tech": [
-			"React"
-		],
-		"status": "antiguo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/create-react-app-dev.ico"
 	},
 	{
 		"id": "mui-com",
@@ -1408,20 +1399,6 @@
 		"logo": "/logos/code-visualstudio-com.ico"
 	},
 	{
-		"id": "marketplace-visualstudio-com-items",
-		"name": "Vetur",
-		"url": "https://marketplace.visualstudio.com/items?itemName=octref.vetur",
-		"description": "Extensión de VS Code para Vue, reemplazada por el soporte oficial Volar.",
-		"category": "Herramientas de desarrollo",
-		"tech": [
-			"Vue"
-		],
-		"status": "antiguo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/marketplace-visualstudio-com-items.ico"
-	},
-	{
 		"id": "alligator-io-vuejs-component-lifecycle",
 		"name": "Vue.js Lifecycle Hooks",
 		"url": "https://www.digitalocean.com/community/tutorials/vuejs-component-lifecycle",
@@ -1507,21 +1484,6 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/explorers-netlify-com-learn-get-started-with-nuxt-nuxt-seo.png"
-	},
-	{
-		"id": "bootstrap-vue-org-docs",
-		"name": "BootstrapVue",
-		"url": "https://bootstrap-vue.org/docs/",
-		"description": "Bootstrap 4 para Vue 2; sus autores recomiendan pasar a BootstrapVueNext.",
-		"category": "Componentes y UI kits",
-		"tech": [
-			"Vue",
-			"Bootstrap"
-		],
-		"status": "antiguo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/bootstrap-vue-org-docs.png"
 	},
 	{
 		"id": "v3-nuxtjs-org",
