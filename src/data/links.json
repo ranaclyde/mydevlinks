@@ -231,19 +231,6 @@
 		"logo": "/logos/svgtrace-com.png"
 	},
 	{
-		"id": "bennettfeely-com-clippy",
-		"name": "Clippy",
-		"url": "https://bennettfeely.com/clippy/",
-		"description": "Crea formas con la propiedad clip-path de CSS.",
-		"category": "Generadores CSS/SVG",
-		"tech": [
-			"CSS"
-		],
-		"status": "activo",
-		"verified": true,
-		"private": false
-	},
-	{
 		"id": "bgjar-com",
 		"name": "BGJar",
 		"url": "https://bgjar.com/",
@@ -383,7 +370,8 @@
 		],
 		"status": "activo",
 		"verified": true,
-		"private": false
+		"private": false,
+		"logo": "/logos/css-peeps-com.png"
 	},
 	{
 		"id": "peepslab-com",
@@ -476,7 +464,8 @@
 		],
 		"status": "activo",
 		"verified": true,
-		"private": false
+		"private": false,
+		"logo": "/logos/devdojo-com-tailwindcss-buttons.png"
 	},
 	{
 		"id": "uiverse-io",
@@ -760,7 +749,8 @@
 		"tech": [],
 		"status": "activo",
 		"verified": true,
-		"private": false
+		"private": false,
+		"logo": "/logos/namethatui-com.png"
 	},
 	{
 		"id": "scrollxui-dev-docs-components",
@@ -1071,7 +1061,8 @@
 		"tech": [],
 		"status": "activo",
 		"verified": true,
-		"private": false
+		"private": false,
+		"logo": "/logos/svgrepo-com.svg"
 	},
 	{
 		"id": "hugeicons-com",
@@ -1165,7 +1156,8 @@
 		"tech": [],
 		"status": "activo",
 		"verified": true,
-		"private": false
+		"private": false,
+		"logo": "/logos/icoon-co.avif"
 	},
 	{
 		"id": "3dicons-com",
@@ -1178,7 +1170,8 @@
 		],
 		"status": "activo",
 		"verified": true,
-		"private": false
+		"private": false,
+		"logo": "/logos/3dicons-com.svg"
 	},
 	{
 		"id": "github-com-stereobooster-react-snap",
@@ -1861,7 +1854,8 @@
 		],
 		"status": "activo",
 		"verified": true,
-		"private": false
+		"private": false,
+		"logo": "/logos/seesaw-website.svg"
 	},
 	{
 		"id": "liquidglassdesign-com",
@@ -1911,7 +1905,8 @@
 		],
 		"status": "activo",
 		"verified": true,
-		"private": false
+		"private": false,
+		"logo": "/logos/statichunt-com.svg"
 	},
 	{
 		"id": "viewportui-com",
@@ -2092,7 +2087,8 @@
 		],
 		"status": "activo",
 		"verified": true,
-		"private": false
+		"private": false,
+		"logo": "/logos/designspells-com.svg"
 	},
 	{
 		"id": "recent-design",
@@ -2121,7 +2117,8 @@
 		],
 		"status": "activo",
 		"verified": true,
-		"private": false
+		"private": false,
+		"logo": "/logos/dribbble-com.svg"
 	},
 	{
 		"id": "quicktype-io",
@@ -2712,7 +2709,8 @@
 		"tech": [],
 		"status": "activo",
 		"verified": false,
-		"private": false
+		"private": false,
+		"logo": "/logos/typeui-sh.svg"
 	},
 	{
 		"id": "useanimations-com",
@@ -2751,7 +2749,8 @@
 		"tech": [],
 		"status": "activo",
 		"verified": false,
-		"private": false
+		"private": false,
+		"logo": "/logos/landing-love.png"
 	},
 	{
 		"id": "siteinspire-com",
@@ -2765,7 +2764,8 @@
 		],
 		"status": "activo",
 		"verified": true,
-		"private": false
+		"private": false,
+		"logo": "/logos/siteinspire-com.svg"
 	},
 	{
 		"id": "minimal-gallery",
@@ -2849,7 +2849,8 @@
 		"tech": [],
 		"status": "activo",
 		"verified": false,
-		"private": false
+		"private": false,
+		"logo": "/logos/lapa-ninja.svg"
 	},
 	{
 		"id": "bestwebsite-gallery",
@@ -2899,5 +2900,21 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/iconsax-io.png"
+	},
+	{
+		"id": "devdojo-com-inspiration",
+		"name": "DevDojo Inspiration",
+		"url": "https://devdojo.com/inspiration",
+		"description": "Sitios de productos reales con capturas, vídeos de scroll, tokens de diseño y un DESIGN.md para IA.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"tags": [
+			"Sitios web",
+			"Sistemas de diseño"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/devdojo-com-inspiration.svg"
 	}
 ]

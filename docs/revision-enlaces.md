@@ -42,19 +42,10 @@ No queda ninguno. Los cinco de la carga inicial (Create React App, Vetur, React 
 
 La tarjeta muestra la inicial del nombre. Se puede agregar el logo guardándolo en `public/logos/` y completando `logo` en `src/data/links.json`.
 
-- Clippy: https://bennettfeely.com/clippy/. El sitio responde, pero no se obtuvo un ícono usable.
-- CSS-Peeps: https://css-peeps.com/. El sitio responde, pero no se obtuvo un ícono usable.
 - PeepsLab: https://peepslab.com/. Responde 402: el sitio está pausado.
-- TailwindCSS Buttons: https://devdojo.com/tailwindcss/buttons. El sitio responde, pero no se obtuvo un ícono usable.
-- NameThatUI: https://namethatui.com/. El sitio responde, pero no se obtuvo un ícono usable.
-- SVG Repo: https://www.svgrepo.com/. Bloqueo de bots (429).
-- Icoon: https://www.icoon.co/. La página supera el límite de lectura, así que no se llegó a su ícono.
-- 3D icons: https://3dicons.com/. El sitio responde, pero no se obtuvo un ícono usable.
-- SEESAW: https://www.seesaw.website/. La página supera el límite de lectura, así que no se llegó a su ícono.
-- Statichunt: https://statichunt.com/. La página supera el límite de lectura, así que no se llegó a su ícono.
-- Design Spells: https://designspells.com/. Bloqueo de bots (429).
-- Dribbble: https://dribbble.com/. Pide resolver una verificación con JavaScript, así que no se obtuvo un ícono.
 - 97 Cosas: https://97cosas.com/. El sitio responde, pero no se obtuvo un ícono usable.
+
+El 6 de noviembre de 2026 el autor subió a mano los logos de los demás. El de Siteinspire es un círculo rojo dibujado aquí (`public/logos/siteinspire-com.svg`), porque el sitio bloquea la descarga de su favicon y su marca es ese círculo.
 
 ## Quitados
 
@@ -80,6 +71,8 @@ Quitados por el autor el 6 de noviembre de 2026:
 - Instalación de Nuxt 2: https://nuxt.com/docs/2.x/getting-started/installation. Antiguo: Nuxt 2 llegó al fin de su vida útil el 30 de junio de 2024.
 - React Router v6: https://reactrouter.com/6.30.6. Antiguo. Reemplazado por TanStack (https://tanstack.com/), que reúne Router, Query, Table, Form y otras librerías.
 
+- Clippy: https://bennettfeely.com/clippy/. El autor lo quitó.
+
 Cada id quitado figura con su motivo en `REMOVED`, en `tests/data.test.ts`.
 
 ## Carga del 6 de noviembre de 2026
@@ -103,10 +96,7 @@ No se pudo leer el sitio, así que van sin descripción ni tecnologías.
 
 ### Sin logo
 
-- TypeUI: https://www.typeui.sh/. Bloqueo de bots (429).
-- Landing Love: https://www.landing.love/. Bloqueo de bots (403).
-- Lapa Ninja: https://www.lapa.ninja/. Bloqueo de bots (403).
-- Siteinspire: https://www.siteinspire.com/. El favicon también pasa por el bloqueo de Vercel (429).
+Los cuatro (TypeUI, Landing Love, Lapa Ninja y Siteinspire) ya tienen logo; ver `Sin logo`, más arriba.
 
 ## Para revisar: fuera de frontend o colgados
 
@@ -182,3 +172,4 @@ El autor revisó a mano los enlaces sin verificar y los caídos. Lo que se quit�
 - Transform: https://transform.tools/. Reemplaza a HTML to JSX. Se leyó sin problema: convierte entre muchos formatos, como SVG a JSX, HTML a JSX y JSON a TypeScript. El repositorio es https://github.com/ritz078/transform.
 - PeepsLab: https://peepslab.com/. Sigue en la base, pero ahora como `caido`, porque el sitio está pausado.
 - TanStack: https://tanstack.com/. Reemplaza a React Router v6. Se leyó sin problema: librerías headless y tipadas para apps web, con la misma lógica en React, Vue, Svelte, Solid y Angular. Va en Herramientas de desarrollo.
+- DevDojo Inspiration: https://devdojo.com/inspiration. Agregado a pedido del autor. Se leyó sin problema: sitios de productos reales con capturas, vídeos de scroll, tokens de diseño y un DESIGN.md para IA. Va en Galerías de inspiración, como Sitios web y Sistemas de diseño, con el favicon de DevDojo.
