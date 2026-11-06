@@ -35,6 +35,13 @@ const REMOVED: Record<string, string> = {
 	'bennettfeely-com-clippy': 'El autor lo quitó.',
 	'es-nuxtjs-org-docs-2-x-get-started-installation': 'Antiguo: Nuxt 2 llegó al fin de su vida útil.',
 	'reactrouter-com-docs-en-v6': 'Antiguo: reemplazado por tanstack-com, que incluye un router.',
+	'alligator-io-vuejs-component-lifecycle': 'Tutorial de Vue; el autor lo quitó.',
+	'es-redux-js-org': 'Documentación de Redux en GitBook antiguo; el autor la quitó.',
+	'youtube-com-watch': 'Curso de Next.js 12, versión vieja; el autor lo quitó.',
+	'github-com-simplesmiler-vue-focus': 'Librería de Vue 2; el autor la quitó.',
+	'github-com-dgrubelic-vue-authenticate': 'Librería de Vue 2; el autor la quitó.',
+	'beefree-io-editor': 'Beefree es ahora RGE Studio: reemplazado por reallygoodemails-com-studio.',
+	'flowbite-com-blocks': 'Ahora apunta a la raíz de Flowbite, con id flowbite-com.',
 	'toolbox-signalsupply-co-apps-gradientblobcss': 'Ahora apunta a la raíz de Toolbox, con id toolbox-signalsupply-co.',
 };
 

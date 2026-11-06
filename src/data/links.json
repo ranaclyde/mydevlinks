@@ -65,7 +65,7 @@
 		"id": "picography-co",
 		"name": "Picography",
 		"url": "https://picography.co/",
-		"description": "Fotos de stock gratuitas en alta resolución, sin atribución.",
+		"description": "Banco de imágenes: fotos de stock gratuitas en alta resolución, sin atribución.",
 		"category": "Iconos e ilustraciones",
 		"tech": [],
 		"status": "activo",
@@ -540,10 +540,10 @@
 		"logo": "/logos/daisyui-com.svg"
 	},
 	{
-		"id": "flowbite-com-blocks",
-		"name": "Flowbite Blocks",
-		"url": "https://flowbite.com/blocks/",
-		"description": "Bloques de interfaz de Flowbite, la biblioteca de componentes sobre Tailwind.",
+		"id": "flowbite-com",
+		"name": "Flowbite",
+		"url": "https://flowbite.com/",
+		"description": "Biblioteca de componentes abierta sobre Tailwind, con bloques, plantillas e integraciones.",
 		"category": "Componentes y UI kits",
 		"tech": [
 			"Tailwind",
@@ -561,7 +561,7 @@
 		"status": "activo",
 		"verified": true,
 		"private": false,
-		"logo": "/logos/flowbite-com-blocks.ico"
+		"logo": "/logos/flowbite-com.ico"
 	},
 	{
 		"id": "ui-shadcn-com",
@@ -925,9 +925,11 @@
 		"id": "originkit-dev",
 		"name": "Originkit",
 		"url": "https://www.originkit.dev/",
-		"description": "Componentes animados gratuitos; se copian, se usan en Framer o por MCP.",
+		"description": "Componentes animados gratis: se copian en React o se instalan por CLI, MCP o prompt para IA.",
 		"category": "Componentes y UI kits",
-		"tech": [],
+		"tech": [
+			"React"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -1088,7 +1090,7 @@
 	{
 		"id": "fonts-google-com",
 		"name": "Google Fonts",
-		"url": "https://fonts.google.com/?icon.platform=web",
+		"url": "https://fonts.google.com/",
 		"description": "Catálogo de fuentes abiertas para la web.",
 		"category": "Fuentes y color",
 		"tech": [],
@@ -1096,6 +1098,18 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/fonts-google-com.svg"
+	},
+	{
+		"id": "fonts-google-com-icons",
+		"name": "Material Symbols",
+		"url": "https://fonts.google.com/icons",
+		"description": "Más de 2.500 iconos de Google en una sola fuente, con muchas variantes de diseño.",
+		"category": "Iconos e ilustraciones",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/fonts-google-com-icons.svg"
 	},
 	{
 		"id": "tabler-io-icons",
@@ -1237,21 +1251,6 @@
 		"logo": "/logos/es-reactjs-org.png"
 	},
 	{
-		"id": "es-redux-js-org",
-		"name": "Redux en español",
-		"url": "https://es.redux.js.org/",
-		"description": "Documentación de Redux traducida al español.",
-		"category": "Aprendizaje y documentación",
-		"tech": [
-			"Redux",
-			"JavaScript"
-		],
-		"status": "activo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/es-redux-js-org.ico"
-	},
-	{
 		"id": "mui-com",
 		"name": "MUI",
 		"url": "https://mui.com/",
@@ -1309,21 +1308,6 @@
 		"logo": "/logos/chakra-ui-com.ico"
 	},
 	{
-		"id": "youtube-com-watch",
-		"name": "Curso de Next.js 12 desde cero",
-		"url": "https://www.youtube.com/watch?v=pFT8wD2uRSE",
-		"description": "Curso en vídeo de Next.js 12 que crea dos proyectos prácticos desde cero.",
-		"category": "Aprendizaje y documentación",
-		"tech": [
-			"Next.js",
-			"React"
-		],
-		"status": "activo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/youtube-com-watch.png"
-	},
-	{
 		"id": "remotion-dev",
 		"name": "Remotion",
 		"url": "https://www.remotion.dev/",
@@ -1366,20 +1350,6 @@
 		"logo": "/logos/github-com-hapijs-joi.svg"
 	},
 	{
-		"id": "github-com-simplesmiler-vue-focus",
-		"name": "vue-focus",
-		"url": "https://github.com/simplesmiler/vue-focus",
-		"description": "Directiva reutilizable para gestionar el foco en componentes de Vue 2.",
-		"category": "Herramientas de desarrollo",
-		"tech": [
-			"Vue"
-		],
-		"status": "activo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/github-com-simplesmiler-vue-focus.svg"
-	},
-	{
 		"id": "code-visualstudio-com",
 		"name": "Visual Studio Code",
 		"url": "https://code.visualstudio.com/",
@@ -1390,34 +1360,6 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/code-visualstudio-com.ico"
-	},
-	{
-		"id": "alligator-io-vuejs-component-lifecycle",
-		"name": "Vue.js Lifecycle Hooks",
-		"url": "https://www.digitalocean.com/community/tutorials/vuejs-component-lifecycle",
-		"description": "Tutorial sobre los hooks del ciclo de vida de los componentes de Vue.",
-		"category": "Aprendizaje y documentación",
-		"tech": [
-			"Vue"
-		],
-		"status": "activo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/alligator-io-vuejs-component-lifecycle.svg"
-	},
-	{
-		"id": "github-com-dgrubelic-vue-authenticate",
-		"name": "vue-authenticate",
-		"url": "https://github.com/dgrubelic/vue-authenticate",
-		"description": "Biblioteca de autenticación para Vue.",
-		"category": "Herramientas de desarrollo",
-		"tech": [
-			"Vue"
-		],
-		"status": "activo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/github-com-dgrubelic-vue-authenticate.svg"
 	},
 	{
 		"id": "escuelavue-es-como-aprender-vue",
@@ -2533,16 +2475,16 @@
 		"logo": "/logos/resend-com.png"
 	},
 	{
-		"id": "beefree-io-editor",
+		"id": "reallygoodemails-com-studio",
 		"name": "RGE Studio",
-		"url": "https://reallygoodemails.com/start-designing?template=empty",
-		"description": "Editor de correos de arrastrar y soltar, antes llamado Beefree.",
+		"url": "https://reallygoodemails.com/studio",
+		"description": "Plataforma colaborativa para crear correos, antes Beefree, con plantillas e inspiración.",
 		"category": "Herramientas de desarrollo",
 		"tech": [],
 		"status": "activo",
 		"verified": true,
 		"private": false,
-		"logo": "/logos/beefree-io-editor.ico"
+		"logo": "/logos/reallygoodemails-com-studio.png"
 	},
 	{
 		"id": "patterns-dev",
