@@ -170,6 +170,32 @@ html:not([data-js]) [data-app] {
 		display: none;
 	}
 
+	/*
+	 * Brillo por cercanía: el tramo del borde que mira al cursor se enciende en índigo.
+	 * glow.ts escribe --glow (0 a 1) y --glow-a (ángulo hacia el cursor, en grados).
+	 * Solo la línea, sin halo ni desenfoque; respeta el recorte de la esquina.
+	 */
+	.ficha::after {
+		content: "";
+		position: absolute;
+		inset: -1px;
+		border: 1px solid var(--accent);
+		pointer-events: none;
+		opacity: var(--glow, 0);
+		clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 0 100%);
+		mask-image: conic-gradient(
+			from calc(var(--glow-a, 0) * 1deg),
+			#000 0deg,
+			transparent 75deg,
+			transparent 285deg,
+			#000 360deg
+		);
+	}
+
+	.ficha.f-unv::after {
+		display: none;
+	}
+
 	.chip {
 		border: 1px solid var(--line);
 		padding: 2px 6px;
