@@ -2809,5 +2809,180 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/particles-casberry-in.svg"
+	},
+	{
+		"id": "typeui-sh",
+		"name": "TypeUI",
+		"url": "https://www.typeui.sh/",
+		"category": "Otros",
+		"tech": [],
+		"status": "activo",
+		"verified": false,
+		"private": false
+	},
+	{
+		"id": "useanimations-com",
+		"name": "useAnimations",
+		"url": "https://useanimations.com/",
+		"description": "300 iconos animados con hover, clic y loop para React, shadcn/ui y Lottie. MIT.",
+		"category": "Animación y efectos",
+		"tech": [
+			"React",
+			"shadcn/ui"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/useanimations-com.svg"
+	},
+	{
+		"id": "reactvibe-com",
+		"name": "React Vibe",
+		"url": "https://reactvibe.com/",
+		"description": "Componentes React animados y de código abierto para copiar y pegar.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"React"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/reactvibe-com.png"
+	},
+	{
+		"id": "landing-love",
+		"name": "Landing Love",
+		"url": "https://www.landing.love/",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": false,
+		"private": false
+	},
+	{
+		"id": "siteinspire-com",
+		"name": "Siteinspire",
+		"url": "https://www.siteinspire.com/",
+		"description": "Galería de sitios web por estilo, tipo y tema, con perfiles de estudios.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false
+	},
+	{
+		"id": "minimal-gallery",
+		"name": "Minimal Gallery",
+		"url": "https://minimal.gallery/",
+		"description": "Sitios web minimalistas elegidos a mano, con plantillas y herramientas.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/minimal-gallery.png"
+	},
+	{
+		"id": "darkmodedesign-com",
+		"name": "Dark Mode Design",
+		"url": "https://www.darkmodedesign.com/",
+		"description": "Galería de sitios web con modo oscuro elegidos a mano.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/darkmodedesign-com.png"
+	},
+	{
+		"id": "land-book-com",
+		"name": "Land-book",
+		"url": "https://land-book.com/",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": false,
+		"private": false,
+		"logo": "/logos/land-book-com.ico"
+	},
+	{
+		"id": "onepagelove-com",
+		"name": "One Page Love",
+		"url": "https://onepagelove.com/",
+		"description": "Galería de sitios de una sola página, con plantillas y recursos.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/onepagelove-com.png"
+	},
+	{
+		"id": "httpster-net",
+		"name": "Httpster",
+		"url": "https://httpster.net/",
+		"description": "Galería de sitios web filtrable por estilo y tipo.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/httpster-net.svg"
+	},
+	{
+		"id": "lapa-ninja",
+		"name": "Lapa Ninja",
+		"url": "https://www.lapa.ninja/",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": false,
+		"private": false
+	},
+	{
+		"id": "bestwebsite-gallery",
+		"name": "Best Website Gallery",
+		"url": "https://bestwebsite.gallery/",
+		"description": "Sitios web elegidos a mano desde 2008, con un sitio destacado del día.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/bestwebsite-gallery.png"
+	},
+	{
+		"id": "unicornicons-com",
+		"name": "Unicorn Icons",
+		"url": "https://unicornicons.com/",
+		"description": "Más de 400 iconos animados en Lottie y Rive, con editor de color en el navegador.",
+		"category": "Iconos e ilustraciones",
+		"tech": [
+			"React",
+			"Vue",
+			"Flutter"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/unicornicons-com.ico"
+	},
+	{
+		"id": "iconsax-io",
+		"name": "Iconsax",
+		"url": "https://iconsax.io/",
+		"description": "Biblioteca de iconos de Vuesax: más de 7.000 gratis y 44.000 premium.",
+		"category": "Iconos e ilustraciones",
+		"tech": [
+			"Vue",
+			"React",
+			"Svelte",
+			"Flutter",
+			"Figma"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/iconsax-io.png"
 	}
 ]

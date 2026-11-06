@@ -90,3 +90,29 @@ La tarjeta muestra la inicial del nombre. Se puede agregar el logo guardándolo 
 ## Quitados
 
 - Tailwind CSS Components: https://tailwindcomponents.com/. Redirige con 301 a https://www.creative-tim.com/twcomponents/ y sirve el mismo título y descripción. Es el mismo sitio, así que se conserva esa entrada.
+
+## Carga del 6 de noviembre de 2026
+
+Se agregaron 14 enlaces; ninguno estaba repetido. Nueve se leyeron sin problema. Los cinco siguientes quedan anotados.
+
+### Sin verificar
+
+No se pudo leer el sitio, así que van sin descripción ni tecnologías.
+
+- TypeUI: https://www.typeui.sh/. Vercel Security Checkpoint bloquea los accesos automáticos (429). No se sabe qué ofrece, así que queda en Otros hasta leer el sitio.
+- Landing Love: https://www.landing.love/. Bloqueo de Cloudflare (403). Categoría deducida del nombre: Galerías de inspiración.
+- Land-book: https://land-book.com/. Desafío de Cloudflare (403). Categoría deducida del nombre: Galerías de inspiración. Su favicon sí se pudo descargar.
+- Lapa Ninja: https://www.lapa.ninja/. Bloqueo de Cloudflare (403). Categoría deducida del nombre: Galerías de inspiración.
+
+### Clasificación dudosa
+
+- Siteinspire: https://www.siteinspire.com/. El script lo encontró bloqueado (429), pero una segunda lectura mostró la galería con entradas de octubre de 2026, así que queda verificado.
+- React Vibe: https://reactvibe.com/. Son componentes React animados; quedan en Componentes y UI kits, como Magic UI y Aceternity, y no en Animación y efectos.
+- Httpster: https://httpster.net/. Las fichas no muestran fecha y no se pudo confirmar que siga publicando, aunque el pie dice 2012–2026. Queda `activo`.
+
+### Sin logo
+
+- TypeUI: https://www.typeui.sh/. Bloqueo de bots (429).
+- Landing Love: https://www.landing.love/. Bloqueo de bots (403).
+- Lapa Ninja: https://www.lapa.ninja/. Bloqueo de bots (403).
+- Siteinspire: https://www.siteinspire.com/. El favicon también pasa por el bloqueo de Vercel (429).
