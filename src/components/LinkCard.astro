@@ -7,7 +7,7 @@ interface Props {
 }
 
 const { link } = Astro.props;
-const { name, url, description, category, tech, logo, status, verified } = link;
+const { name, url, description, category, tech, tags = [], logo, status, verified } = link;
 
 const down = status === 'caido';
 const old = status === 'antiguo';
@@ -30,6 +30,7 @@ const stampBase =
 	data-description={description}
 	data-category={category}
 	data-tech={JSON.stringify(tech)}
+	data-tags={JSON.stringify(tags)}
 >
 	<a
 		class:list={[
@@ -183,6 +184,23 @@ const stampBase =
 								</span>
 							</>
 						)}
+					</div>
+				</>
+			)
+		}
+		{
+			tags.length > 0 && (
+				<>
+					<span class="sr-only">Tipo: {tags.join(', ')}.</span>
+					<div
+						class="border-line col-span-full flex flex-wrap gap-[5px] border-t border-dashed pt-2.5"
+						aria-hidden="true"
+					>
+						{tags.map((tag) => (
+							<span class="chip" data-tag={tag}>
+								{tag}
+							</span>
+						))}
 					</div>
 				</>
 			)

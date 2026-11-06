@@ -9,6 +9,7 @@ import {
 	queryWithoutTech,
 	queryWithoutWords,
 	splitQuery,
+	tagCounts,
 	TECH_ALIASES,
 } from '../src/lib/filter';
 import { TECHS as VOCABULARY } from '../src/lib/links';
@@ -335,6 +336,47 @@ describe('categoryCounts', () => {
 		const state = { query: '', category: 'Otros', tech: ['React'] };
 		expect(categoryCounts(items, state, TECHS)).toEqual({
 			'Componentes y UI kits': 2,
+			'Animación y efectos': 1,
+		});
+	});
+});
+
+describe('etiquetas de galería', () => {
+	const G = 'Galerías de inspiración';
+	const landings = { name: 'Landings', description: 'Ejemplos.', category: G, tech: [], tags: ['Landing pages'] };
+	const oscuras = {
+		name: 'Oscuras',
+		description: 'Ejemplos.',
+		category: G,
+		tech: [],
+		tags: ['Sitios web', 'Estilos visuales'],
+	};
+	const items = [landings, oscuras, shadcn, motion];
+
+	it('la etiqueta deja solo las galerías que la llevan', () => {
+		const state = { query: '', category: G, tech: [], tag: 'Estilos visuales' };
+		expect(items.filter((item) => matches(item, state, TECHS))).toEqual([oscuras]);
+	});
+
+	it('la búsqueda encuentra una galería por su etiqueta', () => {
+		expect(matches(landings, { ...empty, query: 'landing' }, TECHS)).toBe(true);
+		expect(matches(oscuras, { ...empty, query: 'landing' }, TECHS)).toBe(false);
+	});
+
+	it('tagCounts cuenta cada etiqueta ignorando la elegida', () => {
+		const state = { query: '', category: G, tech: [], tag: 'Landing pages' };
+		expect(tagCounts(items, state, TECHS)).toEqual({
+			'Landing pages': 1,
+			'Sitios web': 1,
+			'Estilos visuales': 1,
+		});
+	});
+
+	it('categoryCounts ignora la etiqueta', () => {
+		const state = { query: '', category: G, tech: [], tag: 'Landing pages' };
+		expect(categoryCounts(items, state, TECHS)).toEqual({
+			[G]: 2,
+			'Componentes y UI kits': 1,
 			'Animación y efectos': 1,
 		});
 	});

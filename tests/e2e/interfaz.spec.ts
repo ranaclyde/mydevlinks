@@ -10,6 +10,7 @@ interface RawLink {
 	description?: string;
 	category: string;
 	tech: string[];
+	tags?: string[];
 	logo?: string;
 	status: string;
 	verified: boolean;
@@ -341,4 +342,29 @@ test('el final del panel se alcanza con la rueda y la página arriba', async ({ 
 
 	await expect(more).toBeInViewport({ ratio: 1 });
 	expect(await page.evaluate(() => window.scrollY)).toBe(0);
+});
+
+test('el tipo de galería filtra dentro de Galerías y se pierde al cambiar de categoría', async ({
+	page,
+	isMobile,
+}) => {
+	const GALLERY = 'Galerías de inspiración';
+	const galleries = publicLinks.filter((link) => link.category === GALLERY);
+	const sections = galleries.filter((link) => link.tags?.includes('Secciones'));
+	expect(sections.length).toBeGreaterThan(0);
+
+	await openFilters(page, isMobile);
+	await expect(page.getByRole('group', { name: 'Tipo de galería' })).toBeHidden();
+
+	await page.getByRole('radio', { name: /Galerías de inspiración/ }).check({ force: true });
+	await expect(page.getByRole('group', { name: 'Tipo de galería' })).toBeVisible();
+	await page.getByRole('radio', { name: /^Secciones/ }).check({ force: true });
+
+	await expect(count(page)).toHaveText(String(sections.length));
+	await expect(page.getByRole('button', { name: 'Quitar tipo Secciones' })).toBeVisible();
+	await expect(visibleCards(page).first().locator('[data-tag="Secciones"]')).toBeVisible();
+
+	await page.getByRole('radio', { name: /Componentes y UI kits/ }).check({ force: true });
+	await expect(page.getByRole('group', { name: 'Tipo de galería' })).toBeHidden();
+	await expect(page.getByRole('button', { name: /^Quitar tipo/ })).toHaveCount(0);
 });

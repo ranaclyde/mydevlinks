@@ -437,6 +437,9 @@
 		"description": "Inspiración de landing pages, con plantillas y componentes.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Landing pages"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -624,6 +627,9 @@
 		"description": "Colección de capturas de interfaces web e iOS con búsqueda avanzada.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Interfaces de apps"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -1936,6 +1942,9 @@
 		"description": "Portafolios de diseñadores de grandes empresas tecnológicas.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Marca y portafolios"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -1948,6 +1957,10 @@
 		"description": "Galería de sitios web con tema oscuro.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Sitios web",
+			"Estilos visuales"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -1960,6 +1973,9 @@
 		"description": "Galería de páginas de error creativas.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Secciones"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -1972,6 +1988,9 @@
 		"description": "Estilos de sitios reales con su DESIGN.md: colores, tipografía y espaciado.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Sistemas de diseño"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -1984,6 +2003,9 @@
 		"description": "Ejemplos de sitios web modernos para inspirarse.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Sitios web"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -1996,6 +2018,9 @@
 		"description": "Inspiración diaria de diseños de interfaz y portafolios.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Interfaces de apps"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2008,6 +2033,10 @@
 		"description": "Colección de animaciones e interacciones de apps iOS y web.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Movimiento",
+			"Interfaces de apps"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2020,6 +2049,9 @@
 		"description": "Colección de sitios web seleccionados, con actualización diaria y categorías.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Sitios web"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false
@@ -2031,6 +2063,9 @@
 		"description": "Más de 170 ejemplos de liquid glass y glassmorfismo, con prompts de estilo.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Estilos visuales"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2043,6 +2078,10 @@
 		"description": "Ejemplos de interfaz de sitios y apps: logins, precios, formularios y más.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Secciones",
+			"Interfaces de apps"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2074,6 +2113,10 @@
 		"description": "Galería de diseños e interacciones de interfaz publicados en X.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Interfaces de apps",
+			"Movimiento"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2086,6 +2129,9 @@
 		"description": "Colección de diseños con estilo bento.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Estilos visuales"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2098,6 +2144,10 @@
 		"description": "Sitios y landing pages reales, filtrables por estilo o sector.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Sitios web",
+			"Landing pages"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2110,6 +2160,9 @@
 		"description": "Galería de rediseños de marca con vídeo, logos, color y tipografía.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Marca y portafolios"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2122,6 +2175,9 @@
 		"description": "Comunidad donde se publican y exploran trabajos de diseño.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Marca y portafolios"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2134,6 +2190,9 @@
 		"description": "Biblioteca de capturas de apps móviles y web, con búsqueda.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Interfaces de apps"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2146,6 +2205,9 @@
 		"description": "Galería de llamadas a la acción de sitios web.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Secciones"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2158,6 +2220,9 @@
 		"description": "Biblioteca de secciones hero de sitios web.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Secciones"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2170,6 +2235,9 @@
 		"description": "Galería de barras de navegación de sitios web.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Secciones"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2182,6 +2250,9 @@
 		"description": "Galería de pies de página, ordenable por tipo y estilo.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Secciones"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2194,6 +2265,9 @@
 		"description": "Análisis de sistemas de diseño de sitios populares para usar con agentes.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Sistemas de diseño"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2206,6 +2280,9 @@
 		"description": "Colección de detalles de diseño: animaciones, transiciones y guiños ocultos.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Movimiento"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false
@@ -2217,6 +2294,9 @@
 		"description": "Feed de diseño reciente: interfaces, marca, motion, ilustración y pósteres.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Marca y portafolios"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2793,6 +2873,9 @@
 		"description": "Colección de titulares de marketing de sitios web.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Secciones"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2866,6 +2949,9 @@
 		"description": "Galería de sitios web por estilo, tipo y tema, con perfiles de estudios.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Sitios web"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false
@@ -2877,6 +2963,10 @@
 		"description": "Sitios web minimalistas elegidos a mano, con plantillas y herramientas.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Sitios web",
+			"Estilos visuales"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2889,6 +2979,10 @@
 		"description": "Galería de sitios web con modo oscuro elegidos a mano.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Sitios web",
+			"Estilos visuales"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2912,6 +3006,10 @@
 		"description": "Galería de sitios de una sola página, con plantillas y recursos.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Sitios web",
+			"Landing pages"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2924,6 +3022,9 @@
 		"description": "Galería de sitios web filtrable por estilo y tipo.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Sitios web"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2946,6 +3047,9 @@
 		"description": "Sitios web elegidos a mano desde 2008, con un sitio destacado del día.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Sitios web"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,

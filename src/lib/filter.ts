@@ -41,12 +41,15 @@ export interface FilterItem {
 	description?: string;
 	category: string;
 	tech: string[];
+	tags?: string[];
 }
 
 export interface FilterState {
 	query: string;
 	category: string | null;
 	tech: string[];
+	/** Etiqueta de galería; solo tiene sentido con la categoría de galerías. */
+	tag?: string | null;
 }
 
 interface Segment {
@@ -114,7 +117,9 @@ export function queryWithoutWords(query: string, techs: string[]): string {
 }
 
 function haystack(item: FilterItem): string {
-	return normalize([item.name, item.description ?? '', item.tech.join(' '), item.category].join(' '));
+	return normalize(
+		[item.name, item.description ?? '', item.tech.join(' '), item.category, ...(item.tags ?? [])].join(' '),
+	);
 }
 
 function wholeWord(text: string): RegExp {
@@ -147,13 +152,14 @@ function prose(item: FilterItem): string {
  * Una casilla exige la etiqueta. Una tecnología escrita también acepta el enlace que la nombra,
  * para que ninguno quede fuera al buscarlo por su nombre.
  */
-function matcher(state: FilterState, techs: string[], ignoreCategory = false) {
+function matcher(state: FilterState, techs: string[], ignore: { category?: boolean; tag?: boolean } = {}) {
 	const { techs: typed, words } = splitQuery(state.query, techs);
 	const wordTests = words.map(wordTest);
 	const mentions = typed.map((tech) => ({ tech, forms: mentionsOf(tech) }));
 
 	return (item: FilterItem) => {
-		if (!ignoreCategory && state.category && item.category !== state.category) return false;
+		if (!ignore.category && state.category && item.category !== state.category) return false;
+		if (!ignore.tag && state.tag && !(item.tags ?? []).includes(state.tag)) return false;
 		if (!state.tech.every((tech) => item.tech.includes(tech))) return false;
 		const mentioned = mentions.every(
 			({ tech, forms }) =>
@@ -182,14 +188,30 @@ export function facetCounts(
 	);
 }
 
-/** Enlaces por categoría con los demás filtros, porque elegir una reemplaza a la anterior. */
+/** Enlaces por etiqueta con los demás filtros, porque elegir una reemplaza a la anterior. */
+export function tagCounts(
+	items: FilterItem[],
+	state: FilterState,
+	techs: string[],
+): Record<string, number> {
+	const counts: Record<string, number> = {};
+	for (const item of items.filter(matcher(state, techs, { tag: true }))) {
+		for (const tag of item.tags ?? []) counts[tag] = (counts[tag] ?? 0) + 1;
+	}
+	return counts;
+}
+
+/**
+ * Enlaces por categoría con los demás filtros, porque elegir una reemplaza a la anterior.
+ * Ignora la etiqueta, que se pierde al cambiar de categoría.
+ */
 export function categoryCounts(
 	items: FilterItem[],
 	state: FilterState,
 	techs: string[],
 ): Record<string, number> {
 	const counts: Record<string, number> = {};
-	for (const item of items.filter(matcher(state, techs, true))) {
+	for (const item of items.filter(matcher(state, techs, { category: true, tag: true }))) {
 		counts[item.category] = (counts[item.category] ?? 0) + 1;
 	}
 	return counts;

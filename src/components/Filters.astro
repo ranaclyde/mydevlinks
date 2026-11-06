@@ -1,5 +1,6 @@
 ---
 import { TOP_TECHS } from '../lib/filter';
+import { GALLERY } from '../lib/links';
 
 interface Option {
 	value: string;
@@ -9,10 +10,12 @@ interface Option {
 interface Props {
 	categories: Option[];
 	techs: Option[];
+	tags: Option[];
 	total: number;
 }
 
-const { categories, techs, total } = Astro.props;
+const { categories, techs, tags, total } = Astro.props;
+const galleries = categories.find((category) => category.value === GALLERY)?.count ?? 0;
 
 const label =
 	'text-muted font-mono text-[11px] font-semibold tracking-[.08em] uppercase';
@@ -135,6 +138,32 @@ const count =
 				</div>
 			</fieldset>
 		</details>
+
+		{
+			tags.length > 0 && (
+				<fieldset class="min-w-0" data-tags hidden>
+					<legend class:list={[label, 'mb-1.5 block px-1']}>Tipo de galería</legend>
+					<div class="flex flex-col">
+						<label class={categoryOption}>
+							<input class="sr-only" type="radio" name="tipo" value="" checked />
+							<span class="min-w-0 flex-1">Todos</span>
+							<span class={count} data-count>
+								{galleries}
+							</span>
+						</label>
+						{tags.map((tag) => (
+							<label class={categoryOption}>
+								<input class="sr-only" type="radio" name="tipo" value={tag.value} />
+								<span class="min-w-0 flex-1">{tag.value}</span>
+								<span class={count} data-count>
+									{tag.count}
+								</span>
+							</label>
+						))}
+					</div>
+				</fieldset>
+			)
+		}
 
 		<fieldset class="min-w-0">
 			<legend class:list={[label, 'mb-1.5 flex w-full justify-between px-1']}>

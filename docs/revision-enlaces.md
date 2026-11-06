@@ -116,3 +116,86 @@ No se pudo leer el sitio, así que van sin descripción ni tecnologías.
 - Landing Love: https://www.landing.love/. Bloqueo de bots (403).
 - Lapa Ninja: https://www.lapa.ninja/. Bloqueo de bots (403).
 - Siteinspire: https://www.siteinspire.com/. El favicon también pasa por el bloqueo de Vercel (429).
+
+## Para revisar: fuera de frontend o colgados
+
+Lista del 6 de noviembre de 2026, para decidir qué hacer con cada uno: quitarlo, marcarlo `private` o dejarlo. Todavía no se cambió nada en `src/data/links.json`. El criterio es el foco propuesto para la web: recursos de frontend y diseño de interfaces para quien programa.
+
+### Fuera de frontend
+
+**Backend y datos.** Toda la categoría (11):
+
+- Directus, Strapi y Storyblok: https://directus.com/, https://strapi.io/ y https://www.storyblok.com/. Son CMS headless y se consumen desde el frontend, así que son los más defendibles para quedarse.
+- PocketBase, Turso, Upstash, Neon y MongoDB Atlas: https://pocketbase.io/, https://turso.tech/, https://upstash.com/, https://neon.com/ y https://www.mongodb.com/es/products/platform/atlas-database. Bases de datos y backend.
+- Resend: https://resend.com/. Correo transaccional.
+- Lemon Squeezy: https://www.lemonsqueezy.com/. Pagos.
+- AnyAPI: https://anyapi.io/. APIs de datos.
+
+**Aprendizaje y documentación:**
+
+- Agents Towards Production: https://github.com/NirDiamant/agents-towards-production. Agentes de IA en producción.
+- Guía de entrevistas de programación: https://github.com/DevCaress/guia-entrevistas-de-programacion. Carrera, no frontend.
+- 97 Cosas: https://97cosas.com/. Consejos generales de programación.
+- OverAPI: https://overapi.com/. Hojas de referencia de todo tipo, incluidos SO y bases de datos.
+
+**Herramientas de desarrollo:**
+
+- Joi: https://github.com/hapijs/joi. Validación de datos, de uso sobre todo en servidor.
+- quicktype: https://quicktype.io/. Genera tipos desde JSON para muchos lenguajes; sirve en frontend, pero es general.
+- Web Check: https://web-check.xyz/. OSINT y seguridad.
+- HeadlessX: https://headlessx.saify.me/. Scraping.
+- RGE Studio: https://reallygoodemails.com/start-designing?template=empty. Diseño de correos.
+- Visual Studio Code: https://code.visualstudio.com/. Editor general.
+- ShipFree: https://shipfree.revoks.dev/. Plantilla full-stack de SaaS; dudoso, porque trae mucho frontend.
+
+**Directorios de recursos:**
+
+- RapidAPI y Public APIs: https://rapidapi.com/ y https://publicapis.dev/. Directorios de APIs.
+- it's free*: https://itsfree.dev/es. Hosting, bases de datos e IA gratis.
+- Toolfolio: https://toolfolio.com/. Herramientas de productividad en general.
+- Clone Wars: https://github.com/gorvgoyl/clone-wars. Clones full-stack de sitios conocidos; dudoso.
+
+**Constructores con IA:**
+
+- Magic Loops: https://magicloops.dev/es. Automatizaciones con LLM.
+- Manus: https://manus.im/. Agente general.
+
+**Otros:**
+
+- Terraink: https://terraink.app/. Pósteres con mapas.
+- exercises-dataset: https://github.com/hasaneyldrm/exercises-dataset. Dataset de ejercicios físicos.
+
+**Móvil con NativeScript.** Son de apps nativas, no web. Se pueden quitar juntos si NativeScript ya no se usa:
+
+- NativeScript Marketplace: https://market.nativescript.org/.
+- Awesome NativeScript-Vue: https://github.com/Gonzalo2310/awesome-nativescript-vue.
+- Apps nativas con NativeScript-Vue: https://www.youtube.com/watch?v=k3NTWrxyvZA&ab_channel=SevillaJS.
+- Show the weather forecast in a NativeScript with Vue.js iOS and Android Application: https://www.youtube.com/watch?v=Z5YMfADiUZU&ab_channel=HERETechnologies.
+- Introduction - NativeScript-Vue: https://nativescript-vue.org/en/docs/introduction/. Además está caído.
+
+### Colgados
+
+**Caídos (6).** Detalle en `Caídos`, más arriba:
+
+- Intools: https://intools.co/.
+- Vuex - Documentación ES: http://op6gls4d1.bkt.clouddn.com/vuejs-vuex/docs/es/.
+- Unit testing Vuex (Codecourse): https://www.codecourse.com/lessons/unit-testing-vuex/1775.
+- Vue Telescope: https://vuetelescope.com/explore.
+- Introduction - NativeScript-Vue: https://nativescript-vue.org/en/docs/introduction/. Tiene reemplazo en https://nativescript-vue.org/docs/getting-started/introduction.
+- Factor: https://factor.dev/.
+
+**Antiguos (5).** El propio sitio avisa; detalle en `Antiguos`, más arriba:
+
+- Create React App: https://create-react-app.dev/.
+- Vetur: https://marketplace.visualstudio.com/items?itemName=octref.vetur.
+- React Router v6: https://reactrouter.com/6.30.6.
+- Instalación de Nuxt 2: https://nuxt.com/docs/2.x/getting-started/installation.
+- BootstrapVue: https://bootstrap-vue.org/docs/.
+
+**Viejos sin aviso.** Siguen marcados `activo` porque el sitio no declara nada, pero apuntan a versiones pasadas:
+
+- Curso de Next.js 12 desde cero: https://www.youtube.com/watch?v=pFT8wD2uRSE. Next.js 12.
+- vue-focus y vue-authenticate: https://github.com/simplesmiler/vue-focus y https://github.com/dgrubelic/vue-authenticate. Vue 2.
+- Nuxt SEO: https://www.youtube.com/watch?v=pbMA28qcW7I&list=PLzlG0L9jlhENcUiAQU1x95sBLLCUihwIX&index=6. Usa vue-meta, de la época de Nuxt 2.
+
+**Sin verificar.** Hay 22 sin descripción: los 18 de la carga inicial (`Sin verificar` y `Caídos`, más arriba) y los 4 de la carga del 6 de noviembre. Muchos están en Otros. Vale la pena abrirlos a mano y decidir: completarlos o quitarlos.

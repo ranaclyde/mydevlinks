@@ -45,6 +45,12 @@ describe('links.json', () => {
 		expect(CATEGORIES.filter((c) => !used.has(c))).toEqual([]);
 	});
 
+	it('cada galería verificada lleva al menos una etiqueta, sin repetir', () => {
+		const galleries = links.filter((l) => l.category === 'Galerías de inspiración' && l.verified);
+		expect(galleries.filter((l) => !l.tags?.length).map((l) => l.id)).toEqual([]);
+		expect(galleries.filter((l) => new Set(l.tags).size !== l.tags.length).map((l) => l.id)).toEqual([]);
+	});
+
 	it('tech no repite valores', () => {
 		const bad = links.flatMap((l) =>
 			l.tech

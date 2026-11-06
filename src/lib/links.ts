@@ -52,6 +52,19 @@ export const TECHS = [
 	'shadcn/ui',
 ] as const;
 
+/** Qué muestra una galería de inspiración. Solo las galerías llevan `tags`. */
+export const GALLERY = 'Galerías de inspiración';
+export const GALLERY_TAGS = [
+	'Sitios web',
+	'Landing pages',
+	'Secciones',
+	'Interfaces de apps',
+	'Movimiento',
+	'Estilos visuales',
+	'Sistemas de diseño',
+	'Marca y portafolios',
+] as const;
+
 export const STATUSES = ['activo', 'antiguo', 'caido'] as const;
 
 export const linkSchema = z
@@ -62,6 +75,7 @@ export const linkSchema = z
 		description: z.string().optional(),
 		category: z.enum(CATEGORIES),
 		tech: z.array(z.enum(TECHS)),
+		tags: z.array(z.enum(GALLERY_TAGS)).optional(),
 		logo: z.string().optional(),
 		status: z.enum(STATUSES),
 		verified: z.boolean(),
@@ -70,6 +84,10 @@ export const linkSchema = z
 	.refine((link) => !link.verified || Boolean(link.description?.trim()), {
 		message: 'Un enlace verificado necesita description',
 		path: ['description'],
+	})
+	.refine((link) => !link.tags?.length || (link.category === GALLERY && link.verified), {
+		message: 'Solo una galería verificada lleva tags',
+		path: ['tags'],
 	});
 
 export type Link = z.infer<typeof linkSchema>;
