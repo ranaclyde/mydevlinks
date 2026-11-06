@@ -23,6 +23,8 @@ const option =
 	'group/opt relative flex min-h-11 cursor-pointer items-center gap-2.5 px-2 py-1.5 text-sm md:min-h-[34px] hover:bg-sunk has-[input:focus-visible]:outline-2 has-[input:focus-visible]:-outline-offset-2 has-[input:focus-visible]:outline-accent has-disabled:cursor-not-allowed has-disabled:opacity-50 has-disabled:hover:bg-transparent';
 const categoryOption = `${option} has-checked:bg-accent has-checked:hover:bg-accent has-checked:text-accent-ink has-checked:font-medium`;
 const techOption = `${option} has-checked:font-semibold`;
+/** Subopción de galerías: sangrada bajo su categoría, marcada con el borde y no con relleno. */
+const tagOption = `${option} -ml-px border-l-2 border-transparent pl-3 text-[13px] has-checked:border-accent has-checked:text-accent has-checked:font-semibold md:min-h-[30px]`;
 const count =
 	'text-muted font-mono text-xs tabular-nums group-has-checked/opt:text-inherit';
 ---
@@ -126,44 +128,47 @@ const count =
 					</label>
 					{
 						categories.map((category) => (
-							<label class={categoryOption}>
-								<input class="sr-only" type="radio" name="categoria" value={category.value} />
-								<span class="min-w-0 flex-1">{category.value}</span>
-								<span class={count} data-count>
-									{category.count}
-								</span>
-							</label>
+							<>
+								<label class={categoryOption}>
+									<input class="sr-only" type="radio" name="categoria" value={category.value} />
+									<span class="min-w-0 flex-1">{category.value}</span>
+									<span class={count} data-count>
+										{category.count}
+									</span>
+								</label>
+								{category.value === GALLERY && tags.length > 0 && (
+									<div
+										class="border-line-strong mt-0.5 mb-1 ml-3 flex flex-col border-l"
+										role="group"
+										aria-label="Tipo de galería"
+										data-tags
+										hidden
+									>
+										{[{ value: '', label: 'Todos los tipos', count: galleries }, ...tags.map((tag) => ({ ...tag, label: tag.value }))].map(
+											(tag) => (
+												<label class={tagOption}>
+													<input
+														class="sr-only"
+														type="radio"
+														name="tipo"
+														value={tag.value}
+														checked={tag.value === ''}
+													/>
+													<span class="min-w-0 flex-1">{tag.label}</span>
+													<span class={count} data-count>
+														{tag.count}
+													</span>
+												</label>
+											),
+										)}
+									</div>
+								)}
+							</>
 						))
 					}
 				</div>
 			</fieldset>
 		</details>
-
-		{
-			tags.length > 0 && (
-				<fieldset class="min-w-0" data-tags hidden>
-					<legend class:list={[label, 'mb-1.5 block px-1']}>Tipo de galería</legend>
-					<div class="flex flex-col">
-						<label class={categoryOption}>
-							<input class="sr-only" type="radio" name="tipo" value="" checked />
-							<span class="min-w-0 flex-1">Todos</span>
-							<span class={count} data-count>
-								{galleries}
-							</span>
-						</label>
-						{tags.map((tag) => (
-							<label class={categoryOption}>
-								<input class="sr-only" type="radio" name="tipo" value={tag.value} />
-								<span class="min-w-0 flex-1">{tag.value}</span>
-								<span class={count} data-count>
-									{tag.count}
-								</span>
-							</label>
-						))}
-					</div>
-				</fieldset>
-			)
-		}
 
 		<fieldset class="min-w-0">
 			<legend class:list={[label, 'mb-1.5 flex w-full justify-between px-1']}>
