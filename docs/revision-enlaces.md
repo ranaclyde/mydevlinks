@@ -22,21 +22,15 @@ No queda ninguno. Los cinco de la carga inicial (Create React App, Vetur, React 
 
 ## Clasificación dudosa
 
-- Vue.js Lifecycle Hooks: https://www.digitalocean.com/community/tutorials/vuejs-component-lifecycle. Alligator.io redirige a DigitalOcean con el mismo artículo; se trató como el mismo proyecto.
-- RGE Studio: https://reallygoodemails.com/start-designing?template=empty. Beefree redirige aquí; el sitio confirma que Beefree es ahora RGE Studio. El nombre cambió respecto al bookmark.
-- Google Fonts: https://fonts.google.com/?icon.platform=web. El bookmark se llamaba "Icons", pero la página muestra el catálogo de fuentes, por lo que queda en Fuentes y color. Los iconos están en https://fonts.google.com/icons.
-- Flowbite Blocks: https://flowbite.com/blocks/. La página llega vacía; la clasificación y `tech` se apoyan en la documentación de Flowbite, que declara esas integraciones para su biblioteca.
-- Originkit: https://www.originkit.dev/. Es una biblioteca de componentes, pero el sitio no declara stack, así que `tech` queda vacío.
-- Redux en español: https://es.redux.js.org/. Hecho con GitBook antiguo y sin versión visible, pero sin aviso, por lo que queda `activo`.
-- vue-focus y vue-authenticate: https://github.com/simplesmiler/vue-focus y https://github.com/dgrubelic/vue-authenticate. Apuntan a Vue 2, pero sin aviso de abandono, por lo que quedan `activo`.
-- Curso de Next.js 12 desde cero: https://www.youtube.com/watch?v=pFT8wD2uRSE. Versión vieja sin aviso; queda `activo` según el criterio del spec.
-- Lemon Squeezy: https://www.lemonsqueezy.com/. Quedó en Backend y datos porque ninguna categoría cubre pagos. Su pie menciona otro nombre legal y una actualización con Stripe.
-- Picography: https://picography.co/. Fotos de stock, en Iconos e ilustraciones por cercanía.
-- Spline: https://spline.design/. Diseño 3D, en Animación y efectos por cercanía.
-- SVGOMG, SVG Viewer y SvgTrace: https://svgomg.net/, https://www.svgviewer.dev/ y https://svgtrace.com/. Optimizan o convierten SVG, no lo generan; quedan en Generadores CSS/SVG por afinidad.
-- MotionSites, Websiteprompts.ai y GetLayers AI: https://motionsites.ai/, https://websiteprompts.ai/ y https://www.getlayers.ai/. Son prompts para constructores, no constructores; quedan en Constructores con IA.
-- Manus: https://manus.im/. Agente general de IA, en Constructores con IA por cercanía.
-- RapidAPI: https://rapidapi.com/. La página llega casi vacía; se describe con su documentación, que lo llama hub de APIs. Queda en Directorios de recursos.
+El autor revisó esta lista el 6 de noviembre de 2026. Quitó Vue.js Lifecycle Hooks, Redux en español, vue-focus, vue-authenticate y el Curso de Next.js 12 (están en `Quitados`), y aplicó los cambios que se anotan en cada caso.
+
+- RGE Studio: https://reallygoodemails.com/studio. Beefree es ahora RGE Studio. Antes apuntaba al editor vacío (`/start-designing?template=empty`); ahora apunta a la página del producto, con descripción y logo nuevos.
+- Google Fonts: https://fonts.google.com/. El bookmark se llamaba "Icons" y apuntaba a `?icon.platform=web`; ahora va a la raíz, en Fuentes y color. Los iconos tienen su propia entrada: Material Symbols (https://fonts.google.com/icons), en Iconos e ilustraciones.
+- Flowbite: https://flowbite.com/. Antes era Flowbite Blocks (`/blocks/`); ahora apunta a la biblioteca entera. La página llega vacía, así que la clasificación y `tech` se apoyan en su documentación.
+- Originkit: https://www.originkit.dev/. Según el autor, se copia en React, se instala por CLI (bun, npm, yarn o pnpm), por MCP o con un prompt para IA. Ahora lleva `React` en `tech`.
+- Lemon Squeezy: https://www.lemonsqueezy.com/. Queda en Backend y datos, porque ninguna categoría cubre pagos; el autor lo confirmó.
+- Picography: https://picography.co/. Banco de imágenes; queda en Iconos e ilustraciones, con la descripción ajustada.
+- Confirmados por el autor sin cambios: Spline en Animación y efectos; SVGOMG, SVG Viewer y SvgTrace en Generadores CSS/SVG; MotionSites, Websiteprompts.ai, GetLayers AI y Manus en Constructores con IA; RapidAPI en Directorios de recursos.
 
 ## Sin logo
 
@@ -72,6 +66,11 @@ Quitados por el autor el 6 de noviembre de 2026:
 - React Router v6: https://reactrouter.com/6.30.6. Antiguo. Reemplazado por TanStack (https://tanstack.com/), que reúne Router, Query, Table, Form y otras librerías.
 
 - Clippy: https://bennettfeely.com/clippy/. El autor lo quitó.
+
+- Vue.js Lifecycle Hooks: https://www.digitalocean.com/community/tutorials/vuejs-component-lifecycle. El autor lo quitó.
+- Redux en español: https://es.redux.js.org/. El autor lo quitó.
+- vue-focus y vue-authenticate: https://github.com/simplesmiler/vue-focus y https://github.com/dgrubelic/vue-authenticate. Librerías de Vue 2; el autor las quitó.
+- Curso de Next.js 12 desde cero: https://www.youtube.com/watch?v=pFT8wD2uRSE. Versión vieja; el autor lo quitó.
 
 Cada id quitado figura con su motivo en `REMOVED`, en `tests/data.test.ts`.
 
@@ -125,7 +124,7 @@ Lista del 6 de noviembre de 2026, para decidir qué hacer con cada uno: quitarlo
 - quicktype: https://quicktype.io/. Genera tipos desde JSON para muchos lenguajes; sirve en frontend, pero es general.
 - Web Check: https://web-check.xyz/. OSINT y seguridad.
 - HeadlessX: https://headlessx.saify.me/. Scraping.
-- RGE Studio: https://reallygoodemails.com/start-designing?template=empty. Diseño de correos.
+- RGE Studio: https://reallygoodemails.com/studio. Diseño de correos.
 - Visual Studio Code: https://code.visualstudio.com/. Editor general.
 - ShipFree: https://shipfree.revoks.dev/. Plantilla full-stack de SaaS; dudoso, porque trae mucho frontend.
 
@@ -152,10 +151,8 @@ Lista del 6 de noviembre de 2026, para decidir qué hacer con cada uno: quitarlo
 
 **Antiguos.** Ya no queda ninguno.
 
-**Viejos sin aviso.** Siguen marcados `activo` porque el sitio no declara nada, pero apuntan a versiones pasadas:
+**Viejos sin aviso.** Sigue marcado `activo` porque el sitio no declara nada, pero apunta a una versión pasada. El curso de Next.js 12, vue-focus y vue-authenticate ya se quitaron.
 
-- Curso de Next.js 12 desde cero: https://www.youtube.com/watch?v=pFT8wD2uRSE. Next.js 12.
-- vue-focus y vue-authenticate: https://github.com/simplesmiler/vue-focus y https://github.com/dgrubelic/vue-authenticate. Vue 2.
 - Nuxt SEO: https://www.youtube.com/watch?v=pbMA28qcW7I&list=PLzlG0L9jlhENcUiAQU1x95sBLLCUihwIX&index=6. Usa vue-meta, de la época de Nuxt 2.
 
 **Sin verificar (4).** TypeUI, Landing Love, Land-book y Lapa Ninja, de la carga del 6 de noviembre. Bloquean los accesos automáticos; hay que abrirlos a mano para completarlos.
