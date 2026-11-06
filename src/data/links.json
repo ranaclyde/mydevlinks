@@ -1906,7 +1906,7 @@
 		"status": "activo",
 		"verified": true,
 		"private": false,
-		"logo": "/logos/statichunt-com.svg"
+		"logo": "/logos/statichunt-com.png"
 	},
 	{
 		"id": "viewportui-com",
@@ -2850,7 +2850,7 @@
 		"status": "activo",
 		"verified": false,
 		"private": false,
-		"logo": "/logos/lapa-ninja.svg"
+		"logo": "/logos/lapa-ninja.ico"
 	},
 	{
 		"id": "bestwebsite-gallery",
