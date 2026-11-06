@@ -7,11 +7,13 @@ import {
 	queryWithoutTech,
 	queryWithoutWords,
 	splitQuery,
+	tagCounts,
 	TOP_TECHS,
 	VISIBLE_TECH,
 	type FilterItem,
 	type FilterState,
 } from '../lib/filter';
+import { GALLERY } from '../lib/links';
 
 const ANNOUNCE_DELAY = 700;
 
@@ -42,6 +44,8 @@ const techMore = document.querySelector<HTMLButtonElement>('[data-tech-more]');
 const techNone = $<HTMLElement>('[data-tech-none]');
 
 const categoryInputs = [...document.querySelectorAll<HTMLInputElement>('input[name="categoria"]')];
+const tagGroup = document.querySelector<HTMLElement>('[data-tags]');
+const tagInputs = [...document.querySelectorAll<HTMLInputElement>('input[name="tipo"]')];
 const techOptions = [...document.querySelectorAll<HTMLElement>('[data-tech-option]')];
 const techInputs = techOptions.map((option) => option.querySelector('input') as HTMLInputElement);
 const allTechs = techInputs.map((input) => input.value);
@@ -52,10 +56,11 @@ const cards: Card[] = [...document.querySelectorAll<HTMLElement>('[data-card]')]
 	description: el.dataset.description,
 	category: el.dataset.category ?? '',
 	tech: JSON.parse(el.dataset.tech ?? '[]'),
+	tags: JSON.parse(el.dataset.tags ?? '[]'),
 	chips: [...el.querySelectorAll<HTMLElement>('[data-chip]')],
 }));
 
-const state: FilterState = { query: '', category: null, tech: [] };
+const state: FilterState = { query: '', category: null, tech: [], tag: null };
 let techListOpen = false;
 let chipsKey = '';
 let announceTimer: ReturnType<typeof setTimeout> | undefined;
@@ -142,6 +147,14 @@ function renderActives(words: string[], techs: string[], visible: number) {
 		items.push(
 			pill(state.category, `Quitar categoría ${state.category}`, () => {
 				state.category = null;
+				state.tag = null;
+			}),
+		);
+	}
+	if (state.tag) {
+		items.push(
+			pill(state.tag, `Quitar tipo ${state.tag}`, () => {
+				state.tag = null;
 			}),
 		);
 	}
@@ -190,6 +203,7 @@ function renderEmpty(words: string[], techs: string[]) {
 	const parts = ['Ningún enlace coincide'];
 	if (words.length > 0) parts.push(`con «${words.join(' ')}»`);
 	if (state.category) parts.push(`en ${state.category}`);
+	if (state.tag) parts.push(`de tipo ${state.tag}`);
 	if (techs.length > 0) parts.push(`con ${listJoin(techs)}`);
 	emptyText.textContent = `${parts.join(' ')}.`;
 }
@@ -243,7 +257,17 @@ function render() {
 	}
 	categoryCurrent.textContent = state.category ?? '';
 
-	const filters = state.tech.length + (state.category ? 1 : 0);
+	if (tagGroup) {
+		tagGroup.hidden = state.category !== GALLERY;
+		const tags = tagCounts(cards, state, allTechs);
+		const inGallery = categoryCounts(cards, state, allTechs)[GALLERY] ?? 0;
+		for (const input of tagInputs) {
+			input.checked = input.value === (state.tag ?? '');
+			setCount(input, input.value ? (tags[input.value] ?? 0) : inGallery);
+		}
+	}
+
+	const filters = state.tech.length + (state.category ? 1 : 0) + (state.tag ? 1 : 0);
 	badge.textContent = String(filters);
 	badge.hidden = filters === 0;
 
@@ -254,6 +278,7 @@ function render() {
 function clearAll() {
 	state.query = '';
 	state.category = null;
+	state.tag = null;
 	state.tech = [];
 	search.value = '';
 	render();
@@ -274,6 +299,14 @@ search.addEventListener('input', () => {
 for (const input of categoryInputs) {
 	input.addEventListener('change', () => {
 		state.category = input.value || null;
+		state.tag = null;
+		render();
+	});
+}
+
+for (const input of tagInputs) {
+	input.addEventListener('change', () => {
+		state.tag = input.value || null;
 		render();
 	});
 }

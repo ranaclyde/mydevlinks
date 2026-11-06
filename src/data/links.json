@@ -12,24 +12,16 @@
 		"logo": "/logos/squoosh-app.ico"
 	},
 	{
-		"id": "freepik-es-search",
-		"name": "Pch.vector | Freepik",
-		"url": "https://www.freepik.es/search?author=10171402&authorSlug=pch.vector&dates=any&format=author&page=1&query=contact&sort=popular&type=vector",
+		"id": "magnific-com",
+		"name": "Magnific",
+		"url": "https://www.magnific.com/",
+		"description": "Antes Freepik: banco de recursos visuales con herramientas de IA para imagen, vídeo y audio.",
 		"category": "Iconos e ilustraciones",
 		"tech": [],
 		"status": "activo",
-		"verified": false,
-		"private": false
-	},
-	{
-		"id": "freepik-es-search-2",
-		"name": "Vectorjuice | Freepik",
-		"url": "https://www.freepik.es/search?author=26713452&authorSlug=vectorjuice&dates=any&format=author&page=1&query=contact&sort=popular&type=vector",
-		"category": "Iconos e ilustraciones",
-		"tech": [],
-		"status": "activo",
-		"verified": false,
-		"private": false
+		"verified": true,
+		"private": false,
+		"logo": "/logos/magnific-com.svg"
 	},
 	{
 		"id": "illustrationkit-com-illustrations-yippy",
@@ -145,15 +137,18 @@
 		"logo": "/logos/css-tricks-com-blobs.svg"
 	},
 	{
-		"id": "toolbox-signalsupply-co-apps-gradientblobcss",
+		"id": "toolbox-signalsupply-co",
 		"name": "Toolbox by SignalSupply",
-		"url": "https://toolbox.signalsupply.co/apps/gradientblobcss/",
+		"url": "https://toolbox.signalsupply.co/",
+		"description": "Herramientas de diseño: blobs y degradados en CSS, patrones, Sharp y Perspectr.",
 		"category": "Generadores CSS/SVG",
-		"tech": [],
+		"tech": [
+			"CSS"
+		],
 		"status": "activo",
-		"verified": false,
+		"verified": true,
 		"private": false,
-		"logo": "/logos/toolbox-signalsupply-co-apps-gradientblobcss.svg"
+		"logo": "/logos/toolbox-signalsupply-co.svg"
 	},
 	{
 		"id": "wweb-dev-resources-animated-css-background-generator",
@@ -170,16 +165,6 @@
 		"logo": "/logos/wweb-dev-resources-animated-css-background-generator.png"
 	},
 	{
-		"id": "intools-co",
-		"name": "Intools - The Best Online Tools and Resources for 2023",
-		"url": "https://intools.co/",
-		"category": "Otros",
-		"tech": [],
-		"status": "caido",
-		"verified": false,
-		"private": false
-	},
-	{
 		"id": "tailwindcss-animated-com",
 		"name": "Tailwind CSS Animated",
 		"url": "https://www.tailwindcss-animated.com/",
@@ -192,26 +177,6 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/tailwindcss-animated-com.png"
-	},
-	{
-		"id": "codepen-io-smitche-pen-mownba",
-		"name": "Blob gradient animation",
-		"url": "https://codepen.io/Smitche/pen/MowNba",
-		"category": "Otros",
-		"tech": [],
-		"status": "activo",
-		"verified": false,
-		"private": false
-	},
-	{
-		"id": "codepen-io-jh3y-pen-qwypaax",
-		"name": "Proximity Glow Cards",
-		"url": "https://codepen.io/jh3y/pen/QWYPaax",
-		"category": "Otros",
-		"tech": [],
-		"status": "activo",
-		"verified": false,
-		"private": false
 	},
 	{
 		"id": "github-com-cruip-cruip-tutorials-blob-main-rotating-words-index-html",
@@ -264,19 +229,6 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/svgtrace-com.png"
-	},
-	{
-		"id": "bennettfeely-com-clippy",
-		"name": "Clippy",
-		"url": "https://bennettfeely.com/clippy/",
-		"description": "Crea formas con la propiedad clip-path de CSS.",
-		"category": "Generadores CSS/SVG",
-		"tech": [
-			"CSS"
-		],
-		"status": "activo",
-		"verified": true,
-		"private": false
 	},
 	{
 		"id": "bgjar-com",
@@ -418,15 +370,16 @@
 		],
 		"status": "activo",
 		"verified": true,
-		"private": false
+		"private": false,
+		"logo": "/logos/css-peeps-com.png"
 	},
 	{
 		"id": "peepslab-com",
-		"name": "PeepsLab - Create your own peep",
+		"name": "PeepsLab",
 		"url": "https://peepslab.com/",
 		"category": "Otros",
 		"tech": [],
-		"status": "activo",
+		"status": "caido",
 		"verified": false,
 		"private": false
 	},
@@ -437,6 +390,9 @@
 		"description": "Inspiración de landing pages, con plantillas y componentes.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Landing pages"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -508,17 +464,26 @@
 		],
 		"status": "activo",
 		"verified": true,
-		"private": false
+		"private": false,
+		"logo": "/logos/devdojo-com-tailwindcss-buttons.png"
 	},
 	{
 		"id": "uiverse-io",
-		"name": "Explore 3000+ Free UI Elements: CSS & Tailwind",
+		"name": "Uiverse",
 		"url": "https://uiverse.io/",
-		"category": "Otros",
-		"tech": [],
+		"description": "Biblioteca comunitaria de elementos de UI abiertos, para copiar en HTML/CSS, Tailwind, React o Figma.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"HTML",
+			"CSS",
+			"Tailwind",
+			"React",
+			"Figma"
+		],
 		"status": "activo",
-		"verified": false,
-		"private": false
+		"verified": true,
+		"private": false,
+		"logo": "/logos/uiverse-io.ico"
 	},
 	{
 		"id": "hyperui-dev",
@@ -624,6 +589,9 @@
 		"description": "Colección de capturas de interfaces web e iOS con búsqueda avanzada.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Interfaces de apps"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -678,17 +646,6 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/tw-elements-com.ico"
-	},
-	{
-		"id": "tailwindcss-com-plus-ui-blocks",
-		"name": "Tailwind CSS Components - Tailwind Plus",
-		"url": "https://tailwindcss.com/plus/ui-blocks",
-		"category": "Componentes y UI kits",
-		"tech": [],
-		"status": "activo",
-		"verified": false,
-		"private": false,
-		"logo": "/logos/tailwindcss-com-plus-ui-blocks.png"
 	},
 	{
 		"id": "componentland-com",
@@ -792,7 +749,8 @@
 		"tech": [],
 		"status": "activo",
 		"verified": true,
-		"private": false
+		"private": false,
+		"logo": "/logos/namethatui-com.png"
 	},
 	{
 		"id": "scrollxui-dev-docs-components",
@@ -1096,13 +1054,15 @@
 	},
 	{
 		"id": "svgrepo-com",
-		"name": "SVG Repo - Free SVG Vectors and Icons",
+		"name": "SVG Repo",
 		"url": "https://www.svgrepo.com/",
+		"description": "Más de 500.000 vectores e iconos SVG con licencia abierta, también para uso comercial.",
 		"category": "Iconos e ilustraciones",
 		"tech": [],
 		"status": "activo",
-		"verified": false,
-		"private": false
+		"verified": true,
+		"private": false,
+		"logo": "/logos/svgrepo-com.svg"
 	},
 	{
 		"id": "hugeicons-com",
@@ -1196,7 +1156,8 @@
 		"tech": [],
 		"status": "activo",
 		"verified": true,
-		"private": false
+		"private": false,
+		"logo": "/logos/icoon-co.avif"
 	},
 	{
 		"id": "3dicons-com",
@@ -1209,7 +1170,8 @@
 		],
 		"status": "activo",
 		"verified": true,
-		"private": false
+		"private": false,
+		"logo": "/logos/3dicons-com.svg"
 	},
 	{
 		"id": "github-com-stereobooster-react-snap",
@@ -1227,28 +1189,38 @@
 		"logo": "/logos/github-com-stereobooster-react-snap.svg"
 	},
 	{
-		"id": "reactrouter-com-docs-en-v6",
-		"name": "React Router v6",
-		"url": "https://reactrouter.com/6.30.6",
-		"description": "Documentación de React Router 6, una versión anterior a la actual.",
-		"category": "Aprendizaje y documentación",
+		"id": "tanstack-com",
+		"name": "TanStack",
+		"url": "https://tanstack.com/",
+		"description": "Librerías headless y tipadas para apps web: datos, rutas, tablas, formularios y más.",
+		"category": "Herramientas de desarrollo",
 		"tech": [
-			"React"
+			"React",
+			"Vue",
+			"Svelte",
+			"Solid",
+			"Angular",
+			"TypeScript"
 		],
-		"status": "antiguo",
+		"status": "activo",
 		"verified": true,
 		"private": false,
-		"logo": "/logos/reactrouter-com-docs-en-v6.png"
+		"logo": "/logos/tanstack-com.svg"
 	},
 	{
-		"id": "magic-reactjs-net-htmltojsx-htm",
-		"name": "HTML to JSX",
-		"url": "https://magic.reactjs.net/htmltojsx.htm",
+		"id": "transform-tools",
+		"name": "Transform",
+		"url": "https://transform.tools/",
+		"description": "Convierte entre formatos: HTML a JSX, SVG a React, JSON a TypeScript y muchos más.",
 		"category": "Herramientas de desarrollo",
-		"tech": [],
+		"tech": [
+			"React",
+			"TypeScript"
+		],
 		"status": "activo",
-		"verified": false,
-		"private": false
+		"verified": true,
+		"private": false,
+		"logo": "/logos/transform-tools.png"
 	},
 	{
 		"id": "es-reactjs-org",
@@ -1278,20 +1250,6 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/es-redux-js-org.ico"
-	},
-	{
-		"id": "create-react-app-dev",
-		"name": "Create React App",
-		"url": "https://create-react-app.dev/",
-		"description": "Herramienta para iniciar proyectos React, ya obsoleta según su propio sitio.",
-		"category": "Herramientas de desarrollo",
-		"tech": [
-			"React"
-		],
-		"status": "antiguo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/create-react-app-dev.ico"
 	},
 	{
 		"id": "mui-com",
@@ -1394,16 +1352,6 @@
 		"logo": "/logos/usehooks-com.png"
 	},
 	{
-		"id": "op6gls4d1-bkt-clouddn-com-vuejs-vuex-docs-es",
-		"name": "Vuex - Documentación ES - GitBook",
-		"url": "http://op6gls4d1.bkt.clouddn.com/vuejs-vuex/docs/es/",
-		"category": "Aprendizaje y documentación",
-		"tech": [],
-		"status": "caido",
-		"verified": false,
-		"private": false
-	},
-	{
 		"id": "github-com-hapijs-joi",
 		"name": "Joi",
 		"url": "https://github.com/hapijs/joi",
@@ -1444,20 +1392,6 @@
 		"logo": "/logos/code-visualstudio-com.ico"
 	},
 	{
-		"id": "marketplace-visualstudio-com-items",
-		"name": "Vetur",
-		"url": "https://marketplace.visualstudio.com/items?itemName=octref.vetur",
-		"description": "Extensión de VS Code para Vue, reemplazada por el soporte oficial Volar.",
-		"category": "Herramientas de desarrollo",
-		"tech": [
-			"Vue"
-		],
-		"status": "antiguo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/marketplace-visualstudio-com-items.ico"
-	},
-	{
 		"id": "alligator-io-vuejs-component-lifecycle",
 		"name": "Vue.js Lifecycle Hooks",
 		"url": "https://www.digitalocean.com/community/tutorials/vuejs-component-lifecycle",
@@ -1470,16 +1404,6 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/alligator-io-vuejs-component-lifecycle.svg"
-	},
-	{
-		"id": "codecourse-com-lessons-unit-testing-vuex-1775",
-		"name": "Unit testing Vuex | Codecourse",
-		"url": "https://www.codecourse.com/lessons/unit-testing-vuex/1775",
-		"category": "Aprendizaje y documentación",
-		"tech": [],
-		"status": "caido",
-		"verified": false,
-		"private": false
 	},
 	{
 		"id": "github-com-dgrubelic-vue-authenticate",
@@ -1525,21 +1449,6 @@
 		"logo": "/logos/github-com-vuejs-awesome-vue.svg"
 	},
 	{
-		"id": "es-nuxtjs-org-docs-2-x-get-started-installation",
-		"name": "Instalación de Nuxt 2",
-		"url": "https://nuxt.com/docs/2.x/getting-started/installation",
-		"description": "Instalación de Nuxt 2, versión que llegó al fin de su vida útil en 2024.",
-		"category": "Aprendizaje y documentación",
-		"tech": [
-			"Nuxt",
-			"Vue"
-		],
-		"status": "antiguo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/es-nuxtjs-org-docs-2-x-get-started-installation.png"
-	},
-	{
 		"id": "explorers-netlify-com-learn-get-started-with-nuxt-nuxt-seo",
 		"name": "Nuxt SEO",
 		"url": "https://www.youtube.com/watch?v=pbMA28qcW7I&list=PLzlG0L9jlhENcUiAQU1x95sBLLCUihwIX&index=6",
@@ -1555,21 +1464,6 @@
 		"logo": "/logos/explorers-netlify-com-learn-get-started-with-nuxt-nuxt-seo.png"
 	},
 	{
-		"id": "bootstrap-vue-org-docs",
-		"name": "BootstrapVue",
-		"url": "https://bootstrap-vue.org/docs/",
-		"description": "Bootstrap 4 para Vue 2; sus autores recomiendan pasar a BootstrapVueNext.",
-		"category": "Componentes y UI kits",
-		"tech": [
-			"Vue",
-			"Bootstrap"
-		],
-		"status": "antiguo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/bootstrap-vue-org-docs.png"
-	},
-	{
 		"id": "v3-nuxtjs-org",
 		"name": "Nuxt",
 		"url": "https://nuxt.com/",
@@ -1583,84 +1477,6 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/v3-nuxtjs-org.png"
-	},
-	{
-		"id": "vuetelescope-com-explore",
-		"name": "Explore Vue.js showcases | Vue Telescope",
-		"url": "https://vuetelescope.com/explore",
-		"category": "Otros",
-		"tech": [],
-		"status": "caido",
-		"verified": false,
-		"private": false
-	},
-	{
-		"id": "nativescript-vue-org-en-docs-introduction",
-		"name": "Introduction - NativeScript-Vue",
-		"url": "https://nativescript-vue.org/en/docs/introduction/",
-		"category": "Aprendizaje y documentación",
-		"tech": [],
-		"status": "caido",
-		"verified": false,
-		"private": false
-	},
-	{
-		"id": "market-nativescript-org",
-		"name": "NativeScript Marketplace",
-		"url": "https://market.nativescript.org/",
-		"description": "Directorio de plugins para crear apps iOS y Android con NativeScript.",
-		"category": "Directorios de recursos",
-		"tech": [
-			"NativeScript",
-			"Vue",
-			"Angular",
-			"Svelte"
-		],
-		"status": "activo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/market-nativescript-org.ico"
-	},
-	{
-		"id": "github-com-gonzalo2310-awesome-nativescript-vue",
-		"name": "Awesome NativeScript-Vue",
-		"url": "https://github.com/Gonzalo2310/awesome-nativescript-vue",
-		"description": "Lista de recursos de NativeScript-Vue: docs, artículos, vídeos y plantillas.",
-		"category": "Directorios de recursos",
-		"tech": [
-			"NativeScript",
-			"Vue"
-		],
-		"status": "activo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/github-com-gonzalo2310-awesome-nativescript-vue.svg"
-	},
-	{
-		"id": "youtube-com-watch-2",
-		"name": "Apps nativas con NativeScript-Vue",
-		"url": "https://www.youtube.com/watch?v=k3NTWrxyvZA&ab_channel=SevillaJS",
-		"description": "Charla de SevillaJS sobre desarrollo de apps nativas con NativeScript-Vue.",
-		"category": "Aprendizaje y documentación",
-		"tech": [
-			"NativeScript",
-			"Vue"
-		],
-		"status": "activo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/youtube-com-watch-2.png"
-	},
-	{
-		"id": "youtube-com-watch-3",
-		"name": "Show the weather forecast in a NativeScript with Vue.js iOS and Android Application - YouTube",
-		"url": "https://www.youtube.com/watch?v=Z5YMfADiUZU&ab_channel=HERETechnologies",
-		"category": "Otros",
-		"tech": [],
-		"status": "activo",
-		"verified": false,
-		"private": false,
-		"logo": "/logos/youtube-com-watch-3.png"
 	},
 	{
 		"id": "directus-io",
@@ -1726,16 +1542,6 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/storyblok-com.svg"
-	},
-	{
-		"id": "factor-dev",
-		"name": "JavaScript CMS Framework - Factor",
-		"url": "https://factor.dev/",
-		"category": "Otros",
-		"tech": [],
-		"status": "caido",
-		"verified": false,
-		"private": false
 	},
 	{
 		"id": "youtube-com-watch-4",
@@ -1936,6 +1742,9 @@
 		"description": "Portafolios de diseñadores de grandes empresas tecnológicas.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Marca y portafolios"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -1948,6 +1757,10 @@
 		"description": "Galería de sitios web con tema oscuro.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Sitios web",
+			"Estilos visuales"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -1960,6 +1773,9 @@
 		"description": "Galería de páginas de error creativas.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Secciones"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -1972,6 +1788,9 @@
 		"description": "Estilos de sitios reales con su DESIGN.md: colores, tipografía y espaciado.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Sistemas de diseño"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -1984,6 +1803,9 @@
 		"description": "Ejemplos de sitios web modernos para inspirarse.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Sitios web"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -1996,6 +1818,9 @@
 		"description": "Inspiración diaria de diseños de interfaz y portafolios.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Interfaces de apps"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2008,6 +1833,10 @@
 		"description": "Colección de animaciones e interacciones de apps iOS y web.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Movimiento",
+			"Interfaces de apps"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2020,9 +1849,13 @@
 		"description": "Colección de sitios web seleccionados, con actualización diaria y categorías.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Sitios web"
+		],
 		"status": "activo",
 		"verified": true,
-		"private": false
+		"private": false,
+		"logo": "/logos/seesaw-website.svg"
 	},
 	{
 		"id": "liquidglassdesign-com",
@@ -2031,6 +1864,9 @@
 		"description": "Más de 170 ejemplos de liquid glass y glassmorfismo, con prompts de estilo.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Estilos visuales"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2043,6 +1879,10 @@
 		"description": "Ejemplos de interfaz de sitios y apps: logins, precios, formularios y más.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Secciones",
+			"Interfaces de apps"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2065,7 +1905,8 @@
 		],
 		"status": "activo",
 		"verified": true,
-		"private": false
+		"private": false,
+		"logo": "/logos/statichunt-com.png"
 	},
 	{
 		"id": "viewportui-com",
@@ -2074,6 +1915,10 @@
 		"description": "Galería de diseños e interacciones de interfaz publicados en X.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Interfaces de apps",
+			"Movimiento"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2086,6 +1931,9 @@
 		"description": "Colección de diseños con estilo bento.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Estilos visuales"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2098,6 +1946,10 @@
 		"description": "Sitios y landing pages reales, filtrables por estilo o sector.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Sitios web",
+			"Landing pages"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2110,6 +1962,9 @@
 		"description": "Galería de rediseños de marca con vídeo, logos, color y tipografía.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Marca y portafolios"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2122,6 +1977,9 @@
 		"description": "Comunidad donde se publican y exploran trabajos de diseño.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Marca y portafolios"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2134,6 +1992,9 @@
 		"description": "Biblioteca de capturas de apps móviles y web, con búsqueda.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Interfaces de apps"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2146,6 +2007,9 @@
 		"description": "Galería de llamadas a la acción de sitios web.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Secciones"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2158,6 +2022,9 @@
 		"description": "Biblioteca de secciones hero de sitios web.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Secciones"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2170,6 +2037,9 @@
 		"description": "Galería de barras de navegación de sitios web.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Secciones"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2182,6 +2052,9 @@
 		"description": "Galería de pies de página, ordenable por tipo y estilo.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Secciones"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2194,6 +2067,9 @@
 		"description": "Análisis de sistemas de diseño de sitios populares para usar con agentes.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Sistemas de diseño"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2206,9 +2082,13 @@
 		"description": "Colección de detalles de diseño: animaciones, transiciones y guiños ocultos.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Movimiento"
+		],
 		"status": "activo",
 		"verified": true,
-		"private": false
+		"private": false,
+		"logo": "/logos/designspells-com.svg"
 	},
 	{
 		"id": "recent-design",
@@ -2217,6 +2097,9 @@
 		"description": "Feed de diseño reciente: interfaces, marca, motion, ilustración y pósteres.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Marca y portafolios"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2224,13 +2107,18 @@
 	},
 	{
 		"id": "dribbble-com",
-		"name": "Dribbble - Discover the World’s Top Designers & Creative Professionals",
+		"name": "Dribbble",
 		"url": "https://dribbble.com/",
-		"category": "Otros",
+		"description": "Comunidad donde diseñadores, ilustradores y creativos visuales publican sus trabajos.",
+		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Marca y portafolios"
+		],
 		"status": "activo",
-		"verified": false,
-		"private": false
+		"verified": true,
+		"private": false,
+		"logo": "/logos/dribbble-com.svg"
 	},
 	{
 		"id": "quicktype-io",
@@ -2793,6 +2681,9 @@
 		"description": "Colección de titulares de marketing de sitios web.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Secciones"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2818,7 +2709,8 @@
 		"tech": [],
 		"status": "activo",
 		"verified": false,
-		"private": false
+		"private": false,
+		"logo": "/logos/typeui-sh.svg"
 	},
 	{
 		"id": "useanimations-com",
@@ -2857,7 +2749,8 @@
 		"tech": [],
 		"status": "activo",
 		"verified": false,
-		"private": false
+		"private": false,
+		"logo": "/logos/landing-love.png"
 	},
 	{
 		"id": "siteinspire-com",
@@ -2866,9 +2759,13 @@
 		"description": "Galería de sitios web por estilo, tipo y tema, con perfiles de estudios.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Sitios web"
+		],
 		"status": "activo",
 		"verified": true,
-		"private": false
+		"private": false,
+		"logo": "/logos/siteinspire-com.svg"
 	},
 	{
 		"id": "minimal-gallery",
@@ -2877,6 +2774,10 @@
 		"description": "Sitios web minimalistas elegidos a mano, con plantillas y herramientas.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Sitios web",
+			"Estilos visuales"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2889,6 +2790,10 @@
 		"description": "Galería de sitios web con modo oscuro elegidos a mano.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Sitios web",
+			"Estilos visuales"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2912,6 +2817,10 @@
 		"description": "Galería de sitios de una sola página, con plantillas y recursos.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Sitios web",
+			"Landing pages"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2924,6 +2833,9 @@
 		"description": "Galería de sitios web filtrable por estilo y tipo.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Sitios web"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2937,7 +2849,8 @@
 		"tech": [],
 		"status": "activo",
 		"verified": false,
-		"private": false
+		"private": false,
+		"logo": "/logos/lapa-ninja.ico"
 	},
 	{
 		"id": "bestwebsite-gallery",
@@ -2946,6 +2859,9 @@
 		"description": "Sitios web elegidos a mano desde 2008, con un sitio destacado del día.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Sitios web"
+		],
 		"status": "activo",
 		"verified": true,
 		"private": false,
@@ -2984,5 +2900,71 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/iconsax-io.png"
+	},
+	{
+		"id": "devdojo-com-inspiration",
+		"name": "DevDojo Inspiration",
+		"url": "https://devdojo.com/inspiration",
+		"description": "Sitios de productos reales con capturas, vídeos de scroll, tokens de diseño y un DESIGN.md para IA.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"tags": [
+			"Sitios web",
+			"Sistemas de diseño"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/devdojo-com-inspiration.svg"
+	},
+	{
+		"id": "logoipsum-com",
+		"name": "Logoipsum",
+		"url": "https://logoipsum.com/",
+		"description": "Más de 200 logos de relleno gratuitos en SVG y PNG para maquetas y prototipos.",
+		"category": "Iconos e ilustraciones",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/logoipsum-com.svg"
+	},
+	{
+		"id": "signalicon-com",
+		"name": "Signalicon",
+		"url": "https://signalicon.com/",
+		"description": "Más de 1.000 iconos para web y apps en SVG y Figma, con plan gratis y PRO.",
+		"category": "Iconos e ilustraciones",
+		"tech": [
+			"Figma"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/signalicon-com.svg"
+	},
+	{
+		"id": "colorsss-com",
+		"name": "Colorsss",
+		"url": "https://colorsss.com/",
+		"description": "Explora colores filtrando por tono y matiz, de pastel a vibrante.",
+		"category": "Fuentes y color",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/colorsss-com.svg"
+	},
+	{
+		"id": "fontsss-com",
+		"name": "Fontsss",
+		"url": "https://fontsss.com/",
+		"description": "Archivo curado de fuentes, filtrables por estilo y licencia gratuita o comercial.",
+		"category": "Fuentes y color",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/fontsss-com.svg"
 	}
 ]

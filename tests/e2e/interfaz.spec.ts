@@ -10,6 +10,7 @@ interface RawLink {
 	description?: string;
 	category: string;
 	tech: string[];
+	tags?: string[];
 	logo?: string;
 	status: string;
 	verified: boolean;
@@ -94,12 +95,12 @@ test('react en la búsqueda activa el filtro y resalta la tecnología', async ({
 test('un enlace se encuentra por su nombre aunque nombre una tecnología que no tiene', async ({
 	page,
 }) => {
-	const link = publicLinks.find((item) => item.name === 'HTML to JSX') as RawLink;
-	expect(link.tech).not.toContain('HTML');
+	const link = publicLinks.find((item) => item.name === 'Blobs! (CSS-Tricks)') as RawLink;
+	expect(link.tech).not.toContain('CSS');
 
-	await page.getByRole('searchbox', { name: 'Buscar' }).fill(link.name);
+	await page.getByRole('searchbox', { name: 'Buscar' }).fill('css blobs');
 	await expect(cardOf(page, link)).toBeVisible();
-	await expect(page.getByRole('button', { name: 'Quitar HTML' })).toBeVisible();
+	await expect(page.getByRole('button', { name: 'Quitar CSS' })).toBeVisible();
 });
 
 test('quitar la píldora de una tecnología escrita la borra de la búsqueda', async ({ page }) => {
@@ -203,14 +204,15 @@ test('una consulta larga sin espacios no desborda a 390 px', async ({ page, isMo
 });
 
 test('los avisos se ven con palabra y estilo en enlaces reales', async ({ page }) => {
-	const old = publicLinks.find((link) => link.status === 'antiguo' && link.verified) as RawLink;
+	// Puede no quedar ninguno: el sello se comprueba solo si hay un antiguo en los datos.
+	const old = publicLinks.find((link) => link.status === 'antiguo' && link.verified);
 	const unverified = publicLinks.find(
 		(link) => link.status === 'activo' && !link.verified,
 	) as RawLink;
 	const lost = publicLinks.filter((link) => link.status === 'caido' && !link.verified);
 	expect(lost.length).toBeGreaterThan(0);
 
-	await expect(cardOf(page, old).getByText('Antiguo', { exact: true })).toBeVisible();
+	if (old) await expect(cardOf(page, old).getByText('Antiguo', { exact: true })).toBeVisible();
 
 	const pending = cardOf(page, unverified);
 	await expect(pending.getByText('Sin verificar', { exact: true })).toBeVisible();
@@ -341,4 +343,29 @@ test('el final del panel se alcanza con la rueda y la página arriba', async ({ 
 
 	await expect(more).toBeInViewport({ ratio: 1 });
 	expect(await page.evaluate(() => window.scrollY)).toBe(0);
+});
+
+test('el tipo de galería filtra dentro de Galerías y se pierde al cambiar de categoría', async ({
+	page,
+	isMobile,
+}) => {
+	const GALLERY = 'Galerías de inspiración';
+	const galleries = publicLinks.filter((link) => link.category === GALLERY);
+	const sections = galleries.filter((link) => link.tags?.includes('Secciones'));
+	expect(sections.length).toBeGreaterThan(0);
+
+	await openFilters(page, isMobile);
+	await expect(page.getByRole('group', { name: 'Tipo de galería' })).toBeHidden();
+
+	await page.getByRole('radio', { name: /Galerías de inspiración/ }).check({ force: true });
+	await expect(page.getByRole('group', { name: 'Tipo de galería' })).toBeVisible();
+	await page.getByRole('radio', { name: /^Secciones/ }).check({ force: true });
+
+	await expect(count(page)).toHaveText(String(sections.length));
+	await expect(page.getByRole('button', { name: 'Quitar tipo Secciones' })).toBeVisible();
+	await expect(visibleCards(page).first().locator('[data-tag="Secciones"]')).toBeVisible();
+
+	await page.getByRole('radio', { name: /Componentes y UI kits/ }).check({ force: true });
+	await expect(page.getByRole('group', { name: 'Tipo de galería' })).toBeHidden();
+	await expect(page.getByRole('button', { name: /^Quitar tipo/ })).toHaveCount(0);
 });

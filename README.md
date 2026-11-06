@@ -40,6 +40,7 @@ Agrega una entrada a `src/data/links.json`:
 ```
 
 - **Categorías, estados y tecnologías:** son listas cerradas en `src/lib/links.ts` (`CATEGORIES`, `STATUSES`, `TECHS`). Una tecnología nueva se agrega a `TECHS`. Sus otras formas de escribirla van en `TECH_ALIASES`, en `src/lib/filter.ts`.
+- **`tags`:** solo para Galerías de inspiración y enlaces verificados. Dice qué muestra la galería y alimenta el filtro "Tipo de galería". Es una lista cerrada en `GALLERY_TAGS`, en `src/lib/links.ts`; cada galería verificada lleva al menos una.
 - **Logo:** el archivo va en `public/logos/` y es opcional. Sin logo, la ficha muestra la inicial.
 - **`verified: false`:** el enlace va sin `description` ni `tech`, y la ficha lo indica.
 - **`private: true`:** el enlace se ve en desarrollo y no entra en el build. No le pongas logo, porque `public/` se copia entero a `dist/`.
