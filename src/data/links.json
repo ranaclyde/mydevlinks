@@ -2916,5 +2916,55 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/devdojo-com-inspiration.svg"
+	},
+	{
+		"id": "logoipsum-com",
+		"name": "Logoipsum",
+		"url": "https://logoipsum.com/",
+		"description": "Más de 200 logos de relleno gratuitos en SVG y PNG para maquetas y prototipos.",
+		"category": "Iconos e ilustraciones",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/logoipsum-com.svg"
+	},
+	{
+		"id": "signalicon-com",
+		"name": "Signalicon",
+		"url": "https://signalicon.com/",
+		"description": "Más de 1.000 iconos para web y apps en SVG y Figma, con plan gratis y PRO.",
+		"category": "Iconos e ilustraciones",
+		"tech": [
+			"Figma"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/signalicon-com.svg"
+	},
+	{
+		"id": "colorsss-com",
+		"name": "Colorsss",
+		"url": "https://colorsss.com/",
+		"description": "Explora colores filtrando por tono y matiz, de pastel a vibrante.",
+		"category": "Fuentes y color",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/colorsss-com.svg"
+	},
+	{
+		"id": "fontsss-com",
+		"name": "Fontsss",
+		"url": "https://fontsss.com/",
+		"description": "Archivo curado de fuentes, filtrables por estilo y licencia gratuita o comercial.",
+		"category": "Fuentes y color",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/fontsss-com.svg"
 	}
 ]
