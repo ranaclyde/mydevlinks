@@ -12,24 +12,16 @@
 		"logo": "/logos/squoosh-app.ico"
 	},
 	{
-		"id": "freepik-es-search",
-		"name": "Pch.vector | Freepik",
-		"url": "https://www.freepik.es/search?author=10171402&authorSlug=pch.vector&dates=any&format=author&page=1&query=contact&sort=popular&type=vector",
+		"id": "magnific-com",
+		"name": "Magnific",
+		"url": "https://www.magnific.com/",
+		"description": "Antes Freepik: banco de recursos visuales con herramientas de IA para imagen, vídeo y audio.",
 		"category": "Iconos e ilustraciones",
 		"tech": [],
 		"status": "activo",
-		"verified": false,
-		"private": false
-	},
-	{
-		"id": "freepik-es-search-2",
-		"name": "Vectorjuice | Freepik",
-		"url": "https://www.freepik.es/search?author=26713452&authorSlug=vectorjuice&dates=any&format=author&page=1&query=contact&sort=popular&type=vector",
-		"category": "Iconos e ilustraciones",
-		"tech": [],
-		"status": "activo",
-		"verified": false,
-		"private": false
+		"verified": true,
+		"private": false,
+		"logo": "/logos/magnific-com.svg"
 	},
 	{
 		"id": "illustrationkit-com-illustrations-yippy",
@@ -145,15 +137,18 @@
 		"logo": "/logos/css-tricks-com-blobs.svg"
 	},
 	{
-		"id": "toolbox-signalsupply-co-apps-gradientblobcss",
+		"id": "toolbox-signalsupply-co",
 		"name": "Toolbox by SignalSupply",
-		"url": "https://toolbox.signalsupply.co/apps/gradientblobcss/",
+		"url": "https://toolbox.signalsupply.co/",
+		"description": "Herramientas de diseño: blobs y degradados en CSS, patrones, Sharp y Perspectr.",
 		"category": "Generadores CSS/SVG",
-		"tech": [],
+		"tech": [
+			"CSS"
+		],
 		"status": "activo",
-		"verified": false,
+		"verified": true,
 		"private": false,
-		"logo": "/logos/toolbox-signalsupply-co-apps-gradientblobcss.svg"
+		"logo": "/logos/toolbox-signalsupply-co.svg"
 	},
 	{
 		"id": "wweb-dev-resources-animated-css-background-generator",
@@ -170,16 +165,6 @@
 		"logo": "/logos/wweb-dev-resources-animated-css-background-generator.png"
 	},
 	{
-		"id": "intools-co",
-		"name": "Intools - The Best Online Tools and Resources for 2023",
-		"url": "https://intools.co/",
-		"category": "Otros",
-		"tech": [],
-		"status": "caido",
-		"verified": false,
-		"private": false
-	},
-	{
 		"id": "tailwindcss-animated-com",
 		"name": "Tailwind CSS Animated",
 		"url": "https://www.tailwindcss-animated.com/",
@@ -192,26 +177,6 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/tailwindcss-animated-com.png"
-	},
-	{
-		"id": "codepen-io-smitche-pen-mownba",
-		"name": "Blob gradient animation",
-		"url": "https://codepen.io/Smitche/pen/MowNba",
-		"category": "Otros",
-		"tech": [],
-		"status": "activo",
-		"verified": false,
-		"private": false
-	},
-	{
-		"id": "codepen-io-jh3y-pen-qwypaax",
-		"name": "Proximity Glow Cards",
-		"url": "https://codepen.io/jh3y/pen/QWYPaax",
-		"category": "Otros",
-		"tech": [],
-		"status": "activo",
-		"verified": false,
-		"private": false
 	},
 	{
 		"id": "github-com-cruip-cruip-tutorials-blob-main-rotating-words-index-html",
@@ -422,11 +387,11 @@
 	},
 	{
 		"id": "peepslab-com",
-		"name": "PeepsLab - Create your own peep",
+		"name": "PeepsLab",
 		"url": "https://peepslab.com/",
 		"category": "Otros",
 		"tech": [],
-		"status": "activo",
+		"status": "caido",
 		"verified": false,
 		"private": false
 	},
@@ -515,13 +480,21 @@
 	},
 	{
 		"id": "uiverse-io",
-		"name": "Explore 3000+ Free UI Elements: CSS & Tailwind",
+		"name": "Uiverse",
 		"url": "https://uiverse.io/",
-		"category": "Otros",
-		"tech": [],
+		"description": "Biblioteca comunitaria de elementos de UI abiertos, para copiar en HTML/CSS, Tailwind, React o Figma.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"HTML",
+			"CSS",
+			"Tailwind",
+			"React",
+			"Figma"
+		],
 		"status": "activo",
-		"verified": false,
-		"private": false
+		"verified": true,
+		"private": false,
+		"logo": "/logos/uiverse-io.ico"
 	},
 	{
 		"id": "hyperui-dev",
@@ -684,17 +657,6 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/tw-elements-com.ico"
-	},
-	{
-		"id": "tailwindcss-com-plus-ui-blocks",
-		"name": "Tailwind CSS Components - Tailwind Plus",
-		"url": "https://tailwindcss.com/plus/ui-blocks",
-		"category": "Componentes y UI kits",
-		"tech": [],
-		"status": "activo",
-		"verified": false,
-		"private": false,
-		"logo": "/logos/tailwindcss-com-plus-ui-blocks.png"
 	},
 	{
 		"id": "componentland-com",
@@ -1102,12 +1064,13 @@
 	},
 	{
 		"id": "svgrepo-com",
-		"name": "SVG Repo - Free SVG Vectors and Icons",
+		"name": "SVG Repo",
 		"url": "https://www.svgrepo.com/",
+		"description": "Más de 500.000 vectores e iconos SVG con licencia abierta, también para uso comercial.",
 		"category": "Iconos e ilustraciones",
 		"tech": [],
 		"status": "activo",
-		"verified": false,
+		"verified": true,
 		"private": false
 	},
 	{
@@ -1247,14 +1210,19 @@
 		"logo": "/logos/reactrouter-com-docs-en-v6.png"
 	},
 	{
-		"id": "magic-reactjs-net-htmltojsx-htm",
-		"name": "HTML to JSX",
-		"url": "https://magic.reactjs.net/htmltojsx.htm",
+		"id": "transform-tools",
+		"name": "Transform",
+		"url": "https://transform.tools/",
+		"description": "Convierte entre formatos: HTML a JSX, SVG a React, JSON a TypeScript y muchos más.",
 		"category": "Herramientas de desarrollo",
-		"tech": [],
+		"tech": [
+			"React",
+			"TypeScript"
+		],
 		"status": "activo",
-		"verified": false,
-		"private": false
+		"verified": true,
+		"private": false,
+		"logo": "/logos/transform-tools.png"
 	},
 	{
 		"id": "es-reactjs-org",
@@ -1400,16 +1368,6 @@
 		"logo": "/logos/usehooks-com.png"
 	},
 	{
-		"id": "op6gls4d1-bkt-clouddn-com-vuejs-vuex-docs-es",
-		"name": "Vuex - Documentación ES - GitBook",
-		"url": "http://op6gls4d1.bkt.clouddn.com/vuejs-vuex/docs/es/",
-		"category": "Aprendizaje y documentación",
-		"tech": [],
-		"status": "caido",
-		"verified": false,
-		"private": false
-	},
-	{
 		"id": "github-com-hapijs-joi",
 		"name": "Joi",
 		"url": "https://github.com/hapijs/joi",
@@ -1476,16 +1434,6 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/alligator-io-vuejs-component-lifecycle.svg"
-	},
-	{
-		"id": "codecourse-com-lessons-unit-testing-vuex-1775",
-		"name": "Unit testing Vuex | Codecourse",
-		"url": "https://www.codecourse.com/lessons/unit-testing-vuex/1775",
-		"category": "Aprendizaje y documentación",
-		"tech": [],
-		"status": "caido",
-		"verified": false,
-		"private": false
 	},
 	{
 		"id": "github-com-dgrubelic-vue-authenticate",
@@ -1591,84 +1539,6 @@
 		"logo": "/logos/v3-nuxtjs-org.png"
 	},
 	{
-		"id": "vuetelescope-com-explore",
-		"name": "Explore Vue.js showcases | Vue Telescope",
-		"url": "https://vuetelescope.com/explore",
-		"category": "Otros",
-		"tech": [],
-		"status": "caido",
-		"verified": false,
-		"private": false
-	},
-	{
-		"id": "nativescript-vue-org-en-docs-introduction",
-		"name": "Introduction - NativeScript-Vue",
-		"url": "https://nativescript-vue.org/en/docs/introduction/",
-		"category": "Aprendizaje y documentación",
-		"tech": [],
-		"status": "caido",
-		"verified": false,
-		"private": false
-	},
-	{
-		"id": "market-nativescript-org",
-		"name": "NativeScript Marketplace",
-		"url": "https://market.nativescript.org/",
-		"description": "Directorio de plugins para crear apps iOS y Android con NativeScript.",
-		"category": "Directorios de recursos",
-		"tech": [
-			"NativeScript",
-			"Vue",
-			"Angular",
-			"Svelte"
-		],
-		"status": "activo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/market-nativescript-org.ico"
-	},
-	{
-		"id": "github-com-gonzalo2310-awesome-nativescript-vue",
-		"name": "Awesome NativeScript-Vue",
-		"url": "https://github.com/Gonzalo2310/awesome-nativescript-vue",
-		"description": "Lista de recursos de NativeScript-Vue: docs, artículos, vídeos y plantillas.",
-		"category": "Directorios de recursos",
-		"tech": [
-			"NativeScript",
-			"Vue"
-		],
-		"status": "activo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/github-com-gonzalo2310-awesome-nativescript-vue.svg"
-	},
-	{
-		"id": "youtube-com-watch-2",
-		"name": "Apps nativas con NativeScript-Vue",
-		"url": "https://www.youtube.com/watch?v=k3NTWrxyvZA&ab_channel=SevillaJS",
-		"description": "Charla de SevillaJS sobre desarrollo de apps nativas con NativeScript-Vue.",
-		"category": "Aprendizaje y documentación",
-		"tech": [
-			"NativeScript",
-			"Vue"
-		],
-		"status": "activo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/youtube-com-watch-2.png"
-	},
-	{
-		"id": "youtube-com-watch-3",
-		"name": "Show the weather forecast in a NativeScript with Vue.js iOS and Android Application - YouTube",
-		"url": "https://www.youtube.com/watch?v=Z5YMfADiUZU&ab_channel=HERETechnologies",
-		"category": "Otros",
-		"tech": [],
-		"status": "activo",
-		"verified": false,
-		"private": false,
-		"logo": "/logos/youtube-com-watch-3.png"
-	},
-	{
 		"id": "directus-io",
 		"name": "Directus",
 		"url": "https://directus.com/",
@@ -1732,16 +1602,6 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/storyblok-com.svg"
-	},
-	{
-		"id": "factor-dev",
-		"name": "JavaScript CMS Framework - Factor",
-		"url": "https://factor.dev/",
-		"category": "Otros",
-		"tech": [],
-		"status": "caido",
-		"verified": false,
-		"private": false
 	},
 	{
 		"id": "youtube-com-watch-4",
@@ -2304,12 +2164,16 @@
 	},
 	{
 		"id": "dribbble-com",
-		"name": "Dribbble - Discover the World’s Top Designers & Creative Professionals",
+		"name": "Dribbble",
 		"url": "https://dribbble.com/",
-		"category": "Otros",
+		"description": "Comunidad donde diseñadores, ilustradores y creativos visuales publican sus trabajos.",
+		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Marca y portafolios"
+		],
 		"status": "activo",
-		"verified": false,
+		"verified": true,
 		"private": false
 	},
 	{

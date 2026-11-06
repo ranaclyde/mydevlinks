@@ -12,6 +12,24 @@ const rawPath = join(root, 'scripts/.cache/raw-links.json');
 const REMOVED: Record<string, string> = {
 	'tailwindcomponents-com':
 		'Redirige a creative-tim.com/twcomponents: es el mismo sitio y se conserva esa entrada.',
+	// Revisión del autor del 6 de noviembre de 2026; detalle en docs/revision-enlaces.md.
+	'codepen-io-smitche-pen-mownba': 'Pen de CodePen sin verificar; el autor lo quitó.',
+	'codepen-io-jh3y-pen-qwypaax': 'Pen de CodePen sin verificar; el autor lo quitó.',
+	'tailwindcss-com-plus-ui-blocks': 'Tailwind Plus sin verificar; el autor lo quitó.',
+	'youtube-com-watch-3': 'El vídeo ya no está en YouTube.',
+	'youtube-com-watch-2': 'NativeScript queda fuera de la colección.',
+	'market-nativescript-org': 'NativeScript queda fuera de la colección.',
+	'github-com-gonzalo2310-awesome-nativescript-vue': 'NativeScript queda fuera de la colección.',
+	'nativescript-vue-org-en-docs-introduction': 'Caído y de NativeScript.',
+	'intools-co': 'Caído: dominio estacionado.',
+	'op6gls4d1-bkt-clouddn-com-vuejs-vuex-docs-es': 'Caído: error 404.',
+	'codecourse-com-lessons-unit-testing-vuex-1775': 'Caído: error 404.',
+	'vuetelescope-com-explore': 'Caído: error 404.',
+	'factor-dev': 'Caído: el dominio no resuelve.',
+	'magic-reactjs-net-htmltojsx-htm': 'Reemplazado por transform-tools, que incluye HTML a JSX.',
+	'freepik-es-search': 'Freepik pasó a llamarse Magnific: reemplazado por magnific-com.',
+	'freepik-es-search-2': 'Freepik pasó a llamarse Magnific: reemplazado por magnific-com.',
+	'toolbox-signalsupply-co-apps-gradientblobcss': 'Ahora apunta a la raíz de Toolbox, con id toolbox-signalsupply-co.',
 };
 
 describe('links.json', () => {

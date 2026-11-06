@@ -30,7 +30,6 @@ export const TECHS = [
 	'JavaScript',
 	'Laravel',
 	'MongoDB',
-	'NativeScript',
 	'Next.js',
 	'Node.js',
 	'Nuxt',

@@ -95,12 +95,12 @@ test('react en la búsqueda activa el filtro y resalta la tecnología', async ({
 test('un enlace se encuentra por su nombre aunque nombre una tecnología que no tiene', async ({
 	page,
 }) => {
-	const link = publicLinks.find((item) => item.name === 'HTML to JSX') as RawLink;
-	expect(link.tech).not.toContain('HTML');
+	const link = publicLinks.find((item) => item.name === 'Blobs! (CSS-Tricks)') as RawLink;
+	expect(link.tech).not.toContain('CSS');
 
-	await page.getByRole('searchbox', { name: 'Buscar' }).fill(link.name);
+	await page.getByRole('searchbox', { name: 'Buscar' }).fill('css blobs');
 	await expect(cardOf(page, link)).toBeVisible();
-	await expect(page.getByRole('button', { name: 'Quitar HTML' })).toBeVisible();
+	await expect(page.getByRole('button', { name: 'Quitar CSS' })).toBeVisible();
 });
 
 test('quitar la píldora de una tecnología escrita la borra de la búsqueda', async ({ page }) => {
