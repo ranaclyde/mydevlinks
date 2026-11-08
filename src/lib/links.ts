@@ -8,11 +8,10 @@ export const CATEGORIES = [
 	'Fuentes y color',
 	'Generadores CSS/SVG',
 	'Herramientas de desarrollo',
-	'Backend y datos',
+	'Serverless',
 	'Constructores con IA',
 	'Aprendizaje y documentación',
 	'Directorios de recursos',
-	'Otros',
 ] as const;
 
 /** Vocabulario único de `tech`; evita casi duplicados como "Tailwind CSS". */

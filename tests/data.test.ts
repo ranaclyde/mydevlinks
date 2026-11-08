@@ -43,6 +43,17 @@ const REMOVED: Record<string, string> = {
 	'beefree-io-editor': 'Beefree es ahora RGE Studio: reemplazado por reallygoodemails-com-studio.',
 	'flowbite-com-blocks': 'Ahora apunta a la raíz de Flowbite, con id flowbite-com.',
 	'toolbox-signalsupply-co-apps-gradientblobcss': 'Ahora apunta a la raíz de Toolbox, con id toolbox-signalsupply-co.',
+	'explorers-netlify-com-learn-get-started-with-nuxt-nuxt-seo': 'Vídeo de YouTube; el autor quitó los vídeos.',
+	'youtube-com-watch-4': 'Vídeo de YouTube; el autor quitó los vídeos.',
+	'youtube-com-watch-5': 'Vídeo de YouTube; el autor quitó los vídeos.',
+	'turso-tech': 'Base de datos, fuera de frontend; el autor la quitó.',
+	'upstash-com': 'Base de datos, fuera de frontend; el autor la quitó.',
+	'neon-com': 'Base de datos, fuera de frontend; el autor la quitó.',
+	'mongodb-com-es-products-platform-atlas-database': 'Base de datos, fuera de frontend; el autor la quitó.',
+	'code-visualstudio-com': 'Editor general; el autor lo quitó.',
+	'github-com-hasaneyldrm-exercises-dataset': 'Dataset de ejercicios físicos, fuera de la colección.',
+	'peepslab-com': 'Caído: el sitio está pausado (402).',
+	'github-com-gorvgoyl-clone-wars': 'Viejo; el autor lo quitó.',
 };
 
 describe('links.json', () => {
