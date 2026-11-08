@@ -117,7 +117,7 @@
 		"name": "Terraink",
 		"url": "https://terraink.app/",
 		"description": "Crea pósteres y fondos de pantalla con mapas de cualquier ciudad.",
-		"category": "Otros",
+		"category": "Generadores CSS/SVG",
 		"tech": [],
 		"status": "activo",
 		"verified": true,
@@ -372,16 +372,6 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/css-peeps-com.png"
-	},
-	{
-		"id": "peepslab-com",
-		"name": "PeepsLab",
-		"url": "https://peepslab.com/",
-		"category": "Otros",
-		"tech": [],
-		"status": "caido",
-		"verified": false,
-		"private": false
 	},
 	{
 		"id": "landingfolio-com",
@@ -1350,18 +1340,6 @@
 		"logo": "/logos/github-com-hapijs-joi.svg"
 	},
 	{
-		"id": "code-visualstudio-com",
-		"name": "Visual Studio Code",
-		"url": "https://code.visualstudio.com/",
-		"description": "Editor de código con funciones para trabajar junto a agentes de IA.",
-		"category": "Herramientas de desarrollo",
-		"tech": [],
-		"status": "activo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/code-visualstudio-com.ico"
-	},
-	{
 		"id": "escuelavue-es-como-aprender-vue",
 		"name": "Cómo aprender Vue.js",
 		"url": "https://escuelavue.es/software/como-aprender-vue/",
@@ -1391,21 +1369,6 @@
 		"logo": "/logos/github-com-vuejs-awesome-vue.svg"
 	},
 	{
-		"id": "explorers-netlify-com-learn-get-started-with-nuxt-nuxt-seo",
-		"name": "Nuxt SEO",
-		"url": "https://www.youtube.com/watch?v=pbMA28qcW7I&list=PLzlG0L9jlhENcUiAQU1x95sBLLCUihwIX&index=6",
-		"description": "Lección en vídeo sobre SEO con Nuxt y vue-meta.",
-		"category": "Aprendizaje y documentación",
-		"tech": [
-			"Nuxt",
-			"Vue"
-		],
-		"status": "activo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/explorers-netlify-com-learn-get-started-with-nuxt-nuxt-seo.png"
-	},
-	{
 		"id": "v3-nuxtjs-org",
 		"name": "Nuxt",
 		"url": "https://nuxt.com/",
@@ -1425,7 +1388,7 @@
 		"name": "Directus",
 		"url": "https://directus.com/",
 		"description": "Backend y CMS headless autoalojable sobre cualquier base de datos.",
-		"category": "Backend y datos",
+		"category": "Serverless",
 		"tech": [
 			"Next.js",
 			"Nuxt",
@@ -1448,7 +1411,7 @@
 		"name": "Strapi",
 		"url": "https://strapi.io/",
 		"description": "CMS headless de código abierto en JavaScript y TypeScript.",
-		"category": "Backend y datos",
+		"category": "Serverless",
 		"tech": [
 			"TypeScript",
 			"JavaScript",
@@ -1471,7 +1434,7 @@
 		"name": "Storyblok",
 		"url": "https://www.storyblok.com/",
 		"description": "CMS headless con editor visual.",
-		"category": "Backend y datos",
+		"category": "Serverless",
 		"tech": [
 			"Next.js",
 			"Nuxt",
@@ -1484,35 +1447,6 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/storyblok-com.svg"
-	},
-	{
-		"id": "youtube-com-watch-4",
-		"name": "Vue.js: Composition API, Pinia y Router 4",
-		"url": "https://www.youtube.com/watch?v=sHXxASRp2nw",
-		"description": "Vídeo sobre Composition API, Pinia, Router 4 y TypeScript.",
-		"category": "Aprendizaje y documentación",
-		"tech": [
-			"Vue",
-			"TypeScript"
-		],
-		"status": "activo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/youtube-com-watch-4.png"
-	},
-	{
-		"id": "youtube-com-watch-5",
-		"name": "Vue 3 Composition API Tutorial",
-		"url": "https://www.youtube.com/watch?v=3B0ry4GI1cE",
-		"description": "Primera parte de una serie: Options API frente a Composition API.",
-		"category": "Aprendizaje y documentación",
-		"tech": [
-			"Vue"
-		],
-		"status": "activo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/youtube-com-watch-5.png"
 	},
 	{
 		"id": "bolt-new",
@@ -1632,7 +1566,7 @@
 		"name": "Lemon Squeezy",
 		"url": "https://www.lemonsqueezy.com/",
 		"description": "Pagos, impuestos y suscripciones para vender software y productos digitales.",
-		"category": "Backend y datos",
+		"category": "Herramientas de desarrollo",
 		"tech": [],
 		"status": "activo",
 		"verified": true,
@@ -2205,7 +2139,7 @@
 		"name": "RapidAPI",
 		"url": "https://rapidapi.com/",
 		"description": "Hub de APIs para buscar y explorar las disponibles para tu proyecto.",
-		"category": "Directorios de recursos",
+		"category": "Herramientas de desarrollo",
 		"tech": [],
 		"status": "activo",
 		"verified": true,
@@ -2217,7 +2151,7 @@
 		"name": "AnyAPI",
 		"url": "https://anyapi.io/",
 		"description": "APIs REST para validar datos, convertir divisas, geolocalizar IP y más.",
-		"category": "Backend y datos",
+		"category": "Herramientas de desarrollo",
 		"tech": [],
 		"status": "activo",
 		"verified": true,
@@ -2229,7 +2163,7 @@
 		"name": "Public APIs",
 		"url": "https://publicapis.dev/",
 		"description": "Lista colaborativa de más de 1.400 APIs públicas por categoría.",
-		"category": "Directorios de recursos",
+		"category": "Herramientas de desarrollo",
 		"tech": [],
 		"status": "activo",
 		"verified": true,
@@ -2385,7 +2319,7 @@
 		"name": "PocketBase",
 		"url": "https://pocketbase.io/",
 		"description": "Backend abierto en un archivo, con base de datos, auth y almacenamiento.",
-		"category": "Backend y datos",
+		"category": "Serverless",
 		"tech": [
 			"SQLite",
 			"Go",
@@ -2433,18 +2367,6 @@
 		"logo": "/logos/github-com-devcaress-guia-entrevistas-de-programacion.svg"
 	},
 	{
-		"id": "github-com-hasaneyldrm-exercises-dataset",
-		"name": "exercises-dataset",
-		"url": "https://github.com/hasaneyldrm/exercises-dataset",
-		"description": "Dataset de 1.324 ejercicios físicos con GIF, grupos musculares e instrucciones.",
-		"category": "Otros",
-		"tech": [],
-		"status": "activo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/github-com-hasaneyldrm-exercises-dataset.svg"
-	},
-	{
 		"id": "97cosas-com",
 		"name": "97 Cosas",
 		"url": "https://97cosas.com/",
@@ -2460,7 +2382,7 @@
 		"name": "Resend",
 		"url": "https://resend.com/",
 		"description": "Servicio de correo transaccional y de marketing para developers.",
-		"category": "Backend y datos",
+		"category": "Herramientas de desarrollo",
 		"tech": [
 			"Node.js",
 			"Python",
@@ -2502,77 +2424,6 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/patterns-dev.ico"
-	},
-	{
-		"id": "turso-tech",
-		"name": "Turso",
-		"url": "https://turso.tech/",
-		"description": "Base de datos basada en SQLite para crear una por usuario, agente o inquilino.",
-		"category": "Backend y datos",
-		"tech": [
-			"SQLite",
-			"TypeScript",
-			"Python",
-			"Go"
-		],
-		"status": "activo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/turso-tech.ico"
-	},
-	{
-		"id": "upstash-com",
-		"name": "Upstash",
-		"url": "https://upstash.com/",
-		"description": "Bases de datos Redis, vectorial y de búsqueda sin servidor.",
-		"category": "Backend y datos",
-		"tech": [
-			"Redis"
-		],
-		"status": "activo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/upstash-com.png"
-	},
-	{
-		"id": "neon-com",
-		"name": "Neon",
-		"url": "https://neon.com/",
-		"description": "Postgres sin servidor con auth, funciones, almacenamiento y ramas instantáneas.",
-		"category": "Backend y datos",
-		"tech": [
-			"PostgreSQL"
-		],
-		"status": "activo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/neon-com.svg"
-	},
-	{
-		"id": "mongodb-com-es-products-platform-atlas-database",
-		"name": "MongoDB Atlas",
-		"url": "https://www.mongodb.com/es/products/platform/atlas-database",
-		"description": "Base de datos documental de MongoDB como servicio gestionado.",
-		"category": "Backend y datos",
-		"tech": [
-			"MongoDB"
-		],
-		"status": "activo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/mongodb-com-es-products-platform-atlas-database.ico"
-	},
-	{
-		"id": "github-com-gorvgoyl-clone-wars",
-		"name": "Clone Wars",
-		"url": "https://github.com/gorvgoyl/clone-wars",
-		"description": "Más de 100 clones abiertos de sitios populares, con demo, código y stack.",
-		"category": "Directorios de recursos",
-		"tech": [],
-		"status": "activo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/github-com-gorvgoyl-clone-wars.svg"
 	},
 	{
 		"id": "toolfolio-com",
@@ -2636,7 +2487,7 @@
 		"name": "AI Particle Simulator",
 		"url": "https://particles.casberry.in/",
 		"description": "Simula y anima partículas 3D en tiempo real con WebGL2 y exporta el código.",
-		"category": "Otros",
+		"category": "Animación y efectos",
 		"tech": [],
 		"status": "activo",
 		"verified": true,
@@ -2647,10 +2498,11 @@
 		"id": "typeui-sh",
 		"name": "TypeUI",
 		"url": "https://www.typeui.sh/",
-		"category": "Otros",
+		"description": "Crea interfaces profesionales con IA y Claude, con analítica de visitas para mejorar conversiones.",
+		"category": "Constructores con IA",
 		"tech": [],
 		"status": "activo",
-		"verified": false,
+		"verified": true,
 		"private": false,
 		"logo": "/logos/typeui-sh.svg"
 	},
@@ -2687,10 +2539,15 @@
 		"id": "landing-love",
 		"name": "Landing Love",
 		"url": "https://www.landing.love/",
+		"description": "Más de 2.200 sitios con animaciones, con grabaciones en vídeo de la página completa.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Movimiento",
+			"Sitios web"
+		],
 		"status": "activo",
-		"verified": false,
+		"verified": true,
 		"private": false,
 		"logo": "/logos/landing-love.png"
 	},
@@ -2745,10 +2602,14 @@
 		"id": "land-book-com",
 		"name": "Land-book",
 		"url": "https://land-book.com/",
+		"description": "Galería curada de diseño web para creativos, con sitios elegidos a mano y actualizada a diario.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Sitios web"
+		],
 		"status": "activo",
-		"verified": false,
+		"verified": true,
 		"private": false,
 		"logo": "/logos/land-book-com.ico"
 	},
@@ -2787,10 +2648,15 @@
 		"id": "lapa-ninja",
 		"name": "Lapa Ninja",
 		"url": "https://www.lapa.ninja/",
+		"description": "Más de 7.300 landing pages desde 2015 y 15.000 capturas de página completa, con vídeos.",
 		"category": "Galerías de inspiración",
 		"tech": [],
+		"tags": [
+			"Landing pages",
+			"Sitios web"
+		],
 		"status": "activo",
-		"verified": false,
+		"verified": true,
 		"private": false,
 		"logo": "/logos/lapa-ninja.ico"
 	},
