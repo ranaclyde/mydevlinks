@@ -15,6 +15,7 @@ interface RawLink {
 	status: string;
 	verified: boolean;
 	private: boolean;
+	featured?: boolean;
 }
 
 const links: RawLink[] = JSON.parse(readFileSync('src/data/links.json', 'utf8'));
@@ -236,6 +237,17 @@ test('los avisos se ven con palabra y estilo en enlaces reales', async ({ page }
 		await expect(card.getByText('Sin descripción: el sitio no responde.')).toBeVisible();
 		await expect(card.locator('a')).toHaveCSS('border-top-style', 'dashed');
 		await expect(card.locator('.chip')).toHaveCount(0);
+	}
+});
+
+test('los destacados van primero y llevan su sello', async ({ page }) => {
+	const featured = publicLinks.filter((link) => link.featured);
+	test.skip(!featured.length, 'no hay destacados en los datos');
+
+	const first = page.locator('[data-card]').first();
+	expect(featured.map((link) => link.name)).toContain(await first.getAttribute('data-name'));
+	for (const link of featured) {
+		await expect(cardOf(page, link).getByText('Destacado', { exact: true })).toBeVisible();
 	}
 });
 

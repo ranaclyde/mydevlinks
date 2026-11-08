@@ -3,13 +3,15 @@ import { getCollection } from 'astro:content';
 import Filters from '../components/Filters.astro';
 import LinkCard from '../components/LinkCard.astro';
 import Layout from '../layouts/Layout.astro';
-import { visibleLinks } from '../lib/links';
+import { sortLinks, visibleLinks } from '../lib/links';
 
 const collection = await getCollection('links');
-const links = visibleLinks(
-	collection.map((entry) => entry.data),
-	import.meta.env.DEV,
-).sort((a, b) => a.name.localeCompare(b.name, 'es', { sensitivity: 'base' }));
+const links = sortLinks(
+	visibleLinks(
+		collection.map((entry) => entry.data),
+		import.meta.env.DEV,
+	),
+);
 
 function tally(values: string[]) {
 	const counts = new Map<string, number>();

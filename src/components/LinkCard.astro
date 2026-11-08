@@ -7,7 +7,7 @@ interface Props {
 }
 
 const { link } = Astro.props;
-const { name, url, description, category, tech, tags = [], logo, status, verified } = link;
+const { name, url, description, category, tech, tags = [], logo, status, verified, featured } = link;
 
 const down = status === 'caido';
 const old = status === 'antiguo';
@@ -87,6 +87,25 @@ const stampBase =
 				</span>
 			</div>
 
+			{
+				featured && (
+					<span class:list={[stampBase, 'text-ink bg-surface mr-1.5']}>
+						<svg
+							width="11"
+							height="11"
+							viewBox="0 0 12 12"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="1.5"
+							stroke-linejoin="round"
+							aria-hidden="true"
+						>
+							<path d="M6 1.6l1.35 2.75 3.03.44-2.19 2.13.52 3.02L6 8.52 3.29 9.94l.52-3.02L1.62 4.79l3.03-.44z" />
+						</svg>
+						Destacado
+					</span>
+				)
+			}
 			{
 				old && (
 					<span class:list={[stampBase, 'text-old bg-old-bg mr-1.5']}>

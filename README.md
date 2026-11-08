@@ -43,6 +43,7 @@ Agrega una entrada a `src/data/links.json`:
 - **`tags`:** solo para Galerías de inspiración y enlaces verificados. Dice qué muestra la galería y alimenta el filtro "Tipo de galería". Es una lista cerrada en `GALLERY_TAGS`, en `src/lib/links.ts`; cada galería verificada lleva al menos una.
 - **Logo:** el archivo va en `public/logos/` y es opcional. Sin logo, la ficha muestra la inicial.
 - **`verified: false`:** el enlace va sin `description` ni `tech`, y la ficha lo indica.
+- **`featured: true`:** opcional. El enlace aparece primero y lleva el sello Destacado. Solo para enlaces verificados.
 - **`private: true`:** el enlace se ve en desarrollo y no entra en el build. No le pongas logo, porque `public/` se copia entero a `dist/`.
 
 **Qué lo valida:** `linkSchema`, en `src/lib/links.ts`, hace fallar `pnpm build` si un valor no es válido, por ejemplo una tecnología mal escrita. `pnpm test` revisa además en `tests/data.test.ts` que `id` y `url` sean únicos, que el logo exista y el largo de la descripción, y `pnpm test:e2e` que los privados no lleguen a `dist/`.

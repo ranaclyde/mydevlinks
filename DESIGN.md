@@ -325,6 +325,7 @@ La ficha es el componente central: un enlace completo con cuatro zonas en grilla
 - **Forma:** borde del color actual, 2 px de padding vertical, 6 px horizontal e icono de 11 px.
 - **Antiguo:** ámbar con reloj.
 - **Caído:** rojo con círculo tachado. El logo pasa a gris con opacidad del 55 %.
+- **Destacado:** Tinta sobre Hoja, con estrella. La ficha aparece primero en la grilla. No usa el índigo, que es solo para estado e interacción.
 - **Sin verificar:** apagado sobre Hoja, con borde punteado e interrogación.
 - **Caído y sin verificar:** sello Caído, logo apagado, contorno punteado y "Sin descripción: el sitio no responde."
 

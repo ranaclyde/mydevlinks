@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { domainOf, linkSchema, visibleLinks, type Link } from '../src/lib/links';
+import { domainOf, linkSchema, sortLinks, visibleLinks, type Link } from '../src/lib/links';
 
 const base = {
 	id: 'astro',
@@ -60,5 +60,32 @@ describe('domainOf', () => {
 	it('devuelve el host sin www', () => {
 		expect(domainOf('https://www.freepik.es/search?author=1')).toBe('freepik.es');
 		expect(domainOf('https://ui.shadcn.com/docs')).toBe('ui.shadcn.com');
+	});
+});
+
+describe('featured', () => {
+	it('acepta featured opcional y rechaza un valor que no es booleano', () => {
+		expect(linkSchema.safeParse({ ...base, featured: true }).success).toBe(true);
+		expect(linkSchema.safeParse({ ...base, featured: 'sí' }).success).toBe(false);
+	});
+
+	it('rechaza destacar un enlace sin verificar', () => {
+		const { description, ...sinVerificar } = base;
+		expect(linkSchema.safeParse({ ...sinVerificar, verified: false, featured: true }).success).toBe(false);
+	});
+});
+
+describe('sortLinks', () => {
+	const make = (name: string, featured?: boolean) => ({ ...base, id: name, name, featured }) as Link;
+
+	it('pone los destacados primero y ordena cada grupo por nombre', () => {
+		const sorted = sortLinks([make('beta'), make('Zeta', true), make('alfa'), make('Ómega', true)]);
+		expect(sorted.map((l) => l.name)).toEqual(['Ómega', 'Zeta', 'alfa', 'beta']);
+	});
+
+	it('no modifica la lista original', () => {
+		const list = [make('b'), make('a')];
+		sortLinks(list);
+		expect(list.map((l) => l.name)).toEqual(['b', 'a']);
 	});
 });
