@@ -2908,5 +2908,151 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/fontsss-com.svg"
+	},
+	{
+		"id": "jitter-video",
+		"name": "Jitter",
+		"url": "https://jitter.video/",
+		"description": "Motion design en el navegador: importa desde Figma y exporta a vídeo 4K, GIF o Lottie.",
+		"category": "Animación y efectos",
+		"tech": [
+			"Figma"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/jitter-video.png"
+	},
+	{
+		"id": "movo-video",
+		"name": "MOVO",
+		"url": "https://movo.video/",
+		"description": "Plantillas de motion para animar en el navegador, sin instalar nada. En beta.",
+		"category": "Animación y efectos",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/movo-video.png"
+	},
+	{
+		"id": "thepromptsfactory-com",
+		"name": "The Prompts Factory",
+		"url": "https://thepromptsfactory.com/",
+		"description": "Prompts de sitios web, animaciones y transiciones, con vista previa interactiva.",
+		"category": "Constructores con IA",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/thepromptsfactory-com.png"
+	},
+	{
+		"id": "motionin-design",
+		"name": "Motionin.design",
+		"url": "https://motionin.design/",
+		"description": "Secciones web interactivas, con física y cursor, que se copian como prompt para tu IA.",
+		"category": "Constructores con IA",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/motionin-design.png"
+	},
+	{
+		"id": "tactileui-dev",
+		"name": "Tactile UI",
+		"url": "https://tactileui.dev/",
+		"description": "Componentes que funcionan como hardware real, con secciones de página y más de 1.100 ejemplos.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"React",
+			"Vue",
+			"Svelte",
+			"JavaScript"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/tactileui-dev.svg"
+	},
+	{
+		"id": "cult-ui-com",
+		"name": "Cult UI",
+		"url": "https://www.cult-ui.com/",
+		"description": "Componentes, bloques animados y plantillas de código abierto basados en shadcn/ui.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"shadcn/ui",
+			"React",
+			"Next.js",
+			"TypeScript"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/cult-ui-com.png"
+	},
+	{
+		"id": "overflow-design",
+		"name": "Overflow",
+		"url": "https://www.overflow.design/",
+		"description": "Iconos isométricos e ilustraciones a mano en SVG, PNG y Figma; parte del set es gratis.",
+		"category": "Iconos e ilustraciones",
+		"tech": [
+			"Figma"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/overflow-design.svg"
+	},
+	{
+		"id": "unsplash-com",
+		"name": "Unsplash",
+		"url": "https://unsplash.com/",
+		"description": "Fotos gratuitas de creadores de todo el mundo, para descargar y usar en cualquier proyecto.",
+		"category": "Iconos e ilustraciones",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/unsplash-com.ico"
+	},
+	{
+		"id": "flaticon-com",
+		"name": "Flaticon",
+		"url": "https://www.flaticon.com/",
+		"description": "Más de 18 millones de iconos vectoriales y stickers gratis en PNG, SVG, EPS, PSD y CSS.",
+		"category": "Iconos e ilustraciones",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/flaticon-com.ico"
+	},
+	{
+		"id": "fontjoy-com",
+		"name": "Fontjoy",
+		"url": "https://fontjoy.com/",
+		"description": "Genera combinaciones de fuentes con deep learning y las prueba con tu propio texto.",
+		"category": "Fuentes y color",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/fontjoy-com.gif"
+	},
+	{
+		"id": "cleanup-pictures",
+		"name": "Cleanup.pictures",
+		"url": "https://cleanup.pictures/",
+		"description": "Quita objetos, personas, texto y defectos de una imagen en unos clics. Tiene API.",
+		"category": "Herramientas de desarrollo",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/cleanup-pictures.png"
 	}
 ]
