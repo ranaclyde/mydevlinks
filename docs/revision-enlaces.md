@@ -171,3 +171,24 @@ El autor revisó a mano los enlaces sin verificar y los caídos. Lo que se quit�
 - TanStack: https://tanstack.com/. Reemplaza a React Router v6. Se leyó sin problema: librerías headless y tipadas para apps web, con la misma lógica en React, Vue, Svelte, Solid y Angular. Va en Herramientas de desarrollo.
 - DevDojo Inspiration: https://devdojo.com/inspiration. Agregado a pedido del autor. Se leyó sin problema: sitios de productos reales con capturas, vídeos de scroll, tokens de diseño y un DESIGN.md para IA. Va en Galerías de inspiración, como Sitios web y Sistemas de diseño, con el favicon de DevDojo.
 - Logoipsum, Signalicon, Colorsss y Fontsss: https://logoipsum.com/, https://signalicon.com/, https://colorsss.com/ y https://fontsss.com/. Agregados a pedido del autor; se leyeron sin problema y traen su favicon. Son de SignalSupply, como Toolbox. Logoipsum y Signalicon van en Iconos e ilustraciones; Colorsss y Fontsss, en Fuentes y color.
+
+## Carga del 8 de noviembre de 2026
+
+Se pidieron 12 enlaces. Shots (https://shots.so/) ya estaba, así que se agregaron 11. Nueve se leyeron sin problema y traen su favicon:
+
+- Jitter: https://jitter.video/. Animación y efectos, con `Figma`: herramienta de motion design en el navegador.
+- MOVO: https://movo.video/. Animación y efectos: plantillas de motion, todavía en beta.
+- The Prompts Factory: https://thepromptsfactory.com/. Constructores con IA, como MotionSites y Websiteprompts.ai.
+- Motionin.design: https://motionin.design/. Constructores con IA: secciones interactivas que se copian como prompt. El sitio se llama "Motion"; se nombra por su dominio para no confundirlo con la biblioteca Motion.
+- Tactile UI: https://tactileui.dev/. Componentes y UI kits, con React, Vue, Svelte y JavaScript.
+- Cult UI: https://www.cult-ui.com/. Componentes y UI kits, con shadcn/ui, React, Next.js y TypeScript.
+- Overflow: https://www.overflow.design/. Iconos e ilustraciones, con `Figma`.
+- Fontjoy: https://fontjoy.com/. Fuentes y color.
+- Cleanup.pictures: https://cleanup.pictures/. Herramientas de desarrollo, como Squoosh y Shots: edición de imágenes.
+
+### Completados por el autor
+
+Unsplash y Flaticon bloquean la lectura automática, así que primero quedaron sin verificar. El autor pasó el texto que muestran en Google, y con eso se completaron. Sus favicons sí se pudieron descargar.
+
+- Unsplash: https://unsplash.com/. Desafío de Anubis (401). Fotos gratuitas hechas por creadores de todo el mundo; va en Iconos e ilustraciones, como Picography.
+- Flaticon: https://www.flaticon.com/. Bloqueo (403). Más de 18 millones de iconos vectoriales y stickers en PNG, SVG, EPS, PSD y CSS; va en Iconos e ilustraciones.
