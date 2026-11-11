@@ -85,7 +85,7 @@ Hoy la ficha lleva directo a la web del enlace. Antes de salir, quien visita qui
   - `reviewedByAuthor`: booleano;
   - `screenshotAt`: fecha ISO;
   - `alternatives`: lista opcional de `id`, que reemplaza a las automáticas.
-- **Capturas:** `public/capturas/<id>.webp`, a 1280×800 con escala 1, en tema claro, generadas por un script en `scripts/`. El autor lo corre a mano; no se ejecuta en el build.
+- **Capturas:** `public/capturas/<id>.jpg` (JPEG, calidad 80; Playwright no exporta WebP y no se agregan dependencias), a 1280×800 con escala 1, en tema claro, generadas por un script en `scripts/`. El autor lo corre a mano; no se ejecuta en el build.
 - **Alternativas automáticas:** se toman de la misma categoría, ordenadas por cuántas tecnologías comparten y después por nombre, sin enlaces caídos. Son cuatro. Si la categoría tiene menos, se muestran las que haya.
 - **Alcance de este plan:** la infraestructura completa (página de detalle, cambio de la ficha, filtros en la URL, esquema, script de capturas y pruebas) más **un solo enlace piloto con contenido: daisyUI**, el de la maqueta. El plan termina ahí. Las tandas por categoría se planifican aparte, una vez que el autor apruebe el formato del piloto.
 - **Volver al directorio:**
