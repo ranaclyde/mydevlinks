@@ -23,6 +23,18 @@
 	--old-bg: #fff0c7;
 	--down: #a3190f;
 	--down-bg: #fce6e3;
+	/* Marco: encabezado y panel lateral, el 30 % de la pantalla. Tenue en claro, azul tinta en oscuro. */
+	--frame: #dfe3ee;
+	--frame-ink: #14171d;
+	--frame-muted: #525966;
+	--frame-line: #c3c9d6;
+	--frame-line-strong: #767e8f;
+	--frame-sunk: #d0d6e4;
+	--frame-field: #f6f7fa;
+	--frame-accent: #1f3fbf;
+	--frame-accent-ink: #ffffff;
+	--frame-accent-soft: #e2e7fb;
+	--frame-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -43,6 +55,17 @@
 		--old-bg: #2c230f;
 		--down: #ff9b90;
 		--down-bg: #3a1714;
+		--frame: #1c2236;
+		--frame-ink: #e7e9ee;
+		--frame-muted: #a4abb7;
+		--frame-line: #2c3346;
+		--frame-line-strong: #6b7489;
+		--frame-sunk: #262d43;
+		--frame-field: #121521;
+		--frame-accent: #97a8ff;
+		--frame-accent-ink: #0e1014;
+		--frame-accent-soft: #262f57;
+		--frame-scheme: dark;
 		color-scheme: dark;
 	}
 }
@@ -64,6 +87,17 @@
 	--old-bg: #2c230f;
 	--down: #ff9b90;
 	--down-bg: #3a1714;
+	--frame: #1c2236;
+	--frame-ink: #e7e9ee;
+	--frame-muted: #a4abb7;
+	--frame-line: #2c3346;
+	--frame-line-strong: #6b7489;
+	--frame-sunk: #262d43;
+	--frame-field: #121521;
+	--frame-accent: #97a8ff;
+	--frame-accent-ink: #0e1014;
+	--frame-accent-soft: #262f57;
+	--frame-scheme: dark;
 	color-scheme: dark;
 }
 
@@ -86,6 +120,27 @@
 	--color-old-bg: var(--old-bg);
 	--color-down: var(--down);
 	--color-down-bg: var(--down-bg);
+}
+
+/*
+ * El marco remapea los tokens neutros y el acento: lo que vive dentro
+ * (campos, opciones, casillas, selector de tema) usa las mismas clases
+ * y toma los colores del marco sin cambiar de nombre.
+ */
+.marco {
+	--surface: var(--frame);
+	--ink: var(--frame-ink);
+	--muted: var(--frame-muted);
+	--line: var(--frame-line);
+	--line-strong: var(--frame-line-strong);
+	--sunk: var(--frame-sunk);
+	--bg: var(--frame-field);
+	--accent: var(--frame-accent);
+	--accent-ink: var(--frame-accent-ink);
+	--accent-soft: var(--frame-accent-soft);
+	color: var(--ink);
+	scrollbar-color: var(--line-strong) transparent;
+	color-scheme: var(--frame-scheme);
 }
 
 html {

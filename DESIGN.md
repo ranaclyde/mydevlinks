@@ -34,6 +34,26 @@ colors:
   old-bg-dark: "#2c230f"
   down-dark: "#ff9b90"
   down-bg-dark: "#3a1714"
+  frame: "#dfe3ee"
+  frame-ink: "#14171d"
+  frame-muted: "#525966"
+  frame-line: "#c3c9d6"
+  frame-line-strong: "#767e8f"
+  frame-sunk: "#d0d6e4"
+  frame-field: "#f6f7fa"
+  frame-accent: "#1f3fbf"
+  frame-accent-ink: "#ffffff"
+  frame-accent-soft: "#e2e7fb"
+  frame-dark: "#1c2236"
+  frame-ink-dark: "#e7e9ee"
+  frame-muted-dark: "#a4abb7"
+  frame-line-dark: "#2c3346"
+  frame-line-strong-dark: "#6b7489"
+  frame-sunk-dark: "#262d43"
+  frame-field-dark: "#121521"
+  frame-accent-dark: "#97a8ff"
+  frame-accent-ink-dark: "#0e1014"
+  frame-accent-soft-dark: "#262f57"
 typography:
   display:
     fontFamily: "IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
@@ -170,7 +190,7 @@ El movimiento es mínimo y solo confirma una interacción: entre 100 y 150 ms so
 
 **Características clave:**
 
-- Gris azulado frío con un solo acento índigo reservado a estado e interacción.
+- Reparto 60/30/10: campo de lectura, marco tenido de índigo y un solo acento índigo reservado a estado e interacción.
 - Esquinas rectas en todo; la única excepción de forma es el corte de la ficha.
 - Profundidad por líneas y tonos, sin sombras.
 - IBM Plex Mono para datos, IBM Plex Sans para lectura y controles.
@@ -178,7 +198,9 @@ El movimiento es mínimo y solo confirma una interacción: entre 100 y 150 ms so
 
 ## Colors
 
-Neutros fríos de baja saturación, un acento índigo y dos colores de aviso que solo viven en los sellos. Cada valor tiene pareja oscura con sufijo `-dark`; las variables CSS no cambian de nombre entre temas.
+Neutros fríos de baja saturación, un marco tenido de índigo, un acento índigo y dos colores de aviso que solo viven en los sellos. Cada valor tiene pareja oscura con sufijo `-dark`; las variables CSS no cambian de nombre entre temas.
+
+El reparto sigue la regla 60/30/10. El **60** es el campo de lectura: Niebla y fichas en Hoja. El **30** es el marco: encabezado y panel lateral, tenue en tema claro y azul tinta en oscuro. El **10** es el índigo, que solo aparece cuando algo está activo. Ámbar y rojo son semánticos y no cuentan en el reparto.
 
 ### Primary
 
@@ -189,7 +211,7 @@ Neutros fríos de baja saturación, un acento índigo y dos colores de aviso que
 ### Neutral
 
 - **Niebla azulada** (#eceef2, oscuro #0e1014): fondo de la página y de los campos de texto.
-- **Hoja** (#ffffff, oscuro #161920): fichas, encabezado y panel lateral.
+- **Hoja** (#ffffff, oscuro #161920): fichas y panel flotante de tecnologías.
 - **Hundido** (#e2e6ec, oscuro #1d212b): hover de opciones y del selector de tema.
 - **Tinta** (#14171d, oscuro #e7e9ee): texto principal; relleno del botón primario y del tema activo.
 - **Tinta apagada** (#525966, oscuro #a4abb7): dominios, contadores, chips y texto secundario.
@@ -197,6 +219,18 @@ Neutros fríos de baja saturación, un acento índigo y dos colores de aviso que
 - **Línea fuerte** (#8a92a0, oscuro #5d6675): bordes de controles, hover de la ficha y panel flotante de tecnologías.
 - **Placa** (#f1f2f5, oscuro #aeb3bd): fondo neutro detrás de logos e iniciales.
 - **Tinta de placa** (#2b303a, oscuro #22262e): inicial cuando no hay logo.
+
+### Marco
+
+El marco es un paso hacia el índigo desde el campo de lectura, nunca un salto. En tema claro se aclara hacia un gris tenido; en tema oscuro sube un escalón sobre el lienzo.
+
+- **Marco** (#dfe3ee, oscuro azul tinta #1c2236): fondo del encabezado y del panel lateral.
+- **Tinta de marco** (#14171d, oscuro #e7e9ee) y **apagado de marco** (#525966, oscuro #a4abb7): texto principal y secundario dentro del marco, sobre 5.5:1 en ambos temas.
+- **Líneas de marco** (#c3c9d6 y #767e8f, oscuro #2c3346 y #6b7489): estructura y controles; la fuerte mantiene 3:1 sobre el marco.
+- **Hundido de marco** (#d0d6e4, oscuro #262d43) y **campo de marco** (#f6f7fa, oscuro #121521): hover de opciones y fondo de los campos de texto.
+- **Índigo de marco**: el mismo índigo de estado en claro (#1f3fbf); en oscuro, #97a8ff sobre #0e1014 con tenue #262f57.
+
+La clase `.marco` remapea los tokens neutros y el acento a sus valores de marco. Lo que vive dentro usa las mismas clases (`bg-surface`, `text-muted`, `bg-accent`…) y toma los colores del marco sin cambiar de nombre.
 
 ### Avisos
 
@@ -208,6 +242,8 @@ Neutros fríos de baja saturación, un acento índigo y dos colores de aviso que
 **La regla del acento útil.** El índigo marca estado o interacción, nunca decoración. Si al quitarlo no se pierde información sobre qué está activo, buscado o enfocado, no corresponde.
 
 **La regla de la placa neutra.** Todo logo ajeno va sobre la placa, nunca directo sobre la ficha. En tema oscuro la placa sigue siendo un gris medio para que los logos oscuros se distingan.
+
+**La regla del índigo al filtrar.** Ver índigo significa que algo está activo. «Todas» no es un filtro: se marca con Hundido y peso 600, y el índigo aparece recién al elegir una categoría, una tecnología o escribir una búsqueda.
 
 **La regla de los dos bordes.** Las estructuras usan Línea; los controles que aceptan una acción usan Línea fuerte, que mantiene 3:1 sobre la Hoja en ambos temas.
 
@@ -312,13 +348,13 @@ La ficha es el componente central: un enlace completo con cuatro zonas en grilla
 
 - **Estilo:** fondo Niebla, borde de Línea fuerte y esquinas rectas; 40 px en escritorio (36 px en el filtro de tecnologías) y 44 px en móvil. El buscador lleva lupa de 16 px.
 - **Foco:** borde índigo en el buscador y contorno índigo de 2 px alrededor del conjunto.
-- **Opciones del panel:** filas completas con contador a la derecha y hover Hundido. La categoría elegida se rellena de índigo; la tecnología elegida marca su casilla cuadrada de 16 px y sube a peso 600.
+- **Opciones del panel:** filas completas con contador a la derecha y hover Hundido. «Todas» elegida lleva fondo Hundido y peso 600; cualquier otra categoría elegida se rellena de índigo; la tecnología elegida marca su casilla cuadrada de 16 px y sube a peso 600.
 - **Deshabilitado:** opacidad 50 % y sin hover.
 
 ### Navigation
 
-- **Encabezado:** fondo Hoja con línea inferior; marca a la izquierda, total de enlaces en escritorio y selector de tema a la derecha.
-- **Panel lateral:** búsqueda, categorías con plegado nativo y tecnologías con las más usadas primero y "Ver las N".
+- **Encabezado:** fondo de marco con línea inferior; marca a la izquierda, total de enlaces en escritorio y selector de tema a la derecha.
+- **Panel lateral:** fondo de marco; búsqueda, categorías con plegado nativo y tecnologías con las más usadas primero y "Ver las N".
 - **Móvil:** el panel se pliega tras el botón Filtros, con insignia índigo que cuenta los activos.
 
 ### Sellos de estado
@@ -347,6 +383,8 @@ La ficha es el componente central: un enlace completo con cuatro zonas en grilla
 
 - **No** redondees esquinas ni añadas sombras.
 - **No** uses el índigo como decoración ni introduzcas un segundo acento.
+- **No** uses el color de marco fuera del encabezado y el panel lateral.
+- **No** oscurezcas el marco en tema claro: un marco oscuro sobre campo claro resulta agresivo.
 - **No** uses el ámbar o el rojo fuera de los sellos de aviso.
 - **No** pongas un logo directamente sobre la ficha.
 - **No** dependas del hover en táctil para mostrar tecnologías.
