@@ -54,13 +54,13 @@ const themes = [
 		class="marco bg-surface border-line flex items-center justify-between gap-3 border-b px-4 py-3 md:sticky md:top-0 md:z-20 md:h-[58px]"
 	>
 		<div class="flex items-baseline gap-3">
-			<h1
-				class="inline-flex items-center gap-2 font-mono text-lg font-semibold tracking-[-.02em]"
-			>
-				<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-					<path d="M.75.75h7l3.5 3.5v7H.75z"></path>
-				</svg>
-				mydevlinks
+			<h1 class="font-mono text-lg leading-none font-semibold tracking-[-.02em]">
+				<span class="sr-only">mydevlinks</span>
+				<span aria-hidden="true"
+					>mydev<span class="logo-hit"
+						>{[...'links'].map((letter) => <span>{letter}</span>)}</span
+					></span
+				>
 			</h1>
 			<span class="text-muted font-mono text-xs max-md:hidden">{links.length} enlaces</span>
 		</div>

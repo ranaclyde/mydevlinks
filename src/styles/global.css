@@ -321,6 +321,48 @@ html:not([data-js]) [data-app] {
 			display: none;
 		}
 	}
+
+	/*
+	 * Logotipo: "links" se escribe letra por letra, como en el buscador,
+	 * y al completarse queda resaltado igual que una coincidencia.
+	 */
+	.logo-hit {
+		margin-left: 0.06em;
+		padding: 0.08em 0.14em;
+		background: var(--accent-soft);
+		box-shadow: inset 0.12em 0 0 var(--accent);
+		color: var(--accent);
+	}
+
+	@media (prefers-reduced-motion: no-preference) {
+		.logo-hit {
+			animation: logo-match 0.25s ease 0.9s backwards;
+		}
+
+		.logo-hit > span {
+			animation: logo-type 0.01s steps(1) backwards;
+		}
+
+		.logo-hit > span:nth-child(1) { animation-delay: 0.2s; }
+		.logo-hit > span:nth-child(2) { animation-delay: 0.32s; }
+		.logo-hit > span:nth-child(3) { animation-delay: 0.44s; }
+		.logo-hit > span:nth-child(4) { animation-delay: 0.56s; }
+		.logo-hit > span:nth-child(5) { animation-delay: 0.68s; }
+	}
+}
+
+@keyframes logo-type {
+	from {
+		opacity: 0;
+	}
+}
+
+@keyframes logo-match {
+	from {
+		background: transparent;
+		box-shadow: none;
+		color: var(--ink);
+	}
 }
 
 @media (prefers-reduced-motion: reduce) {
