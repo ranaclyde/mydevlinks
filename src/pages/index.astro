@@ -19,9 +19,7 @@ function tally(values: string[]) {
 		.sort((a, b) => b.count - a.count || a.value.localeCompare(b.value, 'es'));
 }
 
-const categories = tally(links.map((link) => link.category)).sort(
-	(a, b) => Number(a.value === 'Otros') - Number(b.value === 'Otros'),
-);
+const categories = tally(links.map((link) => link.category));
 const techs = tally(links.flatMap((link) => link.tech));
 const tags = tally(links.flatMap((link) => link.tags ?? []));
 

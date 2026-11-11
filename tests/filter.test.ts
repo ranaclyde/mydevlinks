@@ -47,12 +47,12 @@ const tabla = {
 const mobile = {
 	name: 'Lista',
 	description: 'Listas para móvil.',
-	category: 'Otros',
+	category: 'Herramientas de desarrollo',
 	tech: ['React Native'],
 };
 const sinDescripcion = {
 	name: 'Marcador viejo',
-	category: 'Otros',
+	category: 'Herramientas de desarrollo',
 	tech: [],
 };
 
@@ -333,7 +333,7 @@ describe('facetCounts con tecnologías escritas', () => {
 describe('categoryCounts', () => {
 	it('cuenta cada categoría sin aplicar la categoría elegida', () => {
 		const items = [shadcn, motion, tabla, mobile];
-		const state = { query: '', category: 'Otros', tech: ['React'] };
+		const state = { query: '', category: 'Herramientas de desarrollo', tech: ['React'] };
 		expect(categoryCounts(items, state, TECHS)).toEqual({
 			'Componentes y UI kits': 2,
 			'Animación y efectos': 1,
