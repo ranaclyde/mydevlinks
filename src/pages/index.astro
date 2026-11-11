@@ -55,9 +55,11 @@ const themes = [
 	>
 		<div class="flex items-baseline gap-3">
 			<h1 class="font-mono text-lg leading-none font-semibold tracking-[-.02em]">
-				mydev<span
-					class="bg-accent-soft text-accent ml-[.06em] px-[.14em] py-[.08em] shadow-[inset_.12em_0_0_var(--accent)]"
-					>links</span
+				<span class="sr-only">mydevlinks</span>
+				<span aria-hidden="true"
+					>mydev<span class="logo-hit"
+						>{[...'links'].map((letter) => <span>{letter}</span>)}</span
+					></span
 				>
 			</h1>
 			<span class="text-muted font-mono text-xs max-md:hidden">{links.length} enlaces</span>
