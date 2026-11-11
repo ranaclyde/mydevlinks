@@ -78,6 +78,8 @@ export const linkSchema = z
 		status: z.enum(STATUSES),
 		verified: z.boolean(),
 		private: z.boolean(),
+		/** Aparece primero y lleva el sello Destacado. */
+		featured: z.boolean().optional(),
 	})
 	.refine((link) => !link.verified || Boolean(link.description?.trim()), {
 		message: 'Un enlace verificado necesita description',
@@ -86,12 +88,25 @@ export const linkSchema = z
 	.refine((link) => !link.tags?.length || (link.category === GALLERY && link.verified), {
 		message: 'Solo una galería verificada lleva tags',
 		path: ['tags'],
+	})
+	.refine((link) => !link.featured || link.verified, {
+		message: 'Solo un enlace verificado se destaca',
+		path: ['featured'],
 	});
 
 export type Link = z.infer<typeof linkSchema>;
 
 export function visibleLinks(links: Link[], isDev: boolean): Link[] {
 	return isDev ? links : links.filter((link) => !link.private);
+}
+
+/** Destacados primero; dentro de cada grupo, por nombre. */
+export function sortLinks(links: Link[]): Link[] {
+	return [...links].sort(
+		(a, b) =>
+			Number(Boolean(b.featured)) - Number(Boolean(a.featured)) ||
+			a.name.localeCompare(b.name, 'es', { sensitivity: 'base' }),
+	);
 }
 
 export function domainOf(url: string): string {

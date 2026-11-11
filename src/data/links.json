@@ -2312,6 +2312,7 @@
 		"status": "activo",
 		"verified": true,
 		"private": false,
+		"featured": true,
 		"logo": "/logos/itsfree-dev-es.svg"
 	},
 	{
