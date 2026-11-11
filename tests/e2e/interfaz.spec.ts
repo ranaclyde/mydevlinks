@@ -240,14 +240,16 @@ test('los avisos se ven con palabra y estilo en enlaces reales', async ({ page }
 	}
 });
 
-test('los destacados van primero y llevan su sello', async ({ page }) => {
+test('los destacados van primero, con tinte y estrella', async ({ page }) => {
 	const featured = publicLinks.filter((link) => link.featured);
 	test.skip(!featured.length, 'no hay destacados en los datos');
 
 	const first = page.locator('[data-card]').first();
 	expect(featured.map((link) => link.name)).toContain(await first.getAttribute('data-name'));
 	for (const link of featured) {
-		await expect(cardOf(page, link).getByText('Destacado', { exact: true })).toBeVisible();
+		const card = cardOf(page, link);
+		await expect(card.locator('a.f-feat .ficha-star')).toBeVisible();
+		await expect(card.locator('a')).toContainText('Destacado.');
 	}
 });
 

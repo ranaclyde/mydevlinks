@@ -35,12 +35,25 @@ const stampBase =
 	<a
 		class:list={[
 			'ficha group bg-surface text-ink grid h-full grid-cols-[40px_minmax(0,1fr)] grid-rows-[auto_1fr_auto] gap-x-3 gap-y-2.5 pt-3.5 pr-4 pb-3 pl-3.5 no-underline',
-			{ 'f-unv': !verified },
+			{ 'f-unv': !verified, 'f-feat': featured },
 		]}
 		href={url}
 		target="_blank"
 		rel="noopener noreferrer"
 	>
+		{
+			featured && (
+				<>
+					<span class="sr-only">Destacado. </span>
+					<svg class="ficha-star" width="9" height="9" viewBox="0 0 12 12" aria-hidden="true">
+						<path
+							fill="currentColor"
+							d="M6 .8l1.6 3.3 3.6.5-2.6 2.5.6 3.6L6 9l-3.2 1.7.6-3.6L.8 4.6l3.6-.5z"
+						/>
+					</svg>
+				</>
+			)
+		}
 		<span
 			class:list={[
 				'bg-plate border-line relative grid size-10 place-items-center overflow-hidden border',
@@ -87,25 +100,6 @@ const stampBase =
 				</span>
 			</div>
 
-			{
-				featured && (
-					<span class:list={[stampBase, 'text-ink bg-surface mr-1.5']}>
-						<svg
-							width="11"
-							height="11"
-							viewBox="0 0 12 12"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="1.5"
-							stroke-linejoin="round"
-							aria-hidden="true"
-						>
-							<path d="M6 1.6l1.35 2.75 3.03.44-2.19 2.13.52 3.02L6 8.52 3.29 9.94l.52-3.02L1.62 4.79l3.03-.44z" />
-						</svg>
-						Destacado
-					</span>
-				)
-			}
 			{
 				old && (
 					<span class:list={[stampBase, 'text-old bg-old-bg mr-1.5']}>

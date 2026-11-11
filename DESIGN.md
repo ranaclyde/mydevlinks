@@ -306,6 +306,7 @@ La ficha es el componente central: un enlace completo con cuatro zonas en grilla
 - **Padding interno:** 14 px arriba y a la izquierda, 16 px a la derecha, 12 px abajo.
 - **Contenido:** placa de 40 px; nombre con flecha; dominio; sello opcional; descripción; y chips bajo una línea punteada.
 - **Hover:** el nombre se subraya y la flecha pasa a índigo y se mueve 1 px en diagonal.
+- **Destacada** (`featured`): aparece primero en la grilla, con un tinte índigo que nace en el borde y se apaga hacia el centro, y una estrella índigo de 9 px metida en el corte. No lleva sello; la palabra "Destacado" queda solo para lectores de pantalla. Es la única excepción a la regla del acento útil, decidida por el autor.
 
 ### Inputs / Fields
 
@@ -325,7 +326,6 @@ La ficha es el componente central: un enlace completo con cuatro zonas en grilla
 - **Forma:** borde del color actual, 2 px de padding vertical, 6 px horizontal e icono de 11 px.
 - **Antiguo:** ámbar con reloj.
 - **Caído:** rojo con círculo tachado. El logo pasa a gris con opacidad del 55 %.
-- **Destacado:** Tinta sobre Hoja, con estrella. La ficha aparece primero en la grilla. No usa el índigo, que es solo para estado e interacción.
 - **Sin verificar:** apagado sobre Hoja, con borde punteado e interrogación.
 - **Caído y sin verificar:** sello Caído, logo apagado, contorno punteado y "Sin descripción: el sitio no responde."
 
