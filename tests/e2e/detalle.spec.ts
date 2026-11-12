@@ -68,3 +68,34 @@ test('a 390 px no hay desborde horizontal', async ({ page }) => {
 	const width = await page.evaluate(() => document.documentElement.scrollWidth);
 	expect(width).toBeLessThanOrEqual(390);
 });
+
+test('el piloto muestra todas las secciones', async ({ page }) => {
+	await page.goto('/enlace/daisyui-com');
+
+	await expect(page.getByRole('heading', { name: '¿Qué es?' })).toBeVisible();
+	const uses = page.locator('section', { has: page.getByRole('heading', { name: 'Casos de uso' }) });
+	await expect(uses.getByRole('listitem')).toHaveCount(3);
+	await expect(page.getByRole('heading', { name: 'Qué revisar antes de elegirlo' })).toBeVisible();
+
+	const sheet = page.locator('.ficha', { has: page.getByRole('heading', { name: 'Ficha técnica' }) });
+	await expect(sheet).toBeVisible();
+	await expect(sheet).toContainText('Última revisión');
+	await expect(sheet).toContainText('Descripción generada a partir del sitio');
+
+	const shot = page.getByRole('img', { name: 'Captura de daisyui.com' });
+	await shot.scrollIntoViewIfNeeded();
+	await expect.poll(() => shot.evaluate((img: HTMLImageElement) => img.naturalWidth)).toBeGreaterThan(0);
+
+	await expect(page.getByRole('region', { name: 'Alternativas' }).getByRole('listitem')).toHaveCount(4);
+});
+
+test('la ficha técnica acompaña el scroll', async ({ page, isMobile }) => {
+	test.skip(isMobile, 'Solo en escritorio');
+	await page.goto('/enlace/daisyui-com');
+
+	await page.evaluate(() => window.scrollTo(0, 1200));
+	const sheet = page.locator('.ficha', { has: page.getByRole('heading', { name: 'Ficha técnica' }) });
+	const top = await sheet.evaluate((element) => element.getBoundingClientRect().top);
+	expect(top).toBeGreaterThanOrEqual(70);
+	expect(top).toBeLessThanOrEqual(90);
+});
