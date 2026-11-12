@@ -348,6 +348,12 @@ html:not([data-js]) [data-app] {
 		.logo-hit > span:nth-child(3) { animation-delay: 0.44s; }
 		.logo-hit > span:nth-child(4) { animation-delay: 0.56s; }
 		.logo-hit > span:nth-child(5) { animation-delay: 0.68s; }
+
+		/* Sin animación: queda en el estado final resaltado. */
+		.logo-hit.logo-static,
+		.logo-hit.logo-static > span {
+			animation: none;
+		}
 	}
 }
 
