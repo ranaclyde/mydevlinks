@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"La sección Inspiration de DevDojo cataloga más de 240 sitios reales como referencia de diseño. Cada ficha trae capturas de varias pantallas, incluida la versión móvil, la landing completa para recorrer con scroll, los tokens de diseño (colores, tipografía, espaciado, radios y sombras) listos como variables CSS o tema de Tailwind v4, y un DESIGN.md para copiar o descargar y dárselo a un agente de IA.",
+		"Se filtra por tipo de negocio (SaaS, blog, portafolio, e-commerce), por sección de la página (hero, navegación, precios, FAQ, footer), por estilo, por tema claro u oscuro, por tecnología y por tipografía. También hay buscador, orden y un botón para ver un sitio al azar."
+	],
+	"uses": [
+		"Ver cómo resuelven la sección de precios varios SaaS, filtrando por esa sección.",
+		"Encontrar sitios hechos con Tailwind CSS o Next.js para ver qué se logra con tu stack.",
+		"Descargar el DESIGN.md o el tema de Tailwind de un sitio que te guste para que tu agente de código parta de esa paleta y tipografía."
+	],
+	"caveats": [
+		"Guardar sitios en \"My bookmarks\" requiere crear una cuenta.",
+		"Los filtros son tantos que lleva un rato aprender a combinarlos; varios estilos quedan ocultos tras un \"más\".",
+		"Es una colección de referencia: copiar los tokens no reemplaza revisar cómo funciona el sitio original."
+	],
+	"pricing": "gratis",
+	"pricingNote": "La galería se explora sin pagar; los planes de DevDojo son del constructor de sitios, aparte.",
+	"idealFor": "Developers que quieren referencias filtradas por sección, stack o estilo.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

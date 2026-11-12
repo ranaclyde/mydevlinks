@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Landing Love es una galería con más de 2.200 sitios con animaciones, cada uno con una grabación en vídeo de la página completa para ver el movimiento sin visitarla. Además cataloga más de 11.000 animaciones de secciones sueltas.",
+		"Se filtra por categoría de sitio (3D, SaaS, Portfolio, Dark Mode, Horizontal Scroll…) y, en las animaciones, por sección (Hero, Pricing, Footer…) o por tipo de efecto (Scroll Animation, Text Animation, Page Transition, Cursor & Hover)."
+	],
+	"uses": [
+		"Ver cómo se anima un hero con scroll antes de implementar uno propio.",
+		"Buscar ejemplos de transiciones de página o efectos de cursor y hover.",
+		"Revisar sitios con scroll horizontal o 3D para decidir si el efecto vale la pena en tu proyecto."
+	],
+	"caveats": [
+		"Varias tarjetas son patrocinios de constructores no-code, marcadas como Our Sponsor.",
+		"Los vídeos muestran el resultado, no el código: no sabrás qué librería o técnica hay detrás de cada animación.",
+		"Predominan portafolios y sitios creativos, por lo que hay menos ejemplos de interfaces sobrias o de producto."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Se explora sin costo.",
+	"idealFor": "Quien busca referencias de animación y movimiento web.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

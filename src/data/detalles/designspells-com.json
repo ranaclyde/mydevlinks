@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Design Spells reúne pequeños detalles de diseño que sorprenden: animaciones, transiciones, huevos de pascua y guiños escondidos en apps y sitios. Cada \"spell\" tiene su miniatura, la app de origen y una descripción, y se muestran del más nuevo al más antiguo.",
+		"Se explora con una fila de etiquetas como Interaction, Easter Egg, Animation, 404, Confetti o Dynamic Island. Sirve cuando buscas ejemplos concretos de microinteracciones, no sitios completos."
+	],
+	"uses": [
+		"Buscar ideas de animación para una página 404 filtrando por la etiqueta 404.",
+		"Ver cómo apps conocidas hacen un confeti o una celebración tras completar una acción.",
+		"Llevar a una reunión de diseño ejemplos puntuales de una microinteracción para decidir cómo implementarla."
+	],
+	"caveats": [
+		"Solo tiene etiquetas: no se ve un buscador de texto.",
+		"Muestra el efecto, pero no explica cómo implementarlo; hay que reproducirlo por tu cuenta.",
+		"Cubre detalles puntuales, así que no sirve para estudiar el diseño de una interfaz completa."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Se consulta sin cuenta ni cobro; el único pago es el patrocinio de la newsletter y el sitio.",
+	"idealFor": "Developers y diseñadores que buscan microinteracciones concretas.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

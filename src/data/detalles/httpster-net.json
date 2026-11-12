@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Httpster es una galería de sitios web elegidos a mano, con más de 3.000 entradas y un gusto marcado por lo tipográfico, minimalista y brutalista. Cada ficha muestra una miniatura, tiene su página dentro de Httpster y un enlace para visitar el sitio original.",
+		"Se explora por 19 estilos (Minimal, Photographic, Typographic…) y 29 tipos de sitio (Ecommerce, Showcase, Design & Illustration…), con la cantidad de entradas junto a cada nombre."
+	],
+	"uses": [
+		"Ver ejemplos de tipografía protagonista entrando por el estilo Typographic.",
+		"Buscar referencias de tiendas online filtrando por el tipo Ecommerce.",
+		"Reunir ejemplos minimalistas para definir la dirección visual de un portafolio."
+	],
+	"caveats": [
+		"No tiene buscador: solo puedes llegar a los sitios por estilo, tipo o paginando.",
+		"Entre las fichas aparecen entradas promocionadas, como una de Mobbin.",
+		"Muestra el aspecto del sitio, no cómo está construido: no hay detalle técnico de cada diseño."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Se explora sin costo.",
+	"idealFor": "Diseñadores y developers que buscan referencias tipográficas y minimalistas.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

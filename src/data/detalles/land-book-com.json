@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Land-book es una galería de diseño web con sitios elegidos a mano. Mezcla landings, portafolios, blogs y tiendas, y además reúne secciones sueltas (hero, precios, footers), animaciones, titulares e imágenes OG; sin el plan Pro, el acceso a esas secciones es limitado.",
+		"Los resultados se filtran por tipo de página (Landing, Portfolio, Ecommerce, Pricing, Sign Up, Product page…) y se ordenan, por ejemplo, por los más recientes. Sirve para ver cómo se resuelve cada tipo de página en sitios reales."
+	],
+	"uses": [
+		"Ver cómo otros diseñan una página de precios filtrando por el tipo Pricing.",
+		"Buscar referencias de páginas de registro o de producto para un SaaS.",
+		"Guardar en tableros los sitios y secciones de referencia de un proyecto para tenerlos juntos al diseñar."
+	],
+	"caveats": [
+		"La lista carga más resultados al bajar, lo que hace incómodo volver a una pieza concreta.",
+		"En el plan gratis, la búsqueda y los filtros dan resultados limitados, solo se crean hasta 3 tableros y no hay vistas móviles.",
+		"Muestra el diseño de cada sitio, no su código ni su implementación."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Se explora gratis con acceso limitado; Pro cuesta 9 USD al mes o 72 USD al año y quita los límites de categorías, secciones, búsqueda y filtros, y suma vistas móviles.",
+	"idealFor": "Diseñadores y developers que buscan referencias por tipo de página.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12",
+	"pricingUrl": "https://land-book.com/pro"
+}

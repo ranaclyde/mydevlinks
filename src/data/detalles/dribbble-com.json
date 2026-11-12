@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Dribbble es una comunidad donde diseñadores, ilustradores y otros creativos visuales publican su trabajo en piezas llamadas \"shots\". Es una de las vitrinas de portafolio más usadas del rubro y además conecta a diseñadores con quienes quieren contratarlos.",
+		"Conviene como fuente amplia de ideas visuales: interfaces, branding e ilustración, todo en un mismo lugar."
+	],
+	"uses": [
+		"Buscar referencias de dashboards o pantallas móviles filtrando los shots por categoría, color o periodo antes de maquetar una interfaz.",
+		"Ver portafolios de diseñadores para encontrar a alguien a quien contratar para el logo de un proyecto.",
+		"Armar tu propio perfil de portafolio si trabajas en diseño de producto."
+	],
+	"caveats": [
+		"Muchas piezas son conceptos pensados para lucir, no interfaces probadas en un producto real.",
+		"Sin cuenta solo ves una parte de los shots: para seguir explorando, guardar piezas o contactar a un diseñador te pide registrarte.",
+		"Publicar es gratis, pero más visibilidad en las búsquedas, recibir encargos y ofrecer varios servicios dependen de los planes Pro."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Plan gratis; los planes Pro para ofrecer servicios van desde 4 USD al mes (Lite) con facturación anual, y suben a 8 y 99 USD al mes.",
+	"pricingUrl": "https://dribbble.com/pro",
+	"idealFor": "Quien busca inspiración visual amplia o quiere mostrar su portafolio de diseño.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}
