@@ -37,8 +37,8 @@ Hoy la ficha lleva directo a la web del enlace. Antes de salir, quien visita qui
 
 - **Una página propia para cada enlace**, en lugar de un modal. Ruta propuesta: `/enlace/<id>`.
 - **Estructura** tomada de https://itsfree.dev/es/tools/cloudflare, con el sistema visual de `DESIGN.md` y sin su estética de rótulos `// SECCIÓN`.
-- **Maqueta aprobada:** `.superpowers/brainstorm/44534-1794413275/content/pagina-enlace-v2.html`. Está fuera de git, así que el plan debe copiarla o tomar de ella lo necesario. En orden:
-  1. **Encabezado** igual al del directorio.
+- **Maqueta aprobada:** `.superpowers/brainstorm/65208-1794492251/content/pagina-enlace-v4.html`. Está fuera de git, así que el plan debe copiarla o tomar de ella lo necesario. En orden:
+  1. **Encabezado** igual al del directorio: color de marco (`.marco`) y el logotipo "mydev**links**". La animación del logotipo solo corre en el directorio; en el detalle aparece ya resaltado (decisión de Claude, sin objeción del autor).
   2. **Ruta:** ← Directorio / categoría / nombre.
   3. **Cabecera:** ficha grande con corte. Lleva logo en placa (64 px), nombre, dominio, sellos de estado ("Antiguo" y "Caído"), la descripción actual, el botón principal "Visitar <dominio> ↗", el secundario "Volver al directorio" y las tecnologías bajo una línea punteada.
   4. **Columna principal:** captura con su fecha, "¿Qué es?", tres casos de uso numerados y "Qué revisar antes de elegirlo".
@@ -52,6 +52,10 @@ Hoy la ficha lleva directo a la web del enlace. Antes de salir, quien visita qui
      - un aviso con borde punteado cuando el contenido no está revisado a mano.
 
      En móvil, esta ficha sube antes de la captura.
+
+     Va en **Hoja**, como el resto de las fichas, y no en color de marco: es contenido, no un control. Así se cumple la regla de `DESIGN.md`, que reserva el marco para el encabezado y el panel lateral (decisión del autor, 12 nov 2026).
+
+     Desde 48rem, y si la ventana mide al menos 600 px de alto, la ficha **acompaña el scroll** (`position: sticky`, `top: 78px`, es decir, 58 px de encabezado más 20 px) para no dejar un hueco vacío junto a la columna principal (decisión del autor).
   6. **Alternativas:** cuatro fichas reales del directorio y "Ver toda la categoría →".
 - **Ancho** (confirmado con las skills impeccable y ui-ux-pro-max):
   - el directorio sigue a todo el ancho;

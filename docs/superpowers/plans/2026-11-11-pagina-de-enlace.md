@@ -11,7 +11,7 @@
 
 **Tech Stack:** Astro 7, TypeScript, Tailwind 4, zod (`astro/zod`), Vitest, Playwright. No se agregan dependencias.
 
-**Spec:** `docs/superpowers/specs/2026-11-11-pagina-de-enlace-design.md`. Maqueta aprobada: `.superpowers/brainstorm/44534-1794413275/content/pagina-enlace-v2.html` (fuera de git; léela antes de la Task 5).
+**Spec:** `docs/superpowers/specs/2026-11-11-pagina-de-enlace-design.md`. Maqueta aprobada: `.superpowers/brainstorm/65208-1794492251/content/pagina-enlace-v4.html` (fuera de git; léela antes de la Task 5).
 
 ## Global Constraints
 
@@ -32,7 +32,8 @@
   - columna lateral de 300 px;
   - una sola columna por debajo de 48rem.
 - **Alternativas:** grilla `repeat(auto-fill, minmax(min(270px,100%),1fr))` con `gap: 12px`.
-- **Encabezado:** idéntico en directorio y detalle (alto de 58 px y fijo desde 48rem).
+- **Encabezado:** idéntico en directorio y detalle (alto de 58 px y fijo desde 48rem), con la clase `.marco` y el logotipo actual.
+- **Marco:** el color de marco solo va en el encabezado y el panel lateral de filtros. La ficha técnica del detalle va en Hoja.
 - **Funciona sin JavaScript:** el detalle se lee completo y todos sus enlaces funcionan.
 - **Fecha visible:** formato `11 nov 2026` (`es`, `day: 'numeric'`, `month: 'short'`, `year: 'numeric'`, `timeZone: 'UTC'`).
 - **Mensajes de commit** en español, estilo `feat: …`, con la línea `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`.
@@ -170,10 +171,11 @@ Reglas:
 
 **Interfaces:**
 - Produces:
-  - `<SiteHeader total={number} />`. Mantiene el marcado y las clases actuales. La marca pasa a ser un enlace a `/`, sin cambiar su aspecto, y conserva el `h1` solo cuando le pasan `asHeading`.
+  - `<SiteHeader total={number} asHeading?: boolean animateLogo?: boolean />`. Mantiene el marcado y las clases actuales (`.marco`, logotipo con `.logo-hit`). La marca pasa a ser un enlace a `/`, sin cambiar su aspecto, y conserva el `h1` solo con `asHeading`.
+  - Con `animateLogo={false}`, el logotipo aparece ya resaltado, sin la animación de `logo-type` ni `logo-match`. Agrega la clase modificadora en `global.css`.
   - `<Layout title?: string description?: string>`, con `mydevlinks` y la descripción actual como valores por defecto.
 
-- [ ] **Step 1: Extract** `SiteHeader.astro`. Uso en el índice: `<SiteHeader total={links.length} asHeading />`.
+- [ ] **Step 1: Extract** `SiteHeader.astro`. Uso en el índice: `<SiteHeader total={links.length} asHeading animateLogo />`. En el detalle (Task 5): `<SiteHeader total={…} animateLogo={false} />`.
 - [ ] **Step 2: Add** las props `title` y `description` a `Layout.astro`.
 - [ ] **Step 3: Run** `pnpm check && pnpm test:e2e`. Expected: PASS sin cambios en las pruebas existentes, incluida la del tema guardado.
 - [ ] **Step 4: Commit** — `refactor: extrae el encabezado y admite título por página`
@@ -206,7 +208,7 @@ Reglas:
   - la ruta `/enlace/<id>` para cada enlace de `visibleLinks(…, import.meta.env.DEV)`;
   - `shouldGoBack(referrer: string, origin: string): boolean`, que es `true` solo si `referrer` tiene el mismo `origin` y su ruta es `/`.
 
-Estructura y estilos según la maqueta v2 y las Global Constraints:
+Estructura y estilos según la maqueta v4 y las Global Constraints:
 - **Cabecera:** usa los sellos de `LinkCard` (mueve el marcado de los sellos a `src/components/Stamps.astro` y úsalo en ambos lados).
 - **Ficha técnica:**
   - si hay detalle, muestra precio, enlace a precios (solo si hay `pricingUrl`), "Ideal para", categoría, "Última revisión" y el aviso punteado si `reviewedByAuthor === false`;
@@ -219,6 +221,7 @@ Estructura y estilos según la maqueta v2 y las Global Constraints:
   - si no, nada.
 - **Volver:** "← Directorio" y "Volver al directorio" son `<a href="/" data-back>`. `src/scripts/back.ts` intercepta el clic con `shouldGoBack(document.referrer, location.origin)` y llama a `history.back()`.
 - **Móvil:** por debajo de 48rem, la ficha técnica va antes de la captura.
+- **Ficha técnica que acompaña el scroll:** desde 48rem y con al menos 600 px de alto de ventana, la columna lateral usa `position: sticky; top: 78px` (la grilla del cuerpo con `align-items: start`).
 - **Título de la página:** `<nombre> · mydevlinks`. La descripción es la del enlace.
 
 - [ ] **Step 1: Write the failing unit tests** in `tests/back.test.ts`:
@@ -237,6 +240,7 @@ Estructura y estilos según la maqueta v2 y las Global Constraints:
   - `volver desde el directorio conserva los filtros`: `goto('/?cat=<categoría del enlace>')`, `goto` al detalle con `referer` del directorio (usar el clic real desde la grilla una vez hecha la Task 6; hasta entonces `page.goto(url, { referer })`), "Volver al directorio" y la URL vuelve a contener `cat=`.
   - `sin JavaScript el detalle se lee completo`: contexto con `javaScriptEnabled: false`; están el `h1` y las alternativas, y "Volver al directorio" tiene `href="/"`.
   - `a 390 px no hay desborde horizontal`: `document.documentElement.scrollWidth <= 390`.
+  - `la ficha técnica acompaña el scroll` (solo escritorio, en el piloto o en un enlace con detalle): tras `window.scrollTo(0, 1200)`, el `top` de la ficha técnica en `getBoundingClientRect()` está entre 70 y 90.
 - [ ] **Step 5: Run** `pnpm test && pnpm test:e2e && pnpm check`. Expected: todo PASS.
 - [ ] **Step 6: Document** la página de detalle en `DESIGN.md` (estructura, ancho, aviso punteado de contenido generado y recuadro de enlace caído).
 - [ ] **Step 7: Commit** — `feat: agrega la página de detalle de cada enlace`
