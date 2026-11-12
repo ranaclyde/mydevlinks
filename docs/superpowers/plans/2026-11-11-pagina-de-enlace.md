@@ -35,6 +35,7 @@
 - **Encabezado:** idéntico en directorio y detalle (alto de 58 px y fijo desde 48rem), con la clase `.marco` y el logotipo actual.
 - **Marco:** el color de marco solo va en el encabezado y el panel lateral de filtros. La ficha técnica del detalle va en Hoja.
 - **Funciona sin JavaScript:** el detalle se lee completo y todos sus enlaces funcionan.
+- **Aviso de contenido no revisado** (texto exacto): `Descripción generada a partir del sitio`.
 - **Fecha visible:** formato `11 nov 2026` (`es`, `day: 'numeric'`, `month: 'short'`, `year: 'numeric'`, `timeZone: 'UTC'`).
 - **Mensajes de commit** en español, estilo `feat: …`, con la línea `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`.
 
