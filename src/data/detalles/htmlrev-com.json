@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"HTMLrev es un directorio de plantillas gratuitas de HTML y CSS para sitios web, landings, blogs, portafolios, tiendas y paneles. Las organiza por tecnología, entre ellas Bootstrap, Tailwind, React, Next.js, Vue, Astro y Laravel, y cada una enlaza al sitio de su autor.",
+		"Conviene cuando necesitas un punto de partida visual para un proyecto y prefieres comparar varias opciones en un solo lugar."
+	],
+	"uses": [
+		"Encontrar una plantilla de landing en Tailwind para lanzar una idea rápido.",
+		"Buscar una base de panel de administración en React o Vue para un proyecto interno.",
+		"Revisar plantillas de portafolio en HTML puro para armar tu sitio personal."
+	],
+	"caveats": [
+		"Es un directorio: las plantillas viven en los sitios de sus autores y no se descargan desde HTMLrev.",
+		"Cada plantilla tiene su propia licencia; revísala antes de usarla en un proyecto comercial.",
+		"Hay publicidad y ofertas de librerías de pago junto a las plantillas gratuitas."
+	],
+	"pricing": "gratis",
+	"pricingNote": "El directorio es gratuito y lista plantillas gratis; algunos patrocinadores venden librerías de pago aparte.",
+	"idealFor": "Quien busca plantillas de partida gratuitas, por framework.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

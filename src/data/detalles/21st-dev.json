@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"21st es un catálogo comunitario con más de 12.000 componentes de React y Tailwind, además de plantillas completas, temas de shadcn, shaders y gradientes. Cada pieza muestra vista previa en vivo, código fuente y un comando de instalación, y el código se copia a tu repositorio en vez de añadirse como dependencia.",
+		"Conviene cuando buscas inspiración o una pieza concreta, como un hero o una sección de precios, y prefieres adaptarla a tu proyecto antes que usar una librería cerrada."
+	],
+	"uses": [
+		"Buscar un hero o una sección de precios y copiarla a tu proyecto con el comando de shadcn.",
+		"Aplicar un tema de shadcn para cambiar rápido la paleta de una interfaz existente.",
+		"Pedirle a una herramienta de IA que recree un componente en tu código a partir de su prompt."
+	],
+	"caveats": [
+		"Los componentes los publican distintos autores: revisa la página de cada uno por si tiene condiciones propias.",
+		"El plan gratis permite 2 copias de componentes al día; para instalar sin límite hay que suscribirse.",
+		"Al ser código copiado, las correcciones del autor original no llegan solas a tu proyecto."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Plan gratis con 2 copias de componentes al día; el plan Builder cuesta 6 USD al mes con pago anual y quita ese límite.",
+	"pricingUrl": "https://21st.dev/pricing",
+	"idealFor": "Proyectos con React y Tailwind que buscan componentes y temas listos para adaptar.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

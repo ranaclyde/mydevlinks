@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Flowbite es una librería de código abierto con más de 68 componentes interactivos sobre Tailwind CSS, como botones, modales, barras de navegación y selectores de fecha. El comportamiento se resuelve con JavaScript puro y tiene guías para React, Vue, Svelte, Angular, Laravel, Django y otros.",
+		"Conviene cuando usas Tailwind y quieres una base de componentes lista, con modo oscuro y sistema de diseño en Figma, en cualquier stack."
+	],
+	"uses": [
+		"Montar un panel de administración con tablas, modales y menús ya estilizados.",
+		"Integrar componentes en una app de Laravel o Django sin depender de un framework de JavaScript.",
+		"Pasar un diseño de Figma a código usando el sistema de diseño que ofrece Flowbite."
+	],
+	"caveats": [
+		"Requiere Tailwind CSS en el proyecto.",
+		"Los bloques de marketing, aplicación y comercio electrónico, junto con los dashboards y landings completas, son parte de Flowbite Pro, que es de pago.",
+		"Los componentes interactivos dependen de su JavaScript, así que hay que cargarlo e inicializarlo en cada página."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Librería gratuita con licencia MIT; Flowbite Pro se paga una vez: 299 USD la edición para código y 169 USD la de Figma.",
+	"pricingUrl": "https://flowbite.com/pro/",
+	"idealFor": "Proyectos con Tailwind que necesitan componentes listos y funcionan en cualquier framework.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

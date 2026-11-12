@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Kokonut UI es una librería de código abierto con 116 componentes de React pensados para apps de IA, construidos con Tailwind CSS, Motion y shadcn/ui. Funciona como un registro de shadcn: con un comando, como npx shadcn@latest add @kokonutui/particle-button, el código del componente se copia a tu repositorio.",
+		"Conviene cuando ya usas shadcn/ui y quieres piezas más vistosas, como botones animados o campos de entrada para chat, que puedas modificar libremente."
+	],
+	"uses": [
+		"Agregar una caja de entrada de prompt a un chat con IA.",
+		"Sumar botones y tarjetas animadas a una landing hecha con React.",
+		"Configurar el registro en components.json para instalar piezas por nombre corto."
+	],
+	"caveats": [
+		"Requiere un proyecto React con Tailwind y shadcn/ui ya configurados.",
+		"Las animaciones usan Motion, así que cada componente puede sumar esa dependencia.",
+		"Los bloques más completos, como secciones y plantillas, forman parte de una versión Pro aparte."
+	],
+	"pricing": "freemium",
+	"pricingNote": "La librería es gratuita con licencia MIT; la versión Pro cuesta 119 USD en un pago único, con acceso de por vida.",
+	"pricingUrl": "https://kokonutui.pro/pricing",
+	"idealFor": "Developers con shadcn/ui que quieren componentes animados para apps de IA.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

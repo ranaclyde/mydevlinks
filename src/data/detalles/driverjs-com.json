@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Driver.js es una librería de JavaScript sin dependencias para crear tours de producto, resaltar elementos de la pantalla, mostrar pistas y armar listas de onboarding. Funciona con JavaScript puro y con React, Vue, Angular, Svelte, Solid o Next.js, y tiene licencia MIT.",
+		"Conviene cuando quieres guiar a los usuarios por tu interfaz sin sumar un servicio externo ni un SDK pesado."
+	],
+	"uses": [
+		"Hacer un recorrido de bienvenida que explique las secciones principales de un panel.",
+		"Resaltar una función nueva con una sola llamada a highlight().",
+		"Mostrar una lista de pasos de configuración inicial dentro de la aplicación."
+	],
+	"caveats": [
+		"Es solo la capa de interfaz: no guarda quién ya vio el tour, eso lo resuelves tú.",
+		"Los pasos se anclan a selectores del DOM, así que cambios de maquetación pueden romper un tour.",
+		"Revisa que los textos y el foco del teclado funcionen bien para quien usa lector de pantalla."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Código abierto con licencia MIT, sin planes de pago.",
+	"idealFor": "Equipos que necesitan tours de producto ligeros dentro de su app.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}
