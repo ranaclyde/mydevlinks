@@ -363,10 +363,11 @@ Cada enlace tiene su página en `/enlace/<id>`, generada en el build y legible c
 
 - **Ancho:** contenido centrado de hasta 1160 px, con 20 px de margen lateral (16 px por debajo de 48rem). La prosa llega hasta 68ch.
 - **Estructura:** ruta en mono de 12 px ("← Directorio / categoría / nombre"); cabecera en ficha con placa de 64 px (48 px en pantallas angostas), nombre como `h1` de 26 px, dominio, sellos, descripción, botón primario "Visitar <dominio>", botón secundario "Volver al directorio" y chips bajo línea punteada. Debajo, dos columnas: captura y secciones ("¿Qué es?", "Casos de uso" numerados, "Qué revisar antes de elegirlo" con filete izquierdo de Línea fuerte), y a la derecha la ficha técnica de 300 px. Al final, las alternativas en la grilla del directorio.
-- **Ficha técnica:** ficha en Hoja (nunca en Marco) con precio como sello, enlace a precios, "Ideal para", categoría y "Última revisión". Sin detalle solo muestra la categoría. Desde 48rem y con al menos 600 px de alto acompaña el scroll (`sticky`, 78 px bajo el encabezado).
+- **Ficha técnica:** ficha en Hoja (nunca en Marco) con precio como sello, enlace a precios, "Ideal para", categoría y "Última revisión". La cabecera y la ficha técnica no se accionan, así que llevan `.ficha-fija` y su borde no cambia en hover. Desde 48rem y con al menos 600 px de alto acompaña el scroll (`sticky`, 78 px bajo el encabezado).
 - **Aviso de contenido generado:** recuadro con borde punteado de Línea fuerte, texto apagado de 12.5 px e interrogación: "Descripción generada a partir del sitio". Aparece mientras el autor no revisa el texto a mano.
 - **Captura:** marco de Línea con barra superior mono (dominio y "Captura del <fecha>"). Si el enlace está caído y no hay captura, un recuadro punteado de Línea fuerte dice "El sitio no responde; no hay captura".
 - **Volver:** "← Directorio" y "Volver al directorio" apuntan a `/`; con JavaScript, si se llegó desde el directorio, vuelven en el historial y conservan los filtros.
+- **Sin detalle:** no hay cuerpo ni ficha técnica; de la cabecera se pasa a las alternativas. Si además el enlace está caído, entre ambas va solo el recuadro de enlace caído, a una columna.
 - **Móvil:** una sola columna; la ficha técnica va antes de la captura.
 - **Alternativas:** fichas iguales a las del directorio (placa, nombre, dominio y descripción) que enlazan a la página de detalle de cada una.
 

@@ -217,6 +217,11 @@ html:not([data-js]) [data-app] {
 		--cl: var(--accent);
 	}
 
+	/* Ficha que no se acciona (cabecera y ficha técnica del detalle): sin estado de hover. */
+	.ficha.ficha-fija:hover {
+		--cl: var(--line);
+	}
+
 	.ficha.f-unv {
 		border-style: dashed;
 	}

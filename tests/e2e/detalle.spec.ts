@@ -33,6 +33,8 @@ test('un enlace sin detalle muestra cabecera y alternativas, sin secciones vací
 
 	await expect(page.getByRole('heading', { name: '¿Qué es?' })).toHaveCount(0);
 	await expect(page.getByRole('heading', { name: 'Casos de uso' })).toHaveCount(0);
+	await expect(page.getByRole('heading', { name: 'Qué revisar antes de elegirlo' })).toHaveCount(0);
+	await expect(page.getByRole('heading', { name: 'Ficha técnica' })).toHaveCount(0);
 });
 
 test('entrar directo y volver lleva al directorio', async ({ page }) => {
