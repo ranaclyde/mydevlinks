@@ -51,7 +51,7 @@ Hoy la ficha lleva directo a la web del enlace. Antes de salir, quien visita qui
      - "Última revisión <fecha>";
      - un aviso con borde punteado cuando el contenido no está revisado a mano.
 
-     En móvil, esta ficha sube antes de la captura.
+     En móvil va justo debajo de la captura y antes de "¿Qué es?", con sus filas apiladas (sin columnas) (decisión del autor, 12 nov 2026).
 
      Va en **Hoja**, como el resto de las fichas, y no en color de marco: es contenido, no un control. Así se cumple la regla de `DESIGN.md`, que reserva el marco para el encabezado y el panel lateral (decisión del autor, 12 nov 2026).
 

@@ -375,6 +375,23 @@ html:not([data-js]) [data-app] {
 		}
 	}
 
+	/* Detalle: botón "+N" que despliega en línea las tecnologías que no se muestran. */
+	.chip-toggle {
+		cursor: pointer;
+		border-style: dashed;
+		background: transparent;
+		color: var(--ink);
+	}
+
+	.chip-toggle:hover {
+		border-color: var(--line-strong);
+	}
+
+	/* Sin JavaScript no hay botón: se ven todas. */
+	html[data-js] [data-hero-chips]:not([data-open]) [data-extra] {
+		display: none;
+	}
+
 	/*
 	 * Logotipo: "links" se escribe letra por letra, como en el buscador,
 	 * y al completarse queda resaltado igual que una coincidencia.

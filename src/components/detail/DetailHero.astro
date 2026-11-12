@@ -14,6 +14,9 @@ const domain = domainOf(url);
 const initial = [...name.trim()][0]?.toUpperCase() ?? '?';
 const techs = verified ? tech : [];
 const chips = [...techs, ...tags];
+/** Chips visibles antes de "+N"; el resto se despliega con el botón. */
+const VISIBLE_CHIPS = 4;
+const hidden = chips.length - VISIBLE_CHIPS;
 
 const text = verified
 	? description
@@ -26,7 +29,7 @@ const button =
 ---
 
 <div
-	class="ficha ficha-fija bg-surface grid grid-cols-[64px_minmax(0,1fr)] items-start gap-4 px-[22px] pt-5 pb-[18px] max-[520px]:grid-cols-[48px_minmax(0,1fr)] max-[520px]:p-4"
+	class="ficha ficha-fija bg-surface grid grid-cols-[64px_minmax(0,1fr)] items-start gap-4 px-[22px] pt-5 pb-[18px] max-[520px]:grid-cols-1 max-[520px]:gap-3 max-[520px]:p-4"
 >
 	<span
 		class:list={[
@@ -95,11 +98,25 @@ const button =
 					{tags.length > 0 && <span class="sr-only">Tipo: {tags.join(', ')}.</span>}
 					<div
 						class="border-line mt-3.5 flex flex-wrap gap-1.5 border-t border-dashed pt-3"
-						aria-hidden="true"
+						data-hero-chips
 					>
-						{chips.map((chip) => (
-							<span class="chip">{chip}</span>
+						{chips.map((chip, index) => (
+							<span class="chip" aria-hidden="true" data-extra={index >= VISIBLE_CHIPS ? '' : undefined}>
+								{chip}
+							</span>
 						))}
+						{hidden > 0 && (
+							<button
+								class="chip chip-toggle"
+								type="button"
+								aria-expanded="false"
+								aria-label={`Ver ${hidden} tecnologías más`}
+								data-chips-toggle
+								data-needs-js
+							>
+								+{hidden}
+							</button>
+						)}
 					</div>
 				</>
 			)

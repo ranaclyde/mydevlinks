@@ -138,6 +138,34 @@ test('a 390 px no hay desborde horizontal', async ({ page }) => {
 	expect(width).toBeLessThanOrEqual(390);
 });
 
+test('la cabecera muestra 4 tecnologías y "+N" despliega el resto', async ({ page }) => {
+	await page.goto('/enlace/daisyui-com');
+	const chips = page.locator('[data-hero-chips] .chip:not(.chip-toggle)');
+	const toggle = page.locator('[data-chips-toggle]');
+	const total = await chips.count();
+
+	await expect(chips.filter({ visible: true })).toHaveCount(4);
+	await expect(toggle).toHaveText(`+${total - 4}`);
+	await expect(toggle).toHaveAttribute('aria-expanded', 'false');
+
+	await toggle.click();
+	await expect(chips.filter({ visible: true })).toHaveCount(total);
+	await expect(toggle).toHaveAttribute('aria-expanded', 'true');
+	await expect(toggle).toHaveText('Ver menos');
+});
+
+test('en móvil la captura va antes de la ficha técnica, y ésta antes de "¿Qué es?"', async ({ page, isMobile }) => {
+	test.skip(!isMobile, 'Solo en móvil');
+	await page.goto('/enlace/daisyui-com');
+	const top = (locator: ReturnType<typeof page.locator>) =>
+		locator.evaluate((el) => el.getBoundingClientRect().top + window.scrollY);
+	const shot = await top(page.getByRole('img', { name: 'Captura de daisyui.com' }));
+	const sheet = await top(page.getByRole('heading', { name: 'Ficha técnica' }));
+	const whatIs = await top(page.getByRole('heading', { name: '¿Qué es?' }));
+	expect(shot).toBeLessThan(sheet);
+	expect(sheet).toBeLessThan(whatIs);
+});
+
 test('el piloto muestra todas las secciones', async ({ page }) => {
 	await page.goto('/enlace/daisyui-com');
 
