@@ -240,7 +240,6 @@ Estructura y estilos según la maqueta v4 y las Global Constraints:
   - `volver desde el directorio conserva los filtros`: `goto('/?cat=<categoría del enlace>')`, `goto` al detalle con `referer` del directorio (usar el clic real desde la grilla una vez hecha la Task 6; hasta entonces `page.goto(url, { referer })`), "Volver al directorio" y la URL vuelve a contener `cat=`.
   - `sin JavaScript el detalle se lee completo`: contexto con `javaScriptEnabled: false`; están el `h1` y las alternativas, y "Volver al directorio" tiene `href="/"`.
   - `a 390 px no hay desborde horizontal`: `document.documentElement.scrollWidth <= 390`.
-  - `la ficha técnica acompaña el scroll` (solo escritorio, en el piloto o en un enlace con detalle): tras `window.scrollTo(0, 1200)`, el `top` de la ficha técnica en `getBoundingClientRect()` está entre 70 y 90.
 - [ ] **Step 5: Run** `pnpm test && pnpm test:e2e && pnpm check`. Expected: todo PASS.
 - [ ] **Step 6: Document** la página de detalle en `DESIGN.md` (estructura, ancho, aviso punteado de contenido generado y recuadro de enlace caído).
 - [ ] **Step 7: Commit** — `feat: agrega la página de detalle de cada enlace`
@@ -324,6 +323,6 @@ Captura: Chromium de `@playwright/test`, viewport de 1280×800, `deviceScaleFact
   La maqueta tiene un borrador de tono, pero sus datos no están verificados.
 - [ ] **Step 2: Run** `pnpm capture daisyui-com`. Expected: `daisyui-com: ok` and the file exists. Ábrelo y comprueba que no lo tapa un banner de cookies.
 - [ ] **Step 3: Run** `pnpm test && pnpm test:e2e && pnpm check && pnpm build`. Expected: todo PASS.
-- [ ] **Step 4: Add** to `tests/e2e/detalle.spec.ts`: `el piloto muestra todas las secciones`. En `/enlace/daisyui-com` están "¿Qué es?", 3 casos de uso, "Qué revisar antes de elegirlo", "Ficha técnica" con "Última revisión", el aviso de contenido no revisado, la captura cargada (`naturalWidth > 0`) y 4 alternativas. Run `pnpm test:e2e`. Expected: PASS.
+- [ ] **Step 4: Add** to `tests/e2e/detalle.spec.ts`: `el piloto muestra todas las secciones`. En `/enlace/daisyui-com` están "¿Qué es?", 3 casos de uso, "Qué revisar antes de elegirlo", "Ficha técnica" con "Última revisión", el aviso de contenido no revisado, la captura cargada (`naturalWidth > 0`) y 4 alternativas. Agrega también `la ficha técnica acompaña el scroll` (solo escritorio): tras `window.scrollTo(0, 1200)`, el `top` de la ficha técnica según `getBoundingClientRect()` está entre 70 y 90. Run `pnpm test:e2e`. Expected: PASS.
 - [ ] **Step 5: Commit** — `feat: agrega el detalle piloto de daisyUI`
 - [ ] **Step 6: Stop.** Muéstrale al autor `/enlace/daisyui-com` en el servidor de desarrollo, en tema claro y oscuro y en el celular, y espera su ajuste antes de cualquier tanda.
