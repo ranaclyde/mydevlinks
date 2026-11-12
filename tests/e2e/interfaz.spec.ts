@@ -392,3 +392,30 @@ test('el tipo de galería filtra dentro de Galerías y se pierde al cambiar de c
 	await expect(page.getByRole('group', { name: 'Tipo de galería' })).toBeHidden();
 	await expect(page.getByRole('button', { name: /^Quitar tipo/ })).toHaveCount(0);
 });
+
+test('los filtros se guardan en la URL y sobreviven a recargar', async ({ page, isMobile }) => {
+	await openFilters(page, isMobile);
+	await pick(page.getByRole('radio', { name: /Componentes y UI kits/ }));
+	await pick(page.getByRole('checkbox', { name: /^React\s/ }));
+
+	const expected = publicLinks.filter((link) =>
+		matches(link, { query: '', category: 'Componentes y UI kits', tech: ['React'] }),
+	).length;
+	await expect(count(page)).toHaveText(String(expected));
+	await expect.poll(() => page.url()).toContain('cat=');
+	expect(page.url()).toContain('tech=React');
+
+	await page.reload();
+	await expect(count(page)).toHaveText(String(expected));
+	await expect(page.getByRole('button', { name: 'Quitar React' })).toBeVisible();
+	await expect(page.getByRole('button', { name: 'Quitar categoría Componentes y UI kits' })).toBeVisible();
+	await openFilters(page, isMobile);
+	await expect(page.getByRole('checkbox', { name: /^React\s/ })).toBeChecked();
+	await expect(page.getByRole('radio', { name: /Componentes y UI kits/ })).toBeChecked();
+});
+
+test('parámetros inválidos en la URL no rompen el directorio', async ({ page }) => {
+	await page.goto('/?cat=Nada&tech=Foo');
+	await expect(count(page)).toHaveText(TOTAL);
+	await expect.poll(() => new URL(page.url()).search).toBe('');
+});

@@ -14,6 +14,7 @@ import {
 	type FilterState,
 } from '../lib/filter';
 import { GALLERY } from '../lib/links';
+import { stateFromSearch, stateToSearch } from '../lib/url-state';
 
 const ANNOUNCE_DELAY = 700;
 
@@ -60,8 +61,12 @@ const cards: Card[] = [...document.querySelectorAll<HTMLElement>('[data-card]')]
 	chips: [...el.querySelectorAll<HTMLElement>('[data-chip]')],
 }));
 
-const state: FilterState = { query: '', category: null, tech: [], tag: null };
-let techListOpen = false;
+const state: FilterState = stateFromSearch(location.search, {
+	categories: categoryInputs.map((input) => input.value).filter(Boolean),
+	techs: allTechs,
+	tags: tagInputs.map((input) => input.value).filter(Boolean),
+});
+let techListOpen = state.tech.some((tech) => allTechs.indexOf(tech) >= TOP_TECHS);
 let chipsKey = '';
 let announceTimer: ReturnType<typeof setTimeout> | undefined;
 
@@ -273,6 +278,14 @@ function render() {
 
 	renderActives(words, techs, visible);
 	renderTechList();
+	saveState();
+}
+
+function saveState() {
+	const url = location.pathname + stateToSearch(state) + location.hash;
+	if (url !== location.pathname + location.search + location.hash) {
+		history.replaceState(history.state, '', url);
+	}
 }
 
 function clearAll() {
@@ -342,7 +355,7 @@ document.addEventListener('click', (event) => {
 	if ((event.target as Element).closest('[data-clear]')) clearAll();
 });
 
-// El navegador puede restaurar el formulario al volver atrás.
-search.value = '';
+// El estado sale de la URL; el navegador puede restaurar el formulario al volver atrás.
+search.value = state.query;
 render();
 clearTimeout(announceTimer);
