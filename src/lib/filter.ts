@@ -42,6 +42,7 @@ export interface FilterItem {
 	category: string;
 	tech: string[];
 	tags?: string[];
+	url?: string;
 }
 
 export interface FilterState {
@@ -116,9 +117,37 @@ export function queryWithoutWords(query: string, techs: string[]): string {
 		.join(' ');
 }
 
+/**
+ * La URL tal como se busca: sin protocolo, sin `www.`, sin consulta ni fragmento y sin barra final.
+ * Así "https", "http" o "www" no coinciden con todas las fichas, y "vercel.app" o "github.com/x" sí.
+ */
+export function searchableUrl(url: string): string {
+	return normalize(url)
+		.replace(/^[a-z][a-z0-9+.-]*:\/\//, '')
+		.replace(/^www\./, '')
+		.replace(/[?#].*$/, '')
+		.replace(/\/+$/, '');
+}
+
+/** Quita de lo escrito el protocolo, `www.` y la barra final, para pegar una URL tal cual. */
+function typedUrlPart(word: string): string {
+	const stripped = word
+		.replace(/^[a-z][a-z0-9+.-]*:\/\//i, '')
+		.replace(/^www\./i, '')
+		.replace(/\/+$/, '');
+	return stripped || word;
+}
+
 function haystack(item: FilterItem): string {
 	return normalize(
-		[item.name, item.description ?? '', item.tech.join(' '), item.category, ...(item.tags ?? [])].join(' '),
+		[
+			item.name,
+			item.description ?? '',
+			item.tech.join(' '),
+			item.category,
+			...(item.tags ?? []),
+			item.url ? searchableUrl(item.url) : '',
+		].join(' '),
 	);
 }
 
@@ -138,7 +167,7 @@ function mentionsOf(tech: string): RegExp[] {
 }
 
 function wordTest(word: string): (text: string) => boolean {
-	const needle = normalize(word);
+	const needle = normalize(typedUrlPart(word));
 	if (needle.length > SHORT_WORD) return (text) => text.includes(needle);
 	const pattern = new RegExp(wordStartSource(needle), 'u');
 	return (text) => pattern.test(text);

@@ -265,6 +265,55 @@ describe('matches', () => {
 	});
 });
 
+describe('búsqueda por URL', () => {
+	const vercel = {
+		name: 'Mi demo',
+		category: 'Herramientas de desarrollo',
+		tech: [],
+		url: 'https://www.mi-demo.vercel.app/',
+	};
+	const repo = {
+		name: 'Repositorio',
+		category: 'Herramientas de desarrollo',
+		tech: [],
+		url: 'http://github.com/acme/kit?tab=readme#top',
+	};
+	const q = (query: string) => ({ ...empty, query });
+
+	it('encuentra por dominio, parcial o completo', () => {
+		expect(matches(vercel, q('vercel.app'))).toBe(true);
+		expect(matches(vercel, q('mi-demo'))).toBe(true);
+		expect(matches(repo, q('github'))).toBe(true);
+		expect(matches(repo, q('vercel.app'))).toBe(false);
+	});
+
+	it('encuentra por ruta', () => {
+		expect(matches(repo, q('github.com/acme'))).toBe(true);
+		expect(matches(repo, q('acme/kit'))).toBe(true);
+	});
+
+	it('ignora protocolo, www y barra final, también al escribirlos', () => {
+		expect(matches(vercel, q('https://www.mi-demo.vercel.app/'))).toBe(true);
+		expect(matches(vercel, q('www.mi-demo'))).toBe(true);
+		expect(matches(repo, q('https://github.com/acme/kit/'))).toBe(true);
+	});
+
+	it('el protocolo no coincide con todo', () => {
+		expect(matches(vercel, q('https'))).toBe(false);
+		expect(matches(repo, q('http'))).toBe(false);
+		expect(matches(vercel, q('www'))).toBe(false);
+		expect(matches(vercel, q('https://'))).toBe(false);
+	});
+
+	it('no busca en la consulta ni en el fragmento de la URL', () => {
+		expect(matches(repo, q('readme'))).toBe(false);
+	});
+
+	it('sin URL el resto sigue igual', () => {
+		expect(matches(sinDescripcion, q('github'))).toBe(false);
+	});
+});
+
 describe('activeTechs', () => {
 	it('une las casillas y la consulta sin repetir', () => {
 		expect(activeTechs({ ...empty, query: 'react next.js', tech: ['Vue', 'React'] }, TECHS)).toEqual([

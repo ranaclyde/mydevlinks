@@ -55,6 +55,7 @@ const cards: Card[] = [...document.querySelectorAll<HTMLElement>('[data-card]')]
 	el,
 	name: el.dataset.name ?? '',
 	description: el.dataset.description,
+	url: el.dataset.url,
 	category: el.dataset.category ?? '',
 	tech: JSON.parse(el.dataset.tech ?? '[]'),
 	tags: JSON.parse(el.dataset.tags ?? '[]'),
