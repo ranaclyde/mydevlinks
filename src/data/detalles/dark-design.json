@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Dark es una galería de sitios web con tema oscuro, elegidos a mano. Cada entrada muestra captura, nombre, categoría y enlace al sitio, y se filtra por Agency, AI, Culture, Education, Hardware, Personal, Software y Web3, con orden por novedad o popularidad.",
+		"Conviene cuando diseñas un sitio o producto en modo oscuro y quieres ver cómo manejan contraste, color de acento y jerarquía otros equipos."
+	],
+	"uses": [
+		"Buscar referencias de landings oscuras para una herramienta de IA o de software.",
+		"Ver cómo se usan acentos de color y degradados sobre fondos negros para no perder legibilidad.",
+		"Revisar portafolios personales oscuros antes de rediseñar el tuyo."
+	],
+	"caveats": [
+		"Es una galería de capturas: no da código ni la paleta exacta de cada sitio.",
+		"Algunas entradas aparecen marcadas como patrocinadas o afiliadas.",
+		"No tiene buscador: solo se navega por categoría y orden (New o Popular)."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Gratis; también ofrece plantillas gratuitas.",
+	"idealFor": "Proyectos con tema oscuro que buscan referencias visuales.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

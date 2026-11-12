@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"CallToInspiration es una galería de interfaces de sitios y apps organizada por patrón de diseño: logins, popups, tablas, formularios, dashboards, páginas de precios, footers y más.",
+		"Se explora eligiendo una categoría de patrón. Es útil cuando ya sabes qué componente necesitas y quieres ver cómo lo resuelven otros productos."
+	],
+	"uses": [
+		"Comparar varias páginas de precios antes de maquetar la de tu SaaS.",
+		"Ver formularios de login y registro para decidir campos, orden y mensajes de error.",
+		"Buscar ejemplos de dashboards y tablas de datos para definir la jerarquía de tu panel."
+	],
+	"caveats": [
+		"No tiene buscador ni filtros más allá de las categorías de patrones.",
+		"Es referencia visual: no incluye código ni componentes reutilizables.",
+		"La portada tiene un espacio destacado con publicidad."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Se explora sin costo y sin planes de pago.",
+	"idealFor": "Ver cómo se resuelve un componente concreto de interfaz.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}
