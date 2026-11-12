@@ -1,0 +1,147 @@
+---
+import { getCollection } from 'astro:content';
+import AltCard from '../../components/detail/AltCard.astro';
+import DetailHero from '../../components/detail/DetailHero.astro';
+import Screenshot from '../../components/detail/Screenshot.astro';
+import TechSheet from '../../components/detail/TechSheet.astro';
+import SiteHeader from '../../components/SiteHeader.astro';
+import Layout from '../../layouts/Layout.astro';
+import { alternativesFor } from '../../lib/alternatives';
+import type { Detail } from '../../lib/details';
+import { sortLinks, visibleLinks, type Link } from '../../lib/links';
+import { stateToSearch } from '../../lib/url-state';
+
+interface Props {
+	link: Link;
+	detail?: Detail;
+	alternatives: Link[];
+	total: number;
+}
+
+export async function getStaticPaths() {
+	const collection = await getCollection('links');
+	const links = sortLinks(
+		visibleLinks(
+			collection.map((entry) => entry.data),
+			import.meta.env.DEV,
+		),
+	);
+	const details = new Map((await getCollection('details')).map((entry) => [entry.id, entry.data]));
+
+	return links.map((link) => {
+		const detail = details.get(link.id);
+		return {
+			params: { id: link.id },
+			props: {
+				link,
+				detail,
+				alternatives: alternativesFor(link, links, detail?.alternatives),
+				total: links.length,
+			},
+		};
+	});
+}
+
+const { link, detail, alternatives, total } = Astro.props;
+const categoryHref = '/' + stateToSearch({ query: '', category: link.category, tech: [], tag: null });
+const crumbLink = 'underline underline-offset-3 transition-colors duration-100 hover:text-accent';
+const action =
+	'text-[13px] underline underline-offset-3 transition-colors duration-100 hover:text-accent';
+---
+
+<Layout title={`${link.name} · mydevlinks`} description={link.description}>
+	<SiteHeader total={total} animateLogo={false} />
+
+	<main class="mx-auto max-w-[1160px] px-4 pt-4 pb-12 md:px-5 md:pt-5 md:pb-16">
+		<nav aria-label="Ruta" class="text-muted mb-[18px] font-mono text-xs">
+			<ol class="m-0 flex list-none flex-wrap gap-2 p-0">
+				<li><a class={crumbLink} href="/" data-back>← Directorio</a></li>
+				<li aria-hidden="true">/</li>
+				<li><a class={crumbLink} href={categoryHref}>{link.category}</a></li>
+				<li aria-hidden="true">/</li>
+				<li class="wrap-anywhere" aria-current="page">{link.name}</li>
+			</ol>
+		</nav>
+
+		<DetailHero link={link} />
+
+		{
+			detail ? (
+				<div class="mt-5 grid items-start gap-5 md:grid-cols-[minmax(0,1fr)_300px]">
+					{/* En móvil la columna se disuelve: captura, ficha técnica y después las secciones. */}
+					<div class="min-w-0 max-md:contents">
+						<Screenshot link={link} screenshotAt={detail.screenshotAt} />
+
+						<section class="mt-7 first:mt-0 max-md:order-2 max-md:mt-2">
+							<h2 class="mb-2 text-[17px] leading-[1.3] font-semibold">¿Qué es?</h2>
+							{detail.whatIs.map((paragraph) => (
+								<p class="max-w-[68ch] not-first-of-type:mt-2">{paragraph}</p>
+							))}
+						</section>
+
+						<section class="mt-7 max-md:order-2 max-md:mt-2">
+							<h2 class="mb-2 text-[17px] leading-[1.3] font-semibold">Casos de uso</h2>
+							<ol class="m-0 mt-1 grid max-w-[68ch] list-none gap-2 p-0">
+								{detail.uses.map((use, index) => (
+									<li class="bg-surface border-line grid grid-cols-[28px_minmax(0,1fr)] gap-2.5 border px-3 py-2.5 text-sm">
+										<span class="text-muted pt-0.5 font-mono text-xs font-semibold" aria-hidden="true">
+											{String(index + 1).padStart(2, '0')}
+										</span>
+										<span>{use}</span>
+									</li>
+								))}
+							</ol>
+						</section>
+
+						<section class="mt-7 max-md:order-2 max-md:mt-2">
+							<h2 class="mb-2 text-[17px] leading-[1.3] font-semibold">
+								Qué revisar antes de elegirlo
+							</h2>
+							<ul class="border-line-strong m-0 max-w-[68ch] list-disc border-l-2 py-0 pr-0 pl-8 text-sm">
+								{detail.caveats.map((caveat) => (
+									<li class="my-1">{caveat}</li>
+								))}
+							</ul>
+						</section>
+					</div>
+
+					<aside class="max-md:order-1 [@media(min-width:48rem)_and_(min-height:600px)]:sticky [@media(min-width:48rem)_and_(min-height:600px)]:top-[78px]">
+						<TechSheet link={link} detail={detail} />
+					</aside>
+				</div>
+			) : (
+				link.status === 'caido' && (
+					<div class="mt-5">
+						<Screenshot link={link} />
+					</div>
+				)
+			)
+		}
+
+		{
+			alternatives.length > 0 && (
+				<section class="mt-9" aria-labelledby="alternativas">
+					<div class="flex flex-wrap items-baseline justify-between gap-3">
+						<h2 id="alternativas" class="text-[17px] leading-[1.3] font-semibold">
+							Alternativas
+						</h2>
+						<a class={action} href={categoryHref}>
+							Ver toda la categoría <span aria-hidden="true">→</span>
+						</a>
+					</div>
+					<ul class="m-0 mt-2.5 grid list-none grid-cols-[repeat(auto-fill,minmax(min(270px,100%),1fr))] gap-3 p-0">
+						{alternatives.map((alternative) => (
+							<AltCard link={alternative} />
+						))}
+					</ul>
+				</section>
+			)
+		}
+	</main>
+</Layout>
+
+<script>
+	import '../../scripts/theme';
+	import '../../scripts/back';
+	import '../../scripts/hero-chips';
+</script>

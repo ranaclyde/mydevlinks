@@ -1,16 +1,16 @@
 ---
 import { VISIBLE_TECH } from '../lib/filter';
 import { domainOf, type Link } from '../lib/links';
+import Stamps from './Stamps.astro';
 
 interface Props {
 	link: Link;
 }
 
 const { link } = Astro.props;
-const { name, url, description, category, tech, tags = [], logo, status, verified, featured } = link;
+const { id, name, url, description, category, tech, tags = [], logo, status, verified, featured } = link;
 
 const down = status === 'caido';
-const old = status === 'antiguo';
 const showChips = verified && tech.length > 0;
 const initial = [...name.trim()][0]?.toUpperCase() ?? '?';
 
@@ -20,8 +20,6 @@ const text = verified
 		? 'Sin descripción: el sitio no responde.'
 		: 'Todavía sin descripción ni tecnologías.';
 
-const stampBase =
-	'inline-flex flex-none items-center gap-1 border border-current px-1.5 py-0.5 font-mono text-[11px] font-semibold tracking-[.06em] whitespace-nowrap uppercase';
 ---
 
 <li
@@ -32,14 +30,11 @@ const stampBase =
 	data-tech={JSON.stringify(tech)}
 	data-tags={JSON.stringify(tags)}
 >
-	<a
+	<div
 		class:list={[
-			'ficha group bg-surface text-ink grid h-full grid-cols-[40px_minmax(0,1fr)] grid-rows-[auto_1fr_auto] gap-x-3 gap-y-2.5 pt-3.5 pr-4 pb-3 pl-3.5 no-underline',
+			'ficha group bg-surface text-ink grid h-full grid-cols-[40px_minmax(0,1fr)] grid-rows-[auto_1fr_auto] gap-x-3 gap-y-2.5 pt-3.5 pr-4 pb-3 pl-3.5',
 			{ 'f-unv': !verified, 'f-feat': featured },
 		]}
-		href={url}
-		target="_blank"
-		rel="noopener noreferrer"
 	>
 		{
 			featured && (
@@ -83,84 +78,38 @@ const stampBase =
 				<h3
 					class="flex items-start gap-1 text-base leading-[1.3] font-semibold wrap-anywhere decoration-1 underline-offset-3 group-hover:underline"
 				>
-					<span class="line-clamp-2" title={name}>{name}</span>
-					<svg
-						class="text-muted group-hover:text-accent mt-1 flex-none transition-[transform,color] duration-100 group-hover:translate-x-px group-hover:-translate-y-px"
-						width="12"
-						height="12"
-						viewBox="0 0 12 12"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="1.6"
-						aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4"></path></svg
+					<a class="ficha-link min-w-0 text-inherit no-underline" href={`/enlace/${id}`} data-detail>
+						<span class="line-clamp-2">{name}</span>
+					</a>
+					<a
+						class="ficha-ext"
+						href={url}
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label={`Abrir ${name} en otra pestaña`}
+						data-external
 					>
+						<svg
+							class="text-muted group-hover:text-accent transition-[transform,color] duration-100 group-hover:translate-x-px group-hover:-translate-y-px"
+							width="12"
+							height="12"
+							viewBox="0 0 12 12"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="1.6"
+							aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4"></path></svg
+						>
+					</a>
 				</h3>
 				<span class="text-muted mt-0.5 truncate font-mono text-[11px] tracking-[.02em]">
 					{domainOf(url)}
 				</span>
 			</div>
 
-			{
-				old && (
-					<span class:list={[stampBase, 'text-old bg-old-bg mr-1.5']}>
-						<svg
-							width="11"
-							height="11"
-							viewBox="0 0 12 12"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="1.5"
-							aria-hidden="true"
-						>
-							<circle cx="6" cy="6" r="4.6" />
-							<path d="M6 3.5V6l1.7 1.2" />
-						</svg>
-						Antiguo
-					</span>
-				)
-			}
-			{
-				down && (
-					<span class:list={[stampBase, 'text-down bg-down-bg mr-1.5']}>
-						<svg
-							width="11"
-							height="11"
-							viewBox="0 0 12 12"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="1.5"
-							aria-hidden="true"
-						>
-							<circle cx="6" cy="6" r="4.6" />
-							<path d="M2.8 9.2l6.4-6.4" />
-						</svg>
-						Caído
-					</span>
-				)
-			}
-			{
-				!verified && !down && (
-					<span class:list={[stampBase, 'text-muted bg-surface mr-1.5 border-dashed']}>
-						<svg
-							width="11"
-							height="11"
-							viewBox="0 0 12 12"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="1.5"
-							aria-hidden="true"
-						>
-							<circle cx="6" cy="6" r="4.6" stroke-dasharray="2 1.6" />
-							<path d="M4.8 4.8a1.3 1.3 0 1 1 1.8 1.2c-.4.2-.6.5-.6.9M6 8.6v.1" />
-						</svg>
-						Sin verificar
-					</span>
-				)
-			}
+			<Stamps status={status} verified={verified} class="mr-1.5" />
 		</div>
 
 		<p
-			title={text}
 			class:list={[
 				'col-span-full line-clamp-2 text-sm leading-[1.45]',
 				{ 'text-muted italic': !verified, 'text-muted': verified && down },
@@ -218,6 +167,5 @@ const stampBase =
 				</>
 			)
 		}
-		<span class="sr-only"> (abre en otra pestaña)</span>
-	</a>
+	</div>
 </li>

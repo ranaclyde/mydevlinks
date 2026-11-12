@@ -1,0 +1,69 @@
+---
+import { domainOf, type Link } from '../../lib/links';
+
+interface Props {
+	link: Link;
+}
+
+const { link } = Astro.props;
+const { id, name, url, description, logo, status, verified } = link;
+
+const down = status === 'caido';
+const initial = [...name.trim()][0]?.toUpperCase() ?? '?';
+const text = verified
+	? description
+	: down
+		? 'Sin descripción: el sitio no responde.'
+		: 'Todavía sin descripción ni tecnologías.';
+---
+
+<li>
+	<a
+		class:list={[
+			'ficha group bg-surface text-ink grid h-full grid-cols-[40px_minmax(0,1fr)] gap-x-3 gap-y-2 pt-3.5 pr-4 pb-3 pl-3.5 no-underline',
+			{ 'f-unv': !verified },
+		]}
+		href={`/enlace/${id}`}
+	>
+		<span
+			class:list={[
+				'bg-plate border-line relative grid size-10 place-items-center overflow-hidden border',
+				{ 'opacity-55 grayscale': down },
+			]}
+			aria-hidden="true"
+		>
+			<span class="text-plate-ink font-mono text-[17px] font-semibold">{initial}</span>
+			{
+				logo && (
+					<img
+						class="bg-plate absolute inset-0 size-full object-contain p-1.5"
+						src={logo}
+						alt=""
+						width="40"
+						height="40"
+						loading="lazy"
+						decoding="async"
+						onerror="this.remove()"
+					/>
+				)
+			}
+		</span>
+		<span class="flex min-w-0 flex-col">
+			<strong
+				class="line-clamp-2 text-[15px] leading-[1.3] font-semibold wrap-anywhere decoration-1 underline-offset-3 group-hover:underline"
+				>{name}</strong
+			>
+			<span class="text-muted mt-0.5 truncate font-mono text-[11px] tracking-[.02em]">
+				{domainOf(url)}
+			</span>
+		</span>
+		<span
+			class:list={[
+				'col-span-full line-clamp-2 text-[13.5px] leading-[1.45]',
+				{ 'text-muted italic': !verified },
+			]}
+		>
+			{text}
+		</span>
+	</a>
+</li>

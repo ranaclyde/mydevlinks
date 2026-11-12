@@ -213,8 +213,58 @@ html:not([data-js]) [data-app] {
 		--cl: var(--line-strong);
 	}
 
-	.ficha:focus-visible {
+	.ficha:focus-visible,
+	.ficha:has(.ficha-link:focus-visible) {
 		--cl: var(--accent);
+	}
+
+	/*
+	 * Ficha del directorio: el nombre es el enlace al detalle y se estira sobre toda la ficha
+	 * con su propio ::before, porque el ::before y el ::after de .ficha ya están ocupados.
+	 * El anillo de foco va en ese pseudo-elemento para rodear la ficha completa.
+	 */
+	.ficha-link::before {
+		content: "";
+		position: absolute;
+		inset: -1px;
+	}
+
+	.ficha-link:focus-visible {
+		outline: none;
+	}
+
+	.ficha-link:focus-visible::before {
+		outline: 2px solid var(--accent);
+		outline-offset: 2px;
+	}
+
+	/*
+	 * Flecha a la web: queda sobre el enlace estirado y es su propio objetivo de clic.
+	 * Los márgenes negativos agrandan el área sin mover la flecha ni el renglón.
+	 */
+	.ficha-ext {
+		position: relative;
+		z-index: 1;
+		display: inline-grid;
+		flex: none;
+		align-items: center;
+		width: 24px;
+		height: 24px;
+		margin: -2px -8px -2px -4px;
+		padding-left: 4px;
+	}
+
+	@media (hover: none) {
+		.ficha-ext {
+			width: 40px;
+			height: 40px;
+			margin: -10px -24px -10px -4px;
+		}
+	}
+
+	/* Ficha que no se acciona (cabecera y ficha técnica del detalle): sin estado de hover. */
+	.ficha.ficha-fija:hover {
+		--cl: var(--line);
 	}
 
 	.ficha.f-unv {
@@ -282,7 +332,10 @@ html:not([data-js]) [data-app] {
 		font-weight: 500;
 	}
 
+	/* Sobre el enlace estirado de la ficha, para que el puntero lo alcance. */
 	.chip.more {
+		position: relative;
+		z-index: 1;
 		border-style: dashed;
 		color: var(--ink);
 	}
@@ -306,7 +359,7 @@ html:not([data-js]) [data-app] {
 	@media (hover: hover) {
 		.chip.more:hover ~ .chips-rest,
 		.chips-rest:hover,
-		.ficha:focus-visible .chips-rest {
+		.ficha:has(.ficha-link:focus-visible) .chips-rest {
 			display: flex;
 		}
 	}
@@ -320,6 +373,23 @@ html:not([data-js]) [data-app] {
 		.chip.more {
 			display: none;
 		}
+	}
+
+	/* Detalle: botón "+N" que despliega en línea las tecnologías que no se muestran. */
+	.chip-toggle {
+		cursor: pointer;
+		border-style: dashed;
+		background: transparent;
+		color: var(--ink);
+	}
+
+	.chip-toggle:hover {
+		border-color: var(--line-strong);
+	}
+
+	/* Sin JavaScript no hay botón: se ven todas. */
+	html[data-js] [data-hero-chips]:not([data-open]) [data-extra] {
+		display: none;
 	}
 
 	/*
@@ -348,6 +418,12 @@ html:not([data-js]) [data-app] {
 		.logo-hit > span:nth-child(3) { animation-delay: 0.44s; }
 		.logo-hit > span:nth-child(4) { animation-delay: 0.56s; }
 		.logo-hit > span:nth-child(5) { animation-delay: 0.68s; }
+
+		/* Sin animación: queda en el estado final resaltado. */
+		.logo-hit.logo-static,
+		.logo-hit.logo-static > span {
+			animation: none;
+		}
 	}
 }
 

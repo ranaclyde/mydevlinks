@@ -226,7 +226,7 @@ test('los avisos se ven con palabra y estilo en enlaces reales', async ({ page }
 		const pending = cardOf(page, unverified);
 		await expect(pending.getByText('Sin verificar', { exact: true })).toBeVisible();
 		await expect(pending.getByText('Todavía sin descripción ni tecnologías.')).toBeVisible();
-		await expect(pending.locator('a')).toHaveCSS('border-top-style', 'dashed');
+		await expect(pending.locator('.ficha')).toHaveCSS('border-top-style', 'dashed');
 		await expect(pending.locator('.chip')).toHaveCount(0);
 	}
 
@@ -235,7 +235,7 @@ test('los avisos se ven con palabra y estilo en enlaces reales', async ({ page }
 		await expect(card.getByText('Caído', { exact: true })).toBeVisible();
 		await expect(card.getByText('Sin verificar', { exact: true })).toHaveCount(0);
 		await expect(card.getByText('Sin descripción: el sitio no responde.')).toBeVisible();
-		await expect(card.locator('a')).toHaveCSS('border-top-style', 'dashed');
+		await expect(card.locator('.ficha')).toHaveCSS('border-top-style', 'dashed');
 		await expect(card.locator('.chip')).toHaveCount(0);
 	}
 });
@@ -248,9 +248,61 @@ test('los destacados van primero, con tinte y estrella', async ({ page }) => {
 	expect(featured.map((link) => link.name)).toContain(await first.getAttribute('data-name'));
 	for (const link of featured) {
 		const card = cardOf(page, link);
-		await expect(card.locator('a.f-feat .ficha-star')).toBeVisible();
-		await expect(card.locator('a')).toContainText('Destacado.');
+		await expect(card.locator('.ficha.f-feat .ficha-star')).toBeVisible();
+		await expect(card).toContainText('Destacado.');
 	}
+});
+
+const linkOf = (name: string) => publicLinks.find((link) => link.name === name) as RawLink;
+
+test('la ficha lleva al detalle y la flecha a la web', async ({ page }) => {
+	const card = visibleCards(page).first();
+	const link = linkOf((await card.getAttribute('data-name')) as string);
+
+	const detail = card.locator('[data-detail]');
+	await expect(detail).toHaveAttribute('href', `/enlace/${link.id}`);
+	await expect(detail).not.toHaveAttribute('target');
+	await expect(detail).toHaveAccessibleName(link.name);
+
+	const external = card.locator('[data-external]');
+	await expect(external).toHaveAttribute('href', link.url);
+	await expect(external).toHaveAttribute('target', '_blank');
+	await expect(external).toHaveAttribute('rel', 'noopener noreferrer');
+	await expect(external).toHaveAccessibleName(`Abrir ${link.name} en otra pestaña`);
+
+	// Clic real en la descripción: lo recibe el enlace estirado que cubre la ficha.
+	const box = (await card.locator('p').boundingBox())!;
+	await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2);
+	await expect(page).toHaveURL(`/enlace/${link.id}`);
+});
+
+test('la flecha es su propio objetivo de clic', async ({ page, isMobile }) => {
+	const external = visibleCards(page).first().locator('[data-external]');
+	const box = (await external.boundingBox())!;
+	const min = isMobile ? 40 : 24;
+	expect(box.width).toBeGreaterThanOrEqual(min);
+	expect(box.height).toBeGreaterThanOrEqual(min);
+
+	const hit = await page.evaluate(
+		({ x, y }) => document.elementFromPoint(x, y)?.closest('[data-external]') !== null,
+		{ x: box.x + box.width / 2, y: box.y + box.height / 2 },
+	);
+	expect(hit).toBe(true);
+});
+
+test('con teclado se llega al detalle y después a la flecha', async ({ page, isMobile }) => {
+	test.skip(isMobile, 'requiere teclado');
+
+	const card = visibleCards(page).first();
+	await page.locator('#resultados').focus();
+	await page.keyboard.press('Tab');
+	await expect(card.locator('[data-detail]')).toBeFocused();
+	await page.keyboard.press('Tab');
+	await expect(card.locator('[data-external]')).toBeFocused();
+});
+
+test('no hay enlaces anidados', async ({ page }) => {
+	await expect(page.locator('a a')).toHaveCount(0);
 });
 
 test('el teclado llega a Saltar a resultados', async ({ page, isMobile }) => {
@@ -391,4 +443,31 @@ test('el tipo de galería filtra dentro de Galerías y se pierde al cambiar de c
 	await pick(page.getByRole('radio', { name: /Componentes y UI kits/ }));
 	await expect(page.getByRole('group', { name: 'Tipo de galería' })).toBeHidden();
 	await expect(page.getByRole('button', { name: /^Quitar tipo/ })).toHaveCount(0);
+});
+
+test('los filtros se guardan en la URL y sobreviven a recargar', async ({ page, isMobile }) => {
+	await openFilters(page, isMobile);
+	await pick(page.getByRole('radio', { name: /Componentes y UI kits/ }));
+	await pick(page.getByRole('checkbox', { name: /^React\s/ }));
+
+	const expected = publicLinks.filter((link) =>
+		matches(link, { query: '', category: 'Componentes y UI kits', tech: ['React'] }),
+	).length;
+	await expect(count(page)).toHaveText(String(expected));
+	await expect.poll(() => page.url()).toContain('cat=');
+	expect(page.url()).toContain('tech=React');
+
+	await page.reload();
+	await expect(count(page)).toHaveText(String(expected));
+	await expect(page.getByRole('button', { name: 'Quitar React' })).toBeVisible();
+	await expect(page.getByRole('button', { name: 'Quitar categoría Componentes y UI kits' })).toBeVisible();
+	await openFilters(page, isMobile);
+	await expect(page.getByRole('checkbox', { name: /^React\s/ })).toBeChecked();
+	await expect(page.getByRole('radio', { name: /Componentes y UI kits/ })).toBeChecked();
+});
+
+test('parámetros inválidos en la URL no rompen el directorio', async ({ page }) => {
+	await page.goto('/?cat=Nada&tech=Foo');
+	await expect(count(page)).toHaveText(TOTAL);
+	await expect.poll(() => new URL(page.url()).search).toBe('');
 });

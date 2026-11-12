@@ -1,5 +1,6 @@
 import { defineCollection } from 'astro:content';
-import { file } from 'astro/loaders';
+import { file, glob } from 'astro/loaders';
+import { detailSchema } from './lib/details';
 import { linkSchema } from './lib/links';
 
 const links = defineCollection({
@@ -7,4 +8,9 @@ const links = defineCollection({
 	schema: linkSchema,
 });
 
-export const collections = { links };
+const details = defineCollection({
+	loader: glob({ pattern: '*.json', base: 'src/data/detalles' }),
+	schema: detailSchema,
+});
+
+export const collections = { links, details };

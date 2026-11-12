@@ -14,6 +14,7 @@ import {
 	type FilterState,
 } from '../lib/filter';
 import { GALLERY } from '../lib/links';
+import { stateFromSearch, stateToSearch } from '../lib/url-state';
 
 const ANNOUNCE_DELAY = 700;
 
@@ -60,8 +61,12 @@ const cards: Card[] = [...document.querySelectorAll<HTMLElement>('[data-card]')]
 	chips: [...el.querySelectorAll<HTMLElement>('[data-chip]')],
 }));
 
-const state: FilterState = { query: '', category: null, tech: [], tag: null };
-let techListOpen = false;
+const state: FilterState = stateFromSearch(location.search, {
+	categories: categoryInputs.map((input) => input.value).filter(Boolean),
+	techs: allTechs,
+	tags: tagInputs.map((input) => input.value).filter(Boolean),
+});
+let techListOpen = state.tech.some((tech) => allTechs.indexOf(tech) >= TOP_TECHS);
 let chipsKey = '';
 let announceTimer: ReturnType<typeof setTimeout> | undefined;
 
@@ -273,6 +278,14 @@ function render() {
 
 	renderActives(words, techs, visible);
 	renderTechList();
+	saveState();
+}
+
+function saveState() {
+	const url = location.pathname + stateToSearch(state) + location.hash;
+	if (url !== location.pathname + location.search + location.hash) {
+		history.replaceState(history.state, '', url);
+	}
 }
 
 function clearAll() {
@@ -342,7 +355,67 @@ document.addEventListener('click', (event) => {
 	if ((event.target as Element).closest('[data-clear]')) clearAll();
 });
 
-// El navegador puede restaurar el formulario al volver atrás.
-search.value = '';
+// El HTML trae todas las fichas y el filtro se aplica después: si el navegador restaurara
+// el scroll al volver, lo haría sobre una lista más larga que la que se dejó y quedaría
+// desplazado. Por eso el directorio guarda su scroll y lo repone ya filtrado.
+// Cada entrada del historial lleva su propia clave en history.state (saveState la conserva
+// al pasar history.state a replaceState), así dos entradas de `/` no se pisan el scroll.
+function newScrollKey(): string {
+	return typeof crypto !== 'undefined' && 'randomUUID' in crypto
+		? crypto.randomUUID()
+		: `${Date.now()}-${Math.random()}`;
+}
+const scrollKey: string = history.state?.scrollKey ?? newScrollKey();
+if (history.state?.scrollKey !== scrollKey) history.replaceState({ ...history.state, scrollKey }, '');
+const SCROLL_KEY = `directorio:scroll:${scrollKey}`;
+history.scrollRestoration = 'manual';
+
+function saveScroll() {
+	try {
+		sessionStorage.setItem(SCROLL_KEY, JSON.stringify({ search: location.search, y: scrollY }));
+	} catch {
+		// Sin sessionStorage no hay nada que reponer al volver.
+	}
+}
+// Se guarda al hacer scroll y al hacer clic (antes de seguir un enlace), no en pagehide:
+// al salir el diseño ya puede haber cambiado (en móvil el documento encoge antes de
+// pagehide y scrollY deja de ser lo que se veía). El clic guarda al instante; el scroll,
+// como mucho una vez por fotograma.
+let scrollFrame = 0;
+addEventListener(
+	'scroll',
+	() => {
+		if (scrollFrame) return;
+		scrollFrame = requestAnimationFrame(() => {
+			scrollFrame = 0;
+			saveScroll();
+		});
+	},
+	{ passive: true },
+);
+document.addEventListener('click', saveScroll, true);
+
+const navType = (performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming | undefined)?.type;
+const returning = navType === 'back_forward' || navType === 'reload';
+
+function savedScroll(): number | null {
+	if (!returning) return null;
+	try {
+		const saved = JSON.parse(sessionStorage.getItem(SCROLL_KEY) ?? 'null');
+		// `search` es solo una comprobación: la clave ya identifica la entrada.
+		return saved?.search === location.search && typeof saved.y === 'number' ? saved.y : null;
+	} catch {
+		return null;
+	}
+}
+
+// El estado sale de la URL; el navegador puede restaurar el formulario al volver atrás.
+search.value = state.query;
 render();
 clearTimeout(announceTimer);
+// Al volver o recargar sin valor guardado (sin sessionStorage, o una entrada creada antes
+// de este script) se va arriba de forma explícita: si el navegador alcanzó a restaurar
+// antes de 'manual', lo hizo sobre la lista sin filtrar y la posición no significaría nada.
+const restoreY = savedScroll();
+if (restoreY !== null) scrollTo(0, restoreY);
+else if (returning) scrollTo(0, 0);

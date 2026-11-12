@@ -1,6 +1,6 @@
 # mydevlinks
 
-Una base propia de enlaces para desarrollar, que reemplaza años de bookmarks. Cada enlace se entiende sin abrirlo y se filtra por categoría, tecnología y texto. Es una sola página estática en Astro y Tailwind, sin framework de interfaz.
+Una base propia de enlaces para desarrollar, que reemplaza años de bookmarks. Cada enlace se entiende sin abrirlo y se filtra por categoría, tecnología y texto. En el directorio, la ficha lleva al detalle del enlace (`/enlace/<id>`) y la flecha junto al nombre abre la web en otra pestaña. Es un sitio estático en Astro y Tailwind, sin framework de interfaz.
 
 ## Ejecutar
 
@@ -48,6 +48,29 @@ Agrega una entrada a `src/data/links.json`:
 
 **Qué lo valida:** `linkSchema`, en `src/lib/links.ts`, hace fallar `pnpm build` si un valor no es válido, por ejemplo una tecnología mal escrita. `pnpm test` revisa además en `tests/data.test.ts` que `id` y `url` sean únicos, que el logo exista y el largo de la descripción, y `pnpm test:e2e` que los privados no lleguen a `dist/`.
 
+## Agregar un detalle
+
+Cada enlace público tiene una página `/enlace/<id>`. Con el archivo `src/data/detalles/<id>.json` muestra el detalle completo; sin él, la página queda sin contenido. Los campos los valida `detailSchema`, en `src/lib/details.ts`:
+
+- **`whatIs`:** uno o dos párrafos que explican qué es.
+- **`uses`:** exactamente tres usos.
+- **`caveats`:** dos o tres cosas a tener en cuenta.
+- **`pricing`:** `gratis`, `freemium` o `de-pago`. **`pricingNote`** lo aclara en una frase.
+- **`pricingUrl`:** la página de precios. Es obligatoria salvo si el precio es `gratis`.
+- **`idealFor`:** para quién es.
+- **`reviewedAt`:** fecha ISO (`YYYY-MM-DD`) de la revisión.
+- **`reviewedByAuthor`:** `true` solo si el autor revisó el texto. Con `false`, el detalle muestra el aviso "Descripción generada a partir del sitio".
+- **`screenshotAt`:** opcional, fecha ISO de la captura.
+- **`alternatives`:** opcional, ids de otros enlaces.
+
+La captura de pantalla es un archivo estático, `public/capturas/<id>.jpg`. Se toma a mano con Chromium (1280×800):
+
+```sh
+pnpm capture <id> [<id>…]
+```
+
+El script rechaza ids que no existen y enlaces caídos o privados, y al terminar recuerda poner `screenshotAt` en el JSON. No corre en el build ni en las pruebas. `pnpm test` falla si hay una captura sin su detalle.
+
 ## Scripts
 
-Los archivos de `scripts/` se usaron una sola vez, para analizar los sitios. Necesitan una caché local que está fuera de git, y no hacen falta para agregar enlaces.
+Salvo `capture.mjs`, los archivos de `scripts/` se usaron una sola vez, para analizar los sitios. Necesitan una caché local que está fuera de git, y no hacen falta para agregar enlaces.

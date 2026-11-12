@@ -1,0 +1,198 @@
+import { existsSync, readFileSync } from 'node:fs';
+import { expect, test } from '@playwright/test';
+
+interface RawLink {
+	id: string;
+	name: string;
+	url: string;
+	category: string;
+	private: boolean;
+}
+
+const links: RawLink[] = JSON.parse(readFileSync('src/data/links.json', 'utf8'));
+const publicLinks = links.filter((link) => !link.private);
+const withoutDetail = publicLinks.find((link) => !existsSync(`src/data/detalles/${link.id}.json`));
+if (!withoutDetail) throw new Error('Todos los enlaces tienen detalle; falta un caso sin detalle.');
+const link = withoutDetail;
+const path = `/enlace/${link.id}`;
+const domain = new URL(link.url).hostname.replace(/^www\./, '');
+
+test('un enlace sin detalle muestra cabecera y alternativas, sin secciones vacías', async ({ page }) => {
+	await page.goto(path);
+
+	await expect(page.getByRole('heading', { level: 1 })).toHaveText(link.name);
+	await expect(page.getByRole('link', { name: `Visitar ${domain}` })).toHaveAttribute('target', '_blank');
+
+	const alternatives = page.getByRole('region', { name: 'Alternativas' });
+	await expect(alternatives).toBeVisible();
+	const cards = alternatives.getByRole('listitem');
+	const total = await cards.count();
+	expect(total).toBeGreaterThanOrEqual(1);
+	expect(total).toBeLessThanOrEqual(4);
+	await expect(alternatives.locator(`a[href="${path}"]`)).toHaveCount(0);
+
+	await expect(page.getByRole('heading', { name: '¿Qué es?' })).toHaveCount(0);
+	await expect(page.getByRole('heading', { name: 'Casos de uso' })).toHaveCount(0);
+	await expect(page.getByRole('heading', { name: 'Qué revisar antes de elegirlo' })).toHaveCount(0);
+	await expect(page.getByRole('heading', { name: 'Ficha técnica' })).toHaveCount(0);
+});
+
+test('entrar directo y volver lleva al directorio', async ({ page }) => {
+	await page.goto(path);
+	await page.getByRole('link', { name: 'Volver al directorio' }).click();
+	await expect(page).toHaveURL('/');
+});
+
+test('volver desde el directorio conserva los filtros', async ({ page }) => {
+	await page.goto(`/?cat=${encodeURIComponent(link.category)}`);
+	const card = page.locator(`[data-card][data-name=${JSON.stringify(link.name)}]`);
+	await card.scrollIntoViewIfNeeded();
+	await page.evaluate(() => window.scrollBy(0, 120));
+	const count = await page.locator('[data-count-value]').textContent();
+	const scrollY = await page.evaluate(() => window.scrollY);
+	expect(scrollY).toBeGreaterThan(0);
+	await card.locator('[data-detail]').click();
+	// Espera a `load`: antes, back.ts aún no escucha y el clic seguiría href="/".
+	await page.waitForURL(path);
+	await page.getByRole('link', { name: 'Volver al directorio' }).click();
+	await expect(page).toHaveURL(/[?&]cat=/);
+	await expect(page.locator('[data-count-value]')).toHaveText(count ?? '');
+	await expect
+		.poll(async () => Math.abs((await page.evaluate(() => window.scrollY)) - scrollY))
+		.toBeLessThan(50);
+});
+
+/** Abre el detalle de una ficha visible sin que Playwright mueva el scroll. */
+async function openVisibleDetail(page: import('@playwright/test').Page) {
+	await page.evaluate(() => {
+		const links = [...document.querySelectorAll<HTMLAnchorElement>('[data-card]:not([hidden]) [data-detail]')];
+		const visible = links.find((el) => {
+			const rect = el.getBoundingClientRect();
+			return rect.top > 100 && rect.bottom < innerHeight - 20;
+		});
+		if (!visible) throw new Error('No hay ficha visible');
+		visible.click();
+	});
+	await page.waitForURL(/\/enlace\//);
+}
+
+test('cada entrada del directorio en el historial recupera su propio scroll', async ({ page }) => {
+	await page.goto('/');
+	await page.evaluate(() => window.scrollTo(0, 5000));
+	const first = await page.evaluate(() => window.scrollY);
+	expect(first).toBeGreaterThan(1000);
+	await openVisibleDetail(page);
+
+	// El logo crea una entrada nueva de `/`, con otro scroll.
+	await page.locator('header a[href="/"]:not([data-back])').first().click();
+	await page.waitForURL('/');
+	await page.evaluate(() => window.scrollTo(0, 400));
+	const second = await page.evaluate(() => window.scrollY);
+	await openVisibleDetail(page);
+
+	await page.goBack();
+	await page.waitForURL('/');
+	await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(second);
+	await page.goBack();
+	await page.waitForURL(/\/enlace\//);
+	await page.goBack();
+	await page.waitForURL('/');
+	await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(first);
+});
+
+test('el logo del directorio lleva arriba', async ({ page }) => {
+	await page.goto('/');
+	await page.evaluate(() => window.scrollTo(0, 1500));
+	expect(await page.evaluate(() => window.scrollY)).toBeGreaterThan(0);
+	// Clic por DOM: en móvil la cabecera no es fija y Playwright subiría hasta ella antes de pulsar.
+	await page.locator('header a[href="/"]').first().evaluate((el: HTMLElement) => el.click());
+	await page.waitForLoadState('load');
+	await page.waitForTimeout(300);
+	expect(await page.evaluate(() => window.scrollY)).toBe(0);
+});
+
+test('ir al directorio desde una URL filtrada empieza arriba', async ({ page }) => {
+	await page.goto(`/?cat=${encodeURIComponent(link.category)}`);
+	await page.evaluate(() => window.scrollTo(0, 600));
+	expect(await page.evaluate(() => window.scrollY)).toBeGreaterThan(0);
+	await page.goto('/');
+	await page.waitForTimeout(300);
+	expect(await page.evaluate(() => window.scrollY)).toBe(0);
+});
+
+test('sin JavaScript el detalle se lee completo', async ({ browser }) => {
+	const context = await browser.newContext({ javaScriptEnabled: false });
+	const page = await context.newPage();
+	await page.goto(path);
+
+	await expect(page.getByRole('heading', { level: 1 })).toHaveText(link.name);
+	await expect(page.getByRole('region', { name: 'Alternativas' }).getByRole('listitem').first()).toBeVisible();
+	await expect(page.getByRole('link', { name: 'Volver al directorio' })).toHaveAttribute('href', '/');
+	await context.close();
+});
+
+test('a 390 px no hay desborde horizontal', async ({ page }) => {
+	await page.setViewportSize({ width: 390, height: 844 });
+	await page.goto(path);
+	const width = await page.evaluate(() => document.documentElement.scrollWidth);
+	expect(width).toBeLessThanOrEqual(390);
+});
+
+test('la cabecera muestra 4 tecnologías y "+N" despliega el resto', async ({ page }) => {
+	await page.goto('/enlace/daisyui-com');
+	const chips = page.locator('[data-hero-chips] .chip:not(.chip-toggle)');
+	const toggle = page.locator('[data-chips-toggle]');
+	const total = await chips.count();
+
+	await expect(chips.filter({ visible: true })).toHaveCount(4);
+	await expect(toggle).toHaveText(`+${total - 4}`);
+	await expect(toggle).toHaveAttribute('aria-expanded', 'false');
+
+	await toggle.click();
+	await expect(chips.filter({ visible: true })).toHaveCount(total);
+	await expect(toggle).toHaveAttribute('aria-expanded', 'true');
+	await expect(toggle).toHaveText('Ver menos');
+});
+
+test('en móvil la captura va antes de la ficha técnica, y ésta antes de "¿Qué es?"', async ({ page, isMobile }) => {
+	test.skip(!isMobile, 'Solo en móvil');
+	await page.goto('/enlace/daisyui-com');
+	const top = (locator: ReturnType<typeof page.locator>) =>
+		locator.evaluate((el) => el.getBoundingClientRect().top + window.scrollY);
+	const shot = await top(page.getByRole('img', { name: 'Captura de daisyui.com' }));
+	const sheet = await top(page.getByRole('heading', { name: 'Ficha técnica' }));
+	const whatIs = await top(page.getByRole('heading', { name: '¿Qué es?' }));
+	expect(shot).toBeLessThan(sheet);
+	expect(sheet).toBeLessThan(whatIs);
+});
+
+test('el piloto muestra todas las secciones', async ({ page }) => {
+	await page.goto('/enlace/daisyui-com');
+
+	await expect(page.getByRole('heading', { name: '¿Qué es?' })).toBeVisible();
+	const uses = page.locator('section', { has: page.getByRole('heading', { name: 'Casos de uso' }) });
+	await expect(uses.getByRole('listitem')).toHaveCount(3);
+	await expect(page.getByRole('heading', { name: 'Qué revisar antes de elegirlo' })).toBeVisible();
+
+	const sheet = page.locator('.ficha', { has: page.getByRole('heading', { name: 'Ficha técnica' }) });
+	await expect(sheet).toBeVisible();
+	await expect(sheet).toContainText('Última revisión');
+	await expect(sheet).toContainText('Descripción generada a partir del sitio');
+
+	const shot = page.getByRole('img', { name: 'Captura de daisyui.com' });
+	await shot.scrollIntoViewIfNeeded();
+	await expect.poll(() => shot.evaluate((img: HTMLImageElement) => img.naturalWidth)).toBeGreaterThan(0);
+
+	await expect(page.getByRole('region', { name: 'Alternativas' }).getByRole('listitem')).toHaveCount(4);
+});
+
+test('la ficha técnica acompaña el scroll', async ({ page, isMobile }) => {
+	test.skip(isMobile, 'Solo en escritorio');
+	await page.goto('/enlace/daisyui-com');
+
+	await page.evaluate(() => window.scrollTo(0, 1200));
+	const sheet = page.locator('.ficha', { has: page.getByRole('heading', { name: 'Ficha técnica' }) });
+	const top = await sheet.evaluate((element) => element.getBoundingClientRect().top);
+	expect(top).toBeGreaterThanOrEqual(70);
+	expect(top).toBeLessThanOrEqual(90);
+});

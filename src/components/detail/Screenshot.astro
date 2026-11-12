@@ -1,0 +1,39 @@
+---
+import { formatDate, screenshotPath } from '../../lib/details';
+import { domainOf, type Link } from '../../lib/links';
+
+interface Props {
+	link: Link;
+	/** Fecha ISO de la captura; sin ella no hay imagen. */
+	screenshotAt?: string;
+}
+
+const { link, screenshotAt } = Astro.props;
+const domain = domainOf(link.url);
+---
+
+{
+	screenshotAt ? (
+		<figure class="border-line bg-surface m-0 border">
+			<figcaption class="border-line text-muted flex items-center justify-between gap-3 border-b px-2.5 py-1.5 font-mono text-[11px]">
+				<span class="truncate">{domain}</span>
+				<span class="flex-none">Captura del {formatDate(screenshotAt)}</span>
+			</figcaption>
+			<img
+				class="block h-auto w-full"
+				src={screenshotPath(link.id)}
+				alt={`Captura de ${domain}`}
+				width="1280"
+				height="800"
+				loading="lazy"
+				decoding="async"
+			/>
+		</figure>
+	) : (
+		link.status === 'caido' && (
+			<p class="border-line-strong text-muted border border-dashed px-6 py-9 text-sm">
+				El sitio no responde; no hay captura
+			</p>
+		)
+	)
+}
