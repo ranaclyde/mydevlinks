@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"React Vibe es una colección de componentes para React centrada en el movimiento: bloques de interfaz, secciones hero, fondos animados, animaciones de texto y sistemas de paneles. Copias el código a tu proyecto y lo modificas; no se instala como paquete. Los componentes que animan usan Framer Motion, que se instala una sola vez.",
+		"Conviene cuando quieres una landing o un panel con una interfaz expresiva y prefieres ser dueño del código de cada componente."
+	],
+	"uses": [
+		"Armar la sección hero de una landing con fondos y textos animados.",
+		"Añadir un bloque de precios, preguntas frecuentes o testimonios a una página de producto.",
+		"Montar un panel con tarjetas, tablas y gráficos como base para un SaaS."
+	],
+	"caveats": [
+		"Es un proyecto personal de un solo autor, con pocas estrellas en GitHub; no esperes el respaldo de una librería grande.",
+		"Los componentes animados dependen de Framer Motion, que suma peso al bundle.",
+		"Los paneles marcados como PRO forman parte de la plantilla TaskForge, que se vende aparte."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Los componentes son de código abierto con licencia MIT; la plantilla TaskForge se vende aparte.",
+	"idealFor": "Landings y paneles en React con animaciones, con el código de cada componente en tu proyecto.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

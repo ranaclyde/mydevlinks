@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Tactile UI es un conjunto de componentes con física real que se comportan como objetos de hardware, por ejemplo una pantalla de PIN, un odómetro o un dial con topes. Incluye 39 objetos interactivos, 59 secciones de página, un kit de 217 piezas y 26 plantillas, para React, Vue, Svelte o JavaScript puro.",
+		"Conviene cuando quieres una interfaz con sensación táctil y memorable. Si trabajas con agentes de IA, también ofrece un servidor MCP para que los usen directamente."
+	],
+	"uses": [
+		"Dar a un formulario de PIN o código una pantalla con física realista.",
+		"Montar una landing con secciones de héroe, precios y footer ya diseñadas.",
+		"Instalar componentes por shadcn o dejar que un agente de IA los use mediante el servidor MCP."
+	],
+	"caveats": [
+		"Solo una parte del catálogo es gratis; el resto requiere un pase de pago.",
+		"Los componentes con física implican animación continua: revisa el rendimiento en dispositivos modestos.",
+		"Las piezas gratis que piden cuenta solo sirven para proyectos personales; para trabajo de clientes o con fines comerciales hace falta un pase. Seis piezas, como el odómetro y la brújula, son MIT y no tienen esa restricción."
+	],
+	"pricing": "freemium",
+	"pricingNote": "62 piezas son gratis; el pase completo se paga una sola vez, con un precio de lanzamiento de 99 USD por tiempo limitado.",
+	"pricingUrl": "https://tactileui.dev/pricing",
+	"idealFor": "Proyectos que buscan interfaces con sensación física y un catálogo amplio.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

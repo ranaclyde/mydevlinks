@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Park UI es un conjunto de componentes con diseño cuidado, construidos sobre Ark UI (el comportamiento y la accesibilidad) y Panda CSS (los estilos). La idea es que los uses como base para armar tu propio sistema de diseño. Funciona con React y Solid, y el proyecto pasó a formar parte de la organización de Chakra UI.",
+		"Conviene cuando quieres componentes listos pero con control sobre los estilos y los tokens de diseño, y ya usas o estás dispuesto a usar Panda CSS."
+	],
+	"uses": [
+		"Crear el sistema de diseño de una empresa a partir de componentes accesibles ya armados.",
+		"Cambiar el color de acento de toda la interfaz sin reescribir estilos.",
+		"Construir formularios de registro, pago o notificaciones con componentes coherentes entre sí."
+	],
+	"caveats": [
+		"Depende de Panda CSS, así que tu proyecto necesita esa herramienta de estilos.",
+		"Solo ofrece versiones para React y Solid; si trabajas con Vue o Svelte, no te sirve.",
+		"Es un proyecto más pequeño que otras librerías de componentes; conviene mirar el changelog para ver su ritmo de cambios."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Código abierto con licencia MIT.",
+	"idealFor": "Equipos que quieren construir su propio sistema de diseño sobre Panda CSS.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

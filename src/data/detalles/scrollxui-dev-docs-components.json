@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"ScrollX UI es una colección de componentes React animados e interactivos, pensada para personalizarlos a tu gusto. Su catálogo incluye 145 componentes, 15 bloques (hero, precios, footers) y 2 plantillas completas, con instalación por CLI o a mano y guías para Tailwind y modo oscuro.",
+		"Conviene cuando quieres una interfaz con animaciones llamativas sin escribirlas tú, y ya trabajas con React y Tailwind."
+	],
+	"uses": [
+		"Armar el portafolio personal con la plantilla de developer portfolio.",
+		"Añadir una sección hero o de precios animada a una landing con los bloques listos.",
+		"Sumar componentes con movimiento a una app React existente, instalándolos uno por uno con la CLI."
+	],
+	"caveats": [
+		"Está pensado para React y Tailwind CSS; no sirve tal cual en otros frameworks.",
+		"Los componentes animados añaden JavaScript y movimiento: revisa el rendimiento en móviles y respeta a quien prefiere menos animación.",
+		"Su licencia es MIT con una cláusula Commons Clause: puedes usarlo en productos comerciales, pero no empaquetar sus componentes en una librería o kit propio."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Gratis, también en proyectos comerciales; la licencia prohíbe revender o redistribuir los componentes como librería, kit o plantilla.",
+	"idealFor": "Proyectos React con Tailwind que quieren componentes animados listos.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}
