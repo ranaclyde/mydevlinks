@@ -30,6 +30,12 @@ describe('alternativesFor', () => {
 		expect(alternativesFor(self, links).map((l) => l.id)).toEqual(['c', 'b', 'd']);
 	});
 
+	it('a igualdad de tecnologías prefiere los verificados', () => {
+		const self = make('a');
+		const links = [self, make('b', { verified: false }), make('c'), make('d', { verified: false })];
+		expect(alternativesFor(self, links).map((l) => l.id)).toEqual(['c', 'b', 'd']);
+	});
+
 	it('excluye el propio, los caídos, los privados y otras categorías', () => {
 		const self = make('a');
 		const links = [

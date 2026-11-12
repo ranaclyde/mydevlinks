@@ -341,6 +341,7 @@ La ficha es el componente central: un enlace completo con cuatro zonas en grilla
 - **Borde:** 1 px de Línea; Línea fuerte en hover e índigo con foco, con una transición de 120 ms.
 - **Padding interno:** 14 px arriba y a la izquierda, 16 px a la derecha, 12 px abajo.
 - **Contenido:** placa de 40 px; nombre con flecha; dominio; sello opcional; descripción; y chips bajo una línea punteada.
+- **Destinos:** la ficha lleva a la página de detalle (enlace estirado); la flecha junto al nombre es un destino aparte que abre la web en otra pestaña (24 px con puntero, 40 px en táctil).
 - **Hover:** el nombre se subraya y la flecha pasa a índigo y se mueve 1 px en diagonal.
 - **Destacada** (`featured`): aparece primero en la grilla, con un tinte índigo que nace en el borde y se apaga hacia el centro, y una estrella índigo de 9 px metida en el corte. No lleva sello; la palabra "Destacado" queda solo para lectores de pantalla. Es la única excepción a la regla del acento útil, decidida por el autor.
 

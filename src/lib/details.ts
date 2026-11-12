@@ -2,7 +2,12 @@ import { z } from 'astro/zod';
 
 export const PRICING = ['gratis', 'freemium', 'de-pago'] as const;
 
-const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Fecha ISO YYYY-MM-DD');
+const isoDate = z
+	.string()
+	.regex(/^\d{4}-\d{2}-\d{2}$/, 'Fecha ISO YYYY-MM-DD')
+	.refine((s) => !Number.isNaN(Date.parse(s)) && new Date(s).toISOString().slice(0, 10) === s, {
+		message: 'Fecha inexistente en el calendario',
+	});
 const text = z.string().trim().min(1);
 
 export const detailSchema = z
@@ -11,9 +16,9 @@ export const detailSchema = z
 		uses: z.array(text).length(3),
 		caveats: z.array(text).min(2).max(3),
 		pricing: z.enum(PRICING),
-		pricingNote: z.string(),
+		pricingNote: text,
 		pricingUrl: z.url().optional(),
-		idealFor: z.string(),
+		idealFor: text,
 		reviewedAt: isoDate,
 		reviewedByAuthor: z.boolean(),
 		screenshotAt: isoDate.optional(),

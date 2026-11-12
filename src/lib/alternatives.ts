@@ -29,7 +29,9 @@ export function alternativesFor(link: Link, links: Link[], pinned: string[] = []
 		.map((other) => ({ other, shared: sharedTech(link, other) }))
 		.sort(
 			(a, b) =>
-				b.shared - a.shared || a.other.name.localeCompare(b.other.name, 'es', { sensitivity: 'base' }),
+				b.shared - a.shared ||
+				Number(b.other.verified) - Number(a.other.verified) ||
+				a.other.name.localeCompare(b.other.name, 'es', { sensitivity: 'base' }),
 		)
 		.map(({ other }) => other);
 

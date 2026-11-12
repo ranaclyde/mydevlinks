@@ -45,9 +45,26 @@ describe('detailSchema', () => {
 	});
 });
 
+describe('fechas ISO', () => {
+	it('rechaza fechas imposibles y acepta una real', () => {
+		expect(detailSchema.safeParse({ ...base, reviewedAt: '2026-02-30' }).success).toBe(false);
+		expect(detailSchema.safeParse({ ...base, reviewedAt: '2026-13-45' }).success).toBe(false);
+		expect(detailSchema.safeParse({ ...base, reviewedAt: '2026-02-28' }).success).toBe(true);
+	});
+
+	it('rechaza idealFor y pricingNote vacíos', () => {
+		expect(detailSchema.safeParse({ ...base, idealFor: '  ' }).success).toBe(false);
+		expect(detailSchema.safeParse({ ...base, pricingNote: '' }).success).toBe(false);
+	});
+});
+
 describe('formatDate', () => {
 	it('da el formato corto en español', () => {
 		expect(formatDate('2026-11-11')).toBe('11 nov 2026');
+	});
+
+	it('quita el punto de los meses abreviados que lo llevan', () => {
+		expect(formatDate('2026-09-01')).toBe('1 sept 2026');
 	});
 });
 
@@ -81,7 +98,7 @@ describe('detalles reales', () => {
 	it('cada captura corresponde a un detalle', () => {
 		if (!existsSync(capturasDir)) return;
 		const detailIds = new Set(files.map((f) => parse(f).name));
-		for (const f of readdirSync(capturasDir)) {
+		for (const f of readdirSync(capturasDir).filter((f) => f.endsWith('.jpg'))) {
 			expect(detailIds.has(parse(f).name), f).toBe(true);
 		}
 	});

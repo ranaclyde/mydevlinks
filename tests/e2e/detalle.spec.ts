@@ -45,10 +45,20 @@ test('entrar directo y volver lleva al directorio', async ({ page }) => {
 
 test('volver desde el directorio conserva los filtros', async ({ page }) => {
 	await page.goto(`/?cat=${encodeURIComponent(link.category)}`);
-	await page.locator(`[data-card][data-name=${JSON.stringify(link.name)}] [data-detail]`).click();
+	const card = page.locator(`[data-card][data-name=${JSON.stringify(link.name)}]`);
+	await card.scrollIntoViewIfNeeded();
+	await page.evaluate(() => window.scrollBy(0, 120));
+	const count = await page.locator('[data-count-value]').textContent();
+	const scrollY = await page.evaluate(() => window.scrollY);
+	expect(scrollY).toBeGreaterThan(0);
+	await card.locator('[data-detail]').click();
 	await expect(page).toHaveURL(path);
 	await page.getByRole('link', { name: 'Volver al directorio' }).click();
 	await expect(page).toHaveURL(/[?&]cat=/);
+	await expect(page.locator('[data-count-value]')).toHaveText(count ?? '');
+	await expect
+		.poll(async () => Math.abs((await page.evaluate(() => window.scrollY)) - scrollY))
+		.toBeLessThan(50);
 });
 
 test('sin JavaScript el detalle se lee completo', async ({ browser }) => {
