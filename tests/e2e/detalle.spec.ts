@@ -52,7 +52,8 @@ test('volver desde el directorio conserva los filtros', async ({ page }) => {
 	const scrollY = await page.evaluate(() => window.scrollY);
 	expect(scrollY).toBeGreaterThan(0);
 	await card.locator('[data-detail]').click();
-	await expect(page).toHaveURL(path);
+	// Espera a `load`: antes, back.ts aún no escucha y el clic seguiría href="/".
+	await page.waitForURL(path);
 	await page.getByRole('link', { name: 'Volver al directorio' }).click();
 	await expect(page).toHaveURL(/[?&]cat=/);
 	await expect(page.locator('[data-count-value]')).toHaveText(count ?? '');

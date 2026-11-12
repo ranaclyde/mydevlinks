@@ -355,7 +355,38 @@ document.addEventListener('click', (event) => {
 	if ((event.target as Element).closest('[data-clear]')) clearAll();
 });
 
+// El HTML trae todas las fichas y el filtro se aplica después: si el navegador restaurara
+// el scroll al volver, lo haría sobre una lista más larga que la que se dejó y quedaría
+// desplazado. Por eso el directorio guarda su scroll y lo repone ya filtrado.
+const SCROLL_KEY = 'directorio:scroll';
+history.scrollRestoration = 'manual';
+function saveScroll() {
+	try {
+		sessionStorage.setItem(SCROLL_KEY, JSON.stringify({ search: location.search, y: scrollY }));
+	} catch {
+		// Sin sessionStorage se vuelve arriba, como con un enlace normal.
+	}
+}
+// Se guarda al hacer scroll y al hacer clic (antes de seguir un enlace), no en pagehide:
+// al salir el diseño ya puede haber cambiado (en móvil el documento encoge antes de
+// pagehide y scrollY deja de ser lo que se veía).
+addEventListener('scroll', saveScroll, { passive: true });
+document.addEventListener('click', saveScroll, true);
+
+function savedScroll(): number | null {
+	const entry = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming | undefined;
+	if (entry?.type !== 'back_forward' && entry?.type !== 'reload') return null;
+	try {
+		const saved = JSON.parse(sessionStorage.getItem(SCROLL_KEY) ?? 'null');
+		return saved?.search === location.search && typeof saved.y === 'number' ? saved.y : null;
+	} catch {
+		return null;
+	}
+}
+
 // El estado sale de la URL; el navegador puede restaurar el formulario al volver atrás.
 search.value = state.query;
 render();
 clearTimeout(announceTimer);
+const restoreY = savedScroll();
+if (restoreY !== null) scrollTo(0, restoreY);
