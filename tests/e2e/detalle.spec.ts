@@ -62,6 +62,64 @@ test('volver desde el directorio conserva los filtros', async ({ page }) => {
 		.toBeLessThan(50);
 });
 
+/** Abre el detalle de una ficha visible sin que Playwright mueva el scroll. */
+async function openVisibleDetail(page: import('@playwright/test').Page) {
+	await page.evaluate(() => {
+		const links = [...document.querySelectorAll<HTMLAnchorElement>('[data-card]:not([hidden]) [data-detail]')];
+		const visible = links.find((el) => {
+			const rect = el.getBoundingClientRect();
+			return rect.top > 100 && rect.bottom < innerHeight - 20;
+		});
+		if (!visible) throw new Error('No hay ficha visible');
+		visible.click();
+	});
+	await page.waitForURL(/\/enlace\//);
+}
+
+test('cada entrada del directorio en el historial recupera su propio scroll', async ({ page }) => {
+	await page.goto('/');
+	await page.evaluate(() => window.scrollTo(0, 5000));
+	const first = await page.evaluate(() => window.scrollY);
+	expect(first).toBeGreaterThan(1000);
+	await openVisibleDetail(page);
+
+	// El logo crea una entrada nueva de `/`, con otro scroll.
+	await page.locator('header a[href="/"]:not([data-back])').first().click();
+	await page.waitForURL('/');
+	await page.evaluate(() => window.scrollTo(0, 400));
+	const second = await page.evaluate(() => window.scrollY);
+	await openVisibleDetail(page);
+
+	await page.goBack();
+	await page.waitForURL('/');
+	await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(second);
+	await page.goBack();
+	await page.waitForURL(/\/enlace\//);
+	await page.goBack();
+	await page.waitForURL('/');
+	await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(first);
+});
+
+test('el logo del directorio lleva arriba', async ({ page }) => {
+	await page.goto('/');
+	await page.evaluate(() => window.scrollTo(0, 1500));
+	expect(await page.evaluate(() => window.scrollY)).toBeGreaterThan(0);
+	// Clic por DOM: en móvil la cabecera no es fija y Playwright subiría hasta ella antes de pulsar.
+	await page.locator('header a[href="/"]').first().evaluate((el: HTMLElement) => el.click());
+	await page.waitForLoadState('load');
+	await page.waitForTimeout(300);
+	expect(await page.evaluate(() => window.scrollY)).toBe(0);
+});
+
+test('ir al directorio desde una URL filtrada empieza arriba', async ({ page }) => {
+	await page.goto(`/?cat=${encodeURIComponent(link.category)}`);
+	await page.evaluate(() => window.scrollTo(0, 600));
+	expect(await page.evaluate(() => window.scrollY)).toBeGreaterThan(0);
+	await page.goto('/');
+	await page.waitForTimeout(300);
+	expect(await page.evaluate(() => window.scrollY)).toBe(0);
+});
+
 test('sin JavaScript el detalle se lee completo', async ({ browser }) => {
 	const context = await browser.newContext({ javaScriptEnabled: false });
 	const page = await context.newPage();
