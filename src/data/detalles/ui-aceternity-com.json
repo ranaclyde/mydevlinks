@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Aceternity UI es una colección de componentes animados para React y Tailwind, pensada sobre todo para landing pages. Usa Motion para las animaciones y se obtiene copiando el código, con el CLI de shadcn para los bloques o conectando un agente de IA a su registro por MCP.",
+		"Conviene cuando quieres que una portada o página de producto se vea trabajada y con efectos, sin programar las animaciones tú mismo."
+	],
+	"uses": [
+		"Armar el hero de una landing con fondos y textos animados.",
+		"Sumar micro-interacciones a tarjetas, botones o secciones de un sitio ya hecho con Tailwind.",
+		"Partir de una de sus plantillas de pago para Next.js y adaptarla al contenido de un producto."
+	],
+	"caveats": [
+		"Solo los componentes sueltos son gratis; los bloques, plantillas y landing pages premium se pagan, y su licencia prohíbe revender o redistribuir el código tal cual.",
+		"Los efectos animados suman JavaScript y pueden pesar en móviles o afectar el rendimiento si abusas de ellos.",
+		"Al copiar el código, el mantenimiento y las actualizaciones quedan de tu lado."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Hay un plan gratis con más de 100 componentes; el contenido premium se compra con pago único.",
+	"pricingUrl": "https://ui.aceternity.com/pricing",
+	"idealFor": "Landing pages con Tailwind que buscan un acabado visual llamativo.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

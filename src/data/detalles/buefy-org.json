@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Buefy es un conjunto de componentes de interfaz para Vue basados en Bulma. Cubre piezas habituales como formularios, tablas y modales, y se registra en la aplicación con app.use(Buefy) o importando componentes sueltos.",
+		"Conviene cuando ya usas Vue 3 y prefieres el estilo y las clases de Bulma en lugar de Tailwind."
+	],
+	"uses": [
+		"Construir un panel de administración en Vue con formularios, tablas y paginación listos.",
+		"Importar solo los componentes necesarios, como Field e Input, para mantener liviano un proyecto pequeño.",
+		"Mantener un diseño basado en Bulma mientras se suma interactividad con Vue."
+	],
+	"caveats": [
+		"Requiere Vue 3.0 o superior; Vue 2 no está soportado.",
+		"Los íconos no vienen incluidos: hay que añadir la hoja de Material Design Icons o configurar FontAwesome.",
+		"Cargarlo desde un CDN con una etiqueta script hoy falla; su README indica definir window.process antes de inicializarlo."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Código abierto con licencia MIT, sin planes de pago.",
+	"idealFor": "Aplicaciones Vue 3 que ya usan o quieren usar Bulma.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}
