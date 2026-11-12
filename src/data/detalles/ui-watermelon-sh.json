@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Watermelon UI es una colección gratuita y de código abierto de componentes React para Tailwind y shadcn/ui: componentes base, más de 130 animados, bloques de landing, dashboards y plantillas. Puedes copiar el código o instalar cada pieza con la CLI de shadcn.",
+		"Conviene cuando quieres piezas visuales ya hechas para tu interfaz React, sin pagar ni depender de una licencia restrictiva."
+	],
+	"uses": [
+		"Montar un panel de administración a partir de los dashboards ya hechos.",
+		"Copiar bloques de una landing, como héroes y secciones, y adaptarlos a tu marca.",
+		"Agregar animaciones listas a una interfaz React existente."
+	],
+	"caveats": [
+		"Está pensado para React; en otros frameworks tendrías que portar el código.",
+		"Al copiar el código a tu proyecto, las actualizaciones del autor no llegan solas.",
+		"Con una colección tan grande, revisa que el estilo de los componentes que mezcles sea coherente."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Gratis y de código abierto con licencia MIT.",
+	"idealFor": "Desarrolladores React que quieren muchos componentes y bloques sin costo.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

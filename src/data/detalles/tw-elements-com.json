@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"TW Elements es una colección de más de 500 componentes, plantillas y plugins para Tailwind. Funciona con Tailwind a secas y tiene paquete propio para React, además de integraciones para frameworks como Next, Nuxt, Laravel, Django, Svelte o Vue.",
+		"Conviene cuando quieres componentes interactivos (modales, selectores de fecha, y similares) sin armar el comportamiento tú mismo."
+	],
+	"uses": [
+		"Montar un panel con modales, dropdowns y selectores de fecha ya funcionales.",
+		"Integrar los componentes en una app de Next o Laravel usando la guía de su framework.",
+		"Probar la versión gratuita en un proyecto personal antes de pagar una licencia."
+	],
+	"caveats": [
+		"Algunos componentes, como Modal y Datepicker, están marcados PRO y requieren licencia de pago.",
+		"La licencia PRO cubre una cantidad fija de proyectos según el plan, y no permite publicar ese código en repositorios públicos ni en proyectos de código abierto.",
+		"Los paquetes para Angular y Vue figuran en lista de espera."
+	],
+	"pricing": "freemium",
+	"pricingNote": "La base es gratis con licencia MIT; los componentes PRO cuestan desde 99 al año (en USD o EUR según el país), y lo comprado se sigue usando aunque no renueves.",
+	"pricingUrl": "https://tw-elements.com/pro/",
+	"idealFor": "Proyectos con Tailwind que necesitan componentes interactivos ya hechos.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

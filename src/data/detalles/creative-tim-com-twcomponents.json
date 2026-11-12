@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Tailwind Components es un repositorio comunitario de Creative Tim con más de 600 ejemplos y plantillas de Tailwind. Los usuarios publican sus componentes, los votan, los bifurcan y mantienen un perfil propio, y tú puedes explorarlos y copiar el código.",
+		"Conviene cuando buscas ideas o una pieza puntual de interfaz hecha con Tailwind y prefieres ver varias versiones de la misma idea."
+	],
+	"uses": [
+		"Buscar un ejemplo de tarjeta, navbar o formulario y adaptarlo a tu proyecto.",
+		"Partir de una plantilla de landing o de panel para ahorrar tiempo en un prototipo.",
+		"Publicar tus propios componentes de Tailwind para compartirlos y recibir votos."
+	],
+	"caveats": [
+		"Al ser contribuciones de la comunidad, la calidad y el estilo varían de un componente a otro.",
+		"No hay una guía de diseño única: combinar componentes de distintos autores puede dar una interfaz inconsistente.",
+		"El sitio también promociona productos de pago de Creative Tim, que no hay que confundir con los ejemplos gratuitos."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Los componentes del repositorio son gratuitos; Creative Tim vende aparte plantillas premium, como un dashboard a 69 USD.",
+	"idealFor": "Quien quiere explorar muchos ejemplos de Tailwind hechos por la comunidad.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Esta página de Tailkit reúne la muestra gratuita de su colección de componentes de Tailwind: alertas, tarjetas de usuario, dropdowns, formularios, listas, paginación, tarjetas de estadísticas y una página de inicio de sesión, entre otros. Cada uno se previsualiza y se copia en HTML, React o Vue.js, y algunos también en Alpine.js.",
+		"Conviene cuando necesitas piezas típicas de un panel o de una landing y quieres copiarlas en el framework que ya usas, sin instalar ninguna librería."
+	],
+	"uses": [
+		"Copiar un formulario de inicio de sesión y adaptarlo a tu app en React o Vue.",
+		"Armar las tarjetas de estadísticas y la paginación de un panel de administración.",
+		"Probar la calidad de los componentes antes de decidir si compras la colección completa."
+	],
+	"caveats": [
+		"Aquí solo está la muestra gratuita: la colección completa se compra aparte.",
+		"Los componentes se copian como código y quedan en tu proyecto, así que las actualizaciones no llegan solas.",
+		"Requieren Tailwind configurado en tu proyecto."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Esta muestra es gratis; la colección completa es de pago único desde 79 USD (Developer, un proyecto).",
+	"pricingUrl": "https://tailkit.com/pricing",
+	"idealFor": "Quien trabaja con Tailwind y quiere piezas listas para copiar en HTML, React o Vue.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}
