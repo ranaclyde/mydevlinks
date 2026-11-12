@@ -1,0 +1,86 @@
+---
+import { formatDate, type Detail } from '../../lib/details';
+import { domainOf, type Link } from '../../lib/links';
+import { stateToSearch } from '../../lib/url-state';
+
+interface Props {
+	link: Link;
+	detail?: Detail;
+}
+
+const { link, detail } = Astro.props;
+
+const PRICE_LABEL: Record<Detail['pricing'], string> = {
+	gratis: 'Gratis',
+	freemium: 'Freemium',
+	'de-pago': 'De pago',
+};
+
+const categoryHref = '/' + stateToSearch({ query: '', category: link.category, tech: [], tag: null });
+const action =
+	'text-[13px] underline underline-offset-3 hover:text-accent transition-colors duration-100';
+---
+
+<div class="ficha bg-surface px-[18px] py-4">
+	<h2 class="mb-2 text-[15px] leading-[1.3] font-semibold">Ficha técnica</h2>
+	<dl class="grid grid-cols-[auto_minmax(0,1fr)] gap-x-3.5 gap-y-[9px] text-[13.5px]">
+		{
+			detail && (
+				<>
+					<dt class="text-muted font-mono text-[11px] leading-[1.9]">Precio</dt>
+					<dd>
+						<span class="inline-flex items-center border border-current px-1.5 py-0.5 font-mono text-[11px] font-semibold tracking-[.06em] uppercase">
+							{PRICE_LABEL[detail.pricing]}
+						</span>
+						{detail.pricingNote && (
+							<p class="text-muted mt-1 text-[13px]">{detail.pricingNote}</p>
+						)}
+					</dd>
+					{detail.pricingUrl && (
+						<>
+							<dt class="text-muted font-mono text-[11px] leading-[1.9]">Planes</dt>
+							<dd>
+								<a class={action} href={detail.pricingUrl} target="_blank" rel="noopener noreferrer">
+									Ver precios en {domainOf(detail.pricingUrl)}
+									<span aria-hidden="true">↗</span>
+									<span class="sr-only">(abre en otra pestaña)</span>
+								</a>
+							</dd>
+						</>
+					)}
+					<dt class="text-muted font-mono text-[11px] leading-[1.9]">Ideal para</dt>
+					<dd>{detail.idealFor}</dd>
+				</>
+			)
+		}
+		<dt class="text-muted font-mono text-[11px] leading-[1.9]">Categoría</dt>
+		<dd><a class={action} href={categoryHref}>{link.category}</a></dd>
+	</dl>
+	{
+		detail && (
+			<p class="border-line mt-3.5 border-t border-dashed pt-3 text-[13px]">
+				Última revisión <span class="font-mono text-xs">{formatDate(detail.reviewedAt)}</span>
+			</p>
+		)
+	}
+	{
+		detail && !detail.reviewedByAuthor && (
+			<p class="border-line-strong text-muted mt-3 flex gap-2 border border-dashed px-[11px] py-[9px] text-[12.5px]">
+				<svg
+					class="mt-0.5 flex-none"
+					width="12"
+					height="12"
+					viewBox="0 0 12 12"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="1.4"
+					aria-hidden="true"
+				>
+					<circle cx="6" cy="6" r="5" />
+					<path d="M4.6 4.6a1.5 1.5 0 1 1 1.9 1.4c-.4.2-.5.4-.5.8M6 8.6v.1" />
+				</svg>
+				<span>Descripción generada a partir del sitio</span>
+			</p>
+		)
+	}
+</div>

@@ -357,6 +357,19 @@ La ficha es el componente central: un enlace completo con cuatro zonas en grilla
 - **Panel lateral:** fondo de marco; búsqueda, categorías con plegado nativo y tecnologías con las más usadas primero y "Ver las N".
 - **Móvil:** el panel se pliega tras el botón Filtros, con insignia índigo que cuenta los activos.
 
+### Página de detalle
+
+Cada enlace tiene su página en `/enlace/<id>`, generada en el build y legible completa sin JavaScript.
+
+- **Ancho:** contenido centrado de hasta 1160 px, con 20 px de margen lateral (16 px por debajo de 48rem). La prosa llega hasta 68ch.
+- **Estructura:** ruta en mono de 12 px ("← Directorio / categoría / nombre"); cabecera en ficha con placa de 64 px (48 px en pantallas angostas), nombre como `h1` de 26 px, dominio, sellos, descripción, botón primario "Visitar <dominio>", botón secundario "Volver al directorio" y chips bajo línea punteada. Debajo, dos columnas: captura y secciones ("¿Qué es?", "Casos de uso" numerados, "Qué revisar antes de elegirlo" con filete izquierdo de Línea fuerte), y a la derecha la ficha técnica de 300 px. Al final, las alternativas en la grilla del directorio.
+- **Ficha técnica:** ficha en Hoja (nunca en Marco) con precio como sello, enlace a precios, "Ideal para", categoría y "Última revisión". Sin detalle solo muestra la categoría. Desde 48rem y con al menos 600 px de alto acompaña el scroll (`sticky`, 78 px bajo el encabezado).
+- **Aviso de contenido generado:** recuadro con borde punteado de Línea fuerte, texto apagado de 12.5 px e interrogación: "Descripción generada a partir del sitio". Aparece mientras el autor no revisa el texto a mano.
+- **Captura:** marco de Línea con barra superior mono (dominio y "Captura del <fecha>"). Si el enlace está caído y no hay captura, un recuadro punteado de Línea fuerte dice "El sitio no responde; no hay captura".
+- **Volver:** "← Directorio" y "Volver al directorio" apuntan a `/`; con JavaScript, si se llegó desde el directorio, vuelven en el historial y conservan los filtros.
+- **Móvil:** una sola columna; la ficha técnica va antes de la captura.
+- **Alternativas:** fichas iguales a las del directorio (placa, nombre, dominio y descripción) que enlazan a la página de detalle de cada una.
+
 ### Sellos de estado
 
 - **Forma:** borde del color actual, 2 px de padding vertical, 6 px horizontal e icono de 11 px.
