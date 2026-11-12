@@ -43,10 +43,10 @@ test('entrar directo y volver lleva al directorio', async ({ page }) => {
 	await expect(page).toHaveURL('/');
 });
 
-test('volver desde el directorio conserva los filtros', async ({ page, baseURL }) => {
-	const directory = `/?cat=${encodeURIComponent(link.category)}`;
-	await page.goto(directory);
-	await page.goto(path, { referer: new URL(directory, baseURL).href });
+test('volver desde el directorio conserva los filtros', async ({ page }) => {
+	await page.goto(`/?cat=${encodeURIComponent(link.category)}`);
+	await page.locator(`[data-card][data-name=${JSON.stringify(link.name)}] [data-detail]`).click();
+	await expect(page).toHaveURL(path);
 	await page.getByRole('link', { name: 'Volver al directorio' }).click();
 	await expect(page).toHaveURL(/[?&]cat=/);
 });

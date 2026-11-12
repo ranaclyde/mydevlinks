@@ -1,6 +1,6 @@
 # mydevlinks
 
-Una base propia de enlaces para desarrollar, que reemplaza años de bookmarks. Cada enlace se entiende sin abrirlo y se filtra por categoría, tecnología y texto. Es una sola página estática en Astro y Tailwind, sin framework de interfaz.
+Una base propia de enlaces para desarrollar, que reemplaza años de bookmarks. Cada enlace se entiende sin abrirlo y se filtra por categoría, tecnología y texto. En el directorio, la ficha lleva al detalle del enlace (`/enlace/<id>`) y la flecha junto al nombre abre la web en otra pestaña. Es un sitio estático en Astro y Tailwind, sin framework de interfaz.
 
 ## Ejecutar
 
