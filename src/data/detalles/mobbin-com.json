@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Mobbin es una biblioteca de capturas de apps móviles, apps web y sitios reales, con más de 600.000 pantallas. Se explora por producto, plataforma, industria o categoría, y se puede buscar pantallas sueltas, flujos completos (onboarding, checkout, suscripción) y secciones de sitios web como heroes, precios o footers.",
+		"Conviene cuando necesitas ver cómo resuelven un patrón de interfaz productos que ya están en producción, antes de diseñarlo o implementarlo."
+	],
+	"uses": [
+		"Revisar cómo hacen el onboarding varias apps de tu rubro antes de armar el tuyo.",
+		"Comparar secciones de precios o footers de sitios reales para decidir la estructura de una landing.",
+		"Guardar referencias en colecciones para adjuntarlas a una tarea o a una revisión de diseño."
+	],
+	"caveats": [
+		"El plan gratis da acceso limitado a apps y sitios, sin flujos ni animaciones y sin búsqueda.",
+		"Solo permite 3 colecciones y limita copiar y descargar capturas en el plan gratis.",
+		"No hay facturación mensual: los planes pagos se cobran por trimestre o por año."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Pro cuesta 45 USD cada 3 meses o 120 USD al año; el plan gratis tiene acceso limitado.",
+	"pricingUrl": "https://mobbin.com/pricing",
+	"idealFor": "Diseñadores y developers que investigan patrones de UI en productos reales.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

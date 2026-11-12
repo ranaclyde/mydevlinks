@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Liquid Glass Design reúne cerca de 190 ejemplos del material translúcido Liquid Glass de Apple y de glassmorfismo, repartidos en diseño de interfaz, arte y vídeo. Cada pieza tiene su página y un prompt de estilo listo para copiar, con parámetros al estilo Midjourney y una lista de cosas a evitar.",
+		"Conviene cuando quieres ver cómo se ve el efecto en distintos contextos o generar imágenes en un estilo parecido con una herramienta de IA."
+	],
+	"uses": [
+		"Filtrar por UI Design y ver cómo se aplica el efecto de vidrio a tarjetas, barras y menús antes de replicarlo en CSS.",
+		"Copiar el prompt de una pieza para generar imágenes de referencia con una herramienta de IA.",
+		"Leer la guía \"What is liquid glass?\" para entender el material antes de proponerlo en un proyecto."
+	],
+	"caveats": [
+		"Los ejemplos son imágenes y vídeos de referencia: no incluyen el código CSS para reproducirlos.",
+		"Los parámetros de los prompts (como --ar) siguen la sintaxis de Midjourney y puede que otras herramientas no los entiendan.",
+		"Los resultados cargan por tandas de 30, y hay un patrocinio de Mobbin con comisión por suscripciones."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Todo el contenido se puede ver y copiar sin pagar.",
+	"idealFor": "Quien explora el estilo liquid glass o quiere prompts para imitarlo.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

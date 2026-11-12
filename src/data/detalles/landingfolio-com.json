@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Landingfolio es una galería de landing pages con más de 900 sitios, además de una biblioteca de secciones sueltas (hero, header, footer, testimonios, llamados a la acción) con miles de ejemplos. Se recorre por pestañas de categoría como SaaS, Product o Mobile App, con vista de escritorio o móvil y un buscador de sitios, secciones y colores.",
+		"Conviene cuando vas a maquetar una landing y quieres ver cómo resuelven otros un bloque concreto, en vez de mirar páginas completas."
+	],
+	"uses": [
+		"Revisar cómo plantean el hero y la tabla de precios otras landings SaaS antes de maquetar la tuya.",
+		"Filtrar por categoría, como SaaS o Mobile App, para comparar varias landings del mismo rubro.",
+		"Buscar secciones de testimonios o footers para copiarlas como base en Tailwind, Webflow o Figma."
+	],
+	"caveats": [
+		"Sin Pro no puedes filtrar por color ni ver la versión móvil de los sitios.",
+		"El archivo completo de componentes está limitado: sin Pro solo ves los 40 más nuevos de cada categoría.",
+		"Las colecciones guardadas tienen tope de 20 secciones en cuentas gratis, y hay anuncios patrocinados mezclados con el contenido."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Plan anual de 49 USD o pago único de 59 USD; la cuenta gratis tiene límites.",
+	"pricingUrl": "https://www.landingfolio.com/pricing",
+	"idealFor": "Quien maqueta landings y busca referencias por sección.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}
