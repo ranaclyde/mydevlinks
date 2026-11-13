@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Unicorn Icons es una colección de más de 500 iconos animados para aplicaciones, entregados como Lottie y Rive. También se pueden exportar a SVG, GIF, WebM y PNG.",
+		"Conviene cuando quieres micro-interacciones en la interfaz sin animar cada icono a mano, y trabajas con React, Vue, React Native, iOS, Android, Flutter o HTML."
+	],
+	"uses": [
+		"Animar botones de carga, confirmación o error en una app web con lottie-react.",
+		"Dar vida a una pantalla de onboarding en una app móvil con Flutter o iOS.",
+		"Exportar un icono a GIF o WebM para una demo o un correo."
+	],
+	"caveats": [
+		"El plan gratuito incluye 100 iconos y exige un crédito visible a Unicorn Icons; los planes de pago quitan la atribución.",
+		"Necesitas un reproductor de Lottie o de Rive en tu proyecto, lo que suma una dependencia.",
+		"Con cualquier plan, no puedes entregar los iconos como archivos sueltos a clientes ni dejar que los usuarios de tu app los extraigan."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Starter gratis con 100 iconos; los planes Solo, Team y Enterprise (1, 5 o puestos ilimitados) son de pago único.",
+	"pricingUrl": "https://unicornicons.com/pricing",
+	"idealFor": "Developers que quieren iconos animados listos para usar en web y móvil.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
