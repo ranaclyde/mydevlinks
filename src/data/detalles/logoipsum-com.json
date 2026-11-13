@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Logoipsum es una colección de más de 200 logos de relleno que se descargan en SVG y PNG. Funcionan como el lorem ipsum de las marcas: logos creíbles para llenar maquetas, prototipos y plantillas mientras llega el logo real del cliente.",
+		"Conviene cuando necesitas que una interfaz se vea terminada sin inventar marcas ni usar logos de empresas reales."
+	],
+	"uses": [
+		"Llenar la sección de clientes o partners de una landing en desarrollo.",
+		"Dar identidad visual a una maqueta en Figma durante una demo.",
+		"Poblar una plantilla o un tema con una marca de ejemplo."
+	],
+	"caveats": [
+		"Los logos sin modificar solo valen como relleno: no pueden usarse como identidad final de una marca ni registrarse como marca.",
+		"No puedes revender los logos tal cual ni empaquetarlos para ofrecer un servicio competidor.",
+		"Las fuentes premium del editor se venden como complementos (Editor+), y su licencia cubre un solo proyecto comercial."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Los logos son gratis, incluso en proyectos comerciales y sin atribución; las fuentes extra, las licencias ampliadas y el plugin Pro son de pago.",
+	"pricingUrl": "https://logoipsum.com/license",
+	"idealFor": "Maquetas y prototipos que necesitan logos de relleno.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

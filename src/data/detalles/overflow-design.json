@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Overflow reúne recursos de diseño hechos por una sola persona, el mismo autor de Keyline Icons y Preline UI: unos 1.100 iconos estilo Notion, más de 450 ilustraciones, más de 350 dibujos isométricos (algunos animados) y 20 avatares 3D para agentes de IA, en SVG, PNG y como archivo editable de Figma.",
+		"Conviene cuando quieres un estilo visual propio y coherente para una landing, un producto o una presentación, y prefieres probar con la parte gratis antes de pagar."
+	],
+	"uses": [
+		"Ilustrar la landing de un producto con dibujos isométricos en lugar de fotos de stock.",
+		"Usar iconos de estilo Notion, en versión regular o duotone, en una app o un panel.",
+		"Conectar su servidor MCP a un agente de código para que busque un icono y lo inserte en el proyecto como SVG o JSX."
+	],
+	"caveats": [
+		"Solo una parte del catálogo es gratis: 194 iconos, 45 ilustraciones (15 de cada pack) y 71 isométricos como imagen fija. El resto, incluidos los isométricos animados, exige la licencia Pro.",
+		"No puedes redistribuir los recursos sueltos ni armar con ellos otro pack o biblioteca; los de Pro tampoco pueden subirse a repositorios públicos.",
+		"Pro es para una sola persona y la compra no tiene reembolso; para agencias o varios usuarios hay que pedir una licencia a medida."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Hay un set gratis; la licencia Pro cuesta 99 USD en un solo pago e incluye todo el catálogo y lo que se agregue después.",
+	"pricingUrl": "https://www.overflow.design/pricing/",
+	"idealFor": "Quien necesita iconos e ilustraciones con estilo propio para proyectos comerciales.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
