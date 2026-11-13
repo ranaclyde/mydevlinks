@@ -102,6 +102,18 @@ test('react en la búsqueda activa el filtro y resalta la tecnología', async ({
 	await expect(count(page)).toHaveText(String(tagged.length));
 });
 
+test('un enlace se encuentra por su URL, con o sin protocolo', async ({ page }) => {
+	const link = publicLinks.find((item) => item.url === 'https://squoosh.app/') as RawLink;
+	const search = page.getByRole('searchbox', { name: 'Buscar' });
+
+	await search.fill('squoosh.app');
+	await expect(cardOf(page, link)).toBeVisible();
+	await search.fill('https://squoosh.app/');
+	await expect(cardOf(page, link)).toBeVisible();
+	await search.fill('https');
+	await expect(cardOf(page, link)).toBeHidden();
+});
+
 test('un enlace se encuentra por su nombre aunque nombre una tecnología que no tiene', async ({
 	page,
 }) => {
