@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Resend es un servicio de correo para developers con una API REST y SDKs oficiales para Node.js, Python, PHP, Ruby, Go, Java, Rust y .NET, entre otros. Sirve para correos transaccionales, correo de marketing y también para recibir correos por webhook.",
+		"Puedes diseñar las plantillas con React Email. Conviene cuando quieres enviar correos desde tu app sin administrar tu propio servidor SMTP."
+	],
+	"uses": [
+		"Enviar correos de bienvenida, restablecimiento de contraseña y recibos desde tu backend.",
+		"Mandar hasta 100 mensajes en una sola petición con el envío por lotes.",
+		"Procesar correos entrantes con webhooks, por ejemplo para crear tickets de soporte."
+	],
+	"caveats": [
+		"El plan gratis permite 3.000 correos al mes, con un máximo de 100 por día.",
+		"Para enviar desde tu propio dominio tienes que verificarlo con registros SPF y DKIM; DMARC es opcional, pero mejora la entrega.",
+		"Las políticas de uso prohíben el correo masivo no solicitado: los destinatarios deben haber aceptado recibirlo."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Plan gratis con 3.000 correos al mes (máximo 100 por día); los planes de pago parten en 20 USD al mes por 50.000 correos.",
+	"pricingUrl": "https://resend.com/pricing",
+	"idealFor": "Apps que necesitan enviar correo transaccional con una API simple.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

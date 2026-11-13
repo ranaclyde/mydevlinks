@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"quicktype genera código tipado a partir de datos: le das JSON de ejemplo, la URL de una API, un JSON Schema o una consulta GraphQL y produce modelos, serializadores y validadores en más de 25 lenguajes, entre ellos TypeScript, Python, Go, Rust, Swift, Kotlin y Zod.",
+		"Se usa desde la aplicación web, desde la línea de comandos con npm install -g quicktype, o desde su servidor MCP para agentes de IA. Conviene cuando consumes una API y no quieres escribir a mano los tipos de cada respuesta."
+	],
+	"uses": [
+		"Pegar la respuesta de una API y obtener las interfaces de TypeScript para tu cliente.",
+		"Generar los mismos modelos en Swift y Kotlin para que dos apps móviles compartan estructura.",
+		"Crear esquemas de Zod desde un JSON de ejemplo para validar datos en tiempo de ejecución."
+	],
+	"caveats": [
+		"Los tipos se infieren de los ejemplos que entregas: si una muestra no incluye un campo opcional, el resultado no lo reflejará. Usa varias muestras o un JSON Schema.",
+		"Revisa el código generado antes de integrarlo, sobre todo los nombres de las clases y los campos que mezclan varios tipos.",
+		"El código se publica con licencia Apache-2.0 en GitHub; la versión más reciente es de julio de 2026."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Proyecto de código abierto con licencia Apache-2.0.",
+	"idealFor": "Developers que consumen APIs JSON y quieren tipos sin escribirlos a mano.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Public APIs es un directorio colaborativo de APIs públicas para developers, con más de 1.400 entradas repartidas en más de 50 categorías, de animales y clima a video e inteligencia artificial. Tiene un atajo de teclado (Ctrl K o ⌘ K) para buscar.",
+		"Conviene cuando necesitas datos para un proyecto, un prototipo o un ejercicio y quieres ver rápido qué APIs existen en un tema antes de elegir una."
+	],
+	"uses": [
+		"Encontrar una API de clima, películas o animales para alimentar un proyecto de práctica.",
+		"Explorar qué fuentes de datos existen en una categoría antes de diseñar una función nueva.",
+		"Sumar al directorio una API que conoces mediante el enlace para enviar propuestas."
+	],
+	"caveats": [
+		"Es solo un directorio: cada API tiene sus propias condiciones, límites y requisitos de autenticación, que debes revisar en su documentación.",
+		"La portada muestra anuncios y una sección de destacados patrocinados, así que no todo lo que aparece primero es una recomendación editorial.",
+		"Al ser una lista colaborativa, conviene comprobar que la API siga funcionando antes de depender de ella."
+	],
+	"pricing": "gratis",
+	"pricingNote": "El directorio es gratuito y el repositorio tiene licencia MIT; el costo de cada API depende de su proveedor.",
+	"idealFor": "Quien busca una API pública para un proyecto o prototipo.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

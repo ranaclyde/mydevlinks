@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Redux Thunk es un middleware para Redux que permite despachar funciones en lugar de objetos de acción. Esa función recibe dispatch y getState, así que puede hacer trabajo asíncrono y despachar acciones cuando termine.",
+		"Conviene cuando necesitas lógica asíncrona sencilla o moderada junto al store, como pedir datos a una API y guardar el resultado."
+	],
+	"uses": [
+		"Pedir datos a una API y despachar acciones al empezar, terminar o fallar la petición.",
+		"Despachar varias acciones seguidas o con un retraso, por ejemplo con setTimeout.",
+		"Leer el estado con getState para decidir si hace falta volver a pedir unos datos."
+	],
+	"caveats": [
+		"Si usas Redux Toolkit, configureStore ya incluye el middleware de thunk: no necesitas instalarlo aparte.",
+		"Un thunk no puede reaccionar a las acciones que se despachan después; para eso la documentación de Redux recomienda el listener middleware de Redux Toolkit, y para websockets, un middleware propio.",
+		"Para pedir datos, createAsyncThunk o RTK Query te ahorran escribir a mano las acciones de carga, éxito y error."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Código abierto con licencia MIT.",
+	"idealFor": "Proyectos con Redux que necesitan lógica asíncrona simple en el store.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

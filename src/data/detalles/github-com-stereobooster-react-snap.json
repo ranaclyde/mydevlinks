@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"react-snap prerenderiza una aplicación web a HTML estático: usa Chrome sin interfaz para recorrer los enlaces desde la raíz y guardar cada página ya renderizada. Está pensado para React, aunque también funciona con Preact y Vue.",
+		"Conviene cuando tienes una SPA y quieres mejorar la carga inicial y el SEO sin migrar a un framework con renderizado en servidor."
+	],
+	"uses": [
+		"Agregar \"postbuild\": \"react-snap\" a una SPA de Create React App para publicar HTML estático.",
+		"Entregar contenido legible a buscadores en un sitio de marketing hecho con React.",
+		"Prerenderizar una app Vue configurando la carpeta dist como origen."
+	],
+	"caveats": [
+		"El último commit, un cambio en el README, es de noviembre de 2022, y la última versión etiquetada (1.23.0) es de diciembre de 2018, así que no esperes soporte para versiones recientes de React o de Chrome.",
+		"Solo funciona con rutas basadas en la API de historial de HTML5, no con URLs con hash.",
+		"Tiene limitaciones conocidas: componentes asíncronos que pueden mostrar un destello de carga, estado de Redux limitado a tipos JSON básicos y, en contenedores, la necesidad de flags de Puppeteer como --no-sandbox."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Código abierto con licencia MIT.",
+	"idealFor": "SPAs en React que necesitan HTML estático sin cambiar de framework.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
