@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"PocketBase es un backend de código abierto que se distribuye como un solo ejecutable escrito en Go y usa SQLite. Incluye base de datos con suscripciones en tiempo real, autenticación por email y OAuth2, almacenamiento de archivos local o en S3, panel de administración y una API REST, con SDK oficiales para JavaScript y Dart.",
+		"Conviene para prototipos, proyectos personales y apps pequeñas o medianas que necesitan un backend completo sin montar varios servicios. También se puede usar como framework en Go o extender con hooks en JavaScript."
+	],
+	"uses": [
+		"Levantar el backend de una app móvil en Flutter con login y almacenamiento de archivos.",
+		"Prototipar un MVP con React, Vue o Svelte sin configurar servidor ni base de datos aparte.",
+		"Ofrecer actualizaciones en tiempo real en una herramienta interna suscribiéndose a los cambios de una colección."
+	],
+	"caveats": [
+		"Mientras no llegue a v1.0.0 no se garantiza compatibilidad hacia atrás, así que pueden aparecer cambios incompatibles al actualizar.",
+		"Al ser un solo proceso con SQLite, escalar horizontalmente es más limitado que con un backend clásico.",
+		"Lo alojas y respaldas tú: no hay una nube oficial que se encargue."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Código abierto con licencia MIT, sin planes de pago.",
+	"idealFor": "Proyectos pequeños y prototipos que necesitan un backend completo en un solo archivo.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
