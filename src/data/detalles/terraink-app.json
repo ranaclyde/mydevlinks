@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Terraink crea pósteres y fondos de pantalla a partir de mapas. Buscas un lugar por nombre o coordenadas, eliges colores para calles, agua, parques y edificios, aplicas un tema y una tipografía para los rótulos, y descargas el resultado en PNG, PDF o SVG por capas. No pide cuenta y todo se procesa en tu navegador.",
+		"Los datos del mapa vienen de OpenStreetMap, con licencia ODbL. Conviene cuando quieres arte de mapa listo para imprimir sin diseñarlo a mano."
+	],
+	"uses": [
+		"Crear un póster de la ciudad donde vives para imprimirlo y enmarcarlo.",
+		"Generar un fondo de pantalla con el mapa de un lugar que te importa.",
+		"Exportar el mapa como SVG con capas para retocarlo en un editor vectorial."
+	],
+	"caveats": [
+		"Sigue en desarrollo, así que algunas funciones pueden cambiar.",
+		"Los datos son de OpenStreetMap, cuya licencia ODbL pide atribución si publicas o distribuyes el mapa; revisa cómo acreditarlo.",
+		"El código es AGPL-3.0, algo a tener en cuenta si piensas reutilizarlo o alojarlo."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Gratis y sin cuenta; se sostiene con donaciones y el código es abierto con licencia AGPL-3.0.",
+	"idealFor": "Quien quiere un póster o fondo de mapa personalizado sin registrarse.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

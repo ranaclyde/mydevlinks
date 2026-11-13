@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"SvgTrace convierte imágenes JPG, PNG y WebP en SVG editables. Incluye un editor para ajustar colores, capas y trazados, cambiar tamaño, rotar formas y quitar el fondo, y puede exportar a SVG, PDF, EPS y DXF. También ofrece pedidos de vectorización hecha por el servicio, que llega por correo.",
+		"Conviene cuando necesitas vectorizar un logo o un dibujo para imprimir, cortar en vinilo, láser o CNC, o seguir trabajándolo en un editor vectorial."
+	],
+	"uses": [
+		"Vectorizar el logo de un cliente que solo tienes como PNG para poder escalarlo sin perder calidad.",
+		"Preparar un diseño en SVG o DXF para una cortadora láser, de vinilo o CNC.",
+		"Quitar el fondo de una imagen y retocar sus colores antes de usarla como SVG en una web."
+	],
+	"caveats": [
+		"El plan Pro cuesta 17,99 USD al mes o 119,88 USD al año, e incluye conversiones ilimitadas, el editor completo, exportaciones en alta resolución, licencia comercial y ausencia de anuncios.",
+		"Los pedidos de vectorización son pagos aparte por imagen: desde 10 USD, o 7 USD con Pro, según la complejidad.",
+		"Si tu imagen es muy detallada o fotográfica, el resultado puede necesitar retoques manuales en el editor."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Pro cuesta 17,99 USD al mes o 119,88 USD al año; los pedidos de vectorización van aparte, desde 10 USD por imagen.",
+	"pricingUrl": "https://svgtrace.com/pricing",
+	"idealFor": "Diseñadores y developers que necesitan vectorizar logos o dibujos para impresión o corte.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

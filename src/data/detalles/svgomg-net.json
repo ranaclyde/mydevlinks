@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"SVGOMG.net es una versión de terceros, basada en el SVGOMG de Jake Archibald, de la interfaz web para SVGO, el optimizador de SVG. Abres o pegas un archivo, activas o desactivas cada optimización (quitar metadatos y comentarios, minificar colores y estilos, convertir formas a paths, redondear números) y comparas el resultado con el original antes de descargarlo. Usa SVGO 4.0.1 y procesa el archivo en el navegador, sin subirlo a un servidor.",
+		"Conviene cuando quieres controlar qué se elimina de un SVG, algo útil porque algunas optimizaciones pueden romper animaciones o estilos."
+	],
+	"uses": [
+		"Aligerar los SVG de iconos o ilustraciones antes de incluirlos en una web.",
+		"Probar qué optimización rompe un SVG comparándolo con el original y volver a activar solo lo necesario.",
+		"Limpiar un SVG exportado desde Figma o Illustrator quitando metadatos y comentarios sobrantes."
+	],
+	"caveats": [
+		"Optimizar en exceso puede cambiar la apariencia o romper animaciones: revisa siempre el resultado.",
+		"Es una herramienta manual, así que para procesar muchos archivos conviene usar SVGO en tu flujo de build.",
+		"No es el sitio del autor original: el SVGOMG de Jake Archibald, de código abierto con licencia MIT, sigue publicado en jakearchibald.github.io/svgomg."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Uso gratuito, sin cuenta y sin planes de pago.",
+	"idealFor": "Quien quiere optimizar SVG con control fino y ver el efecto de cada ajuste.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

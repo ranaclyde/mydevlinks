@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"BGJar genera fondos en SVG para sitios, blogs y apps. Ofrece 35 estilos (olas, hexágonos, placas de circuito, estrellas, nieve y más), cada uno con su página de personalización.",
+		"Conviene cuando quieres un fondo vectorial liviano que escale a cualquier tamaño sin perder nitidez."
+	],
+	"uses": [
+		"Usar un fondo de olas en la cabecera de un blog.",
+		"Dar un fondo de circuitos a la landing de un producto técnico.",
+		"Generar una textura SVG para una pantalla de bienvenida de una app."
+	],
+	"caveats": [
+		"El plan gratis exige atribución; para quitarla hay que pagar el plan Basic (un proyecto) o Pro (proyectos ilimitados).",
+		"Con el plan gratis los archivos llevan licencia CC BY 4.0; en todos los planes está prohibido revender o regalar los fondos tal cual y usarlos para montar un servicio parecido a BGJar.",
+		"Un SVG muy detallado puede pesar bastante; revisa el tamaño del archivo antes de usarlo como fondo."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Gratis con atribución; Basic cuesta 5,99 USD y Pro 35,99 USD, ambos pago único.",
+	"pricingUrl": "https://bgjar.com/posts/license/",
+	"idealFor": "Quien necesita fondos SVG variados y está dispuesto a atribuir o pagar una vez.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
