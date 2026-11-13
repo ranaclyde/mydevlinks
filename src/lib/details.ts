@@ -2,6 +2,12 @@ import { z } from 'astro/zod';
 
 export const PRICING = ['gratis', 'freemium', 'de-pago'] as const;
 
+export const PRICE_LABEL: Record<(typeof PRICING)[number], string> = {
+	gratis: 'Gratis',
+	freemium: 'Freemium',
+	'de-pago': 'De pago',
+};
+
 const isoDate = z
 	.string()
 	.regex(/^\d{4}-\d{2}-\d{2}$/, 'Fecha ISO YYYY-MM-DD')

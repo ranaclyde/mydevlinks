@@ -4,6 +4,7 @@ import {
 	facetCounts,
 	matches,
 	normalize,
+	pricingCounts,
 	queryWithoutTech,
 	queryWithoutWords,
 	splitQuery,
@@ -13,6 +14,7 @@ import {
 	type FilterItem,
 	type FilterState,
 } from '../lib/filter';
+import { PRICE_LABEL, PRICING } from '../lib/details';
 import { GALLERY } from '../lib/links';
 import { stateFromSearch, stateToSearch } from '../lib/url-state';
 
@@ -21,6 +23,7 @@ const ANNOUNCE_DELAY = 700;
 interface Card extends FilterItem {
 	el: HTMLElement;
 	chips: HTMLElement[];
+	price: HTMLElement | null;
 }
 
 const $ = <T extends HTMLElement>(selector: string) => document.querySelector(selector) as T;
@@ -47,6 +50,7 @@ const techNone = $<HTMLElement>('[data-tech-none]');
 const categoryInputs = [...document.querySelectorAll<HTMLInputElement>('input[name="categoria"]')];
 const tagGroup = document.querySelector<HTMLElement>('[data-tags]');
 const tagInputs = [...document.querySelectorAll<HTMLInputElement>('input[name="tipo"]')];
+const priceInputs = [...document.querySelectorAll<HTMLInputElement>('input[name="precio"]')];
 const techOptions = [...document.querySelectorAll<HTMLElement>('[data-tech-option]')];
 const techInputs = techOptions.map((option) => option.querySelector('input') as HTMLInputElement);
 const allTechs = techInputs.map((input) => input.value);
@@ -59,14 +63,18 @@ const cards: Card[] = [...document.querySelectorAll<HTMLElement>('[data-card]')]
 	category: el.dataset.category ?? '',
 	tech: JSON.parse(el.dataset.tech ?? '[]'),
 	tags: JSON.parse(el.dataset.tags ?? '[]'),
+	pricing: el.dataset.pricing,
 	chips: [...el.querySelectorAll<HTMLElement>('[data-chip]')],
+	price: el.querySelector<HTMLElement>('[data-price]'),
 }));
 
 const state: FilterState = stateFromSearch(location.search, {
 	categories: categoryInputs.map((input) => input.value).filter(Boolean),
 	techs: allTechs,
 	tags: tagInputs.map((input) => input.value).filter(Boolean),
+	pricing: priceInputs.map((input) => input.value),
 });
+state.pricing ??= [];
 let techListOpen = state.tech.some((tech) => allTechs.indexOf(tech) >= TOP_TECHS);
 let chipsKey = '';
 let announceTimer: ReturnType<typeof setTimeout> | undefined;
@@ -97,6 +105,19 @@ function arrangeChips(card: Card, active: Set<string>) {
 		more.hidden = hidden === 0;
 		rest.hidden = hidden === 0;
 	}
+}
+
+function priceLabel(value: string): string {
+	return PRICE_LABEL[value as (typeof PRICING)[number]] ?? value;
+}
+
+/** Precios marcados en el orden del panel, no en el que se marcaron. */
+function selectedPrices(): string[] {
+	return PRICING.filter((price) => state.pricing?.includes(price));
+}
+
+function listOr(items: string[]): string {
+	return items.length < 2 ? items.join('') : `${items.slice(0, -1).join(', ')} o ${items.at(-1)}`;
 }
 
 function pluralize(count: number): string {
@@ -164,6 +185,14 @@ function renderActives(words: string[], techs: string[], visible: number) {
 			}),
 		);
 	}
+	for (const price of selectedPrices()) {
+		const label = priceLabel(price);
+		items.push(
+			pill(label, `Quitar precio ${label}`, () => {
+				state.pricing = (state.pricing ?? []).filter((item) => item !== price);
+			}),
+		);
+	}
 	for (const tech of techs) {
 		items.push(pill(tech, `Quitar ${tech}`, () => removeTech(tech)));
 	}
@@ -210,6 +239,8 @@ function renderEmpty(words: string[], techs: string[]) {
 	if (words.length > 0) parts.push(`con «${words.join(' ')}»`);
 	if (state.category) parts.push(`en ${state.category}`);
 	if (state.tag) parts.push(`de tipo ${state.tag}`);
+	const prices = selectedPrices().map((price) => priceLabel(price).toLowerCase());
+	if (prices.length > 0) parts.push(listOr(prices));
 	if (techs.length > 0) parts.push(`con ${listJoin(techs)}`);
 	emptyText.textContent = `${parts.join(' ')}.`;
 }
@@ -255,6 +286,13 @@ function render() {
 		setCount(input, tech[input.value] ?? 0);
 	});
 
+	const pricing = pricingCounts(cards, state, allTechs);
+	for (const input of priceInputs) {
+		input.checked = (state.pricing ?? []).includes(input.value);
+		setCount(input, pricing[input.value] ?? 0);
+	}
+	for (const card of cards) card.price?.classList.toggle('hit', (state.pricing ?? []).includes(card.pricing ?? ''));
+
 	const category = categoryCounts(cards, state, allTechs);
 	const total = Object.values(category).reduce((sum, count) => sum + count, 0);
 	for (const input of categoryInputs) {
@@ -273,7 +311,8 @@ function render() {
 		}
 	}
 
-	const filters = state.tech.length + (state.category ? 1 : 0) + (state.tag ? 1 : 0);
+	const filters =
+		state.tech.length + (state.pricing?.length ?? 0) + (state.category ? 1 : 0) + (state.tag ? 1 : 0);
 	badge.textContent = String(filters);
 	badge.hidden = filters === 0;
 
@@ -294,6 +333,7 @@ function clearAll() {
 	state.category = null;
 	state.tag = null;
 	state.tech = [];
+	state.pricing = [];
 	search.value = '';
 	render();
 	heading.focus();
@@ -321,6 +361,14 @@ for (const input of categoryInputs) {
 for (const input of tagInputs) {
 	input.addEventListener('change', () => {
 		state.tag = input.value || null;
+		render();
+	});
+}
+
+for (const input of priceInputs) {
+	input.addEventListener('change', () => {
+		const others = (state.pricing ?? []).filter((price) => price !== input.value);
+		state.pricing = input.checked ? [...others, input.value] : others;
 		render();
 	});
 }

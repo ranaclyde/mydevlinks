@@ -483,3 +483,32 @@ test('parámetros inválidos en la URL no rompen el directorio', async ({ page }
 	await expect(count(page)).toHaveText(TOTAL);
 	await expect.poll(() => new URL(page.url()).search).toBe('');
 });
+
+test('el filtro de precio suma opciones, va a la URL y marca la etiqueta de la tarjeta', async ({
+	page,
+	isMobile,
+}) => {
+	const pricingOf = (id: string) =>
+		(JSON.parse(readFileSync(`src/data/detalles/${id}.json`, 'utf8')) as { pricing: string }).pricing;
+	const priced = publicLinks.map((link) => ({ link, pricing: pricingOf(link.id) }));
+	const free = priced.filter((item) => item.pricing === 'gratis');
+	const freeOrFreemium = priced.filter((item) => item.pricing !== 'de-pago');
+
+	await openFilters(page, isMobile);
+	await pick(page.getByRole('checkbox', { name: /^Gratis/ }));
+	await expect(count(page)).toHaveText(String(free.length));
+	await expect(page).toHaveURL(/[?&]precio=gratis/);
+	await expect(page.getByRole('button', { name: 'Quitar precio Gratis' })).toBeVisible();
+	const card = cardOf(page, free[0].link);
+	await expect(card.locator('[data-price]')).toHaveText(/Gratis/);
+	await expect(card.locator('[data-price]')).toHaveClass(/\bhit\b/);
+
+	await pick(page.getByRole('checkbox', { name: /^Freemium/ }));
+	await expect(count(page)).toHaveText(String(freeOrFreemium.length));
+
+	await page.reload();
+	await expect(count(page)).toHaveText(String(freeOrFreemium.length));
+	await page.getByRole('button', { name: 'Quitar precio Gratis' }).click();
+	await page.getByRole('button', { name: 'Quitar precio Freemium' }).click();
+	await expect(count(page)).toHaveText(TOTAL);
+});
