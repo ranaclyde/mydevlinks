@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"GetLayers AI es una biblioteca de plantillas de sitios, escenas 3D, degradados, secciones y fondos animados que se copian como prompt y se pegan en una IA como Claude, ChatGPT, Cursor o Copilot. Escenas y degradados se ajustan en el navegador antes de copiar, y el prompt lleva tus valores.",
+		"Por defecto el prompt genera un archivo HTML autocontenido, pero puedes pedir a tu IA que lo reconstruya en Next.js, Astro, Vue, WordPress y otros. Conviene si quieres un acabado visual cuidado sin partir de una página en blanco."
+	],
+	"uses": [
+		"Pegar un prompt de escena 3D en tu IA para el hero de una landing.",
+		"Reconstruir una plantilla de sitio en Astro o Next.js en vez de HTML plano.",
+		"Aplicar un degradado o fondo animado ajustado a tu paleta."
+	],
+	"caveats": [
+		"Lo gratis es un conjunto limitado de capas; el resto requiere un plan pago y los planes menores tienen tope diario de copias.",
+		"El resultado depende de la IA que uses: revisa el código que genera y que se adapte a tu stack.",
+		"Las capas con fondos 4K, diseños de Figma o código fuente solo vienen en los planes superiores."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Capas gratis con prompt completo; los planes pagos parten en 99 USD (anual o de por vida).",
+	"pricingUrl": "https://www.getlayers.ai/pricing",
+	"idealFor": "Quien usa un asistente de IA y quiere partir de una base visual cuidada.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

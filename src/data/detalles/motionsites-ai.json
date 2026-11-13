@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"MotionSites es una biblioteca de prompts pensados para generar sitios web con IA: landing pages, portafolios, SaaS, ecommerce y también dashboards o fondos animados. La idea es copiar el prompt, pegarlo en tu herramienta de IA y obtener un sitio listo para personalizar.",
+		"Conviene cuando quieres un punto de partida con buen diseño y movimiento sin escribir tú mismo instrucciones largas y detalladas."
+	],
+	"uses": [
+		"Generar la landing de un producto SaaS pegando un prompt en Lovable, Bolt o v0.",
+		"Armar un portafolio personal con animaciones, partiendo de un prompt de la categoría Portfolio.",
+		"Agregar un hero o un fondo animado a un sitio existente usando los prompts de secciones y backgrounds."
+	],
+	"caveats": [
+		"La mayor parte de la biblioteca es de pago, y el plan de 3 meses limita las copias a 3 prompts al día.",
+		"Necesitas otra herramienta de IA (Lovable, Cursor, Bolt, Claude, v0 o Replit) para convertir el prompt en un sitio, y el resultado depende de ella.",
+		"Los planes cubren proyectos personales y de clientes; revisa los términos de uso antes de reutilizar los prompts en otros contextos."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Hay algunos prompts gratis; el acceso completo cuesta 129 USD cada 3 meses, 279 USD al año o 399 USD de pago único, y hay packs desde 49 USD.",
+	"pricingUrl": "https://motionsites.ai/unlimited",
+	"idealFor": "Quien construye sitios con IA y quiere prompts de diseño con movimiento ya probados.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

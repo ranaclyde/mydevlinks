@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Magic Loops es una plataforma sin código para crear apps con IA y convertir tareas repetitivas en automatizaciones. Además tiene un catálogo de apps creadas por la comunidad que puedes abrir y usar.",
+		"Conviene para automatizar tareas pequeñas, como resumir enlaces o procesar datos, sin montar un servicio propio."
+	],
+	"uses": [
+		"Crear un loop que resuma enlaces o artículos.",
+		"Convertir una tarea repetitiva, como ordenar gastos o resumir textos, en una automatización.",
+		"Publicar una mini app para que otros la usen desde un enlace."
+	],
+	"caveats": [
+		"Todo funciona con créditos de generación y de ejecución; las apps muy usadas pueden agotar la cuota.",
+		"En el plan gratis los loops son públicos; los privados exigen un plan pago.",
+		"Tus loops viven en la plataforma, así que dependes de ella para ejecutarlos."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Plan gratis con 250 créditos diarios de generación y 500 mensuales de ejecución; los planes pagos parten en 9 USD al mes.",
+	"pricingUrl": "https://magicloops.dev/pricing",
+	"idealFor": "Automatizaciones y mini apps con IA sin montar infraestructura.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

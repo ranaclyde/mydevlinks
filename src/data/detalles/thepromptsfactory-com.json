@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"The Prompts Factory es una biblioteca de prompts para sitios web, animaciones y transiciones. Cada uno incluye una vista previa interactiva del efecto y las instrucciones de implementación: layout, movimiento, interacciones y comportamiento responsive.",
+		"Conviene cuando quieres reproducir un efecto concreto con una herramienta de IA para código, en lugar de describirlo desde cero."
+	],
+	"uses": [
+		"Añadir una transición de página animada a un proyecto pidiéndole a tu asistente de código que implemente el prompt.",
+		"Explorar efectos de scroll o animaciones en la vista previa antes de decidir cuál adoptar.",
+		"Guardar en favoritos varios efectos para reutilizarlos en distintos proyectos."
+	],
+	"caveats": [
+		"Puedes ver las vistas previas sin cuenta, pero para copiar prompts debes iniciar sesión, y el plan gratis permite 5 copias al mes.",
+		"El resultado varía según la herramienta de IA y el contexto; prueba el movimiento en móvil, con teclado y con movimiento reducido antes de publicar.",
+		"La licencia permite adaptar los prompts en proyectos personales y de clientes, pero no redistribuirlos ni revenderlos."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Gratis con 5 copias al mes; el primer plan de pago, Basic, cuesta 9,99 USD al mes por 30 copias.",
+	"pricingUrl": "https://thepromptsfactory.com/#pricing",
+	"idealFor": "Developers que quieren efectos y animaciones concretos listos para pedírselos a una IA.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

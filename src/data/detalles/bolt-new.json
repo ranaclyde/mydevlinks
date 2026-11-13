@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Bolt es un constructor con IA que genera sitios, apps, prototipos y presentaciones a partir de una descripción en texto. También puedes partir de un diseño de Figma, de un repositorio de GitHub o de una plantilla de equipo. Con Bolt Cloud suma hosting, bases de datos, autenticación de usuarios y dominios propios.",
+		"Conviene para llegar rápido a un prototipo funcional o a un MVP sin configurar el entorno, y luego seguir iterando con el código en GitHub."
+	],
+	"uses": [
+		"Levantar un MVP con login y base de datos a partir de una descripción.",
+		"Convertir un diseño de Figma en una app web que se pueda editar y publicar.",
+		"Crear un prototipo para validar una idea con un cliente antes de escribir código a mano."
+	],
+	"caveats": [
+		"Se paga por tokens: los proyectos grandes o las iteraciones largas gastan la cuota del plan gratis con rapidez.",
+		"La integración con GitHub queda enlazada a la rama main y no puedes cambiar la rama del proyecto en Bolt.",
+		"Revisa el código generado antes de producción, sobre todo autenticación y acceso a datos."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Plan gratis con 300K tokens al día y 1M al mes; el plan Pro cuesta 25 USD al mes.",
+	"pricingUrl": "https://bolt.new/pricing",
+	"idealFor": "Prototipos y MVPs rápidos que luego se siguen en GitHub.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

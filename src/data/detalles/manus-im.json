@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Manus es un agente de IA generalista que ejecuta tareas por ti: crea presentaciones, sitios web, juegos, video, diseños, imágenes y música, y ofrece investigación amplia, integración con Slack y acceso a varios modelos. Tiene app web, apps móviles y de escritorio, además de una API.",
+		"Conviene cuando quieres delegar una tarea completa y revisar el resultado, en vez de ir guiando a una IA paso a paso."
+	],
+	"uses": [
+		"Pedir una investigación amplia sobre una librería o un mercado y recibir un informe.",
+		"Generar un sitio web o una presentación a partir de una descripción.",
+		"Conectar Manus a Slack o a tu código vía API para automatizar flujos de trabajo."
+	],
+	"caveats": [
+		"Funciona con créditos: cada tarea consume una cantidad que varía, y los créditos de suscripción no se acumulan al mes siguiente.",
+		"Los créditos diarios del plan gratis solo sirven con Manus 2.0 lite y tienen un tope mensual.",
+		"Es un agente generalista: revisa a mano el código y los datos que entrega."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Plan gratis con créditos diarios (tope de 1.500 al mes); el plan Pro parte en 20 USD al mes con 4.000 créditos.",
+	"pricingUrl": "https://manus.im/pricing",
+	"idealFor": "Delegar tareas completas de investigación, contenido y prototipos.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

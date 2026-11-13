@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Motionin.design es un catálogo de secciones web interactivas y animadas, con física y efectos de cursor, que se copian como prompt y se pegan en una herramienta de IA para programar. Cada sección tiene una demo, y el filtro permite ver las gratuitas y las de pago.",
+		"Conviene para dar a una landing un nivel de interacción que cuesta escribir a mano, sin construirlo desde cero."
+	],
+	"uses": [
+		"Añadir una sección hero interactiva a una landing generada con IA.",
+		"Revisar la demo de una sección antes de pegar su prompt en tu editor.",
+		"Reutilizar secciones animadas en trabajos para clientes."
+	],
+	"caveats": [
+		"Solo algunas secciones están marcadas como gratis; el resto requiere suscripción o pago único.",
+		"Necesitas una herramienta de IA para programar, y el resultado depende de ella: revisa el código y el rendimiento de las animaciones.",
+		"El plan mensual desbloquea solo 3 secciones al mes, y siguen disponibles mientras dure la suscripción."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Algunas secciones son gratis; el plan mensual cuesta 9 USD (3 secciones al mes) y hay un pago único cuyo precio sube a medida que crece la biblioteca.",
+	"pricingUrl": "https://motionin.design/pricing",
+	"idealFor": "Landings con animaciones llamativas hechas con un asistente de IA.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

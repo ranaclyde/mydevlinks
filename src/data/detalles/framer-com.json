@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Framer es un constructor de sitios web visual con un agente de IA que arma diseños, secciones y componentes sobre un lienzo editable a partir de una descripción. Incluye hosting, CMS, analítica, pruebas A/B, localización y un mercado de plantillas, componentes y plugins.",
+		"Conviene para landings y sitios de marketing o contenido que quieres diseñar y publicar en el mismo lugar, sin montar infraestructura. Agentes compatibles con MCP, como Claude o Cursor, también pueden editar el sitio."
+	],
+	"uses": [
+		"Lanzar una landing de producto y publicarla sin configurar hosting.",
+		"Montar un blog o una página de documentación con colecciones del CMS.",
+		"Partir de una plantilla del mercado y adaptarla con el agente de diseño."
+	],
+	"caveats": [
+		"El sitio se publica en el hosting de Framer, así que dependes de la plataforma para mantenerlo en línea.",
+		"El plan gratis usa un dominio de Framer; para un dominio propio necesitas un plan pago.",
+		"Las acciones del agente consumen créditos de IA, con una cuota mensual limitada."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Plan gratis con 500 créditos de IA al mes y 1 GB de ancho de banda; el plan Basic cuesta desde 10 USD al mes.",
+	"pricingUrl": "https://www.framer.com/pricing",
+	"idealFor": "Landings y sitios de contenido que se diseñan y publican en un solo lugar.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
