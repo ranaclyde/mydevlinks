@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"TanStack es una familia de librerías para aplicaciones web, con núcleos independientes del framework y adaptadores para React, Vue, Solid, Angular y otros. Incluye Query (datos asíncronos), Router y Start (rutas y framework full-stack), Table, Form, Virtual, Pacer y Hotkeys, entre otras.",
+		"Conviene cuando quieres piezas tipadas y sin estilos que se combinan a tu medida, en lugar de un framework cerrado."
+	],
+	"uses": [
+		"Manejar caché, reintentos y estados de carga de las llamadas a tu API con Query.",
+		"Construir una tabla de datos con orden, filtros y paginación a tu medida con Table.",
+		"Montar rutas tipadas en una aplicación React o Solid con Router, o ir a una app full-stack con Start."
+	],
+	"caveats": [
+		"Son piezas headless: no traen componentes visuales, así que el diseño es tuyo.",
+		"Varias librerías siguen en beta o alfa (DB, Pacer, Hotkeys, Store, Intent, Devtools, CLI), por lo que su API puede cambiar.",
+		"Cada librería tiene su propia documentación y adaptadores; revisa que exista el de tu framework antes de adoptarla."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Librerías de código abierto con licencia MIT; hay soporte empresarial de pago como servicio aparte.",
+	"pricingUrl": "https://tanstack.com/paid-support",
+	"idealFor": "Developers frontend que prefieren librerías headless y tipadas a un framework cerrado.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Web Check es una herramienta OSINT y de seguridad: escribes la URL de un sitio y en unos segundos te muestra información como IP y ubicación del servidor, registros DNS, certificado SSL, cabeceras HTTP, cookies, tecnologías usadas, puertos abiertos, WHOIS y configuración de correo.",
+		"Conviene cuando quieres entender cómo está montado un sitio, tuyo o ajeno, o hacer un diagnóstico rápido de seguridad y configuración."
+	],
+	"uses": [
+		"Revisar el certificado, HSTS y las cabeceras de seguridad de tu sitio antes de publicarlo.",
+		"Comprobar los registros DNS y la configuración de correo (SPF, DKIM, DMARC) de un dominio.",
+		"Descubrir qué tecnologías, servidores y servicios de terceros usa un sitio."
+	],
+	"caveats": [
+		"Es una herramienta de diagnóstico: los resultados orientan, pero no reemplazan una auditoría de seguridad.",
+		"Algunas comprobaciones, como el escaneo de puertos o el traceroute, generan tráfico hacia el servidor analizado; úsalas en sitios propios o con permiso.",
+		"Varias comprobaciones dependen de APIs externas con límites de uso; si la autoalojas, puedes añadir tus propias claves para ampliarlos."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Gratis y de código abierto con licencia MIT; se puede autoalojar con Docker o en plataformas como Netlify y Vercel.",
+	"idealFor": "Diagnosticar rápido la configuración y la seguridad de un sitio web.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
