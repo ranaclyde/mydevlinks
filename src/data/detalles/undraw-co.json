@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"unDraw es una biblioteca de ilustraciones SVG que se actualiza con frecuencia. Antes de descargar puedes cambiar el color principal para que combine con tu marca, y también hay versiones en PNG.",
+		"Conviene cuando necesitas imágenes limpias para una landing, un onboarding o una página de error sin contratar a un ilustrador."
+	],
+	"uses": [
+		"Ilustrar el estado vacío o la pantalla de error 404 de una aplicación.",
+		"Decorar la landing de un producto con imágenes en los colores de la marca.",
+		"Acompañar los pasos de un onboarding o de una presentación técnica."
+	],
+	"caveats": [
+		"La licencia propia permite uso comercial sin atribución, pero prohíbe redistribuir las ilustraciones en packs, crear integraciones con ellas o usarlas para armar un servicio que compita con unDraw.",
+		"No se pueden usar para entrenar, ajustar o probar sistemas de IA o aprendizaje automático sin permiso escrito.",
+		"Los logos incluidos son marcas de sus dueños: úsalos solo para representar a esa marca."
+	],
+	"pricing": "freemium",
+	"pricingNote": "La biblioteca es gratis; unDraw Plus cuesta 59 USD (o 79 USD con videos), con un pago único que da un año de acceso a ilustraciones animadas, gráficos a medida y estilos extra.",
+	"pricingUrl": "https://plus.undraw.co/",
+	"idealFor": "Equipos y proyectos personales que quieren ilustraciones SVG gratis en sus colores.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

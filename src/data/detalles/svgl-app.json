@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"SVGL es una biblioteca de logos de marcas y tecnologías en SVG, con 679 logos organizados por categorías como IA, bases de datos, diseño o software. Cada logo se copia o descarga desde la propia web, y varios tienen variantes para tema claro y oscuro.",
+		"Conviene cuando necesitas el logo oficial de una herramienta para un portafolio, una sección de tecnologías o una integración, sin buscarlo en el sitio de cada marca."
+	],
+	"uses": [
+		"Armar la sección de tecnologías de tu portafolio con logos nítidos y livianos.",
+		"Mostrar los logos de las integraciones compatibles en la página de un producto.",
+		"Traer logos desde tu propio código o herramientas usando su API abierta, o desde los paquetes para React, Vue y Svelte."
+	],
+	"caveats": [
+		"El repositorio (pheralb/svgl) es MIT, pero los logos son de sus marcas: revisa las reglas de uso de cada una antes de usarlos en algo comercial.",
+		"La API es gratuita y sin autenticación, pero tiene límite de peticiones: conviene cachear las respuestas, y no está pensada para construir un producto competidor.",
+		"Los paquetes para frameworks y las extensiones los mantiene la comunidad, así que revisa la licencia y el mantenimiento de cada uno."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Gratis y de código abierto; la API es abierta, sin cuenta.",
+	"idealFor": "Portafolios y landings que muestran logos de tecnologías.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

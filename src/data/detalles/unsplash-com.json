@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Unsplash es un banco de fotografías de creadores de todo el mundo que puedes buscar y descargar sin costo. Junto a las fotos gratuitas ofrece Unsplash+, una suscripción con contenido exclusivo.",
+		"Conviene cuando necesitas fotos para un sitio, un blog o una maqueta sin comprar licencias una por una."
+	],
+	"uses": [
+		"Poner imágenes de portada en las entradas de un blog técnico.",
+		"Rellenar una maqueta o un prototipo con fotos realistas.",
+		"Elegir un fondo para el hero de una landing."
+	],
+	"caveats": [
+		"La licencia gratuita permite uso comercial sin pedir permiso ni dar atribución, pero no puedes vender las fotos sin modificarlas de forma significativa ni usarlas para armar un servicio que compita con Unsplash.",
+		"Unsplash+ es una suscripción individual con contenido exclusivo; para varias personas hay planes de equipo aparte.",
+		"Si necesitas fotos con autorizaciones de modelos y propiedades, esas las ofrece Unsplash+."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Las fotos son gratis; Unsplash+ cuesta 12 USD al mes o 48 USD al año con el precio anual de lanzamiento.",
+	"pricingUrl": "https://unsplash.com/plus",
+	"idealFor": "Proyectos que necesitan fotografía de calidad sin pagar licencias.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
