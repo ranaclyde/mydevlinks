@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"MagicPattern es una caja de más de 30 herramientas para crear patrones, degradados, blobs, ondas SVG, fondos tipo doodle y paletas de color. Exportas como imagen (JPG, PNG, SVG, GIF) o como código SVG y CSS, según la herramienta.",
+		"Conviene para sacar rápido fondos y formas decorativas para landings, redes sociales o branding sin saber diseñar."
+	],
+	"uses": [
+		"Crear un patrón CSS para el fondo de una sección.",
+		"Generar una onda SVG para separar secciones de una landing.",
+		"Armar una paleta de colores de Tailwind a partir de un color base."
+	],
+	"caveats": [
+		"El uso comercial figura entre las ventajas de los planes pagos y la reventa de gráficos solo se permite en Pro; revisa los términos antes de usar un gráfico en un trabajo para clientes.",
+		"Basic cuesta 15 USD al mes o 120 USD al año y guarda hasta 100 gráficos; Pro cuesta 30 USD al mes o 240 USD al año, sin ese límite.",
+		"Las exportaciones disponibles dependen de la herramienta; confirma que la que necesitas entrega el formato que buscas."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Hay plan gratis; Basic desde 10 USD/mes y Pro desde 20 USD/mes pagando el año, además de pases de 3 o 6 meses.",
+	"pricingUrl": "https://www.magicpattern.design/pricing",
+	"idealFor": "Quien necesita muchos tipos de fondos y formas decorativas en un solo lugar.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

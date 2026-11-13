@@ -1,0 +1,21 @@
+{
+	"whatIs": [
+		"BG.IBELICK es una colección de fondos listos para pegar en una página. Cada tarjeta tiene una vista previa y un botón para copiar el código, disponible en Tailwind CSS y en CSS puro, pensado para fondos de página completa.",
+		"Conviene cuando quieres un fondo moderno (degradados, rejillas, destellos) sin diseñarlo ni instalar nada."
+	],
+	"uses": [
+		"Dar un fondo con degradado sutil a la landing de un proyecto con Tailwind.",
+		"Reemplazar el fondo plano de una página de documentación por uno con rejilla.",
+		"Tomar un snippet como punto de partida y ajustar sus colores a tu marca."
+	],
+	"caveats": [
+		"Son fragmentos fijos, no un generador con controles: para cambiar colores o tamaños hay que editar el código.",
+		"Están pensados como fondo de página completa; para usarlos en una sola sección tendrás que ajustar el posicionamiento."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Sin cuenta ni planes de pago; se copia directo desde la web.",
+	"idealFor": "Proyectos con Tailwind que quieren un fondo bonito en un par de minutos.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

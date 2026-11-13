@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Generador de fondos animados hechos solo con CSS. Eliges entre tres estilos (burbujas desenfocadas tipo bokeh, rectángulos que giran y se vuelven círculos, y cubos que crecen y se desvanecen) y ajustas cantidad, tamaño, velocidad y colores con una vista previa en vivo.",
+		"Al terminar copias el HTML y el CSS desde sus pestañas. Conviene cuando quieres un fondo animado sin JavaScript ni librerías."
+	],
+	"uses": [
+		"Poner un fondo de burbujas en movimiento en el hero de una landing.",
+		"Dar un fondo animado discreto a una página de login o de error 404.",
+		"Probar combinaciones de colores y velocidad antes de llevar el CSS a tu proyecto."
+	],
+	"caveats": [
+		"Las animaciones continuas con muchos elementos pueden gastar batería y recursos en móviles; baja la cantidad antes de copiar.",
+		"Si la animación va a estar siempre visible, agrega tú una regla prefers-reduced-motion para quienes piden menos movimiento.",
+		"Son tres estilos fijos; para algo distinto tendrás que editar el CSS a mano."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Uso gratuito; solo ofrece donaciones y patrocinio opcionales.",
+	"idealFor": "Quien necesita un fondo animado en CSS puro, rápido y sin dependencias.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

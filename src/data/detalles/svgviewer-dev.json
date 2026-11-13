@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"SVG Viewer es un editor web de SVG: pegas o subes el código, ves el resultado al lado, cambias colores, giras, volteas o redimensionas, y optimizas el archivo con un clic. También tiene una opción para editar o crear un SVG con IA y un directorio de SVGs que se filtra por licencia.",
+		"Además de descargar el SVG, exporta el mismo dibujo como JSX para React, JSX para React Native, PNG o data URI. Conviene cuando quieres llevar un icono o una ilustración a tu código sin instalar nada."
+	],
+	"uses": [
+		"Convertir un icono SVG en un componente JSX listo para pegar en un proyecto React o React Native.",
+		"Incrustar un SVG pequeño como data URI en una hoja de estilos o en un atributo src.",
+		"Reducir el peso de un SVG exportado desde una herramienta de diseño y limpiar su código antes de subirlo."
+	],
+	"caveats": [
+		"La función de edición con IA genera resultados que conviene revisar a mano antes de usarlos.",
+		"El directorio mezcla SVGs con licencias distintas (MIT, CC0, GPL, entre otras): filtra por licencia y respeta la del archivo que elijas.",
+		"Para optimización por lotes o con reglas muy finas, una herramienta de línea de comandos te da más control."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Gratis y sin cuenta; el sitio muestra anuncios.",
+	"idealFor": "Developers que necesitan pasar un SVG a JSX, PNG o data URI en segundos.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

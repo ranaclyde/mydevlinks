@@ -1,0 +1,21 @@
+{
+	"whatIs": [
+		"Neumorphism.io genera el CSS de un elemento con estilo neumórfico (o soft UI). Eliges un color, ajustas tamaño, radio, distancia, intensidad y desenfoque de la sombra, y escoges entre cuatro formas: plana, cóncava, convexa y presionada.",
+		"Copias con un botón las declaraciones border-radius, background y box-shadow. Conviene para probar rápido este estilo sobre botones, tarjetas o interruptores."
+	],
+	"uses": [
+		"Crear un botón con efecto de relieve suave.",
+		"Diseñar una tarjeta o widget con apariencia de volumen para un panel.",
+		"Generar el estado presionado de un interruptor con la forma pressed."
+	],
+	"caveats": [
+		"El neumorfismo usa tonos muy parecidos entre fondo y elemento, lo que suele dar poco contraste; revisa que bordes y textos se distingan.",
+		"El código es para un solo elemento y color; para un tema completo debes repetirlo y mantener coherencia."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Gratis y de código abierto, sin planes de pago.",
+	"idealFor": "Quien quiere ver y copiar rápido una sombra neumórfica ajustable.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
