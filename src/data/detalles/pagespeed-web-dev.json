@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"PageSpeed Insights es la herramienta de Google para medir el rendimiento de una página: pegas una URL y obtienes un informe con puntajes y recomendaciones de mejora, para móvil y escritorio.",
+		"El informe combina dos fuentes. Los datos de campo vienen del informe de experiencia de usuario de Chrome (CrUX) y reflejan a usuarios reales de los últimos 28 días. Los datos de laboratorio vienen de Lighthouse, que simula una carga en un dispositivo y una red concretos y sirve para depurar."
+	],
+	"uses": [
+		"Revisar si una página aprueba las Core Web Vitals con datos de usuarios reales.",
+		"Encontrar qué recursos o scripts frenan la carga con las auditorías de mejora.",
+		"Comparar el rendimiento antes y después de un cambio, como optimizar imágenes."
+	],
+	"caveats": [
+		"Los datos de campo y de laboratorio pueden diferir, porque uno mide usuarios variados y el otro una sola simulación.",
+		"Si una página tiene poco tráfico, puede no haber datos de campo y el informe usa los de todo el origen o no muestra ninguno.",
+		"Los puntajes de laboratorio cambian de una ejecución a otra, así que conviene repetir la prueba antes de sacar conclusiones."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Se usa sin cuenta ni pago.",
+	"idealFor": "Medir y mejorar la velocidad de una página con datos de Google.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

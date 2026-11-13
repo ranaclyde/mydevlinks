@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"AnyAPI reúne APIs REST listas para usar: validación de correos, teléfonos, IBAN y números de IVA, tipos de cambio, geolocalización por IP, generación de facturas en PDF, capturas de sitios web, scraping y análisis de sentimiento, entre otras. Todas se usan con la misma clave de API.",
+		"Conviene cuando necesitas una de estas funciones puntuales y prefieres consumirla por HTTP en vez de montarla o integrar un proveedor distinto para cada una."
+	],
+	"uses": [
+		"Validar el correo o el teléfono de un formulario de registro antes de guardarlo.",
+		"Mostrar precios en la divisa del visitante usando los tipos de cambio.",
+		"Generar la imagen OpenGraph de cada artículo de un blog o una factura en PDF desde tu backend."
+	],
+	"caveats": [
+		"El plan gratis es muy acotado: 300 solicitudes al mes y 1 por segundo, así que sirve para probar o para proyectos pequeños.",
+		"Dependes de un tercero para funciones que pueden estar en el camino crítico de tu app; conviene prever qué pasa si no responde."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Plan Hobby gratis con 300 solicitudes al mes; los de pago parten en US$9,99 al mes con facturación anual (50.000 solicitudes).",
+	"pricingUrl": "https://anyapi.io/pricing",
+	"idealFor": "Developers que necesitan varias APIs utilitarias con una sola cuenta.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

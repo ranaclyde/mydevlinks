@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Cleanup.pictures es una app web que usa inpainting con IA para borrar de una foto objetos, personas, texto, logos, marcas de agua o defectos. En lugar de clonar una zona vecina, reconstruye lo que habría detrás del elemento eliminado.",
+		"Conviene cuando necesitas retocar rápido una imagen sin abrir un editor completo. También ofrece una API de inpainting con cobro por uso, útil si quieres automatizar el proceso."
+	],
+	"uses": [
+		"Quitar un cable, un cartel o una persona del fondo de una foto de producto o de un mockup.",
+		"Borrar texto o una marca de agua de una captura antes de usarla en una presentación.",
+		"Integrar la API de inpainting en tu propia herramienta para limpiar imágenes subidas por usuarios."
+	],
+	"caveats": [
+		"En el plan gratis la exportación queda limitada a 720 px; la resolución sin límite requiere Pro.",
+		"Los resultados dependen de la IA: en fondos complejos puede que haya que repetir o retocar la zona.",
+		"La API se cobra por uso y su documentación está en Clipdrop, el servicio al que pertenece; revisa allí las tarifas antes de integrarla."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Gratis con imágenes ilimitadas exportadas a 720 px; Pro cuesta US$5 al mes o US$36 al año.",
+	"pricingUrl": "https://cleanup.pictures/#pricing",
+	"idealFor": "Retoques rápidos de imágenes sin instalar un editor.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
