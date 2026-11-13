@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Curated es una biblioteca de casi 3.000 sitios web reales seleccionados a mano. Se explora por industria, con búsqueda y filtros por tipo de medio, fecha de alta y orden, y también ofrece secciones sueltas de esos sitios y un servidor MCP para usarlos con asistentes de código.",
+		"Conviene cuando buscas referencias de landings o sitios de un sector concreto, o quieres alimentar a tu agente de código con secciones reales como punto de partida."
+	],
+	"uses": [
+		"Ver cómo resuelven la landing otras herramientas de desarrollo antes de diseñar la tuya.",
+		"Filtrar por sitios animados o por los añadidos en los últimos 30 días para detectar tendencias recientes.",
+		"Traer secciones de referencia a Claude Code, Cursor o Codex mediante el servidor MCP."
+	],
+	"caveats": [
+		"Los filtros por estilos, visuales y atributos, y las búsquedas guardadas, son parte del plan Pro.",
+		"En el plan gratis solo se ve una muestra de la biblioteca de secciones y de los briefs de diseño.",
+		"Enviar un sitio gratis entra en una cola de revisión que puede tardar semanas."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Pro cuesta 9 USD al mes y desbloquea la biblioteca completa, filtros avanzados y el MCP.",
+	"pricingUrl": "https://curated.design/pricing",
+	"idealFor": "Diseñadores y developers que buscan sitios por industria o estilo.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

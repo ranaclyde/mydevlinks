@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"CTA.gallery es una galería de llamadas a la acción de sitios reales. Se filtra por industria y modo, y por ocho categorías: botón, compra, descarga, formulario, modal o pop-up, navegación, newsletter y precios o suscripción.",
+		"Conviene cuando ya tienes la página armada y necesitas decidir cómo diseñar el elemento que convierte, sin empezar de cero."
+	],
+	"uses": [
+		"Comparar cómo presentan su sección de precios varios productos antes de diseñar la tuya.",
+		"Elegir el estilo de un formulario de suscripción o newsletter para una landing.",
+		"Revisar ejemplos de modales y pop-ups para que el tuyo no resulte intrusivo."
+	],
+	"caveats": [
+		"Muestra el resultado visual de cada CTA, no su código ni los datos de conversión.",
+		"Los ejemplos cargan por tandas con Load More, así que recorrer una categoría completa lleva varios clics.",
+		"Incluye enlaces patrocinados a plantillas junto a los ejemplos."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Se explora sin costo; el sitio ofrece publicidad y envío de ejemplos.",
+	"idealFor": "Quien diseña landings y quiere inspiración centrada en conversión.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"60fps reúne animaciones e interacciones de apps iOS y web, mostradas como clips cortos para ver cómo se mueve cada detalle. El catálogo ronda las 2.100 piezas, además de apps, storyboards, snippets y un glosario.",
+		"Las piezas se filtran por gestos (arrastrar, deslizar), patrones (onboarding, carga), efectos (desenfoque, física de resorte) y elementos (botones, bottom sheets, pestañas), con más de cien filtros en total."
+	],
+	"uses": [
+		"Ver cómo se anima un bottom sheet o una barra de pestañas antes de implementarlos en tu app.",
+		"Elegir un patrón de carga o de onboarding con movimiento y llevarlo a la reunión de diseño.",
+		"Explicar a tu equipo qué es un efecto de resorte o un morph con un ejemplo en movimiento."
+	],
+	"caveats": [
+		"Es solo referencia visual: no entrega el código de las animaciones.",
+		"Varios filtros y colecciones completas requieren el plan Pro.",
+		"El foco está en apps iOS y web, con menos ejemplos de otras plataformas."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Se puede explorar gratis; Pro cuesta 15 USD al mes o 150 USD al año por usuario.",
+	"pricingUrl": "https://60fps.design/pro",
+	"idealFor": "Inspirarse en animación e interacción de apps.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"404s es una galería curada de páginas de error 404 creativas de sitios reales. Cada tarjeta muestra una captura y lleva a una ficha con el enlace a la página en vivo.",
+		"Se explora con las pestañas Latest y Top 4, un botón para barajar, una búsqueda con filtro y un archivo mensual con las cuatro mejores de cada mes. Es útil cuando quieres que un error deje de ser una pantalla vacía."
+	],
+	"uses": [
+		"Buscar ideas para diseñar la página 404 de tu proyecto con ilustración, humor o animación.",
+		"Mostrar al cliente ejemplos de errores bien resueltos para justificar tiempo de diseño en esa pantalla.",
+		"Ver cómo otros sitios ofrecen una salida útil (búsqueda, enlaces o botón de volver) desde un error."
+	],
+	"caveats": [
+		"El filtrado se limita a una búsqueda, el orden, el azar y el archivo mensual; no hay categorías temáticas.",
+		"Muestra el resultado visual, no el código, así que la implementación la resuelves tú.",
+		"Algunas 404 enlazadas pueden cambiar o desaparecer si el sitio original se rediseña."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Navegación abierta y sin planes de pago.",
+	"idealFor": "Diseñar páginas de error con personalidad.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}
