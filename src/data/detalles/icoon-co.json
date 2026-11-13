@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Icoon es una tienda de recursos gráficos generados con IA: iconos 3D, ilustraciones, mockups e imágenes para webs, apps, landings e impresión. Los archivos vienen en SVG, PNG y PSD editable, y hay un generador de mockups y una sección de recursos gratuitos.",
+		"Conviene cuando necesitas ilustraciones o iconos 3D con estilo llamativo para una landing o un producto, sin contratar a un ilustrador."
+	],
+	"uses": [
+		"Ilustrar el hero de una landing con un icono 3D en PNG.",
+		"Usar ilustraciones SVG en una pantalla de onboarding o en estados vacíos de una app.",
+		"Ajustar un recurso en el PSD editable para adaptarlo a la marca de un cliente."
+	],
+	"caveats": [
+		"No puedes revender ni distribuir los recursos por separado, ni venderlos individualmente sin modificarlos de forma sustancial.",
+		"Las compras no se pueden devolver ni reembolsar, así que revisa bien el catálogo antes de pagar.",
+		"No es una biblioteca de iconos de interfaz con paquete npm; son recursos para descargar y colocar a mano."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Hay recursos gratuitos; el acceso a todo el catálogo cuesta 29 USD en pago único (precio de oferta frente a 59 USD), con licencia comercial.",
+	"pricingUrl": "https://www.icoon.co/pricing",
+	"idealFor": "Landings y productos que necesitan ilustraciones e iconos 3D listos para usar.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

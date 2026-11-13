@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"3D icons es una colección de más de 4.000 iconos y personajes en estilo 3D, de Iconshock, con vista frontal y en perspectiva, cinco paletas de color y un archivo de Figma para cambiar los colores. Se organiza en iconos generales, de redes sociales, personajes e isométricos.",
+		"Conviene cuando quieres darle un toque más ilustrado a una landing, un onboarding o una presentación sin modelar nada en 3D."
+	],
+	"uses": [
+		"Ilustrar las secciones de beneficios de una landing con iconos 3D en lugar de iconos planos.",
+		"Poner los logos de redes sociales en 3D en el pie de un sitio o en una tarjeta de contacto.",
+		"Usar un personaje 3D en una pantalla vacía o de bienvenida de tu app."
+	],
+	"caveats": [
+		"Gratis solo se descargan en PNG de 72 y 128 px; los tamaños grandes, hasta 4.000 px, son premium.",
+		"Son imágenes renderizadas y no modelos 3D, así que solo tienes las vistas frontal y en perspectiva que ofrece cada icono.",
+		"Hay varios paquetes de pago y no todos se cobran igual (algunos son anuales); revisa qué incluye cada uno antes de comprar."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Descarga gratis en 72 y 128 px; el pack completo en 4K cuesta 19 USD, con licencia comercial y sin atribución.",
+	"pricingUrl": "https://3dicons.com/pricing",
+	"idealFor": "Landings y presentaciones que quieren iconos 3D sin diseñarlos.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"AnimateIcons es una colección de iconos animados; esta sección reúne versiones animadas de 999 iconos de Lucide, organizadas por categorías como flechas, dispositivos o multimedia. Cada icono se anima al pasar el cursor o desde tu código con startAnimation(), y su tamaño, color y velocidad son configurables.",
+		"Conviene cuando ya usas Lucide en tu interfaz y quieres sumar microinteracciones sin dibujar animaciones propias. Hay paquetes para React, Vue 3, Angular y JavaScript puro."
+	],
+	"uses": [
+		"Dar vida a los botones de una barra lateral con iconos que reaccionan al hover.",
+		"En React, copiar un solo icono a tu proyecto con npx animateicons add y quedarte con el código para modificarlo.",
+		"Agregar animación a los iconos de una app React con el paquete @animateicons/react, sin reemplazar el resto de tu interfaz."
+	],
+	"caveats": [
+		"Cada paquete trae incluida la librería motion, lo que suma peso a tu bundle.",
+		"Los iconos animados son un conjunto aparte de Lucide: confirma que el que necesitas existe antes de migrar los que ya usas.",
+		"Cada framework tiene su propio paquete (react, vue, angular, vanilla), con instalación distinta."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Código abierto con licencia MIT; hay una opción de patrocinio voluntario.",
+	"idealFor": "Interfaces con Lucide que quieren iconos animados listos.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
