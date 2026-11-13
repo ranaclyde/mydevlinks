@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"MUI es una familia de librerías de componentes para React. Su pieza central es Material UI, que implementa Material Design de Google con botones, formularios, tablas, diálogos y más. Junto a ella están Base UI, con componentes sin estilos y accesibles, y MUI System, con utilidades de CSS para maquetar. MUI X suma componentes avanzados, como tablas de datos y selectores de fecha.",
+		"Conviene cuando quieres una librería madura y muy extendida en React, con documentación amplia y una comunidad grande, y no te importa partir de la estética Material."
+	],
+	"uses": [
+		"Montar un panel de administración con tablas, formularios y navegación lateral ya resueltos.",
+		"Personalizar el tema de toda la aplicación (colores, tipografía, bordes) desde un solo lugar.",
+		"Partir de una plantilla de aplicación para arrancar un producto sin diseñar cada pantalla."
+	],
+	"caveats": [
+		"Es una librería de React: no sirve directamente en otros frameworks.",
+		"Los componentes avanzados de MUI X (Pro y Premium) tienen licencia de pago por desarrollador; los de Community son gratuitos.",
+		"Salirte del aspecto Material por defecto exige trabajo de personalización del tema."
+	],
+	"pricing": "freemium",
+	"pricingNote": "El núcleo es gratuito con licencia MIT; los componentes de MUI X cuestan 299 USD al año por desarrollador en Pro y 599 USD en Premium.",
+	"pricingUrl": "https://mui.com/pricing/",
+	"idealFor": "Aplicaciones React que necesitan un conjunto completo de componentes probado.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

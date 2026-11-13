@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Originkit es una biblioteca de componentes animados para sitios web, organizada por categorías como galerías de imágenes, elementos interactivos, animaciones y fondos. Cada pieza se copia a tu proyecto, se usa en Framer o se trae mediante su servidor MCP.",
+		"Conviene cuando quieres darle un toque visual llamativo a una landing o un portafolio sin construir cada efecto desde cero."
+	],
+	"uses": [
+		"Poner un fondo animado en la portada de una landing.",
+		"Armar una galería de imágenes interactiva para un portafolio.",
+		"Buscar rápido un efecto visual puntual y copiarlo a tu código."
+	],
+	"caveats": [
+		"El plan gratuito limita cuántos componentes puedes copiar por día y da acceso solo a parte de la biblioteca.",
+		"El plan Pro también tiene tope diario de copias; solo el plan Ultimate no lo tiene (sujeto a uso razonable)."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Hay plan gratis con límites diarios; Pro cuesta 79 USD al año y Ultimate 99 USD al año.",
+	"pricingUrl": "https://www.originkit.dev/pricing",
+	"idealFor": "Landings y portafolios que quieren efectos visuales listos para copiar.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}
