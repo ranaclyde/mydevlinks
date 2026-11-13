@@ -105,6 +105,7 @@ Cada id quitado figura con su motivo en `REMOVED`, en `tests/data.test.ts`.
 - Redux en español: https://es.redux.js.org/.
 - Visual Studio Code: https://code.visualstudio.com/. Editor general.
 - Clone Wars: https://github.com/gorvgoyl/clone-wars. Viejo.
+- Blobs! (CSS-Tricks), React en español y Cómo aprender Vue.js: https://css-tricks.com/blobs/, https://es.react.dev/ y https://escuelavue.es/software/como-aprender-vue/. Quitados el 13 de noviembre de 2026; en su lugar se agregó Refactoring.Guru (https://refactoring.guru/es).
 
 **Fuera de frontend:**
 

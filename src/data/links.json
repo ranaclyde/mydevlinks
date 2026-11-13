@@ -125,18 +125,6 @@
 		"logo": "/logos/terraink-app.svg"
 	},
 	{
-		"id": "css-tricks-com-blobs",
-		"name": "Blobs! (CSS-Tricks)",
-		"url": "https://css-tricks.com/blobs/",
-		"description": "Recopilación de enlaces sobre formas blob en la web.",
-		"category": "Aprendizaje y documentación",
-		"tech": [],
-		"status": "activo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/css-tricks-com-blobs.svg"
-	},
-	{
 		"id": "toolbox-signalsupply-co",
 		"name": "Toolbox by SignalSupply",
 		"url": "https://toolbox.signalsupply.co/",
@@ -1227,20 +1215,6 @@
 		"logo": "/logos/transform-tools.png"
 	},
 	{
-		"id": "es-reactjs-org",
-		"name": "React en español",
-		"url": "https://es.react.dev/",
-		"description": "Documentación oficial de React traducida al español.",
-		"category": "Aprendizaje y documentación",
-		"tech": [
-			"React"
-		],
-		"status": "activo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/es-reactjs-org.png"
-	},
-	{
 		"id": "mui-com",
 		"name": "MUI",
 		"url": "https://mui.com/",
@@ -1338,21 +1312,6 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/github-com-hapijs-joi.svg"
-	},
-	{
-		"id": "escuelavue-es-como-aprender-vue",
-		"name": "Cómo aprender Vue.js",
-		"url": "https://escuelavue.es/software/como-aprender-vue/",
-		"description": "Orden para estudiar Vue 3, Composition API, Pinia, Router, Vite y Nuxt.",
-		"category": "Aprendizaje y documentación",
-		"tech": [
-			"Vue",
-			"Nuxt"
-		],
-		"status": "activo",
-		"verified": true,
-		"private": false,
-		"logo": "/logos/escuelavue-es-como-aprender-vue.svg"
 	},
 	{
 		"id": "github-com-vuejs-awesome-vue",
@@ -2425,6 +2384,23 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/patterns-dev.ico"
+	},
+	{
+		"id": "refactoring-guru-es",
+		"name": "Refactoring.Guru",
+		"url": "https://refactoring.guru/es",
+		"description": "Patrones de diseño y refactorización explicados con diagramas y ejemplos de código.",
+		"category": "Aprendizaje y documentación",
+		"tech": [
+			"Go",
+			"PHP",
+			"Python",
+			"TypeScript"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/refactoring-guru-es.png"
 	},
 	{
 		"id": "toolfolio-com",
