@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Atropos es una biblioteca de código abierto para crear efectos parallax 3D al pasar el cursor sobre un elemento, con capas que se mueven a distinta profundidad. Funciona con JavaScript puro, tiene versión para React y un web component para usarlo en Angular, Vue, Svelte, Solid y otros. Pesa unos 2 KB comprimida y no tiene dependencias.",
+		"Conviene para tarjetas, portadas o galerías que quieres que se sientan con profundidad sin añadir una librería 3D completa."
+	],
+	"uses": [
+		"Darle profundidad a tarjetas de producto o de portafolio al pasar el cursor.",
+		"Armar una portada con capas de ilustración que se desplazan con el movimiento.",
+		"Hacer que la misma interacción funcione también en pantallas táctiles."
+	],
+	"caveats": [
+		"Requiere una estructura HTML fija de contenedores (atropos, atropos-scale, atropos-rotate y atropos-inner) y cargar su hoja de estilos.",
+		"El contenedor necesita un ancho y un alto definidos en CSS, y la profundidad de cada capa se ajusta a mano con el atributo data-atropos-offset.",
+		"En táctil puedes usar rotateTouch con scroll-x o scroll-y para que el efecto no bloquee el desplazamiento de la página."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Código abierto con licencia MIT.",
+	"idealFor": "Interfaces con tarjetas o imágenes que ganan con un efecto de profundidad ligero.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"MOVO es un editor de motion en el navegador basado en plantillas: cargas tus imágenes o videos, eliges una de sus más de 100 composiciones animadas y ajustas tarjetas, distribución, cámara, sombras y tiempos antes de exportar el video en MP4. Está en beta.",
+		"Conviene cuando necesitas una animación vistosa para mostrar capturas o piezas visuales y no quieres abrir After Effects ni aprender un programa de motion."
+	],
+	"uses": [
+		"Armar un carrusel animado con capturas de tu app para anunciar un lanzamiento en redes.",
+		"Mostrar varias piezas de un portafolio en una composición en movimiento para la portada de tu sitio.",
+		"Probar distintas plantillas y formatos, como 4:5 o 16:9, para el mismo contenido antes de exportarlo."
+	],
+	"caveats": [
+		"Está en beta, así que pueden cambiar las plantillas, la interfaz y las condiciones de uso.",
+		"Para exportar hay que crear una cuenta, y por ahora no se puede quitar la marca de agua; el plan Pro anunciado todavía no tiene precio.",
+		"Todo se arma con sus plantillas: sirve para composiciones rápidas, no para animaciones hechas a medida."
+	],
+	"pricing": "freemium",
+	"pricingNote": "El editor se usa en el navegador; hay un plan Pro anunciado, todavía sin precio publicado.",
+	"pricingUrl": "https://movo.video/pricing",
+	"idealFor": "Developers y diseñadores que quieren animar capturas o visuales en minutos.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
