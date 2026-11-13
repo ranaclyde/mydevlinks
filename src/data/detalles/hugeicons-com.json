@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Hugeicons es una biblioteca de más de 60.000 iconos en varios estilos (stroke, twotone, duotone, solid y bulk, entre otros). Se consume como SVG, paquete npm, fuente de iconos o componentes para React, Vue, Angular, Svelte, Flutter y más, y hay plugins para Figma y Framer.",
+		"La parte gratuita incluye más de 6.000 iconos en estilo Stroke Rounded, con licencia MIT; el resto del catálogo es Pro. Conviene si quieres un set amplio y coherente para una interfaz y necesitas integrarlo en tu framework sin complicaciones."
+	],
+	"uses": [
+		"Poner iconos de navegación y acciones en un dashboard de React con el paquete npm.",
+		"Mantener el mismo estilo de iconos entre el diseño en Figma y el código de la aplicación.",
+		"Cambiar de estilo (por ejemplo de stroke a solid) para marcar estados activos sin mezclar librerías."
+	],
+	"caveats": [
+		"Solo el estilo Stroke Rounded es gratis; los otros estilos y el catálogo completo requieren Pro.",
+		"Los iconos Pro no se pueden redistribuir como archivos fuente ni incluir en proyectos abiertos o descargables donde otros puedan reutilizarlos.",
+		"Pro se licencia por persona (un asiento por cada developer o diseñador que use los iconos) e incluye un tope mensual de visitas y de ancho de banda, con cargos extra si lo superas."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Gratis: más de 6.000 iconos Stroke Rounded con licencia MIT, uso comercial incluido. Pro: 99 USD al año, o 1.197 USD en pago único con Pro Plus.",
+	"pricingUrl": "https://hugeicons.com/pricing",
+	"idealFor": "Equipos que quieren un set de iconos amplio y consistente, con un nivel gratis para empezar.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
