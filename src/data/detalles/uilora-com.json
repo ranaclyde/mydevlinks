@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Uilora es una biblioteca de componentes animados para Next.js y React Native. No se instala como dependencia: con el comando npx uilora@latest add copias el código del componente a tu proyecto y lo editas a gusto. Se apoya en Tailwind, Framer Motion y Radix UI en la web, y en Reanimated en móvil; el plan gratis ya trae más de 490 componentes.",
+		"Conviene cuando quieres una interfaz con mucho movimiento y compartir el mismo estilo entre tu web y tu app móvil."
+	],
+	"uses": [
+		"Armar una landing con fondos animados y efectos de hover llamativos.",
+		"Reutilizar el mismo estilo de botones, modales y pestañas en una web Next.js y en una app Expo.",
+		"Pedir componentes a un asistente de IA a través de su servidor MCP."
+	],
+	"caveats": [
+		"Los componentes premium y las plantillas se desbloquean solo con los planes Pro o Ultimate.",
+		"La licencia comercial completa viene con el plan pago; el plan gratis queda para proyectos personales y de código abierto.",
+		"Para ver el código de los componentes gratis necesitas iniciar sesión, y el plan gratis limita el servidor MCP a 50 consultas al mes."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Plan gratis con más de 490 componentes; Pro cuesta 99 USD y Ultimate 179 USD, ambos en pago único y de por vida.",
+	"pricingUrl": "https://www.uilora.com/pricing",
+	"idealFor": "Equipos con Next.js o React Native que buscan componentes animados listos.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

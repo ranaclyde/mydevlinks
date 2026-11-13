@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Esta página de DevDojo muestra unos 40 diseños de botones hechos con Tailwind, ordenados en cuatro secciones: efectos al pasar el cursor, simples, oscuros y simples en modo oscuro. Cada botón tiene un enlace para copiar su HTML.",
+		"Conviene cuando necesitas un botón con buen aspecto ya resuelto y no quieres instalar una librería completa."
+	],
+	"uses": [
+		"Copiar un botón con efecto hover para el llamado a la acción de una landing.",
+		"Elegir una variante oscura para un sitio con modo oscuro.",
+		"Probar un botón en un CodePen antes de llevarlo a tu proyecto."
+	],
+	"caveats": [
+		"Son solo botones: para otros componentes tendrás que buscar en otro lado.",
+		"El código se pega en tu proyecto y está pensado para Tailwind con modo JIT activado.",
+		"Cada botón es HTML estático; si quieres estados o comportamiento tendrás que agregarlos tú."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Los botones se copian sin costo; DevDojo promociona aparte Tails, un producto distinto.",
+	"idealFor": "Quien necesita un botón de Tailwind listo para copiar y pegar.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}
