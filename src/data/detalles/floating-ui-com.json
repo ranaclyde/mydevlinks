@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Floating UI es una librería para anclar elementos flotantes, como tooltips, popovers y menús desplegables, a otro elemento y mantenerlos visibles. Evita colisiones con los bordes de la pantalla con funciones como flip, shift y size, y es la sucesora de Popper 2.",
+		"Tiene versiones para la web, React, React Native y Vue, y cada módulo se puede importar por separado para que el peso final sea mínimo. Conviene cuando construyes tu propio sistema de componentes y necesitas un posicionamiento fiable."
+	],
+	"uses": [
+		"Colocar un tooltip que cambie de lado cuando no cabe junto al borde de la ventana.",
+		"Construir un menú desplegable o selector propio que se ajuste al espacio disponible.",
+		"Anclar un popover a las coordenadas del cursor mediante un elemento virtual."
+	],
+	"caveats": [
+		"Solo calcula posiciones: el estilo, la animación y la accesibilidad del componente los resuelves tú, salvo que uses sus hooks de interacción para React.",
+		"Tiene bastante configuración; si solo necesitas un tooltip simple, quizá una librería de componentes ya hecha te ahorre trabajo.",
+		"Hay que elegir el paquete adecuado para tu plataforma, como el de DOM, React o Vue."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Código abierto con licencia MIT; se financia con patrocinios.",
+	"idealFor": "Quienes construyen sus propios tooltips, popovers y menús flotantes.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

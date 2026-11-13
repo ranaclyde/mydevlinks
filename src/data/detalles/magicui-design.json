@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Magic UI es una librería de más de 150 componentes y efectos animados, hecha con React, TypeScript, Tailwind CSS y Motion, que complementa a shadcn/ui. Reúne piezas como textos animados, fondos, marquesinas y botones con brillo, pensadas para dar vida a landing pages.",
+		"Conviene cuando quieres que una página de producto se vea cuidada y con movimiento sin programar cada animación."
+	],
+	"uses": [
+		"Poner un fondo animado y un título con efecto en el hero de una landing.",
+		"Mostrar logos de clientes en una marquesina que se desplaza sola.",
+		"Sumar botones y tarjetas con efectos de brillo a una página de lanzamiento."
+	],
+	"caveats": [
+		"Está pensada para proyectos React con Tailwind; no sirve tal cual en otros frameworks.",
+		"Muchos efectos usan Motion, que se suma a las dependencias de tu proyecto.",
+		"Las plantillas y bloques completos están en Magic UI Pro, que es de pago."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Los componentes son gratuitos y de código abierto (MIT); Magic UI Pro vende bloques y plantillas por 199 USD en un pago único.",
+	"pricingUrl": "https://pro.magicui.design/",
+	"idealFor": "Equipos con React y Tailwind que quieren landings animadas sin tanto trabajo.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

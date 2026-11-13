@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Headless UI es una librería de componentes interactivos sin estilos, como menús, diálogos, pestañas, listas desplegables o interruptores, que resuelve la accesibilidad y el manejo del teclado y deja el aspecto en tus manos. Tiene versión para React y para Vue, y está pensada para combinarse con Tailwind CSS.",
+		"Conviene cuando quieres que tu interfaz tenga un diseño propio pero no quieres reescribir la lógica de un combobox o un modal accesible."
+	],
+	"uses": [
+		"Construir un menú desplegable de usuario que se navega con teclado y lector de pantalla.",
+		"Crear un selector con búsqueda (combobox) para elegir un país o una etiqueta en un formulario.",
+		"Mostrar un diálogo de confirmación con foco atrapado y cierre con Escape."
+	],
+	"caveats": [
+		"No trae estilos: cada componente hay que vestirlo con tus propias clases.",
+		"Solo cubre React y Vue, y la versión para Vue sigue en la rama 1.x, con menos componentes que la de React.",
+		"El catálogo es acotado (16 componentes), así que piezas como tablas o calendarios las armas tú."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Código abierto con licencia MIT.",
+	"idealFor": "Equipos con diseño propio que necesitan componentes accesibles ya resueltos.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}
