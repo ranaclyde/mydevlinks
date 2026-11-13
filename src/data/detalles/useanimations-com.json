@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"useAnimations es una colección de 300 iconos de línea animados, cada uno con su interacción: se reproducen al pasar el cursor, al hacer clic o en bucle. Se usan como componente de React con el paquete react-useanimations, se agregan con el CLI de shadcn/ui o se descargan como JSON de Lottie y SVG.",
+		"Conviene cuando quieres micro-interacciones en botones y menús sin dibujar ni animar los iconos tú."
+	],
+	"uses": [
+		"Animar el corazón de un botón de «me gusta» o el icono de menú que pasa a cerrar al hacer clic.",
+		"Mostrar un icono de carga en loop dentro de un botón mientras se envía un formulario.",
+		"Llevar los mismos iconos a una app móvil usando los archivos Lottie."
+	],
+	"caveats": [
+		"El paquete react-useanimations es solo para React; en otros entornos se usan los JSON de Lottie o los SVG estáticos.",
+		"Los archivos Lottie necesitan un reproductor aparte, como lottie-web o lottie-android; el paquete de React, en cambio, trae uno propio de 8 kB.",
+		"Son iconos de línea con un estilo propio: comprueba que combinen con el resto de los iconos de tu interfaz."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Gratis con licencia MIT, uso comercial permitido y atribución opcional.",
+	"idealFor": "Interfaces que quieren iconos con micro-animaciones listos para usar.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

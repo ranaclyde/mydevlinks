@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Thinking Orbs es un indicador de carga en forma de esfera animada para los estados de «pensando» de una interfaz con IA. Trae nueve estados, como working, searching o composing, y reemplaza al spinner típico. Forma parte de Libraries.dev, un conjunto de librerías de efectos para interfaces con IA.",
+		"Conviene cuando construyes un chat o un asistente y quieres que la espera se vea cuidada sin diseñar la animación tú."
+	],
+	"uses": [
+		"Mostrar un estado «pensando» mientras un chat espera la respuesta del modelo.",
+		"Cambiar el estado de la esfera según la fase, por ejemplo de searching a composing.",
+		"Reemplazar el spinner de una pantalla de carga en una app React Native."
+	],
+	"caveats": [
+		"La versión web es un paquete de React (npm install thinking-orbs) y requiere React 18 o superior.",
+		"La versión para React Native necesita Skia y Reanimated, y por ahora se usa desde el repositorio porque no está publicada en npm.",
+		"El Studio para personalizarlo a fondo y los presets y variantes Pro requieren el plan Pro; la skill básica para agentes de código es gratis."
+	],
+	"pricing": "freemium",
+	"pricingNote": "La librería es gratis con licencia MIT; el plan Pro, desde 9 USD al mes, suma el Studio y presets y variantes extra.",
+	"pricingUrl": "https://libraries.dev/pro.html",
+	"idealFor": "Apps con IA en React que necesitan un indicador de espera con personalidad.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Es una página HTML de ejemplo del repositorio de tutoriales de Cruip: un titular con una palabra que va cambiando (Finance, Tech, AI, Crypto, eCommerce) con un deslizamiento vertical. Usa Tailwind por CDN con animaciones @keyframes propias definidas en tailwind.config, y Alpine.js solo para cerrar un banner inferior.",
+		"Conviene cuando quieres un efecto de texto rotatorio sin JavaScript de animación, para copiar y adaptar a tu landing."
+	],
+	"uses": [
+		"Poner en el hero de una landing una palabra rotatoria que cambie el sector o beneficio mencionado.",
+		"Estudiar cómo se logra un bucle continuo duplicando el primer elemento de la lista, sin salto visible.",
+		"Adaptar la animación a otro número de palabras partiendo de las variantes text-slide-2 a text-slide-8."
+	],
+	"caveats": [
+		"El repositorio no incluye un archivo LICENSE: sus términos de uso permiten usarlo en cualquier proyecto, incluso comercial, siempre que se conserven los créditos, pero prohíben redistribuirlo o crear derivados para ganar dinero con ellos.",
+		"Es un ejemplo suelto con Tailwind y Alpine por CDN; para producción tendrás que llevarlo a tu propio build.",
+		"La animación corre en bucle infinito y el archivo no contempla prefers-reduced-motion; conviene agregarlo."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Gratis para usar con atribución; el tutorial asociado está en cruip.com.",
+	"idealFor": "Quien quiere un texto rotatorio con puro CSS y Tailwind.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
