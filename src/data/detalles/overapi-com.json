@@ -1,0 +1,21 @@
+{
+	"whatIs": [
+		"OverAPI es un directorio con cientos de hojas de referencia rápida: lenguajes como Python, PHP o Java, bibliotecas como jQuery o Express, y herramientas como Git, Docker y Vim, además de temas como expresiones regulares y Linux. Cada hoja resume la sintaxis y los métodos en una sola página, con enlaces a la documentación oficial. Todo está en inglés.",
+		"Conviene cuando necesitas recordar rápido una sintaxis o el nombre de un método, sin abrir la documentación completa."
+	],
+	"uses": [
+		"Recordar la sintaxis de una expresión regular o de un comando de Git sin salir del flujo de trabajo.",
+		"Ver en una sola página los métodos de strings de un lenguaje que usas poco.",
+		"Repasar los comandos de Vim o Linux antes de trabajar en un servidor."
+	],
+	"caveats": [
+		"Parte del contenido es antiguo: la hoja de Python, por ejemplo, remite a una referencia de la versión 2.6, así que no la uses para versiones recientes.",
+		"Muchos enlaces a la documentación usan direcciones http antiguas que pueden redirigir o apuntar a páginas desactualizadas."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Acceso libre a todas las hojas.",
+	"idealFor": "Consultas rápidas de sintaxis, sobre todo de herramientas y lenguajes estables.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

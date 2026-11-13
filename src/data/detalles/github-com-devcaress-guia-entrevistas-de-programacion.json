@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Es una guía en español para preparar entrevistas técnicas de software, publicada como repositorio y como sitio web. Ordena por tema enlaces a artículos, repositorios y cursos de terceros sobre principios como SOLID y Clean Code, buenas prácticas por lenguaje y framework, algoritmos y estructuras de datos, patrones de diseño, diseño de sistemas, bases de datos, Git, CI/CD y contenedores, y suma listas de preguntas de entrevista de frontend y backend.",
+		"Conviene como mapa de repaso antes de una entrevista o para encontrar qué temas te faltan por estudiar."
+	],
+	"uses": [
+		"Repasar patrones de diseño y principios SOLID antes de una entrevista técnica.",
+		"Encontrar listas de preguntas de entrevista de frontend y backend para practicar.",
+		"Armar un plan de estudio de algoritmos y estructuras de datos."
+	],
+	"caveats": [
+		"Más que explicar cada tema, reúne enlaces a recursos externos, así que la calidad depende de cada fuente.",
+		"Muchos de los recursos enlazados están en inglés.",
+		"No reemplaza practicar problemas de código en una plataforma de algoritmos."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Código abierto con licencia MIT.",
+	"idealFor": "Developers que se preparan para entrevistas técnicas y estudian en español.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

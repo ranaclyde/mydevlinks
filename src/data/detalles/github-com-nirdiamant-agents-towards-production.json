@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Agents Towards Production es un repositorio de tutoriales con código para llevar agentes de IA generativa a producción. Cada tutorial vive en su carpeta, casi siempre con notebooks de Jupyter en Python, y cubre orquestación (LangGraph, MCP), memoria, RAG, despliegue con Docker y FastAPI, seguridad, observabilidad, evaluación y fine-tuning. Está en inglés y el último commit es de noviembre de 2026.",
+		"Conviene si ya sabes programar en Python y quieres ver cómo se resuelven, paso a paso, los problemas que aparecen al pasar un agente de la demo a un servicio real."
+	],
+	"uses": [
+		"Agregar memoria persistente a un agente siguiendo uno de los tutoriales con Redis o Mem0.",
+		"Desplegar un agente como servicio con Docker y FastAPI.",
+		"Incorporar trazas y evaluación para detectar regresiones al cambiar el prompt o el modelo."
+	],
+	"caveats": [
+		"La licencia es propia: permite usar, modificar y redistribuir el material sin fines comerciales y citando al autor, pero cualquier uso comercial necesita su permiso por escrito.",
+		"Varios tutoriales usan servicios de terceros (patrocinadores del repo) que pueden requerir cuentas o claves de API propias.",
+		"Algunos tutoriales envejecen rápido; por ejemplo, uno depende de una API alojada que ya fue retirada y se conserva solo como referencia."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Gratis para uso no comercial; el autor vende aparte un libro sobre agentes.",
+	"idealFor": "Developers de Python que llevan agentes de IA a producción.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
