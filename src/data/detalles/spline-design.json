@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Spline es una herramienta de diseño 3D que corre en el navegador para crear escenas interactivas para web y apps. Permite modelar, aplicar materiales y luces, animar con estados y eventos, y trabajar en el mismo archivo en equipo o con agentes de IA mediante MCP. Las escenas se publican como enlace o visor incrustado y se integran en React; desde el plan Pro también se descargan como código o se exportan para iOS y Android.",
+		"Conviene cuando quieres 3D interactivo en una web sin programar la escena a mano con WebGL."
+	],
+	"uses": [
+		"Crear un objeto 3D que reacciona al cursor para el hero de una landing.",
+		"Incrustar un visor de la escena o usarla en un proyecto React con el runtime npm.",
+		"Prototipar en equipo una escena 3D compartiendo el archivo en tiempo real."
+	],
+	"caveats": [
+		"En el plan gratis las exportaciones web llevan el logo de Spline; Hobby lo quita en las escenas 3D y Pro también en los embeds del editor 2D.",
+		"El plan gratis no trae créditos de IA y limita la cantidad de archivos; la descarga del código, las exportaciones para Apple y Android y los archivos con varias escenas empiezan en Pro.",
+		"Las escenas 3D en el navegador exigen GPU y descarga de datos; prueba el rendimiento en móviles."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Plan gratis; Hobby cuesta 15 USD al mes (12 USD facturado anual), Pro 30 USD (25 anual) y Max 70 USD (60 anual) por usuario.",
+	"pricingUrl": "https://spline.design/pricing",
+	"idealFor": "Diseñadores y developers que quieren 3D interactivo sin código.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
