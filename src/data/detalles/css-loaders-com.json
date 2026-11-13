@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"CSS Loaders es una colección de más de 600 animaciones de carga hechas solo con CSS, cada una con un único elemento, y organizadas en unas 40 categorías como clásicos, puntos o spinners. Todas comparten el mismo marcado, un div con clase loader, y copias el CSS con un clic.",
+		"Conviene cuando necesitas un indicador de carga distinto al spinner de siempre y no quieres añadir JavaScript ni una librería."
+	],
+	"uses": [
+		"Mostrar un indicador mientras se carga una página o un componente.",
+		"Poner un loader dentro de un botón mientras se envía un formulario.",
+		"Reemplazar el spinner genérico de un proyecto por uno acorde a su estilo."
+	],
+	"caveats": [
+		"Al copiar solo el CSS, debes ajustar tú el color, el tamaño y la posición según tu diseño.",
+		"Todos usan la clase loader, así que si combinas varios en una página renómbralos para que no choquen.",
+		"Cada loader es un div vacío, sin texto para lectores de pantalla: agrega tú role=\"status\" y un aria-label que anuncie la carga."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Copias el CSS de cada loader directamente desde la web.",
+	"idealFor": "Quien necesita un indicador de carga rápido, sin JavaScript.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

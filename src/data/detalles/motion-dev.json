@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Motion es la biblioteca de animación antes conocida como Framer Motion. Cubre animaciones, layout, scroll, gestos y 3D para React, Vue y JavaScript puro, con aceleración por hardware. Se instala con npm install motion y su función mínima animate parte en 3,2 kB.",
+		"Conviene cuando necesitas animaciones de interfaz con buen rendimiento, desde microinteracciones hasta transiciones de layout, y quieres una sola API en distintos frameworks."
+	],
+	"uses": [
+		"Animar la entrada y salida de modales y listas en una app React.",
+		"Crear efectos ligados al scroll, como barras de progreso o secciones que aparecen.",
+		"Mover elementos con gestos de arrastre o transiciones de layout compartido."
+	],
+	"caveats": [
+		"El peso crece según lo que uses; para cuidarlo hay una función animate mínima y LazyMotion, que carga funciones a demanda.",
+		"Motion+ añade componentes, ejemplos y herramientas de pago; la librería funciona completa sin él.",
+		"La API de React y la de JavaScript puro son distintas, así que revisa la documentación de tu framework."
+	],
+	"pricing": "gratis",
+	"pricingNote": "La librería es código abierto con licencia MIT; Motion+, con ejemplos, componentes y herramientas extra, se vende aparte desde 399 USD por desarrollador.",
+	"pricingUrl": "https://motion.dev/plus",
+	"idealFor": "Developers de React, Vue o JS que quieren animaciones fluidas.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

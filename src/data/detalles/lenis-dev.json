@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Lenis es una biblioteca de desplazamiento suave: toma el scroll nativo del navegador y lo vuelve fluido y controlable, sin transformaciones CSS ni barras de scroll reemplazadas. Se activa con new Lenis(), pesa menos de 5 kB y soporta scroll vertical, horizontal y en elementos concretos.",
+		"Conviene en sitios de marca o portafolios donde el scroll es parte de la experiencia, sobre todo si lo combinas con animaciones ligadas al desplazamiento."
+	],
+	"uses": [
+		"Dar un scroll suave a un portafolio o landing en React o Vue.",
+		"Sincronizar animaciones de scroll con otra librería, por ejemplo una escena WebGL.",
+		"Hacer que los enlaces ancla y scrollTo se deslicen con una transición uniforme."
+	],
+	"caveats": [
+		"No funciona con el scroll-snap de CSS: para encajar secciones hay que usar el paquete aparte lenis/snap.",
+		"Las áreas con scroll propio, como un modal o un menú largo, necesitan la opción allowNestedScroll o el atributo data-lenis-prevent; además, el suavizado no actúa sobre iframes.",
+		"Es solo la capa de desplazamiento: las animaciones que reaccionan al scroll las tienes que construir aparte."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Código abierto con licencia MIT; solo hay patrocinio voluntario.",
+	"idealFor": "Sitios con scroll cuidado en JavaScript, React o Vue.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

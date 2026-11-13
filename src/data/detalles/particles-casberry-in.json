@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"AI Particle Simulator es un estudio en el navegador para diseñar enjambres de partículas 3D con WebGL y verlos animarse en tiempo real. Trae formaciones predefinidas, efectos de posprocesado y permite importar imágenes, texto o modelos 3D como punto de partida. Para la parte de IA ofrece un prompt que copias a un asistente externo, como Gemini o Claude, y el código que te devuelva se ejecuta en la herramienta.",
+		"Conviene cuando necesitas un efecto de partículas para un hero o una animación y prefieres ajustarlo a ojo antes de llevarlo a tu proyecto."
+	],
+	"uses": [
+		"Crear un fondo de partículas para el hero de una landing y exportarlo como código.",
+		"Convertir un logo o una imagen en una nube de partículas animada.",
+		"Exportar la animación como video o imagen para usarla en redes o en una presentación."
+	],
+	"caveats": [
+		"La IA no vive dentro de la herramienta: generas el código en un asistente externo y lo pegas para ejecutarlo.",
+		"El código personalizado se filtra: no admite referencias como document, window, fetch ni eval.",
+		"Las partículas se renderizan en tu GPU, así que el rendimiento depende del equipo, sobre todo con muchas partículas o en móviles."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Se usa gratis directamente en el navegador.",
+	"idealFor": "Diseñadores y developers que quieren prototipar partículas 3D y exportar el código.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

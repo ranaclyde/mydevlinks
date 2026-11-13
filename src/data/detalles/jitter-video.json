@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Jitter es una herramienta de motion design que funciona en el navegador: armas animaciones sobre un lienzo, partes de una de sus más de 400 plantillas gratuitas o describes la idea a su IA y luego la ajustas a mano. Admite curvas con la herramienta pluma, degradados, desenfoque animado, audio, video y más de 1.500 fuentes.",
+		"Conviene a equipos de diseño y producto que quieren animar piezas (anuncios, redes, interfaces) sin aprender After Effects, y que necesitan exportar a video, GIF o Lottie."
+	],
+	"uses": [
+		"Crear una animación de lanzamiento para redes a partir de una plantilla.",
+		"Exportar una animación Lottie para usarla en una app o sitio web.",
+		"Generar un GIF corto que muestre una función en un README o en un artículo."
+	],
+	"caveats": [
+		"El plan gratis exporta hasta 720p a 30 fps, con marca de agua y 3 archivos por espacio de trabajo.",
+		"Exportar en 1080p y sin marca de agua exige un plan de pago; 4K, exportación por lotes y fondo transparente están en planes superiores.",
+		"Los créditos de IA son limitados en el plan gratis y las subidas no pueden pasar de 20 MB."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Plan gratis con marca de agua y 720p; Pro, Max y Ultra se cobran por editor, con descuento por pago anual.",
+	"pricingUrl": "https://jitter.video/pricing/",
+	"idealFor": "Diseñadores y equipos que animan piezas visuales sin saber motion.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
