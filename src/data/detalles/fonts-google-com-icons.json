@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Material Symbols es la colección de iconos de Google, disponible en tres estilos y como fuente variable con cuatro ejes ajustables: relleno (FILL, de 0 a 1), grosor (wght, de 100 a 700), grado (GRAD) y tamaño óptico (opsz, de 20 a 48 dp). Así un mismo icono puede cambiar de peso o de relleno sin cargar archivos distintos.",
+		"Además de la fuente web, se descargan en SVG y PNG, como Vector Drawable para Android y como Apple Symbols para iOS. Conviene cuando quieres iconos con aspecto Material y control fino de su estilo."
+	],
+	"uses": [
+		"Mostrar el estado activo de un botón pasando FILL de 0 a 1 con una transición.",
+		"Ajustar el grosor de los iconos para que combinen con el peso de la tipografía de la interfaz.",
+		"Reutilizar los mismos iconos en web, Android e iOS descargando cada formato."
+	],
+	"caveats": [
+		"La fuente variable completa es pesada; restringe los ejes y la lista de iconos al pedirla desde Google Fonts.",
+		"Si no declaras los ejes en la URL de Google Fonts, la fuente llega con valores fijos (peso 400, tamaño óptico 48, grado 0 y sin relleno) y no podrás cambiarlos con font-variation-settings.",
+		"Si usas SVG sueltos pierdes los ejes variables: esos ajustes son propios de la fuente."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Gratis y con licencia Apache 2.0.",
+	"idealFor": "Interfaces que necesitan iconos Material con estilo ajustable.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

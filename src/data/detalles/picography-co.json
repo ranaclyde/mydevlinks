@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Picography es un banco de fotos de stock en alta resolución cuyas imágenes se publican bajo licencia CC0, es decir, sin pedir permiso ni pago. Puedes copiarlas, editarlas y compartirlas.",
+		"Conviene cuando necesitas fotografías para un sitio, un blog o una maqueta y no quieres preocuparte por créditos ni licencias."
+	],
+	"uses": [
+		"Poner una imagen de cabecera en un blog o en la landing de un proyecto.",
+		"Rellenar una maqueta o un prototipo con fotos reales en vez de imágenes de relleno.",
+		"Conseguir imágenes para una presentación o un artículo de uso comercial sin comprar licencia."
+	],
+	"caveats": [
+		"Las fotos son gratis para uso personal y comercial y no exigen atribución, pero no puedes presentarlas como obra tuya.",
+		"La última foto se publicó en octubre de 2024, así que el catálogo no se está actualizando y puede no cubrir temas actuales.",
+		"Junto a las fotos aparecen anuncios e imágenes patrocinadas de Shutterstock, que son de pago y no tienen licencia CC0."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Todas las fotos son gratis bajo CC0, para uso personal y comercial.",
+	"idealFor": "Quien necesita fotos libres de derechos para proyectos web sin trámites.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
