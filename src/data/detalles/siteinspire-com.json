@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Siteinspire es una galería de diseño web con más de 8.000 sitios elegidos por su fundador, Daniel Howells, y ninguno es una entrada patrocinada. Cada sitio se clasifica por estilo (minimalista, tipográfico), tipo y temática, y su ficha enlaza al perfil del estudio o diseñador que lo hizo. Además hay rankings del día, la semana, el mes y el año, y una sección de fuentes.",
+		"Conviene cuando buscas una dirección estética concreta, como un portfolio minimalista o un sitio de agencia, y quieres llegar a quien lo diseñó."
+	],
+	"uses": [
+		"Filtrar por estilo tipográfico para encontrar ejemplos de layouts basados solo en texto.",
+		"Abrir los rankings del mes para ver qué sitios se consideran lo mejor del momento.",
+		"Usar el directorio de perfiles para encontrar estudios o freelancers que hicieron los sitios que te gustan."
+	],
+	"caveats": [
+		"La selección es de un solo editor y privilegia lo visual: muchos sitios son de estudios y portfolios, con poca información sobre accesibilidad o rendimiento.",
+		"Una ficha muestra captura, fecha y créditos, no el código ni la tecnología con que se construyó.",
+		"Muchas entradas son de moda, arte y fotografía; si buscas interfaces de producto o apps, otras galerías encajan mejor."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Gratis; el boletín semanal también y hay una página de patrocinio y publicidad aparte.",
+	"idealFor": "Diseñadores y developers que buscan referencias visuales de portfolios, agencias y sitios con tipografía cuidada.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Websitevice es una galería de sitios web reales organizada por tipo de negocio. Una barra lateral lista unas 43 categorías, como Agency, SaaS, Restaurant, Dentist o Real Estate, y cada una tiene su propia página de ejemplos con un enlace al sitio y una breve descripción de su diseño.",
+		"Conviene cuando te encargan una web para un rubro concreto y quieres ver qué hacen otros del mismo sector antes de proponer una estructura."
+	],
+	"uses": [
+		"Ver cómo lucen las webs de restaurantes o cafeterías antes de maquetar la de un cliente de ese rubro.",
+		"Revisar sitios de la categoría SaaS para decidir qué secciones llevan su landing y su página de precios.",
+		"Mostrarle a un cliente ejemplos de su misma industria para acordar el estilo visual."
+	],
+	"caveats": [
+		"Se navega solo por categoría: no hay buscador ni filtros por estilo, color o tecnología.",
+		"Cada ejemplo trae una descripción corta y un enlace, no un análisis del diseño ni de cómo está construido.",
+		"La portada incluye una sección de patrocinadores que se confunde a primera vista con los ejemplos."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Se explora completa sin cuenta ni pago.",
+	"idealFor": "Quien arma sitios para clientes de rubros específicos y necesita referencias por sector.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

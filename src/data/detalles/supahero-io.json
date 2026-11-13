@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Supahero es una biblioteca de secciones hero de sitios web: una cuadrícula larga, con cientos de entradas, donde cada tarjeta muestra la captura de la cabecera de una página y enlaza a su propia ficha. Hoy forma parte de screensdesign y tiene un buscador en la barra superior.",
+		"Conviene cuando vas a diseñar la primera pantalla de una landing y quieres ver cómo la resuelven otros: titulares, llamados a la acción, uso de color y de logos de clientes."
+	],
+	"uses": [
+		"Comparar varios héroes de productos SaaS antes de decidir dónde poner el botón principal de tu landing.",
+		"Buscar ejemplos de héroes con 3D o motion para llevarlos como referencia a un diseñador.",
+		"Revisar cómo combinan titular, subtítulo y fila de logos en la primera pantalla de un producto para developers."
+	],
+	"caveats": [
+		"Solo muestra la cabecera de cada sitio, no la página completa ni su comportamiento.",
+		"La portada es una sola cuadrícula sin categorías visibles; para acotar hay que usar el buscador.",
+		"Con la integración a screensdesign, algunos enlaces llevan fuera de la galería hacia su biblioteca de apps."
+	],
+	"pricing": "gratis",
+	"pricingNote": "La galería se explora sin costo; los planes de su página de precios son espacios destacados para publicitar un sitio, desde 79 USD por 30 días.",
+	"pricingUrl": "https://supahero.io/pricing",
+	"idealFor": "Quien diseña la sección principal de una landing y busca referencias.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}
