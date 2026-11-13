@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Patterns.dev es un recurso en inglés, escrito por Lydia Hallie y Addy Osmani, sobre patrones de diseño, de renderizado y de rendimiento para aplicaciones web. Tiene secciones de JavaScript (Singleton, Observer, Module, entre otros), de React y Next.js (hooks, HOC, Server Components) y de Vue, con explicaciones y ejemplos de código.",
+		"Conviene cuando ya programas en JavaScript o en un framework y quieres entender cómo estructurar una aplicación y qué técnicas mejoran su rendimiento."
+	],
+	"uses": [
+		"Entender cuándo usar el patrón Observer o el Module al organizar código JavaScript.",
+		"Elegir una estrategia de renderizado para una app con React o Next.js.",
+		"Aplicar técnicas como precarga, tree shaking o virtualización de listas para acelerar la carga."
+	],
+	"caveats": [
+		"Es una guía conceptual: no es un curso paso a paso ni sustituye la documentación de cada framework.",
+		"Los ejemplos se centran en JavaScript, React y Vue; si usas otro framework, tendrás que adaptar las ideas.",
+		"Los artículos tienen licencia CC BY-NC 4.0: puedes reutilizarlos citando la fuente, pero no con fines comerciales."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Gratis en línea; el libro Learning Patterns (435 páginas) también se descarga sin costo.",
+	"idealFor": "Developers de JavaScript y React que quieren dominar patrones de arquitectura y rendimiento.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

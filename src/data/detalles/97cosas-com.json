@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"97cosas.com es la traducción colaborativa al español de la serie «97 Things» de O'Reilly, una colección de ensayos breves escritos por profesionales de la industria. Hoy está completo el volumen para programadores; los de Project Manager y Arquitecto de Software figuran como proyectos en curso.",
+		"Conviene para lecturas cortas sobre oficio y buenas prácticas, que puedes leer un ensayo a la vez, sin necesidad de seguir un orden."
+	],
+	"uses": [
+		"Leer un consejo de programación en un rato libre, sin comprometerte con un libro entero.",
+		"Armar una lista de lecturas de buenas prácticas para el equipo o para quien se incorpora.",
+		"Encontrar una referencia en español para justificar una decisión de diseño o de proceso en una revisión de código."
+	],
+	"caveats": [
+		"Solo el volumen de programadores está terminado; los otros dos siguen en proyecto.",
+		"Son ensayos de opinión de distintos autores: sirven para reflexionar, no como manual técnico con código.",
+		"Las traducciones son comunitarias y están bajo Creative Commons Attribution 3: si las reutilizas, debes dar atribución."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Contenido libre bajo licencia Creative Commons Attribution 3.",
+	"idealFor": "Quien quiere lecturas breves en español sobre el oficio de programar.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
