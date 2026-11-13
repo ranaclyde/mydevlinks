@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Layers es una comunidad donde diseñadores y estudios publican su trabajo: conceptos de interfaz, animaciones y piezas de producto. Además del feed de publicaciones tiene perfiles de diseñadores en alza, un apartado de noticias del sector con votos y una bolsa de trabajo.",
+		"Sirve para ver qué está haciendo gente que diseña a diario y seguir a quien te interese, más que para consultar un catálogo ordenado."
+	],
+	"uses": [
+		"Seguir a diseñadores o estudios cuyo estilo te guste y ver sus publicaciones nuevas en tu feed.",
+		"Mirar conceptos de interfaz y animaciones de flujos para inspirarte antes de proponer una pantalla.",
+		"Revisar la sección de noticias para enterarte de cambios en herramientas como Figma o Adobe."
+	],
+	"caveats": [
+		"Las etiquetas de estilo (Minimalist, Landing Page, SaaS, Dashboard…) y el buscador ayudan, pero el contenido es un feed de comunidad y la calidad varía de una publicación a otra.",
+		"Muchas publicaciones son conceptos de portafolio, no productos reales en producción.",
+		"Para seguir cuentas y participar necesitas registrarte."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Explorar y registrarse es gratis.",
+	"idealFor": "Quien quiere inspirarse con trabajo reciente de la comunidad de diseño.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

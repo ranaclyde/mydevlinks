@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"One Page Love es una galería de sitios de una sola página, curada desde 2008. Además de los sitios, que se etiquetan por género (portafolio, landing, SaaS, e-commerce, restaurante, experimental), organiza ejemplos por tipo de sección (testimonios, FAQ, precios, captura de leads) y por tipografía, e incluye plantillas y artículos.",
+		"Conviene cuando vas a armar una landing o un portafolio y quieres ver cómo otros resolvieron una sección concreta o un género parecido."
+	],
+	"uses": [
+		"Ver ejemplos de la sección de precios o de FAQ antes de diseñar la tuya.",
+		"Buscar sitios que usen una tipografía como Inter o Montserrat para ver cómo se aplica.",
+		"Partir de una plantilla gratuita o de pago para una landing en Next.js con Tailwind o en Framer."
+	],
+	"caveats": [
+		"Solo recopila sitios de una página, así que no sirve para ver flujos de una aplicación.",
+		"Parte del catálogo de plantillas es de pago, con precios individuales de alrededor de 39 a 47 USD.",
+		"Las plantillas son de distintas tecnologías (Next.js, Framer); revisa cuál usa cada una antes de elegirla."
+	],
+	"pricing": "gratis",
+	"pricingNote": "La galería es gratis; algunas plantillas se venden aparte desde unos 39 USD.",
+	"idealFor": "Quien arma una landing o un portafolio y busca referencias por sección o género.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

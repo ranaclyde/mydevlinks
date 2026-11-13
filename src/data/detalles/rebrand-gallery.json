@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Rebrand Gallery es una biblioteca de referencia para diseño de marca: reúne rebrandings con su video de presentación y la identidad detrás de cada uno, además de piezas aplicadas como packaging, señalética, papelería o publicidad exterior. Se explora por industria, estilo, tipografía y estudio.",
+		"Conviene cuando necesitas referencias de identidad visual, por ejemplo para entender cómo una marca de tu rubro usa color, tipografía y aplicaciones."
+	],
+	"uses": [
+		"Ver rebrandings de empresas fintech o de IA para inspirar la identidad de un producto propio.",
+		"Buscar marcas que usen una tipografía concreta, como Neue Montreal, para ver cómo se aplica.",
+		"Reunir ejemplos de brand guidelines o packaging para presentar una propuesta a un cliente."
+	],
+	"caveats": [
+		"El enfoque es identidad de marca, no interfaces: aporta poco para patrones de UI.",
+		"El plan gratis muestra 809 marcas y 200 shots al día, con búsqueda y colecciones limitadas.",
+		"La búsqueda en lenguaje natural y el acceso por MCP son del plan Pro."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Gratis con límites de búsqueda y colecciones; Pro cuesta 7 € al mes, o 4,92 € al mes con pago anual.",
+	"pricingUrl": "https://www.rebrand.gallery/pricing",
+	"idealFor": "Diseñadores de marca y developers que quieren referencias de identidad visual.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

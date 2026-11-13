@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Lapa Ninja es una galería de landings que reúne más de 7.300 diseños desde 2015, con capturas de página completa y grabaciones en video de cada sitio. Además de los sitios enteros, separa secciones sueltas, animaciones, imágenes OG y tipografías, y guarda versiones anteriores de un mismo sitio.",
+		"Conviene cuando diseñas una landing y quieres ver la página completa de punta a punta, no solo el hero, y comparar cómo cambió un sitio con el tiempo."
+	],
+	"uses": [
+		"Recorrer la captura completa de varias landings de SaaS para decidir el orden de las secciones de la tuya.",
+		"Buscar solo la sección que te falta, como una tabla de precios o un footer, en el apartado Sections.",
+		"Comparar las versiones anteriores de un sitio para ver cómo evolucionó su mensaje o su diseño."
+	],
+	"caveats": [
+		"El plan gratis muestra anuncios y limita los tableros para guardar sitios; Pro los quita.",
+		"El menú mezcla la galería con cursos, plantillas y herramientas para crear sitios, así que conviene ir directo a Websites o Sections.",
+		"Está centrada en landings y sitios de marketing; para pantallas de aplicaciones hay galerías más específicas."
+	],
+	"pricing": "freemium",
+	"pricingNote": "La galería se explora gratis; Pro cuesta 9 USD al mes y quita los anuncios y el límite de tableros.",
+	"pricingUrl": "https://www.lapa.ninja/pro/",
+	"idealFor": "Diseñar una landing mirando páginas completas y secciones reales.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

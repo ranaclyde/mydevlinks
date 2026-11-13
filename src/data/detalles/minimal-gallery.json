@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Minimal Gallery es una colección curada a mano de sitios web de diseño limpio, activa desde 2013. Además de la galería de sitios tiene secciones de plantillas y de herramientas, un buscador y una función de colecciones para guardar favoritos.",
+		"Los sitios se filtran por etiquetas, por tipo (portafolio, agencia, e-commerce, precios) y por plataforma, como Framer o Webflow. Conviene cuando buscas referencias sobrias de un tipo de sitio concreto."
+	],
+	"uses": [
+		"Ver portafolios minimalistas para inspirarte antes de rehacer el tuyo.",
+		"Filtrar por plataforma (Framer o Webflow) para ver qué se logra con cada una.",
+		"Revisar páginas de precios bien resueltas con la etiqueta Pricing."
+	],
+	"caveats": [
+		"El listado está paginado en más de cien páginas, así que recorrerlo entero lleva tiempo; conviene usar los filtros.",
+		"Las plantillas apuntan a páginas externas (Framer, Webflow, Lemon Squeezy) y varias se venden allí, con precio propio.",
+		"Es una selección de sitios sobrios: no es útil para estilos maximalistas o muy cargados."
+	],
+	"pricing": "gratis",
+	"pricingNote": "La galería es gratis; algunas plantillas se venden en sitios externos.",
+	"idealFor": "Diseñadores y developers que buscan referencias de web minimalista.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Navbar Gallery es una galería curada dedicada solo a barras de navegación de sitios reales. Se agrupan por tipo (estática, desplegable, mega menú, barra lateral, buscador, anuncio, pantalla completa y breadcrumbs), y cada entrada trae una captura, un enlace a su página propia y otro al sitio original.",
+		"Sirve cuando estás decidiendo cómo armar la navegación de un proyecto y quieres ver muchas soluciones del mismo componente."
+	],
+	"uses": [
+		"Ver ejemplos de mega menú antes de implementar la navegación de un sitio con muchas secciones.",
+		"Buscar cómo integran un buscador o un aviso en la barra superior.",
+		"Revisar cómo se comporta una navegación lateral o de pantalla completa en distintos sitios."
+	],
+	"caveats": [
+		"Solo cubre navbars: no hay footers, heroes ni otras secciones.",
+		"Los ejemplos se cargan por tandas con el botón Load more.",
+		"Muestra capturas, no código: hay que abrir el sitio original para ver cómo está construida."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Es gratis; cualquiera puede enviar un navbar para sumarlo a la galería.",
+	"idealFor": "Quien diseña o implementa la navegación de un sitio y busca referencias.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}
