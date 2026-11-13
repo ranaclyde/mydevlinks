@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Refactoring.Guru es un sitio de Alexander Shvets que explica los 22 patrones de diseño clásicos (creacionales, estructurales y de comportamiento) y los principios SOLID, con ilustraciones, diagramas UML y ejemplos de código en C#, C++, Go, Java, PHP, Python, Ruby, Rust, Swift y TypeScript. También tiene un catálogo de code smells y técnicas de refactorización.",
+		"Conviene cuando quieres entender qué problema resuelve un patrón, cuándo aplicarlo y cómo se ve en tu lenguaje, sin pasar por un libro académico."
+	],
+	"uses": [
+		"Repasar cómo funciona Strategy u Observer antes de aplicarlo en tu código.",
+		"Comparar la implementación de un patrón en TypeScript, Python o Go.",
+		"Identificar un code smell, como un método demasiado largo, y ver qué refactorización lo corrige."
+	],
+	"caveats": [
+		"La sección de patrones está en español, pero el catálogo de refactorización y el curso siguen en inglés.",
+		"Los ejemplos siguen la programación orientada a objetos; en código funcional algunos patrones no aplican tal cual.",
+		"El sitio promociona con frecuencia su ebook, su curso y otros cursos del autor."
+	],
+	"pricing": "freemium",
+	"pricingNote": "El contenido web es gratis. El ebook Sumérgete en los patrones de diseño cuesta US$30 y el curso Dive Into Refactoring US$40, ambos con rebajas frecuentes.",
+	"pricingUrl": "https://refactoring.guru/es/design-patterns/book",
+	"idealFor": "Developers que quieren aprender patrones de diseño y refactorización con ejemplos en su lenguaje.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

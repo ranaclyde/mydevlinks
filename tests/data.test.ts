@@ -54,6 +54,9 @@ const REMOVED: Record<string, string> = {
 	'github-com-hasaneyldrm-exercises-dataset': 'Dataset de ejercicios físicos, fuera de la colección.',
 	'peepslab-com': 'Caído: el sitio está pausado (402).',
 	'github-com-gorvgoyl-clone-wars': 'Viejo; el autor lo quitó.',
+	'css-tricks-com-blobs': 'Artículo de CSS-Tricks; el autor lo quitó.',
+	'es-reactjs-org': 'React en español; el autor lo quitó.',
+	'escuelavue-es-como-aprender-vue': 'Escuela Vue; el autor lo quitó.',
 };
 
 describe('links.json', () => {

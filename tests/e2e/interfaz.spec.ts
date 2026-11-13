@@ -117,10 +117,10 @@ test('un enlace se encuentra por su URL, con o sin protocolo', async ({ page }) 
 test('un enlace se encuentra por su nombre aunque nombre una tecnología que no tiene', async ({
 	page,
 }) => {
-	const link = publicLinks.find((item) => item.name === 'Blobs! (CSS-Tricks)') as RawLink;
+	const link = publicLinks.find((item) => item.name === 'Tailwind CSS Animated') as RawLink;
 	expect(link.tech).not.toContain('CSS');
 
-	await page.getByRole('searchbox', { name: 'Buscar' }).fill('css blobs');
+	await page.getByRole('searchbox', { name: 'Buscar' }).fill('css animated');
 	await expect(cardOf(page, link)).toBeVisible();
 	await expect(page.getByRole('button', { name: 'Quitar CSS' })).toBeVisible();
 });
