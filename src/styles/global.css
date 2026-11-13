@@ -332,6 +332,22 @@ html:not([data-js]) [data-app] {
 		font-weight: 500;
 	}
 
+	/* Precio junto al dominio: fijo, para que un dominio largo se corte antes que él. */
+	.price {
+		flex: none;
+		border: 1px solid var(--line);
+		padding: 0 5px;
+		color: var(--ink);
+		line-height: 1.45;
+		white-space: nowrap;
+	}
+
+	.price.hit {
+		border-color: var(--accent);
+		background: var(--accent-soft);
+		color: var(--accent);
+	}
+
 	/* Sobre el enlace estirado de la ficha, para que el puntero lo alcance. */
 	.chip.more {
 		position: relative;

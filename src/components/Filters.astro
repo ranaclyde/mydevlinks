@@ -1,6 +1,7 @@
 ---
 import { TOP_TECHS } from '../lib/filter';
 import { GALLERY } from '../lib/links';
+import CheckBox from './CheckBox.astro';
 
 interface Option {
 	value: string;
@@ -11,10 +12,11 @@ interface Props {
 	categories: Option[];
 	techs: Option[];
 	tags: Option[];
+	prices: (Option & { label: string })[];
 	total: number;
 }
 
-const { categories, techs, tags, total } = Astro.props;
+const { categories, techs, tags, prices, total } = Astro.props;
 const galleries = categories.find((category) => category.value === GALLERY)?.count ?? 0;
 
 const label =
@@ -172,6 +174,29 @@ const count =
 			</fieldset>
 		</details>
 
+		{
+			prices.length > 0 && (
+				<fieldset class="min-w-0">
+					<legend class:list={[label, 'mb-1.5 flex w-full justify-between px-1']}>
+						Precio
+						<span class="font-normal tracking-normal normal-case">basta con uno</span>
+					</legend>
+					<div class="flex flex-col">
+						{prices.map((price) => (
+							<label class={techOption}>
+								<input class="sr-only" type="checkbox" name="precio" value={price.value} />
+								<CheckBox />
+								<span class="min-w-0 flex-1">{price.label}</span>
+								<span class={count} data-count>
+									{price.count}
+								</span>
+							</label>
+						))}
+					</div>
+				</fieldset>
+			)
+		}
+
 		<fieldset class="min-w-0">
 			<legend class:list={[label, 'mb-1.5 flex w-full justify-between px-1']}>
 				Tecnologías
@@ -200,20 +225,7 @@ const count =
 					techs.map((tech, index) => (
 						<label class={techOption} data-tech-option hidden={index >= TOP_TECHS}>
 							<input class="sr-only" type="checkbox" value={tech.value} />
-							<span class="border-line-strong bg-surface group-has-checked/opt:border-accent group-has-checked/opt:bg-accent group-has-checked/opt:text-accent-ink grid size-4 flex-none place-items-center border-[1.5px]">
-								<svg
-									class="opacity-0 group-has-checked/opt:opacity-100"
-									width="10"
-									height="10"
-									viewBox="0 0 10 10"
-									fill="none"
-									stroke="currentColor"
-									stroke-width="2"
-									aria-hidden="true"
-								>
-									<path d="M2 5.2l2 2 4-4.4" />
-								</svg>
-							</span>
+							<CheckBox />
 							<span class="min-w-0 flex-1">{tech.value}</span>
 							<span class={count} data-count>
 								{tech.count}

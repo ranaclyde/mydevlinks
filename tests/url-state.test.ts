@@ -7,8 +7,9 @@ const known = {
 	categories: ['Componentes y UI kits', GALLERY],
 	techs: ['React', 'Tailwind', 'shadcn/ui'],
 	tags: ['Sitios web'],
+	pricing: ['gratis', 'freemium', 'de-pago'],
 };
-const empty: FilterState = { query: '', category: null, tech: [], tag: null };
+const empty: FilterState = { query: '', category: null, tech: [], tag: null, pricing: [] };
 
 describe('estado en la URL', () => {
 	it('sobrevive a la ida y vuelta', () => {
@@ -17,12 +18,13 @@ describe('estado en la URL', () => {
 			category: 'Componentes y UI kits',
 			tech: ['Tailwind', 'shadcn/ui'],
 			tag: null,
+			pricing: ['gratis', 'freemium'],
 		};
 		expect(stateFromSearch(stateToSearch(state), known)).toEqual(state);
 	});
 
 	it('conserva el tipo de galería', () => {
-		const state: FilterState = { query: '', category: GALLERY, tech: [], tag: 'Sitios web' };
+		const state: FilterState = { query: '', category: GALLERY, tech: [], tag: 'Sitios web', pricing: [] };
 		expect(stateFromSearch(stateToSearch(state), known)).toEqual(state);
 	});
 
@@ -32,7 +34,12 @@ describe('estado en la URL', () => {
 	});
 
 	it('descarta los valores desconocidos', () => {
-		expect(stateFromSearch('?cat=Nada&tech=Foo&tipo=Sitios web', known)).toEqual(empty);
+		expect(stateFromSearch('?cat=Nada&tech=Foo&tipo=Sitios web&precio=caro', known)).toEqual(empty);
+	});
+
+	it('guarda los precios como parámetros repetidos y sin duplicados', () => {
+		expect(stateToSearch({ ...empty, pricing: ['gratis', 'freemium'] })).toBe('?precio=gratis&precio=freemium');
+		expect(stateFromSearch('?precio=gratis&precio=gratis', known)).toEqual({ ...empty, pricing: ['gratis'] });
 	});
 
 	it('descarta el tipo si la categoría no es la galería', () => {

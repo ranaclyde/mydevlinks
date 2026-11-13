@@ -1,5 +1,5 @@
 ---
-import { formatDate, type Detail } from '../../lib/details';
+import { formatDate, PRICE_LABEL, type Detail } from '../../lib/details';
 import { domainOf, type Link } from '../../lib/links';
 import { stateToSearch } from '../../lib/url-state';
 
@@ -9,12 +9,6 @@ interface Props {
 }
 
 const { link, detail } = Astro.props;
-
-const PRICE_LABEL: Record<Detail['pricing'], string> = {
-	gratis: 'Gratis',
-	freemium: 'Freemium',
-	'de-pago': 'De pago',
-};
 
 const categoryHref = '/' + stateToSearch({ query: '', category: link.category, tech: [], tag: null });
 const term = 'text-muted font-mono text-[11px] leading-[1.9] max-md:not-first:mt-2';

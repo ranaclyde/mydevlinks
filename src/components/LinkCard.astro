@@ -1,13 +1,16 @@
 ---
+import { PRICE_LABEL, type Detail } from '../lib/details';
 import { VISIBLE_TECH } from '../lib/filter';
 import { domainOf, type Link } from '../lib/links';
 import Stamps from './Stamps.astro';
 
 interface Props {
 	link: Link;
+	/** Precio de su ficha, si la tiene. */
+	pricing?: Detail['pricing'];
 }
 
-const { link } = Astro.props;
+const { link, pricing } = Astro.props;
 const { id, name, url, description, category, tech, tags = [], logo, status, verified, featured } = link;
 
 const down = status === 'caido';
@@ -30,6 +33,7 @@ const text = verified
 	data-category={category}
 	data-tech={JSON.stringify(tech)}
 	data-tags={JSON.stringify(tags)}
+	data-pricing={pricing}
 >
 	<div
 		class:list={[
@@ -102,8 +106,14 @@ const text = verified
 						>
 					</a>
 				</h3>
-				<span class="text-muted mt-0.5 truncate font-mono text-[11px] tracking-[.02em]">
-					{domainOf(url)}
+				<span class="mt-0.5 flex min-w-0 items-center gap-1.5 font-mono text-[11px] tracking-[.02em]">
+					<span class="text-muted truncate">{domainOf(url)}</span>
+					{pricing && (
+						<span class="price" data-price={pricing}>
+							<span class="sr-only">Precio: </span>
+							{PRICE_LABEL[pricing]}
+						</span>
+					)}
 				</span>
 			</div>
 
