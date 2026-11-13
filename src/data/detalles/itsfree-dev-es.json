@@ -1,0 +1,21 @@
+{
+	"whatIs": [
+		"it's free* es un directorio en español de servicios con plan gratuito para developers: hosting y deploy, bases de datos, IA, autenticación, email, monitorización, analítica y más. Hoy muestra 142 recursos repartidos en 14 categorías.",
+		"Se busca por producto, caso de uso o tecnología, y se filtra por categoría o con las pestañas \"Sin tarjeta\" y \"Sin registro\". Conviene cuando necesitas montar un proyecto sin gastar o comparar qué ofrece cada plan gratuito."
+	],
+	"uses": [
+		"Encontrar dónde alojar un proyecto personal sin poner tarjeta de crédito.",
+		"Elegir una API o base de datos gratuita para un prototipo.",
+		"Buscar servicios que se usen sin registro para probar una idea rápido."
+	],
+	"caveats": [
+		"Los límites de cada plan gratuito cambian; confirma las cuotas en el sitio de cada servicio antes de depender de ellas.",
+		"Algunos servicios piden tarjeta para activar la cuota completa, y otros solo ofrecen una prueba temporal."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Directorio de uso libre; los servicios listados tienen planes gratuitos y, normalmente, también de pago.",
+	"idealFor": "Developers que quieren montar proyectos usando solo planes gratuitos.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

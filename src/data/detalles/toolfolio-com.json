@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Toolfolio es una biblioteca curada de herramientas y recursos para agentes de IA, con secciones propias de servidores MCP y skills. También cubre diseño, programación, no-code, productividad, marketing y seguridad, con colecciones temáticas y artículos que comparan herramientas.",
+		"Se usa con el buscador (⌘K) o navegando por categorías y colecciones. Cada ficha indica si la herramienta es gratis, freemium, de pago o de pago único."
+	],
+	"uses": [
+		"Encontrar un servidor MCP oficial para conectar Figma o Calendly a tu agente de IA.",
+		"Buscar skills ya hechas para ampliar lo que hace un agente de código.",
+		"Comparar herramientas de diseño o productividad dentro de una colección temática."
+	],
+	"caveats": [
+		"Hay secciones de pago para destacar startups, con la etiqueta de listado de pago, y cupones de descuento.",
+		"No hay una vista total del catálogo ni filtros por atributos: se explora por categorías.",
+		"Cada herramienta tiene su propio precio, que puede cambiar."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Directorio de uso libre; las herramientas listadas son gratis, freemium o de pago, y la web vende listados destacados.",
+	"idealFor": "Quien busca servidores MCP, skills y herramientas para trabajar con agentes de IA.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

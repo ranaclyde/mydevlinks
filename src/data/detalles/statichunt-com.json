@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Statichunt es un directorio de temas, plantillas iniciales, UI kits y herramientas para desarrollo web: Astro, Next.js, Hugo, Nuxt, Webflow y otros. Reúne más de 7.850 entradas.",
+		"Se explora por precio (código abierto, gratis o premium), por categoría (blog, portafolio, SaaS, ecommerce, dashboard, documentación) o por framework, y se ordena por estrellas, forks, actualización o precio. Conviene para encontrar un punto de partida para un sitio."
+	],
+	"uses": [
+		"Elegir una plantilla de Astro para un blog o portafolio.",
+		"Encontrar un tema de documentación de código abierto.",
+		"Comparar plantillas premium de SaaS antes de comprar una."
+	],
+	"caveats": [
+		"Muchos enlaces de salida llevan parámetros de afiliado y hay patrocinadores visibles.",
+		"Hay plantillas gratis y premium mezcladas; filtra por precio y revisa la licencia de cada tema.",
+		"Con tantas entradas, algunas pueden estar desactualizadas: mira la fecha de actualización antes de elegir."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Directorio de uso libre; vende espacios de patrocinio, y cada tema o plantilla tiene su propio precio y licencia.",
+	"idealFor": "Quien busca una plantilla o tema para arrancar un sitio rápido.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
