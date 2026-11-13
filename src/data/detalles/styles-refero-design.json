@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Refero Styles es la biblioteca de sistemas de diseño de Refero: más de 2.000 estilos extraídos de sitios de productos conocidos, cada uno con su paleta, tipografía, espaciados y componentes, y con un archivo DESIGN.md listo para usar en Cursor, Claude Code, Codex, v0 o Lovable. Está marcada como beta y es un producto distinto de Refero, que reúne pantallas y flujos de apps.",
+		"Se explora con una búsqueda, etiquetas de estilo (por ejemplo terminal y monoespaciada, o editorial cálido) y pestañas de Trending, Popular y Newest. Conviene cuando quieres que tu interfaz, o tu agente de IA, parta de la identidad visual de un producto concreto en vez de un look genérico."
+	],
+	"uses": [
+		"Copiar los tokens de color y la escala tipográfica de un sistema que te gusta para arrancar el tema de tu proyecto.",
+		"Pasarle a tu agente de código el DESIGN.md de un estilo para que genere componentes con esa estética.",
+		"Buscar una dirección visual por etiqueta, como fintech de confianza o geometría Bauhaus, y comparar varias opciones lado a lado."
+	],
+	"caveats": [
+		"Es una beta: el catálogo y el formato de los DESIGN.md pueden cambiar.",
+		"Los estilos son interpretaciones de sitios ajenos: úsalos como punto de partida y no reproduzcas marcas, logos ni tipografías con licencia.",
+		"Describe solo el estilo visual; no muestra pantallas ni flujos, que están en Refero."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Los estilos y sus DESIGN.md se consultan y copian gratis; conectarlos a tu agente por MCP requiere el plan Pro de Refero.",
+	"idealFor": "Quien quiere partir del sistema visual de un producto conocido, a mano o con un agente de IA.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12",
+	"pricingUrl": "https://refero.design/pricing"
+}

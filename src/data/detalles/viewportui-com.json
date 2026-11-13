@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Viewport UI es una galería de diseños e interacciones de interfaz, con más de 600 piezas, muchas de ellas animaciones o prototipos. Cada entrada acredita a su autor y se filtra por categorías agrupadas en tipo (motion, interaction, component, mobile, web...), tipografía, estilo e industria, con el número de diseños de cada una.",
+		"Conviene cuando buscas ideas de microinteracciones o de componentes concretos y quieres verlos en movimiento antes de implementarlos."
+	],
+	"uses": [
+		"Filtrar por Motion para encontrar transiciones y animaciones que puedas reproducir con CSS o una librería de animación.",
+		"Revisar ejemplos de Navigation o Widget para inspirarte antes de construir un menú o un componente propio.",
+		"Filtrar por industria, como Productivity, para ver el estilo visual de apps parecidas a la que desarrollas."
+	],
+	"caveats": [
+		"Son diseños y demos publicados por sus autores, no código: hay que reimplementarlos.",
+		"Hay un cuadro para buscar categorías, pero no uno para buscar texto libre entre los diseños.",
+		"Las categorías mezclan formatos distintos (movimiento, componente, móvil, escritorio), así que conviene combinar filtros para no ver resultados dispares."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Se navega completa sin cuenta ni pago.",
+	"idealFor": "Developers que quieren referencias de interacción y animación de interfaces.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

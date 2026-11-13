@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Refero es una biblioteca de referencias de interfaces reales: más de 145.000 pantallas de productos web e iOS y flujos de usuario completos, desde el registro hasta la cancelación. Se recorre por tipo de página (dashboard, paywall, login, 404), por flujo (onboarding, reserva, cambio de contraseña), por patrón de UX (filtros, facturación, modo oscuro), por elemento de UI (modales, tablas, tabs) o por categoría de sitio.",
+		"Conviene cuando vas a diseñar o construir una pantalla concreta y quieres ver cómo la resuelven productos conocidos antes de decidir. También ofrece un plugin de Figma y un servidor MCP para que un agente de IA consulte las mismas referencias."
+	],
+	"uses": [
+		"Ver cómo distintos productos presentan una página de precios con comparación de planes antes de maquetar la tuya.",
+		"Revisar paso a paso el flujo de registro y onboarding de varias apps para decidir cuántos pasos pedir.",
+		"Conectar el MCP a tu agente de código para que base una interfaz en pantallas reales y no en un diseño genérico."
+	],
+	"caveats": [
+		"El plan gratis solo muestra cerca de un 3% de la biblioteca y busca solo por etiqueta o empresa; el catálogo completo, los flujos, el plugin de Figma y el MCP son del plan Pro.",
+		"Son capturas de productos ajenos: sirven para estudiar patrones, no para copiar diseños ni activos con derechos de terceros.",
+		"Solo cubre productos web e iOS; no incluye apps de Android."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Plan gratis con cerca del 3% de la biblioteca; Pro cuesta 17 USD al mes, 120 USD al año o 250 USD en un solo pago, y Team 20 USD por usuario al mes.",
+	"pricingUrl": "https://refero.design/pricing",
+	"idealFor": "Developers y diseñadores que quieren estudiar cómo productos reales resuelven una pantalla o flujo.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}
