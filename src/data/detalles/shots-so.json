@@ -1,0 +1,21 @@
+{
+	"whatIs": [
+		"Shots es un editor en el navegador para convertir capturas de pantalla en mockups: subes o pegas la imagen, eliges un dispositivo o marco, ajustas fondo, bordes y sombra, y la exportas lista para publicar. También genera animaciones y videos con zoom y presets de movimiento.",
+		"Conviene cuando necesitas presentar una app o un sitio en redes, en una landing o en un portafolio sin abrir un programa de diseño."
+	],
+	"uses": [
+		"Poner la captura de tu app dentro de un iPhone para el anuncio de un lanzamiento.",
+		"Armar una imagen con fondo degradado y sombra a partir de una captura de tu sitio para un post o un README.",
+		"Crear un video corto con zoom sobre una función nueva para mostrarla en redes."
+	],
+	"caveats": [
+		"Sirve para presentar capturas, no para diseñar: el contenido de la pantalla tienes que traerlo listo.",
+		"Las imágenes que subes se alojan en sus servidores para operar el servicio; evita usarlo con capturas que muestren datos sensibles."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Se usa en el navegador sin registro ni pago.",
+	"idealFor": "Developers que quieren mostrar su producto con mockups vistosos en pocos minutos.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Unlighthouse es una herramienta de código abierto que descubre las páginas de tu sitio, ejecuta auditorías de Google Lighthouse en cada una y reúne los resultados en un solo panel. Se usa desde la línea de comandos, por ejemplo con npx unlighthouse --site tu-sitio.com, y también ofrece informes para CI y soporte MCP para agentes de IA.",
+		"Conviene cuando quieres ver el rendimiento y la calidad de todo un sitio, no solo de una página suelta."
+	],
+	"uses": [
+		"Auditar todo tu sitio antes de un lanzamiento para encontrar las páginas más lentas.",
+		"Exportar informes en JSON o CSV y validar presupuestos de rendimiento en tu pipeline de CI.",
+		"Comparar los resultados en móvil y escritorio de cada página en una sola ejecución."
+	],
+	"caveats": [
+		"Corre en tu máquina con Node.js, así que necesitas una versión reciente instalada antes de usarlo.",
+		"Un sitio grande implica muchas auditorías de Lighthouse, así que el escaneo puede tardar y consumir recursos.",
+		"La versión 1 está en beta y la estable sigue en la serie 0.x, así que comandos y opciones pueden cambiar al pasar a la nueva."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Gratis y de código abierto con licencia MIT; se financia con patrocinios voluntarios.",
+	"idealFor": "Equipos que quieren auditar el rendimiento de todo un sitio desde la terminal o el CI.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

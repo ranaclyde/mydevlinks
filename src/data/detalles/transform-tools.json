@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Transform es una web que convierte código y datos de un formato a otro directamente en el navegador: pegas el contenido a la izquierda y ves el resultado a la derecha. Cubre SVG y HTML a JSX, JSON a TypeScript, Zod, esquemas de bases de datos y varios lenguajes, CSS a Tailwind, GraphQL, YAML, TOML y más.",
+		"Conviene cuando necesitas pasar de un formato a otro una sola vez, sin instalar nada ni escribir un script."
+	],
+	"uses": [
+		"Convertir un SVG exportado desde Figma en un componente JSX para tu app de React.",
+		"Generar tipos de TypeScript o un esquema de Zod a partir de la respuesta JSON de una API.",
+		"Pasar un archivo de configuración de YAML a JSON o a TOML."
+	],
+	"caveats": [
+		"Es un conversor de pegar y copiar, sin integración con tu editor ni con tu proceso de build, así que revisa el resultado antes de usarlo.",
+		"Los tipos o esquemas generados a partir de un solo ejemplo de JSON pueden quedar demasiado estrictos o imprecisos.",
+		"Si prefieres no pegar datos en la web pública, puedes ejecutarlo en tu máquina desde su repositorio con yarn."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Gratis y de código abierto con licencia MIT.",
+	"idealFor": "Conversiones puntuales entre formatos sin salir del navegador.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

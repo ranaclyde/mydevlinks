@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"RGE Studio es un editor colaborativo para crear correos HTML, de Really Good Emails, que forma parte de Beefree y usa su tecnología de edición. Ofrece una biblioteca de más de 1.250 plantillas editables y adaptadas a móvil, un asistente de IA para generar borradores y exportación a plataformas de envío y CRM.",
+		"Conviene cuando necesitas armar newsletters o correos transaccionales con aspecto cuidado sin escribir el HTML a mano, y cuando varias personas deben comentar y aprobar los diseños."
+	],
+	"uses": [
+		"Maquetar el correo de bienvenida de un producto partiendo de una plantilla y exportar el HTML.",
+		"Que el equipo de marketing revise y apruebe un diseño dentro del editor antes de exportarlo.",
+		"Dejar fijados los estilos de marca para que otras personas del equipo no se salgan del diseño."
+	],
+	"caveats": [
+		"El plan gratuito se limita a 10 diseños y 6 exportaciones al mes.",
+		"Los controles de marca avanzados, las aprobaciones integradas y el asistente de calidad están en los planes Business y Enterprise.",
+		"Professional cuesta 30 USD al mes con pago mensual o 25 USD al mes con pago anual, e incluye 2 usuarios; cada asiento extra se paga aparte."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Plan Starter gratis; Professional desde 25 USD al mes (facturación anual) y planes Business y Enterprise.",
+	"pricingUrl": "https://reallygoodemails.com/pricing",
+	"idealFor": "Equipos que diseñan correos HTML y necesitan plantillas y aprobaciones.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

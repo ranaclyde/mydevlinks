@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Squoosh es una aplicación web para reducir el peso de imágenes. Arrastras o pegas una imagen, ajustas el formato y la calidad, y comparas el resultado con el original antes de descargarlo. Todo se procesa en tu dispositivo, así que la imagen no se sube a ningún servidor.",
+		"Conviene cuando necesitas optimizar unas pocas imágenes para una web y quieres ver al instante qué formato y ajustes dan el mejor equilibrio entre peso y calidad."
+	],
+	"uses": [
+		"Convertir una imagen de portada a un formato más liviano antes de subirla a tu sitio.",
+		"Comparar lado a lado el original y la versión comprimida para elegir la calidad mínima aceptable.",
+		"Optimizar una captura o foto con datos sensibles sin enviarla a un servicio externo."
+	],
+	"caveats": [
+		"Trabaja con una imagen a la vez, así que no es la opción para procesar cientos de archivos por lote.",
+		"Su repositorio no recibe commits en la rama principal desde agosto de 2024, por lo que no esperes funciones nuevas.",
+		"Usa Google Analytics para recolectar datos básicos de visita y el tamaño antes y después, aunque la imagen no sale de tu equipo."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Gratuita y de código abierto con licencia Apache-2.0.",
+	"idealFor": "Optimizar imágenes sueltas para la web, con privacidad y vista comparativa.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"ShipFree es una plantilla base de Next.js con TypeScript y Tailwind que trae resuelto lo repetitivo de un SaaS: autenticación con Better Auth (acceso social, verificación de correo y sesiones), pagos con Stripe, Polar, Lemon Squeezy o Creem, base de datos PostgreSQL con Drizzle y correo con Resend.",
+		"Conviene cuando quieres lanzar un producto rápido y prefieres partir de una estructura ya integrada en lugar de conectar cada servicio por tu cuenta."
+	],
+	"uses": [
+		"Arrancar un SaaS de suscripciones con registro, sesiones y cobros ya conectados.",
+		"Probar una idea de producto sin dedicar la primera semana a configurar auth y pagos.",
+		"Estudiar cómo se integran Better Auth, Drizzle y una pasarela de pago en un proyecto Next.js."
+	],
+	"caveats": [
+		"Te comprometes con su stack (Next.js, Drizzle, PostgreSQL, Better Auth); cambiarlo después implica reescribir partes.",
+		"Hay varios servicios externos que configurar, como la base de datos PostgreSQL, la pasarela de pago y Resend.",
+		"Internacionalización, roles e invitaciones, blog, integración con PostHog y flujos de CI con Playwright solo vienen en la edición Premium de pago."
+	],
+	"pricing": "freemium",
+	"pricingNote": "La edición Community es gratis con licencia MIT; Premium es un pago único de 90 USD.",
+	"pricingUrl": "https://shipfree.revoks.dev/#pricing",
+	"idealFor": "Developers que quieren lanzar un SaaS con Next.js sin montar auth y pagos desde cero.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
