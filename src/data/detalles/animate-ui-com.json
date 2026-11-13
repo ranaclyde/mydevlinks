@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Animate UI ofrece versiones animadas de los primitivos de interfaz que usan shadcn/ui y shadcn-vue: Radix UI, Base UI y React Aria en React, y Reka UI en Vue. Cambias el import del primitivo y tus componentes conservan su estructura, estilos y API. Incluye también íconos y otras piezas animadas.",
+		"Conviene cuando ya usas shadcn/ui o shadcn-vue y quieres transiciones fluidas en switches, pestañas o acordeones sin reescribirlos."
+	],
+	"uses": [
+		"Animar un acordeón o unas pestañas de un proyecto que ya usa shadcn/ui.",
+		"Reemplazar los íconos o el switch por versiones animadas con un cambio de import.",
+		"Animar de una vez todos los componentes instalados con `npx @animate-ui/cli@latest animate all`."
+	],
+	"caveats": [
+		"Está pensado para proyectos con shadcn/ui o shadcn-vue; si no usas esos primitivos, aporta poco.",
+		"Su licencia es MIT con Commons Clause: puedes usarlo en productos comerciales, pero no vender ni redistribuir los componentes tal cual.",
+		"Cambiar los primitivos modifica componentes que ya tenías, así que prueba cada uno después de migrar."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Gratis y con el código en GitHub, bajo licencia MIT con Commons Clause.",
+	"idealFor": "Proyectos con shadcn/ui o shadcn-vue que quieren sumar animación a sus componentes.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

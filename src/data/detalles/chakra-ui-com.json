@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Chakra UI es una librería de componentes de React, accesibles, para crear aplicaciones web y sistemas de diseño. Se instala con npm i @chakra-ui/react y funciona con Next.js, incluidos los componentes de servidor.",
+		"Conviene cuando trabajas en React y quieres piezas accesibles y personalizables mediante props, sin escribir los estilos desde cero."
+	],
+	"uses": [
+		"Montar el sistema de diseño de una app en React con un tema propio.",
+		"Armar formularios, diálogos y menús accesibles en un proyecto con Next.js.",
+		"Alternar entre modo claro y oscuro con el proveedor que genera su CLI."
+	],
+	"caveats": [
+		"Es solo para React, y exige Node.js 20 o superior.",
+		"La instalación pide paquetes extra (@emotion/react), el proveedor y ajustes en tsconfig o jsconfig.",
+		"Hoy estiliza con Emotion en tiempo de ejecución; su plan es migrar a estilos sin runtime, así que habrá cambios."
+	],
+	"pricing": "gratis",
+	"pricingNote": "La librería es de código abierto; los bloques y plantillas de Chakra Pro se venden aparte, con pago único.",
+	"pricingUrl": "https://pro.chakra-ui.com/pricing",
+	"idealFor": "Equipos React que buscan componentes accesibles y temas propios.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}
