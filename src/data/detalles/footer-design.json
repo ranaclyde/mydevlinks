@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Footer es una galería curada de pies de página de sitios reales. Cada entrada trae una miniatura, el nombre, una descripción corta y enlaces a su ficha y al sitio vivo; algunas llevan la marca \"Editor's Choice\".",
+		"Se ordena por tipo y estilo, con categorías como Typographic, Grid, Animated, Cards, Dark o Large Type, y una página \"browse\" con todas. Sirve cuando solo necesitas resolver esa sección."
+	],
+	"uses": [
+		"Ver footers de tipografía grande antes de decidir cómo cerrar una landing.",
+		"Comparar cómo organizan los enlaces footers con muchas columnas y los que casi no tienen.",
+		"Buscar ejemplos de footers animados para inspirar un efecto al llegar al final de la página."
+	],
+	"caveats": [
+		"No tiene buscador; solo se navega por categorías y por páginas con \"Load more\".",
+		"Muestra únicamente footers, así que no ayuda con el resto de la página.",
+		"Incluye algún anuncio patrocinado entre los resultados."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Se consulta sin cuenta ni cobro.",
+	"idealFor": "Quien necesita referencias específicas de pies de página.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

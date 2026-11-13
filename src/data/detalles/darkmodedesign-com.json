@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Dark Mode Design es una galería de sitios web con modo oscuro, elegidos a mano. Cada entrada muestra una captura y enlaza al sitio original; el listado se recorre por páginas con un enlace \"Next\".",
+		"Conviene cuando necesitas referencias de interfaces oscuras reales, sobre todo de landings y sitios de producto."
+	],
+	"uses": [
+		"Ver cómo otros sitios resuelven contraste y jerarquía antes de diseñar el tema oscuro de tu app.",
+		"Reunir referencias de portadas oscuras para mostrarle una dirección visual a un cliente.",
+		"Proponer tu propio sitio oscuro a la galería, escribiendo al correo de contacto."
+	],
+	"caveats": [
+		"No tiene buscador, filtros ni categorías visibles: solo se avanza página por página.",
+		"Muestra únicamente capturas; para ver la interacción hay que abrir el sitio original.",
+		"Entre las entradas aparece alguna patrocinada, marcada como tal."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Se consulta sin cuenta ni cobro.",
+	"idealFor": "Quien busca referencias de sitios oscuros sin filtrar por categoría.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}

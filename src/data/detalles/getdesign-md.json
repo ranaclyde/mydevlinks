@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"getdesign.md es un catálogo de más de 550 archivos DESIGN.md, cada uno con el análisis del sistema de diseño de una marca conocida: colores, tipografía, espaciado, componentes y el razonamiento detrás de cada decisión. La idea es dárselo a un agente de código para que genere interfaces con ese estilo.",
+		"Cada marca tiene su propia página con vista previa y se instala con un comando como npx getdesign@latest add airbnb. Conviene cuando programas con un asistente de IA y quieres un punto de partida visual definido en vez de un diseño genérico."
+	],
+	"uses": [
+		"Pedirle a Claude Code o Cursor una landing con el estilo de Stripe o Linear, entregándole el DESIGN.md correspondiente.",
+		"Instalar con npx el DESIGN.md de una marca en la raíz de tu proyecto para que el agente lo lea en cada tarea.",
+		"Leer cómo una marca define su paleta y tipografía antes de armar tu propio sistema de diseño."
+	],
+	"caveats": [
+		"Son análisis independientes, sin relación con las marcas: describen su estilo visual, no son sus guías oficiales.",
+		"La lista no tiene filtros ni categorías: se recorre por nombre o por popularidad (instalaciones y guardados).",
+		"Algunos análisis solo vienen en el Catalog Pass, de pago; guardar entradas pide iniciar sesión."
+	],
+	"pricing": "freemium",
+	"pricingNote": "El catálogo general se descarga gratis; el Catalog Pass (99 USD al mes) da acceso a una colección curada de análisis, y aparte se venden plantillas de video (29 USD, pago único) y kits de inicio.",
+	"pricingUrl": "https://getdesign.md/design-md-pass",
+	"idealFor": "Developers que trabajan con agentes de IA y quieren un estilo visual de referencia.",
+	"reviewedAt": "2026-11-12",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-12"
+}
