@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Tailkits es un directorio de productos para developers: plantillas, componentes, boilerplates y herramientas de diseño, IA, email, analítica y CMS. Hoy muestra unos 300 productos, con revisión editorial de cada envío.",
+		"Tiene buscador (⌘K), orden por novedad o nombre y filtro de precio: cada tarjeta indica si el producto es gratis, de pago o freemium. Conviene para descubrir plantillas y componentes de Tailwind y React."
+	],
+	"uses": [
+		"Buscar una plantilla de landing para Next.js o Astro.",
+		"Filtrar solo productos gratuitos para un proyecto sin presupuesto.",
+		"Encontrar secciones sueltas, como héroes o tablas de precios, para reutilizar."
+	],
+	"caveats": [
+		"Hay tarjetas patrocinadas, marcadas como tal, que aparecen arriba de la lista.",
+		"Algunos enlaces son de afiliado.",
+		"Cada producto tiene su propio precio y licencia: revísalos en su página."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Navegar es libre; los makers pagan por listar y patrocinar sus productos.",
+	"idealFor": "Quien busca plantillas y componentes de Tailwind o React, gratis y de pago.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

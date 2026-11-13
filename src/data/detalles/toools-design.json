@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"TOOOLS.design es un directorio curado de herramientas y recursos para diseñar webs, apps y marcas, con unas 2.500 entradas en 18 categorías (IA, diseño, tipografía, color, iconos, mockups, libros, podcasts y más). Se actualiza cada semana.",
+		"Su Tool Finder filtra por precio, categoría y plataforma. Conviene cuando buscas una herramienta de diseño concreta o inspiración, sin necesidad de cuenta."
+	],
+	"uses": [
+		"Buscar fuentes o paletas de color gratuitas para una interfaz.",
+		"Encontrar librerías de iconos o ilustraciones de código abierto.",
+		"Descubrir herramientas de mockups para presentar un diseño."
+	],
+	"caveats": [
+		"Tiene colocaciones de patrocinadores y enlaces de afiliado, aunque el sitio dice que no deciden qué se lista.",
+		"Hay recursos gratis y premium mezclados; filtra por precio.",
+		"Cada recurso tiene su propio precio y licencia; confírmalos en su web antes de usarlo."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Directorio gratuito, sin cuenta; los recursos listados son gratis y de pago, y el sitio gana con patrocinios y afiliados.",
+	"idealFor": "Diseñadores y developers que necesitan herramientas de diseño.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
