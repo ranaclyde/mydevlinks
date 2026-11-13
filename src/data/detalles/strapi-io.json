@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Strapi es un CMS headless de código abierto hecho con TypeScript que corre sobre Node.js. Defines tus tipos de contenido con un constructor sin código y genera automáticamente APIs REST y GraphQL, con controladores, servicios y middleware personalizables.",
+		"Conviene cuando quieres un backend de contenido que puedas modificar a fondo. Puedes autoalojarlo o desplegarlo en Strapi Cloud con el mismo código."
+	],
+	"uses": [
+		"Gestionar el blog o el catálogo de un sitio en Next.js consumiendo su API.",
+		"Crear una API para una app móvil a partir de tipos de contenido definidos sin código.",
+		"Agregar lógica propia al backend con controladores y servicios personalizados."
+	],
+	"caveats": [
+		"El núcleo es MIT, pero funciones como Review Workflows y Audit Logs son de la edición Enterprise, y el SSO se paga aparte o viene en Enterprise.",
+		"Al autoalojarlo tú administras servidor, base de datos, actualizaciones y respaldos.",
+		"Strapi Cloud no tiene plan gratis: el más barato es Starter, que no incluye respaldos automáticos."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Edición Community gratis y MIT; Strapi Cloud desde 35 USD por proyecto/mes y el plan autoalojado Growth desde 45 USD/mes.",
+	"pricingUrl": "https://strapi.io/pricing-cloud",
+	"idealFor": "Developers que quieren un CMS headless personalizable en Node.js.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
