@@ -1,0 +1,21 @@
+{
+	"whatIs": [
+		"Colorsss es un explorador de colores que se filtra por tono y matiz: neutral, pastel, apagado, oscuro, cálido, vibrante y otros. Cada color aparece con su nombre y sus códigos HEX, RGB, HSL y OKLCH, y al desplazarte se generan más.",
+		"Conviene cuando no sabes qué color quieres y prefieres recorrer opciones por estilo antes de decidir."
+	],
+	"uses": [
+		"Buscar un tono pastel para el fondo de una landing.",
+		"Elegir colores vibrantes para un gráfico o una ilustración.",
+		"Encontrar tonos neutros y apagados para una interfaz sobria."
+	],
+	"caveats": [
+		"Es para explorar y copiar valores sueltos; no arma paletas exportables ni revisa contraste.",
+		"La página muestra una barra promocional de otro producto de sus autores."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Uso libre desde el navegador.",
+	"idealFor": "Explorar colores por tono cuando buscas inspiración.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

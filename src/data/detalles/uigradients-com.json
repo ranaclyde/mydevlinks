@@ -1,0 +1,21 @@
+{
+	"whatIs": [
+		"uiGradients es una colección comunitaria de degradados de dos o más colores. Puedes recorrerlos uno a uno, cambiar su dirección, copiar el código CSS o descargarlo como imagen.",
+		"Conviene cuando quieres un degradado que se vea bien sin diseñarlo tú."
+	],
+	"uses": [
+		"Poner un degradado de fondo en una landing o un hero.",
+		"Dar color a botones o tarjetas con un degradado ya probado.",
+		"Buscar inspiración de combinaciones de colores para una marca."
+	],
+	"caveats": [
+		"Es una colección cerrada: no crea degradados a partir de tus propios colores.",
+		"Si quieres aportar uno, se hace con un pull request en GitHub agregando un nombre y sus colores HEX."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Colección abierta con licencia MIT.",
+	"idealFor": "Elegir un degradado ya armado para un fondo o un botón.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

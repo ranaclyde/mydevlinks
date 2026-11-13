@@ -1,0 +1,21 @@
+{
+	"whatIs": [
+		"Cool Contrast calcula la razón de contraste entre dos colores y muestra si cumple los niveles AA y AAA de WCAG. También sugiere colores alternativos, previsualiza el resultado en páginas y elementos de interfaz de ejemplo y permite editar los colores en distintos espacios de color.",
+		"Conviene cuando necesitas validar accesibilidad de un texto sobre su fondo sin abrir una herramienta pesada."
+	],
+	"uses": [
+		"Verificar que el texto de un botón tenga contraste suficiente sobre su fondo.",
+		"Ajustar el color de un enlace hasta alcanzar AA.",
+		"Ver cómo queda un par de colores en elementos de interfaz de ejemplo antes de aplicarlo."
+	],
+	"caveats": [
+		"Mide el contraste con los niveles AA y AAA de WCAG 2; si tu equipo trabaja con APCA, necesitarás otra herramienta.",
+		"El proyecto no se actualiza desde junio de 2024."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Código abierto con licencia MIT; hay un enlace para donar.",
+	"idealFor": "Comprobar rápido si un par de colores cumple AA o AAA.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

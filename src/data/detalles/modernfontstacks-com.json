@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Modern Font Stacks reúne declaraciones font-family de CSS que usan fuentes ya instaladas en los sistemas operativos modernos. Están ordenadas en 15 categorías, como System UI, Humanist, Old Style, Neo-Grotesque o Monospace Code.",
+		"Conviene cuando la velocidad manda: como las fuentes ya están en el equipo, el texto aparece al instante y sin saltos mientras carga la página, y solo hay que copiar la pila a tu CSS."
+	],
+	"uses": [
+		"Usar la pila System UI como tipografía base de una aplicación.",
+		"Elegir una pila monoespaciada para bloques de código sin cargar fuentes.",
+		"Dar un estilo serif o humanista a un blog sin pedir archivos de fuentes."
+	],
+	"caveats": [
+		"Como son fuentes del sistema, el aspecto cambia según el dispositivo y el sistema operativo.",
+		"No descarga ni aloja fuentes: no sirve si necesitas una tipografía idéntica en todas partes.",
+		"Algunas pilas tienen pocos grosores en ciertos sistemas y el navegador simula la negrita, así que revisa las notas de cada una."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Proyecto abierto con licencia CC0, sin planes de pago.",
+	"idealFor": "Sitios rápidos que prefieren fuentes del sistema a descargar tipografías.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

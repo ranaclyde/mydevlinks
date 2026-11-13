@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Fontpair es un catálogo de más de 3.000 combinaciones tipográficas con fuentes de Google Fonts, Fontshare, Adobe Fonts, Velvetyne y otras fundiciones. Permite filtrar por estilo, probar las parejas con tu propio texto, guardarlas en colecciones y copiar el CSS listo para usar.",
+		"Conviene cuando quieres una pareja de fuentes ya curada para tu diseño, con paletas de color y kits de marca como apoyo."
+	],
+	"uses": [
+		"Elegir el par de título y cuerpo para un portafolio o landing.",
+		"Probar varias combinaciones con el texto real de tu proyecto.",
+		"Copiar el código CSS de una pareja para llevarla a tu sitio."
+	],
+	"caveats": [
+		"Las tipografías vienen de varias fundiciones, incluida Adobe Fonts, así que revisa la licencia de cada una antes de usarla en un proyecto comercial.",
+		"Sin Pro solo ves una parte de las combinaciones; la biblioteca completa, los kits de marca con tus fuentes y colores y los filtros avanzados son de pago.",
+		"Para guardar colecciones necesitas crear una cuenta."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Cuenta gratis con parte del catálogo; Pro cuesta 10 USD al mes, 48 USD al año o 120 USD en un pago único.",
+	"pricingUrl": "https://fontpair.co/pricing",
+	"idealFor": "Diseñadores y developers que buscan pares de fuentes curados.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
