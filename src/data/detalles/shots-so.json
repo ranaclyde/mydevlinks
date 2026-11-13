@@ -10,10 +10,12 @@
 	],
 	"caveats": [
 		"Sirve para presentar capturas, no para diseñar: el contenido de la pantalla tienes que traerlo listo.",
-		"Las imágenes que subes se alojan en sus servidores para operar el servicio; evita usarlo con capturas que muestren datos sensibles."
+		"Las imágenes que subes se alojan en sus servidores para operar el servicio; evita usarlo con capturas que muestren datos sensibles.",
+		"Los planes de pago se renuevan solos; si cancelas, el acceso sigue hasta el fin del período y los reembolsos no son automáticos."
 	],
-	"pricing": "gratis",
-	"pricingNote": "Se usa en el navegador sin registro ni pago.",
+	"pricing": "freemium",
+	"pricingNote": "Tiene un plan Free y planes de pago Basic y Pro con renovación mensual o anual; sus precios no están publicados.",
+	"pricingUrl": "https://shots.so/terms",
 	"idealFor": "Developers que quieren mostrar su producto con mockups vistosos en pocos minutos.",
 	"reviewedAt": "2026-11-13",
 	"reviewedByAuthor": false,
