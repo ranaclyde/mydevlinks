@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Responsively App es una aplicación de escritorio, gratuita y de código abierto, que muestra tu sitio en varios tamaños de dispositivo al mismo tiempo. Los clics, el scroll y la navegación se replican en todas las vistas.",
+		"Conviene cuando desarrollas un diseño responsive y quieres ver los cambios en todas las pantallas a la vez, sin redimensionar la ventana."
+	],
+	"uses": [
+		"Revisar una landing en móvil, tablet y escritorio mientras la desarrollas.",
+		"Guardar combinaciones de dispositivos con Preview Suits para volver a ellas en otro proyecto.",
+		"Sacar capturas de página completa de todos los dispositivos a la vez."
+	],
+	"caveats": [
+		"Su licencia es AGPL-3.0, algo a considerar si piensas modificar y redistribuir el código.",
+		"Se trata de una app de escritorio aparte, no de una extensión de tu navegador habitual.",
+		"La última versión estable es la 1.18.0, de febrero de 2026; la 2.0 está en beta desde septiembre."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Gratuita y de código abierto con licencia AGPL-3.0.",
+	"idealFor": "Developers front-end que prueban diseños en varios dispositivos a la vez.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

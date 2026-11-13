@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Remotion es un framework para crear videos y gráficos animados programando con React. Cada video es código: lo puedes previsualizar y editar en Remotion Studio, renderizar en tu servidor o en el navegador, e incrustar con su Player dentro de tu app.",
+		"Conviene cuando quieres generar videos a partir de plantillas y datos, o prefieres animar con componentes y no con un editor tradicional."
+	],
+	"uses": [
+		"Generar videos personalizados en lote a partir de datos, como resúmenes de actividad de cada usuario.",
+		"Incrustar un video interactivo en tu aplicación React con el Player.",
+		"Producir animaciones y gráficos para redes o presentaciones manteniéndolos como código versionado."
+	],
+	"caveats": [
+		"Es gratis para personas, organizaciones sin fines de lucro y empresas de hasta 3 personas; las demás empresas necesitan una Company License.",
+		"Si un cliente recibe u opera el proyecto de Remotion, sus empleados se suman a los tuyos para ese límite; si solo le entregas el video terminado, no cuentan.",
+		"Se asume que conoces React, y para renderizar muchos videos necesitas infraestructura propia, por ejemplo Remotion Lambda sobre tu cuenta de AWS."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Licencia gratis hasta 3 personas; Company License desde 0,01 USD por render (mínimo 100 USD al mes) o 25 USD por puesto al mes, y Enterprise desde 500 USD al mes.",
+	"pricingUrl": "https://www.remotion.dev/docs/license/pricing",
+	"idealFor": "Developers React que quieren producir videos con código.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
