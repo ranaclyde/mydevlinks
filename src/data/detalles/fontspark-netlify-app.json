@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"FontSpark propone una fuente al azar de una lista de unas 145 tipografías, la mayoría de Google Fonts y el resto de Adobe Fonts. Puedes filtrar por tipo (sans serif, serif u otras) y por grosor (ligera, regular o negrita), y el botón para obtenerla lleva a su página en Google Fonts o Adobe Fonts. Tiene también un directorio y modo oscuro.",
+		"Conviene cuando repites las mismas fuentes en cada proyecto y quieres descubrir alternativas sin revisar catálogos enormes."
+	],
+	"uses": [
+		"Buscar una fuente distinta para el título de un proyecto personal.",
+		"Explorar opciones de sans serif en grosor negrita para un logotipo provisional.",
+		"Salir de las fuentes de siempre al empezar un diseño nuevo."
+	],
+	"caveats": [
+		"Es una herramienta de inspiración: no genera código ni combinaciones de dos fuentes.",
+		"Parte de la lista es de Adobe Fonts, que se usan con una suscripción de Adobe; si necesitas fuentes gratuitas, quédate con las de Google Fonts.",
+		"El catálogo es acotado, así que no reemplaza a un buscador completo."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Herramienta de uso libre, sin planes de pago.",
+	"idealFor": "Descubrir fuentes nuevas de forma rápida y sin compromiso.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

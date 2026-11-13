@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Fontsss es un archivo curado de fuentes. Cada entrada trae una vista previa, etiquetas, variantes, descripción y la fundición o diseñador, con un enlace a su sitio. Se puede filtrar por estilo, como sans serif, serif, display o vintage, y por licencia gratuita o comercial.",
+		"Conviene cuando buscas tipografías con carácter, muchas de ellas comerciales, y quieres llegar rápido a la fundición que las vende."
+	],
+	"uses": [
+		"Encontrar una fuente display para la marca de un cliente.",
+		"Filtrar solo tipografías gratuitas para un proyecto sin presupuesto.",
+		"Llegar a la fundición para comprar la licencia de una fuente que te gustó."
+	],
+	"caveats": [
+		"Fontsss no aloja fuentes: solo enlaza la descarga de las de código abierto, y para el resto te lleva a la web de la fundición.",
+		"La licencia la define cada fundición o diseñador, y muchas fuentes son comerciales: revisa sus condiciones antes de usarlas.",
+		"Es un archivo curado, no un catálogo exhaustivo."
+	],
+	"pricing": "gratis",
+	"pricingNote": "La consulta del archivo es libre; las fuentes comerciales se compran a cada fundición.",
+	"idealFor": "Diseñadores que buscan fuentes con carácter y su fundición.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

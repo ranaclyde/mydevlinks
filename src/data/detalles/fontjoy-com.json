@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Fontjoy genera combinaciones de tipografías de Google Fonts con un clic. Un modelo de aprendizaje profundo busca fuentes que combinen sin parecerse demasiado, y puedes cambiar el texto de muestra para ver cómo quedan el título y el cuerpo.",
+		"Conviene cuando no sabes qué fuentes combinar y quieres ideas rápidas: bloqueas la que te gusta y regeneras el resto hasta dar con un par que funcione."
+	],
+	"uses": [
+		"Encontrar una fuente de cuerpo que acompañe al título de una landing.",
+		"Partir de la fuente de una marca y explorar con cuál combinarla.",
+		"Probar un párrafo real de tu proyecto con varias parejas antes de elegir."
+	],
+	"caveats": [
+		"Es un generador de ideas: las combinaciones salen en parte al azar y conviene revisar tú mismo el resultado.",
+		"Trabaja solo con fuentes de Google Fonts, así que no sirve si tu marca usa una tipografía comercial.",
+		"Solo sugiere el par: después tienes que cargar las fuentes desde Google Fonts en tu proyecto."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Herramienta de uso libre, sin planes de pago.",
+	"idealFor": "Quien necesita ideas rápidas de pares tipográficos.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

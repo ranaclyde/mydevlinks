@@ -1,0 +1,21 @@
+{
+	"whatIs": [
+		"ColorSpace genera paletas de colores a partir de un color que escribes, y también arma degradados, incluido un modo de degradado con tres colores.",
+		"Conviene cuando ya tienes un color de marca y quieres ideas de combinaciones o un degradado sin diseñar la paleta a mano."
+	],
+	"uses": [
+		"Sacar una paleta de apoyo desde el color principal de un proyecto.",
+		"Crear un degradado de fondo para un hero o una tarjeta.",
+		"Probar un degradado de tres colores antes de pasarlo a CSS."
+	],
+	"caveats": [
+		"Es una herramienta de generación: no hay cuentas ni proyectos guardados que conserven tus paletas, así que anota los códigos que elijas.",
+		"Revisa el contraste de los colores resultantes antes de usarlos para texto."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Uso libre desde el navegador.",
+	"idealFor": "Partir de un solo color para obtener paletas y degradados.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

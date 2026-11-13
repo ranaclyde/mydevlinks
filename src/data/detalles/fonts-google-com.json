@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Google Fonts es un catálogo de tipografías abiertas para la web. La mayoría usa la licencia SIL Open Font License 1.1, algunas la Apache 2 y las fuentes Ubuntu su propia licencia, y cada familia incluye el archivo con su licencia.",
+		"Conviene cuando necesitas fuentes gratuitas y listas para usar en un sitio: las incluyes con un enlace a la API de CSS, con parámetros como display=swap para controlar la carga."
+	],
+	"uses": [
+		"Cargar una fuente en tu sitio con un link a la API de CSS y usarla con font-family.",
+		"Limitar la carga a las variantes y a los caracteres que de verdad usas para reducir el peso.",
+		"Elegir una tipografía con soporte para otros alfabetos, como cirílico o griego, mediante subsets."
+	],
+	"caveats": [
+		"Al cargarlas desde la API, Google recibe la IP y el navegador de cada visitante, aunque no usa cookies; si eso no encaja con tus requisitos de privacidad, descarga las fuentes y alójalas en tu propio servidor.",
+		"No todas las fuentes comparten licencia: la mayoría es OFL, pero hay casos Apache y Ubuntu, así que confirma la de cada familia.",
+		"Incluye siempre una fuente de respaldo en font-family por si la carga falla."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Todo el catálogo es de uso gratuito, sin planes de pago.",
+	"idealFor": "Cualquier proyecto web que necesite buenas fuentes abiertas.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

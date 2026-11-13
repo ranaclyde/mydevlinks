@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Coolors es un generador de paletas: con la barra espaciadora produce combinaciones nuevas, y también permite explorar una biblioteca de paletas, extraer colores de una foto, revisar contraste y previsualizar colores sobre diseños de ejemplo. Incluye además una herramienta para paletas de Tailwind CSS.",
+		"Las paletas se exportan como URL, PDF, imagen, CSS, ASE, SVG, código, Tailwind o embed. Conviene cuando quieres llegar a una paleta rápido y llevarla a tu código o a tu herramienta de diseño."
+	],
+	"uses": [
+		"Generar una paleta de 5 colores para un proyecto nuevo y exportarla como CSS.",
+		"Sacar los colores de una foto o logo con el selector de imagen.",
+		"Crear una escala de colores para Tailwind CSS y pasarla a tu configuración."
+	],
+	"caveats": [
+		"El plan gratis muestra anuncios, limita las paletas a 5 colores y permite guardar solo 10 paletas, 1 proyecto y 1 colección.",
+		"Las comprobaciones de contraste dentro de las paletas, las variaciones de color y la exportación avanzada son parte de Pro."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Plan gratis con límites; Pro cuesta 3 USD al mes.",
+	"pricingUrl": "https://coolors.co/pricing",
+	"idealFor": "Diseñadores y developers que exploran y exportan paletas.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

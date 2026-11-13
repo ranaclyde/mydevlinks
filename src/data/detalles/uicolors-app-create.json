@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"UI Colors genera escalas de color de 50 a 950 a partir de un color base, pensadas para Tailwind CSS. Permite crear colores de marca, neutros y de estado (éxito, información, advertencia y error) y previsualizarlos en tarjetas, sitios, paneles y gráficos de ejemplo.",
+		"Exporta en formato Tailwind v3 y v4, CSS y SCSS. Conviene cuando necesitas una paleta propia con la estructura de Tailwind en vez de usar solo sus colores por defecto."
+	],
+	"uses": [
+		"Crear una escala 50–950 desde el color de tu marca y pegarla en el tema de Tailwind.",
+		"Armar colores de éxito, advertencia y error coherentes con el resto de la interfaz.",
+		"Probar la paleta sobre un panel de ejemplo antes de aplicarla."
+	],
+	"caveats": [
+		"En el plan gratis solo creas la escala principal: los colores secundarios, neutros y de estado y la elección de fuentes piden Pro.",
+		"La exportación a HSL, OKLCH y RGB, el ajuste APCA, la matriz de contraste y guardar paletas con enlace público son de Pro."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Plan gratis con funciones limitadas; Pro cuesta 4,95 USD al mes o 30 USD al año.",
+	"pricingUrl": "https://uicolors.app/upgrade",
+	"idealFor": "Equipos con Tailwind que necesitan escalas de color a medida.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
