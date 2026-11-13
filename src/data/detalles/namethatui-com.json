@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"NameThatUI es un diccionario visual de interfaces: describes con tus palabras un elemento de UI y te devuelve su nombre real, el símbolo de su API y un prompt listo para pegar en un agente de código. Tiene entradas para macOS y web, una opción para ver una entrada al azar y guías de comparación entre tecnologías.",
+		"Conviene cuando sabes cómo se ve algo pero no cómo se llama, y necesitas el término correcto para buscarlo, pedirlo en un prompt o implementarlo."
+	],
+	"uses": [
+		"Descubrir que ese panel que se desliza desde un borde se llama sheet o drawer antes de buscar librerías.",
+		"Obtener el nombre exacto de un elemento para pedírselo a un agente de código en un prompt preciso.",
+		"Consultar el equivalente de un componente entre AppKit, SwiftUI y la web al portar una interfaz."
+	],
+	"caveats": [
+		"El catálogo es acotado, unas 90 entradas, y solo cubre macOS y web.",
+		"El nombre que devuelve es una referencia: conviene contrastarlo con la documentación de tu framework, porque cada librería puede llamar distinto al mismo componente.",
+		"El sitio muestra anuncios de otros productos de sus autores y ofrece espacios de patrocinio."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Se consulta sin registro ni pago.",
+	"idealFor": "Quien sabe qué quiere en pantalla pero no cómo se llama.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

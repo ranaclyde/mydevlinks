@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Es la herramienta de calidad de CSS de Project Wallace: analiza tu CSS y le pone un puntaje de 0 a 100 en rendimiento, mantenibilidad y complejidad, con recomendaciones para mejorar cada área.",
+		"Puedes darle la URL de un sitio, subir archivos CSS o pegar el código. Conviene cuando quieres una evaluación rápida; para métricas más detalladas, el mismo sitio tiene un analizador de CSS completo."
+	],
+	"uses": [
+		"Obtener un diagnóstico rápido del CSS de un sitio ya publicado a partir de su URL.",
+		"Revisar una hoja de estilos pegada antes de integrarla a un proyecto.",
+		"Ver si el CSS flojea más en rendimiento, mantenibilidad o complejidad para decidir qué atender primero."
+	],
+	"caveats": [
+		"Es una evaluación con criterios propios de la herramienta, así que el puntaje es una guía y no una norma.",
+		"Activar la opción de formatear el CSS facilita la lectura pero cambia ligeramente los números.",
+		"Solo entrega puntajes y recomendaciones generales; para ver métricas como especificidad o complejidad de selectores hay que pasar al CSS Analyzer del sitio."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Se usa sin registro ni pago.",
+	"idealFor": "Obtener un puntaje rápido de la calidad de tu CSS.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}

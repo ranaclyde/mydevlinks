@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Joi es una librería de JavaScript para describir esquemas de datos y validarlos. Define reglas con una API encadenable, trae más de 150 validadores integrados, permite referencias entre campos, dependencias y tipos personalizados mediante extensiones. Se instala con npm install joi.",
+		"Conviene cuando necesitas validar con detalle la entrada de una API, un formulario o un archivo de configuración, sobre todo en proyectos Node con reglas que dependen de otros campos."
+	],
+	"uses": [
+		"Validar el cuerpo y los parámetros de las peticiones de una API en Node antes de procesarlas.",
+		"Comprobar que un archivo de configuración o las variables de entorno tienen la forma esperada al arrancar.",
+		"Exigir reglas cruzadas, como pedir un campo solo si otro tiene cierto valor."
+	],
+	"caveats": [
+		"Es una librería de validación en tiempo de ejecución: no genera tipos de TypeScript por sí sola, así que si quieres inferirlos quizá prefieras otra opción.",
+		"La versión actual requiere Node 20 o superior.",
+		"La documentación completa y el changelog están en joi.dev; el README del repositorio solo enlaza allí."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Código abierto con licencia BSD de tres cláusulas.",
+	"idealFor": "Backends Node que necesitan validar datos con reglas expresivas.",
+	"reviewedAt": "2026-11-13",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-13"
+}
