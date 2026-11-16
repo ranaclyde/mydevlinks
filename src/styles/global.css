@@ -23,6 +23,12 @@
 	--old-bg: #fff0c7;
 	--down: #a3190f;
 	--down-bg: #fce6e3;
+	--free: #1b6a33;
+	--free-bg: #e0f3e5;
+	--freemium: #7a5200;
+	--freemium-bg: #fdf0c4;
+	--paid: #ad1640;
+	--paid-bg: #fde4eb;
 	/* Marco: encabezado y panel lateral, el 30 % de la pantalla. Tenue en claro, azul tinta en oscuro. */
 	--frame: #dfe3ee;
 	--frame-ink: #14171d;
@@ -55,6 +61,18 @@
 		--old-bg: #2c230f;
 		--down: #ff9b90;
 		--down-bg: #3a1714;
+	--free: #7fd99a;
+	--free-bg: #12291a;
+	--freemium: #f2c566;
+	--freemium-bg: #2c230f;
+	--paid: #ff8fab;
+	--paid-bg: #3a1521;
+		--free: #7fd99a;
+		--free-bg: #12291a;
+		--freemium: #f2c566;
+		--freemium-bg: #2c230f;
+		--paid: #ff8fab;
+		--paid-bg: #3a1521;
 		--frame: #1c2236;
 		--frame-ink: #e7e9ee;
 		--frame-muted: #a4abb7;
@@ -87,6 +105,12 @@
 	--old-bg: #2c230f;
 	--down: #ff9b90;
 	--down-bg: #3a1714;
+	--free: #7fd99a;
+	--free-bg: #12291a;
+	--freemium: #f2c566;
+	--freemium-bg: #2c230f;
+	--paid: #ff8fab;
+	--paid-bg: #3a1521;
 	--frame: #1c2236;
 	--frame-ink: #e7e9ee;
 	--frame-muted: #a4abb7;
@@ -120,6 +144,9 @@
 	--color-old-bg: var(--old-bg);
 	--color-down: var(--down);
 	--color-down-bg: var(--down-bg);
+	--color-free: var(--free);
+	--color-freemium: var(--freemium);
+	--color-paid: var(--paid);
 }
 
 /*
@@ -342,10 +369,23 @@ html:not([data-js]) [data-app] {
 		white-space: nowrap;
 	}
 
-	.price.hit {
-		border-color: var(--accent);
-		background: var(--accent-soft);
-		color: var(--accent);
+	/* Un color por precio: verde gratis, ámbar freemium, rojo de pago. */
+	.price[data-price='gratis'] {
+		border-color: color-mix(in srgb, var(--free) 45%, transparent);
+		background: var(--free-bg);
+		color: var(--free);
+	}
+
+	.price[data-price='freemium'] {
+		border-color: color-mix(in srgb, var(--freemium) 45%, transparent);
+		background: var(--freemium-bg);
+		color: var(--freemium);
+	}
+
+	.price[data-price='de-pago'] {
+		border-color: color-mix(in srgb, var(--paid) 45%, transparent);
+		background: var(--paid-bg);
+		color: var(--paid);
 	}
 
 	/* Sobre el enlace estirado de la ficha, para que el puntero lo alcance. */

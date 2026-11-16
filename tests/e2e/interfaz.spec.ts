@@ -484,7 +484,7 @@ test('parámetros inválidos en la URL no rompen el directorio', async ({ page }
 	await expect.poll(() => new URL(page.url()).search).toBe('');
 });
 
-test('el filtro de precio suma opciones, va a la URL y marca la etiqueta de la tarjeta', async ({
+test('el filtro de precio suma opciones, va a la URL y la tarjeta muestra su precio', async ({
 	page,
 	isMobile,
 }) => {
@@ -501,7 +501,7 @@ test('el filtro de precio suma opciones, va a la URL y marca la etiqueta de la t
 	await expect(page.getByRole('button', { name: 'Quitar precio Gratis' })).toBeVisible();
 	const card = cardOf(page, free[0].link);
 	await expect(card.locator('[data-price]')).toHaveText(/Gratis/);
-	await expect(card.locator('[data-price]')).toHaveClass(/\bhit\b/);
+	await expect(card.locator('[data-price]')).toHaveAttribute('data-price', 'gratis');
 
 	await pick(page.getByRole('checkbox', { name: /^Freemium/ }));
 	await expect(count(page)).toHaveText(String(freeOrFreemium.length));

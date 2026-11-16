@@ -19,6 +19,13 @@ interface Props {
 const { categories, techs, tags, prices, total } = Astro.props;
 const galleries = categories.find((category) => category.value === GALLERY)?.count ?? 0;
 
+/** El color de cada precio, el mismo de la etiqueta en la tarjeta. */
+const PRICE_DOT: Record<string, string> = {
+	gratis: 'bg-free',
+	freemium: 'bg-freemium',
+	'de-pago': 'bg-paid',
+};
+
 const label =
 	'text-muted font-mono text-[11px] font-semibold tracking-[.08em] uppercase';
 const option =
@@ -186,7 +193,10 @@ const count =
 							<label class={techOption}>
 								<input class="sr-only" type="checkbox" name="precio" value={price.value} />
 								<CheckBox />
-								<span class="min-w-0 flex-1">{price.label}</span>
+								<span class="flex min-w-0 flex-1 items-center gap-2">
+									{price.label}
+									<span class:list={['size-2 flex-none rounded-full', PRICE_DOT[price.value]]} aria-hidden="true"></span>
+								</span>
 								<span class={count} data-count>
 									{price.count}
 								</span>

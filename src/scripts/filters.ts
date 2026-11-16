@@ -23,7 +23,6 @@ const ANNOUNCE_DELAY = 700;
 interface Card extends FilterItem {
 	el: HTMLElement;
 	chips: HTMLElement[];
-	price: HTMLElement | null;
 }
 
 const $ = <T extends HTMLElement>(selector: string) => document.querySelector(selector) as T;
@@ -65,7 +64,6 @@ const cards: Card[] = [...document.querySelectorAll<HTMLElement>('[data-card]')]
 	tags: JSON.parse(el.dataset.tags ?? '[]'),
 	pricing: el.dataset.pricing,
 	chips: [...el.querySelectorAll<HTMLElement>('[data-chip]')],
-	price: el.querySelector<HTMLElement>('[data-price]'),
 }));
 
 const state: FilterState = stateFromSearch(location.search, {
@@ -291,7 +289,6 @@ function render() {
 		input.checked = (state.pricing ?? []).includes(input.value);
 		setCount(input, pricing[input.value] ?? 0);
 	}
-	for (const card of cards) card.price?.classList.toggle('hit', (state.pricing ?? []).includes(card.pricing ?? ''));
 
 	const category = categoryCounts(cards, state, allTechs);
 	const total = Object.values(category).reduce((sum, count) => sum + count, 0);
