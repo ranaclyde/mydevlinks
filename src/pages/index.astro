@@ -4,6 +4,7 @@ import Filters from '../components/Filters.astro';
 import LinkCard from '../components/LinkCard.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import Layout from '../layouts/Layout.astro';
+import { PRICE_LABEL, PRICING } from '../lib/details';
 import { sortLinks, visibleLinks } from '../lib/links';
 
 const collection = await getCollection('links');
@@ -25,6 +26,20 @@ function tally(values: string[]) {
 const categories = tally(links.map((link) => link.category));
 const techs = tally(links.flatMap((link) => link.tech));
 const tags = tally(links.flatMap((link) => link.tags ?? []));
+
+const pricingById = new Map(
+	(await getCollection('details')).map((entry) => [entry.id, entry.data.pricing]),
+);
+const pricedLinks = links.flatMap((link) => {
+	const pricing = pricingById.get(link.id);
+	return pricing ? [pricing] : [];
+});
+// Orden fijo, de gratis a de pago; solo los precios que tiene algún enlace.
+const prices = PRICING.map((value) => ({
+	value,
+	label: PRICE_LABEL[value],
+	count: pricedLinks.filter((pricing) => pricing === value).length,
+})).filter((price) => price.count > 0);
 ---
 
 <Layout>
@@ -36,7 +51,7 @@ const tags = tally(links.flatMap((link) => link.tags ?? []));
 	<SiteHeader total={links.length} asHeading animateLogo />
 
 	<div class="grid items-start md:grid-cols-[264px_minmax(0,1fr)]" data-app>
-		<Filters categories={categories} techs={techs} tags={tags} total={links.length} />
+		<Filters categories={categories} techs={techs} tags={tags} prices={prices} total={links.length} />
 
 		<main class="flex min-w-0 flex-col gap-3.5 px-4 pt-3.5 pb-7 md:px-5 md:pt-4 md:pb-8">
 			<div class="flex min-h-10 flex-wrap items-center gap-x-4 gap-y-2.5">
@@ -65,7 +80,7 @@ const tags = tally(links.flatMap((link) => link.tags ?? []));
 				class="m-0 grid list-none grid-cols-[repeat(auto-fill,minmax(min(270px,100%),1fr))] gap-3 p-0 max-md:grid-cols-1"
 				data-grid
 			>
-				{links.map((link) => <LinkCard link={link} />)}
+				{links.map((link) => <LinkCard link={link} pricing={pricingById.get(link.id)} />)}
 			</ul>
 
 			<div

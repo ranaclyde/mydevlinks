@@ -43,6 +43,8 @@ export interface FilterItem {
 	tech: string[];
 	tags?: string[];
 	url?: string;
+	/** Precio de su ficha; sin ficha no lo tiene. */
+	pricing?: string;
 }
 
 export interface FilterState {
@@ -51,6 +53,8 @@ export interface FilterState {
 	tech: string[];
 	/** Etiqueta de galería; solo tiene sentido con la categoría de galerías. */
 	tag?: string | null;
+	/** Precios marcados: basta con tener uno de ellos. */
+	pricing?: string[];
 }
 
 interface Segment {
@@ -181,7 +185,12 @@ function prose(item: FilterItem): string {
  * Una casilla exige la etiqueta. Una tecnología escrita también acepta el enlace que la nombra,
  * para que ninguno quede fuera al buscarlo por su nombre.
  */
-function matcher(state: FilterState, techs: string[], ignore: { category?: boolean; tag?: boolean } = {}) {
+function matcher(
+	state: FilterState,
+	techs: string[],
+	ignore: { category?: boolean; tag?: boolean; pricing?: boolean } = {},
+) {
+	const prices = state.pricing ?? [];
 	const { techs: typed, words } = splitQuery(state.query, techs);
 	const wordTests = words.map(wordTest);
 	const mentions = typed.map((tech) => ({ tech, forms: mentionsOf(tech) }));
@@ -189,6 +198,7 @@ function matcher(state: FilterState, techs: string[], ignore: { category?: boole
 	return (item: FilterItem) => {
 		if (!ignore.category && state.category && item.category !== state.category) return false;
 		if (!ignore.tag && state.tag && !(item.tags ?? []).includes(state.tag)) return false;
+		if (!ignore.pricing && prices.length > 0 && !prices.includes(item.pricing ?? '')) return false;
 		if (!state.tech.every((tech) => item.tech.includes(tech))) return false;
 		const mentioned = mentions.every(
 			({ tech, forms }) =>
@@ -242,6 +252,19 @@ export function categoryCounts(
 	const counts: Record<string, number> = {};
 	for (const item of items.filter(matcher(state, techs, { category: true, tag: true }))) {
 		counts[item.category] = (counts[item.category] ?? 0) + 1;
+	}
+	return counts;
+}
+
+/** Enlaces por precio con los demás filtros: los precios se suman, así que se ignora el propio. */
+export function pricingCounts(
+	items: FilterItem[],
+	state: FilterState,
+	techs: string[],
+): Record<string, number> {
+	const counts: Record<string, number> = {};
+	for (const item of items.filter(matcher(state, techs, { pricing: true }))) {
+		if (item.pricing) counts[item.pricing] = (counts[item.pricing] ?? 0) + 1;
 	}
 	return counts;
 }

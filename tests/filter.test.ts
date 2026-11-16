@@ -3,6 +3,7 @@ import links from '../src/data/links.json';
 import {
 	activeTechs,
 	categoryCounts,
+	pricingCounts,
 	facetCounts,
 	matches,
 	normalize,
@@ -428,5 +429,33 @@ describe('etiquetas de galería', () => {
 			'Componentes y UI kits': 1,
 			'Animación y efectos': 1,
 		});
+	});
+});
+
+describe('precio', () => {
+	const libre = { ...motion, name: 'Libre', pricing: 'gratis' };
+	const mixto = { ...shadcn, name: 'Mixto', pricing: 'freemium' };
+	const caro = { ...tabla, name: 'Caro', pricing: 'de-pago' };
+	const items = [libre, mixto, caro, sinDescripcion];
+
+	it('sin precios marcados no filtra, ni siquiera los enlaces sin ficha', () => {
+		expect(items.filter((item) => matches(item, { ...empty, pricing: [] }, TECHS))).toEqual(items);
+	});
+
+	it('basta con tener uno de los precios marcados', () => {
+		const state = { ...empty, pricing: ['gratis', 'freemium'] };
+		expect(items.filter((item) => matches(item, state, TECHS))).toEqual([libre, mixto]);
+	});
+
+	it('se combina con los demás filtros', () => {
+		const state = { ...empty, category: 'Componentes y UI kits', pricing: ['freemium', 'de-pago'] };
+		expect(items.filter((item) => matches(item, state, TECHS))).toEqual([mixto, caro]);
+	});
+
+	it('pricingCounts ignora los precios marcados y respeta los demás filtros', () => {
+		const state = { ...empty, query: 'react', pricing: ['gratis'] };
+		expect(pricingCounts(items, state, TECHS)).toEqual({ gratis: 1, freemium: 1, 'de-pago': 1 });
+		const comps = { ...state, category: 'Componentes y UI kits' };
+		expect(pricingCounts(items, comps, TECHS)).toEqual({ freemium: 1, 'de-pago': 1 });
 	});
 });
