@@ -3091,5 +3091,19 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/figma-com-es-la-motion.svg"
+	},
+	{
+		"id": "astryx-atmeta-com",
+		"name": "Astryx",
+		"url": "https://astryx.atmeta.com/",
+		"description": "Design system open source de Meta, en React y StyleX, con temas y documentación pensada para agentes.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"React"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/astryx-atmeta-com.svg"
 	}
 ]
