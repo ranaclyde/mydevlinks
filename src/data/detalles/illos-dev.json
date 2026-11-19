@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Illos es una biblioteca de 186 ilustraciones SVG animadas en cinco estilos: Shader, HUD, Isométrico, Interface y Cybernetics, cada uno en versión clara y oscura. Cada ilustración es un solo archivo SVG con la animación incluida, sin scripts ni fuentes web, y respeta la preferencia de movimiento reducido.",
+		"Conviene cuando quieres ilustraciones con estilo coherente para el sitio de un producto, o que tu agente de código dibuje nuevas en el mismo estilo."
+	],
+	"uses": [
+		"Ilustrar las secciones de una landing con SVG que pesan pocos KB.",
+		"Agregar una ilustración a un proyecto React con shadcn mediante un comando de instalación.",
+		"Pedirle a tu agente de código nuevas ilustraciones en el mismo estilo usando las skills."
+	],
+	"caveats": [
+		"Gratis son 79 ilustraciones; el resto y las skills requieren el plan Pro.",
+		"No puedes revender las ilustraciones como paquete ni usarlas para armar una biblioteca competidora.",
+		"Las compras son definitivas, salvo un cobro doble o una licencia que nunca llega."
+	],
+	"pricing": "freemium",
+	"pricingNote": "79 ilustraciones gratis sin cuenta; Pro cuesta 69 USD y Team 299 USD, ambos con pago único.",
+	"pricingUrl": "https://illos.dev/pro",
+	"idealFor": "Sitios de producto que quieren ilustraciones animadas ligeras y coherentes.",
+	"reviewedAt": "2026-11-19",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-19"
+}

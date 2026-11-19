@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Figma Motion es la herramienta de Figma para crear animaciones directamente en el lienzo, con preajustes, fotogramas clave con curvas Bézier y resortes, y un agente de IA que genera movimientos a partir de una descripción. Las animaciones se exportan como MP4, GIF, SVG o WebM.",
+		"Conviene cuando diseñas interfaces en Figma y quieres definir el movimiento ahí mismo y pasárselo al equipo de desarrollo."
+	],
+	"uses": [
+		"Prototipar la animación de entrada de una pantalla antes de programarla.",
+		"Entregar a desarrollo la línea de tiempo del movimiento y copiar el código en CSS, JSON o React desde Dev Mode.",
+		"Exportar una animación como GIF o MP4 para una presentación o una publicación."
+	],
+	"caveats": [
+		"Está en beta abierta y pide un puesto Full; se puede usar en el plan gratis Starter, pero publicar componentes animados, generar con el agente de IA y exportar video en alta resolución requieren un puesto Full de pago.",
+		"Funciones como presets propios, transformaciones 3D y transiciones completas entre pantallas aún figuran como próximas.",
+		"Los puestos Dev y Collab no la incluyen, lo que importa si tu equipo solo revisa diseños."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Motion beta se usa con un puesto Full, también en el plan gratis; el agente de IA y la exportación en alta resolución piden un puesto Full de pago, desde 16 USD al mes.",
+	"pricingUrl": "https://www.figma.com/es-la/pricing/",
+	"idealFor": "Equipos que diseñan en Figma y quieren definir el movimiento ahí.",
+	"reviewedAt": "2026-11-19",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-19"
+}

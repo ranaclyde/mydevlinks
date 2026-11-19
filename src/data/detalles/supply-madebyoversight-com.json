@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Oversight Supply es un catálogo de plantillas y secciones para sitios web que puedes abrir en Webflow o Framer, o copiar como instrucciones a herramientas de IA para programar como Claude Code, Cursor y v0. Tiene 192 plantillas y 41 secciones gratuitas.",
+		"Conviene cuando necesitas armar un sitio de marketing con buen diseño de partida y lo vas a construir con alguna de esas herramientas."
+	],
+	"uses": [
+		"Pegar una sección gratuita, como un hero o una grilla de precios, en un proyecto existente.",
+		"Abrir una plantilla en Webflow o Framer para lanzar el sitio de un cliente.",
+		"Usar el prompt completo de una plantilla para que una herramienta de IA genere la landing."
+	],
+	"caveats": [
+		"Solo las secciones marcadas como gratis (con cuenta) y la plantilla Lumenis no cuestan; el resto del catálogo es de pago.",
+		"Los créditos de plantilla de los planes mensuales no se acumulan: los no usados vencen al renovar.",
+		"Las plantillas de Webflow y Framer requieren tener esas herramientas."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Secciones gratis con cuenta; desde 15 USD al mes, plantillas sueltas de 29 a 129 USD o 499 USD de por vida.",
+	"pricingUrl": "https://supply.madebyoversight.com/pricing",
+	"idealFor": "Quien arma sitios de marketing en Webflow, Framer o con IA.",
+	"reviewedAt": "2026-11-19",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-19"
+}

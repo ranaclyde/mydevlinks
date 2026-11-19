@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 291 291">
+  <!-- The Swivel logo, the user's own file (2026-10-09): two white slabs on a rounded tile in the brand ramp, which carries its own ground on a dark tab strip and a light one. The same two paths as src/editor/SwivelMark.tsx (swivelMark.test.ts). The corner is 52 (18%), not the file's 70: at tab size 70 read too round (the user's choice, 2026-10-10); the logo inside the app keeps 70. -->
+  <rect width="291" height="291" rx="52" fill="url(#t)"/>
+  <path d="M75.3338 182.465C75.3339 178.164 77.6357 174.192 81.3673 172.053L167.11 122.916C170.733 120.84 175.176 120.797 178.839 122.802L211.201 140.517C215.047 142.623 217.439 146.658 217.439 151.043L217.439 188.525C217.439 192.804 215.16 196.759 211.458 198.906L126.069 248.418C122.407 250.541 117.898 250.578 114.202 248.516L81.4862 230.26C77.6877 228.14 75.3336 224.131 75.3336 219.781L75.3338 182.465Z" fill="white"/>
+  <path d="M75.143 102.121C75.143 97.8035 77.4619 93.8192 81.2156 91.6868L165.712 43.6855C169.359 41.6136 173.824 41.5965 177.487 43.6405L209.879 61.7156C213.677 63.8353 216.031 67.8446 216.031 72.1945L216.031 109.055C216.031 113.356 213.73 117.327 209.999 119.466L125.25 168.047C121.542 170.172 116.984 170.165 113.283 168.029L81.1433 149.475C77.4301 147.332 75.1426 143.37 75.1427 139.083L75.143 102.121Z" fill="white"/>
+  <defs><linearGradient id="t" x1="23.8775" y1="279.076" x2="370.831" y2="134.652" gradientUnits="userSpaceOnUse"><stop stop-color="#0099ff"/><stop offset="1" stop-color="#0033cc"/></linearGradient></defs>
+</svg>
