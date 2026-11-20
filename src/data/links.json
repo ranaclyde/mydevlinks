@@ -3076,7 +3076,7 @@
 		"status": "activo",
 		"verified": true,
 		"private": false,
-		"logo": "/logos/eyecannndy-com.svg"
+		"logo": "/logos/eyecannndy-com.png"
 	},
 	{
 		"id": "figma-com-es-la-motion",
@@ -3105,5 +3105,17 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/astryx-atmeta-com.svg"
+	},
+	{
+		"id": "pexels-com",
+		"name": "Pexels",
+		"url": "https://www.pexels.com/",
+		"description": "Fotos y videos de stock gratuitos, sin atribución obligatoria, con API para integrarlos.",
+		"category": "Iconos e ilustraciones",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/pexels-com.png"
 	}
 ]
