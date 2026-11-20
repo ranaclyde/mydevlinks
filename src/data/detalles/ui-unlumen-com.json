@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"unlumen UI es una biblioteca de componentes para React construida con Tailwind CSS y Motion, con animaciones, efectos de imagen, fondos con shaders, navegación e íconos animados.",
+		"Conviene cuando quieres darle un acabado más expresivo a una landing o una app y ya trabajas con React y Tailwind."
+	],
+	"uses": [
+		"Dar vida a una landing con fondos animados y secciones de marketing.",
+		"Reemplazar una barra de navegación estática por una con transiciones fluidas.",
+		"Sumar íconos animados y pequeños efectos de entrada a una interfaz existente."
+	],
+	"caveats": [
+		"El catálogo mezcla componentes gratis y Pro; revisa la etiqueta de cada uno antes de planear su uso.",
+		"Los componentes dependen de Motion y Tailwind, así que se suman al peso del proyecto.",
+		"Los planes Pro son pagos únicos o anuales; el anual deja de dar acceso a componentes nuevos al vencer."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Hay componentes gratis; los Pro se desbloquean con licencia desde 69 USD al año o 119 USD de pago único.",
+	"pricingUrl": "https://ui.unlumen.com/pricing",
+	"idealFor": "Proyectos React que buscan animaciones y efectos visuales ya hechos.",
+	"reviewedAt": "2026-11-19",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-19"
+}

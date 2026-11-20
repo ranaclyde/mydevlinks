@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Neobrutalism components es una colección de 64 componentes con estilo neobrutalista, de bordes gruesos, sombras duras y colores fuertes, para React y Tailwind v4. Se apoya en shadcn/ui y Base UI e incluye gráficos y formas de estrella.",
+		"Conviene cuando quieres una interfaz con personalidad marcada, o aprender el estilo, sin dibujar cada pieza."
+	],
+	"uses": [
+		"Dar identidad visual llamativa a un portafolio o una landing personal.",
+		"Armar formularios, tarjetas y botones con estilo neobrutalista consistente.",
+		"Mostrar datos con los gráficos del mismo estilo en un panel pequeño."
+	],
+	"caveats": [
+		"Requiere Tailwind v4, así que revisa la versión de tu proyecto.",
+		"El estilo es muy distintivo y no encaja en cualquier producto, sobre todo en los más sobrios.",
+		"Al estar basada en shadcn/ui, conviene conocer ese flujo de copiar componentes al proyecto."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Código abierto con licencia MIT; no tiene plan de pago.",
+	"idealFor": "Proyectos con Tailwind que quieren un look neobrutalista.",
+	"reviewedAt": "2026-11-19",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-19"
+}

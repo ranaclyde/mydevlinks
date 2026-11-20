@@ -2897,5 +2897,225 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/cleanup-pictures.png"
+	},
+	{
+		"id": "alyn-dev",
+		"name": "Alyn",
+		"url": "https://alyn.dev/",
+		"description": "Directorio de skills open source para Claude Code, Cursor, Codex y otros agentes, con puntuación de calidad y uso.",
+		"category": "Directorios de recursos",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/alyn-dev.svg"
+	},
+	{
+		"id": "swivelmotion-app",
+		"name": "Swivel",
+		"url": "https://swivelmotion.app/",
+		"description": "Pone videos o diseños en mockups 3D de iPhone y MacBook y los exporta, todo en el navegador.",
+		"category": "Herramientas de desarrollo",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/swivelmotion-app.svg"
+	},
+	{
+		"id": "fontshare-com",
+		"name": "Fontshare",
+		"url": "https://www.fontshare.com/",
+		"description": "Fuentes tipográficas gratuitas de Indian Type Foundry, para uso personal y comercial.",
+		"category": "Fuentes y color",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/fontshare-com.png"
+	},
+	{
+		"id": "colorhunt-co",
+		"name": "Color Hunt",
+		"url": "https://colorhunt.co/",
+		"description": "Paletas de cuatro colores elegidas a mano, para buscar por tema o popularidad.",
+		"category": "Fuentes y color",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/colorhunt-co.svg"
+	},
+	{
+		"id": "shadergradient-co",
+		"name": "ShaderGradient",
+		"url": "https://shadergradient.co/",
+		"description": "Crea gradientes 3D animados y los lleva a React, Figma o Framer.",
+		"category": "Generadores CSS/SVG",
+		"tech": [
+			"React",
+			"Figma"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/shadergradient-co.png"
+	},
+	{
+		"id": "icons8-com",
+		"name": "Icons8",
+		"url": "https://icons8.com/",
+		"description": "Iconos, ilustraciones y modelos 3D en estilos consistentes, en SVG y PNG.",
+		"category": "Iconos e ilustraciones",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/icons8-com.png"
+	},
+	{
+		"id": "illos-dev",
+		"name": "Illos",
+		"url": "https://illos.dev/",
+		"description": "Ilustraciones SVG animadas para sitios de producto, con una skill para crear nuevas.",
+		"category": "Iconos e ilustraciones",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/illos-dev.svg"
+	},
+	{
+		"id": "blocks-so",
+		"name": "Blocks",
+		"url": "https://blocks.so/",
+		"description": "Bloques gratuitos de shadcn/ui para copiar y pegar: formularios, tablas, diálogos y más.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"React",
+			"Next.js",
+			"Tailwind",
+			"shadcn/ui"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/blocks-so.ico"
+	},
+	{
+		"id": "ui-unlumen-com",
+		"name": "unlumen UI",
+		"url": "https://ui.unlumen.com/",
+		"description": "Componentes React animados con Motion, instalables con el CLI de shadcn.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"React",
+			"TypeScript",
+			"Tailwind",
+			"shadcn/ui"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/ui-unlumen-com.png"
+	},
+	{
+		"id": "smoothui-dev",
+		"name": "SmoothUI",
+		"url": "https://smoothui.dev/",
+		"description": "Componentes React con animaciones suaves, compatibles con shadcn/ui.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"React",
+			"Tailwind",
+			"shadcn/ui"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/smoothui-dev.ico"
+	},
+	{
+		"id": "neobrutalism-dev",
+		"name": "Neobrutalism components",
+		"url": "https://www.neobrutalism.dev/",
+		"description": "Componentes con estilo neobrutalista basados en shadcn/ui.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"React",
+			"Tailwind",
+			"shadcn/ui"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/neobrutalism-dev.ico"
+	},
+	{
+		"id": "supply-madebyoversight-com",
+		"name": "Oversight Supply",
+		"url": "https://supply.madebyoversight.com/",
+		"description": "Plantillas y secciones web para Webflow y Framer, listas para pegar en Claude Code o v0.",
+		"category": "Componentes y UI kits",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/supply-madebyoversight-com.png"
+	},
+	{
+		"id": "eyecannndy-com",
+		"name": "Eyecandy",
+		"url": "https://eyecannndy.com/",
+		"description": "Biblioteca de técnicas visuales de video y motion, con ejemplos de cada una.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"tags": [
+			"Movimiento"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/eyecannndy-com.png"
+	},
+	{
+		"id": "figma-com-es-la-motion",
+		"name": "Figma Motion",
+		"url": "https://www.figma.com/es-la/motion/",
+		"description": "Animaciones dentro de Figma que se exportan a código o GIF.",
+		"category": "Animación y efectos",
+		"tech": [
+			"Figma"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/figma-com-es-la-motion.svg"
+	},
+	{
+		"id": "astryx-atmeta-com",
+		"name": "Astryx",
+		"url": "https://astryx.atmeta.com/",
+		"description": "Design system open source de Meta, en React y StyleX, con temas y documentación pensada para agentes.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"React"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/astryx-atmeta-com.svg"
+	},
+	{
+		"id": "pexels-com",
+		"name": "Pexels",
+		"url": "https://www.pexels.com/",
+		"description": "Fotos y videos de stock gratuitos, sin atribución obligatoria, con API para integrarlos.",
+		"category": "Iconos e ilustraciones",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/pexels-com.png"
 	}
 ]

@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Swivel es un estudio en el navegador para poner un video o un diseño dentro de un mockup 3D de dispositivo, como un iPhone o un MacBook, y exportarlo como video o imagen.",
+		"Conviene para mostrar una app o una web en un video de lanzamiento, una demo o un post, sin instalar nada."
+	],
+	"uses": [
+		"Grabar tu app y mostrarla dentro de un iPhone para el video de lanzamiento.",
+		"Generar las imágenes de la ficha en App Store o Google Play con los tamaños que piden las tiendas.",
+		"Preparar una demo de tu web dentro de un MacBook para el README o las redes."
+	],
+	"caveats": [
+		"El plan gratis permite 3 exportaciones cada 24 horas y 15 cada 30 días, con video hasta 720p.",
+		"El plan gratis agrega una marca de Swivel y su uso es solo personal y no comercial.",
+		"Para 4K, WebM transparente, exportación por lote y trabajo para clientes o anuncios necesitas el plan Pro."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Plan gratis con límites y marca de agua; el plan Pro se paga mensual, cada 6 meses o anual.",
+	"pricingUrl": "https://swivelmotion.app/pricing",
+	"idealFor": "Developers que necesitan mockups de video para mostrar su app.",
+	"reviewedAt": "2026-11-19",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-19"
+}
