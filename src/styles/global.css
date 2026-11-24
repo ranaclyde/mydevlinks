@@ -449,51 +449,112 @@ html:not([data-js]) [data-app] {
 	}
 
 	/*
-	 * Logotipo: "links" se escribe letra por letra, como en el buscador,
-	 * y al completarse queda resaltado igual que una coincidencia.
+	 * Logotipo: un estante con cuatro lomos; el último se inclina.
+	 * Al cargar el inicio la tabla se extiende, los lomos suben uno tras otro
+	 * y el último cae. Sin animación queda en ese estado final.
 	 */
-	.logo-hit {
-		margin-left: 0.06em;
-		padding: 0.08em 0.14em;
-		background: var(--accent-soft);
-		box-shadow: inset 0.12em 0 0 var(--accent);
+	.logo {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.45em;
+	}
+
+	.logo-mark {
+		display: block;
+		width: auto;
+		height: 1.45em;
+		overflow: visible;
+	}
+
+	.logo-shelf {
+		fill: var(--accent);
+	}
+
+	.logo-spine {
+		fill: var(--ink);
+	}
+
+	.logo-spine-accent {
+		fill: var(--accent);
+	}
+
+	.logo-spine-dim {
+		fill: var(--line-strong);
+	}
+
+	.logo-lean {
+		transform-box: view-box;
+		transform-origin: 84px 98px;
+		transform: rotate(-15deg);
+	}
+
+	.logo-word {
+		display: inline-block;
+	}
+
+	.logo-word-accent {
 		color: var(--accent);
 	}
 
 	@media (prefers-reduced-motion: no-preference) {
-		.logo-hit {
-			animation: logo-match 0.25s ease 0.9s backwards;
+		.logo-anim .logo-shelf {
+			transform-box: fill-box;
+			transform-origin: 0 50%;
+			animation: logo-shelf 0.35s ease-out 0.1s backwards;
 		}
 
-		.logo-hit > span {
-			animation: logo-type 0.01s steps(1) backwards;
+		.logo-anim .logo-spine {
+			transform-box: fill-box;
+			transform-origin: 50% 100%;
+			animation: logo-rise 0.45s cubic-bezier(0.3, 1.6, 0.5, 1) backwards;
 		}
 
-		.logo-hit > span:nth-child(1) { animation-delay: 0.2s; }
-		.logo-hit > span:nth-child(2) { animation-delay: 0.32s; }
-		.logo-hit > span:nth-child(3) { animation-delay: 0.44s; }
-		.logo-hit > span:nth-child(4) { animation-delay: 0.56s; }
-		.logo-hit > span:nth-child(5) { animation-delay: 0.68s; }
+		.logo-anim .logo-spine:nth-of-type(2) { animation-delay: 0.25s; }
+		.logo-anim .logo-spine:nth-of-type(3) { animation-delay: 0.38s; }
+		.logo-anim .logo-spine:nth-of-type(4) { animation-delay: 0.51s; }
+		.logo-anim .logo-lean .logo-spine { animation-delay: 0.64s; }
 
-		/* Sin animación: queda en el estado final resaltado. */
-		.logo-hit.logo-static,
-		.logo-hit.logo-static > span {
-			animation: none;
+		.logo-anim .logo-lean {
+			animation: logo-lean 0.6s ease-in-out 1.05s backwards;
+		}
+
+		.logo-anim .logo-word {
+			animation: logo-word 0.4s ease-out 0.45s backwards;
 		}
 	}
 }
 
-@keyframes logo-type {
+@keyframes logo-shelf {
+	from {
+		transform: scaleX(0);
+	}
+}
+
+@keyframes logo-rise {
+	from {
+		transform: scaleY(0);
+	}
+}
+
+@keyframes logo-lean {
+	0% {
+		transform: rotate(0deg);
+	}
+	55% {
+		transform: rotate(-19deg);
+	}
+	78% {
+		transform: rotate(-13deg);
+	}
+	100% {
+		transform: rotate(-15deg);
+	}
+}
+
+@keyframes logo-word {
 	from {
 		opacity: 0;
-	}
-}
-
-@keyframes logo-match {
-	from {
-		background: transparent;
-		box-shadow: none;
-		color: var(--ink);
+		transform: translateX(-0.4em);
 	}
 }
 

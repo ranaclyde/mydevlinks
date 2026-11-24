@@ -1,12 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
 	<style>
-		rect { fill: #14171d; }
-		text { fill: #eceef2; }
+		.bg { fill: #14171d; }
+		.ink { fill: #eceef2; }
+		.accent { fill: #97a8ff; }
 		@media (prefers-color-scheme: dark) {
-			rect { fill: #e7e9ee; }
-			text { fill: #0e1014; }
+			.bg { fill: #e7e9ee; }
+			.ink { fill: #14171d; }
+			.accent { fill: #1f3fbf; }
 		}
 	</style>
-	<rect width="32" height="32" />
-	<text x="16" y="21.5" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" letter-spacing="-0.6">ml</text>
+	<rect class="bg" width="32" height="32" />
+	<rect class="ink" x="5" y="11" width="6" height="14" />
+	<rect class="accent" x="13" y="6" width="6" height="19" />
+	<rect class="ink" x="24" y="10" width="5" height="15" transform="rotate(-19.5 24 25)" />
+	<rect class="accent" x="3" y="25" width="26" height="3" />
 </svg>

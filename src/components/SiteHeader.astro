@@ -1,4 +1,6 @@
 ---
+import Logo from './Logo.astro';
+
 interface Props {
 	total: number;
 	asHeading?: boolean;
@@ -30,15 +32,11 @@ const themes = [
 <header
 	class="marco bg-surface border-line flex items-center justify-between gap-3 border-b px-4 py-3 md:sticky md:top-0 md:z-20 md:h-[58px]"
 >
-	<div class="flex items-baseline gap-3">
+	<div class="flex items-center gap-3">
 		<Brand class="font-mono text-lg leading-none font-semibold tracking-[-.02em]">
 			<a href="/" class="text-inherit no-underline">
-				<span class="sr-only">mydevlinks</span>
-				<span aria-hidden="true"
-					>mydev<span class:list={['logo-hit', { 'logo-static': !animateLogo }]}
-						>{[...'links'].map((letter) => <span>{letter}</span>)}</span
-					></span
-				>
+				<span class="sr-only">toolshelf</span>
+				<span aria-hidden="true"><Logo animate={animateLogo} /></span>
 			</a>
 		</Brand>
 		<span class="text-muted font-mono text-xs max-md:hidden">{total} enlaces</span>
