@@ -1,0 +1,40 @@
+# Node sale de .nvmrc y pnpm del campo packageManager de package.json.
+[build]
+  command = "pnpm build"
+  publish = "dist"
+
+# Los previews y branch deploys no se indexan; solo producción.
+[context.deploy-preview.environment]
+  SITE_NOINDEX = "1"
+[context.branch-deploy.environment]
+  SITE_NOINDEX = "1"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+    Strict-Transport-Security = "max-age=31536000"
+
+# Archivos con hash en el nombre: no cambian nunca.
+[[headers]]
+  for = "/_astro/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Logos y capturas conservan el nombre al rehacerse: un día de caché y revalidación en segundo plano.
+[[headers]]
+  for = "/logos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+[[headers]]
+  for = "/capturas/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
