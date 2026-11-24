@@ -3117,5 +3117,65 @@
 		"verified": true,
 		"private": false,
 		"logo": "/logos/pexels-com.png"
+	},
+	{
+		"id": "uiarc-dev",
+		"name": "Arc UI",
+		"url": "https://uiarc.dev/",
+		"description": "Componentes y bloques React animados para shadcn y Next.js, con servidor MCP para agentes.",
+		"category": "Componentes y UI kits",
+		"tech": [
+			"React",
+			"Next.js",
+			"Tailwind",
+			"shadcn/ui"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/uiarc-dev.svg"
+	},
+	{
+		"id": "inspora-design",
+		"name": "Inspora",
+		"url": "https://www.inspora.design/",
+		"description": "Inspiración curada de sitios web, logos e iconos de apps, con sus creadores.",
+		"category": "Galerías de inspiración",
+		"tech": [],
+		"tags": [
+			"Sitios web",
+			"Marca y portafolios"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/inspora-design.png"
+	},
+	{
+		"id": "designeer-xyz",
+		"name": "Designeer",
+		"url": "https://designeer.xyz/",
+		"description": "Referencias de diseño, recursos, herramientas y portafolios de diseñadores y developers.",
+		"category": "Directorios de recursos",
+		"tech": [],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/designeer-xyz.ico"
+	},
+	{
+		"id": "stickitupx-com",
+		"name": "Stick It Up",
+		"url": "https://stickitupx.com/",
+		"description": "Stickers interactivos open source para React y Next.js: vinilos 3D, emblemas cromados y pixel art.",
+		"category": "Iconos e ilustraciones",
+		"tech": [
+			"React",
+			"Next.js"
+		],
+		"status": "activo",
+		"verified": true,
+		"private": false,
+		"logo": "/logos/stickitupx-com.svg"
 	}
 ]
