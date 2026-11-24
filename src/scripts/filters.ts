@@ -14,9 +14,12 @@ import {
 	type FilterItem,
 	type FilterState,
 } from '../lib/filter';
-import { PRICE_LABEL, PRICING } from '../lib/details';
+import { labelOf, useTranslations } from '../i18n/ui';
+import { PRICING } from '../lib/details';
 import { GALLERY } from '../lib/links';
 import { stateFromSearch, stateToSearch } from '../lib/url-state';
+
+const t = useTranslations(document.documentElement.lang);
 
 const ANNOUNCE_DELAY = 700;
 
@@ -105,9 +108,6 @@ function arrangeChips(card: Card, active: Set<string>) {
 	}
 }
 
-function priceLabel(value: string): string {
-	return PRICE_LABEL[value as (typeof PRICING)[number]] ?? value;
-}
 
 /** Precios marcados en el orden del panel, no en el que se marcaron. */
 function selectedPrices(): string[] {
@@ -115,15 +115,11 @@ function selectedPrices(): string[] {
 }
 
 function listOr(items: string[]): string {
-	return items.length < 2 ? items.join('') : `${items.slice(0, -1).join(', ')} o ${items.at(-1)}`;
-}
-
-function pluralize(count: number): string {
-	return count === 1 ? 'enlace' : 'enlaces';
+	return items.length < 2 ? items.join('') : `${items.slice(0, -1).join(', ')} ${t.or} ${items.at(-1)}`;
 }
 
 function listJoin(items: string[]): string {
-	return items.length < 2 ? items.join('') : `${items.slice(0, -1).join(', ')} y ${items.at(-1)}`;
+	return items.length < 2 ? items.join('') : `${items.slice(0, -1).join(', ')} ${t.and} ${items.at(-1)}`;
 }
 
 function pill(text: string, label: string, remove: () => void): HTMLButtonElement {
@@ -162,44 +158,46 @@ function renderActives(words: string[], techs: string[], visible: number) {
 	if (words.length > 0) {
 		const text = words.join(' ');
 		items.push(
-			pill(`«${text}»`, `Quitar búsqueda «${text}»`, () => {
+			pill(`«${text}»`, t.removeSearch(text), () => {
 				state.query = queryWithoutWords(state.query, allTechs);
 				search.value = state.query;
 			}),
 		);
 	}
 	if (state.category) {
+		const label = labelOf(t, state.category);
 		items.push(
-			pill(state.category, `Quitar categoría ${state.category}`, () => {
+			pill(label, t.removeCategory(label), () => {
 				state.category = null;
 				state.tag = null;
 			}),
 		);
 	}
 	if (state.tag) {
+		const label = labelOf(t, state.tag);
 		items.push(
-			pill(state.tag, `Quitar tipo ${state.tag}`, () => {
+			pill(label, t.removeType(label), () => {
 				state.tag = null;
 			}),
 		);
 	}
 	for (const price of selectedPrices()) {
-		const label = priceLabel(price);
+		const label = labelOf(t, price);
 		items.push(
-			pill(label, `Quitar precio ${label}`, () => {
+			pill(label, t.removePrice(label), () => {
 				state.pricing = (state.pricing ?? []).filter((item) => item !== price);
 			}),
 		);
 	}
 	for (const tech of techs) {
-		items.push(pill(tech, `Quitar ${tech}`, () => removeTech(tech)));
+		items.push(pill(tech, t.removeTech(tech), () => removeTech(tech)));
 	}
 	if (items.length > 0 && visible > 0) {
 		const clear = document.createElement('button');
 		clear.type = 'button';
 		clear.className =
 			'text-ink hover:text-accent min-h-[30px] cursor-pointer py-1 pr-1.5 text-[13px] underline underline-offset-3';
-		clear.textContent = 'Limpiar filtros';
+		clear.textContent = t.clearFilters;
 		clear.dataset.clear = '';
 		items.push(clear);
 	}
@@ -228,25 +226,25 @@ function renderTechList() {
 	techNone.hidden = shown > 0;
 	if (techMore) {
 		techMore.setAttribute('aria-expanded', String(techListOpen));
-		techMore.textContent = techListOpen ? 'Ver menos' : `Ver las ${allTechs.length}`;
+		techMore.textContent = techListOpen ? t.seeLess : t.techMore(allTechs.length);
 	}
 }
 
 function renderEmpty(words: string[], techs: string[]) {
-	const parts = ['Ningún enlace coincide'];
-	if (words.length > 0) parts.push(`con «${words.join(' ')}»`);
-	if (state.category) parts.push(`en ${state.category}`);
-	if (state.tag) parts.push(`de tipo ${state.tag}`);
-	const prices = selectedPrices().map((price) => priceLabel(price).toLowerCase());
+	const parts = [t.emptyIntro];
+	if (words.length > 0) parts.push(t.emptyWith(words.join(' ')));
+	if (state.category) parts.push(t.emptyIn(labelOf(t, state.category)));
+	if (state.tag) parts.push(t.emptyOfType(labelOf(t, state.tag)));
+	const prices = selectedPrices().map((price) => labelOf(t, price).toLowerCase());
 	if (prices.length > 0) parts.push(listOr(prices));
-	if (techs.length > 0) parts.push(`con ${listJoin(techs)}`);
+	if (techs.length > 0) parts.push(t.emptyTechs(listJoin(techs)));
 	emptyText.textContent = `${parts.join(' ')}.`;
 }
 
 function announce(count: number) {
 	clearTimeout(announceTimer);
 	announceTimer = setTimeout(() => {
-		live.textContent = `${count} ${pluralize(count)}`;
+		live.textContent = `${count} ${t.links(count)}`;
 	}, ANNOUNCE_DELAY);
 }
 
@@ -269,8 +267,8 @@ function render() {
 	}
 
 	countValue.textContent = String(visible);
-	countLabel.textContent = pluralize(visible);
-	showResults.textContent = `Ver ${visible} ${pluralize(visible)}`;
+	countLabel.textContent = t.links(visible);
+	showResults.textContent = t.showResults(visible);
 	announce(visible);
 
 	grid.hidden = visible === 0;
@@ -296,7 +294,7 @@ function render() {
 		input.checked = input.value === (state.category ?? '');
 		setCount(input, input.value ? (category[input.value] ?? 0) : total);
 	}
-	categoryCurrent.textContent = state.category ?? '';
+	categoryCurrent.textContent = state.category ? labelOf(t, state.category) : '';
 
 	if (tagGroup) {
 		tagGroup.hidden = state.category !== GALLERY;

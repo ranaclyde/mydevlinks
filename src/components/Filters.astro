@@ -1,4 +1,5 @@
 ---
+import { labelOf, useTranslations } from '../i18n/ui';
 import { TOP_TECHS } from '../lib/filter';
 import { GALLERY } from '../lib/links';
 import CheckBox from './CheckBox.astro';
@@ -17,6 +18,7 @@ interface Props {
 }
 
 const { categories, techs, tags, prices, total } = Astro.props;
+const t = useTranslations(Astro.currentLocale);
 const galleries = categories.find((category) => category.value === GALLERY)?.count ?? 0;
 
 /** El color de cada precio, el mismo de la etiqueta en la tarjeta. */
@@ -42,15 +44,15 @@ const count =
 
 <aside
 	class="marco group/side bg-surface border-line flex flex-col gap-3 border-b px-4 py-3 md:sticky md:top-[58px] md:h-[calc(100dvh-58px)] md:gap-[18px] md:overflow-y-auto md:overscroll-contain md:border-r md:border-b-0 md:px-3 md:pt-4 md:pb-6"
-	aria-label="Filtros"
+	aria-label={t.filters}
 	data-side
 	data-collapsed
 	data-needs-js
 >
-	<h2 class="sr-only">Filtros</h2>
+	<h2 class="sr-only">{t.filters}</h2>
 
 	<div>
-		<label class:list={[label, 'mb-1.5 block px-1 max-md:sr-only']} for="buscar">Buscar</label>
+		<label class:list={[label, 'mb-1.5 block px-1 max-md:sr-only']} for="buscar">{t.search}</label>
 		<div
 			class="border-line-strong bg-bg focus-within:border-accent focus-within:outline-accent flex h-11 items-center gap-2 border px-2.5 focus-within:outline-2 focus-within:outline-offset-1 md:h-10"
 		>
@@ -71,7 +73,7 @@ const count =
 				class="text-ink placeholder:text-muted h-full w-full min-w-0 bg-transparent text-sm outline-none"
 				id="buscar"
 				type="search"
-				placeholder="Nombre, tema, tecnología o URL"
+				placeholder={t.searchPlaceholder}
 				autocomplete="off"
 				spellcheck="false"
 				data-search
@@ -87,7 +89,7 @@ const count =
 		data-toggle
 	>
 		<span>
-			Filtros
+			{t.filters}
 			<span class="bg-accent text-accent-ink ml-1.5 px-[7px] py-px font-mono text-xs" data-badge hidden
 			></span>
 		</span>
@@ -114,7 +116,7 @@ const count =
 					'flex min-h-8 cursor-pointer list-none items-center justify-between gap-2 px-1 [&::-webkit-details-marker]:hidden',
 				]}
 			>
-				<span class="flex-none">Categoría</span>
+				<span class="flex-none">{t.category}</span>
 				<span
 					class="min-w-0 truncate font-normal tracking-normal normal-case group-open/details:hidden"
 					data-category-current></span>
@@ -130,11 +132,11 @@ const count =
 				>
 			</summary>
 			<fieldset class="mt-1.5 min-w-0">
-				<legend class="sr-only">Categoría</legend>
+				<legend class="sr-only">{t.category}</legend>
 				<div class="flex flex-col">
 					<label class={allOption}>
 						<input class="sr-only" type="radio" name="categoria" value="" checked />
-						<span class="min-w-0 flex-1">Todas</span>
+						<span class="min-w-0 flex-1">{t.allCategories}</span>
 						<span class={count} data-count>{total}</span>
 					</label>
 					{
@@ -142,7 +144,7 @@ const count =
 							<>
 								<label class={categoryOption}>
 									<input class="sr-only" type="radio" name="categoria" value={category.value} />
-									<span class="min-w-0 flex-1">{category.value}</span>
+									<span class="min-w-0 flex-1">{labelOf(t, category.value)}</span>
 									<span class={count} data-count>
 										{category.count}
 									</span>
@@ -151,11 +153,11 @@ const count =
 									<div
 										class="border-line-strong mt-0.5 mb-1 ml-3 flex flex-col border-l"
 										role="group"
-										aria-label="Tipo de galería"
+										aria-label={t.galleryType}
 										data-tags
 										hidden
 									>
-										{[{ value: '', label: 'Todos los tipos', count: galleries }, ...tags.map((tag) => ({ ...tag, label: tag.value }))].map(
+										{[{ value: '', label: t.allTypes, count: galleries }, ...tags.map((tag) => ({ ...tag, label: labelOf(t, tag.value) }))].map(
 											(tag) => (
 												<label class={tagOption}>
 													<input
@@ -185,8 +187,8 @@ const count =
 			prices.length > 0 && (
 				<fieldset class="min-w-0">
 					<legend class:list={[label, 'mb-1.5 flex w-full justify-between px-1']}>
-						Precio
-						<span class="font-normal tracking-normal normal-case">basta con uno</span>
+						{t.price}
+						<span class="font-normal tracking-normal normal-case">{t.priceHint}</span>
 					</legend>
 					<div class="flex flex-col">
 						{prices.map((price) => (
@@ -209,8 +211,8 @@ const count =
 
 		<fieldset class="min-w-0">
 			<legend class:list={[label, 'mb-1.5 flex w-full justify-between px-1']}>
-				Tecnologías
-				<span class="font-normal tracking-normal normal-case">deben usar todas</span>
+				{t.technologies}
+				<span class="font-normal tracking-normal normal-case">{t.techHint}</span>
 			</legend>
 
 			<div
@@ -218,12 +220,12 @@ const count =
 				data-tech-field
 				hidden
 			>
-				<label class="sr-only" for="filtrar-tecnologias">Filtrar la lista de tecnologías</label>
+				<label class="sr-only" for="filtrar-tecnologias">{t.techFilterLabel}</label>
 				<input
 					class="text-ink placeholder:text-muted h-full w-full min-w-0 bg-transparent text-sm outline-none"
 					id="filtrar-tecnologias"
 					type="search"
-					placeholder="Filtrar la lista"
+					placeholder={t.techFilterPlaceholder}
 					autocomplete="off"
 					spellcheck="false"
 					data-tech-filter
@@ -245,7 +247,7 @@ const count =
 				}
 			</div>
 			<p class="text-muted px-2 py-1.5 text-sm" data-tech-none hidden>
-				Ninguna tecnología coincide.
+				{t.techNone}
 			</p>
 
 			{
@@ -257,7 +259,7 @@ const count =
 						aria-controls="lista-tecnologias"
 						data-tech-more
 					>
-						Ver las {techs.length}
+						{t.techMore(techs.length)}
 					</button>
 				)
 			}

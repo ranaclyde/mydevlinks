@@ -1,29 +1,40 @@
 ---
+import { LOCALE_NAME, LOCALES, localizePath, toLocale, useTranslations } from '../i18n/ui';
 import Logo from './Logo.astro';
 
 interface Props {
 	total: number;
+	/** Ruta de la página en español; el selector de idioma lleva a la misma página en el otro. */
+	path?: string;
 	asHeading?: boolean;
 	animateLogo?: boolean;
 }
 
-const { total, asHeading = false, animateLogo = true } = Astro.props;
+const { total, path = '/', asHeading = false, animateLogo = true } = Astro.props;
 const Brand = asHeading ? 'h1' : 'p';
+const locale = toLocale(Astro.currentLocale);
+const t = useTranslations(locale);
+const home = localizePath('/', locale);
+const languages = LOCALES.map((lang) => ({
+	lang,
+	href: localizePath(path, lang),
+	current: lang === locale,
+}));
 
 const themes = [
 	{
 		value: 'system',
-		label: 'Tema del sistema',
+		label: t.themeSystem,
 		icon: '<rect x="2" y="3" width="12" height="8.5"/><path d="M6 14h4M8 11.5V14"/>',
 	},
 	{
 		value: 'light',
-		label: 'Modo claro',
+		label: t.themeLight,
 		icon: '<circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.8M8 12.7v1.8M1.5 8h1.8M12.7 8h1.8M3.4 3.4l1.3 1.3M11.3 11.3l1.3 1.3M3.4 12.6l1.3-1.3M11.3 4.7l1.3-1.3"/>',
 	},
 	{
 		value: 'dark',
-		label: 'Modo oscuro',
+		label: t.themeDark,
 		icon: '<path d="M13.2 10.1A5.6 5.6 0 0 1 5.9 2.8a5.6 5.6 0 1 0 7.3 7.3z"/>',
 	},
 ];
@@ -34,35 +45,63 @@ const themes = [
 >
 	<div class="flex items-center gap-3">
 		<Brand class="font-mono text-lg leading-none font-semibold tracking-[-.02em]">
-			<a href="/" class="text-inherit no-underline">
+			<a href={home} class="text-inherit no-underline">
 				<span class="sr-only">toolshelf</span>
-				<span aria-hidden="true"><Logo animate={animateLogo} /></span>
+				<span class="max-[379px]:[&_.logo-word]:hidden" aria-hidden="true"><Logo animate={animateLogo} /></span>
 			</a>
 		</Brand>
-		<span class="text-muted font-mono text-xs max-md:hidden">{total} enlaces</span>
+		<span class="text-muted font-mono text-xs max-md:hidden">{total} {t.links(total)}</span>
 	</div>
-	<div class="border-line flex border" role="group" aria-label="Tema" data-needs-js>
-		{
-			themes.map((theme) => (
-				<button
-					class="text-muted hover:bg-sunk hover:text-ink aria-pressed:bg-ink aria-pressed:text-bg border-line grid size-10 cursor-pointer place-items-center not-first:border-l md:h-8 md:w-9"
-					type="button"
-					aria-label={theme.label}
-					aria-pressed={theme.value === 'system' ? 'true' : 'false'}
-					data-theme-button={theme.value}
-				>
-					<svg
-						width="15"
-						height="15"
-						viewBox="0 0 16 16"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="1.4"
-						aria-hidden="true"
-						set:html={theme.icon}
-					/>
-				</button>
-			))
-		}
+	<div class="flex items-center gap-2">
+		<nav class="border-line flex border font-mono text-xs" aria-label={t.language}>
+			{
+				languages.map((language) => (
+					<a
+						class="text-muted hover:bg-sunk hover:text-ink aria-[current]:bg-ink aria-[current]:text-bg border-line grid h-10 min-w-10 place-items-center px-2 uppercase no-underline not-first:border-l md:h-8 md:min-w-9"
+						href={language.href}
+						hreflang={language.lang}
+						lang={language.lang}
+						aria-current={language.current ? 'true' : undefined}
+						data-lang-link
+					>
+						<span aria-hidden="true">{language.lang}</span>
+						<span class="sr-only">{LOCALE_NAME[language.lang]}</span>
+					</a>
+				))
+			}
+		</nav>
+		<div class="border-line flex border" role="group" aria-label={t.theme} data-needs-js>
+			{
+				themes.map((theme) => (
+					<button
+						class="text-muted hover:bg-sunk hover:text-ink aria-pressed:bg-ink aria-pressed:text-bg border-line grid size-10 cursor-pointer place-items-center not-first:border-l md:h-8 md:w-9"
+						type="button"
+						aria-label={theme.label}
+						aria-pressed={theme.value === 'system' ? 'true' : 'false'}
+						data-theme-button={theme.value}
+					>
+						<svg
+							width="15"
+							height="15"
+							viewBox="0 0 16 16"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="1.4"
+							aria-hidden="true"
+							set:html={theme.icon}
+						/>
+					</button>
+				))
+			}
+		</div>
 	</div>
 </header>
+
+<script>
+	// En el directorio, el otro idioma conserva los filtros de la URL.
+	for (const link of document.querySelectorAll<HTMLAnchorElement>('a[data-lang-link]:not([aria-current])')) {
+		link.addEventListener('click', () => {
+			if (location.search) link.search = location.search;
+		});
+	}
+</script>

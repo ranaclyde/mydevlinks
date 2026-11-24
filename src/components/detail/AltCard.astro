@@ -1,5 +1,7 @@
 ---
+import { localizePath, toLocale, useTranslations } from '../../i18n/ui';
 import { domainOf, type Link } from '../../lib/links';
+import { linkPath } from '../../lib/seo';
 
 interface Props {
 	link: Link;
@@ -8,13 +10,11 @@ interface Props {
 const { link } = Astro.props;
 const { id, name, url, description, logo, status, verified } = link;
 
+const locale = toLocale(Astro.currentLocale);
+const t = useTranslations(locale);
 const down = status === 'caido';
 const initial = [...name.trim()][0]?.toUpperCase() ?? '?';
-const text = verified
-	? description
-	: down
-		? 'Sin descripción: el sitio no responde.'
-		: 'Todavía sin descripción ni tecnologías.';
+const text = verified ? description : down ? t.noDescriptionDown : t.noDescription;
 ---
 
 <li>
@@ -23,7 +23,7 @@ const text = verified
 			'ficha group bg-surface text-ink grid h-full grid-cols-[40px_minmax(0,1fr)] gap-x-3 gap-y-2 pt-3.5 pr-4 pb-3 pl-3.5 no-underline',
 			{ 'f-unv': !verified },
 		]}
-		href={`/tool/${id}`}
+		href={localizePath(linkPath(id), locale)}
 	>
 		<span
 			class:list={[

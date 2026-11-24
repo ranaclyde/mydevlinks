@@ -1,6 +1,6 @@
 # toolshelf
 
-Una base propia de enlaces para desarrollar, que reemplaza años de bookmarks. Cada enlace se entiende sin abrirlo y se filtra por categoría, tecnología y texto. En el directorio, la ficha lleva al detalle del enlace (`/tool/<id>`) y la flecha junto al nombre abre la web en otra pestaña. Es un sitio estático en Astro y Tailwind, sin framework de interfaz.
+Una base propia de enlaces para desarrollar, que reemplaza años de bookmarks. Cada enlace se entiende sin abrirlo y se filtra por categoría, tecnología y texto. En el directorio, la ficha lleva al detalle del enlace (`/tool/<id>`) y la flecha junto al nombre abre la web en otra pestaña. Es un sitio estático en Astro y Tailwind, sin framework de interfaz, en español y en inglés.
 
 ## Ejecutar
 
@@ -71,17 +71,26 @@ pnpm capture <id> [<id>…]
 
 El script rechaza ids que no existen y enlaces caídos o privados, y al terminar recuerda poner `screenshotAt` en el JSON. No corre en el build ni en las pruebas. `pnpm test` falla si hay una captura sin su detalle.
 
+## Idiomas
+
+El sitio usa el [i18n de Astro](https://docs.astro.build/en/guides/internationalization/). El español va en la raíz (`/`, `/tool/<id>`) y el inglés bajo `/en` (`/en`, `/en/tool/<id>`). Las páginas de `src/pages/` y de `src/pages/en/` solo eligen la ruta; el contenido está en `src/views/`, y cada componente toma el idioma de `Astro.currentLocale`.
+
+- **Textos de la interfaz:** están en `src/i18n/ui.ts`, un diccionario por idioma con la misma forma. Los scripts del navegador lo leen según `<html lang>`. Las categorías, los tipos de galería y los precios se traducen solo como etiqueta. Su valor interno sigue en español, que es el que usan los datos y los filtros de la URL (`?cat=…`).
+- **Contenido en inglés:** la descripción de cada enlace va en `src/data/en/links.json`, como `{ "id", "description" }`. Los textos de cada detalle (`whatIs`, `uses`, `caveats`, `pricingNote` e `idealFor`) van en `src/data/en/detalles/<id>.json`. El precio, las fechas, la captura y las alternativas salen del detalle en español.
+- **Lo que falta traducir:** la página en inglés muestra el texto en español, avisa que no está traducida y lleva `noindex`. Tampoco tiene `hreflang` y no entra en el sitemap. Cuando una ficha tiene todos sus textos en inglés, las dos versiones se enlazan con `hreflang` y las dos van al sitemap. El inicio en inglés hace lo mismo cuando están todas las descripciones.
+
 ## Publicar en Netlify
 
 `netlify.toml` define el build (`pnpm build`, carpeta `dist`), los headers de seguridad y la caché. Netlify toma Node de `.nvmrc` y pnpm del campo `packageManager` de `package.json`, así que no hace falta configurar nada en el panel: basta con conectar el repositorio.
 
 - **Dominio:** `astro.config.mjs` usa la variable `URL` que Netlify define en cada build, con el dominio principal del sitio. De ella salen el canonical, las URLs de Open Graph, el sitemap y `robots.txt`. Al cambiar de dominio en Netlify, el próximo deploy lo toma solo.
 - **Previews:** los deploy previews y branch deploys se construyen con `SITE_NOINDEX=1`, que pone `noindex` en todas las páginas y `Disallow: /` en `robots.txt`.
-- **URLs:** las fichas se generan como `/tool/<id>.html` y se sirven en `/tool/<id>`, sin barra final.
+- **URLs:** las fichas se generan como `/tool/<id>.html` y se sirven en `/tool/<id>`, sin barra final. El inicio en inglés es `/en.html`, que se sirve en `/en`.
+- **404:** una ruta que no existe bajo `/en/` muestra `/en/404.html`, por una regla de `netlify.toml`. Cualquier otra muestra `/404.html`.
 
 ## SEO
 
-Cada página lleva título, descripción, canonical, Open Graph y tarjeta de X. Las fichas usan su captura como imagen para redes; el inicio y la 404 usan `public/og.png` (1200×630). El inicio declara `WebSite` y `CollectionPage` en JSON-LD, y cada ficha `BreadcrumbList` y `WebPage`. `/sitemap.xml` lista el inicio y cada enlace público, con la fecha de revisión de su detalle como `lastmod`.
+Cada página lleva título, descripción, canonical, Open Graph y tarjeta de X. Las fichas usan su captura como imagen para redes; el inicio y la 404 usan `public/og.png` (1200×630). El inicio declara `WebSite` y `CollectionPage` en JSON-LD, y cada ficha `BreadcrumbList` y `WebPage`, con el idioma en `inLanguage`. `/sitemap.xml` lista el inicio y cada enlace público, con la fecha de revisión de su detalle como `lastmod`. Las páginas traducidas aparecen en los dos idiomas, enlazadas con `xhtml:link`.
 
 ## Scripts
 

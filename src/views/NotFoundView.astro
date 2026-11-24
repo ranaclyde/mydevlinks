@@ -1,0 +1,29 @@
+---
+import SiteHeader from '../components/SiteHeader.astro';
+import { localizePath, toLocale, useTranslations } from '../i18n/ui';
+import Layout from '../layouts/Layout.astro';
+import { loadCatalog } from '../lib/catalog';
+import { SITE_NAME } from '../lib/seo';
+
+const locale = toLocale(Astro.currentLocale);
+const t = useTranslations(locale);
+const total = (await loadCatalog(locale)).length;
+---
+
+<Layout title={`${t.notFoundTitle} · ${SITE_NAME}`} description={t.notFoundDescription} noindex>
+	<SiteHeader total={total} animateLogo={false} />
+
+	<main class="mx-auto flex max-w-[640px] flex-col items-start gap-3 px-4 pt-16 pb-16 md:px-5">
+		<p class="text-muted font-mono text-xs">Error 404</p>
+		<h1 class="text-2xl leading-tight font-semibold">{t.notFoundHeading}</h1>
+		<p class="text-muted">{t.notFoundText}</p>
+		<a
+			class="bg-ink text-bg border-ink hover:bg-accent hover:border-accent hover:text-accent-ink mt-2 inline-flex min-h-10 items-center border px-3.5 py-2 text-sm font-medium no-underline"
+			href={localizePath('/', locale)}>{t.backToDirectory}</a
+		>
+	</main>
+</Layout>
+
+<script>
+	import '../scripts/theme';
+</script>

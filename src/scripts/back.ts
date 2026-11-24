@@ -8,14 +8,14 @@ function canGoBack(): boolean {
 }
 
 /**
- * "Volver al directorio" apunta a `/`. Si se llegó desde el directorio, vuelve en el
+ * "Volver al directorio" apunta al inicio de su idioma (`/` o `/en`). Si se llegó desde el directorio, vuelve en el
  * historial para conservar los filtros y el scroll; si no, sigue el enlace.
  */
 for (const link of document.querySelectorAll<HTMLAnchorElement>('a[data-back]')) {
 	link.addEventListener('click', (event) => {
 		if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
 		// En una pestaña nueva no hay a dónde volver aunque el referrer sea el directorio.
-		if (!canGoBack() || !shouldGoBack(document.referrer, location.origin)) return;
+		if (!canGoBack() || !shouldGoBack(document.referrer, location.origin, link.pathname)) return;
 		event.preventDefault();
 		history.back();
 	});

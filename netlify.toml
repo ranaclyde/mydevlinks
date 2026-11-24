@@ -38,3 +38,10 @@
   for = "/sitemap.xml"
   [headers.values]
     Content-Type = "application/xml; charset=utf-8"
+
+# Una ruta que no existe bajo /en muestra la 404 en inglés; el resto usa /404.html.
+# Netlify solo aplica la regla si no hay un archivo en esa ruta.
+[[redirects]]
+  from = "/en/*"
+  to = "/en/404.html"
+  status = 404

@@ -1,7 +1,9 @@
 ---
-import { PRICE_LABEL, type Detail } from '../lib/details';
+import { localizePath, toLocale, useTranslations } from '../i18n/ui';
+import type { Detail } from '../lib/details';
 import { VISIBLE_TECH } from '../lib/filter';
 import { domainOf, type Link } from '../lib/links';
+import { linkPath } from '../lib/seo';
 import Stamps from './Stamps.astro';
 
 interface Props {
@@ -12,16 +14,14 @@ interface Props {
 
 const { link, pricing } = Astro.props;
 const { id, name, url, description, category, tech, tags = [], logo, status, verified, featured } = link;
+const locale = toLocale(Astro.currentLocale);
+const t = useTranslations(locale);
 
 const down = status === 'caido';
 const showChips = verified && tech.length > 0;
 const initial = [...name.trim()][0]?.toUpperCase() ?? '?';
 
-const text = verified
-	? description
-	: down
-		? 'Sin descripción: el sitio no responde.'
-		: 'Todavía sin descripción ni tecnologías.';
+const text = verified ? description : down ? t.noDescriptionDown : t.noDescription;
 
 ---
 
@@ -44,7 +44,7 @@ const text = verified
 		{
 			featured && (
 				<>
-					<span class="sr-only">Destacado. </span>
+					<span class="sr-only">{t.featured}</span>
 					<svg class="ficha-star" width="9" height="9" viewBox="0 0 12 12" aria-hidden="true">
 						<path
 							fill="currentColor"
@@ -83,7 +83,7 @@ const text = verified
 				<h3
 					class="flex items-start gap-1 text-base leading-[1.3] font-semibold wrap-anywhere decoration-1 underline-offset-3 group-hover:underline"
 				>
-					<a class="ficha-link min-w-0 text-inherit no-underline" href={`/tool/${id}`} data-detail>
+					<a class="ficha-link min-w-0 text-inherit no-underline" href={localizePath(linkPath(id), locale)} data-detail>
 						<span class="line-clamp-2">{name}</span>
 					</a>
 					<a
@@ -91,7 +91,7 @@ const text = verified
 						href={url}
 						target="_blank"
 						rel="noopener noreferrer"
-						aria-label={`Abrir ${name} en otra pestaña`}
+						aria-label={t.openExternal(name)}
 						data-external
 					>
 						<svg
@@ -110,8 +110,8 @@ const text = verified
 					<span class="text-muted truncate">{domainOf(url)}</span>
 					{pricing && (
 						<span class="price" data-price={pricing}>
-							<span class="sr-only">Precio: </span>
-							{PRICE_LABEL[pricing]}
+							<span class="sr-only">{t.priceLabel}</span>
+							{t.pricing[pricing]}
 						</span>
 					)}
 				</span>
@@ -132,7 +132,7 @@ const text = verified
 		{
 			showChips && (
 				<>
-					<span class="sr-only">Tecnologías: {tech.join(', ')}.</span>
+					<span class="sr-only">{t.techList(tech.join(', '))}</span>
 					<div
 						class="border-line col-span-full flex flex-wrap gap-[5px] border-t border-dashed pt-2.5"
 						aria-hidden="true"
@@ -164,14 +164,14 @@ const text = verified
 		{
 			tags.length > 0 && (
 				<>
-					<span class="sr-only">Tipo: {tags.join(', ')}.</span>
+					<span class="sr-only">{t.typeList(tags.map((tag) => t.tags[tag]).join(', '))}</span>
 					<div
 						class="border-line col-span-full flex flex-wrap gap-[5px] border-t border-dashed pt-2.5"
 						aria-hidden="true"
 					>
 						{tags.map((tag) => (
 							<span class="chip" data-tag={tag}>
-								{tag}
+								{t.tags[tag]}
 							</span>
 						))}
 					</div>

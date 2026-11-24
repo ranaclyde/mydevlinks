@@ -128,3 +128,29 @@ describe('links.json', () => {
 		expect(links.map((l) => l.id).sort()).toEqual(expected.sort());
 	});
 });
+
+describe('traducciones al inglés', () => {
+	const ids = new Set(links.map((link) => link.id));
+	const detailsDir = join(root, 'src/data/detalles');
+	const enDir = join(root, 'src/data/en/detalles');
+	const enLinks = JSON.parse(readFileSync(join(root, 'src/data/en/links.json'), 'utf8')) as Array<{
+		id: string;
+		description: string;
+	}>;
+
+	it('cada descripción traducida es de un enlace con descripción, sin repetir', () => {
+		const withDescription = new Set(links.filter((link) => link.description).map((link) => link.id));
+		expect(enLinks.filter((entry) => !withDescription.has(entry.id)).map((entry) => entry.id)).toEqual([]);
+		expect(new Set(enLinks.map((entry) => entry.id)).size).toBe(enLinks.length);
+	});
+
+	it('description traducida tiene como máximo 120 caracteres', () => {
+		expect(enLinks.filter((entry) => entry.description.length > 120).map((entry) => entry.id)).toEqual([]);
+	});
+
+	it('cada detalle traducido tiene su detalle en español', () => {
+		const translated = readdirSync(enDir).filter((file) => file.endsWith('.json'));
+		const missing = translated.filter((file) => !existsSync(join(detailsDir, file)) || !ids.has(parse(file).name));
+		expect(missing).toEqual([]);
+	});
+});

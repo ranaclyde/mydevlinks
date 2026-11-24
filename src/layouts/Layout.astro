@@ -1,12 +1,21 @@
 ---
 import '../styles/global.css';
+import { DEFAULT_LOCALE, LOCALES, localizePath, OG_LOCALE, toLocale, useTranslations } from '../i18n/ui';
 import { absoluteUrl, DEFAULT_OG_IMAGE, jsonLd, NO_INDEX, SITE_NAME } from '../lib/seo';
 
 interface Props {
 	title?: string;
 	description?: string;
-	/** Ruta canónica (/, /tool/<id>). Sin ella la página no lleva canonical ni og:url. */
+	/**
+	 * Ruta de la página en español (/, /tool/<id>); la del idioma actual sale de ella.
+	 * Sin ella la página no lleva canonical, og:url ni hreflang.
+	 */
 	path?: string;
+	/**
+	 * La página tiene todos sus textos en cada idioma. Sin eso no lleva hreflang, y la versión
+	 * en un idioma que no es el de por defecto no se indexa: mostraría texto en español.
+	 */
+	translated?: boolean;
 	image?: { path: string; width: number; height: number; alt: string };
 	type?: 'website' | 'article';
 	/** Datos estructurados de schema.org. */
@@ -14,23 +23,34 @@ interface Props {
 	noindex?: boolean;
 }
 
+const locale = toLocale(Astro.currentLocale);
+const t = useTranslations(locale);
 const {
 	title = SITE_NAME,
-	description = 'Enlaces curados para desarrollar: componentes, inspiración, iconos, fuentes y herramientas, filtrables por categoría, tecnología y texto.',
+	description = t.siteDescription,
 	path,
-	image = DEFAULT_OG_IMAGE,
+	translated = true,
+	image = { ...DEFAULT_OG_IMAGE, alt: t.ogAlt },
 	type = 'website',
 	structuredData = [],
 	noindex = false,
 } = Astro.props;
 
-const canonical = path ? absoluteUrl(path, Astro.site) : undefined;
+const canonical = path ? absoluteUrl(localizePath(path, locale), Astro.site) : undefined;
 const imageUrl = absoluteUrl(image.path, Astro.site);
-const robots = noindex || NO_INDEX ? 'noindex, nofollow' : 'index, follow, max-image-preview:large';
+const hidden = noindex || NO_INDEX || (!translated && locale !== DEFAULT_LOCALE);
+const robots = hidden ? 'noindex, nofollow' : 'index, follow, max-image-preview:large';
+const alternates =
+	path && translated && !noindex
+		? [
+				...LOCALES.map((lang) => ({ hreflang: lang, href: absoluteUrl(localizePath(path, lang), Astro.site) })),
+				{ hreflang: 'x-default', href: absoluteUrl(localizePath(path, DEFAULT_LOCALE), Astro.site) },
+			]
+		: [];
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang={locale}>
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -38,6 +58,7 @@ const robots = noindex || NO_INDEX ? 'noindex, nofollow' : 'index, follow, max-i
 		<meta name="description" content={description} />
 		<meta name="robots" content={robots} />
 		{canonical && <link rel="canonical" href={canonical} />}
+		{alternates.map((alternate) => <link rel="alternate" hreflang={alternate.hreflang} href={alternate.href} />)}
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 		<link rel="sitemap" type="application/xml" href="/sitemap.xml" />
@@ -46,7 +67,11 @@ const robots = noindex || NO_INDEX ? 'noindex, nofollow' : 'index, follow, max-i
 		<meta name="generator" content={Astro.generator} />
 
 		<meta property="og:site_name" content={SITE_NAME} />
-		<meta property="og:locale" content="es_ES" />
+		<meta property="og:locale" content={OG_LOCALE[locale]} />
+		{alternates.length > 0 &&
+			LOCALES.filter((lang) => lang !== locale).map((lang) => (
+				<meta property="og:locale:alternate" content={OG_LOCALE[lang]} />
+			))}
 		<meta property="og:type" content={type} />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />

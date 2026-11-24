@@ -1,0 +1,10 @@
+---
+import { toolPaths } from '../../../lib/catalog';
+import ToolView, { type Props } from '../../../views/ToolView.astro';
+
+export const getStaticPaths = () => toolPaths('en');
+
+const props = Astro.props as Props;
+---
+
+<ToolView {...props} />

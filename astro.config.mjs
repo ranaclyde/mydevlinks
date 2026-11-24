@@ -13,6 +13,12 @@ export default defineConfig({
   // /tool/<id>.html en lugar de /tool/<id>/index.html: Netlify lo sirve en /tool/<id>,
   // la misma URL que usan los enlaces internos y el canonical, sin redirigir a la barra final.
   build: { format: 'file' },
+  // Español en la raíz (/, /tool/<id>) e inglés bajo /en/ (/en/, /en/tool/<id>).
+  i18n: {
+    locales: ['es', 'en'],
+    defaultLocale: 'es',
+    routing: { prefixDefaultLocale: false },
+  },
   vite: {
     plugins: [tailwindcss()]
   }
