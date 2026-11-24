@@ -154,7 +154,7 @@
  * (campos, opciones, casillas, selector de tema) usa las mismas clases
  * y toma los colores del marco sin cambiar de nombre.
  */
-.marco {
+.frame {
 	--surface: var(--frame);
 	--ink: var(--frame-ink);
 	--muted: var(--frame-muted);
@@ -213,7 +213,7 @@ html:not([data-js]) [data-app] {
 
 @layer components {
 	/* Ficha con la esquina superior derecha cortada. */
-	.ficha {
+	.card {
 		--cl: var(--line);
 		--nb: var(--bg);
 		position: relative;
@@ -221,7 +221,7 @@ html:not([data-js]) [data-app] {
 		transition: border-color 0.12s;
 	}
 
-	.ficha::before {
+	.card::before {
 		content: "";
 		position: absolute;
 		top: -1px;
@@ -236,31 +236,31 @@ html:not([data-js]) [data-app] {
 		);
 	}
 
-	.ficha:hover {
+	.card:hover {
 		--cl: var(--line-strong);
 	}
 
-	.ficha:focus-visible,
-	.ficha:has(.ficha-link:focus-visible) {
+	.card:focus-visible,
+	.card:has(.card-link:focus-visible) {
 		--cl: var(--accent);
 	}
 
 	/*
 	 * Ficha del directorio: el nombre es el enlace al detalle y se estira sobre toda la ficha
-	 * con su propio ::before, porque el ::before y el ::after de .ficha ya están ocupados.
+	 * con su propio ::before, porque el ::before y el ::after de .card ya están ocupados.
 	 * El anillo de foco va en ese pseudo-elemento para rodear la ficha completa.
 	 */
-	.ficha-link::before {
+	.card-link::before {
 		content: "";
 		position: absolute;
 		inset: -1px;
 	}
 
-	.ficha-link:focus-visible {
+	.card-link:focus-visible {
 		outline: none;
 	}
 
-	.ficha-link:focus-visible::before {
+	.card-link:focus-visible::before {
 		outline: 2px solid var(--accent);
 		outline-offset: 2px;
 	}
@@ -269,7 +269,7 @@ html:not([data-js]) [data-app] {
 	 * Flecha a la web: queda sobre el enlace estirado y es su propio objetivo de clic.
 	 * Los márgenes negativos agrandan el área sin mover la flecha ni el renglón.
 	 */
-	.ficha-ext {
+	.card-ext {
 		position: relative;
 		z-index: 1;
 		display: inline-grid;
@@ -282,7 +282,7 @@ html:not([data-js]) [data-app] {
 	}
 
 	@media (hover: none) {
-		.ficha-ext {
+		.card-ext {
 			width: 40px;
 			height: 40px;
 			margin: -10px -24px -10px -4px;
@@ -290,21 +290,21 @@ html:not([data-js]) [data-app] {
 	}
 
 	/* Ficha que no se acciona (cabecera y ficha técnica del detalle): sin estado de hover. */
-	.ficha.ficha-fija:hover {
+	.card.card-static:hover {
 		--cl: var(--line);
 	}
 
-	.ficha.f-unv {
+	.card.card-unverified {
 		border-style: dashed;
 	}
 
 	/* Destacada: un tinte índigo que nace en el borde y se apaga hacia el centro. */
-	.ficha.f-feat {
+	.card.card-featured {
 		box-shadow: inset 0 0 32px -6px color-mix(in oklab, var(--accent) 38%, transparent);
 	}
 
 	/* Mini estrella metida en el corte, sin tocar la diagonal. */
-	.ficha-star {
+	.card-star {
 		position: absolute;
 		top: 10px;
 		right: 10px;
@@ -312,7 +312,7 @@ html:not([data-js]) [data-app] {
 		pointer-events: none;
 	}
 
-	.ficha.f-unv::before {
+	.card.card-unverified::before {
 		display: none;
 	}
 
@@ -321,7 +321,7 @@ html:not([data-js]) [data-app] {
 	 * glow.ts escribe --glow (0 a 1) y --glow-a (ángulo hacia el cursor, en grados).
 	 * Solo la línea, sin halo ni desenfoque; respeta el recorte de la esquina.
 	 */
-	.ficha::after {
+	.card::after {
 		content: "";
 		position: absolute;
 		inset: -1px;
@@ -338,7 +338,7 @@ html:not([data-js]) [data-app] {
 		);
 	}
 
-	.ficha.f-unv::after {
+	.card.card-unverified::after {
 		display: none;
 	}
 
@@ -415,7 +415,7 @@ html:not([data-js]) [data-app] {
 	@media (hover: hover) {
 		.chip.more:hover ~ .chips-rest,
 		.chips-rest:hover,
-		.ficha:has(.ficha-link:focus-visible) .chips-rest {
+		.card:has(.card-link:focus-visible) .chips-rest {
 			display: flex;
 		}
 	}
