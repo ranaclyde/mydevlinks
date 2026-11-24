@@ -30,30 +30,31 @@ const TECHS = [
 const shadcn = {
 	name: 'shadcn/ui',
 	description: 'Componentes accesibles que copias a tu proyecto.',
-	category: 'Componentes y UI kits',
+	category: 'components',
 	tech: ['React', 'Tailwind'],
 };
 const motion = {
 	name: 'Motion',
 	description: 'Biblioteca de transiciones para interfaces.',
-	category: 'Animación y efectos',
+	category: 'animation',
+	labels: ['Animación y efectos'],
 	tech: ['React'],
 };
 const tabla = {
 	name: 'Tabla rápida',
 	description: 'Tablas de datos.',
-	category: 'Componentes y UI kits',
+	category: 'components',
 	tech: ['React', 'Next.js'],
 };
 const mobile = {
 	name: 'Lista',
 	description: 'Listas para móvil.',
-	category: 'Herramientas de desarrollo',
+	category: 'developer-tools',
 	tech: ['React Native'],
 };
 const sinDescripcion = {
 	name: 'Marcador viejo',
-	category: 'Herramientas de desarrollo',
+	category: 'developer-tools',
 	tech: [],
 };
 
@@ -146,7 +147,7 @@ describe('alias de tecnologías', () => {
 });
 
 describe('palabras cortas', () => {
-	const tailwind = { ...sinDescripcion, name: 'Tailwind', category: 'Galerías de inspiración' };
+	const tailwind = { ...sinDescripcion, name: 'Tailwind', category: 'inspiration' };
 	const conIa = { ...sinDescripcion, name: 'Asistente', description: 'Genera código con IA.' };
 
 	it.each(['ai', 'ia'])('%s no coincide dentro de otra palabra', (query) => {
@@ -183,8 +184,8 @@ describe('matches', () => {
 	it('sin categoría coincide con todo; con valor, solo esa categoría', () => {
 		expect(matches(shadcn, empty)).toBe(true);
 		expect(matches(motion, empty)).toBe(true);
-		expect(matches(shadcn, { ...empty, category: 'Componentes y UI kits' })).toBe(true);
-		expect(matches(motion, { ...empty, category: 'Componentes y UI kits' })).toBe(false);
+		expect(matches(shadcn, { ...empty, category: 'components' })).toBe(true);
+		expect(matches(motion, { ...empty, category: 'components' })).toBe(false);
 	});
 
 	it('exige todas las tecnologías', () => {
@@ -199,6 +200,11 @@ describe('matches', () => {
 		expect(matches(shadcn, { ...empty, query: 'tailw' })).toBe(true);
 		expect(matches(motion, { ...empty, query: 'efectos' })).toBe(true);
 		expect(matches(motion, { ...empty, query: 'copias' })).toBe(false);
+	});
+
+	it('busca la categoría por su nombre visible, no por su id', () => {
+		expect(matches(motion, { ...empty, query: 'efectos' })).toBe(true);
+		expect(matches(motion, { ...empty, query: 'animation' })).toBe(false);
 	});
 
 	it('ignora acentos y mayúsculas', () => {
@@ -269,13 +275,13 @@ describe('matches', () => {
 describe('búsqueda por URL', () => {
 	const vercel = {
 		name: 'Mi demo',
-		category: 'Herramientas de desarrollo',
+		category: 'developer-tools',
 		tech: [],
 		url: 'https://www.mi-demo.vercel.app/',
 	};
 	const repo = {
 		name: 'Repositorio',
-		category: 'Herramientas de desarrollo',
+		category: 'developer-tools',
 		tech: [],
 		url: 'http://github.com/acme/kit?tab=readme#top',
 	};
@@ -350,7 +356,7 @@ describe('facetCounts', () => {
 	});
 
 	it('refleja los demás filtros activos', () => {
-		const state = { ...empty, category: 'Componentes y UI kits' };
+		const state = { ...empty, category: 'components' };
 		expect(facetCounts(items, state, ['React', 'Tailwind', 'Next.js'])).toEqual({
 			React: 2,
 			Tailwind: 1,
@@ -383,28 +389,28 @@ describe('facetCounts con tecnologías escritas', () => {
 describe('categoryCounts', () => {
 	it('cuenta cada categoría sin aplicar la categoría elegida', () => {
 		const items = [shadcn, motion, tabla, mobile];
-		const state = { query: '', category: 'Herramientas de desarrollo', tech: ['React'] };
+		const state = { query: '', category: 'developer-tools', tech: ['React'] };
 		expect(categoryCounts(items, state, TECHS)).toEqual({
-			'Componentes y UI kits': 2,
-			'Animación y efectos': 1,
+			'components': 2,
+			'animation': 1,
 		});
 	});
 });
 
 describe('etiquetas de galería', () => {
-	const G = 'Galerías de inspiración';
-	const landings = { name: 'Landings', description: 'Ejemplos.', category: G, tech: [], tags: ['Landing pages'] };
+	const G = 'inspiration';
+	const landings = { name: 'Landings', description: 'Ejemplos.', category: G, tech: [], tags: ['landing-pages'] };
 	const oscuras = {
 		name: 'Oscuras',
 		description: 'Ejemplos.',
 		category: G,
 		tech: [],
-		tags: ['Sitios web', 'Estilos visuales'],
+		tags: ['websites', 'visual-styles'],
 	};
 	const items = [landings, oscuras, shadcn, motion];
 
 	it('la etiqueta deja solo las galerías que la llevan', () => {
-		const state = { query: '', category: G, tech: [], tag: 'Estilos visuales' };
+		const state = { query: '', category: G, tech: [], tag: 'visual-styles' };
 		expect(items.filter((item) => matches(item, state, TECHS))).toEqual([oscuras]);
 	});
 
@@ -414,28 +420,28 @@ describe('etiquetas de galería', () => {
 	});
 
 	it('tagCounts cuenta cada etiqueta ignorando la elegida', () => {
-		const state = { query: '', category: G, tech: [], tag: 'Landing pages' };
+		const state = { query: '', category: G, tech: [], tag: 'landing-pages' };
 		expect(tagCounts(items, state, TECHS)).toEqual({
-			'Landing pages': 1,
-			'Sitios web': 1,
-			'Estilos visuales': 1,
+			'landing-pages': 1,
+			'websites': 1,
+			'visual-styles': 1,
 		});
 	});
 
 	it('categoryCounts ignora la etiqueta', () => {
-		const state = { query: '', category: G, tech: [], tag: 'Landing pages' };
+		const state = { query: '', category: G, tech: [], tag: 'landing-pages' };
 		expect(categoryCounts(items, state, TECHS)).toEqual({
 			[G]: 2,
-			'Componentes y UI kits': 1,
-			'Animación y efectos': 1,
+			'components': 1,
+			'animation': 1,
 		});
 	});
 });
 
 describe('precio', () => {
-	const libre = { ...motion, name: 'Libre', pricing: 'gratis' };
+	const libre = { ...motion, name: 'Libre', pricing: 'free' };
 	const mixto = { ...shadcn, name: 'Mixto', pricing: 'freemium' };
-	const caro = { ...tabla, name: 'Caro', pricing: 'de-pago' };
+	const caro = { ...tabla, name: 'Caro', pricing: 'paid' };
 	const items = [libre, mixto, caro, sinDescripcion];
 
 	it('sin precios marcados no filtra, ni siquiera los enlaces sin ficha', () => {
@@ -443,19 +449,19 @@ describe('precio', () => {
 	});
 
 	it('basta con tener uno de los precios marcados', () => {
-		const state = { ...empty, pricing: ['gratis', 'freemium'] };
+		const state = { ...empty, pricing: ['free', 'freemium'] };
 		expect(items.filter((item) => matches(item, state, TECHS))).toEqual([libre, mixto]);
 	});
 
 	it('se combina con los demás filtros', () => {
-		const state = { ...empty, category: 'Componentes y UI kits', pricing: ['freemium', 'de-pago'] };
+		const state = { ...empty, category: 'components', pricing: ['freemium', 'paid'] };
 		expect(items.filter((item) => matches(item, state, TECHS))).toEqual([mixto, caro]);
 	});
 
 	it('pricingCounts ignora los precios marcados y respeta los demás filtros', () => {
-		const state = { ...empty, query: 'react', pricing: ['gratis'] };
-		expect(pricingCounts(items, state, TECHS)).toEqual({ gratis: 1, freemium: 1, 'de-pago': 1 });
-		const comps = { ...state, category: 'Componentes y UI kits' };
-		expect(pricingCounts(items, comps, TECHS)).toEqual({ freemium: 1, 'de-pago': 1 });
+		const state = { ...empty, query: 'react', pricing: ['free'] };
+		expect(pricingCounts(items, state, TECHS)).toEqual({ free: 1, freemium: 1, paid: 1 });
+		const comps = { ...state, category: 'components' };
+		expect(pricingCounts(items, comps, TECHS)).toEqual({ freemium: 1, paid: 1 });
 	});
 });

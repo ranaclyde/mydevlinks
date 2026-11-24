@@ -6,10 +6,10 @@ const base = {
 	name: 'Astro',
 	url: 'https://astro.build',
 	description: 'Framework web para sitios de contenido.',
-	category: 'Componentes y UI kits',
+	category: 'components',
 	tech: ['Astro'],
 	logo: 'https://astro.build/logo.svg',
-	status: 'activo',
+	status: 'active',
 	verified: true,
 	private: false,
 };

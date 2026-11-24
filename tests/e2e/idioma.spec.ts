@@ -33,9 +33,9 @@ test('el selector de idioma lleva a la misma ficha en el otro idioma', async ({ 
 
 test('el selector de idioma conserva los filtros del directorio', async ({ page, isMobile }) => {
 	test.skip(isMobile, 'El selector es el mismo en móvil.');
-	await page.goto('/?cat=Serverless');
+	await page.goto('/?category=serverless');
 	await page.getByRole('link', { name: 'English' }).click();
-	await expect(page).toHaveURL('/en?cat=Serverless');
+	await expect(page).toHaveURL('/en?category=serverless');
 	await expect(page.locator('[data-actives]')).toContainText('Serverless');
 	await expect(page.getByRole('button', { name: 'Clear filters' })).toBeVisible();
 });

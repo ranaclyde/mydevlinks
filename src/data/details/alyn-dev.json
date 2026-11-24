@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Alyn es un directorio que reúne miles de skills para agentes de código como Claude Code, Cursor y Codex. Una skill es una carpeta con un archivo SKILL.md que enseña al agente a hacer una tarea concreta, y cada una aparece con sus estrellas de GitHub, sus instalaciones y una puntuación propia.",
+		"Conviene cuando quieres encontrar skills confiables sin recorrer GitHub a mano, o ver cuáles usa más la comunidad."
+	],
+	"uses": [
+		"Buscar una skill para una tarea repetitiva, como revisar código o generar commits, y ver cuántas personas ya la instalaron.",
+		"Instalar una skill en la carpeta correcta de tu agente con la CLI npx alyn-cli add.",
+		"Publicar tu propia skill, desde un repositorio público de GitHub, para que otros la encuentren."
+	],
+	"caveats": [
+		"Las skills pertenecen a sus autores y viven en sus repositorios, así que revisa la licencia de cada una antes de usarla en un proyecto comercial.",
+		"Revisa el contenido de una skill antes de instalarla: le da instrucciones y a veces scripts a tu agente.",
+		"Los contadores de instalaciones solo reflejan las hechas con la CLI de skills, por lo que son una guía y no una cifra exacta."
+	],
+	"pricing": "free",
+	"pricingNote": "Todas las skills son de código abierto y gratuitas de instalar; el servidor MCP no pide cuenta.",
+	"idealFor": "Quien usa un agente de código y quiere skills probadas por otros.",
+	"reviewedAt": "2026-11-19",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-19"
+}

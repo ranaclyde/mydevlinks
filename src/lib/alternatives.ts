@@ -23,7 +23,7 @@ export function alternativesFor(link: Link, links: Link[], pinned: string[] = []
 			(other) =>
 				!seen.has(other.id) &&
 				other.category === link.category &&
-				other.status !== 'caido' &&
+				other.status !== 'down' &&
 				!other.private,
 		)
 		.map((other) => ({ other, shared: sharedTech(link, other) }))

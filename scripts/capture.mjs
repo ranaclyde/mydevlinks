@@ -3,7 +3,7 @@ import { chromium } from '@playwright/test';
 import { pickTargets } from './lib/capture.mjs';
 
 const LINKS = 'src/data/links.json';
-const OUT = 'public/capturas';
+const OUT = 'public/screenshots';
 const NAV_TIMEOUT_MS = 30_000;
 const SETTLE_MS = 1500;
 
@@ -54,6 +54,6 @@ for (const { id, result } of results) console.log(`${id}: ${result}`);
 const done = results.filter((r) => r.result === 'ok').map((r) => r.id);
 if (done.length) {
 	const today = new Date().toISOString().slice(0, 10);
-	console.log(`\nPon "screenshotAt": "${today}" en src/data/detalles/<id>.json de: ${done.join(', ')}`);
+	console.log(`\nPon "screenshotAt": "${today}" en src/data/details/<id>.json de: ${done.join(', ')}`);
 }
 process.exitCode = results.every((r) => r.result === 'ok') ? 0 : 1;

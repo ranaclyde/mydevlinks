@@ -10,7 +10,7 @@ const links = defineCollection({
 });
 
 const details = defineCollection({
-	loader: glob({ pattern: '*.json', base: 'src/data/detalles' }),
+	loader: glob({ pattern: '*.json', base: 'src/data/details' }),
 	schema: detailSchema,
 });
 
@@ -21,7 +21,7 @@ const linksEn = defineCollection({
 });
 
 const detailsEn = defineCollection({
-	loader: glob({ pattern: '*.json', base: 'src/data/en/detalles' }),
+	loader: glob({ pattern: '*.json', base: 'src/data/en/details' }),
 	schema: detailTextSchema,
 });
 

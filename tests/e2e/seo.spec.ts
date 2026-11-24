@@ -32,7 +32,7 @@ test.describe('SEO', () => {
 		const head = page.locator('head');
 		await expect(page).toHaveTitle(new RegExp(`^${link.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')} · `));
 		await expect(head.locator('link[rel="canonical"]')).toHaveAttribute('href', new RegExp(`/tool/${link.id}$`));
-		await expect(head.locator('meta[property="og:image"]')).toHaveAttribute('content', new RegExp(`/capturas/${link.id}\\.jpg$`));
+		await expect(head.locator('meta[property="og:image"]')).toHaveAttribute('content', new RegExp(`/screenshots/${link.id}\\.jpg$`));
 	});
 
 	test('el sitemap lista el inicio y cada enlace público', async ({ request }) => {

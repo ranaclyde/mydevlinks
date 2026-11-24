@@ -17,7 +17,7 @@ const { id, name, url, description, category, tech, tags = [], logo, status, ver
 const locale = toLocale(Astro.currentLocale);
 const t = useTranslations(locale);
 
-const down = status === 'caido';
+const down = status === 'down';
 const showChips = verified && tech.length > 0;
 const initial = [...name.trim()][0]?.toUpperCase() ?? '?';
 
@@ -33,6 +33,7 @@ const text = verified ? description : down ? t.noDescriptionDown : t.noDescripti
 	data-category={category}
 	data-tech={JSON.stringify(tech)}
 	data-tags={JSON.stringify(tags)}
+	data-labels={JSON.stringify([t.categories[category], ...tags.map((tag) => t.tags[tag])])}
 	data-pricing={pricing}
 >
 	<div

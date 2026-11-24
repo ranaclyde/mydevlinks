@@ -57,7 +57,7 @@ test.beforeEach(async ({ page }, testInfo) => {
 
 test('Componentes + React + Tailwind muestra sus enlaces', async ({ page, isMobile }) => {
 	const expected = publicLinks.filter((link) =>
-		matches(link, { query: '', category: 'Componentes y UI kits', tech: ['React', 'Tailwind'] }),
+		matches(link, { query: '', category: 'components', tech: ['React', 'Tailwind'] }),
 	).length;
 	expect(expected).toBeGreaterThan(0);
 
@@ -75,10 +75,10 @@ test('Componentes + React + Tailwind muestra sus enlaces', async ({ page, isMobi
 test('animacion encuentra los enlaces de Animación', async ({ page }) => {
 	await page.getByRole('searchbox', { name: 'Buscar' }).fill('animacion');
 
-	const inCategory = publicLinks.filter((link) => link.category === 'Animación y efectos');
+	const inCategory = publicLinks.filter((link) => link.category === 'animation');
 	const shown = Number(await count(page).textContent());
 	expect(shown).toBeGreaterThanOrEqual(inCategory.length);
-	await expect(page.locator(`[data-card][data-category="Animación y efectos"]:visible`)).toHaveCount(
+	await expect(page.locator(`[data-card][data-category="animation"]:visible`)).toHaveCount(
 		inCategory.length,
 	);
 });
@@ -227,9 +227,9 @@ test('una consulta larga sin espacios no desborda a 390 px', async ({ page, isMo
 
 test('los avisos se ven con palabra y estilo en enlaces reales', async ({ page }) => {
 	// Los datos pueden no tener antiguos, sin verificar ni caídos: cada sello se comprueba si hay uno.
-	const old = publicLinks.find((link) => link.status === 'antiguo' && link.verified);
-	const unverified = publicLinks.find((link) => link.status === 'activo' && !link.verified);
-	const lost = publicLinks.filter((link) => link.status === 'caido' && !link.verified);
+	const old = publicLinks.find((link) => link.status === 'outdated' && link.verified);
+	const unverified = publicLinks.find((link) => link.status === 'active' && !link.verified);
+	const lost = publicLinks.filter((link) => link.status === 'down' && !link.verified);
 	test.skip(!old && !unverified && !lost.length, 'no hay enlaces con aviso en los datos');
 
 	if (old) await expect(cardOf(page, old).getByText('Antiguo', { exact: true })).toBeVisible();
@@ -436,9 +436,9 @@ test('el tipo de galería filtra dentro de Galerías y se pierde al cambiar de c
 	page,
 	isMobile,
 }) => {
-	const GALLERY = 'Galerías de inspiración';
+	const GALLERY = 'inspiration';
 	const galleries = publicLinks.filter((link) => link.category === GALLERY);
-	const sections = galleries.filter((link) => link.tags?.includes('Secciones'));
+	const sections = galleries.filter((link) => link.tags?.includes('sections'));
 	expect(sections.length).toBeGreaterThan(0);
 
 	await openFilters(page, isMobile);
@@ -450,7 +450,7 @@ test('el tipo de galería filtra dentro de Galerías y se pierde al cambiar de c
 
 	await expect(count(page)).toHaveText(String(sections.length));
 	await expect(page.getByRole('button', { name: 'Quitar tipo Secciones' })).toBeVisible();
-	await expect(visibleCards(page).first().locator('[data-tag="Secciones"]')).toBeVisible();
+	await expect(visibleCards(page).first().locator('[data-tag="sections"]')).toBeVisible();
 
 	await pick(page.getByRole('radio', { name: /Componentes y UI kits/ }));
 	await expect(page.getByRole('group', { name: 'Tipo de galería' })).toBeHidden();
@@ -463,10 +463,10 @@ test('los filtros se guardan en la URL y sobreviven a recargar', async ({ page, 
 	await pick(page.getByRole('checkbox', { name: /^React\s/ }));
 
 	const expected = publicLinks.filter((link) =>
-		matches(link, { query: '', category: 'Componentes y UI kits', tech: ['React'] }),
+		matches(link, { query: '', category: 'components', tech: ['React'] }),
 	).length;
 	await expect(count(page)).toHaveText(String(expected));
-	await expect.poll(() => page.url()).toContain('cat=');
+	await expect.poll(() => page.url()).toContain('category=');
 	expect(page.url()).toContain('tech=React');
 
 	await page.reload();
@@ -479,7 +479,7 @@ test('los filtros se guardan en la URL y sobreviven a recargar', async ({ page, 
 });
 
 test('parámetros inválidos en la URL no rompen el directorio', async ({ page }) => {
-	await page.goto('/?cat=Nada&tech=Foo');
+	await page.goto('/?category=nada&tech=Foo');
 	await expect(count(page)).toHaveText(TOTAL);
 	await expect.poll(() => new URL(page.url()).search).toBe('');
 });
@@ -489,19 +489,19 @@ test('el filtro de precio suma opciones, va a la URL y la tarjeta muestra su pre
 	isMobile,
 }) => {
 	const pricingOf = (id: string) =>
-		(JSON.parse(readFileSync(`src/data/detalles/${id}.json`, 'utf8')) as { pricing: string }).pricing;
+		(JSON.parse(readFileSync(`src/data/details/${id}.json`, 'utf8')) as { pricing: string }).pricing;
 	const priced = publicLinks.map((link) => ({ link, pricing: pricingOf(link.id) }));
-	const free = priced.filter((item) => item.pricing === 'gratis');
-	const freeOrFreemium = priced.filter((item) => item.pricing !== 'de-pago');
+	const free = priced.filter((item) => item.pricing === 'free');
+	const freeOrFreemium = priced.filter((item) => item.pricing !== 'paid');
 
 	await openFilters(page, isMobile);
 	await pick(page.getByRole('checkbox', { name: /^Gratis/ }));
 	await expect(count(page)).toHaveText(String(free.length));
-	await expect(page).toHaveURL(/[?&]precio=gratis/);
+	await expect(page).toHaveURL(/[?&]price=free/);
 	await expect(page.getByRole('button', { name: 'Quitar precio Gratis' })).toBeVisible();
 	const card = cardOf(page, free[0].link);
 	await expect(card.locator('[data-price]')).toHaveText(/Gratis/);
-	await expect(card.locator('[data-price]')).toHaveAttribute('data-price', 'gratis');
+	await expect(card.locator('[data-price]')).toHaveAttribute('data-price', 'free');
 
 	await pick(page.getByRole('checkbox', { name: /^Freemium/ }));
 	await expect(count(page)).toHaveText(String(freeOrFreemium.length));

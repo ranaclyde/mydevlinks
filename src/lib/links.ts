@@ -1,17 +1,17 @@
 import { z } from 'astro/zod';
 
 export const CATEGORIES = [
-	'Componentes y UI kits',
-	'Animación y efectos',
-	'Galerías de inspiración',
-	'Iconos e ilustraciones',
-	'Fuentes y color',
-	'Generadores CSS/SVG',
-	'Herramientas de desarrollo',
-	'Serverless',
-	'Constructores con IA',
-	'Aprendizaje y documentación',
-	'Directorios de recursos',
+	'components',
+	'animation',
+	'inspiration',
+	'icons',
+	'fonts-color',
+	'generators',
+	'developer-tools',
+	'serverless',
+	'ai-builders',
+	'learning',
+	'directories',
 ] as const;
 
 /** Vocabulario único de `tech`; evita casi duplicados como "Tailwind CSS". */
@@ -51,19 +51,19 @@ export const TECHS = [
 ] as const;
 
 /** Qué muestra una galería de inspiración. Solo las galerías llevan `tags`. */
-export const GALLERY = 'Galerías de inspiración';
+export const GALLERY = 'inspiration';
 export const GALLERY_TAGS = [
-	'Sitios web',
-	'Landing pages',
-	'Secciones',
-	'Interfaces de apps',
-	'Movimiento',
-	'Estilos visuales',
-	'Sistemas de diseño',
-	'Marca y portafolios',
+	'websites',
+	'landing-pages',
+	'sections',
+	'app-ui',
+	'motion',
+	'visual-styles',
+	'design-systems',
+	'branding',
 ] as const;
 
-export const STATUSES = ['activo', 'antiguo', 'caido'] as const;
+export const STATUSES = ['active', 'outdated', 'down'] as const;
 
 export const linkSchema = z
 	.object({

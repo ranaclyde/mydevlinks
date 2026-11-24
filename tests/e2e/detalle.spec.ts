@@ -11,7 +11,7 @@ interface RawLink {
 
 const links: RawLink[] = JSON.parse(readFileSync('src/data/links.json', 'utf8'));
 const publicLinks = links.filter((link) => !link.private);
-const withoutDetail = publicLinks.find((link) => !existsSync(`src/data/detalles/${link.id}.json`));
+const withoutDetail = publicLinks.find((link) => !existsSync(`src/data/details/${link.id}.json`));
 // Hoy todos los enlaces públicos tienen detalle: el caso sin detalle se omite hasta que llegue uno nuevo.
 const link = withoutDetail ?? publicLinks[0];
 const path = `/tool/${link.id}`;
@@ -45,7 +45,7 @@ test('entrar directo y volver lleva al directorio', async ({ page }) => {
 });
 
 test('volver desde el directorio conserva los filtros', async ({ page }) => {
-	await page.goto(`/?cat=${encodeURIComponent(link.category)}`);
+	await page.goto(`/?category=${encodeURIComponent(link.category)}`);
 	const card = page.locator(`[data-card][data-name=${JSON.stringify(link.name)}]`);
 	await card.scrollIntoViewIfNeeded();
 	await page.evaluate(() => window.scrollBy(0, 120));
@@ -56,7 +56,7 @@ test('volver desde el directorio conserva los filtros', async ({ page }) => {
 	// Espera a `load`: antes, back.ts aún no escucha y el clic seguiría href="/".
 	await page.waitForURL(path);
 	await page.getByRole('link', { name: 'Volver al directorio' }).click();
-	await expect(page).toHaveURL(/[?&]cat=/);
+	await expect(page).toHaveURL(/[?&]category=/);
 	await expect(page.locator('[data-count-value]')).toHaveText(count ?? '');
 	await expect
 		.poll(async () => Math.abs((await page.evaluate(() => window.scrollY)) - scrollY))
@@ -113,7 +113,7 @@ test('el logo del directorio lleva arriba', async ({ page }) => {
 });
 
 test('ir al directorio desde una URL filtrada empieza arriba', async ({ page }) => {
-	await page.goto(`/?cat=${encodeURIComponent(link.category)}`);
+	await page.goto(`/?category=${encodeURIComponent(link.category)}`);
 	await page.evaluate(() => window.scrollTo(0, 600));
 	expect(await page.evaluate(() => window.scrollY)).toBeGreaterThan(0);
 	await page.goto('/');

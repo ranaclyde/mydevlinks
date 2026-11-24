@@ -5,8 +5,8 @@ import { detailSchema, formatDate, screenshotPath } from '../src/lib/details';
 import data from '../src/data/links.json';
 
 const root = join(import.meta.dirname, '..');
-const detailsDir = join(root, 'src/data/detalles');
-const capturasDir = join(root, 'public/capturas');
+const detailsDir = join(root, 'src/data/details');
+const screenshotsDir = join(root, 'public/screenshots');
 const links = data as Array<{ id: string; private: boolean }>;
 
 const base = {
@@ -33,7 +33,7 @@ describe('detailSchema', () => {
 
 	it('acepta gratis sin pricingUrl', () => {
 		const { pricingUrl, ...rest } = base;
-		expect(detailSchema.safeParse({ ...rest, pricing: 'gratis' }).success).toBe(true);
+		expect(detailSchema.safeParse({ ...rest, pricing: 'free' }).success).toBe(true);
 	});
 
 	it('rechaza uses con 2 elementos', () => {
@@ -74,7 +74,7 @@ describe('formatDate', () => {
 
 describe('screenshotPath', () => {
 	it('apunta a la captura JPEG del enlace', () => {
-		expect(screenshotPath('daisyui-com')).toBe('/capturas/daisyui-com.jpg');
+		expect(screenshotPath('daisyui-com')).toBe('/screenshots/daisyui-com.jpg');
 	});
 });
 
@@ -94,15 +94,15 @@ describe('detalles reales', () => {
 				expect(ids.get(alt)?.private).toBe(false);
 			}
 			if (detail.screenshotAt) {
-				expect(existsSync(join(capturasDir, `${id}.jpg`))).toBe(true);
+				expect(existsSync(join(screenshotsDir, `${id}.jpg`))).toBe(true);
 			}
 		});
 	}
 
 	it('cada captura corresponde a un detalle', () => {
-		if (!existsSync(capturasDir)) return;
+		if (!existsSync(screenshotsDir)) return;
 		const detailIds = new Set(files.map((f) => parse(f).name));
-		for (const f of readdirSync(capturasDir).filter((f) => f.endsWith('.jpg'))) {
+		for (const f of readdirSync(screenshotsDir).filter((f) => f.endsWith('.jpg'))) {
 			expect(detailIds.has(parse(f).name), f).toBe(true);
 		}
 	});

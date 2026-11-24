@@ -20,7 +20,7 @@ function tally(values: string[]) {
 	for (const value of values) counts.set(value, (counts.get(value) ?? 0) + 1);
 	return [...counts]
 		.map(([value, count]) => ({ value, count }))
-		.sort((a, b) => b.count - a.count || a.value.localeCompare(b.value, 'es'));
+		.sort((a, b) => b.count - a.count || labelOf(t, a.value).localeCompare(labelOf(t, b.value), locale));
 }
 
 const categories = tally(links.map((link) => link.category));
