@@ -9,7 +9,7 @@ const RANGE = 140;
 const fine = window.matchMedia('(hover: hover) and (pointer: fine)');
 const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
 
-const cards = [...document.querySelectorAll<HTMLElement>('.ficha:not(.f-unv)')];
+const cards = [...document.querySelectorAll<HTMLElement>('.card:not(.card-unverified)')];
 /** Solo se calculan las fichas en pantalla; las filtradas o fuera de vista no cuentan. */
 const onScreen = new Set<HTMLElement>();
 const lit = new Set<HTMLElement>();

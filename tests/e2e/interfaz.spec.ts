@@ -238,7 +238,7 @@ test('los avisos se ven con palabra y estilo en enlaces reales', async ({ page }
 		const pending = cardOf(page, unverified);
 		await expect(pending.getByText('Sin verificar', { exact: true })).toBeVisible();
 		await expect(pending.getByText('Todavía sin descripción ni tecnologías.')).toBeVisible();
-		await expect(pending.locator('.ficha')).toHaveCSS('border-top-style', 'dashed');
+		await expect(pending.locator('.card')).toHaveCSS('border-top-style', 'dashed');
 		await expect(pending.locator('.chip')).toHaveCount(0);
 	}
 
@@ -247,7 +247,7 @@ test('los avisos se ven con palabra y estilo en enlaces reales', async ({ page }
 		await expect(card.getByText('Caído', { exact: true })).toBeVisible();
 		await expect(card.getByText('Sin verificar', { exact: true })).toHaveCount(0);
 		await expect(card.getByText('Sin descripción: el sitio no responde.')).toBeVisible();
-		await expect(card.locator('.ficha')).toHaveCSS('border-top-style', 'dashed');
+		await expect(card.locator('.card')).toHaveCSS('border-top-style', 'dashed');
 		await expect(card.locator('.chip')).toHaveCount(0);
 	}
 });
@@ -260,7 +260,7 @@ test('los destacados van primero, con tinte y estrella', async ({ page }) => {
 	expect(featured.map((link) => link.name)).toContain(await first.getAttribute('data-name'));
 	for (const link of featured) {
 		const card = cardOf(page, link);
-		await expect(card.locator('.ficha.f-feat .ficha-star')).toBeVisible();
+		await expect(card.locator('.card.card-featured .card-star')).toBeVisible();
 		await expect(card).toContainText('Destacado.');
 	}
 });

@@ -111,7 +111,7 @@ spacing:
   gutter-mobile: "16px"
   gutter-desktop: "20px"
 components:
-  ficha:
+  card:
     backgroundColor: "{colors.surface}"
     textColor: "{colors.ink}"
     rounded: "{rounded.none}"
@@ -230,7 +230,7 @@ El marco es un paso hacia el índigo desde el campo de lectura, nunca un salto. 
 - **Hundido de marco** (#d0d6e4, oscuro #262d43) y **campo de marco** (#f6f7fa, oscuro #121521): hover de opciones y fondo de los campos de texto.
 - **Índigo de marco**: el mismo índigo de estado en claro (#1f3fbf); en oscuro, #97a8ff sobre #0e1014 con tenue #262f57.
 
-La clase `.marco` remapea los tokens neutros y el acento a sus valores de marco. Lo que vive dentro usa las mismas clases (`bg-surface`, `text-muted`, `bg-accent`…) y toma los colores del marco sin cambiar de nombre.
+La clase `.frame` remapea los tokens neutros y el acento a sus valores de marco. Lo que vive dentro usa las mismas clases (`bg-surface`, `text-muted`, `bg-accent`…) y toma los colores del marco sin cambiar de nombre.
 
 ### Avisos
 
@@ -365,7 +365,7 @@ Cada enlace tiene su página en `/tool/<id>`, generada en el build y legible com
 
 - **Ancho:** contenido centrado de hasta 1160 px, con 20 px de margen lateral (16 px por debajo de 48rem). La prosa llega hasta 68ch.
 - **Estructura:** ruta en mono de 12 px ("← Directorio / categoría / nombre"); cabecera en ficha con placa de 64 px, nombre como `h1` de 26 px, dominio, sellos, descripción, botón primario "Visitar <dominio>", botón secundario "Volver al directorio" y chips bajo línea punteada: se ven 4 y un botón "+N" punteado despliega el resto en línea (sin JavaScript se ven todos). Debajo, dos columnas: captura y secciones ("¿Qué es?", "Casos de uso" numerados, "Qué revisar antes de elegirlo" con filete izquierdo de Línea fuerte), y a la derecha la ficha técnica de 300 px. Al final, las alternativas en la grilla del directorio.
-- **Ficha técnica:** ficha en Hoja (nunca en Marco) con precio como sello, enlace a precios, "Ideal para", categoría y "Última revisión". La cabecera y la ficha técnica no se accionan, así que llevan `.ficha-fija` y su borde no cambia en hover. Desde 48rem y con al menos 600 px de alto acompaña el scroll (`sticky`, 78 px bajo el encabezado).
+- **Ficha técnica:** ficha en Hoja (nunca en Marco) con precio como sello, enlace a precios, "Ideal para", categoría y "Última revisión". La cabecera y la ficha técnica no se accionan, así que llevan `.card-static` y su borde no cambia en hover. Desde 48rem y con al menos 600 px de alto acompaña el scroll (`sticky`, 78 px bajo el encabezado).
 - **Aviso de contenido generado:** recuadro con borde punteado de Línea fuerte, texto apagado de 12.5 px e interrogación: "Descripción generada a partir del sitio". Aparece mientras el autor no revisa el texto a mano.
 - **Captura:** marco de Línea con barra superior mono (dominio y "Captura del <fecha>"). Si el enlace está caído y no hay captura, un recuadro punteado de Línea fuerte dice "El sitio no responde; no hay captura".
 - **Volver:** "← Directorio" y "Volver al directorio" apuntan a `/`; con JavaScript, si se llegó desde el directorio, vuelven en el historial y conservan los filtros.

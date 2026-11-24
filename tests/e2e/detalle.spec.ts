@@ -175,7 +175,7 @@ test('el piloto muestra todas las secciones', async ({ page }) => {
 	await expect(uses.getByRole('listitem')).toHaveCount(3);
 	await expect(page.getByRole('heading', { name: 'Qué revisar antes de elegirlo' })).toBeVisible();
 
-	const sheet = page.locator('.ficha', { has: page.getByRole('heading', { name: 'Ficha técnica' }) });
+	const sheet = page.locator('.card', { has: page.getByRole('heading', { name: 'Ficha técnica' }) });
 	await expect(sheet).toBeVisible();
 	await expect(sheet).toContainText('Última revisión');
 	await expect(sheet).toContainText('Descripción generada a partir del sitio');
@@ -192,7 +192,7 @@ test('la ficha técnica acompaña el scroll', async ({ page, isMobile }) => {
 	await page.goto('/tool/daisyui-com');
 
 	await page.evaluate(() => window.scrollTo(0, 1200));
-	const sheet = page.locator('.ficha', { has: page.getByRole('heading', { name: 'Ficha técnica' }) });
+	const sheet = page.locator('.card', { has: page.getByRole('heading', { name: 'Ficha técnica' }) });
 	const top = await sheet.evaluate((element) => element.getBoundingClientRect().top);
 	expect(top).toBeGreaterThanOrEqual(70);
 	expect(top).toBeLessThanOrEqual(90);
