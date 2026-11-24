@@ -1,0 +1,22 @@
+{
+	"whatIs": [
+		"Stick It Up es una librería de stickers para interfaces: ilustraciones SVG dibujadas a mano, en tonos pastel, que escalan a cualquier tamaño y ya traen interacciones como arrastrar, inclinar y un efecto al pasar el mouse. Se instala con npm (stick-it-up) y es de código abierto con licencia MIT.",
+		"Conviene cuando quieres darle personalidad a una landing, una tarjeta, un estado vacío o una página 404 sin encargar ilustraciones."
+	],
+	"uses": [
+		"Decorar el hero de una landing con stickers que reaccionan al mouse.",
+		"Dar un toque amable a un estado vacío o a una página 404.",
+		"Sumar detalles lúdicos a tarjetas o secciones de un portafolio."
+	],
+	"caveats": [
+		"Está pensada para React y Next.js, así que no sirve tal cual en otros frameworks.",
+		"Es un conjunto de ilustraciones con un estilo muy marcado; revisa que combine con tu diseño.",
+		"Las interacciones usan el mouse, así que en pantallas táctiles el efecto no es el mismo."
+	],
+	"pricing": "gratis",
+	"pricingNote": "Código abierto con licencia MIT; el único cobro del sitio es el patrocinio para marcas.",
+	"idealFor": "Proyectos React o Next.js que buscan ilustraciones divertidas e interactivas.",
+	"reviewedAt": "2026-11-24",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-24"
+}

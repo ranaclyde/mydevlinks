@@ -1,0 +1,23 @@
+{
+	"whatIs": [
+		"Arc UI es una librería de componentes y bloques React con animaciones, pensada para proyectos con shadcn/ui y Next.js. Se agregan con la CLI de shadcn (por ejemplo, npx shadcn@latest add @uiarc/button), que copia el código fuente a tu proyecto para que lo edites a tu gusto.",
+		"También ofrece un servidor MCP, así que un agente de IA como Claude Code puede buscar e instalar piezas por ti. Conviene cuando quieres una interfaz con movimiento cuidado sin escribir cada animación a mano."
+	],
+	"uses": [
+		"Armar una landing con secciones y bloques animados ya resueltos.",
+		"Sumar botones, tarjetas y otros componentes con movimiento a una app que ya usa shadcn/ui.",
+		"Pedirle a un agente de IA que instale y combine componentes mediante el servidor MCP."
+	],
+	"caveats": [
+		"Hay plan Pro: los componentes de movimiento más elaborados y la mayoría de los bloques completos son de pago.",
+		"El código se copia a tu proyecto, así que las actualizaciones futuras las aplicas tú.",
+		"La licencia Pro no permite revender ni redistribuir el código, por ejemplo en plantillas o kits de UI."
+	],
+	"pricing": "freemium",
+	"pricingNote": "Gratis con licencia MIT para los componentes básicos; Pro se paga por año o como compra única.",
+	"pricingUrl": "https://uiarc.dev/pricing",
+	"idealFor": "Proyectos React con shadcn/ui que quieren interfaces animadas listas.",
+	"reviewedAt": "2026-11-24",
+	"reviewedByAuthor": false,
+	"screenshotAt": "2026-11-24"
+}
