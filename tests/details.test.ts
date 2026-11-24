@@ -66,6 +66,10 @@ describe('formatDate', () => {
 	it('quita el punto de los meses abreviados que lo llevan', () => {
 		expect(formatDate('2026-09-01')).toBe('1 sept 2026');
 	});
+
+	it('da el formato corto en inglés', () => {
+		expect(formatDate('2026-11-11', 'en')).toBe('Nov 11, 2026');
+	});
 });
 
 describe('screenshotPath', () => {

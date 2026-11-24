@@ -1,4 +1,5 @@
 ---
+import { localizePath, toLocale, useTranslations } from '../../i18n/ui';
 import { domainOf, type Link } from '../../lib/links';
 import Stamps from '../Stamps.astro';
 
@@ -9,20 +10,18 @@ interface Props {
 const { link } = Astro.props;
 const { name, url, description, tech, tags = [], logo, status, verified } = link;
 
+const locale = toLocale(Astro.currentLocale);
+const t = useTranslations(locale);
 const down = status === 'caido';
 const domain = domainOf(url);
 const initial = [...name.trim()][0]?.toUpperCase() ?? '?';
 const techs = verified ? tech : [];
-const chips = [...techs, ...tags];
+const chips = [...techs, ...tags.map((tag) => t.tags[tag])];
 /** Chips visibles antes de "+N"; el resto se despliega con el botón. */
 const VISIBLE_CHIPS = 4;
 const hidden = chips.length - VISIBLE_CHIPS;
 
-const text = verified
-	? description
-	: down
-		? 'Sin descripción: el sitio no responde.'
-		: 'Todavía sin descripción ni tecnologías.';
+const text = verified ? description : down ? t.noDescriptionDown : t.noDescription;
 
 const button =
 	'inline-flex min-h-11 items-center justify-center gap-2 border px-4 text-sm font-medium no-underline transition-colors duration-100 hover:bg-accent hover:border-accent hover:text-accent-ink max-[520px]:flex-auto md:min-h-10';
@@ -83,20 +82,20 @@ const button =
 				target="_blank"
 				rel="noopener noreferrer"
 			>
-				Visitar {domain}
+				{t.visit(domain)}
 				<span aria-hidden="true">↗</span>
-				<span class="sr-only">(abre en otra pestaña)</span>
+				<span class="sr-only">{t.opensInNewTab}</span>
 			</a>
-			<a class:list={[button, 'bg-bg text-ink border-line-strong']} href="/" data-back>
-				Volver al directorio
+			<a class:list={[button, 'bg-bg text-ink border-line-strong']} href={localizePath('/', locale)} data-back>
+				{t.backToDirectory}
 			</a>
 		</div>
 
 		{
 			chips.length > 0 && (
 				<>
-					{techs.length > 0 && <span class="sr-only">Tecnologías: {techs.join(', ')}.</span>}
-					{tags.length > 0 && <span class="sr-only">Tipo: {tags.join(', ')}.</span>}
+					{techs.length > 0 && <span class="sr-only">{t.techList(techs.join(', '))}</span>}
+					{tags.length > 0 && <span class="sr-only">{t.typeList(tags.map((tag) => t.tags[tag]).join(', '))}</span>}
 					<div
 						class="border-line mt-3.5 flex flex-wrap gap-1.5 border-t border-dashed pt-3 max-[520px]:col-span-full"
 						data-hero-chips
@@ -111,7 +110,9 @@ const button =
 								class="chip chip-toggle"
 								type="button"
 								aria-expanded="false"
-								aria-label={`Ver ${hidden} tecnologías más`}
+								aria-label={t.seeMoreTech(hidden)}
+								data-less={t.seeLess}
+								data-less-label={t.seeLessTech}
 								data-chips-toggle
 								data-needs-js
 							>

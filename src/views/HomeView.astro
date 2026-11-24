@@ -1,0 +1,137 @@
+---
+import Filters from '../components/Filters.astro';
+import LinkCard from '../components/LinkCard.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import { labelOf, localizePath, toLocale, useTranslations } from '../i18n/ui';
+import Layout from '../layouts/Layout.astro';
+import { englishComplete, loadCatalog } from '../lib/catalog';
+import { PRICING } from '../lib/details';
+import { absoluteUrl, SITE_NAME } from '../lib/seo';
+
+const locale = toLocale(Astro.currentLocale);
+const t = useTranslations(locale);
+const items = await loadCatalog(locale);
+const links = items.map((item) => item.link);
+const translated = await englishComplete();
+const home = absoluteUrl(localizePath('/', locale), Astro.site);
+
+function tally(values: string[]) {
+	const counts = new Map<string, number>();
+	for (const value of values) counts.set(value, (counts.get(value) ?? 0) + 1);
+	return [...counts]
+		.map(([value, count]) => ({ value, count }))
+		.sort((a, b) => b.count - a.count || a.value.localeCompare(b.value, 'es'));
+}
+
+const categories = tally(links.map((link) => link.category));
+const techs = tally(links.flatMap((link) => link.tech));
+const tags = tally(links.flatMap((link) => link.tags ?? []));
+
+const pricingById = new Map(
+	items.flatMap(({ link, detail }) => (detail ? [[link.id, detail.pricing] as const] : [])),
+);
+const pricedLinks = links.flatMap((link) => {
+	const pricing = pricingById.get(link.id);
+	return pricing ? [pricing] : [];
+});
+// Orden fijo, de gratis a de pago; solo los precios que tiene algún enlace.
+const prices = PRICING.map((value) => ({
+	value,
+	label: t.pricing[value],
+	count: pricedLinks.filter((pricing) => pricing === value).length,
+})).filter((price) => price.count > 0);
+
+const description = t.homeDescription(links.length);
+const structuredData = [
+	{
+		'@context': 'https://schema.org',
+		'@type': 'WebSite',
+		name: SITE_NAME,
+		url: home,
+		inLanguage: locale,
+		description,
+	},
+	{
+		'@context': 'https://schema.org',
+		'@type': 'CollectionPage',
+		name: `${SITE_NAME}: ${t.collectionName}`,
+		url: home,
+		inLanguage: locale,
+		description,
+		about: categories.map((category) => ({ '@type': 'Thing', name: labelOf(t, category.value) })),
+	},
+];
+---
+
+<Layout
+	title={`${SITE_NAME} · ${t.homeTitle}`}
+	description={description}
+	path="/"
+	translated={translated}
+	structuredData={structuredData}
+>
+	<a
+		class="bg-ink text-bg sr-only top-2 left-2 z-30 px-3 py-2 text-sm font-medium focus:not-sr-only focus:fixed"
+		href="#resultados">{t.skipToResults}</a
+	>
+
+	<SiteHeader total={links.length} path="/" asHeading animateLogo />
+
+	<div class="grid items-start md:grid-cols-[264px_minmax(0,1fr)]" data-app>
+		<Filters categories={categories} techs={techs} tags={tags} prices={prices} total={links.length} />
+
+		<main class="flex min-w-0 flex-col gap-3.5 px-4 pt-3.5 pb-7 md:px-5 md:pt-4 md:pb-8">
+			<div class="flex min-h-10 flex-wrap items-center gap-x-4 gap-y-2.5">
+				<h2
+					class="text-muted flex w-fit items-baseline gap-2 text-sm font-normal"
+					id="resultados"
+					tabindex="-1"
+				>
+					<span
+						class="text-ink font-mono text-[26px] leading-none font-semibold tabular-nums"
+						data-count-value>{links.length}</span
+					>
+					<span data-count-label>{t.links(links.length)}</span>
+				</h2>
+				<div class="flex min-w-0 flex-wrap items-center gap-1.5" data-actives></div>
+			</div>
+			<p class="sr-only" role="status" data-live></p>
+
+			<noscript>
+				<p class="text-muted text-sm">
+					{t.noScript}
+				</p>
+			</noscript>
+
+			<ul
+				class="m-0 grid list-none grid-cols-[repeat(auto-fill,minmax(min(270px,100%),1fr))] gap-3 p-0 max-md:grid-cols-1"
+				data-grid
+			>
+				{links.map((link) => <LinkCard link={link} pricing={pricingById.get(link.id)} />)}
+			</ul>
+
+			<div
+				class="border-line-strong bg-surface flex max-w-[640px] flex-col items-start gap-2.5 border border-dashed px-6 py-9"
+				data-empty
+				hidden
+			>
+				<h3 class="text-base font-semibold">{t.noResults}</h3>
+				<p class="max-w-full wrap-anywhere" data-empty-text></p>
+				<p class="text-muted text-sm">{t.noResultsHint}</p>
+				<button
+					class="bg-ink text-bg border-ink hover:bg-accent hover:border-accent hover:text-accent-ink min-h-10 cursor-pointer border px-3.5 py-2 text-sm font-medium"
+					type="button"
+					data-clear
+				>
+					{t.clearFilters}
+				</button>
+			</div>
+		</main>
+	</div>
+</Layout>
+
+<script>
+	import '../scripts/theme';
+	import '../scripts/filters';
+	import '../scripts/glow';
+</script>

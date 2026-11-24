@@ -316,6 +316,7 @@ Sólidos y directos.
 - **Secundario:** el botón Filtros usa fondo Niebla y borde de Línea fuerte.
 - **Terciario:** enlaces de acción de 13 px subrayados, que pasan a índigo en hover.
 - **Selector de tema:** tres botones de icono unidos con borde de Línea y separadores; el activo se rellena de Tinta.
+- **Selector de idioma:** a la izquierda del de tema, con el mismo estilo: dos enlaces en mono mayúscula (ES y EN) y el idioma actual relleno de Tinta. Lleva a la misma página en el otro idioma y, en el directorio, conserva los filtros.
 
 ### Chips
 
@@ -354,7 +355,7 @@ La ficha es el componente central: un enlace completo con cuatro zonas en grilla
 
 ### Navigation
 
-- **Encabezado:** fondo de marco con línea inferior; marca a la izquierda, total de enlaces en escritorio y selector de tema a la derecha.
+- **Encabezado:** fondo de marco con línea inferior; marca a la izquierda, total de enlaces en escritorio y selectores de idioma y de tema a la derecha. Por debajo de 380 px la marca muestra solo el estante, sin la palabra.
 - **Panel lateral:** fondo de marco; búsqueda, categorías con plegado nativo y tecnologías con las más usadas primero y "Ver las N".
 - **Móvil:** el panel se pliega tras el botón Filtros, con insignia índigo que cuenta los activos.
 

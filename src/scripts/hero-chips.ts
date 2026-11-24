@@ -4,12 +4,13 @@ for (const button of document.querySelectorAll<HTMLButtonElement>('[data-chips-t
 	if (!box) continue;
 	const collapsedText = button.textContent?.trim() ?? '';
 	const collapsedLabel = button.getAttribute('aria-label') ?? '';
+	const { less = '', lessLabel = '' } = button.dataset;
 
 	button.addEventListener('click', () => {
 		const open = !box.hasAttribute('data-open');
 		box.toggleAttribute('data-open', open);
 		button.setAttribute('aria-expanded', String(open));
-		button.textContent = open ? 'Ver menos' : collapsedText;
-		button.setAttribute('aria-label', open ? 'Ver menos tecnologías' : collapsedLabel);
+		button.textContent = open ? less : collapsedText;
+		button.setAttribute('aria-label', open ? lessLabel : collapsedLabel);
 	});
 }

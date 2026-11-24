@@ -1,5 +1,6 @@
 ---
 import { formatDate, screenshotPath } from '../../lib/details';
+import { useTranslations } from '../../i18n/ui';
 import { domainOf, type Link } from '../../lib/links';
 
 interface Props {
@@ -10,6 +11,7 @@ interface Props {
 
 const { link, screenshotAt } = Astro.props;
 const domain = domainOf(link.url);
+const t = useTranslations(Astro.currentLocale);
 ---
 
 {
@@ -17,12 +19,12 @@ const domain = domainOf(link.url);
 		<figure class="border-line bg-surface m-0 border">
 			<figcaption class="border-line text-muted flex items-center justify-between gap-3 border-b px-2.5 py-1.5 font-mono text-[11px]">
 				<span class="truncate">{domain}</span>
-				<span class="flex-none">Captura del {formatDate(screenshotAt)}</span>
+				<span class="flex-none">{t.screenshotFrom(formatDate(screenshotAt, t.dateLocale))}</span>
 			</figcaption>
 			<img
 				class="block h-auto w-full"
 				src={screenshotPath(link.id)}
-				alt={`Captura de ${domain}`}
+				alt={t.screenshotOf(domain)}
 				width="1280"
 				height="800"
 				loading="lazy"
@@ -32,7 +34,7 @@ const domain = domainOf(link.url);
 	) : (
 		link.status === 'caido' && (
 			<p class="border-line-strong text-muted border border-dashed px-6 py-9 text-sm">
-				El sitio no responde; no hay captura
+				{t.noScreenshot}
 			</p>
 		)
 	)
