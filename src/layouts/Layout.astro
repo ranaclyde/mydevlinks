@@ -1,15 +1,32 @@
 ---
 import '../styles/global.css';
+import { absoluteUrl, DEFAULT_OG_IMAGE, jsonLd, NO_INDEX, SITE_NAME } from '../lib/seo';
 
 interface Props {
 	title?: string;
 	description?: string;
+	/** Ruta canónica (/, /enlace/<id>). Sin ella la página no lleva canonical ni og:url. */
+	path?: string;
+	image?: { path: string; width: number; height: number; alt: string };
+	type?: 'website' | 'article';
+	/** Datos estructurados de schema.org. */
+	structuredData?: object[];
+	noindex?: boolean;
 }
 
 const {
-	title = 'mydevlinks',
-	description = 'Enlaces para desarrollar, filtrables por categoría, tecnología y texto.',
+	title = SITE_NAME,
+	description = 'Enlaces curados para desarrollar: componentes, inspiración, iconos, fuentes y herramientas, filtrables por categoría, tecnología y texto.',
+	path,
+	image = DEFAULT_OG_IMAGE,
+	type = 'website',
+	structuredData = [],
+	noindex = false,
 } = Astro.props;
+
+const canonical = path ? absoluteUrl(path, Astro.site) : undefined;
+const imageUrl = absoluteUrl(image.path, Astro.site);
+const robots = noindex || NO_INDEX ? 'noindex, nofollow' : 'index, follow, max-image-preview:large';
 ---
 
 <!doctype html>
@@ -17,10 +34,35 @@ const {
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content={description} />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta name="robots" content={robots} />
+		{canonical && <link rel="canonical" href={canonical} />}
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+		<meta name="theme-color" content="#dfe3ee" media="(prefers-color-scheme: light)" />
+		<meta name="theme-color" content="#0e1014" media="(prefers-color-scheme: dark)" />
+		<meta name="generator" content={Astro.generator} />
+
+		<meta property="og:site_name" content={SITE_NAME} />
+		<meta property="og:locale" content="es_ES" />
+		<meta property="og:type" content={type} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		{canonical && <meta property="og:url" content={canonical} />}
+		<meta property="og:image" content={imageUrl} />
+		<meta property="og:image:width" content={String(image.width)} />
+		<meta property="og:image:height" content={String(image.height)} />
+		<meta property="og:image:alt" content={image.alt} />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={imageUrl} />
+		<meta name="twitter:image:alt" content={image.alt} />
+
+		{structuredData.map((data) => <script type="application/ld+json" set:html={jsonLd(data)} />)}
+
 		<script is:inline>
 			document.documentElement.setAttribute('data-js', '');
 			try {

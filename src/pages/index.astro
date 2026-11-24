@@ -6,6 +6,7 @@ import SiteHeader from '../components/SiteHeader.astro';
 import Layout from '../layouts/Layout.astro';
 import { PRICE_LABEL, PRICING } from '../lib/details';
 import { sortLinks, visibleLinks } from '../lib/links';
+import { absoluteUrl, SITE_NAME } from '../lib/seo';
 
 const collection = await getCollection('links');
 const links = sortLinks(
@@ -40,9 +41,35 @@ const prices = PRICING.map((value) => ({
 	label: PRICE_LABEL[value],
 	count: pricedLinks.filter((pricing) => pricing === value).length,
 })).filter((price) => price.count > 0);
+
+const description = `${links.length} enlaces curados para desarrollar: componentes y UI kits, galerías de inspiración, iconos, fuentes y herramientas, filtrables por categoría y tecnología.`;
+const structuredData = [
+	{
+		'@context': 'https://schema.org',
+		'@type': 'WebSite',
+		name: SITE_NAME,
+		url: absoluteUrl('/', Astro.site),
+		inLanguage: 'es',
+		description,
+	},
+	{
+		'@context': 'https://schema.org',
+		'@type': 'CollectionPage',
+		name: `${SITE_NAME}: enlaces para desarrolladores`,
+		url: absoluteUrl('/', Astro.site),
+		inLanguage: 'es',
+		description,
+		about: categories.map((category) => ({ '@type': 'Thing', name: category.value })),
+	},
+];
 ---
 
-<Layout>
+<Layout
+	title={`${SITE_NAME} · Enlaces curados para desarrolladores`}
+	description={description}
+	path="/"
+	structuredData={structuredData}
+>
 	<a
 		class="bg-ink text-bg sr-only top-2 left-2 z-30 px-3 py-2 text-sm font-medium focus:not-sr-only focus:fixed"
 		href="#resultados">Saltar a resultados</a

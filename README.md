@@ -71,6 +71,18 @@ pnpm capture <id> [<id>…]
 
 El script rechaza ids que no existen y enlaces caídos o privados, y al terminar recuerda poner `screenshotAt` en el JSON. No corre en el build ni en las pruebas. `pnpm test` falla si hay una captura sin su detalle.
 
+## Publicar en Netlify
+
+`netlify.toml` define el build (`pnpm build`, carpeta `dist`), los headers de seguridad y la caché. Netlify toma Node de `.nvmrc` y pnpm del campo `packageManager` de `package.json`, así que no hace falta configurar nada en el panel: basta con conectar el repositorio.
+
+- **Dominio:** `astro.config.mjs` usa la variable `URL` que Netlify define en cada build, con el dominio principal del sitio. De ella salen el canonical, las URLs de Open Graph, el sitemap y `robots.txt`. Al cambiar de dominio en Netlify, el próximo deploy lo toma solo.
+- **Previews:** los deploy previews y branch deploys se construyen con `SITE_NOINDEX=1`, que pone `noindex` en todas las páginas y `Disallow: /` en `robots.txt`.
+- **URLs:** las fichas se generan como `/enlace/<id>.html` y se sirven en `/enlace/<id>`, sin barra final.
+
+## SEO
+
+Cada página lleva título, descripción, canonical, Open Graph y tarjeta de X. Las fichas usan su captura como imagen para redes; el inicio y la 404 usan `public/og.png` (1200×630). El inicio declara `WebSite` y `CollectionPage` en JSON-LD, y cada ficha `BreadcrumbList` y `WebPage`. `/sitemap.xml` lista el inicio y cada enlace público, con la fecha de revisión de su detalle como `lastmod`.
+
 ## Scripts
 
 Salvo `capture.mjs`, los archivos de `scripts/` se usaron una sola vez, para analizar los sitios. Necesitan una caché local que está fuera de git, y no hacen falta para agregar enlaces.

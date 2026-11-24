@@ -1,0 +1,31 @@
+---
+import { getCollection } from 'astro:content';
+import SiteHeader from '../components/SiteHeader.astro';
+import Layout from '../layouts/Layout.astro';
+import { visibleLinks } from '../lib/links';
+
+const total = visibleLinks(
+	(await getCollection('links')).map((entry) => entry.data),
+	import.meta.env.DEV,
+).length;
+---
+
+<Layout title="Página no encontrada · mydevlinks" description="Esta página no existe." noindex>
+	<SiteHeader total={total} animateLogo={false} />
+
+	<main class="mx-auto flex max-w-[640px] flex-col items-start gap-3 px-4 pt-16 pb-16 md:px-5">
+		<p class="text-muted font-mono text-xs">Error 404</p>
+		<h1 class="text-2xl leading-tight font-semibold">Esta página no existe</h1>
+		<p class="text-muted">
+			Puede que el enlace haya cambiado de nombre o que ya no esté en el directorio.
+		</p>
+		<a
+			class="bg-ink text-bg border-ink hover:bg-accent hover:border-accent hover:text-accent-ink mt-2 inline-flex min-h-10 items-center border px-3.5 py-2 text-sm font-medium no-underline"
+			href="/">Volver al directorio</a
+		>
+	</main>
+</Layout>
+
+<script>
+	import '../scripts/theme';
+</script>
