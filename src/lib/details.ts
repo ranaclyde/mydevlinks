@@ -1,6 +1,6 @@
 import { z } from 'astro/zod';
 
-export const PRICING = ['gratis', 'freemium', 'de-pago'] as const;
+export const PRICING = ['free', 'freemium', 'paid'] as const;
 
 const isoDate = z
 	.string()
@@ -25,7 +25,7 @@ export const detailFields = z.object({
 	alternatives: z.array(z.string()).optional(),
 });
 
-export const detailSchema = detailFields.refine((detail) => detail.pricing === 'gratis' || Boolean(detail.pricingUrl), {
+export const detailSchema = detailFields.refine((detail) => detail.pricing === 'free' || Boolean(detail.pricingUrl), {
 	message: 'pricingUrl es obligatoria salvo si el precio es gratis',
 	path: ['pricingUrl'],
 });
@@ -33,7 +33,7 @@ export const detailSchema = detailFields.refine((detail) => detail.pricing === '
 export type Detail = z.infer<typeof detailSchema>;
 
 export function screenshotPath(id: string): string {
-	return `/capturas/${id}.jpg`;
+	return `/screenshots/${id}.jpg`;
 }
 
 /** `2026-11-11` -> `11 nov 2026` en español, `Nov 11, 2026` en inglés. */

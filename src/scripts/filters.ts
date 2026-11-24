@@ -49,10 +49,10 @@ const techFilter = $<HTMLInputElement>('[data-tech-filter]');
 const techMore = document.querySelector<HTMLButtonElement>('[data-tech-more]');
 const techNone = $<HTMLElement>('[data-tech-none]');
 
-const categoryInputs = [...document.querySelectorAll<HTMLInputElement>('input[name="categoria"]')];
+const categoryInputs = [...document.querySelectorAll<HTMLInputElement>('input[name="category"]')];
 const tagGroup = document.querySelector<HTMLElement>('[data-tags]');
-const tagInputs = [...document.querySelectorAll<HTMLInputElement>('input[name="tipo"]')];
-const priceInputs = [...document.querySelectorAll<HTMLInputElement>('input[name="precio"]')];
+const tagInputs = [...document.querySelectorAll<HTMLInputElement>('input[name="type"]')];
+const priceInputs = [...document.querySelectorAll<HTMLInputElement>('input[name="price"]')];
 const techOptions = [...document.querySelectorAll<HTMLElement>('[data-tech-option]')];
 const techInputs = techOptions.map((option) => option.querySelector('input') as HTMLInputElement);
 const allTechs = techInputs.map((input) => input.value);
@@ -65,6 +65,7 @@ const cards: Card[] = [...document.querySelectorAll<HTMLElement>('[data-card]')]
 	category: el.dataset.category ?? '',
 	tech: JSON.parse(el.dataset.tech ?? '[]'),
 	tags: JSON.parse(el.dataset.tags ?? '[]'),
+	labels: JSON.parse(el.dataset.labels ?? '[]'),
 	pricing: el.dataset.pricing,
 	chips: [...el.querySelectorAll<HTMLElement>('[data-chip]')],
 }));

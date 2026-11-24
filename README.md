@@ -30,17 +30,17 @@ Agrega una entrada a `src/data/links.json`:
 	"name": "Ejemplo",
 	"url": "https://ejemplo.dev/",
 	"description": "Qué es y para qué sirve, en unos 75 caracteres para que entre en la ficha.",
-	"category": "Componentes y UI kits",
+	"category": "components",
 	"tech": ["React", "Tailwind"],
-	"status": "activo",
+	"status": "active",
 	"verified": true,
 	"private": false,
 	"logo": "/logos/ejemplo-dev.png"
 }
 ```
 
-- **Categorías, estados y tecnologías:** son listas cerradas en `src/lib/links.ts` (`CATEGORIES`, `STATUSES`, `TECHS`). Una tecnología nueva se agrega a `TECHS`. Sus otras formas de escribirla van en `TECH_ALIASES`, en `src/lib/filter.ts`.
-- **`tags`:** solo para Galerías de inspiración y enlaces verificados. Dice qué muestra la galería y alimenta el filtro "Tipo de galería". Es una lista cerrada en `GALLERY_TAGS`, en `src/lib/links.ts`; cada galería verificada lleva al menos una.
+- **Categorías, estados y tecnologías:** son listas cerradas en `src/lib/links.ts` (`CATEGORIES`, `STATUSES`, `TECHS`). Las categorías, los tipos y los estados (`active`, `outdated`, `down`) son ids en inglés; el nombre que se ve en cada idioma está en `src/i18n/ui.ts`. Una tecnología nueva se agrega a `TECHS`. Sus otras formas de escribirla van en `TECH_ALIASES`, en `src/lib/filter.ts`.
+- **`tags`:** solo para galerías de inspiración (`inspiration`) y enlaces verificados. Dice qué muestra la galería y alimenta el filtro "Tipo de galería". Es una lista cerrada en `GALLERY_TAGS`, en `src/lib/links.ts`; cada galería verificada lleva al menos una.
 - **Logo:** el archivo va en `public/logos/` y es opcional. Sin logo, la ficha muestra la inicial.
 - **`verified: false`:** el enlace va sin `description` ni `tech`, y la ficha lo indica.
 - **`featured: true`:** opcional. El enlace aparece primero, con un tinte índigo en el borde y una estrella en la esquina. Solo para enlaces verificados.
@@ -50,20 +50,20 @@ Agrega una entrada a `src/data/links.json`:
 
 ## Agregar un detalle
 
-Cada enlace público tiene una página `/tool/<id>`. Con el archivo `src/data/detalles/<id>.json` muestra el detalle completo; sin él, la página queda sin contenido. Los campos los valida `detailSchema`, en `src/lib/details.ts`:
+Cada enlace público tiene una página `/tool/<id>`. Con el archivo `src/data/details/<id>.json` muestra el detalle completo; sin él, la página queda sin contenido. Los campos los valida `detailSchema`, en `src/lib/details.ts`:
 
 - **`whatIs`:** uno o dos párrafos que explican qué es.
 - **`uses`:** exactamente tres usos.
 - **`caveats`:** dos o tres cosas a tener en cuenta.
-- **`pricing`:** `gratis`, `freemium` o `de-pago`. **`pricingNote`** lo aclara en una frase.
-- **`pricingUrl`:** la página de precios. Es obligatoria salvo si el precio es `gratis`.
+- **`pricing`:** `free`, `freemium` o `paid`. **`pricingNote`** lo aclara en una frase.
+- **`pricingUrl`:** la página de precios. Es obligatoria salvo si el precio es `free`.
 - **`idealFor`:** para quién es.
 - **`reviewedAt`:** fecha ISO (`YYYY-MM-DD`) de la revisión.
 - **`reviewedByAuthor`:** `true` solo si el autor revisó el texto. Con `false`, el detalle muestra el aviso "Descripción generada a partir del sitio".
 - **`screenshotAt`:** opcional, fecha ISO de la captura.
 - **`alternatives`:** opcional, ids de otros enlaces.
 
-La captura de pantalla es un archivo estático, `public/capturas/<id>.jpg`. Se toma a mano con Chromium (1280×800):
+La captura de pantalla es un archivo estático, `public/screenshots/<id>.jpg`. Se toma a mano con Chromium (1280×800):
 
 ```sh
 pnpm capture <id> [<id>…]
@@ -75,8 +75,8 @@ El script rechaza ids que no existen y enlaces caídos o privados, y al terminar
 
 El sitio usa el [i18n de Astro](https://docs.astro.build/en/guides/internationalization/). El español va en la raíz (`/`, `/tool/<id>`) y el inglés bajo `/en` (`/en`, `/en/tool/<id>`). Las páginas de `src/pages/` y de `src/pages/en/` solo eligen la ruta; el contenido está en `src/views/`, y cada componente toma el idioma de `Astro.currentLocale`.
 
-- **Textos de la interfaz:** están en `src/i18n/ui.ts`, un diccionario por idioma con la misma forma. Los scripts del navegador lo leen según `<html lang>`. Las categorías, los tipos de galería y los precios se traducen solo como etiqueta. Su valor interno sigue en español, que es el que usan los datos y los filtros de la URL (`?cat=…`).
-- **Contenido en inglés:** la descripción de cada enlace va en `src/data/en/links.json`, como `{ "id", "description" }`. Los textos de cada detalle (`whatIs`, `uses`, `caveats`, `pricingNote` e `idealFor`) van en `src/data/en/detalles/<id>.json`. El precio, las fechas, la captura y las alternativas salen del detalle en español.
+- **Textos de la interfaz:** están en `src/i18n/ui.ts`, un diccionario por idioma con la misma forma. Los scripts del navegador lo leen según `<html lang>`. Las categorías, los tipos de galería y los precios se traducen solo como etiqueta. Su valor interno es un id en inglés, el mismo en los dos idiomas, que es el que usan los datos y los filtros de la URL (`?category=developer-tools&price=free`).
+- **Contenido en inglés:** la descripción de cada enlace va en `src/data/en/links.json`, como `{ "id", "description" }`. Los textos de cada detalle (`whatIs`, `uses`, `caveats`, `pricingNote` e `idealFor`) van en `src/data/en/details/<id>.json`. El precio, las fechas, la captura y las alternativas salen del detalle en español.
 - **Lo que falta traducir:** la página en inglés muestra el texto en español, avisa que no está traducida y lleva `noindex`. Tampoco tiene `hreflang` y no entra en el sitemap. Cuando una ficha tiene todos sus textos en inglés, las dos versiones se enlazan con `hreflang` y las dos van al sitemap. El inicio en inglés hace lo mismo cuando están todas las descripciones.
 
 ## Publicar en Netlify

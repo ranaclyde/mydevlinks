@@ -4,9 +4,9 @@
 		"name": "Squoosh",
 		"url": "https://squoosh.app/",
 		"description": "Comprime y compara imágenes con distintos códecs desde el navegador.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/squoosh-app.ico"
@@ -16,9 +16,9 @@
 		"name": "Magnific",
 		"url": "https://www.magnific.com/",
 		"description": "Antes Freepik: banco de recursos visuales con herramientas de IA para imagen, vídeo y audio.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/magnific-com.svg"
@@ -28,9 +28,9 @@
 		"name": "Yippy Illustrations",
 		"url": "https://illustrationkit.com/illustrations/yippy",
 		"description": "Ilustraciones vectoriales dibujadas a mano, con iconos y avatares.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/illustrationkit-com-illustrations-yippy.png"
@@ -40,11 +40,11 @@
 		"name": "Storyset",
 		"url": "https://storyset.com/",
 		"description": "Ilustraciones gratuitas que se personalizan y animan en un editor online.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [
 			"Figma"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/storyset-com.svg"
@@ -54,9 +54,9 @@
 		"name": "Shots",
 		"url": "https://shots.so/",
 		"description": "Crea mockups a partir de tus capturas de pantalla.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/shots-so.png"
@@ -66,9 +66,9 @@
 		"name": "Picography",
 		"url": "https://picography.co/",
 		"description": "Banco de imágenes: fotos de stock gratuitas en alta resolución, sin atribución.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/picography-co.png"
@@ -78,9 +78,9 @@
 		"name": "SVGL",
 		"url": "https://svgl.app/",
 		"description": "Biblioteca de logos en SVG.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/svgl-app.svg"
@@ -90,12 +90,12 @@
 		"name": "blobatar",
 		"url": "https://blobatar.dev/",
 		"description": "Genera avatares geométricos deterministas a partir de cualquier texto.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [
 			"JavaScript",
 			"React"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/blobatar-dev.svg"
@@ -105,9 +105,9 @@
 		"name": "unDraw",
 		"url": "https://undraw.co/",
 		"description": "Ilustraciones de código abierto que se adaptan a tu color.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/undraw-co.png"
@@ -117,9 +117,9 @@
 		"name": "Terraink",
 		"url": "https://terraink.app/",
 		"description": "Crea pósteres y fondos de pantalla con mapas de cualquier ciudad.",
-		"category": "Generadores CSS/SVG",
+		"category": "generators",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/terraink-app.svg"
@@ -129,11 +129,11 @@
 		"name": "Toolbox by SignalSupply",
 		"url": "https://toolbox.signalsupply.co/",
 		"description": "Herramientas de diseño: blobs y degradados en CSS, patrones, Sharp y Perspectr.",
-		"category": "Generadores CSS/SVG",
+		"category": "generators",
 		"tech": [
 			"CSS"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/toolbox-signalsupply-co.svg"
@@ -143,11 +143,11 @@
 		"name": "Animated CSS Background Generator",
 		"url": "https://wweb.dev/resources/animated-css-background-generator",
 		"description": "Genera fondos animados solo con CSS, con tres estilos a elegir.",
-		"category": "Generadores CSS/SVG",
+		"category": "generators",
 		"tech": [
 			"CSS"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/wweb-dev-resources-animated-css-background-generator.png"
@@ -157,11 +157,11 @@
 		"name": "Tailwind CSS Animated",
 		"url": "https://www.tailwindcss-animated.com/",
 		"description": "Plugin con utilidades de animación extra para Tailwind.",
-		"category": "Animación y efectos",
+		"category": "animation",
 		"tech": [
 			"Tailwind"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/tailwindcss-animated-com.png"
@@ -171,13 +171,13 @@
 		"name": "Rotating words (Cruip)",
 		"url": "https://github.com/cruip/cruip-tutorials/blob/main/rotating-words/index.html",
 		"description": "Ejemplo de palabras rotatorias, del repositorio de tutoriales de Cruip.",
-		"category": "Animación y efectos",
+		"category": "animation",
 		"tech": [
 			"HTML",
 			"Tailwind",
 			"Alpine.js"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/github-com-cruip-cruip-tutorials-blob-main-rotating-words-index-html.svg"
@@ -187,9 +187,9 @@
 		"name": "Omatsuri",
 		"url": "https://omatsuri.app/",
 		"description": "Generadores de triángulos CSS, degradados y sombras, y compresor SVG.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/omatsuri-app.png"
@@ -199,9 +199,9 @@
 		"name": "SVGOMG",
 		"url": "https://svgomg.net/",
 		"description": "Optimiza y minifica SVG en el navegador con SVGO.",
-		"category": "Generadores CSS/SVG",
+		"category": "generators",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/svgomg-net.png"
@@ -211,9 +211,9 @@
 		"name": "SvgTrace",
 		"url": "https://svgtrace.com/",
 		"description": "Convierte imágenes en vectores editables y exporta a SVG, PDF, EPS o DXF.",
-		"category": "Generadores CSS/SVG",
+		"category": "generators",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/svgtrace-com.png"
@@ -223,9 +223,9 @@
 		"name": "BGJar",
 		"url": "https://bgjar.com/",
 		"description": "Genera imágenes de fondo en SVG para sitios web.",
-		"category": "Generadores CSS/SVG",
+		"category": "generators",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/bgjar-com.png"
@@ -235,11 +235,11 @@
 		"name": "CSS Layout Generator",
 		"url": "https://layout.bradwoods.io/",
 		"description": "Genera código de layouts con CSS Grid y Flexbox.",
-		"category": "Generadores CSS/SVG",
+		"category": "generators",
 		"tech": [
 			"CSS"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/layout-bradwoods-io.svg"
@@ -249,9 +249,9 @@
 		"name": "uiGradients",
 		"url": "https://uigradients.com/",
 		"description": "Colección de degradados de color seleccionados a mano.",
-		"category": "Fuentes y color",
+		"category": "fonts-color",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/uigradients-com.png"
@@ -261,11 +261,11 @@
 		"name": "Neumorphism.io",
 		"url": "https://neumorphism.io/",
 		"description": "Genera sombras y degradados CSS con estilo neumórfico.",
-		"category": "Generadores CSS/SVG",
+		"category": "generators",
 		"tech": [
 			"CSS"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/neumorphism-io.png"
@@ -275,11 +275,11 @@
 		"name": "UI Colors",
 		"url": "https://uicolors.app/generate",
 		"description": "Crea y exporta paletas de color personalizadas para Tailwind.",
-		"category": "Fuentes y color",
+		"category": "fonts-color",
 		"tech": [
 			"Tailwind"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/uicolors-app-create.ico"
@@ -289,9 +289,9 @@
 		"name": "Cool Contrast",
 		"url": "https://coolcontrast.vercel.app/",
 		"description": "Revisa el contraste de pares de colores según las pautas WCAG.",
-		"category": "Fuentes y color",
+		"category": "fonts-color",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/coolcontrast-vercel-app.ico"
@@ -301,12 +301,12 @@
 		"name": "BG.IBELICK",
 		"url": "https://bg.ibelick.com/",
 		"description": "Fragmentos de fondos listos para copiar, en Tailwind y CSS.",
-		"category": "Generadores CSS/SVG",
+		"category": "generators",
 		"tech": [
 			"Tailwind",
 			"CSS"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/bg-ibelick-com.ico"
@@ -316,9 +316,9 @@
 		"name": "ColorSpace",
 		"url": "https://mycolor.space/",
 		"description": "Genera paletas de colores y degradados.",
-		"category": "Fuentes y color",
+		"category": "fonts-color",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/mycolor-space.png"
@@ -328,9 +328,9 @@
 		"name": "Coolors",
 		"url": "https://coolors.co/",
 		"description": "Genera y explora combinaciones de colores.",
-		"category": "Fuentes y color",
+		"category": "fonts-color",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/coolors-co.png"
@@ -340,9 +340,9 @@
 		"name": "Open Peeps",
 		"url": "https://www.openpeeps.com/",
 		"description": "Biblioteca de ilustraciones dibujadas a mano para componer escenas de personas.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/openpeeps-com.png"
@@ -352,11 +352,11 @@
 		"name": "CSS-Peeps",
 		"url": "https://css-peeps.com/",
 		"description": "Arma personajes estilo Open Peeps con un archivo CSS y un solo div.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [
 			"CSS"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/css-peeps-com.png"
@@ -366,12 +366,12 @@
 		"name": "Landingfolio",
 		"url": "https://www.landingfolio.com/",
 		"description": "Inspiración de landing pages, con plantillas y componentes.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Landing pages"
+			"landing-pages"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/landingfolio-com.ico"
@@ -381,7 +381,7 @@
 		"name": "HTMLrev",
 		"url": "https://htmlrev.com/",
 		"description": "Plantillas gratuitas de sitios, blogs, tiendas y paneles, por framework.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"HTML",
 			"CSS",
@@ -398,7 +398,7 @@
 			"Astro",
 			"Laravel"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/htmlrev-com.png"
@@ -408,9 +408,9 @@
 		"name": "Toools.design",
 		"url": "https://www.toools.design/",
 		"description": "Directorio de herramientas y recursos para diseñar webs, apps y marcas.",
-		"category": "Directorios de recursos",
+		"category": "directories",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/toools-design.png"
@@ -420,13 +420,13 @@
 		"name": "Headless UI",
 		"url": "https://headlessui.com/",
 		"description": "Componentes sin estilos y accesibles, pensados para integrarse con Tailwind.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"React",
 			"Vue",
 			"Tailwind"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/headlessui-com.png"
@@ -436,11 +436,11 @@
 		"name": "TailwindCSS Buttons",
 		"url": "https://devdojo.com/tailwindcss/buttons",
 		"description": "Más de 30 diseños de botones para copiar y pegar.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"Tailwind"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/devdojo-com-tailwindcss-buttons.png"
@@ -450,7 +450,7 @@
 		"name": "Uiverse",
 		"url": "https://uiverse.io/",
 		"description": "Biblioteca comunitaria de elementos de UI abiertos, para copiar en HTML/CSS, Tailwind, React o Figma.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"HTML",
 			"CSS",
@@ -458,7 +458,7 @@
 			"React",
 			"Figma"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/uiverse-io.ico"
@@ -468,12 +468,12 @@
 		"name": "HyperUI",
 		"url": "https://www.hyperui.dev/",
 		"description": "Componentes gratuitos de Tailwind para copiar y pegar.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"Tailwind",
 			"HTML"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/hyperui-dev.ico"
@@ -483,11 +483,11 @@
 		"name": "TailAwesome",
 		"url": "https://www.tailawesome.com/",
 		"description": "Directorio de plantillas y UI kits de Tailwind.",
-		"category": "Directorios de recursos",
+		"category": "directories",
 		"tech": [
 			"Tailwind"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/tailwindawesome-com.ico"
@@ -497,7 +497,7 @@
 		"name": "daisyUI",
 		"url": "https://daisyui.com/",
 		"description": "Biblioteca de componentes semánticos para Tailwind, con temas incluidos.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"Tailwind",
 			"React",
@@ -512,7 +512,7 @@
 			"Laravel",
 			"WordPress"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/daisyui-com.svg"
@@ -522,7 +522,7 @@
 		"name": "Flowbite",
 		"url": "https://flowbite.com/",
 		"description": "Biblioteca de componentes abierta sobre Tailwind, con bloques, plantillas e integraciones.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"Tailwind",
 			"React",
@@ -536,7 +536,7 @@
 			"Qwik",
 			"Laravel"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/flowbite-com.ico"
@@ -546,7 +546,7 @@
 		"name": "shadcn/ui",
 		"url": "https://ui.shadcn.com/",
 		"description": "Componentes accesibles que copias a tu proyecto y adaptas a tu diseño.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"shadcn/ui",
 			"React",
@@ -555,7 +555,7 @@
 			"Astro",
 			"Laravel"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/ui-shadcn-com.png"
@@ -565,12 +565,12 @@
 		"name": "Refero",
 		"url": "https://refero.design/",
 		"description": "Colección de capturas de interfaces web e iOS con búsqueda avanzada.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Interfaces de apps"
+			"app-ui"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/refero-design.png"
@@ -580,11 +580,11 @@
 		"name": "CSS Loaders",
 		"url": "https://css-loaders.com/",
 		"description": "Más de 600 animaciones de carga hechas solo con CSS y un elemento.",
-		"category": "Animación y efectos",
+		"category": "animation",
 		"tech": [
 			"CSS"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/css-loaders-com.png"
@@ -594,11 +594,11 @@
 		"name": "Tailwind CSS Components",
 		"url": "https://www.creative-tim.com/twcomponents",
 		"description": "Repositorio de componentes y plantillas de Tailwind de código abierto.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"Tailwind"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/creative-tim-com-twcomponents.png"
@@ -608,7 +608,7 @@
 		"name": "TW Elements",
 		"url": "https://tw-elements.com/",
 		"description": "Componentes, plantillas y plugins gratuitos para Tailwind.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"Tailwind",
 			"React",
@@ -620,7 +620,7 @@
 			"Laravel",
 			"Vue"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/tw-elements-com.ico"
@@ -630,12 +630,12 @@
 		"name": "ComponentLand",
 		"url": "https://componentland.com/",
 		"description": "Biblioteca de más de 300 componentes adaptables y accesibles.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"Tailwind",
 			"HTML"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/componentland-com.png"
@@ -645,7 +645,7 @@
 		"name": "Tailkit",
 		"url": "https://tailkit.com/free-tailwind-components",
 		"description": "Componentes gratuitos de Tailwind para paneles y landing pages.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"Tailwind",
 			"HTML",
@@ -653,7 +653,7 @@
 			"Vue",
 			"Alpine.js"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/tailkit-com-free-tailwind-components.svg"
@@ -663,12 +663,12 @@
 		"name": "Park UI",
 		"url": "https://park-ui.com/",
 		"description": "Componentes construidos sobre Ark UI y Panda CSS.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"React",
 			"Solid"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/park-ui-com.svg"
@@ -678,13 +678,13 @@
 		"name": "Kokonut UI",
 		"url": "https://kokonutui.com/",
 		"description": "Componentes de React de código abierto, instalables con un comando.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"React",
 			"Tailwind",
 			"shadcn/ui"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/kokonutui-com.png"
@@ -694,11 +694,11 @@
 		"name": "Basecoat",
 		"url": "https://basecoatui.com/",
 		"description": "Componentes con Tailwind al estilo shadcn/ui que no necesitan React.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"Tailwind"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/basecoatui-com.svg"
@@ -708,12 +708,12 @@
 		"name": "Rare UI",
 		"url": "https://www.rareui.com/",
 		"description": "Registro abierto de componentes animados de React para copiar y pegar.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"React",
 			"Tailwind"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/rareui-com.svg"
@@ -723,9 +723,9 @@
 		"name": "NameThatUI",
 		"url": "https://namethatui.com/",
 		"description": "Describe un elemento de interfaz y te dice cómo se llama.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/namethatui-com.png"
@@ -735,14 +735,14 @@
 		"name": "ScrollX UI",
 		"url": "https://scrollxui.dev/docs/components",
 		"description": "Colección de componentes de interfaz para proyectos Next.js.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"Next.js",
 			"TypeScript",
 			"Tailwind",
 			"React"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/scrollxui-dev-docs-components.png"
@@ -752,14 +752,14 @@
 		"name": "Skiper UI",
 		"url": "https://skiper-ui.com/",
 		"description": "Componentes poco comunes para Next.js, instalables con la CLI de shadcn.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"Next.js",
 			"Tailwind",
 			"shadcn/ui",
 			"React"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/skiper-ui-com.ico"
@@ -769,12 +769,12 @@
 		"name": "Buefy",
 		"url": "https://buefy.org/",
 		"description": "Componentes ligeros para Vue basados en Bulma.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"Vue",
 			"Bulma"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/buefy-org.png"
@@ -784,14 +784,14 @@
 		"name": "Magic UI",
 		"url": "https://magicui.design/",
 		"description": "Componentes y plantillas para dar vida a landing pages.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"React",
 			"Next.js",
 			"shadcn/ui",
 			"Tailwind"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/magicui-design.ico"
@@ -801,13 +801,13 @@
 		"name": "Aceternity UI",
 		"url": "https://ui.aceternity.com/",
 		"description": "Más de 200 componentes, bloques y plantillas de landing para copiar y pegar.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"React",
 			"Next.js",
 			"Tailwind"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/ui-aceternity-com.png"
@@ -817,7 +817,7 @@
 		"name": "Tailkits",
 		"url": "https://tailkits.com/",
 		"description": "Directorio de plantillas, UI kits y componentes de Tailwind.",
-		"category": "Directorios de recursos",
+		"category": "directories",
 		"tech": [
 			"Tailwind",
 			"Next.js",
@@ -825,7 +825,7 @@
 			"shadcn/ui",
 			"React"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/tailkits-com.png"
@@ -835,14 +835,14 @@
 		"name": "Vengeance UI",
 		"url": "https://www.vengenceui.com/",
 		"description": "Componentes animados e interacciones para landing pages.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"React",
 			"Next.js",
 			"shadcn/ui",
 			"Tailwind"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/vengenceui-com.ico"
@@ -852,13 +852,13 @@
 		"name": "Animate UI",
 		"url": "https://animate-ui.com/",
 		"description": "Primitivas animadas para Radix UI, Base UI y React Aria, con shadcn/ui.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"React",
 			"shadcn/ui",
 			"Tailwind"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/animate-ui-com.png"
@@ -868,14 +868,14 @@
 		"name": "ForgeUI",
 		"url": "https://forgeui.in/",
 		"description": "Componentes animados, bloques de marketing y plantillas; gratis y Pro.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"React",
 			"Next.js",
 			"Tailwind",
 			"shadcn/ui"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/forgeui-in.ico"
@@ -885,7 +885,7 @@
 		"name": "Uilora",
 		"url": "https://www.uilora.com/",
 		"description": "Más de 700 componentes animados de pago para web y móvil.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"Next.js",
 			"React Native",
@@ -894,7 +894,7 @@
 			"shadcn/ui",
 			"React"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/uilora-com.png"
@@ -904,11 +904,11 @@
 		"name": "Originkit",
 		"url": "https://www.originkit.dev/",
 		"description": "Componentes animados gratis: se copian en React o se instalan por CLI, MCP o prompt para IA.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"React"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/originkit-dev.png"
@@ -918,7 +918,7 @@
 		"name": "Shaders",
 		"url": "https://shaders.com/",
 		"description": "Componentes de shaders WebGPU de código abierto y editor visual gratuito.",
-		"category": "Animación y efectos",
+		"category": "animation",
 		"tech": [
 			"Vue",
 			"React",
@@ -926,7 +926,7 @@
 			"Solid",
 			"JavaScript"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/shaders-com.svg"
@@ -936,12 +936,12 @@
 		"name": "Thinking Orbs",
 		"url": "https://libraries.dev/orbs",
 		"description": "Indicadores animados de carga y «pensando» para interfaces con IA.",
-		"category": "Animación y efectos",
+		"category": "animation",
 		"tech": [
 			"React",
 			"React Native"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/libraries-dev-orbs.svg"
@@ -951,14 +951,14 @@
 		"name": "BagUI",
 		"url": "https://bagui.vercel.app/",
 		"description": "Registro abierto de componentes, bloques y plantillas para shadcn/ui.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"shadcn/ui",
 			"React",
 			"Next.js",
 			"Tailwind"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/bagui-vercel-app.ico"
@@ -968,13 +968,13 @@
 		"name": "Watermelon UI",
 		"url": "https://ui.watermelon.sh/",
 		"description": "Componentes, bloques y paneles gratuitos, instalables con la CLI de shadcn.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"React",
 			"Tailwind",
 			"shadcn/ui"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/ui-watermelon-sh.svg"
@@ -984,7 +984,7 @@
 		"name": "CodeFronts",
 		"url": "https://codefronts.com/",
 		"description": "Componentes, animaciones y generadores frontend para copiar y pegar.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"CSS",
 			"HTML",
@@ -994,7 +994,7 @@
 			"Svelte",
 			"Astro"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/codefronts-com.svg"
@@ -1004,9 +1004,9 @@
 		"name": "Framer",
 		"url": "https://www.framer.com/",
 		"description": "Constructor de sitios web con agente de diseño, hosting y CMS.",
-		"category": "Constructores con IA",
+		"category": "ai-builders",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/framer-com.png"
@@ -1016,7 +1016,7 @@
 		"name": "GetLayers AI",
 		"url": "https://www.getlayers.ai/",
 		"description": "Plantillas, escenas 3D y fondos que se copian como prompt para tu IA.",
-		"category": "Constructores con IA",
+		"category": "ai-builders",
 		"tech": [
 			"Next.js",
 			"Vue",
@@ -1027,7 +1027,7 @@
 			"WordPress",
 			"React"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/getlayers-ai.png"
@@ -1037,9 +1037,9 @@
 		"name": "SVG Repo",
 		"url": "https://www.svgrepo.com/",
 		"description": "Más de 500.000 vectores e iconos SVG con licencia abierta, también para uso comercial.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/svgrepo-com.svg"
@@ -1049,7 +1049,7 @@
 		"name": "Hugeicons",
 		"url": "https://hugeicons.com/",
 		"description": "Más de 60.000 iconos gratuitos y Pro en 10 estilos.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [
 			"React",
 			"Vue",
@@ -1060,7 +1060,7 @@
 			"Flutter",
 			"Figma"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/hugeicons-com.ico"
@@ -1070,9 +1070,9 @@
 		"name": "Google Fonts",
 		"url": "https://fonts.google.com/",
 		"description": "Catálogo de fuentes abiertas para la web.",
-		"category": "Fuentes y color",
+		"category": "fonts-color",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/fonts-google-com.svg"
@@ -1082,9 +1082,9 @@
 		"name": "Material Symbols",
 		"url": "https://fonts.google.com/icons",
 		"description": "Más de 2.500 iconos de Google en una sola fuente, con muchas variantes de diseño.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/fonts-google-com-icons.svg"
@@ -1094,7 +1094,7 @@
 		"name": "Tabler Icons",
 		"url": "https://tabler.io/icons",
 		"description": "Más de 6.000 iconos SVG de código abierto, editables en tamaño, color y trazo.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [
 			"React",
 			"Solid",
@@ -1105,7 +1105,7 @@
 			"React Native",
 			"Figma"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/tabler-io-icons.ico"
@@ -1115,14 +1115,14 @@
 		"name": "AnimateIcons",
 		"url": "https://animateicons.in/icons/lucide",
 		"description": "Iconos Lucide animados, con tamaño, color y duración configurables.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [
 			"React",
 			"Vue",
 			"Angular",
 			"JavaScript"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/animateicons-in-icons-lucide.png"
@@ -1132,9 +1132,9 @@
 		"name": "icons0",
 		"url": "https://icons0.dev/",
 		"description": "Busca entre 200.000 iconos abiertos desde la web o por MCP con tu agente.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/icons0-dev.ico"
@@ -1144,9 +1144,9 @@
 		"name": "Icoon",
 		"url": "https://www.icoon.co/",
 		"description": "Tienda de iconos e ilustraciones 3D generados con IA.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/icoon-co.avif"
@@ -1156,11 +1156,11 @@
 		"name": "3D icons",
 		"url": "https://3dicons.com/",
 		"description": "Más de 4.000 iconos 3D en PNG y Figma, con varias paletas y ángulos.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [
 			"Figma"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/3dicons-com.svg"
@@ -1170,12 +1170,12 @@
 		"name": "react-snap",
 		"url": "https://github.com/stereobooster/react-snap",
 		"description": "Prerenderizado estático sin configuración para aplicaciones de una página.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [
 			"React",
 			"Vue"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/github-com-stereobooster-react-snap.svg"
@@ -1185,7 +1185,7 @@
 		"name": "TanStack",
 		"url": "https://tanstack.com/",
 		"description": "Librerías headless y tipadas para apps web: datos, rutas, tablas, formularios y más.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [
 			"React",
 			"Vue",
@@ -1194,7 +1194,7 @@
 			"Angular",
 			"TypeScript"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/tanstack-com.svg"
@@ -1204,12 +1204,12 @@
 		"name": "Transform",
 		"url": "https://transform.tools/",
 		"description": "Convierte entre formatos: HTML a JSX, SVG a React, JSON a TypeScript y muchos más.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [
 			"React",
 			"TypeScript"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/transform-tools.png"
@@ -1219,11 +1219,11 @@
 		"name": "MUI",
 		"url": "https://mui.com/",
 		"description": "Biblioteca de componentes de React con Material Design o tu propio sistema.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"React"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/mui-com.svg"
@@ -1233,11 +1233,11 @@
 		"name": "Redux Thunk",
 		"url": "https://github.com/reduxjs/redux-thunk",
 		"description": "Middleware para escribir lógica asíncrona con el store de Redux.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [
 			"Redux"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/github-com-reduxjs-redux-thunk.svg"
@@ -1247,11 +1247,11 @@
 		"name": "Ant Design",
 		"url": "https://ant.design/",
 		"description": "Lenguaje de diseño y biblioteca de componentes de React para empresas.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"React"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/ant-design.png"
@@ -1261,12 +1261,12 @@
 		"name": "Chakra UI",
 		"url": "https://chakra-ui.com/",
 		"description": "Componentes modulares y accesibles para aplicaciones React.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"React",
 			"Next.js"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/chakra-ui-com.ico"
@@ -1276,11 +1276,11 @@
 		"name": "Remotion",
 		"url": "https://www.remotion.dev/",
 		"description": "Crea vídeos y gráficos animados programando con React.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [
 			"React"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/remotion-dev.png"
@@ -1290,11 +1290,11 @@
 		"name": "useHooks",
 		"url": "https://usehooks.com/",
 		"description": "Colección de hooks de React compatibles con servidor.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [
 			"React"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/usehooks-com.png"
@@ -1304,11 +1304,11 @@
 		"name": "Joi",
 		"url": "https://github.com/hapijs/joi",
 		"description": "Lenguaje de esquemas y validador de datos para JavaScript.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [
 			"JavaScript"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/github-com-hapijs-joi.svg"
@@ -1318,11 +1318,11 @@
 		"name": "Awesome Vue",
 		"url": "https://github.com/vuejs/awesome-vue",
 		"description": "Lista curada de recursos relacionados con Vue.",
-		"category": "Directorios de recursos",
+		"category": "directories",
 		"tech": [
 			"Vue"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/github-com-vuejs-awesome-vue.svg"
@@ -1332,12 +1332,12 @@
 		"name": "Nuxt",
 		"url": "https://nuxt.com/",
 		"description": "Framework full-stack para Vue con rutas por archivos y renderizado en servidor.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [
 			"Nuxt",
 			"Vue"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/v3-nuxtjs-org.png"
@@ -1347,7 +1347,7 @@
 		"name": "Directus",
 		"url": "https://directus.com/",
 		"description": "Backend y CMS headless autoalojable sobre cualquier base de datos.",
-		"category": "Serverless",
+		"category": "serverless",
 		"tech": [
 			"Next.js",
 			"Nuxt",
@@ -1360,7 +1360,7 @@
 			"React",
 			"Vue"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/directus-io.png"
@@ -1370,7 +1370,7 @@
 		"name": "Strapi",
 		"url": "https://strapi.io/",
 		"description": "CMS headless de código abierto en JavaScript y TypeScript.",
-		"category": "Serverless",
+		"category": "serverless",
 		"tech": [
 			"TypeScript",
 			"JavaScript",
@@ -1383,7 +1383,7 @@
 			"React",
 			"Vue"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/strapi-io.png"
@@ -1393,7 +1393,7 @@
 		"name": "Storyblok",
 		"url": "https://www.storyblok.com/",
 		"description": "CMS headless con editor visual.",
-		"category": "Serverless",
+		"category": "serverless",
 		"tech": [
 			"Next.js",
 			"Nuxt",
@@ -1402,7 +1402,7 @@
 			"React",
 			"Vue"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/storyblok-com.svg"
@@ -1412,9 +1412,9 @@
 		"name": "Bolt",
 		"url": "https://bolt.new/",
 		"description": "Crea sitios, apps y prototipos describiéndolos con palabras.",
-		"category": "Constructores con IA",
+		"category": "ai-builders",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/bolt-new.svg"
@@ -1424,9 +1424,9 @@
 		"name": "Stitch",
 		"url": "https://stitch.withgoogle.com/",
 		"description": "Genera interfaces para apps móviles y web con IA.",
-		"category": "Constructores con IA",
+		"category": "ai-builders",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/stitch-withgoogle-com.png"
@@ -1436,9 +1436,9 @@
 		"name": "Agents Towards Production",
 		"url": "https://github.com/NirDiamant/agents-towards-production",
 		"description": "Tutoriales con código para llevar agentes de IA generativa a producción.",
-		"category": "Aprendizaje y documentación",
+		"category": "learning",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/github-com-nirdiamant-agents-towards-production.svg"
@@ -1448,9 +1448,9 @@
 		"name": "Spline",
 		"url": "https://spline.design/",
 		"description": "Diseño 3D interactivo en el navegador, con colaboración en tiempo real.",
-		"category": "Animación y efectos",
+		"category": "animation",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/spline-design.png"
@@ -1460,9 +1460,9 @@
 		"name": "Magic Loops",
 		"url": "https://magicloops.dev/es",
 		"description": "Combina LLM y código, sin programar, para crear apps y automatizaciones.",
-		"category": "Constructores con IA",
+		"category": "ai-builders",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/magicloops-dev-es.ico"
@@ -1472,9 +1472,9 @@
 		"name": "Manus",
 		"url": "https://manus.im/",
 		"description": "Agente de IA que ejecuta tareas y automatiza flujos de trabajo.",
-		"category": "Constructores con IA",
+		"category": "ai-builders",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/manus-im.svg"
@@ -1484,9 +1484,9 @@
 		"name": "MotionSites",
 		"url": "https://motionsites.ai/",
 		"description": "Prompts e inspiración de diseño para crear sitios web con IA.",
-		"category": "Constructores con IA",
+		"category": "ai-builders",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/motionsites-ai.png"
@@ -1496,9 +1496,9 @@
 		"name": "Websiteprompts.ai",
 		"url": "https://websiteprompts.ai/",
 		"description": "Prompts gratuitos de sitios web para pegar en Lovable, Bolt o Claude.",
-		"category": "Constructores con IA",
+		"category": "ai-builders",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/websiteprompts-ai.png"
@@ -1508,14 +1508,14 @@
 		"name": "21st",
 		"url": "https://21st.dev/",
 		"description": "Más de 12.000 componentes y temas de shadcn, instalables con un comando.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"React",
 			"TypeScript",
 			"Tailwind",
 			"shadcn/ui"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/21st-dev.ico"
@@ -1525,9 +1525,9 @@
 		"name": "Lemon Squeezy",
 		"url": "https://www.lemonsqueezy.com/",
 		"description": "Pagos, impuestos y suscripciones para vender software y productos digitales.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/lemonsqueezy-com.webp"
@@ -1537,9 +1537,9 @@
 		"name": "FontSpark",
 		"url": "https://fontspark.netlify.app/",
 		"description": "Sugiere fuentes filtrando por tipo y grosor; incluye un directorio.",
-		"category": "Fuentes y color",
+		"category": "fonts-color",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/fontspark-netlify-app.ico"
@@ -1549,11 +1549,11 @@
 		"name": "Modern Font Stacks",
 		"url": "https://modernfontstacks.com/",
 		"description": "Pilas de fuentes del sistema en CSS, ordenadas por tipo de letra.",
-		"category": "Fuentes y color",
+		"category": "fonts-color",
 		"tech": [
 			"CSS"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/modernfontstacks-com.png"
@@ -1563,9 +1563,9 @@
 		"name": "Fontpair",
 		"url": "https://fontpair.co/",
 		"description": "Combinaciones de Google Fonts para explorar y probar con tu contenido.",
-		"category": "Fuentes y color",
+		"category": "fonts-color",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/fontpair-co.png"
@@ -1575,12 +1575,12 @@
 		"name": "Cofolios",
 		"url": "https://www.cofolios.com/",
 		"description": "Portafolios de diseñadores de grandes empresas tecnológicas.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Marca y portafolios"
+			"branding"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/cofolios-com.png"
@@ -1590,13 +1590,13 @@
 		"name": "Dark Design",
 		"url": "https://www.dark.design/",
 		"description": "Galería de sitios web con tema oscuro.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Sitios web",
-			"Estilos visuales"
+			"websites",
+			"visual-styles"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/dark-design.avif"
@@ -1606,12 +1606,12 @@
 		"name": "404s",
 		"url": "https://www.404s.design/",
 		"description": "Galería de páginas de error creativas.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Secciones"
+			"sections"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/404s-design.png"
@@ -1621,12 +1621,12 @@
 		"name": "Refero Styles",
 		"url": "https://styles.refero.design/",
 		"description": "Estilos de sitios reales con su DESIGN.md: colores, tipografía y espaciado.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Sistemas de diseño"
+			"design-systems"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/styles-refero-design.png"
@@ -1636,12 +1636,12 @@
 		"name": "Websitevice",
 		"url": "https://websitevice.com/",
 		"description": "Ejemplos de sitios web modernos para inspirarse.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Sitios web"
+			"websites"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/websitevice-com.png"
@@ -1651,12 +1651,12 @@
 		"name": "CollectUI",
 		"url": "https://collectui.com/",
 		"description": "Inspiración diaria de diseños de interfaz y portafolios.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Interfaces de apps"
+			"app-ui"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/collectui-com.png"
@@ -1666,13 +1666,13 @@
 		"name": "60fps",
 		"url": "https://60fps.design/",
 		"description": "Colección de animaciones e interacciones de apps iOS y web.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Movimiento",
-			"Interfaces de apps"
+			"motion",
+			"app-ui"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/60fps-design.png"
@@ -1682,12 +1682,12 @@
 		"name": "SEESAW",
 		"url": "https://www.seesaw.website/",
 		"description": "Colección de sitios web seleccionados, con actualización diaria y categorías.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Sitios web"
+			"websites"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/seesaw-website.svg"
@@ -1697,12 +1697,12 @@
 		"name": "Liquid Glass Design",
 		"url": "https://liquidglassdesign.com/",
 		"description": "Más de 170 ejemplos de liquid glass y glassmorfismo, con prompts de estilo.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Estilos visuales"
+			"visual-styles"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/liquidglassdesign-com.png"
@@ -1712,13 +1712,13 @@
 		"name": "CallToInspiration",
 		"url": "https://calltoinspiration.com/",
 		"description": "Ejemplos de interfaz de sitios y apps: logins, precios, formularios y más.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Secciones",
-			"Interfaces de apps"
+			"sections",
+			"app-ui"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/calltoinspiration-com.png"
@@ -1728,7 +1728,7 @@
 		"name": "Statichunt",
 		"url": "https://statichunt.com/",
 		"description": "Directorio de temas, plantillas, UI kits y herramientas para desarrollo web.",
-		"category": "Directorios de recursos",
+		"category": "directories",
 		"tech": [
 			"Astro",
 			"Next.js",
@@ -1738,7 +1738,7 @@
 			"React",
 			"Vue"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/statichunt-com.png"
@@ -1748,13 +1748,13 @@
 		"name": "Viewport UI",
 		"url": "https://viewportui.com/",
 		"description": "Galería de diseños e interacciones de interfaz publicados en X.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Interfaces de apps",
-			"Movimiento"
+			"app-ui",
+			"motion"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/viewportui-com.png"
@@ -1764,12 +1764,12 @@
 		"name": "Bento Grids",
 		"url": "https://bentogrids.com/",
 		"description": "Colección de diseños con estilo bento.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Estilos visuales"
+			"visual-styles"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/bentogrids-com.png"
@@ -1779,13 +1779,13 @@
 		"name": "Curated",
 		"url": "https://curated.design/",
 		"description": "Sitios y landing pages reales, filtrables por estilo o sector.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Sitios web",
-			"Landing pages"
+			"websites",
+			"landing-pages"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/curated-design.svg"
@@ -1795,12 +1795,12 @@
 		"name": "Rebrand Gallery",
 		"url": "https://www.rebrand.gallery/",
 		"description": "Galería de rediseños de marca con vídeo, logos, color y tipografía.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Marca y portafolios"
+			"branding"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/rebrand-gallery.png"
@@ -1810,12 +1810,12 @@
 		"name": "Layers",
 		"url": "https://layers.to/explore",
 		"description": "Comunidad donde se publican y exploran trabajos de diseño.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Marca y portafolios"
+			"branding"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/layers-to-explore.ico"
@@ -1825,12 +1825,12 @@
 		"name": "Mobbin",
 		"url": "https://mobbin.com/",
 		"description": "Biblioteca de capturas de apps móviles y web, con búsqueda.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Interfaces de apps"
+			"app-ui"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/mobbin-com.svg"
@@ -1840,12 +1840,12 @@
 		"name": "CTA.gallery",
 		"url": "https://www.cta.gallery/",
 		"description": "Galería de llamadas a la acción de sitios web.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Secciones"
+			"sections"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/cta-gallery.png"
@@ -1855,12 +1855,12 @@
 		"name": "Supahero",
 		"url": "https://supahero.io/",
 		"description": "Biblioteca de secciones hero de sitios web.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Secciones"
+			"sections"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/supahero-io.ico"
@@ -1870,12 +1870,12 @@
 		"name": "Navbar Gallery",
 		"url": "https://www.navbar.gallery/",
 		"description": "Galería de barras de navegación de sitios web.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Secciones"
+			"sections"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/navbar-gallery.svg"
@@ -1885,12 +1885,12 @@
 		"name": "Footer",
 		"url": "https://www.footer.design/",
 		"description": "Galería de pies de página, ordenable por tipo y estilo.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Secciones"
+			"sections"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/footer-design.png"
@@ -1900,12 +1900,12 @@
 		"name": "getdesign.md",
 		"url": "https://getdesign.md/",
 		"description": "Análisis de sistemas de diseño de sitios populares para usar con agentes.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Sistemas de diseño"
+			"design-systems"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/getdesign-md.svg"
@@ -1915,12 +1915,12 @@
 		"name": "Design Spells",
 		"url": "https://designspells.com/",
 		"description": "Colección de detalles de diseño: animaciones, transiciones y guiños ocultos.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Movimiento"
+			"motion"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/designspells-com.svg"
@@ -1930,12 +1930,12 @@
 		"name": "Recent",
 		"url": "https://recent.design/?ref=godly",
 		"description": "Feed de diseño reciente: interfaces, marca, motion, ilustración y pósteres.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Marca y portafolios"
+			"branding"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/recent-design.svg"
@@ -1945,12 +1945,12 @@
 		"name": "Dribbble",
 		"url": "https://dribbble.com/",
 		"description": "Comunidad donde diseñadores, ilustradores y creativos visuales publican sus trabajos.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Marca y portafolios"
+			"branding"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/dribbble-com.svg"
@@ -1960,7 +1960,7 @@
 		"name": "quicktype",
 		"url": "https://quicktype.io/",
 		"description": "Genera modelos y serializadores tipados a partir de JSON en muchos lenguajes.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [
 			"TypeScript",
 			"JavaScript",
@@ -1968,7 +1968,7 @@
 			"Python",
 			"PHP"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/quicktype-io.png"
@@ -1978,9 +1978,9 @@
 		"name": "OverAPI",
 		"url": "https://overapi.com/",
 		"description": "Hojas de referencia de lenguajes, herramientas web, bases de datos y SO.",
-		"category": "Aprendizaje y documentación",
+		"category": "learning",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/overapi-com.ico"
@@ -1990,9 +1990,9 @@
 		"name": "SVG Viewer",
 		"url": "https://www.svgviewer.dev/",
 		"description": "Visualiza, edita y optimiza SVG en línea.",
-		"category": "Generadores CSS/SVG",
+		"category": "generators",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/svgviewer-dev.ico"
@@ -2002,11 +2002,11 @@
 		"name": "Project Wallace",
 		"url": "https://www.projectwallace.com/css-code-quality",
 		"description": "Analiza tu CSS e indica qué aspectos mejorar.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [
 			"CSS"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/projectwallace-com-css-code-quality.png"
@@ -2016,9 +2016,9 @@
 		"name": "PageSpeed Insights",
 		"url": "https://pagespeed.web.dev/",
 		"description": "Herramienta de Google para medir el rendimiento de una página.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/pagespeed-web-dev.png"
@@ -2028,11 +2028,11 @@
 		"name": "MagicPattern",
 		"url": "https://www.magicpattern.design/",
 		"description": "Más de 30 herramientas para crear patrones, degradados y blobs en SVG o CSS.",
-		"category": "Generadores CSS/SVG",
+		"category": "generators",
 		"tech": [
 			"CSS"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/magicpattern-design.png"
@@ -2042,9 +2042,9 @@
 		"name": "Web Check",
 		"url": "https://web-check.xyz/",
 		"description": "Herramienta OSINT y de seguridad para inspeccionar cualquier sitio web.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/web-check-xyz.svg"
@@ -2054,13 +2054,13 @@
 		"name": "simpleParallax.js",
 		"url": "https://simpleparallax.com/",
 		"description": "Biblioteca ligera que añade efecto parallax a cualquier imagen.",
-		"category": "Animación y efectos",
+		"category": "animation",
 		"tech": [
 			"React",
 			"Next.js",
 			"JavaScript"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/simpleparallax-com.ico"
@@ -2070,9 +2070,9 @@
 		"name": "Responsively App",
 		"url": "https://responsively.app/",
 		"description": "Navegador para desarrollar y probar diseños responsive.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/responsively-app.png"
@@ -2082,13 +2082,13 @@
 		"name": "Lenis",
 		"url": "https://lenis.dev/",
 		"description": "Biblioteca ligera de desplazamiento suave de código abierto.",
-		"category": "Animación y efectos",
+		"category": "animation",
 		"tech": [
 			"JavaScript",
 			"React",
 			"Vue"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/lenis-dev.png"
@@ -2098,9 +2098,9 @@
 		"name": "RapidAPI",
 		"url": "https://rapidapi.com/",
 		"description": "Hub de APIs para buscar y explorar las disponibles para tu proyecto.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/rapidapi-com.png"
@@ -2110,9 +2110,9 @@
 		"name": "AnyAPI",
 		"url": "https://anyapi.io/",
 		"description": "APIs REST para validar datos, convertir divisas, geolocalizar IP y más.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/anyapi-io.png"
@@ -2122,9 +2122,9 @@
 		"name": "Public APIs",
 		"url": "https://publicapis.dev/",
 		"description": "Lista colaborativa de más de 1.400 APIs públicas por categoría.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/publicapis-dev.png"
@@ -2134,7 +2134,7 @@
 		"name": "Swiper",
 		"url": "https://swiperjs.com/",
 		"description": "Slider táctil para móviles con transiciones aceleradas por hardware.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"JavaScript",
 			"React",
@@ -2142,7 +2142,7 @@
 			"Svelte",
 			"Angular"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/swiperjs-com.png"
@@ -2152,14 +2152,14 @@
 		"name": "Floating UI",
 		"url": "https://floating-ui.com/",
 		"description": "Biblioteca para posicionar tooltips, popovers y menús flotantes.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"JavaScript",
 			"React",
 			"React Native",
 			"Vue"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/floating-ui-com.ico"
@@ -2169,12 +2169,12 @@
 		"name": "Atropos",
 		"url": "https://atroposjs.com/",
 		"description": "Biblioteca de código abierto para efectos parallax 3D al pasar el cursor.",
-		"category": "Animación y efectos",
+		"category": "animation",
 		"tech": [
 			"JavaScript",
 			"React"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/atroposjs-com.png"
@@ -2184,9 +2184,9 @@
 		"name": "Material Design Icons",
 		"url": "https://pictogrammers.com/library/mdi/?welcome",
 		"description": "Más de 7.200 iconos que siguen las pautas de Material Design.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/materialdesignicons-com.png"
@@ -2196,7 +2196,7 @@
 		"name": "GSAP",
 		"url": "https://gsap.com/",
 		"description": "Biblioteca de animación en JavaScript.",
-		"category": "Animación y efectos",
+		"category": "animation",
 		"tech": [
 			"JavaScript",
 			"React",
@@ -2206,7 +2206,7 @@
 			"Nuxt",
 			"WordPress"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/gsap-com.png"
@@ -2216,11 +2216,11 @@
 		"name": "Unlighthouse",
 		"url": "https://unlighthouse.dev/",
 		"description": "Ejecuta auditorías de Lighthouse en todo un sitio desde la línea de comandos.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [
 			"Node.js"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/unlighthouse-dev.png"
@@ -2230,13 +2230,13 @@
 		"name": "Motion",
 		"url": "https://motion.dev/",
 		"description": "Biblioteca de animación, antes llamada Framer Motion.",
-		"category": "Animación y efectos",
+		"category": "animation",
 		"tech": [
 			"React",
 			"JavaScript",
 			"Vue"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/motion-dev.svg"
@@ -2246,7 +2246,7 @@
 		"name": "Driver.js",
 		"url": "https://driverjs.com/",
 		"description": "Biblioteca sin dependencias para tours de producto y resaltado de funciones.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"JavaScript",
 			"React",
@@ -2256,7 +2256,7 @@
 			"Solid",
 			"Next.js"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/driverjs-com.png"
@@ -2266,9 +2266,9 @@
 		"name": "it's free*",
 		"url": "https://itsfree.dev/es",
 		"description": "Herramientas gratuitas para developers: APIs, hosting, bases de datos e IA.",
-		"category": "Directorios de recursos",
+		"category": "directories",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"featured": true,
@@ -2279,13 +2279,13 @@
 		"name": "PocketBase",
 		"url": "https://pocketbase.io/",
 		"description": "Backend abierto en un archivo, con base de datos, auth y almacenamiento.",
-		"category": "Serverless",
+		"category": "serverless",
 		"tech": [
 			"SQLite",
 			"Go",
 			"JavaScript"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/pocketbase-io.png"
@@ -2295,9 +2295,9 @@
 		"name": "Laws of UX",
 		"url": "https://lawsofux.com/",
 		"description": "Colección de buenas prácticas para diseñar interfaces.",
-		"category": "Aprendizaje y documentación",
+		"category": "learning",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/lawsofux-com.svg"
@@ -2307,10 +2307,10 @@
 		"name": "HeadlessX",
 		"url": "https://headlessx.saify.me/",
 		"description": "Plataforma autoalojada de scraping, con trabajos en cola y claves de API.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [],
 		"logo": "/logos/headlessx-saify-me.svg",
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false
 	},
@@ -2319,9 +2319,9 @@
 		"name": "Guía de entrevistas de programación",
 		"url": "https://github.com/DevCaress/guia-entrevistas-de-programacion",
 		"description": "Guía en español para preparar entrevistas técnicas de software.",
-		"category": "Aprendizaje y documentación",
+		"category": "learning",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/github-com-devcaress-guia-entrevistas-de-programacion.svg"
@@ -2331,9 +2331,9 @@
 		"name": "97 Cosas",
 		"url": "https://97cosas.com/",
 		"description": "Traducción al español de la serie «97 Things» de O'Reilly.",
-		"category": "Aprendizaje y documentación",
+		"category": "learning",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false
 	},
@@ -2342,7 +2342,7 @@
 		"name": "Resend",
 		"url": "https://resend.com/",
 		"description": "Servicio de correo transaccional y de marketing para developers.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [
 			"Node.js",
 			"Python",
@@ -2351,7 +2351,7 @@
 			"Laravel",
 			"React"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/resend-com.png"
@@ -2361,9 +2361,9 @@
 		"name": "RGE Studio",
 		"url": "https://reallygoodemails.com/studio",
 		"description": "Plataforma colaborativa para crear correos, antes Beefree, con plantillas e inspiración.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/reallygoodemails-com-studio.png"
@@ -2373,14 +2373,14 @@
 		"name": "Patterns.dev",
 		"url": "https://www.patterns.dev/",
 		"description": "Patrones de diseño y rendimiento para aplicaciones web.",
-		"category": "Aprendizaje y documentación",
+		"category": "learning",
 		"tech": [
 			"JavaScript",
 			"React",
 			"Next.js",
 			"Vue"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/patterns-dev.ico"
@@ -2390,14 +2390,14 @@
 		"name": "Refactoring.Guru",
 		"url": "https://refactoring.guru/es",
 		"description": "Patrones de diseño y refactorización explicados con diagramas y ejemplos de código.",
-		"category": "Aprendizaje y documentación",
+		"category": "learning",
 		"tech": [
 			"Go",
 			"PHP",
 			"Python",
 			"TypeScript"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/refactoring-guru-es.png"
@@ -2407,9 +2407,9 @@
 		"name": "Toolfolio",
 		"url": "https://toolfolio.com/",
 		"description": "Directorio de herramientas de productividad, creatividad y diseño.",
-		"category": "Directorios de recursos",
+		"category": "directories",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/toolfolio-com.png"
@@ -2419,9 +2419,9 @@
 		"name": "readme.so",
 		"url": "https://readme.so/",
 		"description": "Editor de Markdown con plantillas para crear el README de tus proyectos.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/readme-so.png"
@@ -2431,7 +2431,7 @@
 		"name": "ShipFree",
 		"url": "https://shipfree.revoks.dev/",
 		"description": "Plantilla base de código abierto con auth y pagos para lanzar un SaaS.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [
 			"Next.js",
 			"TypeScript",
@@ -2439,7 +2439,7 @@
 			"PostgreSQL",
 			"React"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/shipfree-revoks-dev.png"
@@ -2449,12 +2449,12 @@
 		"name": "H1 Gallery",
 		"url": "https://h1gallery.com/",
 		"description": "Colección de titulares de marketing de sitios web.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Secciones"
+			"sections"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/h1gallery-com.png"
@@ -2464,9 +2464,9 @@
 		"name": "AI Particle Simulator",
 		"url": "https://particles.casberry.in/",
 		"description": "Simula y anima partículas 3D en tiempo real con WebGL2 y exporta el código.",
-		"category": "Animación y efectos",
+		"category": "animation",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/particles-casberry-in.svg"
@@ -2476,9 +2476,9 @@
 		"name": "TypeUI",
 		"url": "https://www.typeui.sh/",
 		"description": "Crea interfaces profesionales con IA y Claude, con analítica de visitas para mejorar conversiones.",
-		"category": "Constructores con IA",
+		"category": "ai-builders",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/typeui-sh.svg"
@@ -2488,12 +2488,12 @@
 		"name": "useAnimations",
 		"url": "https://useanimations.com/",
 		"description": "300 iconos animados con hover, clic y loop para React, shadcn/ui y Lottie. MIT.",
-		"category": "Animación y efectos",
+		"category": "animation",
 		"tech": [
 			"React",
 			"shadcn/ui"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/useanimations-com.svg"
@@ -2503,11 +2503,11 @@
 		"name": "React Vibe",
 		"url": "https://reactvibe.com/",
 		"description": "Componentes React animados y de código abierto para copiar y pegar.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"React"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/reactvibe-com.png"
@@ -2517,13 +2517,13 @@
 		"name": "Landing Love",
 		"url": "https://www.landing.love/",
 		"description": "Más de 2.200 sitios con animaciones, con grabaciones en vídeo de la página completa.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Movimiento",
-			"Sitios web"
+			"motion",
+			"websites"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/landing-love.png"
@@ -2533,12 +2533,12 @@
 		"name": "Siteinspire",
 		"url": "https://www.siteinspire.com/",
 		"description": "Galería de sitios web por estilo, tipo y tema, con perfiles de estudios.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Sitios web"
+			"websites"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/siteinspire-com.svg"
@@ -2548,13 +2548,13 @@
 		"name": "Minimal Gallery",
 		"url": "https://minimal.gallery/",
 		"description": "Sitios web minimalistas elegidos a mano, con plantillas y herramientas.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Sitios web",
-			"Estilos visuales"
+			"websites",
+			"visual-styles"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/minimal-gallery.png"
@@ -2564,13 +2564,13 @@
 		"name": "Dark Mode Design",
 		"url": "https://www.darkmodedesign.com/",
 		"description": "Galería de sitios web con modo oscuro elegidos a mano.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Sitios web",
-			"Estilos visuales"
+			"websites",
+			"visual-styles"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/darkmodedesign-com.png"
@@ -2580,12 +2580,12 @@
 		"name": "Land-book",
 		"url": "https://land-book.com/",
 		"description": "Galería curada de diseño web para creativos, con sitios elegidos a mano y actualizada a diario.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Sitios web"
+			"websites"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/land-book-com.ico"
@@ -2595,13 +2595,13 @@
 		"name": "One Page Love",
 		"url": "https://onepagelove.com/",
 		"description": "Galería de sitios de una sola página, con plantillas y recursos.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Sitios web",
-			"Landing pages"
+			"websites",
+			"landing-pages"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/onepagelove-com.png"
@@ -2611,12 +2611,12 @@
 		"name": "Httpster",
 		"url": "https://httpster.net/",
 		"description": "Galería de sitios web filtrable por estilo y tipo.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Sitios web"
+			"websites"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/httpster-net.svg"
@@ -2626,13 +2626,13 @@
 		"name": "Lapa Ninja",
 		"url": "https://www.lapa.ninja/",
 		"description": "Más de 7.300 landing pages desde 2015 y 15.000 capturas de página completa, con vídeos.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Landing pages",
-			"Sitios web"
+			"landing-pages",
+			"websites"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/lapa-ninja.ico"
@@ -2642,12 +2642,12 @@
 		"name": "Best Website Gallery",
 		"url": "https://bestwebsite.gallery/",
 		"description": "Sitios web elegidos a mano desde 2008, con un sitio destacado del día.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Sitios web"
+			"websites"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/bestwebsite-gallery.png"
@@ -2657,13 +2657,13 @@
 		"name": "Unicorn Icons",
 		"url": "https://unicornicons.com/",
 		"description": "Más de 400 iconos animados en Lottie y Rive, con editor de color en el navegador.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [
 			"React",
 			"Vue",
 			"Flutter"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/unicornicons-com.ico"
@@ -2673,7 +2673,7 @@
 		"name": "Iconsax",
 		"url": "https://iconsax.io/",
 		"description": "Biblioteca de iconos de Vuesax: más de 7.000 gratis y 44.000 premium.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [
 			"Vue",
 			"React",
@@ -2681,7 +2681,7 @@
 			"Flutter",
 			"Figma"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/iconsax-io.png"
@@ -2691,13 +2691,13 @@
 		"name": "DevDojo Inspiration",
 		"url": "https://devdojo.com/inspiration",
 		"description": "Sitios de productos reales con capturas, vídeos de scroll, tokens de diseño y un DESIGN.md para IA.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Sitios web",
-			"Sistemas de diseño"
+			"websites",
+			"design-systems"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/devdojo-com-inspiration.svg"
@@ -2707,9 +2707,9 @@
 		"name": "Logoipsum",
 		"url": "https://logoipsum.com/",
 		"description": "Más de 200 logos de relleno gratuitos en SVG y PNG para maquetas y prototipos.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/logoipsum-com.svg"
@@ -2719,11 +2719,11 @@
 		"name": "Signalicon",
 		"url": "https://signalicon.com/",
 		"description": "Más de 1.000 iconos para web y apps en SVG y Figma, con plan gratis y PRO.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [
 			"Figma"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/signalicon-com.svg"
@@ -2733,9 +2733,9 @@
 		"name": "Colorsss",
 		"url": "https://colorsss.com/",
 		"description": "Explora colores filtrando por tono y matiz, de pastel a vibrante.",
-		"category": "Fuentes y color",
+		"category": "fonts-color",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/colorsss-com.svg"
@@ -2745,9 +2745,9 @@
 		"name": "Fontsss",
 		"url": "https://fontsss.com/",
 		"description": "Archivo curado de fuentes, filtrables por estilo y licencia gratuita o comercial.",
-		"category": "Fuentes y color",
+		"category": "fonts-color",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/fontsss-com.svg"
@@ -2757,11 +2757,11 @@
 		"name": "Jitter",
 		"url": "https://jitter.video/",
 		"description": "Motion design en el navegador: importa desde Figma y exporta a vídeo 4K, GIF o Lottie.",
-		"category": "Animación y efectos",
+		"category": "animation",
 		"tech": [
 			"Figma"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/jitter-video.png"
@@ -2771,9 +2771,9 @@
 		"name": "MOVO",
 		"url": "https://movo.video/",
 		"description": "Plantillas de motion para animar en el navegador, sin instalar nada. En beta.",
-		"category": "Animación y efectos",
+		"category": "animation",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/movo-video.png"
@@ -2783,9 +2783,9 @@
 		"name": "The Prompts Factory",
 		"url": "https://thepromptsfactory.com/",
 		"description": "Prompts de sitios web, animaciones y transiciones, con vista previa interactiva.",
-		"category": "Constructores con IA",
+		"category": "ai-builders",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/thepromptsfactory-com.png"
@@ -2795,9 +2795,9 @@
 		"name": "Motionin.design",
 		"url": "https://motionin.design/",
 		"description": "Secciones web interactivas, con física y cursor, que se copian como prompt para tu IA.",
-		"category": "Constructores con IA",
+		"category": "ai-builders",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/motionin-design.png"
@@ -2807,14 +2807,14 @@
 		"name": "Tactile UI",
 		"url": "https://tactileui.dev/",
 		"description": "Componentes que funcionan como hardware real, con secciones de página y más de 1.100 ejemplos.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"React",
 			"Vue",
 			"Svelte",
 			"JavaScript"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/tactileui-dev.svg"
@@ -2824,14 +2824,14 @@
 		"name": "Cult UI",
 		"url": "https://www.cult-ui.com/",
 		"description": "Componentes, bloques animados y plantillas de código abierto basados en shadcn/ui.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"shadcn/ui",
 			"React",
 			"Next.js",
 			"TypeScript"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/cult-ui-com.png"
@@ -2841,11 +2841,11 @@
 		"name": "Overflow",
 		"url": "https://www.overflow.design/",
 		"description": "Iconos isométricos e ilustraciones a mano en SVG, PNG y Figma; parte del set es gratis.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [
 			"Figma"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/overflow-design.svg"
@@ -2855,9 +2855,9 @@
 		"name": "Unsplash",
 		"url": "https://unsplash.com/",
 		"description": "Fotos gratuitas de creadores de todo el mundo, para descargar y usar en cualquier proyecto.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/unsplash-com.ico"
@@ -2867,9 +2867,9 @@
 		"name": "Flaticon",
 		"url": "https://www.flaticon.com/",
 		"description": "Más de 18 millones de iconos vectoriales y stickers gratis en PNG, SVG, EPS, PSD y CSS.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/flaticon-com.ico"
@@ -2879,9 +2879,9 @@
 		"name": "Fontjoy",
 		"url": "https://fontjoy.com/",
 		"description": "Genera combinaciones de fuentes con deep learning y las prueba con tu propio texto.",
-		"category": "Fuentes y color",
+		"category": "fonts-color",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/fontjoy-com.gif"
@@ -2891,9 +2891,9 @@
 		"name": "Cleanup.pictures",
 		"url": "https://cleanup.pictures/",
 		"description": "Quita objetos, personas, texto y defectos de una imagen en unos clics. Tiene API.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/cleanup-pictures.png"
@@ -2903,9 +2903,9 @@
 		"name": "Alyn",
 		"url": "https://alyn.dev/",
 		"description": "Directorio de skills open source para Claude Code, Cursor, Codex y otros agentes, con puntuación de calidad y uso.",
-		"category": "Directorios de recursos",
+		"category": "directories",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/alyn-dev.svg"
@@ -2915,9 +2915,9 @@
 		"name": "Swivel",
 		"url": "https://swivelmotion.app/",
 		"description": "Pone videos o diseños en mockups 3D de iPhone y MacBook y los exporta, todo en el navegador.",
-		"category": "Herramientas de desarrollo",
+		"category": "developer-tools",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/swivelmotion-app.svg"
@@ -2927,9 +2927,9 @@
 		"name": "Fontshare",
 		"url": "https://www.fontshare.com/",
 		"description": "Fuentes tipográficas gratuitas de Indian Type Foundry, para uso personal y comercial.",
-		"category": "Fuentes y color",
+		"category": "fonts-color",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/fontshare-com.png"
@@ -2939,9 +2939,9 @@
 		"name": "Color Hunt",
 		"url": "https://colorhunt.co/",
 		"description": "Paletas de cuatro colores elegidas a mano, para buscar por tema o popularidad.",
-		"category": "Fuentes y color",
+		"category": "fonts-color",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/colorhunt-co.svg"
@@ -2951,12 +2951,12 @@
 		"name": "ShaderGradient",
 		"url": "https://shadergradient.co/",
 		"description": "Crea gradientes 3D animados y los lleva a React, Figma o Framer.",
-		"category": "Generadores CSS/SVG",
+		"category": "generators",
 		"tech": [
 			"React",
 			"Figma"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/shadergradient-co.png"
@@ -2966,9 +2966,9 @@
 		"name": "Icons8",
 		"url": "https://icons8.com/",
 		"description": "Iconos, ilustraciones y modelos 3D en estilos consistentes, en SVG y PNG.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/icons8-com.png"
@@ -2978,9 +2978,9 @@
 		"name": "Illos",
 		"url": "https://illos.dev/",
 		"description": "Ilustraciones SVG animadas para sitios de producto, con una skill para crear nuevas.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/illos-dev.svg"
@@ -2990,14 +2990,14 @@
 		"name": "Blocks",
 		"url": "https://blocks.so/",
 		"description": "Bloques gratuitos de shadcn/ui para copiar y pegar: formularios, tablas, diálogos y más.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"React",
 			"Next.js",
 			"Tailwind",
 			"shadcn/ui"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/blocks-so.ico"
@@ -3007,14 +3007,14 @@
 		"name": "unlumen UI",
 		"url": "https://ui.unlumen.com/",
 		"description": "Componentes React animados con Motion, instalables con el CLI de shadcn.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"React",
 			"TypeScript",
 			"Tailwind",
 			"shadcn/ui"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/ui-unlumen-com.png"
@@ -3024,13 +3024,13 @@
 		"name": "SmoothUI",
 		"url": "https://smoothui.dev/",
 		"description": "Componentes React con animaciones suaves, compatibles con shadcn/ui.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"React",
 			"Tailwind",
 			"shadcn/ui"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/smoothui-dev.ico"
@@ -3040,13 +3040,13 @@
 		"name": "Neobrutalism components",
 		"url": "https://www.neobrutalism.dev/",
 		"description": "Componentes con estilo neobrutalista basados en shadcn/ui.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"React",
 			"Tailwind",
 			"shadcn/ui"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/neobrutalism-dev.ico"
@@ -3056,9 +3056,9 @@
 		"name": "Oversight Supply",
 		"url": "https://supply.madebyoversight.com/",
 		"description": "Plantillas y secciones web para Webflow y Framer, listas para pegar en Claude Code o v0.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/supply-madebyoversight-com.png"
@@ -3068,12 +3068,12 @@
 		"name": "Eyecandy",
 		"url": "https://eyecannndy.com/",
 		"description": "Biblioteca de técnicas visuales de video y motion, con ejemplos de cada una.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Movimiento"
+			"motion"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/eyecannndy-com.png"
@@ -3083,11 +3083,11 @@
 		"name": "Figma Motion",
 		"url": "https://www.figma.com/es-la/motion/",
 		"description": "Animaciones dentro de Figma que se exportan a código o GIF.",
-		"category": "Animación y efectos",
+		"category": "animation",
 		"tech": [
 			"Figma"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/figma-com-es-la-motion.svg"
@@ -3097,11 +3097,11 @@
 		"name": "Astryx",
 		"url": "https://astryx.atmeta.com/",
 		"description": "Design system open source de Meta, en React y StyleX, con temas y documentación pensada para agentes.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"React"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/astryx-atmeta-com.svg"
@@ -3111,9 +3111,9 @@
 		"name": "Pexels",
 		"url": "https://www.pexels.com/",
 		"description": "Fotos y videos de stock gratuitos, sin atribución obligatoria, con API para integrarlos.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/pexels-com.png"
@@ -3123,14 +3123,14 @@
 		"name": "Arc UI",
 		"url": "https://uiarc.dev/",
 		"description": "Componentes y bloques React animados para shadcn y Next.js, con servidor MCP para agentes.",
-		"category": "Componentes y UI kits",
+		"category": "components",
 		"tech": [
 			"React",
 			"Next.js",
 			"Tailwind",
 			"shadcn/ui"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/uiarc-dev.svg"
@@ -3140,13 +3140,13 @@
 		"name": "Inspora",
 		"url": "https://www.inspora.design/",
 		"description": "Inspiración curada de sitios web, logos e iconos de apps, con sus creadores.",
-		"category": "Galerías de inspiración",
+		"category": "inspiration",
 		"tech": [],
 		"tags": [
-			"Sitios web",
-			"Marca y portafolios"
+			"websites",
+			"branding"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/inspora-design.png"
@@ -3156,9 +3156,9 @@
 		"name": "Designeer",
 		"url": "https://designeer.xyz/",
 		"description": "Referencias de diseño, recursos, herramientas y portafolios de diseñadores y developers.",
-		"category": "Directorios de recursos",
+		"category": "directories",
 		"tech": [],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/designeer-xyz.ico"
@@ -3168,12 +3168,12 @@
 		"name": "Stick It Up",
 		"url": "https://stickitupx.com/",
 		"description": "Stickers interactivos open source para React y Next.js: vinilos 3D, emblemas cromados y pixel art.",
-		"category": "Iconos e ilustraciones",
+		"category": "icons",
 		"tech": [
 			"React",
 			"Next.js"
 		],
-		"status": "activo",
+		"status": "active",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/stickitupx-com.svg"

@@ -370,7 +370,7 @@ html:not([data-js]) [data-app] {
 	}
 
 	/* Un color por precio: verde gratis, ámbar freemium, rojo de pago. */
-	.price[data-price='gratis'] {
+	.price[data-price='free'] {
 		border-color: color-mix(in srgb, var(--free) 45%, transparent);
 		background: var(--free-bg);
 		color: var(--free);
@@ -382,7 +382,7 @@ html:not([data-js]) [data-app] {
 		color: var(--freemium);
 	}
 
-	.price[data-price='de-pago'] {
+	.price[data-price='paid'] {
 		border-color: color-mix(in srgb, var(--paid) 45%, transparent);
 		background: var(--paid-bg);
 		color: var(--paid);

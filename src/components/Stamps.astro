@@ -12,8 +12,8 @@ interface Props {
 const { status, verified, class: extra } = Astro.props;
 
 const t = useTranslations(Astro.currentLocale);
-const down = status === 'caido';
-const old = status === 'antiguo';
+const down = status === 'down';
+const old = status === 'outdated';
 
 const stampBase =
 	'inline-flex flex-none items-center gap-1 border border-current px-1.5 py-0.5 font-mono text-[11px] font-semibold tracking-[.06em] whitespace-nowrap uppercase';
@@ -34,7 +34,7 @@ const stampBase =
 				<circle cx="6" cy="6" r="4.6" />
 				<path d="M6 3.5V6l1.7 1.2" />
 			</svg>
-			{t.status.antiguo}
+			{t.status.outdated}
 		</span>
 	)
 }
@@ -53,7 +53,7 @@ const stampBase =
 				<circle cx="6" cy="6" r="4.6" />
 				<path d="M2.8 9.2l6.4-6.4" />
 			</svg>
-			{t.status.caido}
+			{t.status.down}
 		</span>
 	)
 }

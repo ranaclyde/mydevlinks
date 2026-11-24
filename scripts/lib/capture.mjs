@@ -6,7 +6,7 @@ export function pickTargets(ids, links) {
 	for (const id of ids) {
 		const link = byId.get(id);
 		if (!link) errors.push(`${id}: no existe`);
-		else if (link.status === 'caido') errors.push(`${id}: está caído`);
+		else if (link.status === 'down') errors.push(`${id}: está caído`);
 		else if (link.private) errors.push(`${id}: es privado`);
 		else targets.push(id);
 	}

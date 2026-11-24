@@ -91,7 +91,7 @@ describe('links.json', () => {
 	});
 
 	it('cada galería verificada lleva al menos una etiqueta, sin repetir', () => {
-		const galleries = links.filter((l) => l.category === 'Galerías de inspiración' && l.verified);
+		const galleries = links.filter((l) => l.category === 'inspiration' && l.verified);
 		expect(galleries.filter((l) => !l.tags?.length).map((l) => l.id)).toEqual([]);
 		expect(galleries.filter((l) => new Set(l.tags).size !== l.tags.length).map((l) => l.id)).toEqual([]);
 	});
@@ -131,8 +131,8 @@ describe('links.json', () => {
 
 describe('traducciones al inglés', () => {
 	const ids = new Set(links.map((link) => link.id));
-	const detailsDir = join(root, 'src/data/detalles');
-	const enDir = join(root, 'src/data/en/detalles');
+	const detailsDir = join(root, 'src/data/details');
+	const enDir = join(root, 'src/data/en/details');
 	const enLinks = JSON.parse(readFileSync(join(root, 'src/data/en/links.json'), 'utf8')) as Array<{
 		id: string;
 		description: string;

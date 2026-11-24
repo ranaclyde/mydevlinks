@@ -7,10 +7,10 @@ const base = {
 	name: 'A',
 	url: 'https://example.com',
 	description: 'Descripción.',
-	category: 'Componentes y UI kits',
+	category: 'components',
 	tech: [],
 	logo: 'https://example.com/logo.svg',
-	status: 'activo',
+	status: 'active',
 	verified: true,
 	private: false,
 };
@@ -40,7 +40,7 @@ describe('alternativesFor', () => {
 		const self = make('a');
 		const links = [
 			self,
-			make('b', { status: 'caido' }),
+			make('b', { status: 'down' }),
 			make('c', { private: true }),
 			make('d', { category: 'Otra' }),
 			make('e'),

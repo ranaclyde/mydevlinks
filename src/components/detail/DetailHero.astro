@@ -12,7 +12,7 @@ const { name, url, description, tech, tags = [], logo, status, verified } = link
 
 const locale = toLocale(Astro.currentLocale);
 const t = useTranslations(locale);
-const down = status === 'caido';
+const down = status === 'down';
 const domain = domainOf(url);
 const initial = [...name.trim()][0]?.toUpperCase() ?? '?';
 const techs = verified ? tech : [];

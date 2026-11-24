@@ -37,9 +37,9 @@ describe('diccionario', () => {
 
 	it('en inglés las etiquetas no son las de español, salvo nombres propios', () => {
 		const t = useTranslations('en');
-		expect(labelOf(t, 'Herramientas de desarrollo')).toBe('Developer tools');
-		expect(labelOf(t, 'de-pago')).toBe('Paid');
-		expect(labelOf(t, 'Serverless')).toBe('Serverless');
+		expect(labelOf(t, 'developer-tools')).toBe('Developer tools');
+		expect(labelOf(t, 'paid')).toBe('Paid');
+		expect(labelOf(t, 'serverless')).toBe('Serverless');
 	});
 
 	it('un valor desconocido se muestra tal cual', () => {
@@ -58,9 +58,9 @@ describe('localize', () => {
 		name: 'X',
 		url: 'https://x.dev/',
 		description: 'Descripción',
-		category: 'Serverless',
+		category: 'serverless',
 		tech: [],
-		status: 'activo',
+		status: 'active',
 		verified: true,
 		private: false,
 	};
@@ -68,7 +68,7 @@ describe('localize', () => {
 		whatIs: ['Qué es'],
 		uses: ['a', 'b', 'c'],
 		caveats: ['d', 'e'],
-		pricing: 'gratis',
+		pricing: 'free',
 		pricingNote: 'Nota',
 		idealFor: 'Todos',
 		reviewedAt: '2026-11-24',
@@ -82,7 +82,7 @@ describe('localize', () => {
 		expect(result.translated).toBe(true);
 		expect(result.link.description).toBe('Description');
 		expect(result.detail?.whatIs).toEqual(['What']);
-		expect(result.detail?.pricing).toBe('gratis');
+		expect(result.detail?.pricing).toBe('free');
 		expect(result.detail?.alternatives).toEqual(['y']);
 	});
 

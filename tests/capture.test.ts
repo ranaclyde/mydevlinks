@@ -2,10 +2,10 @@ import { describe, expect, it } from 'vitest';
 import { pickTargets } from '../scripts/lib/capture.mjs';
 
 const links = [
-	{ id: 'activo-a', status: 'activo', private: false },
-	{ id: 'viejo-b', status: 'antiguo', private: false },
-	{ id: 'caido-c', status: 'caido', private: false },
-	{ id: 'privado-d', status: 'activo', private: true },
+	{ id: 'activo-a', status: 'active', private: false },
+	{ id: 'viejo-b', status: 'outdated', private: false },
+	{ id: 'caido-c', status: 'down', private: false },
+	{ id: 'privado-d', status: 'active', private: true },
 ];
 
 describe('pickTargets', () => {

@@ -24,13 +24,13 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# Logos y capturas conservan el nombre al rehacerse: un día de caché y revalidación en segundo plano.
+# Logos y capturas (/screenshots) conservan el nombre al rehacerse: un día de caché y revalidación en segundo plano.
 [[headers]]
   for = "/logos/*"
   [headers.values]
     Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
 [[headers]]
-  for = "/capturas/*"
+  for = "/screenshots/*"
   [headers.values]
     Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
 

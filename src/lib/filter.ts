@@ -42,6 +42,8 @@ export interface FilterItem {
 	category: string;
 	tech: string[];
 	tags?: string[];
+	/** Nombres visibles de la categoría y los tipos, en el idioma de la página; la búsqueda usa estos y no los ids. */
+	labels?: string[];
 	url?: string;
 	/** Precio de su ficha; sin ficha no lo tiene. */
 	pricing?: string;
@@ -148,8 +150,7 @@ function haystack(item: FilterItem): string {
 			item.name,
 			item.description ?? '',
 			item.tech.join(' '),
-			item.category,
-			...(item.tags ?? []),
+			...(item.labels ?? [item.category, ...(item.tags ?? [])]),
 			item.url ? searchableUrl(item.url) : '',
 		].join(' '),
 	);
