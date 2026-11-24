@@ -86,13 +86,16 @@ describe('localize', () => {
 		expect(result.detail?.alternatives).toEqual(['y']);
 	});
 
-	it('sin la traducción del detalle no está traducido', () => {
-		expect(localize(link, detail, { id: 'x', description: 'Description' }).translated).toBe(false);
+	it('sin la traducción del detalle no está traducido, aunque sí su descripción', () => {
+		const result = localize(link, detail, { id: 'x', description: 'Description' });
+		expect(result.translated).toBe(false);
+		expect(result.descriptionTranslated).toBe(true);
 	});
 
 	it('sin la de la descripción tampoco, y queda el texto en español', () => {
 		const result = localize(link, detail, undefined, detailText);
 		expect(result.translated).toBe(false);
+		expect(result.descriptionTranslated).toBe(false);
 		expect(result.link.description).toBe('Descripción');
 	});
 

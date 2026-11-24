@@ -24,6 +24,8 @@ export interface Localized {
 	detail?: Detail;
 	/** Todo su texto está en el idioma pedido; si no, se muestra el original y la página no se indexa. */
 	translated: boolean;
+	/** Su descripción está en el idioma pedido: es lo único suyo que muestra el directorio. */
+	descriptionTranslated: boolean;
 }
 
 /**
@@ -31,10 +33,12 @@ export interface Localized {
  * descripción, así que solo necesita traducción su detalle, si lo tiene.
  */
 export function localize(link: Link, detail?: Detail, linkText?: LinkText, detailText?: DetailText): Localized {
-	const translated = (!link.description || Boolean(linkText)) && (!detail || Boolean(detailText));
+	const descriptionTranslated = !link.description || Boolean(linkText);
+	const translated = descriptionTranslated && (!detail || Boolean(detailText));
 	return {
 		link: linkText && link.description ? { ...link, description: linkText.description } : link,
 		detail: detail && detailText ? { ...detail, ...detailText } : detail,
 		translated,
+		descriptionTranslated,
 	};
 }

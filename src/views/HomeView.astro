@@ -4,7 +4,7 @@ import LinkCard from '../components/LinkCard.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import { labelOf, localizePath, toLocale, useTranslations } from '../i18n/ui';
 import Layout from '../layouts/Layout.astro';
-import { englishComplete, loadCatalog } from '../lib/catalog';
+import { directoryTranslated, loadCatalog } from '../lib/catalog';
 import { PRICING } from '../lib/details';
 import { absoluteUrl, SITE_NAME } from '../lib/seo';
 
@@ -12,7 +12,7 @@ const locale = toLocale(Astro.currentLocale);
 const t = useTranslations(locale);
 const items = await loadCatalog(locale);
 const links = items.map((item) => item.link);
-const translated = await englishComplete();
+const translated = await directoryTranslated();
 const home = absoluteUrl(localizePath('/', locale), Astro.site);
 
 function tally(values: string[]) {
