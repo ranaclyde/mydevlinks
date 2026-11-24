@@ -1,12 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
 	<style>
-		rect { fill: #14171d; }
+		.bg { fill: #14171d; }
+		.bar { fill: #97a8ff; }
 		text { fill: #eceef2; }
 		@media (prefers-color-scheme: dark) {
-			rect { fill: #e7e9ee; }
+			.bg { fill: #e7e9ee; }
+			.bar { fill: #1f3fbf; }
 			text { fill: #0e1014; }
 		}
 	</style>
-	<rect width="32" height="32" />
-	<text x="16" y="21.5" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" letter-spacing="-0.6">ml</text>
+	<rect class="bg" width="32" height="32" />
+	<rect class="bar" x="4" y="7" width="3" height="18" />
+	<text x="19" y="21.5" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" letter-spacing="-0.6">ts</text>
 </svg>

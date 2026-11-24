@@ -1,5 +1,5 @@
 ---
-name: mydevlinks
+name: toolshelf
 description: Enlaces para desarrollar, presentados como hojas de datos y filtrables por categoría, tecnología y texto.
 colors:
   accent: "#1f3fbf"
@@ -176,7 +176,7 @@ components:
     padding: "2px 6px"
 ---
 
-# Design System: mydevlinks
+# Design System: toolshelf
 
 ## Overview
 

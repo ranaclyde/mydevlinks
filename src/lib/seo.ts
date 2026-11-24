@@ -1,7 +1,7 @@
-export const SITE_NAME = 'mydevlinks';
+export const SITE_NAME = 'toolshelf';
 
 /** Imagen para redes de las páginas sin captura propia (1200×630). */
-export const DEFAULT_OG_IMAGE = { path: '/og.png', width: 1200, height: 630, alt: 'mydevlinks: enlaces curados para desarrollar' };
+export const DEFAULT_OG_IMAGE = { path: '/og.png', width: 1200, height: 630, alt: 'toolshelf: enlaces curados para desarrollar' };
 
 /** Previews y branch deploys de Netlify: se publican, pero no se indexan. */
 export const NO_INDEX = Boolean(process.env.SITE_NOINDEX);

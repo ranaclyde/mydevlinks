@@ -449,7 +449,7 @@ html:not([data-js]) [data-app] {
 	}
 
 	/*
-	 * Logotipo: "links" se escribe letra por letra, como en el buscador,
+	 * Logotipo: "shelf" se escribe letra por letra, como en el buscador,
 	 * y al completarse queda resaltado igual que una coincidencia.
 	 */
 	.logo-hit {
