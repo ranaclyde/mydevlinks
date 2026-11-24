@@ -10,7 +10,7 @@ const site = process.env.URL ?? process.env.SITE_URL ?? 'https://toolshelf.netli
 // https://astro.build/config
 export default defineConfig({
   site,
-  // /enlace/<id>.html en lugar de /enlace/<id>/index.html: Netlify lo sirve en /enlace/<id>,
+  // /tool/<id>.html en lugar de /tool/<id>/index.html: Netlify lo sirve en /tool/<id>,
   // la misma URL que usan los enlaces internos y el canonical, sin redirigir a la barra final.
   build: { format: 'file' },
   vite: {

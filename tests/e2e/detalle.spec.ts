@@ -14,7 +14,7 @@ const publicLinks = links.filter((link) => !link.private);
 const withoutDetail = publicLinks.find((link) => !existsSync(`src/data/detalles/${link.id}.json`));
 // Hoy todos los enlaces públicos tienen detalle: el caso sin detalle se omite hasta que llegue uno nuevo.
 const link = withoutDetail ?? publicLinks[0];
-const path = `/enlace/${link.id}`;
+const path = `/tool/${link.id}`;
 const domain = new URL(link.url).hostname.replace(/^www\./, '');
 
 test('un enlace sin detalle muestra cabecera y alternativas, sin secciones vacías', async ({ page }) => {
@@ -74,7 +74,7 @@ async function openVisibleDetail(page: import('@playwright/test').Page) {
 		if (!visible) throw new Error('No hay ficha visible');
 		visible.click();
 	});
-	await page.waitForURL(/\/enlace\//);
+	await page.waitForURL(/\/tool\//);
 }
 
 test('cada entrada del directorio en el historial recupera su propio scroll', async ({ page }) => {
@@ -95,7 +95,7 @@ test('cada entrada del directorio en el historial recupera su propio scroll', as
 	await page.waitForURL('/');
 	await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(second);
 	await page.goBack();
-	await page.waitForURL(/\/enlace\//);
+	await page.waitForURL(/\/tool\//);
 	await page.goBack();
 	await page.waitForURL('/');
 	await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(first);
@@ -140,7 +140,7 @@ test('a 390 px no hay desborde horizontal', async ({ page }) => {
 });
 
 test('la cabecera muestra 4 tecnologías y "+N" despliega el resto', async ({ page }) => {
-	await page.goto('/enlace/daisyui-com');
+	await page.goto('/tool/daisyui-com');
 	const chips = page.locator('[data-hero-chips] .chip:not(.chip-toggle)');
 	const toggle = page.locator('[data-chips-toggle]');
 	const total = await chips.count();
@@ -157,7 +157,7 @@ test('la cabecera muestra 4 tecnologías y "+N" despliega el resto', async ({ pa
 
 test('en móvil la captura va antes de la ficha técnica, y ésta antes de "¿Qué es?"', async ({ page, isMobile }) => {
 	test.skip(!isMobile, 'Solo en móvil');
-	await page.goto('/enlace/daisyui-com');
+	await page.goto('/tool/daisyui-com');
 	const top = (locator: ReturnType<typeof page.locator>) =>
 		locator.evaluate((el) => el.getBoundingClientRect().top + window.scrollY);
 	const shot = await top(page.getByRole('img', { name: 'Captura de daisyui.com' }));
@@ -168,7 +168,7 @@ test('en móvil la captura va antes de la ficha técnica, y ésta antes de "¿Qu
 });
 
 test('el piloto muestra todas las secciones', async ({ page }) => {
-	await page.goto('/enlace/daisyui-com');
+	await page.goto('/tool/daisyui-com');
 
 	await expect(page.getByRole('heading', { name: '¿Qué es?' })).toBeVisible();
 	const uses = page.locator('section', { has: page.getByRole('heading', { name: 'Casos de uso' }) });
@@ -189,7 +189,7 @@ test('el piloto muestra todas las secciones', async ({ page }) => {
 
 test('la ficha técnica acompaña el scroll', async ({ page, isMobile }) => {
 	test.skip(isMobile, 'Solo en escritorio');
-	await page.goto('/enlace/daisyui-com');
+	await page.goto('/tool/daisyui-com');
 
 	await page.evaluate(() => window.scrollTo(0, 1200));
 	const sheet = page.locator('.ficha', { has: page.getByRole('heading', { name: 'Ficha técnica' }) });

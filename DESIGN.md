@@ -360,7 +360,7 @@ La ficha es el componente central: un enlace completo con cuatro zonas en grilla
 
 ### Página de detalle
 
-Cada enlace tiene su página en `/enlace/<id>`, generada en el build y legible completa sin JavaScript.
+Cada enlace tiene su página en `/tool/<id>`, generada en el build y legible completa sin JavaScript.
 
 - **Ancho:** contenido centrado de hasta 1160 px, con 20 px de margen lateral (16 px por debajo de 48rem). La prosa llega hasta 68ch.
 - **Estructura:** ruta en mono de 12 px ("← Directorio / categoría / nombre"); cabecera en ficha con placa de 64 px, nombre como `h1` de 26 px, dominio, sellos, descripción, botón primario "Visitar <dominio>", botón secundario "Volver al directorio" y chips bajo línea punteada: se ven 4 y un botón "+N" punteado despliega el resto en línea (sin JavaScript se ven todos). Debajo, dos columnas: captura y secciones ("¿Qué es?", "Casos de uso" numerados, "Qué revisar antes de elegirlo" con filete izquierdo de Línea fuerte), y a la derecha la ficha técnica de 300 px. Al final, las alternativas en la grilla del directorio.

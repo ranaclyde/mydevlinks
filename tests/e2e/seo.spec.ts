@@ -27,11 +27,11 @@ test.describe('SEO', () => {
 	});
 
 	test('la ficha usa su URL sin barra final y su captura como imagen', async ({ page }) => {
-		const response = await page.goto(`/enlace/${link.id}`);
+		const response = await page.goto(`/tool/${link.id}`);
 		expect(response?.status()).toBe(200);
 		const head = page.locator('head');
 		await expect(page).toHaveTitle(new RegExp(`^${link.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')} · `));
-		await expect(head.locator('link[rel="canonical"]')).toHaveAttribute('href', new RegExp(`/enlace/${link.id}$`));
+		await expect(head.locator('link[rel="canonical"]')).toHaveAttribute('href', new RegExp(`/tool/${link.id}$`));
 		await expect(head.locator('meta[property="og:image"]')).toHaveAttribute('content', new RegExp(`/capturas/${link.id}\\.jpg$`));
 	});
 
@@ -40,7 +40,7 @@ test.describe('SEO', () => {
 		const locs = [...body.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => new URL(match[1]).pathname);
 		expect(locs).toHaveLength(publicLinks.length + 1);
 		expect(locs).toContain('/');
-		for (const { id } of publicLinks) expect(locs).toContain(`/enlace/${id}`);
+		for (const { id } of publicLinks) expect(locs).toContain(`/tool/${id}`);
 	});
 
 	test('robots.txt apunta al sitemap', async ({ request }) => {

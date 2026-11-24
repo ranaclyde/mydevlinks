@@ -8,7 +8,7 @@ export const NO_INDEX = Boolean(process.env.SITE_NOINDEX);
 
 /** Ruta pública de la ficha de un enlace. */
 export function linkPath(id: string): string {
-	return `/enlace/${id}`;
+	return `/tool/${id}`;
 }
 
 /** URL absoluta de una ruta del sitio. */
