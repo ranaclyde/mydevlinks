@@ -1,0 +1,22 @@
+---
+interface Props {
+	/** Anima el estante al cargar. Sin animación queda en su estado final. */
+	animate?: boolean;
+}
+
+const { animate = true } = Astro.props;
+---
+
+<span class:list={['logo', { 'logo-anim': animate }]}>
+	<svg class="logo-mark" viewBox="8 22 106 84" aria-hidden="true">
+		<rect class="logo-shelf" x="8" y="98" width="106" height="7"></rect>
+		<rect class="logo-spine" x="16" y="42" width="15" height="56"></rect>
+		<rect class="logo-spine logo-spine-accent" x="35" y="24" width="19" height="74"></rect>
+		<rect class="logo-spine logo-spine-dim" x="58" y="46" width="12" height="52"></rect>
+		<!-- El último lomo, separado del tercero, cae sobre su esquina inferior izquierda hasta apoyarse en él. -->
+		<g class="logo-lean">
+			<rect class="logo-spine" x="84" y="34" width="16" height="64"></rect>
+		</g>
+	</svg>
+	<span class="logo-word">tool<span class="logo-word-accent">shelf</span></span>
+</span>
