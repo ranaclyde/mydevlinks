@@ -17,6 +17,6 @@ describe('shouldGoBack', () => {
 	});
 
 	it('no vuelve si se llegó desde otra página de enlace', () => {
-		expect(shouldGoBack('http://localhost:4331/enlace/otro', origin)).toBe(false);
+		expect(shouldGoBack('http://localhost:4331/tool/otro', origin)).toBe(false);
 	});
 });

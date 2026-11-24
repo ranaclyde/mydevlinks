@@ -272,7 +272,7 @@ test('la ficha lleva al detalle y la flecha a la web', async ({ page }) => {
 	const link = linkOf((await card.getAttribute('data-name')) as string);
 
 	const detail = card.locator('[data-detail]');
-	await expect(detail).toHaveAttribute('href', `/enlace/${link.id}`);
+	await expect(detail).toHaveAttribute('href', `/tool/${link.id}`);
 	await expect(detail).not.toHaveAttribute('target');
 	await expect(detail).toHaveAccessibleName(link.name);
 
@@ -285,7 +285,7 @@ test('la ficha lleva al detalle y la flecha a la web', async ({ page }) => {
 	// Clic real en la descripción: lo recibe el enlace estirado que cubre la ficha.
 	const box = (await card.locator('p').boundingBox())!;
 	await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2);
-	await expect(page).toHaveURL(`/enlace/${link.id}`);
+	await expect(page).toHaveURL(`/tool/${link.id}`);
 });
 
 test('la flecha es su propio objetivo de clic', async ({ page, isMobile }) => {

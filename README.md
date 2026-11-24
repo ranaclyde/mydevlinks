@@ -1,6 +1,6 @@
 # toolshelf
 
-Una base propia de enlaces para desarrollar, que reemplaza años de bookmarks. Cada enlace se entiende sin abrirlo y se filtra por categoría, tecnología y texto. En el directorio, la ficha lleva al detalle del enlace (`/enlace/<id>`) y la flecha junto al nombre abre la web en otra pestaña. Es un sitio estático en Astro y Tailwind, sin framework de interfaz.
+Una base propia de enlaces para desarrollar, que reemplaza años de bookmarks. Cada enlace se entiende sin abrirlo y se filtra por categoría, tecnología y texto. En el directorio, la ficha lleva al detalle del enlace (`/tool/<id>`) y la flecha junto al nombre abre la web en otra pestaña. Es un sitio estático en Astro y Tailwind, sin framework de interfaz.
 
 ## Ejecutar
 
@@ -50,7 +50,7 @@ Agrega una entrada a `src/data/links.json`:
 
 ## Agregar un detalle
 
-Cada enlace público tiene una página `/enlace/<id>`. Con el archivo `src/data/detalles/<id>.json` muestra el detalle completo; sin él, la página queda sin contenido. Los campos los valida `detailSchema`, en `src/lib/details.ts`:
+Cada enlace público tiene una página `/tool/<id>`. Con el archivo `src/data/detalles/<id>.json` muestra el detalle completo; sin él, la página queda sin contenido. Los campos los valida `detailSchema`, en `src/lib/details.ts`:
 
 - **`whatIs`:** uno o dos párrafos que explican qué es.
 - **`uses`:** exactamente tres usos.
@@ -77,7 +77,7 @@ El script rechaza ids que no existen y enlaces caídos o privados, y al terminar
 
 - **Dominio:** `astro.config.mjs` usa la variable `URL` que Netlify define en cada build, con el dominio principal del sitio. De ella salen el canonical, las URLs de Open Graph, el sitemap y `robots.txt`. Al cambiar de dominio en Netlify, el próximo deploy lo toma solo.
 - **Previews:** los deploy previews y branch deploys se construyen con `SITE_NOINDEX=1`, que pone `noindex` en todas las páginas y `Disallow: /` en `robots.txt`.
-- **URLs:** las fichas se generan como `/enlace/<id>.html` y se sirven en `/enlace/<id>`, sin barra final.
+- **URLs:** las fichas se generan como `/tool/<id>.html` y se sirven en `/tool/<id>`, sin barra final.
 
 ## SEO
 

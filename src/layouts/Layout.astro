@@ -5,7 +5,7 @@ import { absoluteUrl, DEFAULT_OG_IMAGE, jsonLd, NO_INDEX, SITE_NAME } from '../l
 interface Props {
 	title?: string;
 	description?: string;
-	/** Ruta canónica (/, /enlace/<id>). Sin ella la página no lleva canonical ni og:url. */
+	/** Ruta canónica (/, /tool/<id>). Sin ella la página no lleva canonical ni og:url. */
 	path?: string;
 	image?: { path: string; width: number; height: number; alt: string };
 	type?: 'website' | 'article';
