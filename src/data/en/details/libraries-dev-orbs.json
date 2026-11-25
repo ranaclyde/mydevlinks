@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Thinking Orbs is a loading indicator in the form of an animated sphere for the \"thinking\" states of an AI interface. It comes with nine states, such as working, searching or composing, and replaces the typical spinner. It's part of Libraries.dev, a set of effect libraries for AI interfaces.",
+		"It's a good fit when you're building a chat or an assistant and want the wait to look polished without designing the animation yourself."
+	],
+	"uses": [
+		"Showing a \"thinking\" state while a chat waits for the model's response.",
+		"Changing the sphere's state according to the phase, for example from searching to composing.",
+		"Replacing the spinner on a loading screen in a React Native app."
+	],
+	"caveats": [
+		"The web version is a React package (npm install thinking-orbs) and requires React 18 or later.",
+		"The React Native version needs Skia and Reanimated, and for now you use it from the repository because it isn't published on npm.",
+		"The Studio for deep customization and the Pro presets and variants require the Pro plan; the basic skill for coding agents is free."
+	],
+	"pricingNote": "The library is free under the MIT license; the Pro plan, from $9 a month, adds the Studio and extra presets and variants.",
+	"idealFor": "React AI apps that need a waiting indicator with personality."
+}

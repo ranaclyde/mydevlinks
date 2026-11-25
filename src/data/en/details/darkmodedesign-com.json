@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Dark Mode Design is a hand-picked gallery of websites with dark mode. Each entry shows a screenshot and links to the original site; the listing is browsed page by page with a \"Next\" link.",
+		"It's a good fit when you need references of real dark interfaces, especially landing pages and product sites."
+	],
+	"uses": [
+		"Seeing how other sites handle contrast and hierarchy before designing your app's dark theme.",
+		"Collecting dark home page references to show a client a visual direction.",
+		"Submitting your own dark site to the gallery by writing to the contact email."
+	],
+	"caveats": [
+		"It has no search, filters or visible categories: you can only move forward page by page.",
+		"It shows only screenshots; to see the interaction you have to open the original site.",
+		"Some entries are sponsored, marked as such."
+	],
+	"pricingNote": "Free to browse, with no account.",
+	"idealFor": "People looking for dark site references without filtering by category."
+}

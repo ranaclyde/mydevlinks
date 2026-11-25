@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"simpleParallax.js is a library that adds a parallax effect to the images on a page: as you scroll, the image moves and scales within its container. There's a plain JavaScript version and a React one, with next/image support in Next.js, and you install it with npm install simple-parallax-js.",
+		"It's a good fit when you want a simple parallax on images in a few lines, without setting up a full animation library."
+	],
+	"uses": [
+		"Adding depth to the images of a hero or a gallery as you scroll.",
+		"Wrapping a next/image image with SimpleParallax on a site built with Next.js.",
+		"Adjusting orientation, scale (1.4 by default), or delay to vary the effect between sections."
+	],
+	"caveats": [
+		"It applies to img tags (and video too), not to background images defined in CSS.",
+		"The scale must be greater than 1.0, and the higher it is, the more quality the image loses: use a proportionally larger image, for example 750 px wide to display it at 500 px with a scale of 1.5.",
+		"If you enable overflow, the image spills out of its container as it moves and can cover nearby content."
+	],
+	"pricingNote": "Open source under the MIT license.",
+	"idealFor": "Sites with large images that want parallax without the hassle."
+}

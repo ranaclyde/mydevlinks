@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Google Fonts is a catalog of open typefaces for the web. Most use the SIL Open Font License 1.1, some use Apache 2 and the Ubuntu fonts have their own license, and each family includes a file with its license.",
+		"It's a good fit when you need free, ready-to-use fonts for a site: you include them with a link to the CSS API, with parameters like display=swap to control loading."
+	],
+	"uses": [
+		"Loading a font on your site with a link to the CSS API and using it with font-family.",
+		"Limiting loading to the variants and characters you actually use to reduce weight.",
+		"Choosing a typeface that supports other alphabets, such as Cyrillic or Greek, through subsets."
+	],
+	"caveats": [
+		"When you load them from the API, Google receives each visitor's IP address and browser, although it doesn't use cookies; if that doesn't fit your privacy requirements, download the fonts and host them on your own server.",
+		"Not all fonts share a license: most are OFL, but there are Apache and Ubuntu cases, so confirm the license of each family.",
+		"Always include a fallback font in font-family in case loading fails."
+	],
+	"pricingNote": "The entire catalog is free to use, with no paid plans.",
+	"idealFor": "Any web project that needs good open fonts."
+}

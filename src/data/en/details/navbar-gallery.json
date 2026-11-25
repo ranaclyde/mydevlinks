@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Navbar Gallery is a curated gallery dedicated only to the navigation bars of real sites. They're grouped by type (static, dropdown, mega menu, sidebar, search, announcement, fullscreen, and breadcrumbs), and each entry has a screenshot, a link to its own page, and another to the original site.",
+		"It's useful when you're deciding how to build a project's navigation and want to see many solutions to the same component."
+	],
+	"uses": [
+		"Looking at mega menu examples before implementing the navigation of a site with many sections.",
+		"Finding how others integrate a search box or an announcement in the top bar.",
+		"Checking how a sidebar or fullscreen navigation behaves on different sites."
+	],
+	"caveats": [
+		"It only covers navbars: there are no footers, heroes, or other sections.",
+		"Examples load in batches with the Load more button.",
+		"It shows screenshots, not code: you have to open the original site to see how it's built."
+	],
+	"pricingNote": "Free; anyone can submit a navbar to be added to the gallery.",
+	"idealFor": "Anyone designing or implementing a site's navigation who is looking for references."
+}

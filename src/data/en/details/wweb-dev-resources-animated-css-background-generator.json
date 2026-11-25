@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"A generator of animated backgrounds made with CSS only. You choose between three styles (blurred bokeh-like bubbles, rectangles that rotate and turn into circles, and cubes that grow and fade) and adjust quantity, size, speed and colors with a live preview.",
+		"When you're done you copy the HTML and CSS from its tabs. It's a good fit when you want an animated background without JavaScript or libraries."
+	],
+	"uses": [
+		"Putting a moving bubble background in a landing page hero.",
+		"Giving a login or 404 error page a subtle animated background.",
+		"Trying out color and speed combinations before taking the CSS to your project."
+	],
+	"caveats": [
+		"Continuous animations with many elements can drain battery and resources on mobile; lower the quantity before copying.",
+		"If the animation will always be visible, add a prefers-reduced-motion rule yourself for people who ask for less motion.",
+		"There are three fixed styles; for anything different you'll have to edit the CSS by hand."
+	],
+	"pricingNote": "Free to use; it only offers optional donations and sponsorship.",
+	"idealFor": "Anyone who needs a pure CSS animated background, quickly and with no dependencies."
+}

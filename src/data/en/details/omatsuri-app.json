@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Omatsuri is a web app with frontend tools that run in your browser: a CSS triangle generator, a gradient generator, a page divider generator, an SVG compressor, an SVG to JSX converter, a Base64 encoder, a fake data generator and a collection of HTML/CSS symbols, among others.",
+		"It's a good fit for handling one-off CSS and SVG tasks without installing anything. It's a PWA, so it also works offline."
+	],
+	"uses": [
+		"Generating the CSS for a triangle or a gradient and copying it straight into your project.",
+		"Compressing an SVG before uploading it, or converting it to a JSX component.",
+		"Creating realistic fake data to fill a mockup or a test database."
+	],
+	"caveats": [
+		"The repository hasn't had changes since February 2026, so don't expect new tools often.",
+		"Each tool is simple: for advanced cases, such as an SVG that needs fine-grained optimization, it may fall short.",
+		"Everything is processed in your browser, so very large files depend on your machine's capacity."
+	],
+	"pricingNote": "Open source under the MIT license, with no ads or analytics.",
+	"idealFor": "Quick CSS and SVG tasks without installing anything."
+}

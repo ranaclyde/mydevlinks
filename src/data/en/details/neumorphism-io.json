@@ -1,0 +1,17 @@
+{
+	"whatIs": [
+		"Neumorphism.io generates the CSS for an element with a neumorphic (or soft UI) style. You pick a color, adjust the size, radius, distance, intensity and blur of the shadow, and choose among four shapes: flat, concave, convex and pressed.",
+		"You copy the border-radius, background and box-shadow declarations with a button. It's a good way to quickly try this style on buttons, cards or switches."
+	],
+	"uses": [
+		"Creating a button with a soft raised effect.",
+		"Designing a card or widget with a sense of depth for a dashboard.",
+		"Generating the pressed state of a switch with the pressed shape."
+	],
+	"caveats": [
+		"Neumorphism uses very similar tones for the background and the element, which usually gives low contrast; check that borders and text stand out.",
+		"The code is for a single element and color; for a complete theme you have to repeat it and keep it consistent."
+	],
+	"pricingNote": "Free and open source, with no paid plans.",
+	"idealFor": "People who want to quickly preview and copy an adjustable neumorphic shadow."
+}

@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Lemon Squeezy is a payments platform for selling software and digital products that acts as the merchant of record: it handles payment collection, fraud, and sales taxes. It covers subscriptions, free trials, license keys, secure download links, no-code checkout, affiliates, and metrics such as MRR and churn, plus a REST API and webhooks.",
+		"It's a good fit when you sell a SaaS or digital products to customers in several countries and don't want to handle taxes and invoicing yourself."
+	],
+	"uses": [
+		"Charging for SaaS subscriptions, with plan changes and failed-payment recovery.",
+		"Selling a template or a course with a protected download link.",
+		"Issuing and validating license keys for a desktop app from your backend using the API."
+	],
+	"caveats": [
+		"It charges a fee on every transaction, and there may be additional charges, for example on payments from outside the United States.",
+		"Because it's the merchant of record, the seller your customer sees is Lemon Squeezy (Link, LLC), not your company; check how that fits with your invoicing.",
+		"Stripe acquired Lemon Squeezy in 2024 and is moving its users to Stripe Managed Payments; the team itself acknowledges slower support and fewer new features, so evaluate the service's future before integrating it."
+	],
+	"pricingNote": "No monthly fee: 5% + $0.50 per transaction, with possible extra charges outside the United States.",
+	"idealFor": "Independent developers selling software or digital products worldwide."
+}

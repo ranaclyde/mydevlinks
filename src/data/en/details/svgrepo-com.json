@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"SVG Repo is a catalog of more than 500,000 SVG vectors and icons with open licenses, gathered from well-known sources and community contributions, and organized into more than 6,000 collections by style. It has a search box and an editor for basic changes, and it serves files already optimized.",
+		"It's a good fit when you need a specific SVG icon or vector and want to download it for free, with no account and no premium content in the way."
+	],
+	"uses": [
+		"Find an SVG icon for a button or a section and adjust its color in the editor before downloading it.",
+		"Look for a complete collection in a single style, such as outlined or duotone, to use across an entire interface.",
+		"Download a technology's logo for a stack or integrations section."
+	],
+	"caveats": [
+		"Each icon has its own license (SVG Repo, public domain, MIT, GPL, Creative Commons, logo…); check the one listed on its page, because some require attribution or prohibit commercial use.",
+		"SVG Repo's own license doesn't require attribution, but it prohibits reselling the files as-is or redistributing them by building a similar site.",
+		"Company logos have a logo license: you can't modify them and you must follow each brand's rules."
+	],
+	"pricingNote": "The whole catalog is free, with no premium content; each resource keeps its own license.",
+	"idealFor": "Quickly finding a free SVG icon or vector for a project."
+}

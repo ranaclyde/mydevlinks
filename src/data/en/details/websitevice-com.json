@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Websitevice is a gallery of real websites organized by type of business. A sidebar lists about 43 categories, such as Agency, SaaS, Restaurant, Dentist, or Real Estate, and each one has its own page of examples with a link to the site and a short description of its design.",
+		"It's a good fit when you're hired to build a site for a specific industry and want to see what others in the same sector do before proposing a structure."
+	],
+	"uses": [
+		"Seeing what restaurant or cafe websites look like before laying out a client's site in that industry.",
+		"Reviewing sites in the SaaS category to decide which sections go in its landing page and pricing page.",
+		"Showing a client examples from their own industry to agree on a visual style."
+	],
+	"caveats": [
+		"You can only browse by category: there's no search or filters by style, color, or technology.",
+		"Each example comes with a short description and a link, not an analysis of the design or of how it's built.",
+		"The homepage includes a sponsors section that's easy to mistake for the examples at first glance."
+	],
+	"pricingNote": "You can browse the whole thing without an account or payment.",
+	"idealFor": "Anyone building sites for clients in specific industries who needs references by sector."
+}

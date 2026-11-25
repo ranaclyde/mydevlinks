@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"It's a guide in Spanish for preparing for software technical interviews, published as a repository and as a website. It organizes by topic links to third-party articles, repositories and courses on principles like SOLID and Clean Code, best practices by language and framework, algorithms and data structures, design patterns, system design, databases, Git, CI/CD and containers, and adds lists of frontend and backend interview questions.",
+		"It's a good fit as a review map before an interview or to find out which topics you still need to study."
+	],
+	"uses": [
+		"Reviewing design patterns and SOLID principles before a technical interview.",
+		"Finding lists of frontend and backend interview questions to practice.",
+		"Putting together a study plan for algorithms and data structures."
+	],
+	"caveats": [
+		"Rather than explaining each topic, it collects links to external resources, so quality depends on each source.",
+		"Many of the linked resources are in English.",
+		"It doesn't replace practicing coding problems on an algorithms platform."
+	],
+	"pricingNote": "Open source under the MIT license.",
+	"idealFor": "Developers preparing for technical interviews who study in Spanish."
+}

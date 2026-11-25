@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"shadcn/ui isn't a library you install as a dependency: it's a collection of accessible, well-crafted components whose code is copied into your project for you to adapt. Besides the component catalog, it offers blocks, charts and a tool for creating your own base.",
+		"It's a good fit when you want to build your own design system on a solid foundation, controlling the code of each piece."
+	],
+	"uses": [
+		"Building a dashboard with tables, forms and charts using the blocks and charts.",
+		"Creating a company's design system starting from accessible components that you modify as you like.",
+		"Adding individual components, such as a dialog or a select, to an existing project."
+	],
+	"caveats": [
+		"The code lives in your repository, so you apply updates and fixes by hand.",
+		"It's oriented to React and Tailwind CSS; outside that ecosystem you'll have to look for adaptations.",
+		"It requires a bit of initial setup before you add the first component."
+	],
+	"pricingNote": "Open source under the MIT license.",
+	"idealFor": "Teams that want to own and customize the code of their components."
+}

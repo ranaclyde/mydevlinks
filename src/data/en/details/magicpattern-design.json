@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"MagicPattern is a toolbox of more than 30 tools for creating patterns, gradients, blobs, SVG waves, doodle-style backgrounds and color palettes. You export as an image (JPG, PNG, SVG, GIF) or as SVG and CSS code, depending on the tool.",
+		"It's a good fit for quickly producing backgrounds and decorative shapes for landing pages, social media or branding without design skills."
+	],
+	"uses": [
+		"Creating a CSS pattern for a section background.",
+		"Generating an SVG wave to separate sections of a landing page.",
+		"Building a Tailwind color palette from a base color."
+	],
+	"caveats": [
+		"Commercial use is listed among the benefits of the paid plans and reselling graphics is only allowed on Pro; check the terms before using a graphic in client work.",
+		"Basic costs $15 a month or $120 a year and saves up to 100 graphics; Pro costs $30 a month or $240 a year, with no such limit.",
+		"The available exports depend on the tool; confirm that the one you need delivers the format you're after."
+	],
+	"pricingNote": "There's a free plan; Basic from $10/month and Pro from $20/month when billed annually, plus 3- or 6-month passes.",
+	"idealFor": "People who need many kinds of backgrounds and decorative shapes in one place."
+}

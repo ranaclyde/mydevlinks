@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Manus is a general-purpose AI agent that carries out tasks for you: it creates presentations, websites, games, video, designs, images and music, and offers broad research, Slack integration and access to several models. It has a web app, mobile and desktop apps, and an API.",
+		"It's a good fit when you want to delegate a whole task and review the result, instead of guiding an AI step by step."
+	],
+	"uses": [
+		"Asking for broad research on a library or a market and receiving a report.",
+		"Generating a website or a presentation from a description.",
+		"Connecting Manus to Slack or to your code via the API to automate workflows."
+	],
+	"caveats": [
+		"It runs on credits: each task uses a variable amount, and subscription credits don't roll over to the next month.",
+		"The free plan's daily credits only work with Manus 2.0 lite and have a monthly cap.",
+		"It's a general-purpose agent: check the code and data it delivers by hand."
+	],
+	"pricingNote": "Free plan with daily credits (capped at 1,500 a month); the Pro plan starts at $20 a month with 4,000 credits.",
+	"idealFor": "Delegating complete research, content and prototype tasks."
+}

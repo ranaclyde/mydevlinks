@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"TypeUI, from the makers of Flowbite, gives your AI coding tools (Claude, Codex, Cursor and others) design resources through an MCP server: design skills, interface prompts, animations, microinteractions, design systems and brand kits. It also offers Insights, an analytics tool for visits, sessions and conversions that you can query from your AI as well.",
+		"It's a good fit when you already build interfaces with a coding agent and want the result to look more polished and consistent without writing the design instructions yourself."
+	],
+	"uses": [
+		"Connecting the TypeUI MCP to Claude or Cursor so it applies a design system when it generates screens.",
+		"Putting together a brand kit with colors and fonts and reusing it across all the projects you generate with AI.",
+		"Measuring a landing page's visits and conversions with Insights and asking the AI for improvement ideas based on that data."
+	],
+	"caveats": [
+		"The open repository, licensed under MIT, includes only part of the resources; the full catalog of skills, prompts and animations is on the paid plans.",
+		"It's only useful if you work with an AI tool that supports MCP or accepts Markdown instructions.",
+		"Insights is listed as a beta preview, so its features and limits may change."
+	],
+	"pricingNote": "There are open resources on GitHub; Creative costs $30 a month or $120 a year, Insights $30 a month and the combined plan $50 a month.",
+	"idealFor": "Developers who generate interfaces with AI agents and want better design results."
+}

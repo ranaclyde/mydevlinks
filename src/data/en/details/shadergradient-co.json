@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"ShaderGradient is a tool for creating animated 3D gradients and bringing them to React, Figma or Framer. In React it's used with the @shadergradient/react package, which offers the ShaderGradient and ShaderGradientCanvas components; there's also a Vue version.",
+		"It's a good fit when you want an eye-catching moving background, like a hero's, without hand-building a 3D scene."
+	],
+	"uses": [
+		"Putting an animated gradient background in the main section of a React landing page.",
+		"Designing the gradient in Figma or Framer and reusing the same style on the final site.",
+		"Visually tuning colors and motion, and copying the parameters into the component."
+	],
+	"caveats": [
+		"It's a 3D scene on a canvas: measure performance on mobile and low-end machines.",
+		"The renderer depends on WebGL, so plan a fallback in case the browser doesn't support it.",
+		"A full-screen animated background can distract from the content; use it sparingly."
+	],
+	"pricingNote": "Open source under the MIT license; there's no paid plan.",
+	"idealFor": "React projects that want animated 3D backgrounds without writing shaders."
+}

@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"This Tailkit page gathers the free sample of its Tailwind component collection: alerts, user cards, dropdowns, forms, lists, pagination, stat cards and a sign-in page, among others. Each one can be previewed and copied in HTML, React or Vue.js, and some also in Alpine.js.",
+		"It's a good fit when you need typical dashboard or landing page pieces and want to copy them into the framework you already use, without installing any library."
+	],
+	"uses": [
+		"Copying a sign-in form and adapting it to your React or Vue app.",
+		"Building the stat cards and pagination of an admin dashboard.",
+		"Testing the quality of the components before deciding whether to buy the full collection."
+	],
+	"caveats": [
+		"Only the free sample is here: the full collection is purchased separately.",
+		"The components are copied as code and live in your project, so updates don't arrive on their own.",
+		"They require Tailwind to be set up in your project."
+	],
+	"pricingNote": "This sample is free; the full collection is a one-time payment starting at $79 (Developer, one project).",
+	"idealFor": "People who work with Tailwind and want pieces ready to copy in HTML, React or Vue."
+}

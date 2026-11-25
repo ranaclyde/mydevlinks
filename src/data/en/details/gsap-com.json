@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"GSAP is a JavaScript animation library for animating almost anything on the web: DOM elements, SVG, canvas or arbitrary values. It includes plugins such as ScrollTrigger, SplitText and MorphSVG, and has an integration guide for React using useGSAP. You install it with npm install gsap or by downloading the files.",
+		"It's a good fit when you need complex animations, sequences with fine control over timing or scroll-linked effects, and you want a mature tool that works in any framework."
+	],
+	"uses": [
+		"Animating sections on scroll in a landing page with ScrollTrigger.",
+		"Chaining an entrance sequence of elements with timelines.",
+		"Animating text letter by letter or morphing SVG shapes with the plugins."
+	],
+	"caveats": [
+		"It isn't open source: it has its own Webflow license that prohibits using it in no-code visual animation builders that compete with Webflow's tools.",
+		"Webflow may update the license; versions released before a change remain under their original terms.",
+		"In React, use useGSAP so animations are cleaned up properly when components unmount."
+	],
+	"pricingNote": "The entire library, including the plugins that used to be paid, is free even in commercial projects.",
+	"idealFor": "Complex or scroll-linked web animations in any framework."
+}

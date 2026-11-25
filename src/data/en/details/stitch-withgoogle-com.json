@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Stitch is an AI design canvas from Google Labs, currently in beta, that turns a prompt, a hand-drawn sketch, or a screenshot into editable screens for mobile and web apps. It uses Gemini models, lets you build multi-screen flows, and exports to Figma with Auto Layout or as HTML and CSS, with Tailwind support.",
+		"It's a good fit when you want to go quickly from an idea to a first visual version of an app and then take it to Figma or to code."
+	],
+	"uses": [
+		"Generating the first screens of a mobile app from a description to validate the idea.",
+		"Turning a sketch or a screenshot of another interface into an editable design.",
+		"Exporting a generated screen to HTML and Tailwind as a starting point for the front end."
+	],
+	"caveats": [
+		"It's in beta, English only, for people 18 and older, and in countries where Gemini is available.",
+		"Free use has a daily credit limit that resets at midnight UTC.",
+		"The generated code is a starting point: review it and adapt it to your project before using it in production."
+	],
+	"pricingNote": "Free for now, with a daily credit limit.",
+	"idealFor": "Prototyping app interfaces with AI and moving them to Figma or to code."
+}

@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Illos is a library of 186 animated SVG illustrations in five styles: Shader, HUD, Isometric, Interface and Cybernetics, each in a light and a dark version. Each illustration is a single SVG file with the animation included, no scripts or web fonts, and it respects the reduced motion preference.",
+		"It's a good fit when you want illustrations with a consistent style for a product site, or want your coding agent to draw new ones in the same style."
+	],
+	"uses": [
+		"Illustrating a landing page's sections with SVGs that weigh just a few KB.",
+		"Adding an illustration to a React project with shadcn using an install command.",
+		"Asking your coding agent for new illustrations in the same style using the skills."
+	],
+	"caveats": [
+		"79 illustrations are free; the rest and the skills require the Pro plan.",
+		"You can't resell the illustrations as a package or use them to build a competing library.",
+		"Purchases are final, except for a double charge or a license that never arrives."
+	],
+	"pricingNote": "79 illustrations are free without an account; Pro costs $69 and Team $299, both as one-time payments.",
+	"idealFor": "Product sites that want lightweight, consistent animated illustrations."
+}

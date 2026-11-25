@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Bento Grids is a curated collection of bento-style designs: grids of cards of different sizes, like the ones on Apple's product pages. It gathers landing pages, product sites and identity pieces, you browse it by tabs (Graphic Design, Web Design, Animation), and you can show only dark or light designs. Many entries include several images or a video.",
+		"It's useful when you need to see many examples of how to organize varied content in a single grid."
+	],
+	"uses": [
+		"Looking for references for a landing page's features section in a bento layout.",
+		"Deciding on proportions and hierarchy between large and small cards before laying out with CSS Grid.",
+		"Gathering examples from a specific sector, such as productivity or engineering, for a moodboard."
+	],
+	"caveats": [
+		"It's a visual collection; the code for each design isn't included.",
+		"The bento style is very widespread, so copying it as-is can make your site look generic.",
+		"About a third of the pieces come from Dribbble or X, so many are concepts rather than sites in production."
+	],
+	"pricingNote": "Free; it also gives away bento templates.",
+	"idealFor": "References for bento grid layouts."
+}

@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"60fps collects animations and interactions from iOS and web apps, shown as short clips so you can see how every detail moves. The catalog has around 2,100 pieces, plus apps, storyboards, snippets and a glossary.",
+		"The pieces can be filtered by gestures (drag, swipe), patterns (onboarding, loading), effects (blur, spring physics) and elements (buttons, bottom sheets, tabs), with more than a hundred filters in total."
+	],
+	"uses": [
+		"See how a bottom sheet or a tab bar is animated before implementing them in your app.",
+		"Choose a loading or onboarding pattern with motion and bring it to the design meeting.",
+		"Explain to your team what a spring effect or a morph is with an example in motion."
+	],
+	"caveats": [
+		"It's a visual reference only: it doesn't provide the animation code.",
+		"Several filters and full collections require the Pro plan.",
+		"The focus is on iOS and web apps, with fewer examples from other platforms."
+	],
+	"pricingNote": "You can explore it for free; Pro costs $15 per month or $150 per year per user.",
+	"idealFor": "Getting inspired by app animation and interaction."
+}

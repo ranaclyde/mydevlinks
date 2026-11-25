@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"unDraw is a frequently updated library of SVG illustrations. Before downloading you can change the main color to match your brand, and there are also PNG versions.",
+		"It's a good fit when you need clean images for a landing page, an onboarding flow or an error page without hiring an illustrator."
+	],
+	"uses": [
+		"Illustrating an app's empty state or 404 error screen.",
+		"Decorating a product's landing page with images in the brand's colors.",
+		"Accompanying the steps of an onboarding flow or a technical presentation."
+	],
+	"caveats": [
+		"Its own license allows commercial use without attribution, but prohibits redistributing the illustrations in packs, building integrations with them or using them to create a service that competes with unDraw.",
+		"They can't be used to train, fine-tune or test AI or machine learning systems without written permission.",
+		"The included logos are trademarks of their owners: use them only to represent that brand."
+	],
+	"pricingNote": "The library is free; unDraw Plus costs $59 (or $79 with videos), a one-time payment that gives one year of access to animated illustrations, custom graphics and extra styles.",
+	"idealFor": "Teams and personal projects that want free SVG illustrations in their own colors."
+}

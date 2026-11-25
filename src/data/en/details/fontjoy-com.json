@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Fontjoy generates Google Fonts pairings with one click. A deep learning model looks for fonts that go well together without looking too similar, and you can change the sample text to see how the heading and body look.",
+		"It's a good fit when you don't know which fonts to combine and want quick ideas: you lock the one you like and regenerate the rest until you land on a pair that works."
+	],
+	"uses": [
+		"Finding a body font to go with a landing page heading.",
+		"Starting from a brand's font and exploring what to pair it with.",
+		"Trying out a real paragraph from your project with several pairs before choosing."
+	],
+	"caveats": [
+		"It's an idea generator: the pairings are partly random, so check the result yourself.",
+		"It works only with Google Fonts, so it's no use if your brand uses a commercial typeface.",
+		"It only suggests the pair: afterward you have to load the fonts from Google Fonts in your project."
+	],
+	"pricingNote": "Free to use, with no paid plans.",
+	"idealFor": "Anyone who needs quick ideas for font pairings."
+}

@@ -1,0 +1,17 @@
+{
+	"whatIs": [
+		"ColorSpace generates color palettes from a color you type in, and also builds gradients, including a three-color gradient mode.",
+		"It's a good fit when you already have a brand color and want ideas for combinations or a gradient without designing the palette by hand."
+	],
+	"uses": [
+		"Getting a supporting palette from a project's main color.",
+		"Creating a background gradient for a hero or a card.",
+		"Trying a three-color gradient before turning it into CSS."
+	],
+	"caveats": [
+		"It's a generation tool: there are no accounts or saved projects to keep your palettes, so write down the codes you choose.",
+		"Check the contrast of the resulting colors before using them for text."
+	],
+	"pricingNote": "Free to use in the browser.",
+	"idealFor": "Starting from a single color to get palettes and gradients."
+}

@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Bolt is an AI builder that generates websites, apps, prototypes and presentations from a text description. You can also start from a Figma design, a GitHub repository or a team template. With Bolt Cloud you also get hosting, databases, user authentication and custom domains.",
+		"It's a good choice for quickly reaching a working prototype or an MVP without setting up the environment, and then continuing to iterate on the code in GitHub."
+	],
+	"uses": [
+		"Spinning up an MVP with login and a database from a description.",
+		"Turning a Figma design into a web app you can edit and publish.",
+		"Creating a prototype to validate an idea with a client before writing any code by hand."
+	],
+	"caveats": [
+		"You pay by tokens: large projects or long iterations use up the free plan's quota quickly.",
+		"The GitHub integration stays linked to the main branch, and you can't change the project's branch in Bolt.",
+		"Review the generated code before going to production, especially authentication and data access."
+	],
+	"pricingNote": "Free plan with 300K tokens a day and 1M a month; the Pro plan costs $25 a month.",
+	"idealFor": "Quick prototypes and MVPs that you then continue in GitHub."
+}

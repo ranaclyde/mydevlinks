@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Blocks is a collection of interface blocks for React built with shadcn/ui and Tailwind: login screens, tables, sidebars, forms, command menus, and AI chats, among others, spread across 13 categories.",
+		"It's a good fit when you already use shadcn/ui and want to start from complete sections instead of building them component by component."
+	],
+	"uses": [
+		"Setting up an app's login and sign-up with a ready-made block.",
+		"Building a dashboard with a sidebar, stats cards, and tables.",
+		"Adding an AI chat interface to a project without designing it from scratch."
+	],
+	"caveats": [
+		"It's designed for projects with React, Tailwind, and shadcn/ui; outside that stack you have to adapt it.",
+		"Blocks are added with the shadcn CLI through the @blocks-so registry, so you need shadcn initialized in the project.",
+		"Because they're copied into your code, future updates to the block don't reach you on their own."
+	],
+	"pricingNote": "Open source under the MIT license; there's no paid plan.",
+	"idealFor": "Projects with shadcn/ui that need ready-to-copy sections."
+}

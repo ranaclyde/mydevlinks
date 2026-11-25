@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"ComponentLand is a library of Tailwind blocks and components in HTML, with more than 300 pieces such as hero sections, article grids, product pages and checkout pages. They're organized by category (blog, landing, ecommerce, SaaS) and it has an online playground.",
+		"It's a good fit when you need to put a page together quickly and you'd rather copy complete sections than design them."
+	],
+	"uses": [
+		"Putting together a landing page by combining a hero section and content blocks.",
+		"Starting from a product or checkout page for a small store.",
+		"Trying out a block in the playground before bringing it into your project."
+	],
+	"caveats": [
+		"It's marked as beta, so the catalog and structure may change.",
+		"The HTML and icons are free to use, but the sample images may be copyrighted: replace them with your own before publishing.",
+		"They're HTML blocks to copy, not a package: adapting them to your framework is up to you."
+	],
+	"pricingNote": "All blocks and components are offered for free.",
+	"idealFor": "Tailwind pages that start from ready-made sections."
+}

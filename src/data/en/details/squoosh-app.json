@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Squoosh is a web app for shrinking image files. Drag or paste an image, adjust the format and quality, and compare the result with the original before downloading it. Everything is processed on your device, so the image is never uploaded to a server.",
+		"It's a good fit when you need to optimize a few images for a website and want to see right away which format and settings give the best balance between size and quality."
+	],
+	"uses": [
+		"Converting a cover image to a lighter format before uploading it to your site.",
+		"Comparing the original and the compressed version side by side to pick the lowest acceptable quality.",
+		"Optimizing a screenshot or photo with sensitive data without sending it to an external service."
+	],
+	"caveats": [
+		"It handles one image at a time, so it's not the option for batch-processing hundreds of files.",
+		"Its repository hasn't had commits on the main branch since August 2024, so don't expect new features.",
+		"It uses Google Analytics to collect basic visit data and the before-and-after file sizes, even though the image never leaves your machine."
+	],
+	"pricingNote": "Free and open source under the Apache-2.0 license.",
+	"idealFor": "Optimizing individual images for the web, with privacy and a side-by-side comparison."
+}

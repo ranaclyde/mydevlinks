@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Unicorn Icons is a collection of more than 500 animated icons for applications, delivered as Lottie and Rive. They can also be exported to SVG, GIF, WebM and PNG.",
+		"It's a good fit when you want micro-interactions in the interface without animating each icon by hand, and you work with React, Vue, React Native, iOS, Android, Flutter or HTML."
+	],
+	"uses": [
+		"Animating loading, confirmation or error buttons in a web app with lottie-react.",
+		"Bringing an onboarding screen in a mobile app to life with Flutter or iOS.",
+		"Exporting an icon to GIF or WebM for a demo or an email."
+	],
+	"caveats": [
+		"The free plan includes 100 icons and requires a visible credit to Unicorn Icons; the paid plans remove the attribution.",
+		"You need a Lottie or Rive player in your project, which adds a dependency.",
+		"On any plan, you can't hand the icons over to clients as standalone files or let your app's users extract them."
+	],
+	"pricingNote": "Free Starter with 100 icons; the Solo, Team and Enterprise plans (1, 5 or unlimited seats) are one-time payments.",
+	"idealFor": "Developers who want ready-to-use animated icons for web and mobile."
+}

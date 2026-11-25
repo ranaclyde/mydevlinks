@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Flowbite is an open source library with more than 68 interactive components built on Tailwind CSS, such as buttons, modals, navbars and date pickers. The behavior is handled with plain JavaScript, and it has guides for React, Vue, Svelte, Angular, Laravel, Django and others.",
+		"It's a good fit when you use Tailwind and want a ready-made component base, with dark mode and a Figma design system, in any stack."
+	],
+	"uses": [
+		"Build an admin dashboard with tables, modals and menus that are already styled.",
+		"Integrate components into a Laravel or Django app without depending on a JavaScript framework.",
+		"Turn a Figma design into code using the design system Flowbite provides."
+	],
+	"caveats": [
+		"It requires Tailwind CSS in the project.",
+		"The marketing, application and e-commerce blocks, along with the full dashboards and landing pages, are part of Flowbite Pro, which is paid.",
+		"The interactive components rely on its JavaScript, so you have to load and initialize it on every page."
+	],
+	"pricingNote": "Free library under the MIT license; Flowbite Pro is a one-time payment: $299 for the code edition and $169 for the Figma one.",
+	"idealFor": "Tailwind projects that need ready-made components and work in any framework."
+}

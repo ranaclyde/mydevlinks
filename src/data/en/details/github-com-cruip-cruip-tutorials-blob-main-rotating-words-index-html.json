@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"It's an example HTML page from Cruip's tutorials repository: a headline with a word that keeps changing (Finance, Tech, AI, Crypto, eCommerce) with a vertical slide. It uses Tailwind from a CDN with custom @keyframes animations defined in tailwind.config, and Alpine.js only to close a bottom banner.",
+		"It's a good fit when you want a rotating text effect without animation JavaScript, to copy and adapt to your landing page."
+	],
+	"uses": [
+		"Putting a rotating word in a landing page hero that changes the sector or benefit mentioned.",
+		"Studying how a continuous loop is achieved by duplicating the first item in the list, with no visible jump.",
+		"Adapting the animation to a different number of words, starting from the text-slide-2 to text-slide-8 variants."
+	],
+	"caveats": [
+		"The repository doesn't include a LICENSE file: its terms of use allow using it in any project, including commercial ones, as long as the credits are kept, but prohibit redistributing it or creating derivatives to make money from them.",
+		"It's a standalone example with Tailwind and Alpine from a CDN; for production you'll have to bring it into your own build.",
+		"The animation runs in an infinite loop and the file doesn't handle prefers-reduced-motion; you should add it."
+	],
+	"pricingNote": "Free to use with attribution; the related tutorial is on cruip.com.",
+	"idealFor": "Anyone who wants rotating text with pure CSS and Tailwind."
+}

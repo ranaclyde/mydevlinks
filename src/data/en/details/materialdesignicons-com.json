@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Material Design Icons is Pictogrammers' open-source icon library: it includes Google's official icons, converted, and many more contributed by the community. You can use them as SVG files (the format it recommends), as a web font with @mdi/font, or through framework components.",
+		"It's a good fit when you want a broad, consistent set that integrates well with your stack, from React, Vue, or Svelte to Android or Figma and VS Code plugins."
+	],
+	"uses": [
+		"Adding icons to a web app with @mdi/font and a single stylesheet.",
+		"Importing only the SVGs you need in a project with a bundler to keep the weight down.",
+		"Using the Figma plugin so design and code share the same icons."
+	],
+	"caveats": [
+		"The icons and the font use Apache 2.0, but those in the Brand / Logos category fall outside that license and are being removed for legal reasons; don't depend on them.",
+		"Some icons are redistributed under their own license, so check the license page if you're going to redistribute the set.",
+		"The web font loads every icon; if file size matters to you, use individual SVGs."
+	],
+	"pricingNote": "Open source under the Apache 2.0 license, with no paid plans.",
+	"idealFor": "Apps and sites that need a large, ready-to-use icon set as SVG or a font."
+}

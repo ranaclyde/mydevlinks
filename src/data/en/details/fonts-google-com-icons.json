@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Material Symbols is Google's icon collection, available in three styles and as a variable font with four adjustable axes: fill (FILL, from 0 to 1), weight (wght, from 100 to 700), grade (GRAD) and optical size (opsz, from 20 to 48 dp). This way a single icon can change weight or fill without loading different files.",
+		"Besides the web font, they can be downloaded as SVG and PNG, as Vector Drawable for Android and as Apple Symbols for iOS. It's a good fit when you want icons with a Material look and fine control over their style."
+	],
+	"uses": [
+		"Showing the active state of a button by transitioning FILL from 0 to 1.",
+		"Adjusting the icon weight to match the weight of your interface typography.",
+		"Reusing the same icons on web, Android and iOS by downloading each format."
+	],
+	"caveats": [
+		"The full variable font is heavy; restrict the axes and the icon list when requesting it from Google Fonts.",
+		"If you don't declare the axes in the Google Fonts URL, the font arrives with fixed values (weight 400, optical size 48, grade 0 and no fill) and you won't be able to change them with font-variation-settings.",
+		"If you use standalone SVGs you lose the variable axes: those adjustments are specific to the font."
+	],
+	"pricingNote": "Free, under the Apache 2.0 license.",
+	"idealFor": "Interfaces that need Material icons with adjustable style."
+}

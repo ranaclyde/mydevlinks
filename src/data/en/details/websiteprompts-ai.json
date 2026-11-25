@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Websiteprompts.ai is a library of more than 100 prompts for generating websites with AI, organized by industry. They're designed mainly for Lovable and Bolt, and also work in v0, Claude, ChatGPT, Cursor or Framer AI.",
+		"It's a good fit when you need to get a business or project site started quickly, with an instruction that's already written and that you then adjust to your case."
+	],
+	"uses": [
+		"Generating a first version of a client's site by pasting the prompt for their industry into Lovable or Bolt.",
+		"Comparing how different AI tools interpret the same prompt.",
+		"Using a prompt as a base and editing it for your brand, copy and sections."
+	],
+	"caveats": [
+		"It only gives you the prompt: you need an AI tool to generate the site, and the quality of the result depends on it.",
+		"Generating the site uses credits or quota from the AI tool where you paste the prompt.",
+		"Review the generated code and design before publishing; a prompt doesn't guarantee a production-ready site."
+	],
+	"pricingNote": "All prompts are free, for personal and commercial projects; the author sells Framer templates separately.",
+	"idealFor": "People who want free prompts to start sites with Lovable, Bolt or Claude."
+}

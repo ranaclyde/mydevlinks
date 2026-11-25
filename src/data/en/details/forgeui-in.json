@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"ForgeUI is a collection of components, blocks and illustrations for React and Tailwind, based on shadcn/ui and with animations built with Motion and GSAP. Part of the catalog is free and installs with the shadcn CLI; the rest and the complete Next.js templates are part of the Pro plan.",
+		"It's a good fit when you're building a landing page or a SaaS and want animated marketing blocks that you can edit as your own code."
+	],
+	"uses": [
+		"Installing a free animated form with a shadcn CLI command.",
+		"Building a SaaS landing page by combining marketing blocks.",
+		"Starting from a complete Next.js template for a product site."
+	],
+	"caveats": [
+		"The animations use Motion and GSAP, so they add those dependencies to your project.",
+		"You can't resell or share the Pro content, even modified.",
+		"Pro purchases are final and non-refundable, so it's worth trying the free components first."
+	],
+	"pricingNote": "Part of the catalog is free; Pro is a one-time payment of $99.",
+	"idealFor": "Landing pages and SaaS products with React and Tailwind that want animated blocks."
+}

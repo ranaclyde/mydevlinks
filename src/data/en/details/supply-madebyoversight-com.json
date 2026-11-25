@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Oversight Supply is a catalog of website templates and sections that you can open in Webflow or Framer, or copy as instructions for AI coding tools such as Claude Code, Cursor and v0. It has 192 templates and 41 free sections.",
+		"It's a good fit when you need to put together a marketing site with a good starting design and you'll build it with one of those tools."
+	],
+	"uses": [
+		"Pasting a free section, such as a hero or a pricing grid, into an existing project.",
+		"Opening a template in Webflow or Framer to launch a client's site.",
+		"Using a template's full prompt to have an AI tool generate the landing page."
+	],
+	"caveats": [
+		"Only the sections marked as free (with an account) and the Lumenis template are free; the rest of the catalog is paid.",
+		"Template credits on monthly plans don't roll over: unused ones expire when the plan renews.",
+		"Webflow and Framer templates require you to have those tools."
+	],
+	"pricingNote": "Free sections with an account; paid options start at $15 per month, with individual templates from $29 to $129 or $499 for lifetime access.",
+	"idealFor": "Anyone building marketing sites in Webflow, Framer or with AI."
+}

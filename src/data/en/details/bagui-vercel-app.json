@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"BagUI is an open source library of interface blocks for React and shadcn/ui, with about 30 blocks spread across categories such as hero, features, pricing, testimonials, navigation and footer. It also offers templates, an MCP for AI assistants and a VS Code extension.",
+		"It's a good fit when you need complete, pre-built landing page sections and want to customize them in your own project."
+	],
+	"uses": [
+		"Putting together a product's home page by combining hero, features and pricing blocks.",
+		"Adding a ready-made navigation bar and footer to a project that uses shadcn/ui.",
+		"Installing blocks from VS Code or with an AI assistant connected to its MCP."
+	],
+	"caveats": [
+		"The catalog is small (about 30 blocks) and the blog category is listed as coming soon.",
+		"It requires React 19, Tailwind v4 and an already initialized shadcn/ui; blocks are installed with the shadcn CLI after you add its registry to components.json.",
+		"Some interactive blocks use Framer Motion or GSAP, so they add dependencies to your project."
+	],
+	"pricingNote": "All blocks and templates are free under the MIT license; there's only an optional sponsorship.",
+	"idealFor": "Landing pages built with shadcn/ui that need ready-made sections."
+}

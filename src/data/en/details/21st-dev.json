@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"21st is a community catalog of more than 12,000 React and Tailwind components, plus complete templates, shadcn themes, shaders, and gradients. Each piece shows a live preview, the source code, and an install command, and the code is copied into your repository instead of being added as a dependency.",
+		"It's a good fit when you're looking for inspiration or a specific piece, such as a hero or a pricing section, and would rather adapt it to your project than use a closed library."
+	],
+	"uses": [
+		"Finding a hero or a pricing section and copying it into your project with the shadcn command.",
+		"Applying a shadcn theme to quickly change the palette of an existing interface.",
+		"Asking an AI tool to recreate a component in your code from its prompt."
+	],
+	"caveats": [
+		"Components are published by different authors, so check each one's page in case it has its own terms.",
+		"The free plan allows 2 component copies per day; to install without limits you need to subscribe.",
+		"Since it's copied code, fixes from the original author don't reach your project on their own."
+	],
+	"pricingNote": "Free plan with 2 component copies per day; the Builder plan costs $6 per month billed annually and removes that limit.",
+	"idealFor": "React and Tailwind projects looking for ready-to-adapt components and themes."
+}

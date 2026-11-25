@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"GetLayers AI is a library of website templates, 3D scenes, gradients, sections and animated backgrounds that you copy as a prompt and paste into an AI like Claude, ChatGPT, Cursor or Copilot. Scenes and gradients are adjusted in the browser before copying, and the prompt carries your values.",
+		"By default the prompt generates a self-contained HTML file, but you can ask your AI to rebuild it in Next.js, Astro, Vue, WordPress and others. It's a good fit if you want a polished look without starting from a blank page."
+	],
+	"uses": [
+		"Paste a 3D scene prompt into your AI for a landing page hero.",
+		"Rebuild a site template in Astro or Next.js instead of plain HTML.",
+		"Apply a gradient or animated background tuned to your palette."
+	],
+	"caveats": [
+		"The free tier is a limited set of layers; the rest requires a paid plan, and the lower plans have a daily copy limit.",
+		"The result depends on the AI you use: review the code it generates and make sure it fits your stack.",
+		"Layers with 4K backgrounds, Figma designs or source code only come with the higher plans."
+	],
+	"pricingNote": "Free layers with the full prompt; paid plans start at $99 (annual or lifetime).",
+	"idealFor": "Anyone who uses an AI assistant and wants to start from a polished visual base."
+}

@@ -1,0 +1,17 @@
+{
+	"whatIs": [
+		"UI Colors generates color scales from 50 to 950 from a base color, designed for Tailwind CSS. It lets you create brand, neutral, and status colors (success, info, warning, and error) and preview them on sample cards, sites, dashboards, and charts.",
+		"It exports in Tailwind v3 and v4 format, CSS, and SCSS. It's a good fit when you need a custom palette with Tailwind's structure instead of using only its default colors."
+	],
+	"uses": [
+		"Creating a 50–950 scale from your brand color and pasting it into your Tailwind theme.",
+		"Building success, warning, and error colors that are consistent with the rest of the interface.",
+		"Testing the palette on a sample dashboard before applying it."
+	],
+	"caveats": [
+		"On the free plan you can only create the primary scale: secondary, neutral, and status colors and font selection require Pro.",
+		"Export to HSL, OKLCH, and RGB, APCA adjustment, the contrast matrix, and saving palettes with a public link are Pro features."
+	],
+	"pricingNote": "Free plan with limited features; Pro costs $4.95 per month or $30 per year.",
+	"idealFor": "Teams using Tailwind that need custom color scales."
+}

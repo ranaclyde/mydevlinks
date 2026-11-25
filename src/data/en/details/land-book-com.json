@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Land-book is a web design gallery of hand-picked sites. It mixes landing pages, portfolios, blogs, and stores, and also collects standalone sections (hero, pricing, footers), animations, headlines, and OG images; without the Pro plan, access to those sections is limited.",
+		"You can filter results by page type (Landing, Portfolio, Ecommerce, Pricing, Sign Up, Product page…) and sort them, for example by most recent. It's useful for seeing how each type of page is handled on real sites."
+	],
+	"uses": [
+		"Seeing how others design a pricing page by filtering by the Pricing type.",
+		"Looking for sign-up or product page references for a SaaS.",
+		"Saving a project's reference sites and sections to boards so you have them together while designing."
+	],
+	"caveats": [
+		"The list loads more results as you scroll, which makes it awkward to find a specific piece again.",
+		"On the free plan, search and filters return limited results, you can only create up to 3 boards, and there are no mobile views.",
+		"It shows each site's design, not its code or implementation."
+	],
+	"pricingNote": "Free to browse with limited access; Pro costs $9 per month or $72 per year and removes the limits on categories, sections, search, and filters, and adds mobile views.",
+	"idealFor": "Designers and developers looking for references by page type."
+}

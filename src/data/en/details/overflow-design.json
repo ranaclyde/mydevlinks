@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Overflow brings together design resources made by one person, the same author as Keyline Icons and Preline UI: about 1,100 Notion-style icons, more than 450 illustrations, more than 350 isometric drawings (some animated) and 20 3D avatars for AI agents, in SVG, PNG and as an editable Figma file.",
+		"It's a good fit when you want a distinctive, consistent visual style for a landing page, a product or a presentation, and you'd rather try the free part before paying."
+	],
+	"uses": [
+		"Illustrating a product landing page with isometric drawings instead of stock photos.",
+		"Using Notion-style icons, in regular or duotone, in an app or dashboard.",
+		"Connecting its MCP server to a coding agent so it can look up an icon and insert it into your project as SVG or JSX."
+	],
+	"caveats": [
+		"Only part of the catalog is free: 194 icons, 45 illustrations (15 from each pack) and 71 isometric drawings as still images. The rest, including the animated isometrics, requires the Pro license.",
+		"You can't redistribute the assets on their own or use them to build another pack or library; Pro assets also can't be uploaded to public repositories.",
+		"Pro is for a single person and purchases are non-refundable; for agencies or multiple users you have to request a custom license."
+	],
+	"pricingNote": "There's a free set; the Pro license costs $99 as a one-time payment and includes the full catalog and anything added later.",
+	"idealFor": "People who need icons and illustrations with their own style for commercial projects."
+}

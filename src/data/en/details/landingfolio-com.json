@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Landingfolio is a landing page gallery with more than 900 sites, plus a library of individual sections (hero, header, footer, testimonials, calls to action) with thousands of examples. You browse it through category tabs such as SaaS, Product or Mobile App, with a desktop or mobile view and a search for sites, sections and colors.",
+		"It's a good fit when you're about to lay out a landing page and want to see how others solve a specific block, instead of looking at full pages."
+	],
+	"uses": [
+		"Checking how other SaaS landing pages lay out the hero and pricing table before building yours.",
+		"Filtering by category, such as SaaS or Mobile App, to compare several landing pages in the same field.",
+		"Looking for testimonial sections or footers to copy as a base in Tailwind, Webflow or Figma."
+	],
+	"caveats": [
+		"Without Pro you can't filter by color or see the mobile version of the sites.",
+		"The full component archive is limited: without Pro you only see the 40 newest in each category.",
+		"Saved collections are capped at 20 sections on free accounts, and sponsored ads are mixed in with the content."
+	],
+	"pricingNote": "Annual plan for $49 or a one-time payment of $59; the free account has limits.",
+	"idealFor": "Anyone laying out landing pages who wants references by section."
+}

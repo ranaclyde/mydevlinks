@@ -1,0 +1,17 @@
+{
+	"whatIs": [
+		"uiGradients is a community collection of gradients with two or more colors. You can browse them one by one, change their direction, copy the CSS code or download one as an image.",
+		"It's a good fit when you want a gradient that looks good without designing it yourself."
+	],
+	"uses": [
+		"Putting a gradient background on a landing page or a hero.",
+		"Adding color to buttons or cards with a gradient that's already proven.",
+		"Looking for color combination inspiration for a brand."
+	],
+	"caveats": [
+		"It's a closed collection: it doesn't create gradients from your own colors.",
+		"If you want to contribute one, you do it with a pull request on GitHub by adding a name and its HEX colors."
+	],
+	"pricingNote": "Open collection under the MIT license.",
+	"idealFor": "Picking a ready-made gradient for a background or a button."
+}

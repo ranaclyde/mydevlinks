@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Icoon is a store of AI-generated graphic assets: 3D icons, illustrations, mockups and images for websites, apps, landing pages and print. Files come in SVG, PNG and editable PSD, and there's a mockup generator and a section of free assets.",
+		"It's a good fit when you need illustrations or 3D icons with an eye-catching style for a landing page or a product, without hiring an illustrator."
+	],
+	"uses": [
+		"Illustrating a landing page hero with a 3D icon in PNG.",
+		"Using SVG illustrations on an onboarding screen or in an app's empty states.",
+		"Tweaking an asset in the editable PSD to match a client's brand."
+	],
+	"caveats": [
+		"You can't resell or distribute the assets separately, or sell them individually without substantially modifying them.",
+		"Purchases can't be returned or refunded, so look through the catalog carefully before you pay.",
+		"It's not a UI icon library with an npm package; these are assets you download and place by hand."
+	],
+	"pricingNote": "There are free assets; access to the whole catalog costs $29 as a one-time payment (a sale price versus $59), with a commercial license.",
+	"idealFor": "Landing pages and products that need ready-to-use illustrations and 3D icons."
+}

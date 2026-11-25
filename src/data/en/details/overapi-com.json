@@ -1,0 +1,17 @@
+{
+	"whatIs": [
+		"OverAPI is a directory with hundreds of cheat sheets: languages like Python, PHP or Java, libraries like jQuery or Express, and tools like Git, Docker and Vim, plus topics such as regular expressions and Linux. Each sheet summarizes the syntax and methods on a single page, with links to the official documentation. Everything is in English.",
+		"It's a good fit when you need to quickly recall a syntax or a method name, without opening the full documentation."
+	],
+	"uses": [
+		"Recall the syntax of a regular expression or a Git command without leaving your workflow.",
+		"See the string methods of a language you rarely use on a single page.",
+		"Review Vim or Linux commands before working on a server."
+	],
+	"caveats": [
+		"Some of the content is old: the Python sheet, for example, points to a version 2.6 reference, so don't use it for recent versions.",
+		"Many documentation links use old http addresses that may redirect or point to outdated pages."
+	],
+	"pricingNote": "Free access to all the sheets.",
+	"idealFor": "Quick syntax lookups, especially for stable tools and languages."
+}

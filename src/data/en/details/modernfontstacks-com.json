@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Modern Font Stacks collects CSS font-family declarations that use fonts already installed on modern operating systems. They're organized into 15 categories, such as System UI, Humanist, Old Style, Neo-Grotesque or Monospace Code.",
+		"It's a good fit when speed matters: since the fonts are already on the device, text appears instantly and without shifts while the page loads, and all you have to do is copy the stack into your CSS."
+	],
+	"uses": [
+		"Using the System UI stack as the base typeface of an application.",
+		"Choosing a monospace stack for code blocks without loading fonts.",
+		"Giving a blog a serif or humanist look without requesting font files."
+	],
+	"caveats": [
+		"Because they're system fonts, the look changes depending on the device and operating system.",
+		"It doesn't download or host fonts: it's no use if you need an identical typeface everywhere.",
+		"Some stacks have few weights on certain systems and the browser fakes bold, so read the notes for each one."
+	],
+	"pricingNote": "Open project under the CC0 license, with no paid plans.",
+	"idealFor": "Fast sites that prefer system fonts over downloading typefaces."
+}

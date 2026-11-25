@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Nuxt is a full-stack framework for Vue. It provides file-based routing, layouts, data fetching and the option to choose per page between server-side rendering, client-side rendering or static generation, with TypeScript and automatically generated types.",
+		"It's a good fit when you want to build an app or site with Vue that has good SEO and performance without setting up routing or render configuration yourself. It's extended with more than 200 modules."
+	],
+	"uses": [
+		"Building a marketing site or blog with Vue that gets indexed well, using server-side rendering or static generation.",
+		"Setting up an app with file-based routes, shared layouts and data that loads on both the server and the client.",
+		"Adding middleware that decides before rendering, for example for localization or A/B tests."
+	],
+	"caveats": [
+		"The current documentation is for version 4.x; if you're coming from an earlier version, check the migration guide before upgrading.",
+		"Mixing server-side and client-side rendering means taking care with browser-dependent code and hydration.",
+		"Some features come from community modules, so check that they're maintained and compatible with your version."
+	],
+	"pricingNote": "Open source under the MIT license.",
+	"idealFor": "Teams that use Vue and want a complete framework with flexible rendering."
+}

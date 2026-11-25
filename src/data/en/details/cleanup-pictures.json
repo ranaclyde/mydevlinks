@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Cleanup.pictures is a web app that uses AI inpainting to remove objects, people, text, logos, watermarks or blemishes from a photo. Instead of cloning a neighboring area, it reconstructs what would be behind the removed element.",
+		"It's a good fit when you need to retouch an image quickly without opening a full editor. It also offers a pay-as-you-go inpainting API, useful if you want to automate the process."
+	],
+	"uses": [
+		"Removing a cable, a sign or a person from the background of a product photo or a mockup.",
+		"Erasing text or a watermark from a screenshot before using it in a presentation.",
+		"Integrating the inpainting API into your own tool to clean up images uploaded by users."
+	],
+	"caveats": [
+		"On the free plan, export is limited to 720 px; unlimited resolution requires Pro.",
+		"Results depend on the AI: on complex backgrounds you may need to repeat the edit or touch up the area.",
+		"The API is billed per use and its documentation is on Clipdrop, the service it belongs to; check the rates there before integrating it."
+	],
+	"pricingNote": "Free with unlimited images exported at 720 px; Pro costs $5 a month or $36 a year.",
+	"idealFor": "Quick image retouching without installing an editor."
+}

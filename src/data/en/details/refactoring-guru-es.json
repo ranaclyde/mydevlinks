@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Refactoring.Guru is a site by Alexander Shvets that explains the 22 classic design patterns (creational, structural, and behavioral) and the SOLID principles, with illustrations, UML diagrams, and code examples in C#, C++, Go, Java, PHP, Python, Ruby, Rust, Swift, and TypeScript. It also has a catalog of code smells and refactoring techniques.",
+		"It's a good fit when you want to understand what problem a pattern solves, when to apply it, and what it looks like in your language, without wading through an academic book."
+	],
+	"uses": [
+		"Reviewing how Strategy or Observer works before applying it in your code.",
+		"Comparing how a pattern is implemented in TypeScript, Python, or Go.",
+		"Spotting a code smell, such as an overly long method, and seeing which refactoring fixes it."
+	],
+	"caveats": [
+		"The patterns section is in Spanish, but the refactoring catalog and the course are still in English.",
+		"The examples follow object-oriented programming; in functional code, some patterns don't apply as-is.",
+		"The site frequently promotes its ebook, its course, and the author's other courses."
+	],
+	"pricingNote": "The web content is free. The ebook Dive Into Design Patterns (Sumérgete en los patrones de diseño in Spanish) costs $30 and the course Dive Into Refactoring costs $40, both frequently discounted.",
+	"idealFor": "Developers who want to learn design patterns and refactoring with examples in their own language."
+}

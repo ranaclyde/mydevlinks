@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"One Page Love is a gallery of single-page sites, curated since 2008. Besides the sites, which are tagged by genre (portfolio, landing page, SaaS, e-commerce, restaurant, experimental), it organizes examples by section type (testimonials, FAQ, pricing, lead capture) and by typeface, and includes templates and articles.",
+		"It's a good fit when you're about to build a landing page or a portfolio and want to see how others solved a specific section or a similar genre."
+	],
+	"uses": [
+		"Looking at pricing or FAQ section examples before designing yours.",
+		"Searching for sites that use a typeface like Inter or Montserrat to see how it's applied.",
+		"Starting from a free or paid template for a landing page in Next.js with Tailwind or in Framer."
+	],
+	"caveats": [
+		"It only collects single-page sites, so it's no use for seeing app flows.",
+		"Part of the template catalog is paid, with individual prices of around $39 to $47.",
+		"The templates use different technologies (Next.js, Framer); check which one each uses before choosing it."
+	],
+	"pricingNote": "The gallery is free; some templates are sold separately starting at about $39.",
+	"idealFor": "Anyone building a landing page or a portfolio who wants references by section or genre."
+}

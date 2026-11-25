@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Shots is a browser-based editor that turns screenshots into mockups: you upload or paste the image, pick a device or frame, adjust the background, borders and shadow, and export it ready to publish. It also generates animations and videos with zoom and motion presets.",
+		"It's a good fit when you need to showcase an app or a site on social media, on a landing page or in a portfolio without opening a design program."
+	],
+	"uses": [
+		"Put your app's screenshot inside an iPhone for a launch announcement.",
+		"Build an image with a gradient background and shadow from a screenshot of your site for a post or a README.",
+		"Create a short video zooming in on a new feature to show it on social media."
+	],
+	"caveats": [
+		"It's for presenting screenshots, not for designing: you have to bring the screen content ready to go.",
+		"The images you upload are hosted on its servers to operate the service; avoid using it with screenshots that show sensitive data.",
+		"Paid plans renew automatically; if you cancel, access continues until the end of the period and refunds aren't automatic."
+	],
+	"pricingNote": "It has a Free plan and paid Basic and Pro plans with monthly or annual renewal; their prices aren't published.",
+	"idealFor": "Developers who want to show off their product with eye-catching mockups in a few minutes."
+}

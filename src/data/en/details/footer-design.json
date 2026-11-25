@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Footer is a curated gallery of footers from real sites. Each entry has a thumbnail, the name, a short description and links to its detail page and to the live site; some carry the \"Editor's Choice\" badge.",
+		"It's organized by type and style, with categories like Typographic, Grid, Animated, Cards, Dark or Large Type, and a \"browse\" page with all of them. It's useful when you only need to solve that one section."
+	],
+	"uses": [
+		"Looking at large-type footers before deciding how to close out a landing page.",
+		"Comparing how footers with many columns and footers with almost none organize their links.",
+		"Looking for examples of animated footers to inspire an effect when you reach the bottom of the page."
+	],
+	"caveats": [
+		"It has no search; you can only browse by category and through pages with \"Load more\".",
+		"It shows only footers, so it doesn't help with the rest of the page.",
+		"It includes the occasional sponsored ad among the results."
+	],
+	"pricingNote": "Free to browse, with no account.",
+	"idealFor": "People who need specific footer references."
+}

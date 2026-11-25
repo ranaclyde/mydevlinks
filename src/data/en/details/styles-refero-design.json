@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Refero Styles is Refero's design system library: more than 2,000 styles extracted from well-known product sites, each with its palette, typography, spacing and components, and a DESIGN.md file ready to use in Cursor, Claude Code, Codex, v0 or Lovable. It's marked as beta and is a separate product from Refero, which collects app screens and flows.",
+		"You browse it with a search, style tags (for example monospace terminal or warm editorial) and Trending, Popular and Newest tabs. Use it when you want your interface, or your AI agent, to start from a specific product's visual identity instead of a generic look."
+	],
+	"uses": [
+		"Copying the color tokens and type scale from a system you like to start your project's theme.",
+		"Giving your coding agent a style's DESIGN.md so it generates components with that aesthetic.",
+		"Searching for a visual direction by tag, such as trustworthy fintech or Bauhaus geometry, and comparing several options side by side."
+	],
+	"caveats": [
+		"It's a beta, so the catalog and the DESIGN.md format may change.",
+		"The styles are interpretations of other people's sites: use them as a starting point and don't reproduce brands, logos or licensed typefaces.",
+		"It only describes the visual style; it doesn't show screens or flows, which live in Refero."
+	],
+	"pricingNote": "You can browse and copy the styles and their DESIGN.md files for free; connecting them to your agent through MCP requires Refero's Pro plan.",
+	"idealFor": "Anyone who wants to start from a well-known product's visual system, by hand or with an AI agent."
+}

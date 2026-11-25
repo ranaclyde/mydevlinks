@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Supahero is a library of website hero sections: a long grid with hundreds of entries, where each card shows a screenshot of a page's header and links to its own detail page. It's now part of screensdesign and has a search box in the top bar.",
+		"It's a good fit when you're about to design the first screen of a landing page and want to see how others solve it: headlines, calls to action, use of color and customer logos."
+	],
+	"uses": [
+		"Comparing several SaaS product heroes before deciding where to put the main button on your landing page.",
+		"Looking for examples of heroes with 3D or motion to bring to a designer as a reference.",
+		"Checking how headline, subtitle and logo row are combined on the first screen of a developer product."
+	],
+	"caveats": [
+		"It only shows each site's header, not the full page or how it behaves.",
+		"The home page is a single grid with no visible categories; to narrow it down you have to use the search.",
+		"With the screensdesign integration, some links take you out of the gallery to its app library."
+	],
+	"pricingNote": "Browsing the gallery is free; the plans on its pricing page are featured slots for advertising a site, starting at $79 for 30 days.",
+	"idealFor": "People designing the main section of a landing page who are looking for references."
+}

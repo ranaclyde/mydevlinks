@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Tailwind CSS Animated is a plugin that extends Tailwind with utilities to control every property of a CSS animation, such as animate-duration-500, animate-delay-300 or animate-once. It also includes 19 ready-made animations, such as animate-wiggle or animate-jump-in, and a visual configurator that generates the classes for you to copy.",
+		"It's a good fit when you want to animate entrances, attention-grabbers or loading states without writing keyframes by hand or adding a JavaScript library."
+	],
+	"uses": [
+		"Making the cards on a landing page enter with a staggered delay when the page loads.",
+		"Drawing attention to a button or a notification with a repeating animation.",
+		"Trying out an animation in the configurator and copying the exact classes into your component."
+	],
+	"caveats": [
+		"It works with Tailwind 3.1 and later and with Tailwind 4, but it's registered differently: in 4 you import it in the CSS, and in 3 you add it to plugins in tailwind.config.js.",
+		"These are declarative CSS animations; for complex sequences or scroll-driven animations you'll need another tool.",
+		"For eye-catching animations, respect the user's reduced motion setting by using Tailwind variants such as motion-safe."
+	],
+	"pricingNote": "Open source plugin under the MIT license, free via npm.",
+	"idealFor": "Tailwind projects that want simple animations without writing CSS."
+}

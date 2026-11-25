@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Layers is a community where designers and studios publish their work: interface concepts, animations and product pieces. Besides the post feed, it has profiles of rising designers, a section of industry news with voting, and a job board.",
+		"It's useful for seeing what people who design every day are doing and following whoever interests you, more than for browsing an organized catalog."
+	],
+	"uses": [
+		"Follow designers or studios whose style you like and see their new posts in your feed.",
+		"Look at interface concepts and flow animations for inspiration before proposing a screen.",
+		"Check the news section to keep up with changes in tools like Figma or Adobe."
+	],
+	"caveats": [
+		"The style tags (Minimalist, Landing Page, SaaS, Dashboard…) and the search help, but the content is a community feed and quality varies from post to post.",
+		"Many posts are portfolio concepts, not real products in production.",
+		"You need to sign up to follow accounts and take part."
+	],
+	"pricingNote": "Browsing and signing up are free.",
+	"idealFor": "Anyone who wants inspiration from the design community's recent work."
+}

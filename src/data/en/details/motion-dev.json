@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Motion is the animation library formerly known as Framer Motion. It covers animations, layout, scroll, gestures and 3D for React, Vue and plain JavaScript, with hardware acceleration. You install it with npm install motion, and its minimal animate function starts at 3.2 kB.",
+		"It's a good fit when you need high-performance UI animations, from microinteractions to layout transitions, and you want a single API across different frameworks."
+	],
+	"uses": [
+		"Animating the entrance and exit of modals and lists in a React app.",
+		"Creating scroll-linked effects, such as progress bars or sections that fade in.",
+		"Moving elements with drag gestures or shared layout transitions."
+	],
+	"caveats": [
+		"The bundle size grows with what you use; to keep it down there's a minimal animate function and LazyMotion, which loads features on demand.",
+		"Motion+ adds paid components, examples and tools; the library works in full without it.",
+		"The React API and the plain JavaScript API are different, so check the documentation for your framework."
+	],
+	"pricingNote": "The library is open source under the MIT license; Motion+, with extra examples, components and tools, is sold separately from $399 per developer.",
+	"idealFor": "React, Vue or JS developers who want smooth animations."
+}

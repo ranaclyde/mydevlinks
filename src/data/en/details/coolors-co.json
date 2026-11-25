@@ -1,0 +1,17 @@
+{
+	"whatIs": [
+		"Coolors is a palette generator: pressing the spacebar produces new combinations, and you can also explore a library of palettes, extract colors from a photo, check contrast and preview colors on sample designs. It also includes a tool for Tailwind CSS palettes.",
+		"Palettes can be exported as URL, PDF, image, CSS, ASE, SVG, code, Tailwind or embed. It's a good fit when you want to arrive at a palette quickly and bring it into your code or design tool."
+	],
+	"uses": [
+		"Generating a 5-color palette for a new project and exporting it as CSS.",
+		"Pulling the colors from a photo or logo with the image picker.",
+		"Creating a color scale for Tailwind CSS and moving it into your configuration."
+	],
+	"caveats": [
+		"The free plan shows ads, limits palettes to 5 colors and lets you save only 10 palettes, 1 project and 1 collection.",
+		"Contrast checks within palettes, color variations and advanced export are part of Pro."
+	],
+	"pricingNote": "Free plan with limits; Pro costs $3 a month.",
+	"idealFor": "Designers and developers who explore and export palettes."
+}

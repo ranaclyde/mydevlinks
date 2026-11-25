@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"MUI is a family of component libraries for React. Its centerpiece is Material UI, which implements Google's Material Design with buttons, forms, tables, dialogs, and more. Alongside it are Base UI, with unstyled, accessible components, and MUI System, with CSS utilities for layout. MUI X adds advanced components, such as data grids and date pickers.",
+		"It's a good fit when you want a mature, widely used React library with extensive documentation and a large community, and you don't mind starting from the Material look."
+	],
+	"uses": [
+		"Building an admin panel with tables, forms, and side navigation already solved.",
+		"Customizing the theme of your whole app (colors, typography, borders) from a single place.",
+		"Starting from an app template to kick off a product without designing every screen."
+	],
+	"caveats": [
+		"It's a React library, so it doesn't work directly with other frameworks.",
+		"The advanced MUI X components (Pro and Premium) require a paid per-developer license; the Community ones are free.",
+		"Moving away from the default Material look takes theme customization work."
+	],
+	"pricingNote": "The core is free under the MIT license; MUI X components cost $299 per developer per year for Pro and $599 for Premium.",
+	"idealFor": "React apps that need a complete, proven set of components."
+}

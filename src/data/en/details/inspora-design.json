@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Inspora is a curated archive of recent visual design. It brings together websites, logos, and app icons, as well as branding, product, motion, illustration, and 3D work, and links to the source of each piece when there is one.",
+		"It's a good fit when you need fresh references before designing a landing page, an identity, or an interface, and want to get quickly to the original work and its creator."
+	],
+	"uses": [
+		"Gathering website references before redesigning a landing page.",
+		"Reviewing logos and app icons to define a brand's style.",
+		"Finding the creators of a piece you liked to see their portfolio."
+	],
+	"caveats": [
+		"It's a reference gallery: it doesn't provide code or downloadable files of the designs.",
+		"You have to sign in to save inspiration.",
+		"Some entries are marked as sponsored."
+	],
+	"pricingNote": "Free to browse; the site only sells sponsorship spots to brands.",
+	"idealFor": "Designers and developers looking for current visual references."
+}

@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Shaders is an open source (MIT) library with about 200 visual effect components rendered with WebGPU: gradients, distortions, glass, ASCII or effects that follow the cursor. You install it with npm install shaders and it works in React, Vue, Svelte, Solid, plain JavaScript and Framer. It includes a free visual editor for combining effects as layers and exporting them as code.",
+		"It's a good fit when you want eye-catching backgrounds or surface effects on your site without writing GLSL or WGSL by hand."
+	],
+	"uses": [
+		"Adding an animated aurora-style background to a landing page hero.",
+		"Applying a blur or glass effect over images and sections of an interface.",
+		"Composing several effects as layers of a single component in React or Vue."
+	],
+	"caveats": [
+		"It runs on WebGPU: on a device without support the canvas stays transparent and you only see what's behind it, so design a fallback background.",
+		"The effects run on the GPU and can be heavy on low-end phones, so measure performance before filling the page with them.",
+		"The library of more than 1,000 finished shaders and the copy-ready sections are part of Shaders Pro; the components, editor, CLI and MCP are free."
+	],
+	"pricingNote": "Components and editor are free; Shaders Pro costs $120 a year or $299 as a one-time payment.",
+	"idealFor": "Frontend developers who want ready-to-use WebGPU effects."
+}

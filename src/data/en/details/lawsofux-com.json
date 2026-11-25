@@ -1,0 +1,17 @@
+{
+	"whatIs": [
+		"Laws of UX collects 30 laws and principles from psychology applied to interface design, such as Hick's law, Fitts's law, Miller's law and Jakob's law. Each one has its own page with a short explanation and examples. The site is in English and is also available in Spanish, French, Arabic and Persian.",
+		"It's a good fit if you design or build interfaces and want to justify decisions with well-known principles, or if you're learning UX and want a quick, visual reference."
+	],
+	"uses": [
+		"Explaining to your team why a menu with fewer options gets decided on faster, citing Hick's law.",
+		"Checking the size and spacing of buttons on a mobile screen with Fitts's law.",
+		"Reviewing the principles before a design critique or a UX interview."
+	],
+	"caveats": [
+		"These are general principles to guide your judgment, not rules that guarantee a good result in every case.",
+		"Each law is explained briefly; to go deeper you need to turn to the book or other sources."
+	],
+	"pricingNote": "The website is free; the book, a deck of cards and a poster are sold separately.",
+	"idealFor": "People who design interfaces and want to back up their decisions with psychology principles."
+}

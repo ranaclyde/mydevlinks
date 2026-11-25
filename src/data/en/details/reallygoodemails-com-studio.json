@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"RGE Studio is a collaborative editor for building HTML emails, made by Really Good Emails, which is part of Beefree and uses its editing technology. It offers a library of more than 1,250 editable, mobile-friendly templates, an AI assistant for generating drafts, and export to sending platforms and CRMs.",
+		"It's a good fit when you need to build polished newsletters or transactional emails without writing the HTML by hand, and when several people need to comment on and approve the designs."
+	],
+	"uses": [
+		"Laying out a product's welcome email starting from a template and exporting the HTML.",
+		"Having the marketing team review and approve a design inside the editor before exporting it.",
+		"Locking in brand styles so other people on the team don't stray from the design."
+	],
+	"caveats": [
+		"The free plan is limited to 10 designs and 6 exports per month.",
+		"Advanced brand controls, built-in approvals and the quality assistant are on the Business and Enterprise plans.",
+		"Professional costs $30 per month billed monthly or $25 per month billed annually, and includes 2 users; each extra seat is paid separately."
+	],
+	"pricingNote": "The Starter plan is free; Professional starts at $25 per month (billed annually), and there are Business and Enterprise plans.",
+	"idealFor": "Teams that design HTML emails and need templates and approvals."
+}

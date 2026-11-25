@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"blobatar generates geometric avatars from any text: the same text always produces the same avatar, so it works as a default profile image without storing anything. It has no dependencies and weighs about 4.4 KB compressed.",
+		"It's a good fit when you need unique, consistent avatars for users without a photo. There's a React component and an editor to adjust each trait."
+	],
+	"uses": [
+		"Showing a default avatar in a user list using their name or email as the seed.",
+		"Giving a blog's comments a visual identity without requiring sign-up.",
+		"Animating the avatar on hover with animate=\"hover\" on the Blobatar component."
+	],
+	"caveats": [
+		"If you use the email as the seed, the avatar is tied to that data: think about whether you want to expose it.",
+		"Without the animate prop, the component renders as a plain image; animations have to be turned on and require importing the motion CSS.",
+		"The official component is for React; in other environments you'll have to use the base package."
+	],
+	"pricingNote": "Open source under the MIT license.",
+	"idealFor": "Apps with users who have no photo and need unique, stable avatars."
+}

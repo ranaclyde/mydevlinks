@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Kokonut UI is an open source library of 116 React components designed for AI apps, built with Tailwind CSS, Motion and shadcn/ui. It works as a shadcn registry: with one command, such as npx shadcn@latest add @kokonutui/particle-button, the component's code is copied into your repository.",
+		"It's a good fit when you already use shadcn/ui and want flashier pieces, such as animated buttons or chat input fields, that you can freely modify."
+	],
+	"uses": [
+		"Adding a prompt input box to an AI chat.",
+		"Adding animated buttons and cards to a landing page built with React.",
+		"Configuring the registry in components.json to install pieces by short name."
+	],
+	"caveats": [
+		"It requires a React project with Tailwind and shadcn/ui already set up.",
+		"The animations use Motion, so each component may add that dependency.",
+		"The more complete blocks, such as sections and templates, are part of a separate Pro version."
+	],
+	"pricingNote": "The library is free under the MIT license; the Pro version costs $119 as a one-time payment, with lifetime access.",
+	"idealFor": "Developers using shadcn/ui who want animated components for AI apps."
+}

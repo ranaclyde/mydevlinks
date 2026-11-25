@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Basecoat is a component library for Tailwind that brings shadcn/ui's style without depending on React. You use it with plain HTML and it fits backends like Flask, Rails, Laravel or Django. It offers 42 components.",
+		"It's a good fit when you render HTML on the server and want polished components without setting up a React project."
+	],
+	"uses": [
+		"Building an internal dashboard in Django or Rails with consistent tables, forms and buttons.",
+		"Prototyping a static page by loading only the stylesheet from a CDN.",
+		"Adding dropdown menus, modals and tabs to a site with server-side templates."
+	],
+	"caveats": [
+		"The npm stylesheets assume you already use Tailwind and must be loaded after its preflight so they don't override styles.",
+		"Interactive components, such as Dropdown Menu, Select or Tabs, need their JavaScript scripts.",
+		"Chart and Drawer are listed as beta, and Chart is left out of the all-in-one bundle: you have to load Chart.js separately."
+	],
+	"pricingNote": "Open source under the MIT license.",
+	"idealFor": "Sites with server-rendered HTML that want shadcn/ui-style components."
+}

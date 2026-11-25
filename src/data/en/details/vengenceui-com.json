@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Vengeance UI is a collection of animated React components designed for marketing sites: hover effects, animated tooltips, and layouts that react to scroll. It includes about 46 components in nine families, plus blocks and templates.",
+		"You add them with the shadcn CLI, so the code ends up in your project. It's a good fit if you already use React or Next.js and want to bring a landing page to life without coding the animations."
+	],
+	"uses": [
+		"Adding hover effects and animated tooltips to a landing page's buttons.",
+		"Building a product section with a layout that changes as you scroll.",
+		"Starting from a block template to quickly launch a campaign site."
+	],
+	"caveats": [
+		"It's aimed at React and Next.js; outside that ecosystem it won't be useful.",
+		"These are eye-catching marketing effects, not a foundation of form or dashboard components.",
+		"The animations add weight and motion, so test performance on modest mobile devices."
+	],
+	"pricingNote": "Open source under the MIT license, with no paid plans.",
+	"idealFor": "React or Next.js landing pages that need animated interactions."
+}

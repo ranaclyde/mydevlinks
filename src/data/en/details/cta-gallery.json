@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"CTA.gallery is a gallery of calls to action from real sites. You filter by industry and mode, and by eight categories: button, purchase, download, form, modal or pop-up, navigation, newsletter and pricing or subscription.",
+		"It's a good fit when you already have the page built and need to decide how to design the element that converts, without starting from scratch."
+	],
+	"uses": [
+		"Comparing how several products present their pricing section before designing yours.",
+		"Choosing the style of a subscription or newsletter form for a landing page.",
+		"Reviewing examples of modals and pop-ups so yours doesn't come across as intrusive."
+	],
+	"caveats": [
+		"It shows the visual result of each CTA, not its code or conversion data.",
+		"Examples load in batches with Load More, so going through a whole category takes several clicks.",
+		"It includes sponsored links to templates alongside the examples."
+	],
+	"pricingNote": "Free to browse; the site offers advertising and example submissions.",
+	"idealFor": "Anyone designing landing pages who wants conversion-focused inspiration."
+}

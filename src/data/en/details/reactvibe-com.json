@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"React Vibe is a collection of React components focused on motion: UI blocks, hero sections, animated backgrounds, text animations and dashboard systems. You copy the code into your project and modify it; it isn't installed as a package. The components that animate use Framer Motion, which you install once.",
+		"It's a good fit when you want a landing page or dashboard with an expressive interface and prefer to own the code of each component."
+	],
+	"uses": [
+		"Build a landing page's hero section with animated backgrounds and text.",
+		"Add a pricing, FAQ or testimonials block to a product page.",
+		"Build a dashboard with cards, tables and charts as a base for a SaaS."
+	],
+	"caveats": [
+		"It's a single-author personal project with few GitHub stars; don't expect the backing of a large library.",
+		"The animated components depend on Framer Motion, which adds weight to the bundle.",
+		"The dashboards marked PRO are part of the TaskForge template, which is sold separately."
+	],
+	"pricingNote": "The components are open source under the MIT license; the TaskForge template is sold separately.",
+	"idealFor": "React landing pages and dashboards with animations, with each component's code in your project."
+}

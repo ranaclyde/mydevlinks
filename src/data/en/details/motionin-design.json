@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Motionin.design is a catalog of interactive, animated web sections, with physics and cursor effects, that you copy as a prompt and paste into an AI coding tool. Each section has a demo, and the filter lets you see the free and paid ones.",
+		"It's a good fit for giving a landing page a level of interaction that's hard to write by hand, without building it from scratch."
+	],
+	"uses": [
+		"Add an interactive hero section to an AI-generated landing page.",
+		"Check a section's demo before pasting its prompt into your editor.",
+		"Reuse animated sections in client work."
+	],
+	"caveats": [
+		"Only some sections are marked as free; the rest require a subscription or a one-time payment.",
+		"You need an AI coding tool, and the result depends on it: review the code and the performance of the animations.",
+		"The monthly plan unlocks only 3 sections per month, and they stay available for as long as the subscription lasts."
+	],
+	"pricingNote": "Some sections are free; the monthly plan costs $9 (3 sections per month), and there's a one-time payment whose price goes up as the library grows.",
+	"idealFor": "Landing pages with eye-catching animations built with an AI assistant."
+}

@@ -1,0 +1,17 @@
+{
+	"whatIs": [
+		"Awesome Vue is a curated list, maintained in a GitHub repository, of resources from the Vue ecosystem. It's organized into resources (tutorials, books, courses, podcasts, newsletters, conferences), companies and projects that use Vue, and components and libraries (UI, utilities, integrations, development tools).",
+		"It's a good fit when you're looking for a Vue library or resource and want to see several options at a glance; you browse it with the README's table of contents or your browser's search."
+	],
+	"uses": [
+		"Looking for a UI component library for a Vue project and comparing alternatives.",
+		"Finding courses, books or podcasts for learning Vue.",
+		"Seeing examples of real projects built with Vue for inspiration."
+	],
+	"caveats": [
+		"It's a very long README, with no filters or search of its own: you have to scroll through it or use Ctrl+F.",
+		"A library appearing on the list doesn't guarantee it's still maintained; check its repository and its license."
+	],
+	"pricingNote": "Free list under the MIT license; each listed resource has its own license and price.",
+	"idealFor": "Anyone who works with Vue and wants libraries and resources in one place."
+}

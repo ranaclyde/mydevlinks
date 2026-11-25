@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"This DevDojo page shows about 40 button designs made with Tailwind, organized into four sections: hover effects, simple, dark and simple in dark mode. Each button has a link to copy its HTML.",
+		"It's a good fit when you need a good-looking button that's already done and don't want to install a whole library."
+	],
+	"uses": [
+		"Copying a button with a hover effect for a landing page's call to action.",
+		"Choosing a dark variant for a site with dark mode.",
+		"Trying a button in a CodePen before bringing it into your project."
+	],
+	"caveats": [
+		"They're only buttons: for other components you'll have to look elsewhere.",
+		"The code gets pasted into your project and is designed for Tailwind with JIT mode enabled.",
+		"Each button is static HTML; if you want states or behavior you'll have to add them yourself."
+	],
+	"pricingNote": "The buttons are free to copy; DevDojo promotes Tails, a different product, separately.",
+	"idealFor": "People who need a Tailwind button ready to copy and paste."
+}

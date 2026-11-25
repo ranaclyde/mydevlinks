@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Figma Motion is Figma's tool for creating animations directly on the canvas, with presets, keyframes with Bézier curves and springs, and an AI agent that generates motion from a description. Animations export as MP4, GIF, SVG or WebM.",
+		"It's a good fit when you design interfaces in Figma and want to define the motion right there and hand it off to the development team."
+	],
+	"uses": [
+		"Prototype a screen's entrance animation before coding it.",
+		"Hand developers the motion timeline and copy the code as CSS, JSON or React from Dev Mode.",
+		"Export an animation as GIF or MP4 for a presentation or a post."
+	],
+	"caveats": [
+		"It's in open beta and requires a Full seat; you can use it on the free Starter plan, but publishing animated components, generating with the AI agent and exporting high-resolution video require a paid Full seat.",
+		"Features such as custom presets, 3D transforms and full transitions between screens are still listed as coming soon.",
+		"Dev and Collab seats don't include it, which matters if your team only reviews designs."
+	],
+	"pricingNote": "Motion beta works with a Full seat, including on the free plan; the AI agent and high-resolution export require a paid Full seat, starting at $16 per month.",
+	"idealFor": "Teams that design in Figma and want to define motion there."
+}

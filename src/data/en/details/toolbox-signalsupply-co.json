@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Toolbox by SignalSupply is a collection of small web design tools, currently in beta. It includes GradientBlob CSS (gradient blob backgrounds you copy as CSS), GradientBlob SVG, a pattern generator, Shapr (shapes such as squircle, star and sunburst), a blob generator and Perspectr, which applies perspective to an image you drag in.",
+		"It's a good fit when you need a quick decorative element, like a blob or a gradient background, and want to take it into your code as SVG or CSS."
+	],
+	"uses": [
+		"Generating an organic blob and copying it as SVG for a landing page hero.",
+		"Creating a background of gradient blobs and copying its CSS.",
+		"Building a pattern of geometric shapes and downloading it as SVG or PNG."
+	],
+	"caveats": [
+		"Some features are locked behind the PRO license: the GradientBlob SVG tool, several blob generators and most of the shapes in the pattern generator.",
+		"The free version of GradientBlob CSS is called Lite and is more limited than the full one.",
+		"The site is marked as beta, so the tools may change."
+	],
+	"pricingNote": "Several tools are free and PRO unlocks all of them for $3 per month or $35 per year.",
+	"idealFor": "Designers and developers who need quick blobs, patterns and decorative backgrounds."
+}

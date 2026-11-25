@@ -1,0 +1,17 @@
+{
+	"whatIs": [
+		"Eyecandy is a library of visual techniques from film, video and motion, such as dolly zoom, datamosh, parallax or match cut. Each technique has a short definition and a grid of clips from music videos, ads and movies where it's used.",
+		"It's useful for putting a name to an effect you saw and finding more examples, or for looking for ideas before animating a website, a product video or a presentation."
+	],
+	"uses": [
+		"Look for references of transitions or camera movements before animating a landing page hero.",
+		"Find out what an effect is called so you can then search for a tutorial or a library that reproduces it.",
+		"Put together a motion moodboard to agree on the tone of a product video with your team."
+	],
+	"caveats": [
+		"It's video inspiration: it has no code, templates or files to download.",
+		"The clips belong to their authors and are shown for educational purposes, so they can't be reused without permission."
+	],
+	"pricingNote": "Free and ad-free; an account is only needed to take part by submitting techniques.",
+	"idealFor": "Anyone who designs motion and wants references with proper names."
+}

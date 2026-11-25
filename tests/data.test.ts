@@ -153,4 +153,14 @@ describe('traducciones al inglés', () => {
 		const missing = translated.filter((file) => !existsSync(join(detailsDir, file)) || !ids.has(parse(file).name));
 		expect(missing).toEqual([]);
 	});
+
+	it('cada detalle traducido tiene los mismos párrafos, usos y advertencias que el original', () => {
+		const read = (dir: string, file: string) => JSON.parse(readFileSync(join(dir, file), 'utf8'));
+		const shape = (detail: Record<string, string[]>) => ['whatIs', 'uses', 'caveats'].map((key) => detail[key]?.length);
+		const translated = readdirSync(enDir).filter((file) => file.endsWith('.json') && existsSync(join(detailsDir, file)));
+		const differ = translated.filter(
+			(file) => shape(read(enDir, file)).join() !== shape(read(detailsDir, file)).join(),
+		);
+		expect(differ).toEqual([]);
+	});
 });

@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"ShipFree is a Next.js starter template with TypeScript and Tailwind that handles the repetitive parts of a SaaS: authentication with Better Auth (social login, email verification and sessions), payments with Stripe, Polar, Lemon Squeezy or Creem, a PostgreSQL database with Drizzle, and email with Resend.",
+		"It's a good fit when you want to launch a product fast and prefer starting from an already integrated structure instead of wiring up each service yourself."
+	],
+	"uses": [
+		"Kick off a subscription SaaS with sign-up, sessions and billing already connected.",
+		"Test a product idea without spending the first week setting up auth and payments.",
+		"Study how Better Auth, Drizzle and a payment gateway fit together in a Next.js project."
+	],
+	"caveats": [
+		"You commit to its stack (Next.js, Drizzle, PostgreSQL, Better Auth); changing it later means rewriting parts.",
+		"There are several external services to set up, such as the PostgreSQL database, the payment gateway and Resend.",
+		"Internationalization, roles and invitations, a blog, PostHog integration and CI flows with Playwright only come in the paid Premium edition."
+	],
+	"pricingNote": "The Community edition is free under the MIT license; Premium is a one-time payment of $90.",
+	"idealFor": "Developers who want to launch a SaaS with Next.js without building auth and payments from scratch."
+}

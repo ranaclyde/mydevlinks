@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"PageSpeed Insights is Google's tool for measuring a page's performance: you paste a URL and get a report with scores and improvement recommendations, for mobile and desktop.",
+		"The report combines two sources. Field data comes from the Chrome User Experience Report (CrUX) and reflects real users over the last 28 days. Lab data comes from Lighthouse, which simulates a page load on a specific device and network and is useful for debugging."
+	],
+	"uses": [
+		"Checking whether a page passes the Core Web Vitals using real user data.",
+		"Finding which resources or scripts slow down loading using the improvement audits.",
+		"Comparing performance before and after a change, such as optimizing images."
+	],
+	"caveats": [
+		"Field and lab data can differ, because one measures a variety of users and the other a single simulation.",
+		"If a page has little traffic, there may be no field data, and the report uses data for the whole origin or shows none.",
+		"Lab scores vary from one run to the next, so repeat the test before drawing conclusions."
+	],
+	"pricingNote": "You can use it without an account or payment.",
+	"idealFor": "Measuring and improving a page's speed with Google data."
+}
