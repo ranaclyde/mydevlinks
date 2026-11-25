@@ -86,3 +86,14 @@ export async function analyze({ id, url }) {
 	}
 	return entry;
 }
+
+/** Pide la URL sin leer el cuerpo y devuelve el estado HTTP y la URL final, o el error de red. */
+export async function checkLink(url) {
+	try {
+		const res = await get(url);
+		await res.body?.cancel();
+		return { ok: res.ok, status: res.status, finalUrl: res.url };
+	} catch (err) {
+		return { error: err?.cause?.code ?? err?.cause?.message ?? err?.message ?? String(err) };
+	}
+}

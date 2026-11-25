@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Guía para agregar un enlace
+    url: https://github.com/ranaclyde/mydevlinks/blob/main/docs/adding-links.md
+    about: Si quieres sumar el enlace tú mismo con un pull request.
+  - name: Cómo contribuir
+    url: https://github.com/ranaclyde/mydevlinks/blob/main/CONTRIBUTING.md
+    about: Convenciones del proyecto y otros tipos de aporte.

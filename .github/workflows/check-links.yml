@@ -1,0 +1,54 @@
+# Pide cada enlace del directorio una vez por semana y mantiene un issue con lo que hay que atender:
+# caídos, redirigidos a otro dominio y detalles sin revisar hace más de 6 meses.
+# Lo actualiza si ya está abierto y lo cierra cuando no queda nada pendiente.
+name: Revisión de enlaces
+
+on:
+  schedule:
+    - cron: '0 12 * * 1' # lunes 12:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: check-links
+  cancel-in-progress: true
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+
+      # pnpm toma la versión del campo packageManager de package.json.
+      - uses: pnpm/action-setup@v6
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - id: check
+        run: pnpm check-links --out report.md
+
+      - name: Abre, actualiza o cierra el issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PROBLEMS: ${{ steps.check.outputs.problems }}
+        run: |
+          gh label create link-check --color 0e8a16 --description "Revisión automática de enlaces" --force
+          issue=$(gh issue list --label link-check --state open --json number --jq '.[0].number // empty')
+          if [ "$PROBLEMS" -gt 0 ]; then
+            if [ -n "$issue" ]; then
+              gh issue edit "$issue" --body-file report.md
+            else
+              gh issue create --title "Revisión de enlaces" --label link-check --body-file report.md
+            fi
+          elif [ -n "$issue" ]; then
+            gh issue close "$issue" --comment "La revisión del $(date -u +%F) no encontró enlaces para atender."
+          fi

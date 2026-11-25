@@ -15,7 +15,8 @@
     "test:e2e": "playwright test",
     "check": "astro check",
     "capture": "node scripts/capture.mjs",
-    "add-link": "node scripts/add-link.mjs"
+    "add-link": "node scripts/add-link.mjs",
+    "check-links": "node scripts/check-links.mjs"
   },
   "dependencies": {
     "@fontsource/ibm-plex-mono": "^5.3.0",
