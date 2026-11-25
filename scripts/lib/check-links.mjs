@@ -19,13 +19,13 @@ export function classifyCheck({ ok, status, originalUrl, finalUrl, error }) {
 }
 
 /**
- * Enlaces a revisar: los públicos que no están marcados como caídos.
- * @template {{ private: boolean; status: string }} T
+ * Enlaces a revisar: todos los públicos. Los marcados como caídos también, para saber si vuelven.
+ * @template {{ private: boolean }} T
  * @param {T[]} links
  * @returns {T[]}
  */
 export function linksToCheck(links) {
-	return links.filter((link) => !link.private && link.status !== 'down');
+	return links.filter((link) => !link.private);
 }
 
 /**
@@ -49,18 +49,27 @@ export function staleLinks(links, details, today, days = STALE_DAYS) {
 const item = (r) => `- [ ] **${r.name}** (\`${r.id}\`): ${r.url}`;
 
 /**
- * Informe en Markdown para el issue. `problems` cuenta lo que pide acción: caídos, redirecciones
- * y detalles viejos. Los bloqueos van aparte porque casi siempre son antibots.
- * @param {{ results: Array<{ id: string; name: string; url: string; state: string; finalUrl?: string; detail?: string }>; stale: Array<{ id: string; name: string; reviewedAt: string }>; today: string; checked: number }} input
+ * Informe en Markdown para el issue. `problems` cuenta lo que pide acción: caídos nuevos,
+ * redirecciones, enlaces marcados como caídos que volvieron y detalles viejos. Los bloqueos van
+ * aparte porque casi siempre son antibots. De un enlace ya marcado como caído (`down`) solo
+ * importa si volvió a responder.
+ * @param {{ results: Array<{ id: string; name: string; url: string; state: string; down?: boolean; finalUrl?: string; detail?: string }>; stale: Array<{ id: string; name: string; reviewedAt: string }>; today: string; checked: number }} input
  */
 export function buildReport({ results, stale, today, checked }) {
-	const dead = results.filter((r) => r.state === 'dead');
-	const redirect = results.filter((r) => r.state === 'redirect');
-	const blocked = results.filter((r) => r.state === 'blocked');
-	const problems = dead.length + redirect.length + stale.length;
+	const back = results.filter((r) => r.down && r.state === 'ok');
+	const active = results.filter((r) => !r.down);
+	const dead = active.filter((r) => r.state === 'dead');
+	const redirect = active.filter((r) => r.state === 'redirect');
+	const blocked = active.filter((r) => r.state === 'blocked');
+	const problems = dead.length + redirect.length + back.length + stale.length;
 	const lines = [`Revisión del ${today}: ${checked} enlaces pedidos.`, ''];
 
 	if (!problems) lines.push('No hay enlaces caídos, redirigidos ni sin revisar hace más de 6 meses.', '');
+	if (back.length) {
+		lines.push(`## Volvieron a responder (${back.length})`, '');
+		lines.push('Están marcados como caídos y hoy responden. Ábrelos: si funcionan, pasa su `status` a `active` y revisa el detalle.', '');
+		lines.push(...back.map(item), '');
+	}
 	if (dead.length) {
 		lines.push(`## Caídos (${dead.length})`, '');
 		lines.push('No respondieron o dieron error de servidor, también al reintentar. Ábrelos en un navegador: si siguen caídos, pasa su `status` a `down`.', '');

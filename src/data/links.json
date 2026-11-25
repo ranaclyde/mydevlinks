@@ -742,7 +742,7 @@
 			"Tailwind",
 			"React"
 		],
-		"status": "active",
+		"status": "down",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/scrollxui-dev-docs-components.png"
@@ -958,7 +958,7 @@
 			"Next.js",
 			"Tailwind"
 		],
-		"status": "active",
+		"status": "down",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/bagui-vercel-app.ico"
@@ -1134,7 +1134,7 @@
 		"description": "Busca entre 200.000 iconos abiertos desde la web o por MCP con tu agente.",
 		"category": "icons",
 		"tech": [],
-		"status": "active",
+		"status": "down",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/icons0-dev.ico"
@@ -1420,16 +1420,16 @@
 		"logo": "/logos/bolt-new.svg"
 	},
 	{
-		"id": "stitch-withgoogle-com",
+		"id": "stitch-google-com",
 		"name": "Stitch",
-		"url": "https://stitch.withgoogle.com/",
+		"url": "https://stitch.google.com/",
 		"description": "Genera interfaces para apps móviles y web con IA.",
 		"category": "ai-builders",
 		"tech": [],
 		"status": "active",
 		"verified": true,
 		"private": false,
-		"logo": "/logos/stitch-withgoogle-com.png"
+		"logo": "/logos/stitch-google-com.png"
 	},
 	{
 		"id": "github-com-nirdiamant-agents-towards-production",
@@ -2380,7 +2380,7 @@
 			"Next.js",
 			"Vue"
 		],
-		"status": "active",
+		"status": "down",
 		"verified": true,
 		"private": false,
 		"logo": "/logos/patterns-dev.ico"

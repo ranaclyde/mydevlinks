@@ -39,6 +39,16 @@
   [headers.values]
     Content-Type = "application/xml; charset=utf-8"
 
+# Enlaces que cambiaron de id: la ruta vieja lleva a la nueva.
+[[redirects]]
+  from = "/tool/stitch-withgoogle-com"
+  to = "/tool/stitch-google-com"
+  status = 301
+[[redirects]]
+  from = "/en/tool/stitch-withgoogle-com"
+  to = "/en/tool/stitch-google-com"
+  status = 301
+
 # Una ruta que no existe bajo /en muestra la 404 en inglés; el resto usa /404.html.
 # Netlify solo aplica la regla si no hay un archivo en esa ruta.
 [[redirects]]
