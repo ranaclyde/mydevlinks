@@ -19,8 +19,12 @@ pnpm exec playwright install chromium   # solo para test:e2e
 | `pnpm test:e2e` | Pruebas de navegador con Playwright, sobre un build nuevo. |
 | `pnpm check` | Revisión de tipos con `astro check`. |
 | `pnpm build` | Build estático en `dist/`. |
+| `pnpm add-link <url>` | Crea un enlace nuevo con su logo y los archivos por completar. Ver [docs/agregar-enlace.md](docs/agregar-enlace.md). |
+| `pnpm capture <id>` | Toma la captura de un enlace. |
 
 ## Agregar un enlace
+
+> El paso a paso completo, de la URL al pull request, está en [docs/agregar-enlace.md](docs/agregar-enlace.md). Para otros aportes, ver [CONTRIBUTING.md](CONTRIBUTING.md). Esta sección describe el formato de los datos.
 
 Agrega una entrada a `src/data/links.json`:
 
@@ -94,4 +98,8 @@ Cada página lleva título, descripción, canonical, Open Graph y tarjeta de X. 
 
 ## Scripts
 
-Salvo `capture.mjs`, los archivos de `scripts/` se usaron una sola vez, para analizar los sitios. Necesitan una caché local que está fuera de git, y no hacen falta para agregar enlaces.
+- **`add-link.mjs`** (`pnpm add-link`): crea un enlace nuevo a partir de su URL. Revisa duplicados, pide la página, baja el logo y deja los archivos por completar.
+- **`capture.mjs`** (`pnpm capture`): toma las capturas.
+- **`fetch-sites.mjs`:** se usó una sola vez, para analizar los sitios importados de los bookmarks. Necesita una caché local que está fuera de git y no hace falta para agregar enlaces.
+
+Las funciones compartidas están en `scripts/lib/` y tienen sus pruebas en `tests/`.

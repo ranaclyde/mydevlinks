@@ -8,6 +8,12 @@ astro dev --background
 
 Manage the background server with `astro dev stop`, `astro dev status`, and `astro dev logs`.
 
+## Contribuir
+
+- **Agregar un enlace:** sigue [docs/agregar-enlace.md](docs/agregar-enlace.md) de principio a fin. En Claude Code, el skill `/agregar-enlace <url>` hace lo mismo.
+- **Cualquier otro aporte:** [CONTRIBUTING.md](CONTRIBUTING.md) tiene las convenciones de ramas, commits, código y verificación.
+- **Node:** usa la versión de `.nvmrc` (`nvm use`) antes de cualquier `pnpm`.
+
 ## Documentation
 
 Full documentation: https://docs.astro.build
