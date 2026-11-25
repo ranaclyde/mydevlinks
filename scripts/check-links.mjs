@@ -17,13 +17,13 @@ const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 async function check(link) {
 	let response = await checkLink(link.url);
 	let state = classifyCheck({ ...response, originalUrl: link.url });
-	if (state === 'dead') {
+	if (state === 'dead' && link.status !== 'down') {
 		await sleep(RETRY_DELAY_MS);
 		response = await checkLink(link.url);
 		state = classifyCheck({ ...response, originalUrl: link.url });
 	}
 	const detail = response.error ?? (response.status ? `HTTP ${response.status}` : undefined);
-	return { id: link.id, name: link.name, url: link.url, state, finalUrl: response.finalUrl, detail };
+	return { id: link.id, name: link.name, url: link.url, state, down: link.status === 'down', finalUrl: response.finalUrl, detail };
 }
 
 const links = readJson(LINKS);
@@ -40,7 +40,7 @@ async function worker() {
 	while (queue.length) {
 		const result = await check(queue.shift());
 		results.push(result);
-		if (result.state !== 'ok') console.log(`[${results.length}/${total}] ${result.state} ${result.id} ${result.detail ?? result.finalUrl ?? ''}`);
+		if (result.state !== 'ok' && !result.down) console.log(`[${results.length}/${total}] ${result.state} ${result.id} ${result.detail ?? result.finalUrl ?? ''}`);
 	}
 }
 await Promise.all(Array.from({ length: CONCURRENCY }, worker));

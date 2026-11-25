@@ -26,14 +26,14 @@ describe('classifyCheck', () => {
 });
 
 describe('linksToCheck', () => {
-	it('deja fuera los privados y los ya marcados como caídos', () => {
+	it('deja fuera los privados, pero no los marcados como caídos (para saber si vuelven)', () => {
 		const links = [
 			{ id: 'a', private: false, status: 'active' },
 			{ id: 'b', private: false, status: 'outdated' },
 			{ id: 'c', private: true, status: 'active' },
 			{ id: 'd', private: false, status: 'down' },
 		];
-		expect(linksToCheck(links).map((l) => l.id)).toEqual(['a', 'b']);
+		expect(linksToCheck(links).map((l) => l.id)).toEqual(['a', 'b', 'd']);
 	});
 });
 
@@ -81,5 +81,17 @@ describe('buildReport', () => {
 		expect(markdown).toContain('→ https://otro.dev/');
 		expect(markdown).toContain('## Sin revisar hace más de 6 meses (1)');
 		expect(markdown).toContain('Rechazan al bot (1)');
+	});
+
+	it('un enlace marcado como caído solo aparece si vuelve a responder, y eso cuenta como problema', () => {
+		const results = [
+			{ ...base, id: 'sigue-caido', state: 'dead', down: true, detail: 'HTTP 402' },
+			{ ...base, id: 'volvio', name: 'Volvió', state: 'ok', down: true },
+		];
+		const { markdown, problems } = buildReport({ results, stale: [], today: '2026-11-25', checked: 2 });
+		expect(problems).toBe(1);
+		expect(markdown).not.toContain('sigue-caido');
+		expect(markdown).toContain('## Volvieron a responder (1)');
+		expect(markdown).toContain('`volvio`');
 	});
 });
