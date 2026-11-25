@@ -1,5 +1,5 @@
 import { existsSync, readFileSync } from 'node:fs';
-import { expect, test } from '@playwright/test';
+import { expect, test, type Page } from '@playwright/test';
 
 interface RawLink {
 	id: string;
@@ -17,6 +17,12 @@ const pending = publicLinks.find(
 	(item) => existsSync(`src/data/details/${item.id}.json`) && !existsSync(`src/data/en/details/${item.id}.json`),
 );
 
+/** Abre el selector de idioma (su botón dice el idioma actual) y elige otro. */
+async function chooseLanguage(page: Page, current: string, target: string) {
+	await page.getByLabel(current).click();
+	await page.getByRole('link', { name: target }).click();
+}
+
 test('el directorio en inglés tiene la interfaz en inglés y sus fichas bajo /en/tool', async ({ page }) => {
 	await page.goto('/en');
 	await expect(page.locator('html')).toHaveAttribute('lang', 'en');
@@ -28,9 +34,10 @@ test('el directorio en inglés tiene la interfaz en inglés y sus fichas bajo /e
 
 test('el selector de idioma lleva a la misma ficha en el otro idioma', async ({ page }) => {
 	await page.goto(`/tool/${link.id}`);
-	await page.getByRole('link', { name: 'English' }).click();
+	await chooseLanguage(page, 'Idioma: Español', 'English');
 	await expect(page).toHaveURL(`/en/tool/${link.id}`);
 	await expect(page.locator('html')).toHaveAttribute('lang', 'en');
+	await page.getByLabel('Language: English').click();
 	await expect(page.getByRole('link', { name: 'English' })).toHaveAttribute('aria-current', 'true');
 	await page.getByRole('link', { name: 'Español' }).click();
 	await expect(page).toHaveURL(`/tool/${link.id}`);
@@ -39,7 +46,7 @@ test('el selector de idioma lleva a la misma ficha en el otro idioma', async ({ 
 test('el selector de idioma conserva los filtros del directorio', async ({ page, isMobile }) => {
 	test.skip(isMobile, 'El selector es el mismo en móvil.');
 	await page.goto('/?category=serverless');
-	await page.getByRole('link', { name: 'English' }).click();
+	await chooseLanguage(page, 'Idioma: Español', 'English');
 	await expect(page).toHaveURL('/en?category=serverless');
 	await expect(page.locator('[data-actives]')).toContainText('Serverless');
 	await expect(page.getByRole('button', { name: 'Clear filters' })).toBeVisible();

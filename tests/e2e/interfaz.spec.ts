@@ -352,17 +352,23 @@ test('una opción en 0 marcada se puede desmarcar', async ({ page, isMobile }) =
 	await expect(page.getByRole('checkbox', { name: /^Vue/ })).toBeDisabled();
 });
 
-test('el tema elegido se guarda', async ({ page }) => {
-	await page.getByRole('button', { name: 'Modo oscuro' }).click();
+/** Abre el selector de tema y elige uno. */
+async function chooseTheme(page: Page, name: string) {
+	await page.getByLabel(/^Tema: /).click();
+	await page.getByRole('button', { name }).click();
+}
+
+test('el tema elegido se guarda y el selector lo muestra', async ({ page }) => {
+	await chooseTheme(page, 'Oscuro');
 	await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+	await expect(page.getByRole('button', { name: 'Oscuro' })).toBeHidden();
 	await page.reload();
 	await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
-	await expect(page.getByRole('button', { name: 'Modo oscuro' })).toHaveAttribute(
-		'aria-pressed',
-		'true',
-	);
+	await expect(page.getByLabel('Tema: Oscuro')).toBeVisible();
+	await page.getByLabel('Tema: Oscuro').click();
+	await expect(page.getByRole('button', { name: 'Oscuro' })).toHaveAttribute('aria-pressed', 'true');
 
-	await page.getByRole('button', { name: 'Tema del sistema' }).click();
+	await page.getByRole('button', { name: 'Sistema' }).click();
 	await expect(page.locator('html')).not.toHaveAttribute('data-theme');
 });
 
@@ -371,10 +377,28 @@ test('un tema guardado no válido vuelve al del sistema', async ({ page }) => {
 	await page.reload();
 
 	await expect(page.locator('html')).not.toHaveAttribute('data-theme');
-	await expect(page.getByRole('button', { name: 'Tema del sistema' })).toHaveAttribute(
-		'aria-pressed',
-		'true',
-	);
+	await expect(page.getByLabel('Tema: Sistema')).toBeVisible();
+});
+
+test('los selectores del encabezado se cierran con Escape, con un clic afuera y al abrir el otro', async ({ page }) => {
+	const theme = page.getByLabel(/^Tema: /);
+	const language = page.getByLabel('Idioma: Español');
+	const english = page.getByRole('link', { name: 'English' });
+	const dark = page.getByRole('button', { name: 'Oscuro' });
+
+	await language.click();
+	await expect(english).toBeVisible();
+	await theme.click();
+	await expect(english).toBeHidden();
+	await expect(dark).toBeVisible();
+
+	await page.keyboard.press('Escape');
+	await expect(dark).toBeHidden();
+	await expect(theme).toBeFocused();
+
+	await language.click();
+	await page.locator('main').click({ position: { x: 5, y: 5 } });
+	await expect(english).toBeHidden();
 });
 
 test.describe('sin JavaScript', () => {

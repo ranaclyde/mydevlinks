@@ -1,0 +1,37 @@
+---
+import type { Locale } from '../i18n/ui';
+
+interface Props {
+	lang: Locale;
+}
+
+/**
+ * Bandera del idioma, simplificada para 18×12: España sin escudo y Estados Unidos con el
+ * cantón punteado. Lleva un filete de Línea para que el blanco no se pierda sobre el marco.
+ */
+const { lang } = Astro.props;
+const stripes = Array.from({ length: 7 }, (_, i) => i * 2);
+const stars = Array.from({ length: 4 }, (_, row) => Array.from({ length: 5 }, (_, col) => ({ row, col }))).flat();
+---
+
+<svg class="border-line shrink-0 border" width="20" height="14" viewBox="0 0 18 12" aria-hidden="true">
+	{
+		lang === 'es' ? (
+			<>
+				<rect width="18" height="12" fill="#c60b1e" />
+				<rect y="3" width="18" height="6" fill="#ffc400" />
+			</>
+		) : (
+			<>
+				<rect width="18" height="12" fill="#ffffff" />
+				{stripes.map((stripe) => (
+					<rect y={(stripe * 12) / 13} width="18" height={12 / 13} fill="#b22234" />
+				))}
+				<rect width="7.2" height={(12 / 13) * 7} fill="#3c3b6e" />
+				{stars.map(({ row, col }) => (
+					<circle cx={0.9 + col * 1.35} cy={0.9 + row * 1.6} r="0.32" fill="#ffffff" />
+				))}
+			</>
+		)
+	}
+</svg>

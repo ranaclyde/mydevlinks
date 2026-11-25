@@ -44,9 +44,9 @@ const es = {
 	clearFilters: 'Limpiar filtros',
 
 	theme: 'Tema',
-	themeSystem: 'Tema del sistema',
-	themeLight: 'Modo claro',
-	themeDark: 'Modo oscuro',
+	themeSystem: 'Sistema',
+	themeLight: 'Claro',
+	themeDark: 'Oscuro',
 	language: 'Idioma',
 
 	filters: 'Filtros',
@@ -172,9 +172,9 @@ const en: Dictionary = {
 	clearFilters: 'Clear filters',
 
 	theme: 'Theme',
-	themeSystem: 'System theme',
-	themeLight: 'Light mode',
-	themeDark: 'Dark mode',
+	themeSystem: 'System',
+	themeLight: 'Light',
+	themeDark: 'Dark',
 	language: 'Language',
 
 	filters: 'Filters',

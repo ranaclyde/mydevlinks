@@ -212,7 +212,7 @@ El reparto sigue la regla 60/30/10. El **60** es el campo de lectura: Niebla y f
 
 - **Niebla azulada** (#eceef2, oscuro #0e1014): fondo de la página y de los campos de texto.
 - **Hoja** (#ffffff, oscuro #161920): fichas y panel flotante de tecnologías.
-- **Hundido** (#e2e6ec, oscuro #1d212b): hover de opciones y del selector de tema.
+- **Hundido** (#e2e6ec, oscuro #1d212b): hover de opciones y de los selectores del encabezado.
 - **Tinta** (#14171d, oscuro #e7e9ee): texto principal; relleno del botón primario y del tema activo.
 - **Tinta apagada** (#525966, oscuro #a4abb7): dominios, contadores, chips y texto secundario.
 - **Línea** (#cbd0d8, oscuro #2b313c): bordes de fichas, chips y divisiones de estructura.
@@ -315,8 +315,9 @@ Sólidos y directos.
 - **Hover / Foco:** pasa a relleno índigo; el foco es un contorno índigo de 2 px con 2 px de separación, común a toda la interfaz.
 - **Secundario:** el botón Filtros usa fondo Niebla y borde de Línea fuerte.
 - **Terciario:** enlaces de acción de 13 px subrayados, que pasan a índigo en hover.
-- **Selector de tema:** tres botones de icono unidos con borde de Línea y separadores; el activo se rellena de Tinta.
-- **Selector de idioma:** a la izquierda del de tema, con el mismo estilo: dos enlaces en mono mayúscula (ES y EN) y el idioma actual relleno de Tinta. Lleva a la misma página en el otro idioma y, en el directorio, conserva los filtros.
+- **Selectores del encabezado:** idioma y tema son menús desplegables (`<details>`), no botones unidos, para que en móvil no se amontonen. El disparador muestra solo lo elegido y un chevrón que gira al abrir, con borde de Línea fuerte como todo control. La lista flota debajo, alineada a la derecha, en fondo de campo con borde de Línea fuerte y sin sombra; la opción activa va en índigo con un tilde. Escape, un clic afuera o abrir el otro menú la cierran.
+- **Selector de idioma:** a la izquierda del de tema. El disparador lleva la bandera y el código en mono mayúscula (ES, EN); las opciones, la bandera y el nombre en su idioma (Español, English). Las banderas son rectángulos planos de 20×14 con filete de Línea: España sin escudo y Estados Unidos con el cantón punteado. Lleva a la misma página en el otro idioma y, en el directorio, conserva los filtros. Funciona sin JavaScript.
+- **Selector de tema:** el disparador muestra el icono del tema elegido; las opciones son Sistema, Claro y Oscuro, con su icono. Necesita JavaScript, así que sin él no aparece.
 
 ### Chips
 
@@ -355,7 +356,7 @@ La ficha es el componente central: un enlace completo con cuatro zonas en grilla
 
 ### Navigation
 
-- **Encabezado:** fondo de marco con línea inferior; marca a la izquierda, total de enlaces en escritorio y selectores de idioma y de tema a la derecha. Por debajo de 380 px la marca muestra solo el estante, sin la palabra.
+- **Encabezado:** fondo de marco con línea inferior; marca a la izquierda, total de enlaces en escritorio y selectores de idioma y de tema a la derecha. La marca entra completa desde 320 px.
 - **Panel lateral:** fondo de marco; búsqueda, categorías con plegado nativo y tecnologías con las más usadas primero y "Ver las N".
 - **Móvil:** el panel se pliega tras el botón Filtros, con insignia índigo que cuenta los activos.
 
