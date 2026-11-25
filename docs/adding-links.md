@@ -1,6 +1,6 @@
 # Agregar un enlace
 
-Paso a paso para pasar de una URL a un pull request con el enlace completo: ficha en el directorio, página de detalle con captura y versión en inglés. Sirve igual para personas que para agentes de IA. Si usas Claude Code, `/agregar-enlace <url>` sigue esta misma guía.
+Paso a paso para pasar de una URL a un pull request con el enlace completo: ficha en el directorio, página de detalle con captura y versión en inglés. Sirve igual para personas que para agentes de IA. Si usas Claude Code, `/toolshelf-add-link <url>` sigue esta misma guía.
 
 El formato de cada campo está en el [README](../README.md#agregar-un-enlace). Esta guía dice **cómo** se completa y **qué se revisa**.
 

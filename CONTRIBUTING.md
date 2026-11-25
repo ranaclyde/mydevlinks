@@ -6,7 +6,7 @@ Gracias por querer sumar. toolshelf es una colección curada: importa más que c
 
 | Quieres… | Cómo |
 | --- | --- |
-| **Sumar una herramienta o recurso** | Sigue [docs/agregar-enlace.md](docs/agregar-enlace.md). Con Claude Code: `/agregar-enlace <url>`. |
+| **Sumar una herramienta o recurso** | Sigue [docs/adding-links.md](docs/adding-links.md). Con Claude Code: `/toolshelf-add-link <url>`. |
 | **Avisar que un enlace está caído, cambió o quedó viejo** | Abre un issue con el enlace y lo que viste. Si sabes el arreglo, un PR que cambie `status` (`outdated` o `down`) o la URL. |
 | **Corregir un dato de un detalle** (precio, licencia, descripción) | PR que cambie el JSON en `src/data/details/<id>.json` y su traducción en `src/data/en/details/<id>.json`. Pon en el PR de dónde sale el dato. |
 | **Mejorar el sitio** (interfaz, filtros, accesibilidad, rendimiento) | Abre un issue antes de un cambio grande, para acordar el enfoque. |
@@ -40,9 +40,24 @@ Los comandos están en el [README](README.md#ejecutar).
 - **Stack:** Astro estático con Tailwind, sin framework de interfaz. El JavaScript del navegador vive en `src/scripts/`, es chico y la página funciona sin él.
 - **Idiomas:** todo texto de la interfaz va en `src/i18n/ui.ts`, en español y en inglés, con la misma forma. Nunca se escribe texto suelto en un componente. Los valores internos (categorías, precios, estados) son ids en inglés.
 - **Datos:** los esquemas de `src/lib/links.ts`, `src/lib/details.ts` y `src/lib/translations.ts` son la fuente de verdad. Si agregas un campo, agrégalo ahí y en el README.
-- **Estilo:** tabulaciones para indentar y comentarios en español, que expliquen el porqué, no el qué.
+- **Estilo:** tabulaciones para indentar. Los comentarios explican el porqué, no el qué.
 - **Diseño:** colores, tipografía y componentes están en [DESIGN.md](DESIGN.md), con los tokens en `src/styles/global.css`. Un cambio visual respeta ese sistema o lo propone en el PR.
 - **Pruebas:** una regla nueva sobre los datos lleva su prueba en `tests/`. Un comportamiento nuevo en el navegador, su prueba en `tests/e2e/`.
+
+## Idioma del código
+
+El código va en inglés y lo que se lee como texto va en español. Las ramas pueden ir en cualquiera de los dos.
+
+| En inglés | En español |
+| --- | --- |
+| Nombres de archivos y carpetas, incluidos los de `docs/`, `tests/` y `.claude/skills/` | Comentarios en el código |
+| Funciones, variables, constantes y tipos (`alternativesFor`, `linkSkeleton`) | Descripciones de los tests (`it('ordena por tecnologías…')`) |
+| Clases CSS y atributos `data-*` (`card`, `frame`, `data-tech`) | Mensajes que imprimen los scripts |
+| Ids y valores de los datos (`developer-tools`, `freemium`, `active`) | Mensajes de commit y textos de los PR |
+| Parámetros de URL y rutas del sitio (`?price=`, `/tool/<id>`) | Contenido de la documentación (README, guías, este archivo) |
+| Nombres de scripts y comandos (`pnpm add-link`, `/toolshelf-add-link`) | |
+
+Los textos que ve quien visita el sitio no se escriben en el código: van en `src/i18n/ui.ts`, en los dos idiomas.
 
 ## Contribuir con agentes de IA
 

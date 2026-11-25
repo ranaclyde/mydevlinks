@@ -94,6 +94,6 @@ lines.push(
 	`  - ${DETAILS}/${id}.json`,
 	`  - ${LINKS_EN} y ${DETAILS_EN}/${id}.json: la traducción`,
 	`  - la captura: pnpm capture ${id}`,
-	'Paso a paso: docs/agregar-enlace.md',
+	'Paso a paso: docs/adding-links.md',
 );
 console.log(lines.join('\n'));

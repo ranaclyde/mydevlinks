@@ -1,5 +1,5 @@
 ---
-name: agregar-enlace
+name: toolshelf-add-link
 description: Agrega uno o más enlaces nuevos a toolshelf a partir de su URL, completos y listos para PR (entrada en links.json, logo, detalle, captura y traducción al inglés). Úsalo cuando pidan agregar, sumar o cargar una herramienta, sitio o recurso al directorio.
 argument-hint: <url> [<url>…]
 ---
@@ -8,7 +8,7 @@ argument-hint: <url> [<url>…]
 
 URLs pedidas: $ARGUMENTS
 
-La fuente de verdad es `docs/agregar-enlace.md`. **Léela entera antes de empezar** y sigue sus pasos en orden; este skill solo agrega cómo ejecutarla como agente.
+La fuente de verdad es `docs/adding-links.md`. **Léela entera antes de empezar** y sigue sus pasos en orden; este skill solo agrega cómo ejecutarla como agente.
 
 ## Cómo trabajar
 

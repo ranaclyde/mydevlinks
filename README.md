@@ -19,12 +19,12 @@ pnpm exec playwright install chromium   # solo para test:e2e
 | `pnpm test:e2e` | Pruebas de navegador con Playwright, sobre un build nuevo. |
 | `pnpm check` | Revisión de tipos con `astro check`. |
 | `pnpm build` | Build estático en `dist/`. |
-| `pnpm add-link <url>` | Crea un enlace nuevo con su logo y los archivos por completar. Ver [docs/agregar-enlace.md](docs/agregar-enlace.md). |
+| `pnpm add-link <url>` | Crea un enlace nuevo con su logo y los archivos por completar. Ver [docs/adding-links.md](docs/adding-links.md). |
 | `pnpm capture <id>` | Toma la captura de un enlace. |
 
 ## Agregar un enlace
 
-> El paso a paso completo, de la URL al pull request, está en [docs/agregar-enlace.md](docs/agregar-enlace.md). Para otros aportes, ver [CONTRIBUTING.md](CONTRIBUTING.md). Esta sección describe el formato de los datos.
+> El paso a paso completo, de la URL al pull request, está en [docs/adding-links.md](docs/adding-links.md). Para otros aportes, ver [CONTRIBUTING.md](CONTRIBUTING.md). Esta sección describe el formato de los datos.
 
 Agrega una entrada a `src/data/links.json`:
 
