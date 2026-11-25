@@ -100,6 +100,5 @@ Cada página lleva título, descripción, canonical, Open Graph y tarjeta de X. 
 
 - **`add-link.mjs`** (`pnpm add-link`): crea un enlace nuevo a partir de su URL. Revisa duplicados, pide la página, baja el logo y deja los archivos por completar.
 - **`capture.mjs`** (`pnpm capture`): toma las capturas.
-- **`fetch-sites.mjs`:** se usó una sola vez, para analizar los sitios importados de los bookmarks. Necesita una caché local que está fuera de git y no hace falta para agregar enlaces.
 
 Las funciones compartidas están en `scripts/lib/` y tienen sus pruebas en `tests/`.
