@@ -89,11 +89,14 @@ Cada enlace público tiene una página `/tool/<id>`. Con el archivo `src/data/de
 - **`screenshotAt`:** opcional, fecha ISO de la captura.
 - **`alternatives`:** opcional, ids de otros enlaces.
 
-La captura de pantalla es un archivo estático, `public/screenshots/<id>.jpg`. Se toma a mano con Chromium (1280×800):
+La captura de pantalla está en `src/assets/screenshots/<id>.webp` (las primeras siguen en `.jpg`). Se toma a mano con Chromium (1280×800):
 
 ```sh
 pnpm capture <id> [<id>…]
+pnpm capture <id> --from captura.png   # una tomada a mano, para sitios que bloquean bots
 ```
+
+Al compilar, Astro genera WebP de 480, 800 y 1280 px y el navegador baja el que corresponde a la pantalla. Para `og:image` genera un JPG de 1280×800, porque no todas las redes aceptan WebP.
 
 El script rechaza ids que no existen y enlaces caídos o privados, y al terminar recuerda poner `screenshotAt` en el JSON. No corre en el build ni en las pruebas. `pnpm test` falla si hay una captura sin su detalle.
 

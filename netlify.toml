@@ -24,13 +24,10 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# Logos y capturas (/screenshots) conservan el nombre al rehacerse: un día de caché y revalidación en segundo plano.
+# Los logos conservan el nombre al rehacerse: un día de caché y revalidación en segundo plano.
+# Las capturas salen de src/assets y Astro les pone hash (/_astro/*).
 [[headers]]
   for = "/logos/*"
-  [headers.values]
-    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
-[[headers]]
-  for = "/screenshots/*"
   [headers.values]
     Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
 

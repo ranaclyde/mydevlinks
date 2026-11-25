@@ -131,11 +131,11 @@ Sin logo, la ficha muestra la inicial del nombre; no es un error. Cuidado con la
 pnpm capture <id>
 ```
 
-Toma la portada con Chromium a 1280×800 y la guarda en `public/screenshots/<id>.jpg`. Ábrela y revísala:
+Toma la portada con Chromium a 1280×800 y la guarda en `src/assets/screenshots/<id>.webp`. Al compilar, Astro genera las versiones que se sirven en cada tamaño de pantalla; no hace falta optimizarla a mano. Ábrela y revísala:
 
-- **Sale a medio cargar o a medio animar.** Es común en sitios que se arman en el navegador. Repite con más espera: copia `scripts/capture.mjs` a una carpeta temporal, sube `SETTLE_MS` (8000 a 12000) y córrela desde la raíz del repo.
+- **Sale a medio cargar o a medio animar.** Es común en sitios que se arman en el navegador. Repite con más espera: `SETTLE_MS=10000 pnpm capture <id>` (entre 8000 y 12000 suele alcanzar).
 - **La tapa un banner de cookies, un modal o un muro de login.** Ciérralo antes de capturar (con un script de Playwright de un solo uso o desde el navegador) y vuelve a tomarla. Una barra promocional chica o un anuncio a un costado no impiden usarla.
-- **El sitio bloquea bots.** No intentes saltarte la protección. Toma la captura desde un navegador normal, con la ventana a 1280×800 de área visible, y guárdala como JPG de 1280×800 en `public/screenshots/<id>.jpg`.
+- **El sitio bloquea bots.** No intentes saltarte la protección. Toma la captura desde un navegador normal, con la ventana a 1280×800 de área visible, y conviértela con `pnpm capture <id> --from <archivo>`. Acepta PNG o JPG, la lleva a 1280×800 (recorta desde arriba si sobra alto) y la guarda en WebP.
 
 Si no hay forma de una captura limpia, no la incluyas, borra `screenshotAt` del detalle y avísalo en el PR.
 
@@ -167,7 +167,7 @@ Abre `/`, busca el enlace y revisa la ficha (logo, descripción, tecnologías). 
 ### 10. Commit y pull request
 
 ```sh
-git add src/data public/logos public/screenshots
+git add src/data src/assets/screenshots public/logos
 git commit -m "feat: agrega <Nombre>"
 git push -u origin HEAD
 ```
