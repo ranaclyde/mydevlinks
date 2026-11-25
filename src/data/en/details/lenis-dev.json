@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Lenis is a smooth scrolling library: it takes the browser's native scroll and makes it fluid and controllable, with no CSS transforms or replaced scrollbars. You activate it with new Lenis(), it weighs under 5 kB and it supports vertical, horizontal and element-level scrolling.",
+		"It's a good fit for brand sites or portfolios where scrolling is part of the experience, especially when you combine it with scroll-linked animations."
+	],
+	"uses": [
+		"Adding smooth scrolling to a portfolio or landing page in React or Vue.",
+		"Syncing scroll animations with another library, for example a WebGL scene.",
+		"Making anchor links and scrollTo glide with a uniform transition."
+	],
+	"caveats": [
+		"It doesn't work with CSS scroll-snap: to snap to sections you have to use the separate lenis/snap package.",
+		"Areas with their own scroll, like a modal or a long menu, need the allowNestedScroll option or the data-lenis-prevent attribute; also, the smoothing doesn't act on iframes.",
+		"It's only the scrolling layer: you have to build scroll-reactive animations separately."
+	],
+	"pricingNote": "Open source under the MIT license; there's only voluntary sponsorship.",
+	"idealFor": "Sites with polished scrolling in JavaScript, React or Vue."
+}

@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Swiper is a library of touch sliders for the web, lightweight and modular, focused on performance and on an interaction that feels native on mobile. It works with plain JavaScript, React, Vue and Web Components, and integrates with Svelte, Angular, Next.js and others.",
+		"It's a good fit when you need carousels, galleries or sliders with touch gestures without writing the logic yourself."
+	],
+	"uses": [
+		"Making a product carousel that you swipe with your finger in a store.",
+		"Building a gallery with thumbnails linked to the main slide.",
+		"Showing a testimonials slider with lazy-loaded images."
+	],
+	"caveats": [
+		"It's modular: you have to import and enable each module (navigation, pagination, effects) that you want to use.",
+		"With many slides, use virtual slides and lazy loading so you don't overload the page.",
+		"An autoplay slider can be hard to use for some people: add controls and check keyboard navigation."
+	],
+	"pricingNote": "Open source under the MIT license; Swiper Studio and the premium templates are paid extras sold separately.",
+	"idealFor": "Any website that needs smooth touch sliders."
+}

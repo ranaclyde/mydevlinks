@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Storyset is a collection of vector illustrations in several styles (Rafiki, Bro, Amico, Pana, Cuate) and by topics such as business, education, health or technology. You can change the colors, choose the background and animate the illustration in an online editor before downloading it, or work with it from a Figma plugin.",
+		"It's a good fit when you need images with their own identity for a landing page, an onboarding flow or an empty state, without hiring an illustrator."
+	],
+	"uses": [
+		"Illustrating the hero section of a landing page with your brand colors.",
+		"Adding an animated illustration to an onboarding screen or to an empty state in your app.",
+		"Keeping a consistent style across the images of a blog or a product's documentation."
+	],
+	"caveats": [
+		"Free use requires crediting Storyset; to use the content without attribution you need an active Flaticon Premium subscription when you download it.",
+		"The terms prohibit reselling, redistributing or including the illustrations in a stock library or product, and using them within a brand or logo.",
+		"Content marked as editorial can't be used for advertising or commercial purposes, and downloads may have daily limits."
+	],
+	"pricingNote": "Free with attribution; without attribution it requires a Flaticon Premium subscription.",
+	"idealFor": "Landing pages and apps that need customizable illustrations without a designer."
+}

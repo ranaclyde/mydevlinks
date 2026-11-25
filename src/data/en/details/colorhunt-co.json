@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Color Hunt is a gallery of hand-picked color palettes. You can sort them by newest or most popular, filter them by time period, color or theme, such as pastel or vintage, and explore collections.",
+		"It's a good fit when you need a harmonious color combination to start a design and prefer to begin with something already tested."
+	],
+	"uses": [
+		"Choosing the base colors of a landing page or a portfolio from a popular palette.",
+		"Searching for palettes by theme, such as pastel or vintage, to give a project a specific style.",
+		"Using the Chrome extension to browse palettes without leaving your workflow."
+	],
+	"caveats": [
+		"These are just color palettes: you have to define each color's role yourself and check contrast for accessibility.",
+		"A nice palette doesn't guarantee readable text on backgrounds of those same colors; test it before using it.",
+		"Check the site's terms if you plan to use the palettes in a commercial product."
+	],
+	"pricingNote": "Free to browse and use.",
+	"idealFor": "People who need quick color inspiration for an interface or a brand."
+}

@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"97cosas.com is the collaborative Spanish translation of O'Reilly's \"97 Things\" series, a collection of short essays written by industry professionals. The volume for programmers is now complete; the Project Manager and Software Architect volumes are listed as projects in progress.",
+		"It's a good fit for short readings on the craft and best practices, which you can read one essay at a time, in any order."
+	],
+	"uses": [
+		"Reading a programming tip in your spare time, without committing to an entire book.",
+		"Putting together a reading list of best practices for your team or for a new hire.",
+		"Finding a reference in Spanish to justify a design or process decision in a code review."
+	],
+	"caveats": [
+		"Only the programmers volume is finished; the other two are still in progress.",
+		"They're opinion essays by different authors: they're good for reflection, not as a technical manual with code.",
+		"The translations are community-made and licensed under Creative Commons Attribution 3: if you reuse them, you must give attribution."
+	],
+	"pricingNote": "Free content under the Creative Commons Attribution 3 license.",
+	"idealFor": "People who want short readings in Spanish about the craft of programming."
+}

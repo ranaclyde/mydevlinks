@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"readme.so is a browser-based editor for building a project's README: you pick sections from a list, such as Installation, Usage/Examples, API Reference or License, edit them and see the result in a preview or as raw Markdown.",
+		"It's a good fit when you want a complete, well-organized README without starting from a blank page, or when you need a GitHub profile with introduction sections."
+	],
+	"uses": [
+		"Building the README for a new project by adding installation, usage and license.",
+		"Creating your GitHub profile README with introduction, skills and links sections.",
+		"Standardizing the README across several repositories starting from the same sections."
+	],
+	"caveats": [
+		"The sections are generic: you have to replace the sample text with real information about your project.",
+		"Check the Raw view before downloading, because the final Markdown is what will be published in your repository.",
+		"It doesn't connect to GitHub: you download the file or copy the Markdown and upload it to the repository yourself."
+	],
+	"pricingNote": "Open source under the MIT license, with no paid plans.",
+	"idealFor": "People who want a tidy README without writing it from scratch."
+}

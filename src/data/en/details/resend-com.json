@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Resend is an email service for developers with a REST API and official SDKs for Node.js, Python, PHP, Ruby, Go, Java, Rust and .NET, among others. It's used for transactional email, marketing email and also for receiving email via webhook.",
+		"You can design templates with React Email. It's a good fit when you want to send email from your app without managing your own SMTP server."
+	],
+	"uses": [
+		"Sending welcome emails, password resets and receipts from your backend.",
+		"Sending up to 100 messages in a single request with batch sending.",
+		"Processing incoming email with webhooks, for example to create support tickets."
+	],
+	"caveats": [
+		"The free plan allows 3,000 emails a month, with a maximum of 100 per day.",
+		"To send from your own domain you have to verify it with SPF and DKIM records; DMARC is optional, but it improves deliverability.",
+		"The usage policies prohibit unsolicited bulk email: recipients must have agreed to receive it."
+	],
+	"pricingNote": "Free plan with 3,000 emails a month (maximum 100 per day); paid plans start at $20 a month for 50,000 emails.",
+	"idealFor": "Apps that need to send transactional email with a simple API."
+}

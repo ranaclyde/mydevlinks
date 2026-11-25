@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"The Prompts Factory is a library of prompts for websites, animations and transitions. Each one includes an interactive preview of the effect and the implementation instructions: layout, motion, interactions and responsive behavior.",
+		"It's a good fit when you want to reproduce a specific effect with an AI coding tool instead of describing it from scratch."
+	],
+	"uses": [
+		"Adding an animated page transition to a project by asking your coding assistant to implement the prompt.",
+		"Exploring scroll effects or animations in the preview before deciding which one to adopt.",
+		"Bookmarking several effects to reuse across different projects."
+	],
+	"caveats": [
+		"You can view the previews without an account, but you have to sign in to copy prompts, and the free plan allows 5 copies per month.",
+		"Results vary depending on the AI tool and the context; test the motion on mobile, with a keyboard and with reduced motion before you publish.",
+		"The license lets you adapt the prompts in personal and client projects, but not redistribute or resell them."
+	],
+	"pricingNote": "Free with 5 copies per month; the first paid plan, Basic, costs $9.99 per month for 30 copies.",
+	"idealFor": "Developers who want specific effects and animations ready to hand to an AI."
+}

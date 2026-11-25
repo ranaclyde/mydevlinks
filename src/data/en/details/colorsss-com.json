@@ -1,0 +1,17 @@
+{
+	"whatIs": [
+		"Colorsss is a color explorer you filter by tone and shade: neutral, pastel, muted, dark, warm, vibrant and others. Each color appears with its name and its HEX, RGB, HSL and OKLCH codes, and more are generated as you scroll.",
+		"It's a good fit when you don't know which color you want and would rather browse options by style before deciding."
+	],
+	"uses": [
+		"Finding a pastel tone for a landing page background.",
+		"Choosing vibrant colors for a chart or an illustration.",
+		"Finding neutral and muted tones for a sober interface."
+	],
+	"caveats": [
+		"It's for exploring and copying individual values; it doesn't build exportable palettes or check contrast.",
+		"The page shows a promotional bar for another product by its authors."
+	],
+	"pricingNote": "Free to use from the browser.",
+	"idealFor": "Exploring colors by tone when you're looking for inspiration."
+}

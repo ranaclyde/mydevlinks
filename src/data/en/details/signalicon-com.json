@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Signalicon is a library of more than 1,000 outline-style icons for web and apps, created by SignalSupply. They download as SVG or Figma files, and each icon can be copied as SVG straight from the page.",
+		"It's a good fit when you want a consistent set of interface icons, especially if you design in Figma, and you're willing to pay for the full set."
+	],
+	"uses": [
+		"Copy an icon's SVG with the stroke set to currentColor so it picks up the text color in a web app.",
+		"Have a uniform set of icons in a project's Figma library.",
+		"Reuse the same icons across several projects or clients with a single PRO license."
+	],
+	"caveats": [
+		"Only about 46 icons are marked as free; the rest of the library requires PRO.",
+		"The PRO license covers one user, with unlimited projects and clients; it's a one-time payment and non-refundable.",
+		"The PRO price goes up as icons are added, and the Figma files and bulk SVGs are downloaded from Gumroad after purchase."
+	],
+	"pricingNote": "There are 46 free icons; the PRO license costs $48 in a single payment and unlocks the full set.",
+	"idealFor": "Designers and developers who want a set of outline icons for interfaces."
+}

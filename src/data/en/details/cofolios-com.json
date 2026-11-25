@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Cofolios collects the portfolios of designers who landed internships at big tech companies, such as Apple, Google, Meta or Figma, and also organizes them by university. It's useful for seeing how someone who made it onto those teams presents themselves.",
+		"It's a good fit if you're putting together your own design or product portfolio and want real references for structure, storytelling and level of detail."
+	],
+	"uses": [
+		"Seeing how portfolios that landed an internship at a specific company organize their case studies.",
+		"Getting inspiration to redesign your personal portfolio with a structure that has already worked.",
+		"Comparing how designers from different universities present themselves before deciding on the approach for yours."
+	],
+	"caveats": [
+		"It focuses on entry-level design portfolios, so it's less useful if you're looking for references for interfaces or components.",
+		"Each entry leads to an external portfolio, which may change or stop being available.",
+		"The Critique section, which reviews screenshots of your case studies, requires an account and becomes paid after the first free review."
+	],
+	"pricingNote": "Browsing the portfolios is free; case study critiques are by subscription after a first free review.",
+	"idealFor": "Design students preparing their portfolio."
+}

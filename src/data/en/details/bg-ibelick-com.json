@@ -1,0 +1,17 @@
+{
+	"whatIs": [
+		"BG.IBELICK is a collection of backgrounds ready to paste into a page. Each card has a preview and a button to copy the code, available in Tailwind CSS and plain CSS, designed for full-page backgrounds.",
+		"It's a good fit when you want a modern background (gradients, grids, glows) without designing it or installing anything."
+	],
+	"uses": [
+		"Give a Tailwind project's landing page a subtle gradient background.",
+		"Replace the flat background of a documentation page with a grid one.",
+		"Take a snippet as a starting point and adjust its colors to your brand."
+	],
+	"caveats": [
+		"They're fixed snippets, not a generator with controls: to change colors or sizes you have to edit the code.",
+		"They're designed as full-page backgrounds; to use them in a single section you'll have to adjust the positioning."
+	],
+	"pricingNote": "No account or paid plans; you copy straight from the site.",
+	"idealFor": "Tailwind projects that want a nice background in a couple of minutes."
+}

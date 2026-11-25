@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"CSS Layout Generator creates the code for a layout with CSS Grid or Flexbox. You start from a template (12 columns, 3 × 3, Holy Grail, sidebar, header-main-footer, infinite rows, or Flexbox row variants) and adjust rows, columns, fr sizes and gaps between cells.",
+		"At the end you copy the resulting CSS and HTML. It's a good fit for putting together a page structure without remembering all the grid syntax."
+	],
+	"uses": [
+		"Build the header, sidebar, content and footer skeleton of a dashboard.",
+		"Create a 3-column card grid with uniform gaps.",
+		"Learn how grid-template-columns and gap change as you move the controls."
+	],
+	"caveats": [
+		"It generates CSS and HTML, with no Tailwind output; if you use Tailwind you'll have to translate the classes.",
+		"The classes and structure are generic (for example .layout); rename them and check the responsive behavior, which is up to you.",
+		"It starts from predefined templates; for very specific layouts you'll have to tweak the CSS by hand."
+	],
+	"pricingNote": "Free to use, with no account and no paid plans.",
+	"idealFor": "Anyone who wants the CSS for a Grid or Flexbox layout without writing it from scratch."
+}

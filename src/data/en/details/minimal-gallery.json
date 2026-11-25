@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Minimal Gallery is a hand-curated collection of cleanly designed websites, active since 2013. Besides the site gallery, it has template and tool sections, a search and a collections feature for saving favorites.",
+		"Sites can be filtered by tags, by type (portfolio, agency, e-commerce, pricing) and by platform, such as Framer or Webflow. It's a good fit when you're looking for restrained references for a specific type of site."
+	],
+	"uses": [
+		"Looking at minimalist portfolios for inspiration before redoing yours.",
+		"Filtering by platform (Framer or Webflow) to see what you can achieve with each one.",
+		"Reviewing well-executed pricing pages with the Pricing tag."
+	],
+	"caveats": [
+		"The listing is paginated across more than a hundred pages, so going through all of it takes time; use the filters.",
+		"The templates point to external pages (Framer, Webflow, Lemon Squeezy) and several are sold there, at their own price.",
+		"It's a selection of restrained sites: it's not useful for maximalist or busy styles."
+	],
+	"pricingNote": "The gallery is free; some templates are sold on external sites.",
+	"idealFor": "Designers and developers looking for minimalist web references."
+}

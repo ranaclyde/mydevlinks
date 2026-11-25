@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Curated is a library of nearly 3,000 hand-picked real websites. You browse it by industry, with search and filters by media type, date added and sort order, and it also offers individual sections from those sites and an MCP server to use them with coding assistants.",
+		"It's a good fit when you're looking for references for landing pages or sites in a specific sector, or want to feed your coding agent real sections as a starting point."
+	],
+	"uses": [
+		"Seeing how other developer tools handle their landing page before designing yours.",
+		"Filtering by animated sites or by those added in the last 30 days to spot recent trends.",
+		"Bringing reference sections into Claude Code, Cursor or Codex through the MCP server."
+	],
+	"caveats": [
+		"Filters by styles, visuals and attributes, and saved searches, are part of the Pro plan.",
+		"On the free plan you only see a sample of the section library and the design briefs.",
+		"Submitting a site for free puts it in a review queue that can take weeks."
+	],
+	"pricingNote": "Pro costs $9 per month and unlocks the full library, advanced filters and the MCP.",
+	"idealFor": "Designers and developers who look for sites by industry or style."
+}

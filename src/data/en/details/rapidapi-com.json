@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"RapidAPI is an API marketplace: it brings together APIs from many providers, organized into categories such as cybersecurity, cryptography or movies, and lets you try them in a Playground before integrating them over REST or MCP.",
+		"It's a good fit when you need a specific piece of data or a service, such as job listings, product data or social networks, and you'd rather get it through a single account than negotiate with each provider."
+	],
+	"uses": [
+		"Comparing several job data APIs and trying them out with sample requests.",
+		"Adding a verification or lookup service (for example, card BIN lookup) to a backend.",
+		"Starting with an API's free plan to validate an idea before paying."
+	],
+	"caveats": [
+		"Each provider sets its own price, and every API has its own plans, request limits and extra charges for overages or bandwidth.",
+		"You need an account to subscribe to an API, and some free plans ask for a card.",
+		"The platform is now operated by Nokia, which bought Rapid's technology and team. The quality of each API varies, so check latency, success rate and last update date on its listing."
+	],
+	"pricingNote": "Browsing the hub is free, and each API defines its own plans: for example, JSearch offers 200 free requests per month and paid plans starting at $25.",
+	"idealFor": "Developers who want to try and buy third-party APIs from one place."
+}

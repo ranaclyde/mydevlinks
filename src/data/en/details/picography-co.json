@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Picography is a high-resolution stock photo library whose images are published under the CC0 license, meaning no permission or payment is required. You can copy, edit and share them.",
+		"It's a good fit when you need photographs for a site, a blog or a mockup and you don't want to worry about credits or licenses."
+	],
+	"uses": [
+		"Putting a header image on a blog or on a project's landing page.",
+		"Filling a mockup or prototype with real photos instead of placeholder images.",
+		"Getting images for a presentation or an article for commercial use without buying a license."
+	],
+	"caveats": [
+		"The photos are free for personal and commercial use and don't require attribution, but you can't present them as your own work.",
+		"The latest photo was published in October 2024, so the catalog isn't being updated and may not cover current topics.",
+		"Alongside the photos you'll see ads and sponsored images from Shutterstock, which are paid and don't have a CC0 license."
+	],
+	"pricingNote": "All photos are free under CC0, for personal and commercial use.",
+	"idealFor": "People who need royalty-free photos for web projects without the red tape."
+}

@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Directus is a headless backend and CMS that connects to an existing SQL database and automatically generates a REST API and a GraphQL API, plus real-time subscriptions over WebSockets. It runs on Node.js, works with Postgres, MySQL, SQLite and other databases, and comes with a no-code panel so your team can edit content and data.",
+		"It's a good fit when you already have data in a database and want an API and an admin panel for it without writing the backend, whether self-hosted or on Directus Cloud."
+	],
+	"uses": [
+		"Putting an editing panel and an API on top of the database of an existing project.",
+		"Managing the content of a Next.js, Nuxt or Astro site through its REST or GraphQL API.",
+		"Building a dashboard or collaborative app that updates live by subscribing to a collection over WebSockets."
+	],
+	"caveats": [
+		"It isn't MIT: it uses the MSCL 1.0 license, which is source-available. It's free for organizations with less than $5 million in annual revenue and fewer than 50 employees; those above either threshold need a paid plan.",
+		"When you self-host it, you're responsible for the database, updates and backups.",
+		"Paid plans limit users, collections and flows: Core, for example, includes 3 users, 25 collections and 5 flows."
+	],
+	"pricingNote": "Self-hosting is free for organizations that qualify for the Open Innovation Grant; paid plans start at $89/month billed annually.",
+	"idealFor": "Teams that want an API and an admin panel on top of their own database."
+}

@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Siteinspire is a web design gallery with more than 8,000 sites chosen by its founder, Daniel Howells, and none of them is a sponsored entry. Each site is classified by style (minimalist, typographic), type and theme, and its page links to the profile of the studio or designer who made it. There are also rankings for the day, week, month and year, and a section of fonts.",
+		"It's a good fit when you're looking for a specific aesthetic direction, like a minimalist portfolio or an agency site, and want to reach the person who designed it."
+	],
+	"uses": [
+		"Filtering by typographic style to find examples of text-only layouts.",
+		"Opening the monthly rankings to see which sites are considered the best of the moment.",
+		"Using the profile directory to find studios or freelancers who made the sites you like."
+	],
+	"caveats": [
+		"The selection comes from a single editor and favors the visual: many sites are studios and portfolios, with little information about accessibility or performance.",
+		"A site's page shows a screenshot, date and credits, not the code or the technology it was built with.",
+		"Many entries are about fashion, art and photography; if you're looking for product interfaces or apps, other galleries are a better fit."
+	],
+	"pricingNote": "Free, and so is the weekly newsletter; there's a separate sponsorship and advertising page.",
+	"idealFor": "Designers and developers looking for visual references of portfolios, agencies and sites with careful typography."
+}

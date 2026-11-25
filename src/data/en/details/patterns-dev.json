@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Patterns.dev is a resource in English, written by Lydia Hallie and Addy Osmani, on design, rendering and performance patterns for web applications. It has sections on JavaScript (Singleton, Observer, Module, among others), React and Next.js (hooks, HOC, Server Components) and Vue, with explanations and code examples.",
+		"It's a good fit when you already program in JavaScript or a framework and want to understand how to structure an application and which techniques improve its performance."
+	],
+	"uses": [
+		"Understanding when to use the Observer or Module pattern when organizing JavaScript code.",
+		"Choosing a rendering strategy for a React or Next.js app.",
+		"Applying techniques such as preloading, tree shaking or list virtualization to speed up loading."
+	],
+	"caveats": [
+		"It's a conceptual guide: it's not a step-by-step course and doesn't replace each framework's documentation.",
+		"The examples focus on JavaScript, React and Vue; if you use another framework, you'll have to adapt the ideas.",
+		"The articles are licensed under CC BY-NC 4.0: you can reuse them with attribution, but not for commercial purposes."
+	],
+	"pricingNote": "Free online; the book Learning Patterns (435 pages) can also be downloaded at no cost.",
+	"idealFor": "JavaScript and React developers who want to master architecture and performance patterns."
+}

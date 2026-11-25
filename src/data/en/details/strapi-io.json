@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Strapi is an open source headless CMS built with TypeScript that runs on Node.js. You define your content types with a no-code builder, and it automatically generates REST and GraphQL APIs, with customizable controllers, services and middleware.",
+		"It's a good fit when you want a content backend you can modify deeply. You can self-host it or deploy it to Strapi Cloud with the same code."
+	],
+	"uses": [
+		"Managing the blog or catalog of a Next.js site by consuming its API.",
+		"Creating an API for a mobile app from content types defined without code.",
+		"Adding your own logic to the backend with custom controllers and services."
+	],
+	"caveats": [
+		"The core is MIT, but features like Review Workflows and Audit Logs are in the Enterprise edition, and SSO is either paid separately or included in Enterprise.",
+		"If you self-host it, you manage the server, database, updates and backups.",
+		"Strapi Cloud has no free plan: the cheapest is Starter, which doesn't include automatic backups."
+	],
+	"pricingNote": "The Community edition is free and MIT; Strapi Cloud starts at $35 per project per month, and the self-hosted Growth plan starts at $45 per month.",
+	"idealFor": "Developers who want a customizable headless CMS on Node.js."
+}

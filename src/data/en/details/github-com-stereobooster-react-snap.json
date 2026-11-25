@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"react-snap prerenders a web app to static HTML: it uses headless Chrome to crawl the links from the root and save each page already rendered. It's designed for React, although it also works with Preact and Vue.",
+		"It's a good fit when you have a SPA and want to improve initial load and SEO without migrating to a framework with server-side rendering."
+	],
+	"uses": [
+		"Adding \"postbuild\": \"react-snap\" to a Create React App SPA to publish static HTML.",
+		"Serving readable content to search engines on a marketing site built with React.",
+		"Prerendering a Vue app by setting the dist folder as the source."
+	],
+	"caveats": [
+		"The last commit, a README change, is from November 2022, and the latest tagged release (1.23.0) is from December 2018, so don't expect support for recent versions of React or Chrome.",
+		"It only works with routes based on the HTML5 History API, not with hash URLs.",
+		"It has known limitations: async components that can show a loading flash, Redux state limited to basic JSON types and, in containers, the need for Puppeteer flags like --no-sandbox."
+	],
+	"pricingNote": "Open source under the MIT license.",
+	"idealFor": "React SPAs that need static HTML without switching frameworks."
+}

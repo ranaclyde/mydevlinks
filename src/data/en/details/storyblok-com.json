@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Storyblok is a headless CMS with a visual editor where the content team sees changes on the page as they edit, without depending on a developer. It runs as a cloud service, is API-first, and offers getting-started guides for Next.js, Astro, Nuxt, React, Vue, Angular, and Symfony.",
+		"It's a good fit when the people writing content need autonomy and a visual preview, and the engineering team wants to keep using its favorite framework."
+	],
+	"uses": [
+		"Letting marketing build and edit landing pages on a Next.js or Astro site while seeing the result instantly.",
+		"Publishing a multilingual site and managing translations from the CMS.",
+		"Centralizing the content of a website and a mobile app using the ecosystem's SDKs."
+	],
+	"caveats": [
+		"The free plan falls short for a team: 1 user (expandable to 2), 100 GB of traffic, 100,000 API requests per month, and 2 languages.",
+		"It's a service hosted by Storyblok, so you depend on the platform and its limits; there's no self-hosting option.",
+		"GraphQL, SSO, and environments are only available on the Premium and Elite plans, which have custom pricing."
+	],
+	"pricingNote": "Free Starter plan; Growth costs $99/month and Growth Plus $349/month with monthly billing, slightly less with annual billing.",
+	"idealFor": "Teams where content and development work separately and want visual editing."
+}

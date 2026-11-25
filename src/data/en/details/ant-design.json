@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Ant Design is a design system and a React component library aimed at enterprise applications. It includes TypeScript types, internationalization support and a customizable theming system based on CSS-in-JS.",
+		"It's a good fit when you're building dashboards, forms and internal tools, and you prefer a complete, consistent library over assembling each piece yourself."
+	],
+	"uses": [
+		"Building an admin dashboard with tables, forms and filters.",
+		"Offering an application in several languages using its internationalization guide.",
+		"Adjusting the colors and style to a company's brand through its themes."
+	],
+	"caveats": [
+		"It's a large library with a very distinct style of its own; moving away from its look takes customization work.",
+		"The current version only supports React 18 or later, since React 16 and 17 were dropped starting with v6.",
+		"It doesn't work in Internet Explorer: support ended with v5."
+	],
+	"pricingNote": "Open source under the MIT license; install it with npm install antd.",
+	"idealFor": "Enterprise applications and admin dashboards in React."
+}

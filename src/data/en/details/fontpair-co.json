@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Fontpair is a catalog of more than 3,000 font pairings using fonts from Google Fonts, Fontshare, Adobe Fonts, Velvetyne and other foundries. You can filter by style, try the pairs with your own text, save them in collections and copy ready-to-use CSS.",
+		"It's a good fit when you want an already curated font pair for your design, with color palettes and brand kits as support."
+	],
+	"uses": [
+		"Choosing the heading and body pair for a portfolio or landing page.",
+		"Trying several combinations with your project's real text.",
+		"Copying a pair's CSS code to bring it to your site."
+	],
+	"caveats": [
+		"The typefaces come from several foundries, including Adobe Fonts, so check the license of each one before using it in a commercial project.",
+		"Without Pro you only see some of the pairings; the full library, brand kits with your fonts and colors, and advanced filters are paid.",
+		"To save collections you need to create an account."
+	],
+	"pricingNote": "Free account with part of the catalog; Pro costs $10 a month, $48 a year or $120 as a one-time payment.",
+	"idealFor": "Designers and developers looking for curated font pairs."
+}

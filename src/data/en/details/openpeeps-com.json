@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Open Peeps is a library of hand-drawn illustrations of people by Pablo Stanley. It works like building pieces (arms, legs, expressions) that you combine to create characters and scenes, and there are also pre-assembled Peeps in PNG and SVG.",
+		"It's a good fit when you need illustrations with personality for a project and don't want to deal with licenses: they're free to use in both personal and commercial projects."
+	],
+	"uses": [
+		"Illustrating a product's landing page with a different character in each section.",
+		"Creating avatars or empty states in an app with pre-assembled Peeps.",
+		"Composing your own scenes in Figma, Sketch or XD by mixing the pieces."
+	],
+	"caveats": [
+		"To compose characters from scratch you need a compatible design tool, such as Figma, Sketch, XD or Blush.",
+		"The style is very recognizable, so other projects may look similar to yours.",
+		"The full downloads come from an external Gumroad link, not from the site itself."
+	],
+	"pricingNote": "Public domain under the CC0 license: free to use, including commercially and with no attribution.",
+	"idealFor": "Landing pages and apps that want illustrations of people without license hassles."
+}

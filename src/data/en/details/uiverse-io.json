@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Uiverse is a community library with more than 7,000 interface elements, such as buttons, loaders, switches, checkboxes, cards and inputs, created by thousands of people. Each element can be copied as HTML and CSS, Tailwind, React or Figma, and everything is under the MIT license.",
+		"It's a good fit when you need a single piece with an eye-catching style and don't want to install a whole library for one button or loader."
+	],
+	"uses": [
+		"Finding a pure CSS animated loader for an application's loading screen.",
+		"Copying a button with a hover effect into a Tailwind project without adding dependencies.",
+		"Drawing inspiration from styles such as neumorphism or glassmorphism and adapting them to your own design."
+	],
+	"caveats": [
+		"Each element is published by a different author, so quality, accessibility and code style vary a lot from one to another.",
+		"These are standalone pieces, not a design system: combining several means unifying colors, sizes and typography by hand.",
+		"Many effects prioritize looks; check contrast and keyboard focus before using them in production."
+	],
+	"pricingNote": "All elements are free for personal and commercial use, under the MIT license.",
+	"idealFor": "Finding stylish standalone buttons, loaders and other elements to copy and paste."
+}

@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Swivel is a browser-based studio for placing a video or a design inside a 3D device mockup, such as an iPhone or a MacBook, and exporting it as a video or an image.",
+		"It's good for showing an app or a website in a launch video, a demo or a post, without installing anything."
+	],
+	"uses": [
+		"Recording your app and showing it inside an iPhone for the launch video.",
+		"Generating the App Store or Google Play listing images in the sizes the stores require.",
+		"Preparing a demo of your website inside a MacBook for the README or social media."
+	],
+	"caveats": [
+		"The free plan allows 3 exports every 24 hours and 15 every 30 days, with video up to 720p.",
+		"The free plan adds a Swivel watermark and is for personal, non-commercial use only.",
+		"For 4K, transparent WebM, batch export and client or ad work you need the Pro plan."
+	],
+	"pricingNote": "Free plan with limits and a watermark; the Pro plan is paid monthly, every 6 months or yearly.",
+	"idealFor": "Developers who need video mockups to show off their app."
+}

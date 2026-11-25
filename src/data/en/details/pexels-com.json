@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Pexels is a photo and video library that its community of creators shares for free download and use, including in commercial projects and without giving credit. You can search by topic, color or orientation and download each file in different sizes.",
+		"It also offers a free API to search and embed its images and videos from your own app, and plugins for design tools."
+	],
+	"uses": [
+		"Getting photos for the hero, blog or cards of a landing page without buying licenses.",
+		"Using a short video as a background on a home page.",
+		"Integrating the API into an app so users can pick images from your own search box."
+	],
+	"caveats": [
+		"The license prohibits selling unmodified copies, for example as posters, and using the images as part of a brand or logo.",
+		"The people shown can't be put in an offensive situation or made to look like they endorse your product.",
+		"The API has a default request limit and asks you to credit Pexels and the photographer whenever possible."
+	],
+	"pricingNote": "All photos and videos can be downloaded at no cost, and the API is free too.",
+	"idealFor": "Projects that need quality photos or videos without paying for licenses."
+}

@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"CSS Loaders is a collection of more than 600 loading animations made with CSS only, each using a single element, and organized into about 40 categories such as classics, dots or spinners. They all share the same markup, a div with the class loader, and you copy the CSS with one click.",
+		"It's a good fit when you need a loading indicator different from the usual spinner and don't want to add JavaScript or a library."
+	],
+	"uses": [
+		"Show an indicator while a page or a component loads.",
+		"Put a loader inside a button while a form is being submitted.",
+		"Replace a project's generic spinner with one that matches its style."
+	],
+	"caveats": [
+		"Since you copy only the CSS, you have to adjust the color, size and position to fit your design.",
+		"They all use the loader class, so if you combine several on one page, rename them so they don't clash.",
+		"Each loader is an empty div, with no text for screen readers: add role=\"status\" and an aria-label that announces the loading yourself."
+	],
+	"pricingNote": "You copy each loader's CSS straight from the site.",
+	"idealFor": "Anyone who needs a quick loading indicator, without JavaScript."
+}

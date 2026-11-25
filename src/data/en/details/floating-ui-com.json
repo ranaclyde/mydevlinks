@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Floating UI is a library for anchoring floating elements, such as tooltips, popovers and dropdown menus, to another element and keeping them visible. It avoids collisions with screen edges using functions like flip, shift and size, and is the successor to Popper 2.",
+		"It has versions for the web, React, React Native and Vue, and each module can be imported separately so the final bundle stays minimal. It's a good fit when you're building your own component system and need reliable positioning."
+	],
+	"uses": [
+		"Placing a tooltip that switches sides when it doesn't fit next to the window edge.",
+		"Building your own dropdown menu or select that adjusts to the available space.",
+		"Anchoring a popover to the cursor coordinates using a virtual element."
+	],
+	"caveats": [
+		"It only calculates positions: styling, animation and the component's accessibility are up to you, unless you use its interaction hooks for React.",
+		"It has quite a bit of configuration; if all you need is a simple tooltip, a ready-made component library might save you work.",
+		"You have to pick the right package for your platform, such as the DOM, React or Vue one."
+	],
+	"pricingNote": "Open source under the MIT license; funded through sponsorships.",
+	"idealFor": "People building their own tooltips, popovers and floating menus."
+}

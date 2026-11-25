@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"HTMLrev is a directory of free HTML and CSS templates for websites, landing pages, blogs, portfolios, stores and dashboards. It organizes them by technology, including Bootstrap, Tailwind, React, Next.js, Vue, Astro and Laravel, and each one links to its author's site.",
+		"It's a good fit when you need a visual starting point for a project and prefer to compare several options in one place."
+	],
+	"uses": [
+		"Finding a Tailwind landing page template to launch an idea quickly.",
+		"Looking for an admin dashboard base in React or Vue for an internal project.",
+		"Reviewing plain HTML portfolio templates to build your personal site."
+	],
+	"caveats": [
+		"It's a directory: the templates live on their authors' sites and aren't downloaded from HTMLrev.",
+		"Each template has its own license; check it before using it in a commercial project.",
+		"There are ads and offers for paid libraries alongside the free templates."
+	],
+	"pricingNote": "The directory is free and lists free templates; some sponsors sell paid libraries separately.",
+	"idealFor": "Anyone looking for free starter templates, by framework."
+}

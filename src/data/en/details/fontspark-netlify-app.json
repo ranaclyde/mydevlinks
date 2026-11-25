@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"FontSpark suggests a random font from a list of about 145 typefaces, most from Google Fonts and the rest from Adobe Fonts. You can filter by type (sans serif, serif or others) and by weight (light, regular or bold), and the button to get it takes you to its page on Google Fonts or Adobe Fonts. It also has a directory and dark mode.",
+		"It's a good fit when you keep reusing the same fonts in every project and want to discover alternatives without going through huge catalogs."
+	],
+	"uses": [
+		"Looking for a different font for the title of a personal project.",
+		"Exploring bold sans serif options for a provisional logo.",
+		"Getting out of your usual fonts when starting a new design."
+	],
+	"caveats": [
+		"It's an inspiration tool: it doesn't generate code or two-font pairings.",
+		"Part of the list is from Adobe Fonts, which are used with an Adobe subscription; if you need free fonts, stick with the Google Fonts ones.",
+		"The catalog is limited, so it doesn't replace a full search tool."
+	],
+	"pricingNote": "Free to use, with no paid plans.",
+	"idealFor": "Discovering new fonts quickly and with no commitment."
+}

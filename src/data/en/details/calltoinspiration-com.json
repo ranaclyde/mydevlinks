@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"CallToInspiration is a gallery of site and app interfaces organized by design pattern: logins, popups, tables, forms, dashboards, pricing pages, footers, and more.",
+		"You browse it by choosing a pattern category. It's useful when you already know which component you need and want to see how other products handle it."
+	],
+	"uses": [
+		"Comparing several pricing pages before laying out your SaaS's.",
+		"Looking at login and sign-up forms to decide fields, order, and error messages.",
+		"Finding examples of dashboards and data tables to define the hierarchy of your panel."
+	],
+	"caveats": [
+		"There's no search or filters beyond the pattern categories.",
+		"It's visual reference only: it doesn't include code or reusable components.",
+		"The homepage has a prominent ad space."
+	],
+	"pricingNote": "Free to browse, with no paid plans.",
+	"idealFor": "Seeing how a specific interface component is handled."
+}

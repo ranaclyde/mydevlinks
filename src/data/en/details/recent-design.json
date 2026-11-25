@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Recent is an inspiration gallery that mixes many kinds of design work: web interfaces, branding, motion, illustration, posters, print, launch videos, websites, OG images, app screenshots and icons. Each piece is credited to its author and has its own page.",
+		"It's a good fit when you want to browse a variety of references and filter them by category, rather than look for a specific interface pattern."
+	],
+	"uses": [
+		"Looking at other products' OG images before designing the ones for your site.",
+		"Browsing app icons for inspiration for your own app's icon.",
+		"Watching product launch videos to plan yours."
+	],
+	"caveats": [
+		"You browse by categories and filters (Web Interface, Branding, Motion…); there's no search to find a specific piece.",
+		"The feed includes sponsored placements mixed in with the pieces.",
+		"It mixes different disciplines, so you have to go into the right category to avoid seeing posters when you're looking for interfaces."
+	],
+	"pricingNote": "You can browse without paying; the site shows sponsorships and job listings.",
+	"idealFor": "Anyone looking for varied visual inspiration organized by type of piece."
+}

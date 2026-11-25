@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"HeadlessX is a self-hosted scraping platform. It exposes an API on top of a custom-built Firefox (Camoufox) designed to resist bot detection, and returns JavaScript-rendered HTML, clean Markdown or full-page screenshots. It includes API keys, queued jobs, a CLI and MCP support.",
+		"It's a good fit when you'd rather run your own scraping infrastructure than pay for an external service. It ships with ready-made scrapers for websites, Google searches and YouTube."
+	],
+	"uses": [
+		"Convert JavaScript-heavy pages into Markdown to feed an AI or search pipeline.",
+		"Crawl a site and map its links from a job queue with an API key.",
+		"Connect it to n8n or Zapier to automate recurring data extraction."
+	],
+	"caveats": [
+		"You have to run it yourself: development mode requires Docker with Compose v2, Node.js 22+ and pnpm; production requires a VPS with Docker, two domains and ports 80 and 443 open.",
+		"It recommends 4 or more cores and 8-16 GB of RAM; the minimum is 2 cores and 4 GB.",
+		"The license is AGPL-3.0: if you offer a modified version as a network service, you must publish its source code. Also check the terms of the sites you plan to crawl."
+	],
+	"pricingNote": "Open source under the AGPL-3.0 license; you only pay for the infrastructure where you run it.",
+	"idealFor": "Teams that want their own scraping platform with full control."
+}

@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Jitter is a motion design tool that runs in the browser: you build animations on a canvas, start from one of its more than 400 free templates or describe the idea to its AI, and then fine-tune it by hand. It supports curves with the pen tool, gradients, animated blur, audio, video and more than 1,500 fonts.",
+		"It's a good fit for design and product teams who want to animate pieces (ads, social posts, interfaces) without learning After Effects, and who need to export to video, GIF or Lottie."
+	],
+	"uses": [
+		"Creating a launch animation for social media from a template.",
+		"Exporting a Lottie animation to use in an app or website.",
+		"Generating a short GIF that shows a feature in a README or an article."
+	],
+	"caveats": [
+		"The free plan exports up to 720p at 30 fps, with a watermark and 3 files per workspace.",
+		"Exporting in 1080p and without a watermark requires a paid plan; 4K, batch export and transparent background are on higher plans.",
+		"AI credits are limited on the free plan, and uploads can't exceed 20 MB."
+	],
+	"pricingNote": "Free plan with a watermark and 720p; Pro, Max and Ultra are charged per editor, with a discount for annual billing.",
+	"idealFor": "Designers and teams who animate visual pieces without motion design experience."
+}

@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Framer is a visual website builder with an AI agent that creates layouts, sections and components on an editable canvas from a description. It includes hosting, a CMS, analytics, A/B testing, localization and a marketplace of templates, components and plugins.",
+		"It's a good fit for landing pages and marketing or content sites that you want to design and publish in the same place, without setting up infrastructure. MCP-compatible agents, such as Claude or Cursor, can also edit the site."
+	],
+	"uses": [
+		"Launch a product landing page and publish it without configuring hosting.",
+		"Build a blog or a documentation page with CMS collections.",
+		"Start from a marketplace template and adapt it with the design agent."
+	],
+	"caveats": [
+		"The site is published on Framer's hosting, so you depend on the platform to keep it online.",
+		"The free plan uses a Framer domain; for a custom domain you need a paid plan.",
+		"The agent's actions consume AI credits, with a limited monthly quota."
+	],
+	"pricingNote": "Free plan with 500 AI credits per month and 1 GB of bandwidth; the Basic plan starts at $10 per month.",
+	"idealFor": "Landing pages and content sites that are designed and published in one place."
+}

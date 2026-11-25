@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Logoipsum is a collection of more than 200 placeholder logos that you download as SVG and PNG. They work like lorem ipsum for brands: believable logos to fill mockups, prototypes and templates until the client's real logo arrives.",
+		"It's a good fit when you need an interface to look finished without inventing brands or using real companies' logos."
+	],
+	"uses": [
+		"Filling the clients or partners section of a landing page in development.",
+		"Giving a Figma mockup a visual identity during a demo.",
+		"Populating a template or a theme with a sample brand."
+	],
+	"caveats": [
+		"Unmodified logos are only good as placeholders: they can't be used as a brand's final identity or registered as a trademark.",
+		"You can't resell the logos as they are or bundle them to offer a competing service.",
+		"The editor's premium fonts are sold as add-ons (Editor+), and their license covers a single commercial project."
+	],
+	"pricingNote": "The logos are free, including in commercial projects and without attribution; extra fonts, extended licenses and the Pro plugin are paid.",
+	"idealFor": "Mockups and prototypes that need placeholder logos."
+}

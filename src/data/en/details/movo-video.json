@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"MOVO is a template-based motion editor in the browser: you upload your images or videos, pick one of its more than 100 animated compositions, and adjust cards, layout, camera, shadows, and timing before exporting the video as MP4. It's in beta.",
+		"It's a good fit when you need an eye-catching animation to show screenshots or visuals and don't want to open After Effects or learn a motion program."
+	],
+	"uses": [
+		"Building an animated carousel of your app's screenshots to announce a launch on social media.",
+		"Showing several portfolio pieces in a moving composition for your site's homepage.",
+		"Trying different templates and formats, such as 4:5 or 16:9, for the same content before exporting it."
+	],
+	"caveats": [
+		"It's in beta, so templates, the interface, and the terms of use may change.",
+		"You need to create an account to export, and for now you can't remove the watermark; the announced Pro plan doesn't have a price yet.",
+		"Everything is built from its templates: it works for quick compositions, not for custom-made animations."
+	],
+	"pricingNote": "The editor runs in the browser; a Pro plan has been announced, with no published price yet.",
+	"idealFor": "Developers and designers who want to animate screenshots or visuals in minutes."
+}

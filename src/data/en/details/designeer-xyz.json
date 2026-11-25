@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Designeer is a hand-curated catalog of sites, tools, design resources and portfolios of designers and developers. It also has a feed of recent visual work that you can filter by categories such as interface, motion, 3D, typography or illustration.",
+		"It's a good fit when you want a starting point for finding inspiration, resources or tools without going through lots of separate sites."
+	],
+	"uses": [
+		"Explore interfaces and motion work as a reference for a project.",
+		"Discover UI tools and resources to add to your workflow.",
+		"Look through other people's portfolios for inspiration for your own."
+	],
+	"caveats": [
+		"It's a catalog of links: each resource is used on its own site, under its own terms.",
+		"To save favorites and organize them in folders you have to sign in.",
+		"Some slots are paid features, although they're labeled as promotional."
+	],
+	"pricingNote": "Browsing and submitting resources is free; only featured and sponsorship slots are sold.",
+	"idealFor": "People looking for design inspiration, resources and tools in one place."
+}

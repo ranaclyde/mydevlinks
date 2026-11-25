@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"AI Particle Simulator is a browser-based studio for designing 3D particle swarms with WebGL and watching them animate in real time. It comes with preset formations and post-processing effects, and lets you import images, text or 3D models as a starting point. For the AI part, it offers a prompt that you copy into an external assistant, such as Gemini or Claude, and the code it gives back runs in the tool.",
+		"It's a good fit when you need a particle effect for a hero or an animation and prefer to tune it by eye before taking it to your project."
+	],
+	"uses": [
+		"Creating a particle background for a landing page hero and exporting it as code.",
+		"Turning a logo or an image into an animated particle cloud.",
+		"Exporting the animation as a video or image to use on social media or in a presentation."
+	],
+	"caveats": [
+		"The AI doesn't live inside the tool: you generate the code in an external assistant and paste it to run it.",
+		"Custom code is filtered: it doesn't allow references such as document, window, fetch or eval.",
+		"Particles render on your GPU, so performance depends on your machine, especially with many particles or on mobile."
+	],
+	"pricingNote": "Free to use directly in the browser.",
+	"idealFor": "Designers and developers who want to prototype 3D particles and export the code."
+}

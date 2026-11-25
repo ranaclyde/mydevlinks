@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Unsplash is a photo bank of images from creators around the world that you can search and download at no cost. Alongside the free photos, it offers Unsplash+, a subscription with exclusive content.",
+		"It's a good fit when you need photos for a website, a blog or a mockup without buying licenses one by one."
+	],
+	"uses": [
+		"Adding cover images to the posts of a technical blog.",
+		"Filling a mockup or a prototype with realistic photos.",
+		"Choosing a background for a landing page's hero."
+	],
+	"caveats": [
+		"The free license allows commercial use without asking permission or giving credit, but you can't sell the photos without significantly modifying them or use them to build a service that competes with Unsplash.",
+		"Unsplash+ is an individual subscription with exclusive content; for several people there are separate team plans.",
+		"If you need photos with model and property releases, Unsplash+ offers those."
+	],
+	"pricingNote": "The photos are free; Unsplash+ costs $12 a month or $48 a year at the annual launch price.",
+	"idealFor": "Projects that need quality photography without paying for licenses."
+}

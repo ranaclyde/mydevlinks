@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Icons8 is a bank of icons, illustrations, 3D models, and photos, drawn by a single team in more than 130 icon styles and 330 illustration styles. Because each style is a complete pack, all the pieces of an interface match each other.",
+		"Besides searching the website, you can bring them in from Figma, from other editors, or from a coding agent through its MCP server. It also offers AI tools to generate icons and illustrations and to edit photos."
+	],
+	"uses": [
+		"Picking an icon style and using it across an entire app so nothing clashes.",
+		"Illustrating empty states, onboarding, or landing page sections with a series in the same style.",
+		"Connecting Claude Code or Cursor through MCP so the agent inserts icons while it builds the interface."
+	],
+	"caveats": [
+		"Free use requires putting a link to icons8.com on every page or app where the assets appear.",
+		"Without a paid license you don't get access to all formats and sizes.",
+		"The AI tools run on credits, which you buy separately or get with the plans."
+	],
+	"pricingNote": "Free with an attribution link; paid plans remove that requirement and add downloads and AI credits.",
+	"idealFor": "Teams that want consistent icons and illustrations without drawing them."
+}

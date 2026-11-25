@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"CodeFronts is a site of copy-and-paste CSS and Tailwind components, with about 5,000 examples across more than 200 collections: interfaces, motion effects, layouts, and navigation menus. It adds CSS generators and tools such as a CSS-to-Tailwind converter.",
+		"It's a good fit when you're looking for a specific piece to use as a starting point, without installing a library."
+	],
+	"uses": [
+		"Copying a hover effect or an animation for a landing page.",
+		"Generating a gradient or a shadow with the generators and bringing the CSS into your project.",
+		"Converting existing CSS styles to Tailwind classes."
+	],
+	"caveats": [
+		"These are standalone examples you have to adapt and test; there's no versioned package that updates on its own.",
+		"Style and quality vary between collections, so check accessibility and responsiveness before using them.",
+		"The site shows ads for an external course, with an affiliate link."
+	],
+	"pricingNote": "Site and tools are free, under the MIT license, with no sign-up or paywall.",
+	"idealFor": "Anyone looking for CSS or Tailwind snippets to copy and adapt."
+}

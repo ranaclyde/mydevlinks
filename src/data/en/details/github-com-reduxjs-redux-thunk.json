@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Redux Thunk is a middleware for Redux that lets you dispatch functions instead of action objects. That function receives dispatch and getState, so it can do async work and dispatch actions when it finishes.",
+		"It's a good fit when you need simple or moderate async logic alongside the store, like fetching data from an API and saving the result."
+	],
+	"uses": [
+		"Fetching data from an API and dispatching actions when the request starts, finishes or fails.",
+		"Dispatching several actions in a row or with a delay, for example with setTimeout.",
+		"Reading the state with getState to decide whether some data needs to be fetched again."
+	],
+	"caveats": [
+		"If you use Redux Toolkit, configureStore already includes the thunk middleware: you don't need to install it separately.",
+		"A thunk can't react to actions dispatched later; for that, the Redux docs recommend Redux Toolkit's listener middleware, and for websockets, a custom middleware.",
+		"For fetching data, createAsyncThunk or RTK Query save you from hand-writing the loading, success and error actions."
+	],
+	"pricingNote": "Open source under the MIT license.",
+	"idealFor": "Redux projects that need simple async logic in the store."
+}

@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"CSS-Peeps draws characters in the style of Open Peeps using only CSS: one file and one div. A configurator lets you choose the head, face, accessories, facial hair and body, and change colors, zoom and rotation through custom properties.",
+		"It's a good fit when you want illustrations of people for avatars or team sections without loading images, and with the ability to change them from CSS. You install it from npm."
+	],
+	"uses": [
+		"Creating team or testimonial avatars by customizing colors with variables like --peep-hair-color.",
+		"Changing the character on hover using the variants API in :hover.",
+		"Generating decorative illustrations for a landing page without relying on image files."
+	],
+	"caveats": [
+		"The @property export works in fewer browsers than the one compatible with :where(), but the latter requires you to define the variants in the HTML.",
+		"The configurator is desktop only, the API documentation is incomplete and the repository hasn't received changes since 2022.",
+		"The scale properties, such as --peep-head-scale, are still incomplete and will change, so it's best not to use them."
+	],
+	"pricingNote": "Open source under the BSD-2-Clause license; the base illustrations come from Open Peeps.",
+	"idealFor": "Websites that want customizable illustrated characters using only CSS."
+}

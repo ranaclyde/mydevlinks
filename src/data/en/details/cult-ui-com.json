@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Cult UI is a collection of animated components for shadcn/ui, with 154 pieces including a globe, a kanban board, analytics charts and device mockups. It's MIT licensed and plugs into any project that already uses shadcn/ui.",
+		"It's a good fit when you already work with shadcn/ui and want to add flashier or more complex pieces without writing them from scratch."
+	],
+	"uses": [
+		"Adding a kanban board to an internal tool.",
+		"Showing metrics with an already-styled analytics chart component.",
+		"Giving a landing page more presence with animated blocks and device mockups."
+	],
+	"caveats": [
+		"It's designed for projects with shadcn/ui and Tailwind; outside that ecosystem you'll have to adapt more.",
+		"Many pieces include animations, so check their effect on performance and respect the reduced motion preference.",
+		"The same author's paid products, such as AI SDK Agents, are separate and not part of the free library."
+	],
+	"pricingNote": "Open source under the MIT license; the author sells paid blocks for Vercel's AI SDK separately.",
+	"idealFor": "Projects with shadcn/ui that want animated components and extra blocks."
+}

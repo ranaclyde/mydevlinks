@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"SEESAW is a web inspiration gallery of hand-picked sites, updated daily. Each entry shows the favicon, the name and a one-line description, and links to its own detail page. You can browse by category (Agency, AI, Crypto, Design Tools, Developer Tools, E-Commerce, Fintech, Hardware, Portfolios, Productivity, Social, among others) or use a search box that covers sites, fonts and categories, with a ⌘K shortcut.",
+		"It's a good fit when you want to see how products in a specific field present themselves, especially tech ones such as developer tools or AI startups."
+	],
+	"uses": [
+		"Browsing the Developer Tools category to see how other tools similar to yours present their landing page.",
+		"Searching by typeface to find sites that use a font you're evaluating.",
+		"Looking at the Portfolios category before redesigning your personal site."
+	],
+	"caveats": [
+		"Categories are by industry, with no style or color filters, so for a specific visual direction you have to browse by eye.",
+		"The listing shows only the favicon and a short description; to see the design you have to open the detail page or the site.",
+		"It leans heavily toward tech sites and startups; other industries are less represented."
+	],
+	"pricingNote": "Free; the newsletter is also free, and there's one form to submit sites and another to sponsor.",
+	"idealFor": "Developers looking for product landing page references, especially from tools and startups."
+}

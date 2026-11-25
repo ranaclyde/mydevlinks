@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"TailAwesome is a curated list of Tailwind CSS templates and UI kits, plus bundles and free resources. You filter by type, framework and price, sort by popularity, and it offers search shortcuts like \"admin dashboard\" or \"landing page\".",
+		"It's a good fit when you're looking for a ready-made Tailwind template and want to compare them by framework and price."
+	],
+	"uses": [
+		"Finding an admin dashboard template with Tailwind.",
+		"Comparing premium UI kits before buying one.",
+		"Looking for free landing page options for a project."
+	],
+	"caveats": [
+		"Almost everything listed is paid, with individual prices of tens of dollars.",
+		"Some links carry referral codes.",
+		"Several templates and a bundle are TailAwesome's own, so the catalog mixes other people's products with theirs."
+	],
+	"pricingNote": "The directory is free to use; almost everything listed is paid and the site sells its own templates and bundles.",
+	"idealFor": "Developers with Tailwind who are looking for ready-made templates and UI kits."
+}

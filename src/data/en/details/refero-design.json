@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Refero is a library of real interface references: more than 145,000 screens from web and iOS products, plus complete user flows from sign-up to cancellation. You can browse by page type (dashboard, paywall, login, 404), by flow (onboarding, booking, password change), by UX pattern (filters, billing, dark mode), by UI element (modals, tables, tabs) or by site category.",
+		"It's a good fit when you're about to design or build a specific screen and want to see how well-known products solve it before you decide. It also offers a Figma plugin and an MCP server so an AI agent can query the same references."
+	],
+	"uses": [
+		"Seeing how different products present a pricing page with a plan comparison before you lay out your own.",
+		"Walking step by step through the sign-up and onboarding flow of several apps to decide how many steps to ask for.",
+		"Connecting the MCP to your coding agent so it bases an interface on real screens instead of a generic design."
+	],
+	"caveats": [
+		"The free plan shows only about 3% of the library and searches only by tag or company; the full catalog, the flows, the Figma plugin and the MCP are part of the Pro plan.",
+		"These are screenshots of other companies' products: use them to study patterns, not to copy designs or assets that belong to third parties.",
+		"It covers only web and iOS products; Android apps are not included."
+	],
+	"pricingNote": "The free plan covers about 3% of the library; Pro costs $17 per month, $120 per year or $250 as a one-time payment, and Team costs $20 per user per month.",
+	"idealFor": "Developers and designers who want to study how real products solve a screen or flow."
+}

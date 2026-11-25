@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"icons0 is an icon search engine that brings together more than 200,000 open icons from more than 150 collections, such as Boxicons, Carbon, or Arcticons, and runs on Iconify. You can filter by collection, category, and license, and add an icon to your project with a shadcn command: npx shadcn@latest add @icons0/<collection>/<name>.",
+		"It also offers an MCP server so your AI agent can search for icons directly. It's a good fit when you don't want to open several collection websites to find the right icon."
+	],
+	"uses": [
+		"Searching all open collections at once instead of trying site by site.",
+		"Installing an icon as a component in a project with shadcn from the terminal.",
+		"Letting your coding agent find and pick icons through the MCP while it builds an interface."
+	],
+	"caveats": [
+		"Each icon keeps the license of its collection, so use the license filter and check the terms before publishing.",
+		"Mixing different collections can result in an interface with inconsistent styles.",
+		"The MCP requires authorization to connect, so plan to set it up in your client before using it."
+	],
+	"pricingNote": "Search is free; the icons come from open collections, under each one's license.",
+	"idealFor": "Developers looking for open icons from many collections, by hand or with their agent."
+}

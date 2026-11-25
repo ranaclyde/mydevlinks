@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Fontshare is a typeface service from Indian Type Foundry. It offers professional-quality families you can download at no cost, with permission for personal and commercial use.",
+		"It's a good fit when you're looking for a typeface with character for a website, an app, or a brand and don't want to pay for a license."
+	],
+	"uses": [
+		"Choosing a font for a landing page's headings and downloading it to host in your project.",
+		"Defining the typography for a client's identity without adding license costs.",
+		"Trying several families with your own text before deciding which one to use in an interface."
+	],
+	"caveats": [
+		"Two licenses coexist: some families use the ITF Free Font License, which isn't open source, and others use the SIL Open Font License; check which one each family has.",
+		"Fonts under the ITF license have more restrictions than those under the OFL: check their terms before including them in a project you're going to distribute.",
+		"Check that the family includes the weights and styles you need before committing to it."
+	],
+	"pricingNote": "The fonts can be downloaded at no cost and used in personal and commercial projects.",
+	"idealFor": "Web and brand design that needs good fonts without a paid license."
+}

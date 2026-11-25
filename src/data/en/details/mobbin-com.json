@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Mobbin is a library of screenshots from real mobile apps, web apps, and websites, with more than 600,000 screens. You can browse by product, platform, industry, or category, and search for individual screens, complete flows (onboarding, checkout, subscription), and website sections such as heroes, pricing, or footers.",
+		"It's a good fit when you need to see how products already in production handle a UI pattern before you design or implement it."
+	],
+	"uses": [
+		"Reviewing how several apps in your field handle onboarding before building yours.",
+		"Comparing pricing sections or footers from real sites to decide a landing page's structure.",
+		"Saving references to collections to attach them to a task or a design review."
+	],
+	"caveats": [
+		"The free plan gives limited access to apps and sites, with no flows or animations and no search.",
+		"On the free plan, you can only have 3 collections, and copying and downloading screenshots is limited.",
+		"There's no monthly billing: paid plans are billed quarterly or yearly."
+	],
+	"pricingNote": "Pro costs $45 every 3 months or $120 per year; the free plan has limited access.",
+	"idealFor": "Designers and developers researching UI patterns in real products."
+}

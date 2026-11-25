@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Lapa Ninja is a landing page gallery with more than 7,300 designs since 2015, with full-page screenshots and video recordings of each site. Besides whole sites, it separates out individual sections, animations, OG images and fonts, and keeps earlier versions of the same site.",
+		"It's a good fit when you're designing a landing page and want to see the full page from top to bottom, not just the hero, and compare how a site changed over time."
+	],
+	"uses": [
+		"Scrolling through the full screenshots of several SaaS landing pages to decide the order of your own sections.",
+		"Looking up just the section you're missing, like a pricing table or a footer, in the Sections area.",
+		"Comparing a site's earlier versions to see how its messaging or design evolved."
+	],
+	"caveats": [
+		"The free plan shows ads and limits the boards for saving sites; Pro removes both.",
+		"The menu mixes the gallery with courses, templates and site-building tools, so it's best to go straight to Websites or Sections.",
+		"It focuses on landing pages and marketing sites; for app screens there are more specific galleries."
+	],
+	"pricingNote": "The gallery is free to browse; Pro costs $9 per month and removes the ads and the board limit.",
+	"idealFor": "Designing a landing page by looking at real full pages and sections."
+}

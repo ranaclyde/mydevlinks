@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Magic UI is a library of more than 150 animated components and effects, built with React, TypeScript, Tailwind CSS, and Motion, that complements shadcn/ui. It includes pieces such as animated text, backgrounds, marquees, and shiny buttons, designed to bring landing pages to life.",
+		"It's a good fit when you want a product page to look polished and have motion without coding every animation."
+	],
+	"uses": [
+		"Adding an animated background and a title with an effect to a landing page's hero.",
+		"Showing customer logos in a marquee that scrolls on its own.",
+		"Adding buttons and cards with shine effects to a launch page."
+	],
+	"caveats": [
+		"It's designed for React projects with Tailwind; it doesn't work as-is in other frameworks.",
+		"Many effects use Motion, which adds to your project's dependencies.",
+		"The complete templates and blocks are in Magic UI Pro, which is paid."
+	],
+	"pricingNote": "The components are free and open source (MIT); Magic UI Pro sells blocks and templates for $199 as a one-time payment.",
+	"idealFor": "Teams with React and Tailwind that want animated landing pages without so much work."
+}

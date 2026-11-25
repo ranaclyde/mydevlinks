@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Iconsax is Vuesax's official icon library. It offers about 7,000 free icons in six rounded styles and about 44,000 more in Pro, including nearly 1,000 animated icons. You can download them as SVG, PNG or WebP, or integrate them with code for Vue, React, Svelte and Web Components; there are also plugins for Figma and Framer.",
+		"It's a good fit when you need a large, consistent set and the free tier already covers the interface of a personal or commercial project."
+	],
+	"uses": [
+		"Filling an admin dashboard in Vue or React with icons using the integration code.",
+		"Searching for and replacing icons in a Figma design with its plugin.",
+		"Adding animated Pro icons to buttons and empty states on a landing page."
+	],
+	"caveats": [
+		"The free license is for a single person and doesn't allow reselling or redistributing the icons, whether individually or in packs.",
+		"If you use the icons in a UI kit or digital template, attribution is required and the cap is 500 Pro icons.",
+		"Pro and animated icons are part of the paid plan, and if a client wants to reuse Pro icons, they need their own license."
+	],
+	"pricingNote": "Free forever with about 7,000 icons, commercial use allowed. Pro costs $9.99 per month, $39.99 per year or $199.99 for a lifetime license.",
+	"idealFor": "Projects that want a large icon set with a free base that's fine for commercial use."
+}

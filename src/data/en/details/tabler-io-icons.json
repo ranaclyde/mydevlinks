@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Tabler Icons is a set of more than 6,000 SVG icons on a 24x24 grid with a 2 px stroke, in outline and filled styles. You can use them as loose SVGs, a webfont, a sprite, PNG, PDF or EPS, or through npm packages for React, React Native, Vue, Svelte, Solid, Angular, Astro and others.",
+		"It's a good fit when you want a large, uniform-style set that you can use as components in your framework and whose color and stroke width you can adjust."
+	],
+	"uses": [
+		"Use icons as React or Vue components with @tabler/icons-react or its equivalent, changing size and color through props.",
+		"Give an admin dashboard with hundreds of different screens consistent iconography.",
+		"Export individual icons as SVG or PNG for a Figma design or a presentation."
+	],
+	"caveats": [
+		"The set is MIT licensed, so it works in personal and commercial projects; if you redistribute the files, keep the license notice.",
+		"The webfont loads every icon; in React, Vue and other frameworks, import each icon by name so the bundler drops the rest.",
+		"The same page sells a $9 Bundle with the icons precompiled as PNG, PDF and webfont; it's optional, because those formats can also be installed for free from npm."
+	],
+	"pricingNote": "Open source under the MIT license; the $9 Bundle and the $69 package with other Tabler products are optional.",
+	"idealFor": "Web projects that need many consistent icons as components."
+}

@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"CollectUI is an inspiration gallery of interfaces and websites with a new selection every day, curated by designers. You browse it by Designers, Categories, and Trending, and you can save favorites.",
+		"It's a good fit when you need fresh visual ideas for a screen or a portfolio and prefer to explore by category or by author."
+	],
+	"uses": [
+		"Looking for references for a specific screen, such as a dashboard or a login, before laying it out.",
+		"Following designers whose style you like and checking their recent work.",
+		"Saving favorites to build a moodboard for the project and share it with the client."
+	],
+	"caveats": [
+		"These are inspiration images, with no code or specs, so you have to rebuild each design by hand.",
+		"The homepage includes sponsor blocks and a network of related sites that distract from the gallery.",
+		"The pieces come from designers' posts on X, so many are concepts that never became a real product."
+	],
+	"pricingNote": "Free to browse; the site sells ad space to sponsors.",
+	"idealFor": "Designers and developers looking for UI ideas every day."
+}

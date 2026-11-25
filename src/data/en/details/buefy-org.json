@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Buefy is a set of Vue UI components based on Bulma. It covers common pieces like forms, tables and modals, and you register it in your app with app.use(Buefy) or by importing individual components.",
+		"It's a good fit when you already use Vue 3 and prefer Bulma's style and classes over Tailwind."
+	],
+	"uses": [
+		"Building an admin dashboard in Vue with ready-made forms, tables and pagination.",
+		"Importing only the components you need, like Field and Input, to keep a small project lightweight.",
+		"Keeping a Bulma-based design while adding interactivity with Vue."
+	],
+	"caveats": [
+		"It requires Vue 3.0 or later; Vue 2 isn't supported.",
+		"Icons aren't included: you have to add the Material Design Icons stylesheet or configure FontAwesome.",
+		"Loading it from a CDN with a script tag currently fails; its README says to define window.process before initializing it."
+	],
+	"pricingNote": "Open source under the MIT license, with no paid plans.",
+	"idealFor": "Vue 3 apps that already use or want to use Bulma."
+}

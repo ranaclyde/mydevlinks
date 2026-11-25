@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Astryx is Meta's open source design system: React components built with StyleX, tokens for color, typography, spacing and motion, swappable themes and full-page templates. Besides the basic pieces, it includes components for chat interfaces, command palettes and app shells.",
+		"Its CLI generates, inside your project, the documentation that coding agents read, so it's a good choice if you build the interface with Claude Code, Cursor or v0 and want them to follow the same conventions on every screen."
+	],
+	"uses": [
+		"Setting up a React app with a complete theme from the start, without defining colors and spacing by hand.",
+		"Building an assistant interface with the chat components: message list, composer and tool calls.",
+		"Running npx @astryxdesign/cli init so the coding agent uses the system's components and tokens."
+	],
+	"caveats": [
+		"It's in beta, so the components' API may still change between versions.",
+		"It requires React 19 or later and uses StyleX for styling; in a project with Tailwind you end up with two styling systems side by side.",
+		"It's a complete design system: adopting it halfway in an app that already has its own interface pays off little."
+	],
+	"pricingNote": "Open source under the MIT license; there's no paid plan.",
+	"idealFor": "Teams starting a React app who want a design system ready to work with agents."
+}

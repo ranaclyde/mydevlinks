@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Design Spells collects small, surprising design details: animations, transitions, Easter eggs and hidden nods in apps and sites. Each \"spell\" has its thumbnail, the source app and a description, and they're shown from newest to oldest.",
+		"You explore it with a row of tags such as Interaction, Easter Egg, Animation, 404, Confetti or Dynamic Island. It's useful when you're looking for specific examples of microinteractions, not whole sites."
+	],
+	"uses": [
+		"Look for animation ideas for a 404 page by filtering on the 404 tag.",
+		"See how well-known apps do confetti or a celebration after you complete an action.",
+		"Bring specific examples of a microinteraction to a design meeting to decide how to implement it."
+	],
+	"caveats": [
+		"It only has tags: there's no text search.",
+		"It shows the effect but doesn't explain how to implement it; you have to reproduce it on your own.",
+		"It covers individual details, so it's not useful for studying the design of a complete interface."
+	],
+	"pricingNote": "You can browse it without an account or payment; the only payment is sponsorship of the newsletter and the site.",
+	"idealFor": "Developers and designers looking for specific microinteractions."
+}

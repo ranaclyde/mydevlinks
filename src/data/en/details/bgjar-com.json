@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"BGJar generates SVG backgrounds for sites, blogs, and apps. It offers 35 styles (waves, hexagons, circuit boards, stars, snow, and more), each with its own customization page.",
+		"It's a good fit when you want a lightweight vector background that scales to any size without losing sharpness."
+	],
+	"uses": [
+		"Using a wave background in a blog's header.",
+		"Giving a technical product's landing page a circuit background.",
+		"Generating an SVG texture for an app's welcome screen."
+	],
+	"caveats": [
+		"The free plan requires attribution; to remove it you have to pay for the Basic plan (one project) or Pro (unlimited projects).",
+		"On the free plan, files are licensed under CC BY 4.0; on all plans, it's prohibited to resell or give away the backgrounds as-is and to use them to build a service similar to BGJar.",
+		"A very detailed SVG can be quite heavy; check the file size before using it as a background."
+	],
+	"pricingNote": "Free with attribution; Basic costs $5.99 and Pro $35.99, both one-time payments.",
+	"idealFor": "Anyone who needs varied SVG backgrounds and is willing to give attribution or pay once."
+}

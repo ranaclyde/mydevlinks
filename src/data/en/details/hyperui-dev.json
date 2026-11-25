@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"HyperUI is a collection of copy-and-paste Tailwind CSS components. They're grouped into Application, Marketing, and Neobrutalism, with variants of accordions, cards, forms, charts, banners, and more, plus templates.",
+		"It's a good fit when you already use Tailwind and want to start from a ready-made block of HTML instead of writing it from scratch."
+	],
+	"uses": [
+		"Copying a contact or call-to-action section for a landing page.",
+		"Building a dashboard with cards, detail lists, and charts already laid out.",
+		"Trying a neobrutalist style on buttons and cards without creating the design yourself."
+	],
+	"caveats": [
+		"These are markup snippets, not framework components: you add the interactivity yourself.",
+		"You copy the code into your project, so you don't get automatic updates.",
+		"Check that the classes match the version of Tailwind you use."
+	],
+	"pricingNote": "Open source under the MIT license.",
+	"idealFor": "Tailwind projects that need interface blocks to copy."
+}

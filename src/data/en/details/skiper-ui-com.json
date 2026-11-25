@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Skiper UI is a collection of more than 106 uncommon components for shadcn/ui, built with Tailwind CSS, Next.js and Motion. Each component is a single file, so it doesn't add extra packages, and it installs with the shadcn command.",
+		"It's a good fit when you want effects beyond the usual ones, like a dynamic island or an image reveal, in a project that already uses shadcn/ui."
+	],
+	"uses": [
+		"Add a mobile-style dynamic island to a website's navigation.",
+		"Give a landing page image reveal effects or cursor trails.",
+		"Install a single component with npx shadcn add without adding new dependencies."
+	],
+	"caveats": [
+		"Some of the components are premium and only unlock with a purchase.",
+		"It's designed for projects with shadcn/ui, Tailwind and Next.js.",
+		"Animated effects can be heavy on modest devices: test them on mobile."
+	],
+	"pricingNote": "There are free components with no account needed; the Premium plan costs $129 as a one-time payment, with no subscription.",
+	"idealFor": "Projects with shadcn/ui that are looking for uncommon visual components."
+}

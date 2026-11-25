@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"This is Project Wallace's CSS quality tool: it analyzes your CSS and gives it a score from 0 to 100 for performance, maintainability and complexity, with recommendations to improve each area.",
+		"You can give it a site's URL, upload CSS files or paste the code. It's a good fit when you want a quick assessment; for more detailed metrics, the same site has a full CSS analyzer."
+	],
+	"uses": [
+		"Getting a quick diagnosis of the CSS of an already published site from its URL.",
+		"Reviewing a pasted stylesheet before bringing it into a project.",
+		"Seeing whether your CSS is weaker in performance, maintainability or complexity to decide what to tackle first."
+	],
+	"caveats": [
+		"It's an assessment based on the tool's own criteria, so the score is a guide, not a standard.",
+		"Turning on the option to format the CSS makes it easier to read but slightly changes the numbers.",
+		"It only gives scores and general recommendations; to see metrics like specificity or selector complexity you have to go to the site's CSS Analyzer."
+	],
+	"pricingNote": "Free to use, with no sign-up or payment.",
+	"idealFor": "Getting a quick score for the quality of your CSS."
+}

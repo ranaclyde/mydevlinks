@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Flaticon is a bank of icons and stickers with more than 18 million assets, including general icons, interface icons, animated icons, and stickers. It has a search by terms, collections, and an editor to adjust colors before downloading.",
+		"It's a good fit when you need a one-off icon on a very specific topic and can't find it in the usual interface icon libraries."
+	],
+	"uses": [
+		"Finding a themed icon, such as a type of food or a sport, for a section of your site.",
+		"Building a collection of a project's icons to download them in a consistent style.",
+		"Downloading stickers for a presentation or a social media post."
+	],
+	"caveats": [
+		"With the free account you can only download PNG, and you have to give attribution: link to Flaticon and credit the author.",
+		"SVG, EPS, PSD, and Base64 formats, and use without attribution, require Premium.",
+		"Quality and style vary a lot between authors, so it's hard to keep a uniform set if you mix packs."
+	],
+	"pricingNote": "Free in PNG with attribution; Premium costs €9.99 per month or €89.99 per year, and taxes may apply.",
+	"idealFor": "Finding specific themed icons for sites, presentations, or content."
+}

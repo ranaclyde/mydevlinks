@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Terraink creates posters and wallpapers from maps. You search for a place by name or coordinates, choose colors for streets, water, parks, and buildings, apply a theme and a typeface for the labels, and download the result as PNG, PDF, or layered SVG. It doesn't ask for an account, and everything is processed in your browser.",
+		"The map data comes from OpenStreetMap, under the ODbL license. It's a good fit when you want print-ready map art without designing it by hand."
+	],
+	"uses": [
+		"Creating a poster of the city where you live to print and frame.",
+		"Generating a wallpaper with the map of a place that matters to you.",
+		"Exporting the map as a layered SVG to tweak it in a vector editor."
+	],
+	"caveats": [
+		"It's still under development, so some features may change.",
+		"The data comes from OpenStreetMap, whose ODbL license requires attribution if you publish or distribute the map; check how to credit it.",
+		"The code is AGPL-3.0, something to keep in mind if you plan to reuse or host it."
+	],
+	"pricingNote": "Free and no account needed; it's supported by donations, and the code is open source under the AGPL-3.0 license.",
+	"idealFor": "Anyone who wants a custom map poster or wallpaper without signing up."
+}

@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"daisyUI is a Tailwind plugin that adds component-named classes, like btn or card, so you don't build every button or card from a long list of utilities. It includes dozens of components and 35 themes, and since everything is handled with CSS classes, it works in any framework.",
+		"It's a good fit when you already work with Tailwind and want a coherent interface quickly, without designing every piece from scratch."
+	],
+	"uses": [
+		"Building a personal project's admin panel without designing every component.",
+		"Offering light and dark mode, or other themes, by changing the data-theme attribute.",
+		"Prototyping a landing page with buttons, cards and forms that already match each other."
+	],
+	"caveats": [
+		"It's installed as a Tailwind plugin, so it makes the most sense in projects that already use it.",
+		"Some interactive components need their own JavaScript: the recommended modal, for example, is opened with showModal() on a dialog element.",
+		"If you combine it with another component library, set a prefix so their classes don't clash."
+	],
+	"pricingNote": "Open source under the MIT license; the store sells paid templates and extras.",
+	"idealFor": "Tailwind projects that need ready-made components and themes."
+}

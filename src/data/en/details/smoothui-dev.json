@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"SmoothUI is a set of 228 animated primitives and components for React, built with Tailwind, shadcn/ui and Motion. They're organized into primitives, components, blocks and templates, and the code is copied into your project.",
+		"It's a good fit when you use shadcn/ui and want to add polished animations without writing them from scratch."
+	],
+	"uses": [
+		"Adding an animated component, like an orb, to a screen with a single command.",
+		"Replacing static elements on a landing page with versions that have smooth transitions.",
+		"Starting from an animated template or block to build a product page."
+	],
+	"caveats": [
+		"It requires React, Tailwind and the shadcn CLI; it doesn't work as is in other frameworks.",
+		"The animations use Motion and, in some components, GSAP, which add weight to the bundle.",
+		"The code lives in your repository, so later improvements are applied by hand."
+	],
+	"pricingNote": "Open source under the MIT license; there's no paid plan.",
+	"idealFor": "shadcn/ui projects that want ready-to-use animations."
+}

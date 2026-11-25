@@ -1,0 +1,17 @@
+{
+	"whatIs": [
+		"AnyAPI brings together ready-to-use REST APIs: validation of emails, phone numbers, IBANs and VAT numbers, exchange rates, IP geolocation, PDF invoice generation, website screenshots, scraping and sentiment analysis, among others. All of them work with the same API key.",
+		"It's a good fit when you need one of these specific functions and would rather consume it over HTTP than build it yourself or integrate a different provider for each one."
+	],
+	"uses": [
+		"Validating the email or phone number on a sign-up form before saving it.",
+		"Showing prices in the visitor's currency using the exchange rates.",
+		"Generating the OpenGraph image for each blog post, or a PDF invoice, from your backend."
+	],
+	"caveats": [
+		"The free plan is very limited: 300 requests per month and 1 per second, so it's good for testing or small projects.",
+		"You depend on a third party for functions that may be on your app's critical path; plan for what happens if it doesn't respond."
+	],
+	"pricingNote": "The Hobby plan is free with 300 requests per month; paid plans start at $9.99 per month with annual billing (50,000 requests).",
+	"idealFor": "Developers who need several utility APIs with a single account."
+}

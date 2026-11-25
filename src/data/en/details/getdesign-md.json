@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"getdesign.md is a catalog of more than 550 DESIGN.md files, each one analyzing the design system of a well-known brand: colors, typography, spacing, components and the reasoning behind each decision. The idea is to hand them to a coding agent so it generates interfaces in that style.",
+		"Each brand has its own page with a preview and installs with a command like npx getdesign@latest add airbnb. It's a good fit when you code with an AI assistant and want a defined visual starting point instead of a generic design."
+	],
+	"uses": [
+		"Ask Claude Code or Cursor for a landing page in the style of Stripe or Linear, giving it the matching DESIGN.md.",
+		"Use npx to install a brand's DESIGN.md in your project root so the agent reads it on every task.",
+		"Read how a brand defines its palette and typography before building your own design system."
+	],
+	"caveats": [
+		"These are independent analyses with no connection to the brands: they describe each brand's visual style and are not official guidelines.",
+		"The list has no filters or categories: you browse it by name or by popularity (installs and saves).",
+		"Some analyses are only available in the paid Catalog Pass; saving entries requires signing in."
+	],
+	"pricingNote": "The general catalog is free to download; the Catalog Pass ($99 per month) gives access to a curated collection of analyses, and video templates ($29, one-time payment) and starter kits are sold separately.",
+	"idealFor": "Developers who work with AI agents and want a reference visual style."
+}

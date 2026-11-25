@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Atropos is an open-source library for creating 3D parallax effects when hovering over an element, with layers that move at different depths. It works with plain JavaScript, has a React version, and a web component you can use in Angular, Vue, Svelte, Solid, and others. It weighs about 2 KB compressed and has no dependencies.",
+		"It's a good fit for cards, covers, or galleries you want to feel deep without adding a full 3D library."
+	],
+	"uses": [
+		"Adding depth to product or portfolio cards on hover.",
+		"Building a cover with illustration layers that shift with movement.",
+		"Making the same interaction work on touch screens, too."
+	],
+	"caveats": [
+		"It requires a fixed HTML structure of containers (atropos, atropos-scale, atropos-rotate, and atropos-inner) and loading its stylesheet.",
+		"The container needs a defined width and height in CSS, and each layer's depth is adjusted by hand with the data-atropos-offset attribute.",
+		"On touch devices you can use rotateTouch with scroll-x or scroll-y so the effect doesn't block page scrolling."
+	],
+	"pricingNote": "Open source under the MIT license.",
+	"idealFor": "Interfaces with cards or images that benefit from a light depth effect."
+}

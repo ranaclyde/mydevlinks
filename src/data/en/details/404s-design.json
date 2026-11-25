@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"404s is a curated gallery of creative 404 error pages from real sites. Each card shows a screenshot and leads to a page with a link to the live page.",
+		"You browse it with the Latest and Top 4 tabs, a shuffle button, a search with a filter and a monthly archive with the four best of each month. It's useful when you want an error to stop being an empty screen."
+	],
+	"uses": [
+		"Looking for ideas to design your project's 404 page with illustration, humor or animation.",
+		"Showing a client examples of well-executed errors to justify design time on that screen.",
+		"Seeing how other sites offer a useful way out (search, links or a back button) from an error."
+	],
+	"caveats": [
+		"Filtering is limited to a search, the sort order, shuffle and the monthly archive; there are no thematic categories.",
+		"It shows the visual result, not the code, so you handle the implementation.",
+		"Some linked 404 pages may change or disappear if the original site is redesigned."
+	],
+	"pricingNote": "Open browsing with no paid plans.",
+	"idealFor": "Designing error pages with personality."
+}

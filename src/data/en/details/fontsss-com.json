@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Fontsss is a curated archive of fonts. Each entry comes with a preview, tags, variants, a description and the foundry or designer, with a link to their site. You can filter by style, such as sans serif, serif, display or vintage, and by free or commercial license.",
+		"It's a good fit when you're looking for typefaces with character, many of them commercial, and want to get quickly to the foundry that sells them."
+	],
+	"uses": [
+		"Finding a display font for a client's brand.",
+		"Filtering for free typefaces only for a project with no budget.",
+		"Getting to the foundry to buy the license for a font you liked."
+	],
+	"caveats": [
+		"Fontsss doesn't host fonts: it only links to the download for open source ones, and for the rest it takes you to the foundry's website.",
+		"Each foundry or designer defines the license, and many fonts are commercial: check their terms before using them.",
+		"It's a curated archive, not an exhaustive catalog."
+	],
+	"pricingNote": "Browsing the archive is free; commercial fonts are bought from each foundry.",
+	"idealFor": "Designers looking for fonts with character and their foundry."
+}

@@ -1,0 +1,17 @@
+{
+	"whatIs": [
+		"Cool Contrast calculates the contrast ratio between two colors and shows whether it meets the WCAG AA and AAA levels. It also suggests alternative colors, previews the result on sample pages and interface elements, and lets you edit the colors in different color spaces.",
+		"It's a good fit when you need to check the accessibility of text on its background without opening a heavy tool."
+	],
+	"uses": [
+		"Checking that a button's text has enough contrast against its background.",
+		"Adjusting a link's color until it reaches AA.",
+		"Seeing how a pair of colors looks on sample interface elements before applying it."
+	],
+	"caveats": [
+		"It measures contrast using the WCAG 2 AA and AAA levels; if your team works with APCA, you'll need another tool.",
+		"The project hasn't been updated since June 2024."
+	],
+	"pricingNote": "Open source under the MIT license; there's a link to donate.",
+	"idealFor": "Quickly checking whether a pair of colors meets AA or AAA."
+}

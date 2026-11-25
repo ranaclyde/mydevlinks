@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"Rare UI is a collection of more than 28 uncommon animated React components, such as a fluid orb, letters with gravity, sidebars with bounce or a duration picker. Each component is a single file that you add with the shadcn CLI or from its MCP server, and it ends up in your project for you to edit.",
+		"It's a good fit when you want an interface or a portfolio to have interaction details that stand out, without coding every animation from scratch."
+	],
+	"uses": [
+		"Giving a portfolio personality with an animated side menu and a counter that animates when it appears.",
+		"Showing the state of an AI assistant with an animated orb and a search-in-progress indicator.",
+		"Improving a verification form with an animated OTP code field and password field."
+	],
+	"caveats": [
+		"It's designed for React with Tailwind CSS and uses Motion for the animations, so it adds that dependency.",
+		"The license requires credit with a visible link to rareui.com in the project, for example in the footer or the README.",
+		"You can use it in commercial products, but you can't sell or redistribute the components as your own library or kit."
+	],
+	"pricingNote": "Free, including in commercial projects, under the MIT license plus the Commons Clause and a credit requirement.",
+	"idealFor": "React portfolios and products that want rarely seen animated interactions."
+}

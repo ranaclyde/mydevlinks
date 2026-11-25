@@ -1,0 +1,18 @@
+{
+	"whatIs": [
+		"useHooks is a collection of ready-to-use React hooks, created by the ui.dev team. It includes pieces like useDebounce, useLocalStorage, useMediaQuery, useWindowSize, useCopyToClipboard and useClickAway, each with documentation and a live example.",
+		"You install it with the @uidotdev/usehooks package, or you can copy a hook's code into your project if you only need one."
+	],
+	"uses": [
+		"Delaying a search while the user types with useDebounce.",
+		"Saving preferences in localStorage and keeping them in sync with useLocalStorage.",
+		"Closing a menu or a modal when you click outside it with useClickAway."
+	],
+	"caveats": [
+		"The repository hasn't received changes since May 2025, so check that the hooks you need work with your version of React.",
+		"It requires React 18 or later.",
+		"Hooks like useFetch, useInterval or useCountdown only come in the package's experimental version, which requires experimental versions of React and React DOM; it's not for production."
+	],
+	"pricingNote": "Free and open source under the MIT license; ui.dev sells courses separately.",
+	"idealFor": "React projects that need common hooks without writing them from scratch."
+}
