@@ -1,5 +1,6 @@
 ---
 import { LOCALE_NAME, LOCALES, localizePath, toLocale, useTranslations } from '../i18n/ui';
+import Flag from './Flag.astro';
 import Logo from './Logo.astro';
 
 interface Props {
@@ -38,6 +39,22 @@ const themes = [
 		icon: '<path d="M13.2 10.1A5.6 5.6 0 0 1 5.9 2.8a5.6 5.6 0 1 0 7.3 7.3z"/>',
 	},
 ];
+
+/* Los dos selectores comparten forma: un disparador con lo elegido y una lista flotante. */
+const trigger =
+	'border-line-strong bg-bg text-ink hover:bg-sunk flex h-10 cursor-pointer list-none items-center gap-1.5 border px-2.5 md:h-8 md:px-2 [&::-webkit-details-marker]:hidden';
+const chevron = 'text-muted transition-transform duration-150 group-open/menu:rotate-180 motion-reduce:transition-none';
+const panel =
+	'border-line-strong bg-bg absolute top-[calc(100%+4px)] right-0 z-30 flex min-w-44 flex-col border py-1';
+const option =
+	'text-muted hover:bg-sunk hover:text-ink aria-[current]:text-accent aria-pressed:text-accent group/option flex h-10 w-full cursor-pointer items-center gap-2.5 px-3 text-sm no-underline md:h-8';
+/* El ícono del disparador sale de `data-theme`, que el layout fija antes de pintar: no parpadea. */
+const summaryIcon: Record<string, string> = {
+	system: '[:root[data-theme]_&]:hidden',
+	light: 'hidden [:root[data-theme=light]_&]:block',
+	dark: 'hidden [:root[data-theme=dark]_&]:block',
+};
+const check = 'invisible shrink-0 group-aria-[current]/option:visible group-aria-pressed/option:visible';
 ---
 
 <header
@@ -47,40 +64,47 @@ const themes = [
 		<Brand class="font-mono text-lg leading-none font-semibold tracking-[-.02em]">
 			<a href={home} class="text-inherit no-underline">
 				<span class="sr-only">toolshelf</span>
-				<span class="max-[379px]:[&_.logo-word]:hidden" aria-hidden="true"><Logo animate={animateLogo} /></span>
+				<span aria-hidden="true"><Logo animate={animateLogo} /></span>
 			</a>
 		</Brand>
 		<span class="text-muted font-mono text-xs max-md:hidden">{total} {t.links(total)}</span>
 	</div>
 	<div class="flex items-center gap-2">
-		<nav class="border-line flex border font-mono text-xs" aria-label={t.language}>
-			{
-				languages.map((language) => (
-					<a
-						class="text-muted hover:bg-sunk hover:text-ink aria-[current]:bg-ink aria-[current]:text-bg border-line grid h-10 min-w-10 place-items-center px-2 uppercase no-underline not-first:border-l md:h-8 md:min-w-9"
-						href={language.href}
-						hreflang={language.lang}
-						lang={language.lang}
-						aria-current={language.current ? 'true' : undefined}
-						data-lang-link
-					>
-						<span aria-hidden="true">{language.lang}</span>
-						<span class="sr-only">{LOCALE_NAME[language.lang]}</span>
-					</a>
-				))
-			}
-		</nav>
-		<div class="border-line flex border" role="group" aria-label={t.theme} data-needs-js>
-			{
-				themes.map((theme) => (
-					<button
-						class="text-muted hover:bg-sunk hover:text-ink aria-pressed:bg-ink aria-pressed:text-bg border-line grid size-10 cursor-pointer place-items-center not-first:border-l md:h-8 md:w-9"
-						type="button"
-						aria-label={theme.label}
-						aria-pressed={theme.value === 'system' ? 'true' : 'false'}
-						data-theme-button={theme.value}
-					>
+		<details class="group/menu relative" data-menu>
+			<summary class={trigger} aria-label={`${t.language}: ${LOCALE_NAME[locale]}`}>
+				<Flag lang={locale} />
+				<span class="font-mono text-xs uppercase" aria-hidden="true">{locale}</span>
+				<svg class={chevron} width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+					<path d="M2 3.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.4" />
+				</svg>
+			</summary>
+			<nav class={panel} aria-label={t.language}>
+				{
+					languages.map((language) => (
+						<a
+							class={option}
+							href={language.href}
+							hreflang={language.lang}
+							lang={language.lang}
+							aria-current={language.current ? 'true' : undefined}
+							data-lang-link
+						>
+							<Flag lang={language.lang} />
+							<span class="flex-1">{LOCALE_NAME[language.lang]}</span>
+							<svg class={check} width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">
+								<path d="M2.5 6.2l2.3 2.3 4.7-4.9" fill="none" stroke="currentColor" stroke-width="1.5" />
+							</svg>
+						</a>
+					))
+				}
+			</nav>
+		</details>
+		<details class="group/menu relative" data-menu data-needs-js>
+			<summary class={trigger} aria-label={t.theme} data-label={t.theme} data-theme-summary>
+				{
+					themes.map((theme) => (
 						<svg
+							class={summaryIcon[theme.value]}
 							width="15"
 							height="15"
 							viewBox="0 0 16 16"
@@ -90,14 +114,47 @@ const themes = [
 							aria-hidden="true"
 							set:html={theme.icon}
 						/>
-					</button>
-				))
-			}
-		</div>
+					))
+				}
+				<svg class={chevron} width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+					<path d="M2 3.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.4" />
+				</svg>
+			</summary>
+			<div class={panel} role="group" aria-label={t.theme}>
+				{
+					themes.map((theme) => (
+						<button
+							class={option}
+							type="button"
+							aria-pressed={theme.value === 'system' ? 'true' : 'false'}
+							data-theme-button={theme.value}
+						>
+							<svg
+								class="shrink-0"
+								width="15"
+								height="15"
+								viewBox="0 0 16 16"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="1.4"
+								aria-hidden="true"
+								set:html={theme.icon}
+							/>
+							<span class="flex-1 text-left">{theme.label}</span>
+							<svg class={check} width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">
+								<path d="M2.5 6.2l2.3 2.3 4.7-4.9" fill="none" stroke="currentColor" stroke-width="1.5" />
+							</svg>
+						</button>
+					))
+				}
+			</div>
+		</details>
 	</div>
 </header>
 
 <script>
+	import '../scripts/menus';
+
 	// En el directorio, el otro idioma conserva los filtros de la URL.
 	for (const link of document.querySelectorAll<HTMLAnchorElement>('a[data-lang-link]:not([aria-current])')) {
 		link.addEventListener('click', () => {
