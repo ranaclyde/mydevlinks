@@ -46,6 +46,18 @@
   to = "/en/tool/stitch-google-com"
   status = 301
 
+# Rutas del sitio que tuvo antes este subdominio (otra colección de herramientas, ajena al
+# proyecto). Google todavía las tiene indexadas: 410 le dice que se eliminaron a propósito y las
+# saca antes que con un 404. No choca con las fichas, que van en /tool/ (singular).
+[[redirects]]
+  from = "/tools/*"
+  to = "/404.html"
+  status = 410
+[[redirects]]
+  from = "/tools"
+  to = "/404.html"
+  status = 410
+
 # Una ruta que no existe bajo /en muestra la 404 en inglés; el resto usa /404.html.
 # Netlify solo aplica la regla si no hay un archivo en esa ruta.
 [[redirects]]
