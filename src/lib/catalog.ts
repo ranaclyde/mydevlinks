@@ -12,7 +12,12 @@ export async function loadCatalog(locale: Locale, isDev = import.meta.env.DEV): 
 	const links = sortLinks(visibleLinks((await getCollection('links')).map((entry) => entry.data), isDev));
 	const details = new Map((await getCollection('details')).map((entry) => [entry.id, entry.data]));
 	if (locale === 'es') {
-		return links.map((link) => ({ link, detail: details.get(link.id), translated: true }));
+		return links.map((link) => ({
+			link,
+			detail: details.get(link.id),
+			translated: true,
+			descriptionTranslated: true,
+		}));
 	}
 	const linkTexts = new Map((await getCollection('linksEn')).map((entry) => [entry.id, entry.data]));
 	const detailTexts = new Map((await getCollection('detailsEn')).map((entry) => [entry.id, entry.data]));
@@ -21,10 +26,12 @@ export async function loadCatalog(locale: Locale, isDev = import.meta.env.DEV): 
 	);
 }
 
-/** El inglés tiene todos los textos de estos enlaces (todos, si no se pasa ninguno). */
-export async function englishComplete(ids?: string[]): Promise<boolean> {
-	const items = await loadCatalog('en');
-	return items.filter((item) => !ids || ids.includes(item.link.id)).every((item) => item.translated);
+/**
+ * El directorio en inglés está traducido. Solo muestra nombre, descripción y etiquetas, así
+ * que basta con las descripciones; los detalles se traducen aparte, ficha por ficha.
+ */
+export async function directoryTranslated(isDev = import.meta.env.DEV): Promise<boolean> {
+	return (await loadCatalog('en', isDev)).every((item) => item.descriptionTranslated);
 }
 
 /** Rutas de las fichas en `locale`, para `getStaticPaths`. */

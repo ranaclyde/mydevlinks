@@ -1,4 +1,4 @@
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { expect, test } from '@playwright/test';
 
 interface RawLink {
@@ -10,7 +10,12 @@ interface RawLink {
 const links: RawLink[] = JSON.parse(readFileSync('src/data/links.json', 'utf8'));
 const link = links.filter((item) => !item.private)[0];
 const english: Array<{ id: string }> = JSON.parse(readFileSync('src/data/en/links.json', 'utf8'));
-const allTranslated = links.filter((item) => !item.private).every((item) => english.some((entry) => entry.id === item.id));
+const publicLinks = links.filter((item) => !item.private);
+const descriptionsTranslated = publicLinks.every((item) => english.some((entry) => entry.id === item.id));
+/** Un enlace con detalle en español y todavía sin el de inglés. */
+const pending = publicLinks.find(
+	(item) => existsSync(`src/data/details/${item.id}.json`) && !existsSync(`src/data/en/details/${item.id}.json`),
+);
 
 test('el directorio en inglés tiene la interfaz en inglés y sus fichas bajo /en/tool', async ({ page }) => {
 	await page.goto('/en');
@@ -46,14 +51,28 @@ test('en la ficha en inglés, volver lleva al directorio en inglés', async ({ p
 	await expect(page).toHaveURL('/en');
 });
 
-test.describe('indexación mientras falte traducir', () => {
-	test.skip(allTranslated, 'Ya está todo traducido.');
+test.describe('indexación según lo traducido', () => {
 	test.skip(({ isMobile }) => isMobile, 'El head no cambia con el viewport.');
 
-	test('el inglés sin traducir no se indexa ni se anuncia con hreflang', async ({ page }) => {
+	test('el directorio en inglés se indexa solo con todas las descripciones', async ({ page }) => {
 		await page.goto('/en');
+		const robots = page.locator('meta[name="robots"]');
+		const hreflang = page.locator('link[rel="alternate"][hreflang]');
+		if (descriptionsTranslated) {
+			await expect(robots).toHaveAttribute('content', /^index/);
+			await expect(hreflang).toHaveCount(3);
+			await expect(page.locator('link[hreflang="es"]')).toHaveAttribute('href', /\/$/);
+		} else {
+			await expect(robots).toHaveAttribute('content', /noindex/);
+			await expect(hreflang).toHaveCount(0);
+		}
+	});
+
+	test('una ficha sin su detalle en inglés no se indexa ni se anuncia con hreflang', async ({ page }) => {
+		test.skip(!pending, 'Todos los detalles están traducidos.');
+		await page.goto(`/en/tool/${pending!.id}`);
 		await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex/);
-		await page.goto('/');
+		await page.goto(`/tool/${pending!.id}`);
 		await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /^index/);
 		await expect(page.locator('link[rel="alternate"][hreflang]')).toHaveCount(0);
 	});

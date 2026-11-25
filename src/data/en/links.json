@@ -1,1 +1,866 @@
-[]
+[
+	{
+		"id": "squoosh-app",
+		"description": "Compress and compare images with different codecs, right in the browser."
+	},
+	{
+		"id": "magnific-com",
+		"description": "Formerly Freepik: a library of visual assets with AI tools for image, video and audio."
+	},
+	{
+		"id": "illustrationkit-com-illustrations-yippy",
+		"description": "Hand-drawn vector illustrations, with icons and avatars."
+	},
+	{
+		"id": "storyset-com",
+		"description": "Free illustrations you can customize and animate in an online editor."
+	},
+	{
+		"id": "shots-so",
+		"description": "Create mockups from your screenshots."
+	},
+	{
+		"id": "picography-co",
+		"description": "Stock photo library: free high-resolution photos, no attribution required."
+	},
+	{
+		"id": "svgl-app",
+		"description": "A library of SVG logos."
+	},
+	{
+		"id": "blobatar-dev",
+		"description": "Generates deterministic geometric avatars from any text."
+	},
+	{
+		"id": "undraw-co",
+		"description": "Open-source illustrations that adapt to your color."
+	},
+	{
+		"id": "terraink-app",
+		"description": "Create posters and wallpapers from maps of any city."
+	},
+	{
+		"id": "toolbox-signalsupply-co",
+		"description": "Design tools: CSS blobs and gradients, patterns, Sharp and Perspectr."
+	},
+	{
+		"id": "wweb-dev-resources-animated-css-background-generator",
+		"description": "Generates animated backgrounds with pure CSS, in three styles."
+	},
+	{
+		"id": "tailwindcss-animated-com",
+		"description": "A plugin with extra animation utilities for Tailwind."
+	},
+	{
+		"id": "github-com-cruip-cruip-tutorials-blob-main-rotating-words-index-html",
+		"description": "A rotating words example from Cruip's tutorials repository."
+	},
+	{
+		"id": "omatsuri-app",
+		"description": "Generators for CSS triangles, gradients and shadows, plus an SVG compressor."
+	},
+	{
+		"id": "svgomg-net",
+		"description": "Optimize and minify SVG in the browser with SVGO."
+	},
+	{
+		"id": "svgtrace-com",
+		"description": "Turn images into editable vectors and export to SVG, PDF, EPS or DXF."
+	},
+	{
+		"id": "bgjar-com",
+		"description": "Generates SVG background images for websites."
+	},
+	{
+		"id": "layout-bradwoods-io",
+		"description": "Generates layout code with CSS Grid and Flexbox."
+	},
+	{
+		"id": "uigradients-com",
+		"description": "A hand-picked collection of color gradients."
+	},
+	{
+		"id": "neumorphism-io",
+		"description": "Generates neumorphic CSS shadows and gradients."
+	},
+	{
+		"id": "uicolors-app-create",
+		"description": "Create and export custom color palettes for Tailwind."
+	},
+	{
+		"id": "coolcontrast-vercel-app",
+		"description": "Check the contrast of color pairs against WCAG guidelines."
+	},
+	{
+		"id": "bg-ibelick-com",
+		"description": "Ready-to-copy background snippets in Tailwind and CSS."
+	},
+	{
+		"id": "mycolor-space",
+		"description": "Generates color palettes and gradients."
+	},
+	{
+		"id": "coolors-co",
+		"description": "Generate and explore color combinations."
+	},
+	{
+		"id": "openpeeps-com",
+		"description": "A library of hand-drawn illustrations for composing scenes with people."
+	},
+	{
+		"id": "css-peeps-com",
+		"description": "Build Open Peeps-style characters with one CSS file and a single div."
+	},
+	{
+		"id": "landingfolio-com",
+		"description": "Landing page inspiration, with templates and components."
+	},
+	{
+		"id": "htmlrev-com",
+		"description": "Free templates for sites, blogs, stores and dashboards, by framework."
+	},
+	{
+		"id": "toools-design",
+		"description": "A directory of tools and resources for designing websites, apps and brands."
+	},
+	{
+		"id": "headlessui-com",
+		"description": "Unstyled, accessible components built to integrate with Tailwind."
+	},
+	{
+		"id": "devdojo-com-tailwindcss-buttons",
+		"description": "Over 30 button designs to copy and paste."
+	},
+	{
+		"id": "uiverse-io",
+		"description": "A community library of open UI elements to copy as HTML/CSS, Tailwind, React or Figma."
+	},
+	{
+		"id": "hyperui-dev",
+		"description": "Free Tailwind components to copy and paste."
+	},
+	{
+		"id": "tailwindawesome-com",
+		"description": "A directory of Tailwind templates and UI kits."
+	},
+	{
+		"id": "daisyui-com",
+		"description": "A semantic component library for Tailwind, with built-in themes."
+	},
+	{
+		"id": "flowbite-com",
+		"description": "An open component library built on Tailwind, with blocks, templates and integrations."
+	},
+	{
+		"id": "ui-shadcn-com",
+		"description": "Accessible components you copy into your project and adapt to your design."
+	},
+	{
+		"id": "refero-design",
+		"description": "A collection of web and iOS interface screenshots with advanced search."
+	},
+	{
+		"id": "css-loaders-com",
+		"description": "Over 600 loading animations made with pure CSS and a single element."
+	},
+	{
+		"id": "creative-tim-com-twcomponents",
+		"description": "An open-source repository of Tailwind components and templates."
+	},
+	{
+		"id": "tw-elements-com",
+		"description": "Free components, templates and plugins for Tailwind."
+	},
+	{
+		"id": "componentland-com",
+		"description": "A library of over 300 responsive, accessible components."
+	},
+	{
+		"id": "tailkit-com-free-tailwind-components",
+		"description": "Free Tailwind components for dashboards and landing pages."
+	},
+	{
+		"id": "park-ui-com",
+		"description": "Components built on Ark UI and Panda CSS."
+	},
+	{
+		"id": "kokonutui-com",
+		"description": "Open-source React components you install with one command."
+	},
+	{
+		"id": "basecoatui-com",
+		"description": "shadcn/ui-style components with Tailwind that don't need React."
+	},
+	{
+		"id": "rareui-com",
+		"description": "An open registry of animated React components to copy and paste."
+	},
+	{
+		"id": "namethatui-com",
+		"description": "Describe an interface element and it tells you what it's called."
+	},
+	{
+		"id": "scrollxui-dev-docs-components",
+		"description": "A collection of interface components for Next.js projects."
+	},
+	{
+		"id": "skiper-ui-com",
+		"description": "Uncommon components for Next.js, installable with the shadcn CLI."
+	},
+	{
+		"id": "buefy-org",
+		"description": "Lightweight Vue components based on Bulma."
+	},
+	{
+		"id": "magicui-design",
+		"description": "Components and templates to bring landing pages to life."
+	},
+	{
+		"id": "ui-aceternity-com",
+		"description": "Over 200 components, blocks and landing templates to copy and paste."
+	},
+	{
+		"id": "tailkits-com",
+		"description": "A directory of Tailwind templates, UI kits and components."
+	},
+	{
+		"id": "vengenceui-com",
+		"description": "Animated components and interactions for landing pages."
+	},
+	{
+		"id": "animate-ui-com",
+		"description": "Animated primitives for Radix UI, Base UI and React Aria, with shadcn/ui."
+	},
+	{
+		"id": "forgeui-in",
+		"description": "Animated components, marketing blocks and templates; free and Pro."
+	},
+	{
+		"id": "uilora-com",
+		"description": "Over 700 paid animated components for web and mobile."
+	},
+	{
+		"id": "originkit-dev",
+		"description": "Free animated components: copy them into React or install via CLI, MCP or an AI prompt."
+	},
+	{
+		"id": "shaders-com",
+		"description": "Open-source WebGPU shader components and a free visual editor."
+	},
+	{
+		"id": "libraries-dev-orbs",
+		"description": "Animated loading and \"thinking\" indicators for AI interfaces."
+	},
+	{
+		"id": "bagui-vercel-app",
+		"description": "An open registry of components, blocks and templates for shadcn/ui."
+	},
+	{
+		"id": "ui-watermelon-sh",
+		"description": "Free components, blocks and dashboards, installable with the shadcn CLI."
+	},
+	{
+		"id": "codefronts-com",
+		"description": "Frontend components, animations and generators to copy and paste."
+	},
+	{
+		"id": "framer-com",
+		"description": "A website builder with a design agent, hosting and CMS."
+	},
+	{
+		"id": "getlayers-ai",
+		"description": "Templates, 3D scenes and backgrounds you copy as a prompt for your AI."
+	},
+	{
+		"id": "svgrepo-com",
+		"description": "Over 500,000 openly licensed SVG vectors and icons, commercial use included."
+	},
+	{
+		"id": "hugeicons-com",
+		"description": "Over 60,000 free and Pro icons in 10 styles."
+	},
+	{
+		"id": "fonts-google-com",
+		"description": "A catalog of open fonts for the web."
+	},
+	{
+		"id": "fonts-google-com-icons",
+		"description": "Over 2,500 Google icons in a single font, with many design variants."
+	},
+	{
+		"id": "tabler-io-icons",
+		"description": "Over 6,000 open-source SVG icons with adjustable size, color and stroke."
+	},
+	{
+		"id": "animateicons-in-icons-lucide",
+		"description": "Animated Lucide icons with configurable size, color and duration."
+	},
+	{
+		"id": "icons0-dev",
+		"description": "Search 200,000 open icons on the web or from your agent via MCP."
+	},
+	{
+		"id": "icoon-co",
+		"description": "A store of AI-generated 3D icons and illustrations."
+	},
+	{
+		"id": "3dicons-com",
+		"description": "Over 4,000 3D icons in PNG and Figma, with several palettes and angles."
+	},
+	{
+		"id": "github-com-stereobooster-react-snap",
+		"description": "Zero-configuration static prerendering for single-page apps."
+	},
+	{
+		"id": "tanstack-com",
+		"description": "Headless, type-safe libraries for web apps: data, routing, tables, forms and more."
+	},
+	{
+		"id": "transform-tools",
+		"description": "Converts between formats: HTML to JSX, SVG to React, JSON to TypeScript and many more."
+	},
+	{
+		"id": "mui-com",
+		"description": "A React component library with Material Design or your own design system."
+	},
+	{
+		"id": "github-com-reduxjs-redux-thunk",
+		"description": "Middleware for writing async logic with the Redux store."
+	},
+	{
+		"id": "ant-design",
+		"description": "A design language and React component library for enterprise apps."
+	},
+	{
+		"id": "chakra-ui-com",
+		"description": "Modular, accessible components for React apps."
+	},
+	{
+		"id": "remotion-dev",
+		"description": "Create videos and motion graphics by programming in React."
+	},
+	{
+		"id": "usehooks-com",
+		"description": "A collection of server-safe React hooks."
+	},
+	{
+		"id": "github-com-hapijs-joi",
+		"description": "A schema language and data validator for JavaScript."
+	},
+	{
+		"id": "github-com-vuejs-awesome-vue",
+		"description": "A curated list of Vue-related resources."
+	},
+	{
+		"id": "v3-nuxtjs-org",
+		"description": "A full-stack Vue framework with file-based routing and server rendering."
+	},
+	{
+		"id": "directus-io",
+		"description": "A self-hostable headless backend and CMS on top of any database."
+	},
+	{
+		"id": "strapi-io",
+		"description": "An open-source headless CMS in JavaScript and TypeScript."
+	},
+	{
+		"id": "storyblok-com",
+		"description": "A headless CMS with a visual editor."
+	},
+	{
+		"id": "bolt-new",
+		"description": "Build sites, apps and prototypes by describing them in words."
+	},
+	{
+		"id": "stitch-withgoogle-com",
+		"description": "Generates mobile and web app interfaces with AI."
+	},
+	{
+		"id": "github-com-nirdiamant-agents-towards-production",
+		"description": "Code tutorials for taking generative AI agents to production."
+	},
+	{
+		"id": "spline-design",
+		"description": "Interactive 3D design in the browser, with real-time collaboration."
+	},
+	{
+		"id": "magicloops-dev-es",
+		"description": "Combine LLMs and code, without programming, to build apps and automations."
+	},
+	{
+		"id": "manus-im",
+		"description": "An AI agent that carries out tasks and automates workflows."
+	},
+	{
+		"id": "motionsites-ai",
+		"description": "Prompts and design inspiration for building websites with AI."
+	},
+	{
+		"id": "websiteprompts-ai",
+		"description": "Free website prompts to paste into Lovable, Bolt or Claude."
+	},
+	{
+		"id": "21st-dev",
+		"description": "Over 12,000 shadcn components and themes, installable with one command."
+	},
+	{
+		"id": "lemonsqueezy-com",
+		"description": "Payments, taxes and subscriptions for selling software and digital products."
+	},
+	{
+		"id": "fontspark-netlify-app",
+		"description": "Suggests fonts by filtering on type and weight; includes a directory."
+	},
+	{
+		"id": "modernfontstacks-com",
+		"description": "CSS system font stacks, organized by typeface style."
+	},
+	{
+		"id": "fontpair-co",
+		"description": "Google Fonts pairings to explore and test with your own content."
+	},
+	{
+		"id": "cofolios-com",
+		"description": "Portfolios of designers from major tech companies."
+	},
+	{
+		"id": "dark-design",
+		"description": "A gallery of dark-themed websites."
+	},
+	{
+		"id": "404s-design",
+		"description": "A gallery of creative error pages."
+	},
+	{
+		"id": "styles-refero-design",
+		"description": "Styles from real sites with their DESIGN.md: colors, typography and spacing."
+	},
+	{
+		"id": "websitevice-com",
+		"description": "Examples of modern websites for inspiration."
+	},
+	{
+		"id": "collectui-com",
+		"description": "Daily inspiration from interface designs and portfolios."
+	},
+	{
+		"id": "60fps-design",
+		"description": "A collection of animations and interactions from iOS and web apps."
+	},
+	{
+		"id": "seesaw-website",
+		"description": "A collection of curated websites, updated daily and organized by category."
+	},
+	{
+		"id": "liquidglassdesign-com",
+		"description": "Over 170 liquid glass and glassmorphism examples, with style prompts."
+	},
+	{
+		"id": "calltoinspiration-com",
+		"description": "Interface examples from sites and apps: logins, pricing, forms and more."
+	},
+	{
+		"id": "statichunt-com",
+		"description": "A directory of themes, templates, UI kits and tools for web development."
+	},
+	{
+		"id": "viewportui-com",
+		"description": "A gallery of interface designs and interactions posted on X."
+	},
+	{
+		"id": "bentogrids-com",
+		"description": "A collection of bento-style designs."
+	},
+	{
+		"id": "curated-design",
+		"description": "Real sites and landing pages, filterable by style or industry."
+	},
+	{
+		"id": "rebrand-gallery",
+		"description": "A gallery of rebrands with video, logos, color and typography."
+	},
+	{
+		"id": "layers-to-explore",
+		"description": "A community where design work is published and explored."
+	},
+	{
+		"id": "mobbin-com",
+		"description": "A searchable library of mobile and web app screenshots."
+	},
+	{
+		"id": "cta-gallery",
+		"description": "A gallery of website calls to action."
+	},
+	{
+		"id": "supahero-io",
+		"description": "A library of website hero sections."
+	},
+	{
+		"id": "navbar-gallery",
+		"description": "A gallery of website navigation bars."
+	},
+	{
+		"id": "footer-design",
+		"description": "A gallery of website footers, sortable by type and style."
+	},
+	{
+		"id": "getdesign-md",
+		"description": "Breakdowns of popular sites' design systems, for use with agents."
+	},
+	{
+		"id": "designspells-com",
+		"description": "A collection of design details: animations, transitions and hidden easter eggs."
+	},
+	{
+		"id": "recent-design",
+		"description": "A feed of recent design: interfaces, branding, motion, illustration and posters."
+	},
+	{
+		"id": "dribbble-com",
+		"description": "A community where designers, illustrators and visual creatives share their work."
+	},
+	{
+		"id": "quicktype-io",
+		"description": "Generates typed models and serializers from JSON in many languages."
+	},
+	{
+		"id": "overapi-com",
+		"description": "Cheat sheets for languages, web tools, databases and operating systems."
+	},
+	{
+		"id": "svgviewer-dev",
+		"description": "View, edit and optimize SVG online."
+	},
+	{
+		"id": "projectwallace-com-css-code-quality",
+		"description": "Analyzes your CSS and points out what to improve."
+	},
+	{
+		"id": "pagespeed-web-dev",
+		"description": "Google's tool for measuring a page's performance."
+	},
+	{
+		"id": "magicpattern-design",
+		"description": "Over 30 tools for creating patterns, gradients and blobs in SVG or CSS."
+	},
+	{
+		"id": "web-check-xyz",
+		"description": "An OSINT and security tool for inspecting any website."
+	},
+	{
+		"id": "simpleparallax-com",
+		"description": "A lightweight library that adds a parallax effect to any image."
+	},
+	{
+		"id": "responsively-app",
+		"description": "A browser for developing and testing responsive designs."
+	},
+	{
+		"id": "lenis-dev",
+		"description": "A lightweight open-source smooth scrolling library."
+	},
+	{
+		"id": "rapidapi-com",
+		"description": "An API hub for finding and exploring APIs for your project."
+	},
+	{
+		"id": "anyapi-io",
+		"description": "REST APIs to validate data, convert currencies, geolocate IPs and more."
+	},
+	{
+		"id": "publicapis-dev",
+		"description": "A collaborative list of over 1,400 public APIs by category."
+	},
+	{
+		"id": "swiperjs-com",
+		"description": "A touch slider for mobile with hardware-accelerated transitions."
+	},
+	{
+		"id": "floating-ui-com",
+		"description": "A library for positioning tooltips, popovers and floating menus."
+	},
+	{
+		"id": "atroposjs-com",
+		"description": "An open-source library for 3D parallax hover effects."
+	},
+	{
+		"id": "materialdesignicons-com",
+		"description": "Over 7,200 icons that follow the Material Design guidelines."
+	},
+	{
+		"id": "gsap-com",
+		"description": "A JavaScript animation library."
+	},
+	{
+		"id": "unlighthouse-dev",
+		"description": "Runs Lighthouse audits across an entire site from the command line."
+	},
+	{
+		"id": "motion-dev",
+		"description": "An animation library, formerly called Framer Motion."
+	},
+	{
+		"id": "driverjs-com",
+		"description": "A dependency-free library for product tours and feature highlighting."
+	},
+	{
+		"id": "itsfree-dev-es",
+		"description": "Free tools for developers: APIs, hosting, databases and AI."
+	},
+	{
+		"id": "pocketbase-io",
+		"description": "An open-source backend in one file, with database, auth and storage."
+	},
+	{
+		"id": "lawsofux-com",
+		"description": "A collection of best practices for designing interfaces."
+	},
+	{
+		"id": "headlessx-saify-me",
+		"description": "A self-hosted scraping platform with queued jobs and API keys."
+	},
+	{
+		"id": "github-com-devcaress-guia-entrevistas-de-programacion",
+		"description": "A Spanish-language guide to preparing for technical software interviews."
+	},
+	{
+		"id": "97cosas-com",
+		"description": "A Spanish translation of O'Reilly's \"97 Things\" series."
+	},
+	{
+		"id": "resend-com",
+		"description": "A transactional and marketing email service for developers."
+	},
+	{
+		"id": "reallygoodemails-com-studio",
+		"description": "A collaborative email builder, formerly Beefree, with templates and inspiration."
+	},
+	{
+		"id": "patterns-dev",
+		"description": "Design and performance patterns for web applications."
+	},
+	{
+		"id": "refactoring-guru-es",
+		"description": "Design patterns and refactoring explained with diagrams and code examples."
+	},
+	{
+		"id": "toolfolio-com",
+		"description": "A directory of productivity, creativity and design tools."
+	},
+	{
+		"id": "readme-so",
+		"description": "A Markdown editor with templates for writing your projects' README."
+	},
+	{
+		"id": "shipfree-revoks-dev",
+		"description": "An open-source boilerplate with auth and payments for launching a SaaS."
+	},
+	{
+		"id": "h1gallery-com",
+		"description": "A collection of marketing headlines from websites."
+	},
+	{
+		"id": "particles-casberry-in",
+		"description": "Simulate and animate 3D particles in real time with WebGL2 and export the code."
+	},
+	{
+		"id": "typeui-sh",
+		"description": "Build professional interfaces with AI and Claude, with visitor analytics to improve conversions."
+	},
+	{
+		"id": "useanimations-com",
+		"description": "300 animated icons with hover, click and loop for React, shadcn/ui and Lottie. MIT."
+	},
+	{
+		"id": "reactvibe-com",
+		"description": "Open-source animated React components to copy and paste."
+	},
+	{
+		"id": "landing-love",
+		"description": "Over 2,200 animated sites, with full-page video recordings."
+	},
+	{
+		"id": "siteinspire-com",
+		"description": "A gallery of websites by style, type and subject, with studio profiles."
+	},
+	{
+		"id": "minimal-gallery",
+		"description": "Hand-picked minimalist websites, with templates and tools."
+	},
+	{
+		"id": "darkmodedesign-com",
+		"description": "A gallery of hand-picked dark mode websites."
+	},
+	{
+		"id": "land-book-com",
+		"description": "A curated web design gallery for creatives, with hand-picked sites updated daily."
+	},
+	{
+		"id": "onepagelove-com",
+		"description": "A gallery of one-page websites, with templates and resources."
+	},
+	{
+		"id": "httpster-net",
+		"description": "A gallery of websites, filterable by style and type."
+	},
+	{
+		"id": "lapa-ninja",
+		"description": "Over 7,300 landing pages since 2015 and 15,000 full-page screenshots, with videos."
+	},
+	{
+		"id": "bestwebsite-gallery",
+		"description": "Hand-picked websites since 2008, with a featured site of the day."
+	},
+	{
+		"id": "unicornicons-com",
+		"description": "Over 400 animated icons in Lottie and Rive, with an in-browser color editor."
+	},
+	{
+		"id": "iconsax-io",
+		"description": "Vuesax's icon library: over 7,000 free and 44,000 premium."
+	},
+	{
+		"id": "devdojo-com-inspiration",
+		"description": "Real product sites with screenshots, scroll videos, design tokens and a DESIGN.md for AI."
+	},
+	{
+		"id": "logoipsum-com",
+		"description": "Over 200 free placeholder logos in SVG and PNG for mockups and prototypes."
+	},
+	{
+		"id": "signalicon-com",
+		"description": "Over 1,000 icons for web and apps in SVG and Figma, with free and PRO plans."
+	},
+	{
+		"id": "colorsss-com",
+		"description": "Explore colors by filtering on hue and tone, from pastel to vibrant."
+	},
+	{
+		"id": "fontsss-com",
+		"description": "A curated font archive, filterable by style and free or commercial license."
+	},
+	{
+		"id": "jitter-video",
+		"description": "Motion design in the browser: import from Figma and export to 4K video, GIF or Lottie."
+	},
+	{
+		"id": "movo-video",
+		"description": "Motion templates to animate in the browser, with nothing to install. In beta."
+	},
+	{
+		"id": "thepromptsfactory-com",
+		"description": "Prompts for websites, animations and transitions, with an interactive preview."
+	},
+	{
+		"id": "motionin-design",
+		"description": "Interactive web sections with physics and cursor effects, copied as a prompt for your AI."
+	},
+	{
+		"id": "tactileui-dev",
+		"description": "Components that work like real hardware, with page sections and over 1,100 examples."
+	},
+	{
+		"id": "cult-ui-com",
+		"description": "Open-source components, animated blocks and templates based on shadcn/ui."
+	},
+	{
+		"id": "overflow-design",
+		"description": "Isometric icons and hand-drawn illustrations in SVG, PNG and Figma; part of the set is free."
+	},
+	{
+		"id": "unsplash-com",
+		"description": "Free photos from creators around the world, to download and use in any project."
+	},
+	{
+		"id": "flaticon-com",
+		"description": "Over 18 million free vector icons and stickers in PNG, SVG, EPS, PSD and CSS."
+	},
+	{
+		"id": "fontjoy-com",
+		"description": "Generates font pairings with deep learning and previews them with your own text."
+	},
+	{
+		"id": "cleanup-pictures",
+		"description": "Remove objects, people, text and defects from an image in a few clicks. Has an API."
+	},
+	{
+		"id": "alyn-dev",
+		"description": "A directory of open-source skills for Claude Code, Cursor, Codex and other agents, with quality and usage scores."
+	},
+	{
+		"id": "swivelmotion-app",
+		"description": "Places videos or designs in 3D iPhone and MacBook mockups and exports them, all in the browser."
+	},
+	{
+		"id": "fontshare-com",
+		"description": "Free typefaces from Indian Type Foundry, for personal and commercial use."
+	},
+	{
+		"id": "colorhunt-co",
+		"description": "Hand-picked four-color palettes, searchable by theme or popularity."
+	},
+	{
+		"id": "shadergradient-co",
+		"description": "Create animated 3D gradients and take them to React, Figma or Framer."
+	},
+	{
+		"id": "icons8-com",
+		"description": "Icons, illustrations and 3D models in consistent styles, in SVG and PNG."
+	},
+	{
+		"id": "illos-dev",
+		"description": "Animated SVG illustrations for product sites, with a skill for creating new ones."
+	},
+	{
+		"id": "blocks-so",
+		"description": "Free shadcn/ui blocks to copy and paste: forms, tables, dialogs and more."
+	},
+	{
+		"id": "ui-unlumen-com",
+		"description": "Animated React components built with Motion, installable with the shadcn CLI."
+	},
+	{
+		"id": "smoothui-dev",
+		"description": "React components with smooth animations, compatible with shadcn/ui."
+	},
+	{
+		"id": "neobrutalism-dev",
+		"description": "Neobrutalist-style components based on shadcn/ui."
+	},
+	{
+		"id": "supply-madebyoversight-com",
+		"description": "Web templates and sections for Webflow and Framer, ready to paste into Claude Code or v0."
+	},
+	{
+		"id": "eyecannndy-com",
+		"description": "A library of visual video and motion techniques, with examples of each."
+	},
+	{
+		"id": "figma-com-es-la-motion",
+		"description": "Animations inside Figma that export to code or GIF."
+	},
+	{
+		"id": "astryx-atmeta-com",
+		"description": "Meta's open-source design system in React and StyleX, with themes and agent-friendly docs."
+	},
+	{
+		"id": "pexels-com",
+		"description": "Free stock photos and videos, no attribution required, with an API for integration."
+	},
+	{
+		"id": "uiarc-dev",
+		"description": "Animated React components and blocks for shadcn and Next.js, with an MCP server for agents."
+	},
+	{
+		"id": "inspora-design",
+		"description": "Curated inspiration from websites, logos and app icons, with their creators."
+	},
+	{
+		"id": "designeer-xyz",
+		"description": "Design references, resources, tools and portfolios from designers and developers."
+	},
+	{
+		"id": "stickitupx-com",
+		"description": "Open-source interactive stickers for React and Next.js: 3D vinyl, chrome badges and pixel art."
+	}
+]

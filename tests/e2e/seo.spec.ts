@@ -35,12 +35,17 @@ test.describe('SEO', () => {
 		await expect(head.locator('meta[property="og:image"]')).toHaveAttribute('content', new RegExp(`/screenshots/${link.id}\\.jpg$`));
 	});
 
-	test('el sitemap lista el inicio y cada enlace público', async ({ request }) => {
+	test('el sitemap lista el inicio y cada enlace público, y en inglés solo lo traducido', async ({ request }) => {
 		const body = await (await request.get('/sitemap.xml')).text();
 		const locs = [...body.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => new URL(match[1]).pathname);
-		expect(locs).toHaveLength(publicLinks.length + 1);
-		expect(locs).toContain('/');
-		for (const { id } of publicLinks) expect(locs).toContain(`/tool/${id}`);
+		const spanish = locs.filter((path) => path !== '/en' && !path.startsWith('/en/'));
+		expect(spanish).toHaveLength(publicLinks.length + 1);
+		expect(spanish).toContain('/');
+		for (const { id } of publicLinks) expect(spanish).toContain(`/tool/${id}`);
+		// Las versiones en inglés solo aparecen traducidas, y siempre junto a su par en español.
+		for (const path of locs.filter((path) => !spanish.includes(path))) {
+			expect(spanish).toContain(path.replace(/^\/en/, '') || '/');
+		}
 	});
 
 	test('robots.txt apunta al sitemap', async ({ request }) => {

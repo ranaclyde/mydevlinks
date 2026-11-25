@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro';
 import { DEFAULT_LOCALE, LOCALES, localizePath } from '../i18n/ui';
-import { loadCatalog } from '../lib/catalog';
+import { directoryTranslated, loadCatalog } from '../lib/catalog';
 import { absoluteUrl, linkPath } from '../lib/seo';
 
 function escapeXml(value: string): string {
@@ -17,7 +17,7 @@ export const GET: APIRoute = async ({ site }) => {
 	const dates = items.flatMap((item) => (item.detail ? [item.detail.reviewedAt] : [])).sort();
 
 	const pages = [
-		{ path: '/', lastmod: dates.at(-1), translated: [...english.values()].every(Boolean) },
+		{ path: '/', lastmod: dates.at(-1), translated: await directoryTranslated(false) },
 		...items
 			.map(({ link, detail }) => ({
 				path: linkPath(link.id),
