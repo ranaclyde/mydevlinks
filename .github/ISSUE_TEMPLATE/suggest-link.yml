@@ -1,0 +1,60 @@
+name: Sugerir un enlace
+description: Propón una herramienta o recurso para sumar al directorio.
+title: "Sugerencia: "
+labels: [new-link]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por sugerir. toolshelf es una colección curada de recursos para construir interfaces web. Antes de enviar, revisa [qué entra en la colección](https://github.com/ranaclyde/mydevlinks/blob/main/docs/adding-links.md#antes-de-empezar-entra-en-la-colección).
+        Si prefieres agregarlo tú mismo con un pull request, sigue [la guía](https://github.com/ranaclyde/mydevlinks/blob/main/docs/adding-links.md).
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: La raíz del producto, salvo que la subpágina sea un recurso distinto.
+      placeholder: https://ejemplo.dev/
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Nombre
+      placeholder: Ejemplo UI
+  - type: dropdown
+    id: category
+    attributes:
+      label: Categoría
+      options:
+        - No estoy seguro
+        - Componentes y UI kits
+        - Animación y efectos
+        - Galerías de inspiración
+        - Iconos e ilustraciones
+        - Fuentes y color
+        - Generadores CSS/SVG
+        - Herramientas de desarrollo
+        - Serverless
+        - Constructores con IA
+        - Aprendizaje y documentación
+        - Directorios de recursos
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: ¿Para qué sirve y por qué suma?
+      description: En qué te ayudó o qué tiene que no tengan otros del directorio.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Antes de enviar
+      options:
+        - label: Busqué en el directorio y no está.
+          required: true
+        - label: Es una herramienta o un recurso, no un video, un artículo suelto ni un pen de CodePen.
+          required: true
+        - label: El sitio funciona hoy.
+          required: true

@@ -6,8 +6,9 @@ Gracias por querer sumar. toolshelf es una colección curada: importa más que c
 
 | Quieres… | Cómo |
 | --- | --- |
-| **Sumar una herramienta o recurso** | Sigue [docs/adding-links.md](docs/adding-links.md). Con Claude Code: `/toolshelf-add-link <url>`. |
-| **Avisar que un enlace está caído, cambió o quedó viejo** | Abre un issue con el enlace y lo que viste. Si sabes el arreglo, un PR que cambie `status` (`outdated` o `down`) o la URL. |
+| **Sugerir una herramienta o recurso** | Abre un issue con la plantilla [Sugerir un enlace](https://github.com/ranaclyde/mydevlinks/issues/new?template=suggest-link.yml). |
+| **Sumarlo tú mismo** | Sigue [docs/adding-links.md](docs/adding-links.md). Con Claude Code: `/toolshelf-add-link <url>`. |
+| **Avisar que un enlace está caído, cambió o quedó viejo** | Abre un issue con la plantilla [Reportar un enlace](https://github.com/ranaclyde/mydevlinks/issues/new?template=report-link.yml). Si sabes el arreglo, un PR que cambie `status` (`outdated` o `down`) o la URL. |
 | **Corregir un dato de un detalle** (precio, licencia, descripción) | PR que cambie el JSON en `src/data/details/<id>.json` y su traducción en `src/data/en/details/<id>.json`. Pon en el PR de dónde sale el dato. |
 | **Mejorar el sitio** (interfaz, filtros, accesibilidad, rendimiento) | Abre un issue antes de un cambio grande, para acordar el enfoque. |
 

@@ -8,6 +8,8 @@ argument-hint: <url> [<url>…]
 
 URLs pedidas: $ARGUMENTS
 
+Si te pasan un issue de sugerencia (etiqueta `new-link`), toma la URL y lo que cuenta de ahí, y cierra el issue desde el PR con `Closes #<número>`.
+
 La fuente de verdad es `docs/adding-links.md`. **Léela entera antes de empezar** y sigue sus pasos en orden; este skill solo agrega cómo ejecutarla como agente.
 
 ## Cómo trabajar

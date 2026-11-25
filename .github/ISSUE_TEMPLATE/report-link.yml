@@ -1,0 +1,34 @@
+name: Reportar un enlace
+description: Avisa que un enlace del directorio está caído, cambió o tiene un dato incorrecto.
+title: "Reporte: "
+labels: [link-report]
+body:
+  - type: input
+    id: link
+    attributes:
+      label: Enlace
+      description: La URL de su página en toolshelf o la del sitio.
+      placeholder: https://toolshelf.netlify.app/tool/ejemplo-dev
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: ¿Qué pasa?
+      options:
+        - El sitio está caído
+        - Redirige a otro sitio o cambió de nombre
+        - El precio o el plan gratis cambió
+        - Un dato del detalle es incorrecto
+        - Está desactualizado u obsoleto
+        - La captura o el logo están mal
+        - Otro
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Detalle
+      description: Qué viste y qué debería decir. Si es un dato, de dónde sale (por ejemplo, la página de precios del sitio).
+    validations:
+      required: true

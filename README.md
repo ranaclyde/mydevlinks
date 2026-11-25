@@ -41,6 +41,7 @@ pnpm exec playwright install chromium   # solo para test:e2e
 | `pnpm build` | Build estático en `dist/`. |
 | `pnpm add-link <url>` | Crea un enlace nuevo con su logo y los archivos por completar. Ver [docs/adding-links.md](docs/adding-links.md). |
 | `pnpm capture <id>` | Toma la captura de un enlace. |
+| `pnpm check-links` | Pide todos los enlaces y lista los caídos, los redirigidos y los detalles sin revisar hace más de 6 meses. |
 
 ## Agregar un enlace
 
@@ -120,5 +121,8 @@ Cada página lleva título, descripción, canonical, Open Graph y tarjeta de X. 
 
 - **`add-link.mjs`** (`pnpm add-link`): crea un enlace nuevo a partir de su URL. Revisa duplicados, pide la página, baja el logo y deja los archivos por completar.
 - **`capture.mjs`** (`pnpm capture`): toma las capturas.
+- **`check-links.mjs`** (`pnpm check-links [--out informe.md]`): pide cada enlace público que no esté marcado como caído y arma un informe en Markdown. Los que responden 401, 403 o 429 van aparte, porque casi siempre son antibots.
+
+**Revisión semanal:** `.github/workflows/check-links.yml` corre `pnpm check-links` los lunes y mantiene un issue con la etiqueta `link-check`: lo abre si hay algo para atender, lo actualiza cada semana y lo cierra cuando no queda nada. También se puede lanzar a mano desde la pestaña Actions.
 
 Las funciones compartidas están en `scripts/lib/` y tienen sus pruebas en `tests/`.
