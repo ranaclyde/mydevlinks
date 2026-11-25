@@ -11,6 +11,11 @@ export function linkPath(id: string): string {
 	return `/tool/${id}`;
 }
 
+/** Ruta pública de la página de una categoría. */
+export function categoryPath(id: string): string {
+	return `/category/${id}`;
+}
+
 /** URL absoluta de una ruta del sitio. */
 export function absoluteUrl(path: string, site: URL | undefined): string {
 	if (!site) return path;

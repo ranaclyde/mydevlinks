@@ -1,7 +1,8 @@
 import { getCollection } from 'astro:content';
 import type { Locale } from '../i18n/ui';
 import { alternativesFor } from './alternatives';
-import { sortLinks, visibleLinks } from './links';
+import { CATEGORIES, sortLinks, visibleLinks, type Link } from './links';
+import type { Detail } from './details';
 import { localize, type Localized } from './translations';
 
 /**
@@ -49,4 +50,44 @@ export async function toolPaths(locale: Locale) {
 			total: items.length,
 		},
 	}));
+}
+
+export interface CategoryEntry {
+	link: Link;
+	pricing?: Detail['pricing'];
+}
+
+/**
+ * Rutas de las páginas de categoría en `locale`, para `getStaticPaths`. Solo las categorías con
+ * enlaces visibles. Una categoría está traducida cuando lo están las descripciones de sus enlaces,
+ * que es todo lo que muestra de ellos.
+ */
+export async function categoryPaths(locale: Locale) {
+	const items = await loadCatalog(locale);
+	const english = await loadCatalog('en');
+	const counts = CATEGORIES.map((id) => ({ id, count: items.filter((item) => item.link.category === id).length })).filter(
+		(category) => category.count > 0,
+	);
+	return counts.map(({ id }) => ({
+		params: { id },
+		props: {
+			category: id,
+			entries: items
+				.filter((item) => item.link.category === id)
+				.map(({ link, detail }): CategoryEntry => ({ link, pricing: detail?.pricing })),
+			categories: counts,
+			translated: english.filter((item) => item.link.category === id).every((item) => item.descriptionTranslated),
+			total: items.length,
+		},
+	}));
+}
+
+/** Fecha de la revisión más reciente de cada categoría, para el sitemap. */
+export function categoryLastmod(items: Localized[]): Map<string, string> {
+	const dates = new Map<string, string>();
+	for (const { link, detail } of items) {
+		const current = dates.get(link.category);
+		if (detail && (!current || detail.reviewedAt > current)) dates.set(link.category, detail.reviewedAt);
+	}
+	return dates;
 }

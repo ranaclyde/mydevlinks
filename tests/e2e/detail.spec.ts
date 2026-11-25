@@ -197,3 +197,29 @@ test('la ficha técnica acompaña el scroll', async ({ page, isMobile }) => {
 	expect(top).toBeGreaterThanOrEqual(70);
 	expect(top).toBeLessThanOrEqual(90);
 });
+
+test('la categoría de las migas lleva a su página, y de ahí se vuelve a la ficha', async ({ page }) => {
+	await page.goto(path);
+	const crumbs = page.getByRole('navigation', { name: 'Ruta' });
+	await crumbs.getByRole('link').nth(1).click();
+	await expect(page).toHaveURL(`/category/${link.category}`);
+	await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+	await page.locator(`[data-card][data-name=${JSON.stringify(link.name)}] [data-detail]`).click();
+	await expect(page).toHaveURL(path);
+});
+
+test('sin JavaScript la página de categoría muestra sus enlaces y lleva al resto', async ({ browser }) => {
+	const context = await browser.newContext({ javaScriptEnabled: false });
+	const page = await context.newPage();
+	await page.goto(`/category/${link.category}`);
+	const count = publicLinks.filter((other) => other.category === link.category).length;
+	await expect(page.locator('[data-card]')).toHaveCount(count);
+	await expect(page.locator('[data-card]').first()).toBeVisible();
+	await expect(page.getByRole('link', { name: 'Filtrar en el directorio' })).toHaveAttribute(
+		'href',
+		`/?category=${link.category}`,
+	);
+	const others = page.getByRole('navigation', { name: 'Otras categorías' }).getByRole('link');
+	expect(await others.count()).toBe(new Set(publicLinks.map((other) => other.category)).size - 1);
+	await context.close();
+});

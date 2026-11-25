@@ -43,6 +43,14 @@ test('el selector de idioma lleva a la misma ficha en el otro idioma', async ({ 
 	await expect(page).toHaveURL(`/tool/${link.id}`);
 });
 
+test('el selector de idioma lleva a la misma categoría en el otro idioma', async ({ page }) => {
+	await page.goto('/category/serverless');
+	await chooseLanguage(page, 'Idioma: Español', 'English');
+	await expect(page).toHaveURL('/en/category/serverless');
+	await expect(page.getByRole('heading', { level: 1 })).toHaveText('Serverless');
+	await expect(page.getByRole('link', { name: 'Filter in the directory' })).toHaveAttribute('href', '/en?category=serverless');
+});
+
 test('el selector de idioma conserva los filtros del directorio', async ({ page, isMobile }) => {
 	test.skip(isMobile, 'El selector es el mismo en móvil.');
 	await page.goto('/?category=serverless');

@@ -26,6 +26,7 @@ Se usa en medio del trabajo de desarrollo, junto al editor y al navegador. No ha
 
 - Sitio estático en Astro con Tailwind, sin framework de interfaz, publicado en Netlify.
 - Un directorio con más de 200 enlaces en 11 categorías, filtrable por categoría, tecnología, tipo de galería, precio y texto.
+- Cada categoría tiene su página (`/category/<id>`), con una presentación y sus enlaces, para que se encuentre desde buscadores.
 - Cada enlace tiene su página de detalle (`/tool/<id>`): qué es, captura, usos, qué revisar antes de elegirlo, precio y alternativas.
 - En español (raíz) y en inglés (`/en`). Lo que no está traducido se muestra en español y no se indexa.
 - Algunos enlaces pueden quedar marcados como antiguos o caídos, y conservan su aviso.
