@@ -370,6 +370,14 @@ Cada enlace tiene su página en `/tool/<id>`, generada en el build y legible com
 - **Aviso de contenido generado:** recuadro con borde punteado de Línea fuerte, texto apagado de 12.5 px e interrogación: "Descripción generada a partir del sitio". Aparece mientras el autor no revisa el texto a mano.
 - **Captura:** marco de Línea con barra superior mono (dominio y "Captura del <fecha>"). Si el enlace está caído y no hay captura, un recuadro punteado de Línea fuerte dice "El sitio no responde; no hay captura".
 - **Volver:** "← Directorio" y "Volver al directorio" apuntan a `/`; con JavaScript, si se llegó desde el directorio, vuelven en el historial y conservan los filtros.
+- **Categoría:** la categoría de la ruta y "Ver toda la categoría" llevan a su página de categoría.
+
+### Página de categoría
+
+Cada categoría tiene su página en `/category/<id>`, generada en el build y legible completa sin JavaScript. Es la puerta de entrada desde buscadores; para filtrar, el directorio.
+
+- **Ancho:** contenido centrado de hasta 1240 px, con los márgenes de la página de detalle.
+- **Estructura:** ruta en mono de 12 px ("← Directorio / categoría"); nombre como `h1` de 26 px; un párrafo que presenta la categoría, de hasta 68ch; el total en mono de 26 px, como en el directorio, junto a "Filtrar en el directorio →", que abre el directorio con esa categoría elegida. Debajo, sus enlaces en la grilla del directorio, en el mismo orden. Al final, "Otras categorías": fichas de Línea con el nombre y su total en mono, que se marcan en índigo en hover.
 - **Sin detalle:** no hay cuerpo ni ficha técnica; de la cabecera se pasa a las alternativas. Si además el enlace está caído, entre ambas va solo el recuadro de enlace caído, a una columna.
 - **Móvil:** una sola columna. En la cabecera, la placa de 48 px, el nombre y el dominio comparten la primera fila; descripción, botones y tecnologías van debajo, a todo el ancho. Orden: captura, ficha técnica (sus filas apiladas, rótulo sobre valor) y después las secciones.
 - **Alternativas:** fichas iguales a las del directorio (placa, nombre, dominio y descripción) que enlazan a la página de detalle de cada una.

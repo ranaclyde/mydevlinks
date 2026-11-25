@@ -104,6 +104,29 @@ const es = {
 	caveats: 'Qué revisar antes de elegirlo',
 	alternatives: 'Alternativas',
 	seeCategory: 'Ver toda la categoría',
+	filterInDirectory: 'Filtrar en el directorio',
+	otherCategories: 'Otras categorías',
+	categoryMetaExtra: (count: number) => `${count} enlaces con precio, captura y qué revisar.`,
+	categoryIntro: {
+		components:
+			'Librerías y colecciones de componentes para armar interfaces más rápido: UI kits, bloques para copiar y pegar y componentes animados para React, Vue, Tailwind y más.',
+		animation:
+			'Librerías y herramientas para animar interfaces web: transiciones, scroll, 3D, partículas y efectos visuales.',
+		inspiration:
+			'Galerías de sitios, landing pages, secciones e interfaces reales para buscar ideas de diseño antes de empezar un proyecto.',
+		icons: 'Iconos, ilustraciones, avatares y bancos de imágenes para usar en proyectos web.',
+		'fonts-color': 'Tipografías, paletas y herramientas de color para elegir y combinar la identidad visual de un sitio.',
+		generators:
+			'Herramientas que generan código CSS o SVG listo para copiar: sombras, degradados, blobs, patrones y formas.',
+		'developer-tools':
+			'Utilidades para el día a día del frontend: conversores, editores de imágenes y servicios o APIs que se usan desde el navegador.',
+		serverless:
+			'CMS headless y backends sin servidor para sumar contenido, usuarios y datos a un frontend sin mantener servidores.',
+		'ai-builders':
+			'Herramientas que generan sitios e interfaces con IA, y colecciones de prompts para diseñar y programar con modelos de lenguaje.',
+		learning: 'Documentación, guías de referencia y sitios para aprender desarrollo web, patrones de diseño y buenas prácticas.',
+		directories: 'Directorios que, como toolshelf, reúnen herramientas y recursos para desarrolladores.',
+	} satisfies Record<Category, string>,
 	techSheet: 'Ficha técnica',
 	plans: 'Planes',
 	seePricing: (domain: string) => `Ver precios en ${domain}`,
@@ -232,6 +255,28 @@ const en: Dictionary = {
 	caveats: 'What to check before choosing it',
 	alternatives: 'Alternatives',
 	seeCategory: 'See the whole category',
+	filterInDirectory: 'Filter in the directory',
+	otherCategories: 'Other categories',
+	categoryMetaExtra: (count) => `${count} links with pricing, a screenshot and what to check.`,
+	categoryIntro: {
+		components:
+			'Component libraries and collections to build interfaces faster: UI kits, copy-paste blocks and animated components for React, Vue, Tailwind and more.',
+		animation: 'Libraries and tools to animate web interfaces: transitions, scroll, 3D, particles and visual effects.',
+		inspiration:
+			'Galleries of real websites, landing pages, sections and interfaces to find design ideas before starting a project.',
+		icons: 'Icons, illustrations, avatars and stock image libraries to use in web projects.',
+		'fonts-color': "Typefaces, palettes and color tools to choose and combine a site's visual identity.",
+		generators:
+			'Tools that generate ready-to-copy CSS or SVG code: shadows, gradients, blobs, patterns and shapes.',
+		'developer-tools':
+			'Everyday frontend utilities: converters, image editors, and services or APIs used from the browser.',
+		serverless:
+			'Headless CMSs and serverless backends to add content, users and data to a frontend without running servers.',
+		'ai-builders':
+			'Tools that generate websites and interfaces with AI, and prompt collections for designing and coding with language models.',
+		learning: 'Documentation, reference guides and sites to learn web development, design patterns and best practices.',
+		directories: 'Directories that, like toolshelf, gather tools and resources for developers.',
+	},
 	techSheet: 'Fact sheet',
 	plans: 'Plans',
 	seePricing: (domain) => `See pricing on ${domain}`,

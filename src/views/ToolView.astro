@@ -8,8 +8,7 @@ import { DEFAULT_LOCALE, localizePath, toLocale, useTranslations } from '../i18n
 import Layout from '../layouts/Layout.astro';
 import { screenshotPath, type Detail } from '../lib/details';
 import type { Link } from '../lib/links';
-import { absoluteUrl, linkPath, metaDescription, SITE_NAME } from '../lib/seo';
-import { stateToSearch } from '../lib/url-state';
+import { absoluteUrl, categoryPath, linkPath, metaDescription, SITE_NAME } from '../lib/seo';
 
 export interface Props {
 	link: Link;
@@ -25,7 +24,7 @@ const locale = toLocale(Astro.currentLocale);
 const t = useTranslations(locale);
 const home = localizePath('/', locale);
 const category = t.categories[link.category];
-const categoryHref = home + stateToSearch({ query: '', category: link.category, tech: [], tag: null });
+const categoryHref = localizePath(categoryPath(link.category), locale);
 const crumbLink = 'underline underline-offset-3 transition-colors duration-100 hover:text-accent';
 const action =
 	'text-[13px] underline underline-offset-3 transition-colors duration-100 hover:text-accent';

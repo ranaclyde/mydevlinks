@@ -1,7 +1,7 @@
 import type { APIRoute } from 'astro';
 import { DEFAULT_LOCALE, LOCALES, localizePath } from '../i18n/ui';
-import { directoryTranslated, loadCatalog } from '../lib/catalog';
-import { absoluteUrl, linkPath } from '../lib/seo';
+import { categoryLastmod, directoryTranslated, loadCatalog } from '../lib/catalog';
+import { absoluteUrl, categoryPath, linkPath } from '../lib/seo';
 
 function escapeXml(value: string): string {
 	return value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -13,11 +13,18 @@ function escapeXml(value: string): string {
  */
 export const GET: APIRoute = async ({ site }) => {
 	const items = await loadCatalog('es', false);
-	const english = new Map((await loadCatalog('en', false)).map((item) => [item.link.id, item.translated]));
+	const englishItems = await loadCatalog('en', false);
+	const english = new Map(englishItems.map((item) => [item.link.id, item.translated]));
+	const lastmods = categoryLastmod(items);
 	const dates = items.flatMap((item) => (item.detail ? [item.detail.reviewedAt] : [])).sort();
 
 	const pages = [
 		{ path: '/', lastmod: dates.at(-1), translated: await directoryTranslated(false) },
+		...[...new Set(items.map((item) => item.link.category))].sort().map((category) => ({
+			path: categoryPath(category),
+			lastmod: lastmods.get(category),
+			translated: englishItems.filter((item) => item.link.category === category).every((item) => item.descriptionTranslated),
+		})),
 		...items
 			.map(({ link, detail }) => ({
 				path: linkPath(link.id),
