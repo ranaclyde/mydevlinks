@@ -6,58 +6,6 @@ import data from '../src/data/links.json';
 
 const links = data as Array<Record<string, any>>;
 const root = join(import.meta.dirname, '..');
-const rawPath = join(root, 'scripts/.cache/raw-links.json');
-
-/** Enlaces de raw-links.json que se quitaron a propósito, con su motivo. */
-const REMOVED: Record<string, string> = {
-	'tailwindcomponents-com':
-		'Redirige a creative-tim.com/twcomponents: es el mismo sitio y se conserva esa entrada.',
-	// Revisión del autor del 6 de noviembre de 2026; detalle en docs/revision-enlaces.md.
-	'codepen-io-smitche-pen-mownba': 'Pen de CodePen sin verificar; el autor lo quitó.',
-	'codepen-io-jh3y-pen-qwypaax': 'Pen de CodePen sin verificar; el autor lo quitó.',
-	'tailwindcss-com-plus-ui-blocks': 'Tailwind Plus sin verificar; el autor lo quitó.',
-	'youtube-com-watch-3': 'El vídeo ya no está en YouTube.',
-	'youtube-com-watch-2': 'NativeScript queda fuera de la colección.',
-	'market-nativescript-org': 'NativeScript queda fuera de la colección.',
-	'github-com-gonzalo2310-awesome-nativescript-vue': 'NativeScript queda fuera de la colección.',
-	'nativescript-vue-org-en-docs-introduction': 'Caído y de NativeScript.',
-	'intools-co': 'Caído: dominio estacionado.',
-	'op6gls4d1-bkt-clouddn-com-vuejs-vuex-docs-es': 'Caído: error 404.',
-	'codecourse-com-lessons-unit-testing-vuex-1775': 'Caído: error 404.',
-	'vuetelescope-com-explore': 'Caído: error 404.',
-	'factor-dev': 'Caído: el dominio no resuelve.',
-	'magic-reactjs-net-htmltojsx-htm': 'Reemplazado por transform-tools, que incluye HTML a JSX.',
-	'freepik-es-search': 'Freepik pasó a llamarse Magnific: reemplazado por magnific-com.',
-	'freepik-es-search-2': 'Freepik pasó a llamarse Magnific: reemplazado por magnific-com.',
-	'create-react-app-dev': 'Antiguo: el sitio declara que está obsoleto.',
-	'marketplace-visualstudio-com-items': 'Antiguo: Vetur fue reemplazado por Volar.',
-	'bootstrap-vue-org-docs': 'Antiguo: apunta a Vue 2 y Bootstrap 4.',
-	'bennettfeely-com-clippy': 'El autor lo quitó.',
-	'es-nuxtjs-org-docs-2-x-get-started-installation': 'Antiguo: Nuxt 2 llegó al fin de su vida útil.',
-	'reactrouter-com-docs-en-v6': 'Antiguo: reemplazado por tanstack-com, que incluye un router.',
-	'alligator-io-vuejs-component-lifecycle': 'Tutorial de Vue; el autor lo quitó.',
-	'es-redux-js-org': 'Documentación de Redux en GitBook antiguo; el autor la quitó.',
-	'youtube-com-watch': 'Curso de Next.js 12, versión vieja; el autor lo quitó.',
-	'github-com-simplesmiler-vue-focus': 'Librería de Vue 2; el autor la quitó.',
-	'github-com-dgrubelic-vue-authenticate': 'Librería de Vue 2; el autor la quitó.',
-	'beefree-io-editor': 'Beefree es ahora RGE Studio: reemplazado por reallygoodemails-com-studio.',
-	'flowbite-com-blocks': 'Ahora apunta a la raíz de Flowbite, con id flowbite-com.',
-	'toolbox-signalsupply-co-apps-gradientblobcss': 'Ahora apunta a la raíz de Toolbox, con id toolbox-signalsupply-co.',
-	'explorers-netlify-com-learn-get-started-with-nuxt-nuxt-seo': 'Vídeo de YouTube; el autor quitó los vídeos.',
-	'youtube-com-watch-4': 'Vídeo de YouTube; el autor quitó los vídeos.',
-	'youtube-com-watch-5': 'Vídeo de YouTube; el autor quitó los vídeos.',
-	'turso-tech': 'Base de datos, fuera de frontend; el autor la quitó.',
-	'upstash-com': 'Base de datos, fuera de frontend; el autor la quitó.',
-	'neon-com': 'Base de datos, fuera de frontend; el autor la quitó.',
-	'mongodb-com-es-products-platform-atlas-database': 'Base de datos, fuera de frontend; el autor la quitó.',
-	'code-visualstudio-com': 'Editor general; el autor lo quitó.',
-	'github-com-hasaneyldrm-exercises-dataset': 'Dataset de ejercicios físicos, fuera de la colección.',
-	'peepslab-com': 'Caído: el sitio está pausado (402).',
-	'github-com-gorvgoyl-clone-wars': 'Viejo; el autor lo quitó.',
-	'css-tricks-com-blobs': 'Artículo de CSS-Tricks; el autor lo quitó.',
-	'es-reactjs-org': 'React en español; el autor lo quitó.',
-	'escuelavue-es-como-aprender-vue': 'Escuela Vue; el autor lo quitó.',
-};
 
 describe('links.json', () => {
 	it('cada enlace pasa linkSchema', () => {
@@ -119,13 +67,6 @@ describe('links.json', () => {
 			expect(link.logo).toBeUndefined();
 			expect(stems).not.toContain(link.id);
 		}
-	});
-
-	// raw-links.json es caché local fuera de git: sin él no hay contra qué comparar.
-	it.skipIf(!existsSync(rawPath))('la suma coincide con raw-links.json menos los quitados', () => {
-		const raw = JSON.parse(readFileSync(rawPath, 'utf8')) as Array<{ id: string }>;
-		const expected = raw.map((l) => l.id).filter((id) => !(id in REMOVED));
-		expect(links.map((l) => l.id).sort()).toEqual(expected.sort());
 	});
 });
 

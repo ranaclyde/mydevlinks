@@ -1,6 +1,26 @@
-# toolshelf
+<h1 align="center">
+	<picture>
+		<source media="(prefers-color-scheme: dark)" srcset=".github/assets/logo-dark.png">
+		<img src=".github/assets/logo-light.png" alt="toolshelf" width="320">
+	</picture>
+</h1>
 
-Una base propia de enlaces para desarrollar, que reemplaza años de bookmarks. Cada enlace se entiende sin abrirlo y se filtra por categoría, tecnología y texto. En el directorio, la ficha lleva al detalle del enlace (`/tool/<id>`) y la flecha junto al nombre abre la web en otra pestaña. Es un sitio estático en Astro y Tailwind, sin framework de interfaz, en español y en inglés.
+<p align="center">
+	Enlaces curados para construir interfaces web, cada uno explicado antes de abrirlo.
+	<br>
+	<a href="https://toolshelf.netlify.app/"><strong>toolshelf.netlify.app</strong></a> · <a href="https://toolshelf.netlify.app/en">English</a>
+</p>
+
+![El directorio de toolshelf en modo claro y la página de detalle de daisyUI en modo oscuro](.github/assets/screenshot.jpg)
+
+toolshelf nació para reemplazar años de bookmarks: más de 200 herramientas y recursos para frontend, elegidos a mano y descritos para que se entienda qué es cada uno sin tener que abrirlo.
+
+- **Un directorio para filtrar.** Cada ficha dice qué es el recurso, con qué tecnologías funciona y cuánto cuesta. Se filtra por categoría, tecnología, tipo de galería, precio y texto, y los filtros quedan en la URL para compartir una búsqueda.
+- **Una página por enlace** (`/tool/<id>`). Tiene una captura del sitio, qué es, tres usos concretos, qué revisar antes de elegirlo, el precio con su fuente y alternativas de la misma categoría.
+- **En español y en inglés,** con modo claro y oscuro. Es un sitio estático en Astro y Tailwind, sin framework de interfaz.
+- **Abierto a aportes.** Para sumar un enlace, sigue [docs/adding-links.md](docs/adding-links.md). Para otros cambios, mira [CONTRIBUTING.md](CONTRIBUTING.md).
+
+En el directorio, la ficha lleva al detalle del enlace, y la flecha junto al nombre abre su web en otra pestaña.
 
 ## Ejecutar
 
@@ -100,6 +120,5 @@ Cada página lleva título, descripción, canonical, Open Graph y tarjeta de X. 
 
 - **`add-link.mjs`** (`pnpm add-link`): crea un enlace nuevo a partir de su URL. Revisa duplicados, pide la página, baja el logo y deja los archivos por completar.
 - **`capture.mjs`** (`pnpm capture`): toma las capturas.
-- **`fetch-sites.mjs`:** se usó una sola vez, para analizar los sitios importados de los bookmarks. Necesita una caché local que está fuera de git y no hace falta para agregar enlaces.
 
 Las funciones compartidas están en `scripts/lib/` y tienen sus pruebas en `tests/`.
