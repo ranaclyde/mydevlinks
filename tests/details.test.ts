@@ -1,12 +1,17 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join, parse } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { detailSchema, formatDate, screenshotPath } from '../src/lib/details';
+import { detailSchema, formatDate } from '../src/lib/details';
 import data from '../src/data/links.json';
 
 const root = join(import.meta.dirname, '..');
 const detailsDir = join(root, 'src/data/details');
-const screenshotsDir = join(root, 'public/screenshots');
+const screenshotsDir = join(root, 'src/assets/screenshots');
+/** Capturas por id: las nuevas en WebP, las primeras en JPG. */
+const screenshotFiles = existsSync(screenshotsDir)
+	? readdirSync(screenshotsDir).filter((f) => /\.(jpg|webp)$/.test(f))
+	: [];
+const screenshotIds = screenshotFiles.map((f) => parse(f).name);
 const links = data as Array<{ id: string; private: boolean }>;
 
 const base = {
@@ -72,11 +77,6 @@ describe('formatDate', () => {
 	});
 });
 
-describe('screenshotPath', () => {
-	it('apunta a la captura JPEG del enlace', () => {
-		expect(screenshotPath('daisyui-com')).toBe('/screenshots/daisyui-com.jpg');
-	});
-});
 
 describe('detalles reales', () => {
 	const files = readdirSync(detailsDir).filter((f) => f.endsWith('.json'));
@@ -94,16 +94,20 @@ describe('detalles reales', () => {
 				expect(ids.get(alt)?.private).toBe(false);
 			}
 			if (detail.screenshotAt) {
-				expect(existsSync(join(screenshotsDir, `${id}.jpg`))).toBe(true);
+				expect(screenshotIds, `falta la captura de ${id}`).toContain(id);
 			}
 		});
 	}
 
 	it('cada captura corresponde a un detalle', () => {
-		if (!existsSync(screenshotsDir)) return;
 		const detailIds = new Set(files.map((f) => parse(f).name));
-		for (const f of readdirSync(screenshotsDir).filter((f) => f.endsWith('.jpg'))) {
+		for (const f of screenshotFiles) {
 			expect(detailIds.has(parse(f).name), f).toBe(true);
 		}
+	});
+
+	it('ningún enlace tiene dos capturas (JPG y WebP a la vez)', () => {
+		const repeated = screenshotIds.filter((id, index) => screenshotIds.indexOf(id) !== index);
+		expect(repeated).toEqual([]);
 	});
 });

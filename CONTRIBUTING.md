@@ -41,6 +41,7 @@ Los comandos están en el [README](README.md#ejecutar).
 - **Stack:** Astro estático con Tailwind, sin framework de interfaz. El JavaScript del navegador vive en `src/scripts/`, es chico y la página funciona sin él.
 - **Idiomas:** todo texto de la interfaz va en `src/i18n/ui.ts`, en español y en inglés, con la misma forma. Nunca se escribe texto suelto en un componente. Los valores internos (categorías, precios, estados) son ids en inglés.
 - **Datos:** los esquemas de `src/lib/links.ts`, `src/lib/details.ts` y `src/lib/translations.ts` son la fuente de verdad. Si agregas un campo, agrégalo ahí y en el README.
+- **Capturas:** viven en `src/assets/screenshots/` y se usan siempre a través de `src/lib/screenshots.ts` (`screenshotOf` para mostrarlas con `<Image>`, `screenshotOgImage` para `og:image`), nunca con una ruta fija. Las nuevas se guardan en WebP con `pnpm capture`; las primeras siguen en JPG y pasan a WebP solo cuando se rehacen: no las conviertas en masa, porque suma peso al historial sin ganar casi nada. No se usa AVIF: en estas capturas pesaba más que WebP y hacía la compilación mucho más lenta.
 - **Estilo:** tabulaciones para indentar. Los comentarios explican el porqué, no el qué.
 - **Diseño:** colores, tipografía y componentes están en [DESIGN.md](DESIGN.md), con los tokens en `src/styles/global.css`. Un cambio visual respeta ese sistema o lo propone en el PR.
 - **Pruebas:** una regla nueva sobre los datos lleva su prueba en `tests/`. Un comportamiento nuevo en el navegador, su prueba en `tests/e2e/`.

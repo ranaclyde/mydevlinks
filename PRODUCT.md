@@ -34,7 +34,7 @@ Se usa en medio del trabajo de desarrollo, junto al editor y al navegador. No ha
 
 ## Evidence on Hand
 
-Datos reales en `src/data/links.json`, detalles en `src/data/details/` (con su traducción en `src/data/en/`), logos en `public/logos/` y capturas en `public/screenshots/`. Los detalles se redactan a partir de lo que dice cada sitio, y avisan si su autor todavía no los revisó. No hay testimonios ni métricas de uso.
+Datos reales en `src/data/links.json`, detalles en `src/data/details/` (con su traducción en `src/data/en/`), logos en `public/logos/` y capturas en `src/assets/screenshots/`. Los detalles se redactan a partir de lo que dice cada sitio, y avisan si su autor todavía no los revisó. No hay testimonios ni métricas de uso.
 
 ## Product Principles
 

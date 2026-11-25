@@ -32,10 +32,6 @@ export const detailSchema = detailFields.refine((detail) => detail.pricing === '
 
 export type Detail = z.infer<typeof detailSchema>;
 
-export function screenshotPath(id: string): string {
-	return `/screenshots/${id}.jpg`;
-}
-
 /** `2026-11-11` -> `11 nov 2026` en español, `Nov 11, 2026` en inglés. */
 export function formatDate(iso: string, locale = 'es'): string {
 	const format = new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });

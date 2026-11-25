@@ -6,7 +6,8 @@ import TechSheet from '../components/detail/TechSheet.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import { DEFAULT_LOCALE, localizePath, toLocale, useTranslations } from '../i18n/ui';
 import Layout from '../layouts/Layout.astro';
-import { screenshotPath, type Detail } from '../lib/details';
+import type { Detail } from '../lib/details';
+import { screenshotOgImage } from '../lib/screenshots';
 import type { Link } from '../lib/links';
 import { absoluteUrl, categoryPath, linkPath, metaDescription, SITE_NAME } from '../lib/seo';
 
@@ -35,9 +36,8 @@ const url = absoluteUrl(localizePath(path, locale), Astro.site);
 const fallback = locale !== DEFAULT_LOCALE && !translated;
 const summary = link.description ?? t.inCategory(link.name, category);
 const description = detail ? metaDescription(summary, t.detailMetaExtra(t.pricing[detail.pricing])) : summary;
-const image = detail?.screenshotAt
-	? { path: screenshotPath(link.id), width: 1280, height: 800, alt: t.screenshotOf(link.name) }
-	: undefined;
+const ogImage = detail?.screenshotAt ? await screenshotOgImage(link.id) : undefined;
+const image = ogImage && { ...ogImage, alt: t.screenshotOf(link.name) };
 const structuredData = [
 	{
 		'@context': 'https://schema.org',
